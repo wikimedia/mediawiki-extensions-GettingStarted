@@ -1,36 +1,28 @@
 /********************* Header Banner *********************/
-div#onboarding-header {
+#onboarding-header {
     font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
     font-size: 13px;
     margin: 1em 0;
-    /* Munaf, in jsfiddle normalize.css removes the left and right padding */
-	padding: 0.75em 0;
-    /* Munaf, surely need to allow this to vary? width: 70em; */
+    padding: 0.75em 0;
     max-width: 70em;
-    /*background-color: #f7f7f7;
-    border: 1px solid #ededed;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;*/
 }
 
 .onboarding-heading {
-    display:block;
+    display: block;
     margin-bottom: 0.2em;
     font-size: 1.5em;
     font-weight: bold;
     border: 0;
 }
 
-div#onboarding-header p {
+#onboarding-header p {
     display: inline-block;
     max-width: 70%;
     color: #777;
 }
 
-/* Custom positioning for this particular button */
-#onboarding-header span.mw-ui-button,
-a#back-to-referrer {
+#onboarding-header .mw-ui-button,
+#back-to-referrer {
     width: 14em;
     float: right;
     margin-top: 0.5em;
@@ -39,11 +31,10 @@ a#back-to-referrer {
     text-overflow: ellipsis;
 }
 
-#onboarding-header .mw-ui-button {
+#onboarding-header span.mw-ui-button {
     display: inline-block;
     padding: 0.4em 0.8em 0.5em 0.8em;
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    /*font-size: 1em;*/
     font-weight: bold;
     text-decoration: none;
     color: white;
@@ -63,8 +54,7 @@ a#back-to-referrer {
     background-image: -webkit-linear-gradient(top, #3670c8, #3366bb);
     background-image: linear-gradient(#3670c8, #3366bb);
     border: 1px #33589f solid;
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#3670c8', endColorstr='#3366bb', GradientType=0)";
-      filter: progid:dximagetransform.microsoft.gradient(startColorstr='#3670c8', endColorstr='#3366bb', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#3670c8', endColorstr='#3366bb', GradientType=0);
 }
 
 #onboarding-header .mw-ui-button.blue:hover {
@@ -74,8 +64,7 @@ a#back-to-referrer {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4c84da), color-stop(100%, #3f77d7));
     background-image: -webkit-linear-gradient(top, #4c84da, #3f77d7);
     background-image: linear-gradient(#4c84da, #3f77d7);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c84da', endColorstr='#3f77d7', GradientType=0)";
-      filter: progid:dximagetransform.microsoft.gradient(startColorstr='#4c84da', endColorstr='#3f77d7', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#4c84da', endColorstr='#3f77d7', GradientType=0);
 }
 
 #onboarding-header .mw-ui-button.blue:active {
@@ -85,56 +74,45 @@ a#back-to-referrer {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2d5ea9), color-stop(100%, #2a549c));
     background-image: -webkit-linear-gradient(top, #2d5ea9, #2a549c);
     background-image: linear-gradient(#2d5ea9, #2a549c);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#2d5ea9', endColorstr='#2a549c', GradientType=0)";
-      filter: progid:dximagetransform.microsoft.gradient(startColorstr='#2d5ea9', endColorstr='#2a549c', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#2d5ea9', endColorstr='#2a549c', GradientType=0);
 }
 
 
 /********************* To-do matrix *********************/
 
-div#onboarding-msg {
+#onboarding-msg {
     font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
     font-size: 13px;
-
     width: 70em;
     padding: 0.75em;
-    /* Munaf: shrinking the height works for embedded ul but not for table rows
-     * which is what Template:Opentask-short currently creates.
-    height: 7em;
-    */
 }
 
-/* Munaf, Mediawiki can't easily give a style to a wikitext bulleted list.
- *    ul.onboarding-tasks 
- * so instead.../
-/* Style a ul inside the onboarding-tasks div. */
-div#onboarding-tasks {
+#onboarding-tasks {
     font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
     font-size: 13px;
-
     width: 70em;
     padding: 0.75em;
     height: 7em;
 }
 
-div#onboarding-tasks ul {
-    width:70%;
-    float:left;
-    overflow:hidden;
+#onboarding-tasks ul {
+    width: 70%;
+    float: left;
+    overflow: hidden;
     margin-left: 0;
     margin-bottom: 20px;
 }
 
-div#onboarding-tasks ul li {
+#onboarding-tasks ul li {
     line-height:1.5em;
     width: 50%;
-    float:left;
-    display:list-item;
-    list-style-position:inside;
+    float: left;
+    display: list-item;
+    list-style-position: inside;
 }
 
 /* The welcomecreation message gives the "Suggestions" div this style. */
-ul#suggestion-box {
+#suggestion-box {
     float: right;
     top: 0;
     margin-right: 0;
@@ -146,7 +124,7 @@ ul#suggestion-box {
     border: 1px solid #e6eca2;
 }
 
-ul#suggestion-box li:first-child {
+#suggestion-box li:first-child {
     font-weight: bold;
     margin-bottom: 0.25em;
 }
