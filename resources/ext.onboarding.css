@@ -128,3 +128,7 @@
     font-weight: bold;
     margin-bottom: 0.25em;
 }
+
+#onboarding-more {
+    clear: both;
+}
