@@ -23,6 +23,7 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'gettingstarted' => "The name of the extension's entry in Special:SpecialPages",
 	'gettingstarted-desc' => "{{desc}}",
+	'onboarding-msg' => 'Main content of Special:GettingStarted page',
 	'welcomesiteuser' => "The title of the Getting Started page for logged-in users. $1 is the sitename. $2 is the username",
 	'welcomesiteuseranon' => "The title of the Getting Started page for anonymous users. $1 is the sitename."
 );
