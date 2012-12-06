@@ -16,7 +16,7 @@ class SpecialGettingStarted extends SpecialPage {
 		if( !$user->isAnon() ) {
 			$output->setPageTitle( $this->msg( 'welcomesiteuser', $wgSitename, $user->getName() ) );
 		} else {
-			// XXX what title for not logged-in?
+			$output->setPageTitle( $this->msg( 'welcomesiteuseranon', $wgSitename ) );
 		}
 
 		// If the user came straight from account creation, run its hooks
