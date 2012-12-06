@@ -13,7 +13,8 @@ $messages = array();
 $messages['en'] = array(
 	'gettingstarted' => "Getting Started",
 	'gettingstarted-desc' => "Onboarding presents a special 'Getting Started' welcome page for new users (shown after account creation)",
-	'welcomesiteuser' => "Welcome to $1, $2!"
+	'welcomesiteuser' => "Welcome to $1, $2!",
+	'welcomesiteuseranon' => "Welcome to $1!",
 );
 
 /** Message documentation
@@ -22,5 +23,6 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'gettingstarted' => "The name of the extension's entry in Special:SpecialPages",
 	'gettingstarted-desc' => "{{desc}}",
-	'welcomesiteuser' => "A welcome message users see on the Getting Started page (after creating an account and also if they return). $1 is the sitename, and $2 is the username",
+	'welcomesiteuser' => "The title of the Getting Started page for logged-in users. $1 is the sitename. $2 is the username",
+	'welcomesiteuseranon' => "The title of the Getting Started page for anonymous users. $1 is the sitename."
 );
