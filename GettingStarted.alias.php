@@ -1,6 +1,6 @@
 <?php
 /**
- * Aliases for Onboarding's Special page.
+ * Aliases for GettingStarted's Special page.
  *
  * @file
  * @ingroup Extensions
@@ -12,5 +12,5 @@ $specialPageAliases = array();
  * @author spage
  */
 $specialPageAliases['en'] = array(
-	'GettingStarted' => array( 'GettingStarted', 'Getting Started', 'WelcomeNewUser', 'Welcome New User' ),
+	'GettingStarted' => array( 'GettingStarted', 'Getting Started'),
 );
