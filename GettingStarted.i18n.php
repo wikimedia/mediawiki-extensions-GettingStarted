@@ -12,7 +12,8 @@ $messages = array();
  */
 $messages['en'] = array(
 	'gettingstarted' => "Getting started",
-	'gettingstarted-desc' => "GettingStarted presents a special 'Getting Started' welcome page for new users (shown after account creation)",
+	'gettingstarted-desc' => 'Adds a [[Special:GettingStarted|welcome page]] for new users (shown after account creation)',
+	'gettingstarted-msg' => '', # do not translate or duplicate this message to other languages
 	'gettingstarted-welcomesiteuser' => "Welcome to $1, $2!",
 	'gettingstarted-welcomesiteuseranon' => "Welcome to $1!",
 );
