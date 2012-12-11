@@ -6,8 +6,8 @@ $wgExtensionCredits[ 'specialpage' ][] = array(
 	'name' => 'GettingStarted',
 	'author' => array(
 		'Munaf Assaf',
+		'Matt Flaschen',
 		'S Page',
-		'Matt Flaschen'
 	),
 	'url' => 'https://www.mediawiki.org/wiki/Extension:GettingStarted',
 	'descriptionmsg' => 'gettingstarted-desc',
