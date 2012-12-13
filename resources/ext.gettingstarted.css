@@ -16,15 +16,14 @@
     color: black;
 }
 
-#onboarding-header p {
+#onboarding-header-details {
     display: inline-block;
     max-width: 70%;
     color: #777;
     margin: 0;
 }
 
-#onboarding-header .mw-ui-button,
-#back-to-referrer {
+#onboarding-header .mw-ui-button {
     width: 14em;
     float: right;
     margin-top: 0.5em;
@@ -33,7 +32,7 @@
     text-overflow: ellipsis;
 }
 
-#onboarding-header span.mw-ui-button {
+#onboarding-header .mw-ui-button {
     display: inline-block;
     padding: 0.4em 0.8em 0.5em 0.8em;
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
