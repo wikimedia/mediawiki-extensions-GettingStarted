@@ -42,7 +42,7 @@ $wgResourceModules[ 'ext.gettingstarted.accountcreation' ] = array(
 	'scripts' => 'resources/ext.gettingstarted.accountcreation.js',
 	'messages' => array(
 		'gettingstarted-welcomesiteuser', // XXX (mattflaschen, 2012-12-12): This is a workaround until we move this into core, at which point it can be done server-side.
-		'gettingstarted-backtoarticle',
+		'gettingstarted-return',
 	),
 	'dependencies' => array(
 		'ext.gettingstarted',

@@ -14,7 +14,7 @@
 			id: 'back-to-referrer',
 			href: returnToUrl,
 			'class': 'blue mw-ui-button',
-			text: '← ' + mw.msg('gettingstarted-backtoarticle')
+			text: '← ' + mw.msg('gettingstarted-return')
 		} );
 
 		$( '#onboarding-header p' ).append( $returnToAgora );
