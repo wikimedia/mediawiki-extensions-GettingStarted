@@ -15,7 +15,6 @@ $wgExtensionCredits[ 'specialpage' ][] = array(
 );
 
 $wgAutoloadClasses += array(
-	'GettingStartedHooks' => __DIR__ . '/GettingStarted.hooks.php',
 	'SpecialGettingStarted' => __DIR__ . '/SpecialGettingStarted.php',
 );
 
