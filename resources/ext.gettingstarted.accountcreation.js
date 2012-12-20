@@ -24,7 +24,7 @@
 			text: '← ' + mw.msg('gettingstarted-return')
 		} );
 
-		$( '#onboarding-header p' ).append( $returnToAgora );
+		$( '#onboarding-more' ).append( $returnToAgora );
 
 		state = {}; // Currently unused
 		url = mw.util.wikiGetlink( 'Special:GettingStarted' );
