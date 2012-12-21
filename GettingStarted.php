@@ -54,6 +54,13 @@ $wgResourceModules[ 'ext.gettingstarted.accountcreation' ] = array(
 );
 
 $wgHooks[ 'BeforeWelcomeCreation' ][] = function( &$welcome_creation_msg, &$inject_html ) {
+	// Do nothing on mobile.
+	if ( class_exists( 'MobileContext' ) ) {
+		if ( MobileContext::singleton()->shouldDisplayMobileView() ) {
+			return TRUE;
+		}
+	}
+
 	$welcome_creation_msg = 'gettingstarted-msg';
 
 	global $wgOut;
