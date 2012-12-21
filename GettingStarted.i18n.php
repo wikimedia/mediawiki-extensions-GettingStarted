@@ -19,14 +19,174 @@ $messages['en'] = array(
 	'gettingstarted-return' => "No thanks, take me back",
 );
 
-/** Message documentation
+/** Message documentation (Message documentation)
+ * @author Shirayuki
  * @author spage
  */
 $messages['qqq'] = array(
-	'gettingstarted' => "The name of the extension's entry in Special:SpecialPages",
-	'gettingstarted-desc' => "{{desc}}",
-	'gettingstarted-msg' => 'Main content of Special:GettingStarted page. $1 is the username.',
-	'gettingstarted-welcomesiteuser' => "The title of the Getting Started page for logged-in users. $1 is the sitename. $2 is the username; GENDER is supported",
-	'gettingstarted-welcomesiteuseranon' => "The title of the Getting Started page for anonymous users. $1 is the sitename.",
-	'gettingstarted-return' => "Text of navigation button for returning to previous page",
+	'gettingstarted' => "The name of the extension's entry in [[Special:SpecialPages]]",
+	'gettingstarted-desc' => '{{desc|name=Getting Started|url=http://www.mediawiki.org/wiki/Extension:GettingStarted}}',
+	'gettingstarted-msg' => 'Main content of Special:GettingStarted page.
+* $1 - username',
+	'gettingstarted-welcomesiteuser' => 'The title of the Getting Started page for logged-in users.
+* $1 - sitename
+* $2 - username; GENDER is supported',
+	'gettingstarted-welcomesiteuseranon' => 'The title of the Getting Started page for anonymous users.
+* $1 - sitename',
+	'gettingstarted-return' => 'Text of navigation button for returning to previous page',
+);
+
+/** German (Deutsch)
+ * @author Metalhead64
+ */
+$messages['de'] = array(
+	'gettingstarted' => 'Erste Schritte',
+	'gettingstarted-desc' => 'Ergänzt eine [[Special:GettingStarted|Willkommensseite]] für neue Benutzer (wird nach der Benutzerkontenerstellung angezeigt)',
+	'gettingstarted-msg' => 'Ein Administrator auf {{SITENAME}} sollte diese Nachricht durch das Bearbeiten von [[{{ns:MediaWiki}}:gettingstarted-msg]] anpassen.',
+	'gettingstarted-welcomesiteuser' => 'Willkommen bei $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Willkommen bei $1!',
+	'gettingstarted-return' => 'Nein danke, bring mich zurück',
+);
+
+/** Spanish (español)
+ * @author Armando-Martin
+ */
+$messages['es'] = array(
+	'gettingstarted' => 'Primeros pasos',
+	'gettingstarted-desc' => 'Agrega una [[Special:GettingStarted|página de bienvenida]] a los nuevos usuarios (se muestra después de la creación de la cuenta)',
+	'gettingstarted-msg' => 'Un administrador de {{SITENAME}} debe personalizar este mensaje editando [[{{ns:MediaWiki}}:gettingstarted-msg]].',
+	'gettingstarted-welcomesiteuser' => 'Hola $2 ¡Bienvenido a $1!',
+	'gettingstarted-welcomesiteuseranon' => '¡Bienvenido a $1!',
+	'gettingstarted-return' => 'No gracias, volver atrás',
+);
+
+/** French (français)
+ * @author Gomoko
+ */
+$messages['fr'] = array(
+	'gettingstarted' => 'Pour commencer',
+	'gettingstarted-desc' => "Ajoute une [[Special:GettingStarted|page d'accueil]] pour les nouveaux utilisateurs (affichée après la création de compte)",
+	'gettingstarted-msg' => 'Un administrateur sur {{SITENAME}} devrait personnaliser ce message en modifiant [[{{ns:MediaWiki}}:gettingstarted-msg]].',
+	'gettingstarted-welcomesiteuser' => 'Bienvenue sur $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Bienvenue sur $1!',
+	'gettingstarted-return' => "Non merci, ramenez-moi d'où je viens",
+);
+
+/** Galician (galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'gettingstarted' => 'Primeiros pasos',
+	'gettingstarted-desc' => 'Engade unha [[Special:GettingStarted|páxina de benvida]] aos novos usuarios (móstrase despois da creación da conta)',
+	'gettingstarted-msg' => 'Un adminitrador de {{SITENAME}} debería personalizar esta mensaxe editando "[[{{ns:MediaWiki}}:gettingstarted-msg]]".',
+	'gettingstarted-welcomesiteuser' => '{{GENDER:$2|Benvido|Benvida}} a $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Dámoslle a benvida a $1!',
+	'gettingstarted-return' => 'Non grazas, levádeme de volta',
+);
+
+/** Italian (italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'gettingstarted-welcomesiteuser' => 'Benvenuto su $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Benvenuto su $1!',
+);
+
+/** Japanese (日本語)
+ * @author Shirayuki
+ */
+$messages['ja'] = array(
+	'gettingstarted-desc' => '新しい利用者向けに[[Special:GettingStarted|ようこそページ]]を追加する (アカウント作成した際に表示される)',
+	'gettingstarted-welcomesiteuser' => '$2さん、$1へようこそ!',
+	'gettingstarted-welcomesiteuseranon' => '$1へようこそ!',
+);
+
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'gettingstarted' => '시작하기',
+	'gettingstarted-desc' => '새 사용자를 위한 [[Special:GettingStarted|환영 문서]] 추가 (계정을 만들고 나서 나타남)',
+	'gettingstarted-msg' => '{{SITENAME}}의 관리자가 [[{{ns:MediaWiki}}:gettingstarted-msg]] 메시지를 편집하여 이 메시지를 사용자 정의해야 합니다.',
+	'gettingstarted-welcomesiteuser' => '$2님, $1에 오신 것을 환영합니다!',
+	'gettingstarted-welcomesiteuseranon' => '$1에 오신 것을 환영합니다!',
+	'gettingstarted-return' => '괜찮습니다, 되돌아가겠습니다',
+);
+
+/** Macedonian (македонски)
+ * @author Bjankuloski06
+ */
+$messages['mk'] = array(
+	'gettingstarted' => 'Како да почнете',
+	'gettingstarted-desc' => 'Става [[Special:GettingStarted|страница за добре дојде]] за новите корисници (се прикажува откако ќе ја направат сметката)',
+	'gettingstarted-msg' => 'Администратор на {{SITENAME}} треба да ја прилагоди поракава, менувајќи го [[{{ns:MediaWiki}}:gettingstarted-msg]].',
+	'gettingstarted-welcomesiteuser' => 'Добре дојдовте на $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Добре дојдовте на $1!',
+	'gettingstarted-return' => 'Не благодарам. Врати ме назад',
+);
+
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'gettingstarted' => 'Permulaan',
+	'gettingstarted-desc' => 'Meletakkan [[Special:GettingStarted|halaman selamat datang]] untuk pengguna baru (dipaparkan selepas pembukaan akaun)',
+	'gettingstarted-msg' => 'Seorang pentadbir di {{SITENAME}} harus mengubahsuai pesanan ini dengan menyunting [[{{ns:MediaWiki}}:gettingstarted-msg]].',
+	'gettingstarted-welcomesiteuser' => 'Selamat datang ke $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Selamat datang ke $1!',
+	'gettingstarted-return' => 'Tak apalah, bawa saya balik',
+);
+
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'gettingstarted' => 'Aan de slag',
+	'gettingstarted-desc' => 'Voegt een [[Special:GettingStarted|welkomstpagina]] voor nieuwe gebruikers toe na registereren',
+	'gettingstarted-msg' => 'Een beheerder van {{SITENAAM}} hoort dit bericht aan te passen door [[{{ns:MediaWiki}}:gettingstarted-msg]] te bewerken.',
+	'gettingstarted-welcomesiteuser' => 'Welkom bij $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Welkom bij $1',
+	'gettingstarted-return' => 'Nee bedankt. Ik wil graag terug',
+);
+
+/** Telugu (తెలుగు)
+ * @author Veeven
+ */
+$messages['te'] = array(
+	'gettingstarted' => 'మొదలుపెట్టడం',
+	'gettingstarted-msg' => '[[{{ns:MediaWiki}}:gettingstarted-msg]] ద్వారా {{SITENAME}} నిర్వాహకులు ఈ సందేశాన్ని మార్చవచ్చు.',
+	'gettingstarted-welcomesiteuser' => '$1కి స్వాగతం, $2!',
+	'gettingstarted-welcomesiteuseranon' => '$1కి స్వాగతం!',
+	'gettingstarted-return' => 'వద్దు, నన్ను వెనక్కు తీసుకువెళ్ళు',
+);
+
+/** Ukrainian (українська)
+ * @author Base
+ */
+$messages['uk'] = array(
+	'gettingstarted' => 'Початок роботи',
+	'gettingstarted-desc' => 'Додає [[Special:GettingStarted|вітальну сторінку]] для нових користувачів (показується після створення облікового запису)',
+	'gettingstarted-msg' => 'Адміністраторам проекту {{SITENAME}} слід налаштувати це повідомлення, відредагувавши [[{{ns:MediaWiki}}:gettingstarted-msg]].',
+	'gettingstarted-welcomesiteuser' => 'Вітаємо у проекті $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Вітаємо у проекті $1!',
+	'gettingstarted-return' => 'Ні, дякую, поверніть мене назад',
+);
+
+/** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
+ */
+$messages['vi'] = array(
+	'gettingstarted' => 'Bắt đầu',
+	'gettingstarted-desc' => 'Thêm một [[Special:GettingStarted|trang hoan nghênh]] xuất hiện cho người dùng lúc khi mở tài khoản xong',
+	'gettingstarted-msg' => 'Các bảo quản viên tại {{SITENAME}} cần tùy chỉnh thông điệp này bằng cách sửa đổi [[{{ns:MediaWiki}}:gettingstarted-msg]].',
+	'gettingstarted-welcomesiteuser' => 'Chào mừng $2 đến với $1!',
+	'gettingstarted-welcomesiteuseranon' => 'Chào mừng bạn đến với $1!',
+	'gettingstarted-return' => 'Thôi, quay lại',
+);
+
+/** Traditional Chinese (中文（繁體）‎)
+ * @author Simon Shek
+ */
+$messages['zh-hant'] = array(
+	'gettingstarted' => '入門',
 );

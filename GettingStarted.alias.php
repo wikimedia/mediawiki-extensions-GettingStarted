@@ -8,9 +8,17 @@
 
 $specialPageAliases = array();
 
-/** English
- * @author spage
- */
+/** English (English) */
 $specialPageAliases['en'] = array(
-	'GettingStarted' => array( 'GettingStarted', 'Getting Started'),
+	'GettingStarted' => array( 'GettingStarted', 'Getting Started' ),
+);
+
+/** Macedonian (македонски) */
+$specialPageAliases['mk'] = array(
+	'GettingStarted' => array( 'КакоДаПочнете' ),
+);
+
+/** Vietnamese (Tiếng Việt) */
+$specialPageAliases['vi'] = array(
+	'GettingStarted' => array( 'Bắt_đầu' ),
 );
