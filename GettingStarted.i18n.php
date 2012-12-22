@@ -60,6 +60,24 @@ $messages['es'] = array(
 	'gettingstarted-return' => 'No gracias, volver atrás',
 );
 
+/** Estonian (eesti)
+ * @author Avjoska
+ */
+$messages['et'] = array(
+	'gettingstarted-welcomesiteuser' => 'Tere tulemast $1sse, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Tere tulemast $1sse!',
+);
+
+/** Persian (فارسی)
+ * @author Mjbmr
+ */
+$messages['fa'] = array(
+	'gettingstarted' => 'شروع',
+	'gettingstarted-welcomesiteuser' => '$2، به $1 خوش‌آمدید!',
+	'gettingstarted-welcomesiteuseranon' => 'به $1 خوش‌آمدید!',
+	'gettingstarted-return' => 'نه متشکرم، من را برگردان',
+);
+
 /** French (français)
  * @author Gomoko
  */
@@ -82,6 +100,18 @@ $messages['gl'] = array(
 	'gettingstarted-welcomesiteuser' => '{{GENDER:$2|Benvido|Benvida}} a $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Dámoslle a benvida a $1!',
 	'gettingstarted-return' => 'Non grazas, levádeme de volta',
+);
+
+/** Indonesian (Bahasa Indonesia)
+ * @author Farras
+ */
+$messages['id'] = array(
+	'gettingstarted' => 'Memulai',
+	'gettingstarted-desc' => 'Menambahkan [[Special:GettingStarted|halaman selamat datang]] untuk pengguna baru (ditampilkan setelah membuat akun)',
+	'gettingstarted-msg' => 'Seorang pengurus {{SITENAME}} harus mengubah pesain ini dengan menyunting [[{{ns:MediaWiki}}:gettingstarted-msg]].',
+	'gettingstarted-welcomesiteuser' => 'Selamat datang di $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Selamat datang di $1!',
+	'gettingstarted-return' => 'Tidak, terima kasih. Bawa saya kembali',
 );
 
 /** Italian (italiano)
@@ -147,6 +177,16 @@ $messages['nl'] = array(
 	'gettingstarted-welcomesiteuser' => 'Welkom bij $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Welkom bij $1',
 	'gettingstarted-return' => 'Nee bedankt. Ik wil graag terug',
+);
+
+/** Romanian (română)
+ * @author Firilacroco
+ */
+$messages['ro'] = array(
+	'gettingstarted' => 'Primii pași',
+	'gettingstarted-welcomesiteuser' => 'Bine ați venit la $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Bine ați venit la $1!',
+	'gettingstarted-return' => 'Nu, mulțumesc, du-mă înapoi',
 );
 
 /** Telugu (తెలుగు)
