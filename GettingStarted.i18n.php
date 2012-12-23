@@ -48,6 +48,15 @@ $messages['de'] = array(
 	'gettingstarted-return' => 'Nein danke, bring mich zurück',
 );
 
+/** Esperanto (Esperanto)
+ * @author Yekrats
+ */
+$messages['eo'] = array(
+	'gettingstarted' => 'Unuaj paŝoj',
+	'gettingstarted-welcomesiteuser' => 'Bonvenon al $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Bonvenon al $1!',
+);
+
 /** Spanish (español)
  * @author Armando-Martin
  */
@@ -62,10 +71,11 @@ $messages['es'] = array(
 
 /** Estonian (eesti)
  * @author Avjoska
+ * @author Pikne
  */
 $messages['et'] = array(
-	'gettingstarted-welcomesiteuser' => 'Tere tulemast $1sse, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Tere tulemast $1sse!',
+	'gettingstarted-welcomesiteuser' => 'Tere tulemast võrgukohta $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Tere tulemast võrgukohta $1!',
 );
 
 /** Persian (فارسی)
@@ -143,6 +153,14 @@ $messages['ko'] = array(
 	'gettingstarted-return' => '괜찮습니다, 되돌아가겠습니다',
 );
 
+/** Lithuanian (lietuvių)
+ * @author Eitvys200
+ */
+$messages['lt'] = array(
+	'gettingstarted-welcomesiteuser' => 'Sveiki atvykę į $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Sveiki atvykę į $1!',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
@@ -167,6 +185,18 @@ $messages['ms'] = array(
 	'gettingstarted-return' => 'Tak apalah, bawa saya balik',
 );
 
+/** Maltese (Malti)
+ * @author Chrisportelli
+ */
+$messages['mt'] = array(
+	'gettingstarted' => 'Gwida introduttorja',
+	'gettingstarted-desc' => "Iżżid [[Special:GettingStarted|paġna ta' merħba]] għal utenti ġodda (murija wara l-ħolqien tal-kont)",
+	'gettingstarted-msg' => 'Amministratur fuq {{SITENAME}} għandu jirranġa dan il-messaġġ billi jimmodifika lil [[{{ns:MediaWiki}}:gettingstarted-msg]].',
+	'gettingstarted-welcomesiteuser' => 'Merbħa fuq $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Merbħa fuq $1!',
+	'gettingstarted-return' => 'Le grazzi, ħudni lura',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
@@ -187,6 +217,15 @@ $messages['ro'] = array(
 	'gettingstarted-welcomesiteuser' => 'Bine ați venit la $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Bine ați venit la $1!',
 	'gettingstarted-return' => 'Nu, mulțumesc, du-mă înapoi',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'gettingstarted' => 'දැන් අරඹමු',
+	'gettingstarted-welcomesiteuser' => '$1 වෙත පිළිගනිමු, $2!',
+	'gettingstarted-welcomesiteuseranon' => '$1 වෙත පිළිගනිමු!',
 );
 
 /** Telugu (తెలుగు)
