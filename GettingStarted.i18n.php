@@ -153,6 +153,15 @@ $messages['ko'] = array(
 	'gettingstarted-return' => '괜찮습니다, 되돌아가겠습니다',
 );
 
+/** Kirghiz (Кыргызча)
+ * @author Growingup
+ */
+$messages['ky'] = array(
+	'gettingstarted' => 'Иштин башталышы',
+	'gettingstarted-welcomesiteuser' => '$1 сайтына кош келиңиз, $2!',
+	'gettingstarted-welcomesiteuseranon' => '$1 сайтына кош келиңиз!',
+);
+
 /** Lithuanian (lietuvių)
  * @author Eitvys200
  */
