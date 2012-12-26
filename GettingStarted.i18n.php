@@ -74,6 +74,7 @@ $messages['es'] = array(
  * @author Pikne
  */
 $messages['et'] = array(
+	'gettingstarted' => 'Alustamine',
 	'gettingstarted-welcomesiteuser' => 'Tere tulemast võrgukohta $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Tere tulemast võrgukohta $1!',
 );
@@ -237,6 +238,17 @@ $messages['si'] = array(
 	'gettingstarted-welcomesiteuseranon' => '$1 වෙත පිළිගනිමු!',
 );
 
+/** Swedish (svenska)
+ * @author WikiPhoenix
+ */
+$messages['sv'] = array(
+	'gettingstarted' => 'Komma igång',
+	'gettingstarted-desc' => 'Lägger till en [[Special:GettingStarted|välkomstsida]] för nya användare (visas efter kontot har skapats)',
+	'gettingstarted-welcomesiteuser' => 'Välkommen till $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Välkommen till $1!',
+	'gettingstarted-return' => 'Nej tack, ta mig tillbaka',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  */
@@ -270,6 +282,18 @@ $messages['vi'] = array(
 	'gettingstarted-welcomesiteuser' => 'Chào mừng $2 đến với $1!',
 	'gettingstarted-welcomesiteuseranon' => 'Chào mừng bạn đến với $1!',
 	'gettingstarted-return' => 'Thôi, quay lại',
+);
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Hydra
+ */
+$messages['zh-hans'] = array(
+	'gettingstarted' => '开始',
+	'gettingstarted-desc' => '添加一个为新用户的[[Special:GettingStarted|欢迎页面]]（在用户创建后显示）',
+	'gettingstarted-msg' => '一个{{SITENAME}}的管理员应该编辑[[{{ns:MediaWiki}}:gettingstarted-msg]]来定制此信息。',
+	'gettingstarted-welcomesiteuser' => '欢迎光临$1，$2！',
+	'gettingstarted-welcomesiteuseranon' => '欢迎光临$1！',
+	'gettingstarted-return' => '不必了，请带我会去',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
