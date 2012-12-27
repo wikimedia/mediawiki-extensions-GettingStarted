@@ -89,6 +89,18 @@ $messages['fa'] = array(
 	'gettingstarted-return' => 'نه متشکرم، من را برگردان',
 );
 
+/** Finnish (suomi)
+ * @author VezonThunder
+ */
+$messages['fi'] = array(
+	'gettingstarted' => 'Alkuaskeleet',
+	'gettingstarted-desc' => 'Lisää [[Special:GettingStarted|tervetulosivun]] uusille käyttäjille (näytetään tunnuksen luonnin jälkeen)',
+	'gettingstarted-msg' => 'Sivuston {{SITENAME}} ylläpitäjän tulisi mukauttaa tätä viestiä muokkaamalla sivua [[{{ns:MediaWiki}}:gettingstarted-msg]].',
+	'gettingstarted-welcomesiteuser' => 'Tervetuloa sivustolle $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Tervetuloa sivustolle $1!',
+	'gettingstarted-return' => 'Ei kiitos, vie minut takaisin',
+);
+
 /** French (français)
  * @author Gomoko
  */
@@ -229,6 +241,18 @@ $messages['ro'] = array(
 	'gettingstarted-return' => 'Nu, mulțumesc, du-mă înapoi',
 );
 
+/** Russian (русский)
+ * @author Ole Yves
+ */
+$messages['ru'] = array(
+	'gettingstarted' => 'Приступая к работе',
+	'gettingstarted-desc' => 'Добавляет [[Special:GettingStarted|страницу приветствия]] для новых участников (показывается после создания учётной записи)',
+	'gettingstarted-msg' => 'Администратор {{SITENAME}} должен настроить это сообщение правкой [[{{ns:MediaWiki}}:gettingstarted-msg]].',
+	'gettingstarted-welcomesiteuser' => 'Добро пожаловать в $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Добро пожаловать в $1!',
+	'gettingstarted-return' => 'Нет, спасибо, верните меня обратно',
+);
+
 /** Sinhala (සිංහල)
  * @author පසිඳු කාවින්ද
  */
@@ -247,6 +271,14 @@ $messages['sv'] = array(
 	'gettingstarted-welcomesiteuser' => 'Välkommen till $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Välkommen till $1!',
 	'gettingstarted-return' => 'Nej tack, ta mig tillbaka',
+);
+
+/** Tamil (தமிழ்)
+ * @author Shanmugamp7
+ */
+$messages['ta'] = array(
+	'gettingstarted-welcomesiteuser' => '$1-க்கு வருக, $2!',
+	'gettingstarted-welcomesiteuseranon' => '$1-க்கு வருக!',
 );
 
 /** Telugu (తెలుగు)

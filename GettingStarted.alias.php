@@ -22,3 +22,8 @@ $specialPageAliases['mk'] = array(
 $specialPageAliases['vi'] = array(
 	'GettingStarted' => array( 'Bắt_đầu' ),
 );
+
+/** Traditional Chinese (中文（繁體）‎) */
+$specialPageAliases['zh-hant'] = array(
+	'GettingStarted' => array( '入門指南' ),
+);
