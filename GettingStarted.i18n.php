@@ -141,6 +141,9 @@ $messages['id'] = array(
  * @author Beta16
  */
 $messages['it'] = array(
+	'gettingstarted' => 'Guida introduttiva',
+	'gettingstarted-desc' => "Aggiunge una [[Special:GettingStarted|pagina di benvenuto]] per i nuovi utenti (mostrata dopo la creazione dell'account)",
+	'gettingstarted-msg' => 'Un amministratore di {{SITENAME}} dovrebbe personalizzare questo messaggio modificando [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Benvenuto su $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Benvenuto su $1!',
 );
@@ -231,6 +234,18 @@ $messages['nl'] = array(
 	'gettingstarted-return' => 'Nee bedankt. Ik wil graag terug',
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'gettingstarted' => 'Për ancaminé',
+	'gettingstarted-desc' => "A gionta na [[Special:GettingStarted|pagina ëd bin-ëvnù]] për utent neuv (mostà d'apress la creassion dël cont)",
+	'gettingstarted-msg' => "N'aministrador dzor {{SITENAME}} a dovrìa përsonalisé sto mëssagi modificand [[{{ns:MediaWiki}}:gettingstarted-msg]].",
+	'gettingstarted-welcomesiteuser' => 'Bin-ëvnà a $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Bin ëvnù a $1!',
+	'gettingstarted-return' => 'Nò mersì, pòrtme andré',
+);
+
 /** Romanian (română)
  * @author Firilacroco
  */
@@ -239,6 +254,14 @@ $messages['ro'] = array(
 	'gettingstarted-welcomesiteuser' => 'Bine ați venit la $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Bine ați venit la $1!',
 	'gettingstarted-return' => 'Nu, mulțumesc, du-mă înapoi',
+);
+
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'gettingstarted-welcomesiteuser' => 'Bovègne sus a, $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Bovègne sus a, $1!',
 );
 
 /** Russian (русский)
