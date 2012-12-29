@@ -48,6 +48,16 @@ $messages['de'] = array(
 	'gettingstarted-return' => 'Nein danke, bring mich zurück',
 );
 
+/** Greek (Ελληνικά)
+ * @author ZaDiak
+ */
+$messages['el'] = array(
+	'gettingstarted' => 'Ξεκινώντας',
+	'gettingstarted-welcomesiteuser' => 'Καλώς ήλθατε στο $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Καλώς ήλθατε στο $1!',
+	'gettingstarted-return' => 'Όχι ευχαριστώ, πήγαινε με πίσω',
+);
+
 /** Esperanto (Esperanto)
  * @author Yekrats
  */
