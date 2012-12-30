@@ -123,6 +123,16 @@ $messages['fr'] = array(
 	'gettingstarted-return' => "Non merci, ramenez-moi d'où je viens",
 );
 
+/** Franco-Provençal (arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'gettingstarted' => 'Por emmodar',
+	'gettingstarted-welcomesiteuser' => 'Benvegnua dessus $1, $2 !',
+	'gettingstarted-welcomesiteuseranon' => 'Benvegnua dessus $1 !',
+	'gettingstarted-return' => 'Nan, bien grant-marci, ramenâd-mè de yô que vegno',
+);
+
 /** Galician (galego)
  * @author Toliño
  */
