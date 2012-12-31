@@ -36,6 +36,15 @@ $messages['qqq'] = array(
 	'gettingstarted-return' => 'Text of navigation button for returning to previous page',
 );
 
+/** Czech (česky)
+ * @author Vks
+ */
+$messages['cs'] = array(
+	'gettingstarted-welcomesiteuser' => 'Vítá vás $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Vítejte na $1!',
+	'gettingstarted-return' => 'Ne, děkuji, vemte mě zpět',
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  */
