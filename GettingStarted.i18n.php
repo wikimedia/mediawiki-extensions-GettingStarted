@@ -17,6 +17,9 @@ $messages['en'] = array(
 	'gettingstarted-welcomesiteuser' => "Welcome to $1, $2!",
 	'gettingstarted-welcomesiteuseranon' => "Welcome to $1!",
 	'gettingstarted-return' => "No thanks, take me back",
+	// Change tags
+	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: new editor [[{{ns:Project}}:GettingStarted|getting started]]',
+	'tag-gettingstarted_edit-description' => 'Edit of a page user chose from the task list in [[Special:GettingStarted]]',
 );
 
 /** Message documentation (Message documentation)
@@ -34,6 +37,8 @@ $messages['qqq'] = array(
 	'gettingstarted-welcomesiteuseranon' => 'The title of the Getting Started page for anonymous users.
 * $1 - sitename',
 	'gettingstarted-return' => 'Text of navigation button for returning to previous page',
+	'tag-gettingstarted_edit' => 'Text of tag identifying an edit from GS that appears e.g. in Special:RecentChanges, see also {{msg-mw|tag-gettingstarted_edit-description}}',
+	'tag-gettingstarted_edit-description' => 'Description of tag that appears e.g. in Special:Tags',
 );
 
 /** Czech (česky)

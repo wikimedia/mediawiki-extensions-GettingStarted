@@ -16,6 +16,7 @@ $wgExtensionCredits[ 'specialpage' ][] = array(
 
 $wgAutoloadClasses += array(
 	'SpecialGettingStarted' => __DIR__ . '/SpecialGettingStarted.php',
+	'GettingStartedHooks'   => __DIR__ . '/GettingStarted.hooks.php'
 );
 
 $wgExtensionMessagesFiles[ 'GettingStarted' ] = __DIR__ . '/GettingStarted.i18n.php';
@@ -65,3 +66,6 @@ $wgHooks[ 'BeforeWelcomeCreation' ][] = function( &$welcome_creation_msg, &$inje
 
 	return TRUE;
 };
+
+$wgHooks[ 'RecentChange_save' ][] = 'GettingStartedHooks::onRecentChange_save';
+$wgHooks[ 'ListDefinedTags' ][] = 'GettingStartedHooks::onListDefinedTags';
