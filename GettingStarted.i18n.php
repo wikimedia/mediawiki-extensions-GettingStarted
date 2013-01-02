@@ -45,6 +45,18 @@ $messages['cs'] = array(
 	'gettingstarted-return' => 'Ne, děkuji, vemte mě zpět',
 );
 
+/** Danish (dansk)
+ * @author Christian List
+ */
+$messages['da'] = array(
+	'gettingstarted' => 'Kom i gang',
+	'gettingstarted-desc' => 'Tilføjer en [[Special:GettingStarted|velkomstside]] for nye brugere (vist efter oprettelse af konto)',
+	'gettingstarted-msg' => 'En administrator på {{SITENAME}} bør tilpasse denne meddelelse ved at redigere [[{{ns:MediaWiki}}:gettingstarted-msg]].',
+	'gettingstarted-welcomesiteuser' => 'Velkommen til $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Velkommen til $1!',
+	'gettingstarted-return' => 'Nej tak, tag mig tilbage',
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  */
@@ -121,15 +133,16 @@ $messages['fi'] = array(
 );
 
 /** French (français)
+ * @author Crochet.david
  * @author Gomoko
  */
 $messages['fr'] = array(
 	'gettingstarted' => 'Pour commencer',
-	'gettingstarted-desc' => "Ajoute une [[Special:GettingStarted|page d'accueil]] pour les nouveaux utilisateurs (affichée après la création de compte)",
+	'gettingstarted-desc' => 'Ajoute une [[Special:GettingStarted|page d’accueil]] pour les nouveaux utilisateurs (affichée après la création de compte)',
 	'gettingstarted-msg' => 'Un administrateur sur {{SITENAME}} devrait personnaliser ce message en modifiant [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Bienvenue sur $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Bienvenue sur $1!',
-	'gettingstarted-return' => "Non merci, ramenez-moi d'où je viens",
+	'gettingstarted-return' => 'Non merci, ramenez-moi d’où je viens',
 );
 
 /** Franco-Provençal (arpetan)

@@ -18,6 +18,11 @@ $specialPageAliases['mk'] = array(
 	'GettingStarted' => array( 'КакоДаПочнете' ),
 );
 
+/** Dutch (Nederlands) */
+$specialPageAliases['nl'] = array(
+	'GettingStarted' => array( 'AanDeSlag' ),
+);
+
 /** Vietnamese (Tiếng Việt) */
 $specialPageAliases['vi'] = array(
 	'GettingStarted' => array( 'Bắt_đầu' ),
