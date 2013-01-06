@@ -69,6 +69,18 @@ $messages['de'] = array(
 	'gettingstarted-return' => 'Nein danke, bring mich zurück',
 );
 
+/** Lower Sorbian (dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'gettingstarted' => 'Prědne kšace',
+	'gettingstarted-desc' => 'Pśidawa [[Special:GettingStarted|pówitański bok]] za nowych wužywarjow, kótaryž pokazujo se pó załoženju konta',
+	'gettingstarted-msg' => 'Administrator na {{GRAMMAR:lokatiw|{{SITENAME}}}} by měł toś tu powěźeńku pśez wobźěłowanje [[{{ns:MediaWiki}}:gettingstarted-msg]] pśiměriś.',
+	'gettingstarted-welcomesiteuser' => 'Witaj do $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Witaj do $1',
+	'gettingstarted-return' => 'Ně, źěkujom se, spóraj mě slědk',
+);
+
 /** Greek (Ελληνικά)
  * @author ZaDiak
  */
@@ -165,6 +177,18 @@ $messages['gl'] = array(
 	'gettingstarted-welcomesiteuser' => '{{GENDER:$2|Benvido|Benvida}} a $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Dámoslle a benvida a $1!',
 	'gettingstarted-return' => 'Non grazas, levádeme de volta',
+);
+
+/** Upper Sorbian (hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'gettingstarted' => 'Prěnje kroki',
+	'gettingstarted-desc' => 'Přidawa [[Special:GettingStarted|witansku stronu]] za nowych wužiwarjow, kotraž so po załoženju konta pokazuje',
+	'gettingstarted-msg' => 'Administrator na {{GRAMMAR:lokatiw|{{SITENAME}}}} měł tutu zdźělenku přez wobdźěłowanje [[{{ns:MediaWiki}}:gettingstarted-msg]] přiměrić.',
+	'gettingstarted-welcomesiteuser' => 'Witaj do $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Witaj do $1',
+	'gettingstarted-return' => 'Ně, dźakuju so, dowjedź mje wróćo',
 );
 
 /** Indonesian (Bahasa Indonesia)
