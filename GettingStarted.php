@@ -27,9 +27,6 @@ $wgSpecialPageGroups[ 'GettingStarted' ] = 'users';
 // Modules
 $wgResourceModules[ 'ext.gettingstarted' ] = array(
 	'styles' => 'resources/ext.gettingstarted.css',
-	'dependencies' => array(
-		'schema.OpenTask',	// defined in E3Experiments
-	),
 	'position' => 'top',
 
 	'localBasePath' => __DIR__,
