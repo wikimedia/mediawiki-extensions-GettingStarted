@@ -18,7 +18,7 @@ class GettingStartedHooks {
 	public static function onRecentChange_save( $recentChange ) {
 		global $wgRequest;
 
-		if ( $recentChange->getAttribute( 'rc_type' ) !== constant( 'RC_EDIT' ) ) {
+		if ( $recentChange->getAttribute( 'rc_type' ) !== RC_EDIT ) {
 			return true;
 		}
 		$openTasks = $wgRequest->getCookie( 'openTask', '' );
