@@ -39,8 +39,11 @@ $messages['qqq'] = array(
 * $1 - sitename',
 	'gettingstarted-return' => 'Text of navigation button for returning to previous page',
 	'gettingstarted-project-link' => 'Name of page that describes how GettingStarted is used on the wiki',
-	'tag-gettingstarted_edit' => 'Text of tag identifying an edit from GS that appears e.g. in Special:RecentChanges, see also {{msg-mw|tag-gettingstarted_edit-description}}',
-	'tag-gettingstarted_edit-description' => 'Description of tag that appears e.g. in Special:Tags',
+	'tag-gettingstarted_edit' => 'Text of tag identifying an edit from GettingStarted that appears e.g. in [[Special:RecentChanges]].
+
+See also:
+* {{msg-mw|tag-gettingstarted_edit-description}}',
+	'tag-gettingstarted_edit-description' => 'Description of tag that appears e.g. in [[Special:Tags]]',
 );
 
 /** Czech (česky)
@@ -65,15 +68,19 @@ $messages['da'] = array(
 );
 
 /** German (Deutsch)
+ * @author Kghbln
  * @author Metalhead64
  */
 $messages['de'] = array(
 	'gettingstarted' => 'Erste Schritte',
-	'gettingstarted-desc' => 'Ergänzt eine [[Special:GettingStarted|Willkommensseite]] für neue Benutzer (wird nach der Benutzerkontenerstellung angezeigt)',
+	'gettingstarted-desc' => 'Ergänzt eine [[Special:GettingStarted|Willkommensseite]] für neue Benutzer, die nach deren Registrierung angezeigt wird',
 	'gettingstarted-msg' => 'Ein Administrator auf {{SITENAME}} sollte diese Nachricht durch das Bearbeiten von [[{{ns:MediaWiki}}:gettingstarted-msg]] anpassen.',
 	'gettingstarted-welcomesiteuser' => 'Willkommen bei $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Willkommen bei $1!',
 	'gettingstarted-return' => 'Nein danke, bring mich zurück',
+	'gettingstarted-project-link' => '{{ns:Project}}:Erste Schritte',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Markierung]]: [[{{MediaWiki:gettingstarted-project-link}}|Erste Schritte]] eines neuen Autors',
+	'tag-gettingstarted_edit-description' => 'Bearbeitung einer Seite, die der Benutzer aus der Aufgabenliste von [[Special:GettingStarted]] ausgewählt hat',
 );
 
 /** Lower Sorbian (dolnoserbski)
@@ -162,6 +169,9 @@ $messages['fr'] = array(
 	'gettingstarted-welcomesiteuser' => 'Bienvenue sur $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Bienvenue sur $1!',
 	'gettingstarted-return' => 'Non merci, ramenez-moi d’où je viens',
+	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Balise]]: un nouvel éditeur [[{{MediaWiki:gettingstarted-project-link}}|a débuté]]',
+	'tag-gettingstarted_edit-description' => "Modification d'une page choisie par l’utilisateur dans la liste des tâches dans [[Special:GettingStarted]]",
 );
 
 /** Franco-Provençal (arpetan)
@@ -184,6 +194,9 @@ $messages['gl'] = array(
 	'gettingstarted-welcomesiteuser' => '{{GENDER:$2|Benvido|Benvida}} a $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Dámoslle a benvida a $1!',
 	'gettingstarted-return' => 'Non grazas, levádeme de volta',
+	'gettingstarted-project-link' => '{{ns:Project}}:Primeiros pasos',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Etiqueta]]: Novo editor dando os [[{{MediaWiki:gettingstarted-project-link}}|primeiros pasos]]',
+	'tag-gettingstarted_edit-description' => 'Modificación dunha páxina que o usuario elixiu desde a lista de tarefas en [[Special:GettingStarted]]',
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -228,6 +241,9 @@ $messages['ja'] = array(
 	'gettingstarted-desc' => '新しい利用者向けに[[Special:GettingStarted|ようこそページ]]を追加する (アカウント作成した際に表示される)',
 	'gettingstarted-welcomesiteuser' => '$2さん、$1へようこそ!',
 	'gettingstarted-welcomesiteuseranon' => '$1へようこそ!',
+	'gettingstarted-return' => '不要です。元のページに戻ります。',
+	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
+	'tag-gettingstarted_edit-description' => '利用者が [[Special:GettingStarted]] のタスク一覧から選択したページの編集',
 );
 
 /** Korean (한국어)
@@ -240,6 +256,9 @@ $messages['ko'] = array(
 	'gettingstarted-welcomesiteuser' => '$2님, $1에 오신 것을 환영합니다!',
 	'gettingstarted-welcomesiteuseranon' => '$1에 오신 것을 환영합니다!',
 	'gettingstarted-return' => '괜찮습니다, 되돌아가겠습니다',
+	'gettingstarted-project-link' => '{{ns:Project}}:시작하기',
+	'tag-gettingstarted_edit' => '[[Special:Tags|태그]]: 새 편집자 [[{{MediaWiki:gettingstarted-project-link}}|시작하기]]',
+	'tag-gettingstarted_edit-description' => '사용자가 [[Special:GettingStarted]]에 작업 목록에서 선택한 문서의 편집',
 );
 
 /** Kirghiz (Кыргызча)
@@ -269,6 +288,8 @@ $messages['mk'] = array(
 	'gettingstarted-welcomesiteuser' => 'Добре дојдовте на $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Добре дојдовте на $1!',
 	'gettingstarted-return' => 'Не благодарам. Врати ме назад',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Ознака]]: нов уредник [[{{ns:Project}}:GettingStarted|почнува со работа]]', # Fuzzy
+	'tag-gettingstarted_edit-description' => 'Уредување на страница што корисникот ја одбрал од списокот на задачи на [[Special:GettingStarted]]',
 );
 
 /** Malay (Bahasa Melayu)
