@@ -288,7 +288,8 @@ $messages['mk'] = array(
 	'gettingstarted-welcomesiteuser' => 'Добре дојдовте на $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Добре дојдовте на $1!',
 	'gettingstarted-return' => 'Не благодарам. Врати ме назад',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Ознака]]: нов уредник [[{{ns:Project}}:GettingStarted|почнува со работа]]', # Fuzzy
+	'gettingstarted-project-link' => '{{ns:Project}}:ПрвиЧекори',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Ознака]]: нов уредник [[{{MediaWiki:gettingstarted-project-link}}|почнува со работа]]',
 	'tag-gettingstarted_edit-description' => 'Уредување на страница што корисникот ја одбрал од списокот на задачи на [[Special:GettingStarted]]',
 );
 
@@ -338,6 +339,9 @@ $messages['pms'] = array(
 	'gettingstarted-welcomesiteuser' => 'Bin-ëvnà a $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Bin ëvnù a $1!',
 	'gettingstarted-return' => 'Nò mersì, pòrtme andré',
+	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Tichëtta]]: editor neuv [[{{MediaWiki:gettingstarted-project-link}}|ancaminé]]',
+	'tag-gettingstarted_edit-description' => "Modìfica ëd na pagina che l'utent a sern da la lista dij travaj an [[Special:GettingStarted]]",
 );
 
 /** Romanian (română)
@@ -431,6 +435,9 @@ $messages['vi'] = array(
 	'gettingstarted-welcomesiteuser' => 'Chào mừng $2 đến với $1!',
 	'gettingstarted-welcomesiteuseranon' => 'Chào mừng bạn đến với $1!',
 	'gettingstarted-return' => 'Thôi, quay lại',
+	'gettingstarted-project-link' => '{{ns:Project}}:Bắt đầu',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Thẻ]]: Người dùng mới đang [[{{MediaWiki:gettingstarted-project-link}}|bắt đầu]]',
+	'tag-gettingstarted_edit-description' => 'Sửa đổi trang được gợi ý trong danh sách việc cần làm tại [[Special:GettingStarted]]',
 );
 
 /** Simplified Chinese (中文（简体）‎)
