@@ -270,6 +270,19 @@ $messages['ky'] = array(
 	'gettingstarted-welcomesiteuseranon' => '$1 сайтына кош келиңиз!',
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'gettingstarted' => 'Fir unzefänken',
+	'gettingstarted-desc' => 'Setzt eng [[Special:GettingStarted|Begréissungssäit]] fir nei Benotzer derbäi (gëtt nom Opmaache vum Benotzerkont gewisen)',
+	'gettingstarted-welcomesiteuser' => 'Wëllkomm op $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Wëllkomm op $1!',
+	'gettingstarted-return' => 'Nee Merci, bréngt mech zréck wou ech virdru war',
+	'gettingstarted-project-link' => '{{ns:Project}}:Fir unzefänken',
+	'tag-gettingstarted_edit-description' => 'Eng Säit änneren déi de Benotzer aus der Lëscht op [[Special:GettingStarted]] eraussicht',
+);
+
 /** Lithuanian (lietuvių)
  * @author Eitvys200
  */
