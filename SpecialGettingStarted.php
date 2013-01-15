@@ -9,7 +9,10 @@ class SpecialGettingStarted extends SpecialPage {
 
 
 		$output = $this->getOutput();
-		$output->addModuleStyles( 'ext.gettingstarted' );
+		$output->addModules( array(
+				'ext.guidedTour.tour.gettingstartedpage',
+				'ext.gettingstarted'
+		) );
 
 		$this->setHeaders();
 		$user = $this->getUser();

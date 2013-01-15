@@ -51,4 +51,21 @@ class GettingStartedHooks {
 		$tags[] = 'gettingstarted edit';
 		return true;
 	}
+
+	public static function onBeforeWelcomeCreation( &$welcomeCreationMsg, &$injectHtml ) {
+		global $wgOut;
+
+		// Do nothing on mobile.
+		if ( class_exists( 'MobileContext' ) ) {
+			if ( MobileContext::singleton()->shouldDisplayMobileView() ) {
+				return true;
+			}
+		}
+
+		$welcomeCreationMsg = 'gettingstarted-msg';
+
+		$wgOut->addModules( 'ext.gettingstarted.accountcreation' );
+
+		return true;
+	}
 }

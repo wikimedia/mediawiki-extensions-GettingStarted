@@ -16,11 +16,22 @@ $messages['en'] = array(
 	'gettingstarted-msg' => 'An administrator on {{SITENAME}} should customize this message by editing [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => "Welcome to $1, $2!",
 	'gettingstarted-welcomesiteuseranon' => "Welcome to $1!",
-	'gettingstarted-return' => "No thanks, take me back",
+	'gettingstarted-return' => "← No thanks, return to the page I was reading",
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	// Change tags
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: new editor [[{{MediaWiki:gettingstarted-project-link}}|getting started]]',
 	'tag-gettingstarted_edit-description' => 'Edit of a page that the user chose from the task list in [[Special:GettingStarted]]',
+
+	// Tours
+
+	// gettingstartedpage
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Copyediting',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Copyediting is simply improving how things are worded. The articles below are in decent shape, but some users felt they could be  better. See if you can improve things. Just click the Edit tab!',
+	'guidedtour-tour-gettingstartedpage-fix-spelling-title' => 'Fix spelling and grammar',
+	'guidedtour-tour-gettingstartedpage-fix-spelling-description' => 'Fixing spelling and grammar is an easy way to improve the readability of {{SITENAME}}. Just click the Edit tab and make a couple fixes!',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Adding links',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => "Have you ever accidentally spent two hours clicking around on {{SITENAME}}? We've been there. Pick one of these articles and look for potential links to others. Just click the Edit tab to add them!",
+
 );
 
 /** Message documentation (Message documentation)
@@ -44,6 +55,12 @@ $messages['qqq'] = array(
 See also:
 * {{msg-mw|tag-gettingstarted_edit-description}}',
 	'tag-gettingstarted_edit-description' => 'Description of tag that appears e.g. in [[Special:Tags]]',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Title of copy-editing tooltip on Special:GettingStarted',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Description of copy-editing tooltip on Special:GettingStarted',
+	'guidedtour-tour-gettingstartedpage-fix-spelling-title' => 'Title of spelling and grammar tooltip on Special:GettingStarted',
+	'guidedtour-tour-gettingstartedpage-fix-spelling-description' => 'Description of spelling and grammar tooltip on Special:GettingStarted',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Title of tooltip about adding links on Special:GettingStarted',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Description of tooltip about adding links on Special:GettingStarted',
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)

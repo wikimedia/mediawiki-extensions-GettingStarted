@@ -26,17 +26,35 @@ $wgSpecialPages[ 'GettingStarted' ] = 'SpecialGettingStarted';
 $wgSpecialPageGroups[ 'GettingStarted' ] = 'users';
 
 // Modules
-$wgResourceModules[ 'ext.gettingstarted' ] = array(
-	'styles' => 'resources/ext.gettingstarted.css',
-	'position' => 'top',
 
-	'localBasePath' => __DIR__,
-	'remoteExtPath' => 'GettingStarted',
+$gettingStartedModuleInfo = array(
+	'localBasePath' => __DIR__ . '/resources',
+	'remoteExtPath' => 'GettingStarted/resources',
 );
+
+$wgResourceModules['ext.guidedTour.tour.gettingstartedpage'] = array(
+	'scripts' => 'tours/gettingstartedpage.js',
+	'dependencies' => 'ext.guidedTour.lib',
+	'messages' => array(
+		'guidedtour-tour-gettingstartedpage-copy-editing-title',
+		'guidedtour-tour-gettingstartedpage-copy-editing-description',
+		'guidedtour-tour-gettingstartedpage-fix-spelling-title',
+		'guidedtour-tour-gettingstartedpage-fix-spelling-description',
+		'guidedtour-tour-gettingstartedpage-add-links-title',
+		'guidedtour-tour-gettingstartedpage-add-links-description',
+	),
+) + $gettingStartedModuleInfo;
+
+$wgResourceModules[ 'ext.gettingstarted' ] = array(
+	'scripts' => 'ext.gettingstarted.js',
+	'styles' => 'ext.gettingstarted.css',
+	'position' => 'top', // For CSS
+	'dependencies' => 'ext.guidedTour.tour.gettingstartedpage',
+) + $gettingStartedModuleInfo;
 
 // This is the version that runs on account creation.  It depends on the CSS code above.
 $wgResourceModules[ 'ext.gettingstarted.accountcreation' ] = array(
-	'scripts' => 'resources/ext.gettingstarted.accountcreation.js',
+	'scripts' => 'ext.gettingstarted.accountcreation.js',
 	'messages' => array(
 		'gettingstarted-welcomesiteuser', // XXX (mattflaschen, 2012-12-12): This is a workaround until we move this into core, at which point it can be done server-side.
 		'gettingstarted-return',
@@ -46,27 +64,8 @@ $wgResourceModules[ 'ext.gettingstarted.accountcreation' ] = array(
 		'mediawiki.util',
 	),
 	'position' => 'top',
+) + $gettingStartedModuleInfo;
 
-	'localBasePath' => __DIR__,
-	'remoteExtPath' => 'GettingStarted',
-);
-
-$wgHooks[ 'BeforeWelcomeCreation' ][] = function( &$welcome_creation_msg, &$inject_html ) {
-	global $wgUser, $wgOut;
-
-	// Do nothing on mobile.
-	if ( class_exists( 'MobileContext' ) && MobileContext::singleton()->shouldDisplayMobileView() ) {
-			return true;
-	}
-
-	// Activate for users with even user IDs.
-	if ( ( $wgUser->getId() % 2 ) === 0 ) {
-		$welcome_creation_msg = 'gettingstarted-msg';
-		$wgOut->addModules( 'ext.gettingstarted.accountcreation' );
-	}
-
-	return true;
-};
-
+$wgHooks[ 'BeforeWelcomeCreation' ][] = 'GettingStartedHooks::onBeforeWelcomeCreation';
 $wgHooks[ 'RecentChange_save' ][] = 'GettingStartedHooks::onRecentChange_save';
 $wgHooks[ 'ListDefinedTags' ][] = 'GettingStartedHooks::onListDefinedTags';
