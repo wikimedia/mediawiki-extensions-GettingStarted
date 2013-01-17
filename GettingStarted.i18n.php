@@ -225,6 +225,7 @@ $messages['id'] = array(
 
 /** Italian (italiano)
  * @author Beta16
+ * @author Gianfranco
  */
 $messages['it'] = array(
 	'gettingstarted' => 'Guida introduttiva',
@@ -232,6 +233,7 @@ $messages['it'] = array(
 	'gettingstarted-msg' => 'Un amministratore di {{SITENAME}} dovrebbe personalizzare questo messaggio modificando [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Benvenuto su $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Benvenuto su $1!',
+	'gettingstarted-return' => 'No grazie, riportami dove stavo prima',
 );
 
 /** Japanese (日本語)

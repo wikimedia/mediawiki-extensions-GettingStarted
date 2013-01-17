@@ -13,6 +13,11 @@ $specialPageAliases['en'] = array(
 	'GettingStarted' => array( 'GettingStarted', 'Getting Started' ),
 );
 
+/** German (Deutsch) */
+$specialPageAliases['de'] = array(
+	'GettingStarted' => array( 'Anfangen' ),
+);
+
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
 	'GettingStarted' => array( '시작하기' ),
