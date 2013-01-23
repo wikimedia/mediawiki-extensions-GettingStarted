@@ -52,19 +52,20 @@ $wgResourceModules[ 'ext.gettingstarted.accountcreation' ] = array(
 );
 
 $wgHooks[ 'BeforeWelcomeCreation' ][] = function( &$welcome_creation_msg, &$inject_html ) {
+	global $wgRequest, $wgUser, $wgOut;
+
 	// Do nothing on mobile.
-	if ( class_exists( 'MobileContext' ) ) {
-		if ( MobileContext::singleton()->shouldDisplayMobileView() ) {
-			return TRUE;
-		}
+	if ( class_exists( 'MobileContext' ) && MobileContext::singleton()->shouldDisplayMobileView() ) {
+			return true;
 	}
 
-	$welcome_creation_msg = 'gettingstarted-msg';
+	// Do not activate for users with even user IDs.
+	if ( ( $wgUser->getId() % 2 ) === 0 ) {
+		$welcome_creation_msg = 'gettingstarted-msg';
+		$wgOut->addModules( 'ext.gettingstarted.accountcreation' );
+	}
 
-	global $wgOut;
-	$wgOut->addModules( 'ext.gettingstarted.accountcreation' );
-
-	return TRUE;
+	return true;
 };
 
 $wgHooks[ 'RecentChange_save' ][] = 'GettingStartedHooks::onRecentChange_save';
