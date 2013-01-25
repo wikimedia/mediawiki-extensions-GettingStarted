@@ -16,7 +16,7 @@ $wgExtensionCredits[ 'specialpage' ][] = array(
 
 $wgAutoloadClasses += array(
 	'SpecialGettingStarted' => __DIR__ . '/SpecialGettingStarted.php',
-	'GettingStartedHooks'   => __DIR__ . '/GettingStarted.hooks.php'
+	'GettingStartedHooks' => __DIR__ . '/GettingStarted.hooks.php'
 );
 
 $wgExtensionMessagesFiles[ 'GettingStarted' ] = __DIR__ . '/GettingStarted.i18n.php';
@@ -36,6 +36,7 @@ $wgResourceModules['ext.guidedTour.tour.gettingstartedpage'] = array(
 	'scripts' => 'tours/gettingstartedpage.js',
 	'dependencies' => 'ext.guidedTour.lib',
 	'messages' => array(
+		'vector-view-edit',
 		'guidedtour-tour-gettingstartedpage-copy-editing-title',
 		'guidedtour-tour-gettingstartedpage-copy-editing-description',
 		'guidedtour-tour-gettingstartedpage-fix-spelling-title',

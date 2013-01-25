@@ -12,7 +12,7 @@
 			} );
 
 			// Wait until the click event is over before showing it, so the
-			// event doesn't propogate up and hide the guider we just showed.
+			// event doesn't propagate up and hide the guider we just showed.
 			window.setTimeout( function () {
 				mw.libs.guiders.resume( tourId );
 			}, 0 );

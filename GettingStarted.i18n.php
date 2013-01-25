@@ -26,11 +26,11 @@ $messages['en'] = array(
 
 	// gettingstartedpage
 	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Copyediting',
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Copyediting is simply improving how things are worded. The articles below are in decent shape, but some users felt they could be  better. See if you can improve things. Just click the Edit tab!',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Copyediting is simply improving how things are worded. The articles below are in decent shape, but some users felt they could be better. See if you can improve things. Just click the {{int:vector-view-edit}} tab!',
 	'guidedtour-tour-gettingstartedpage-fix-spelling-title' => 'Fix spelling and grammar',
-	'guidedtour-tour-gettingstartedpage-fix-spelling-description' => 'Fixing spelling and grammar is an easy way to improve the readability of {{SITENAME}}. Just click the Edit tab and make a couple fixes!',
+	'guidedtour-tour-gettingstartedpage-fix-spelling-description' => 'Fixing spelling and grammar is an easy way to improve the readability of {{SITENAME}}. Just click the {{int:vector-view-edit}} tab and make a couple fixes!',
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Adding links',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => "Have you ever accidentally spent two hours clicking around on {{SITENAME}}? We've been there. Pick one of these articles and look for potential links to others. Just click the Edit tab to add them!",
+	'guidedtour-tour-gettingstartedpage-add-links-description' => "Have you ever accidentally spent two hours clicking around on {{SITENAME}}? We've been there. Pick one of these articles and look for potential links to others. Just click the {{int:vector-view-edit}} tab to add them!",
 
 );
 
