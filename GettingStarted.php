@@ -52,14 +52,14 @@ $wgResourceModules[ 'ext.gettingstarted.accountcreation' ] = array(
 );
 
 $wgHooks[ 'BeforeWelcomeCreation' ][] = function( &$welcome_creation_msg, &$inject_html ) {
-	global $wgRequest, $wgUser, $wgOut;
+	global $wgUser, $wgOut;
 
 	// Do nothing on mobile.
 	if ( class_exists( 'MobileContext' ) && MobileContext::singleton()->shouldDisplayMobileView() ) {
 			return true;
 	}
 
-	// Do not activate for users with even user IDs.
+	// Activate for users with even user IDs.
 	if ( ( $wgUser->getId() % 2 ) === 0 ) {
 		$welcome_creation_msg = 'gettingstarted-msg';
 		$wgOut->addModules( 'ext.gettingstarted.accountcreation' );
