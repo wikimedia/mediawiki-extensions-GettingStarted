@@ -348,10 +348,16 @@ $messages['mk'] = array(
 	'gettingstarted-msg' => 'Администратор на {{SITENAME}} треба да ја прилагоди поракава, менувајќи го [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Добре дојдовте на $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Добре дојдовте на $1!',
-	'gettingstarted-return' => 'Не благодарам. Врати ме назад',
+	'gettingstarted-return' => '← Не благодарам. Врати ме на страницата што си ја читав.',
 	'gettingstarted-project-link' => '{{ns:Project}}:ПрвиЧекори',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Ознака]]: нов уредник [[{{MediaWiki:gettingstarted-project-link}}|почнува со работа]]',
 	'tag-gettingstarted_edit-description' => 'Уредување на страница што корисникот ја одбрал од списокот на задачи на [[Special:GettingStarted]]',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Лекторирање',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Лекторирањето едноставно значи исправка на изразувањето. Долунаведените статии се пристојно направени, но некои корисници сметаат дека можат да бидат подобри. Видете дали можете да ги подобрите. Едноставно стиснете на јазичето „{{int:vector-view-edit}}“!',
+	'guidedtour-tour-gettingstartedpage-fix-spelling-title' => 'Правописна и граматичка исправка',
+	'guidedtour-tour-gettingstartedpage-fix-spelling-description' => 'Вршејќи исправки во правописот и граматиката ја подобрувате читливоста на {{SITENAME}}. Едноставно стиснете на јазичето „{{int:vector-view-edit}}“ и направете некои исправки!',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Ставање на врски',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Дали некогаш по грешка сте провеле два часа стискајќи по {{SITENAME}}? Ете, и ние исто. Изберете една од статиите и гледајте по зборовите каде може да се стават врски до други статии. Едноставно стиснете на јазичето „{{int:vector-view-edit}}“ за да ги ставите!',
 );
 
 /** Malay (Bahasa Melayu)
