@@ -20,17 +20,17 @@ $messages['en'] = array(
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	// Change tags
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: new editor [[{{MediaWiki:gettingstarted-project-link}}|getting started]]',
-	'tag-gettingstarted_edit-description' => 'Edit of a page that the user chose from the task list in [[Special:GettingStarted]]',
+	'tag-gettingstarted_edit-description' => 'Edit of a page that the user chose from the task list in [[Special:GettingStarted|Getting started]]',
 
 	// Tours
 
 	// gettingstartedpage
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Copyediting',
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Copyediting is simply improving how things are worded. The articles below are in decent shape, but some users felt they could be better. See if you can improve things. Just click the {{int:vector-view-edit}} tab!',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Copy editing',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Copy editing is simply improving how things are worded. The pages below are in decent shape, but some users felt they could be better. See if you can improve things. Just click the {{int:vector-view-edit}} tab!',
 	'guidedtour-tour-gettingstartedpage-fix-spelling-title' => 'Fix spelling and grammar',
 	'guidedtour-tour-gettingstartedpage-fix-spelling-description' => 'Fixing spelling and grammar is an easy way to improve the readability of {{SITENAME}}. Just click the {{int:vector-view-edit}} tab and make a couple fixes!',
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Adding links',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => "Have you ever accidentally spent two hours clicking around on {{SITENAME}}? We've been there. Pick one of these articles and look for potential links to others. Just click the {{int:vector-view-edit}} tab to add them!",
+	'guidedtour-tour-gettingstartedpage-add-links-description' => "Have you ever accidentally spent two hours clicking around on {{SITENAME}}? We've been there. Pick one of these pages and look for potential links to others. Just click the {{int:vector-view-edit}} tab to add them!",
 
 );
 
