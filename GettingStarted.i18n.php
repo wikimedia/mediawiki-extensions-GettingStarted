@@ -84,7 +84,7 @@ $messages['be-tarask'] = array(
 $messages['cs'] = array(
 	'gettingstarted-welcomesiteuser' => 'Vítá vás $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Vítejte na $1!',
-	'gettingstarted-return' => 'Ne, děkuji, vemte mě zpět',
+	'gettingstarted-return' => 'Ne, děkuji, vemte mě zpět', # Fuzzy
 );
 
 /** Danish (dansk)
@@ -96,7 +96,7 @@ $messages['da'] = array(
 	'gettingstarted-msg' => 'En administrator på {{SITENAME}} bør tilpasse denne meddelelse ved at redigere [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Velkommen til $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Velkommen til $1!',
-	'gettingstarted-return' => 'Nej tak, tag mig tilbage',
+	'gettingstarted-return' => 'Nej tak, tag mig tilbage', # Fuzzy
 );
 
 /** German (Deutsch)
@@ -130,7 +130,7 @@ $messages['dsb'] = array(
 	'gettingstarted-msg' => 'Administrator na {{GRAMMAR:lokatiw|{{SITENAME}}}} by měł toś tu powěźeńku pśez wobźěłowanje [[{{ns:MediaWiki}}:gettingstarted-msg]] pśiměriś.',
 	'gettingstarted-welcomesiteuser' => 'Witaj do $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Witaj do $1',
-	'gettingstarted-return' => 'Ně, źěkujom se, spóraj mě slědk',
+	'gettingstarted-return' => 'Ně, źěkujom se, spóraj mě slědk', # Fuzzy
 );
 
 /** Greek (Ελληνικά)
@@ -140,7 +140,7 @@ $messages['el'] = array(
 	'gettingstarted' => 'Ξεκινώντας',
 	'gettingstarted-welcomesiteuser' => 'Καλώς ήλθατε στο $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Καλώς ήλθατε στο $1!',
-	'gettingstarted-return' => 'Όχι ευχαριστώ, πήγαινε με πίσω',
+	'gettingstarted-return' => 'Όχι ευχαριστώ, πήγαινε με πίσω', # Fuzzy
 );
 
 /** Esperanto (Esperanto)
@@ -161,7 +161,7 @@ $messages['es'] = array(
 	'gettingstarted-msg' => 'Un administrador de {{SITENAME}} debe personalizar este mensaje editando [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Hola $2 ¡Bienvenido a $1!',
 	'gettingstarted-welcomesiteuseranon' => '¡Bienvenido a $1!',
-	'gettingstarted-return' => 'No gracias, volver atrás',
+	'gettingstarted-return' => 'No gracias, volver atrás', # Fuzzy
 );
 
 /** Estonian (eesti)
@@ -181,7 +181,7 @@ $messages['fa'] = array(
 	'gettingstarted' => 'شروع',
 	'gettingstarted-welcomesiteuser' => '$2، به $1 خوش‌آمدید!',
 	'gettingstarted-welcomesiteuseranon' => 'به $1 خوش‌آمدید!',
-	'gettingstarted-return' => 'نه متشکرم، من را برگردان',
+	'gettingstarted-return' => 'نه متشکرم، من را برگردان', # Fuzzy
 );
 
 /** Finnish (suomi)
@@ -193,7 +193,7 @@ $messages['fi'] = array(
 	'gettingstarted-msg' => 'Sivuston {{SITENAME}} ylläpitäjän tulisi mukauttaa tätä viestiä muokkaamalla sivua [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Tervetuloa sivustolle $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Tervetuloa sivustolle $1!',
-	'gettingstarted-return' => 'Ei kiitos, vie minut takaisin',
+	'gettingstarted-return' => 'Ei kiitos, vie minut takaisin', # Fuzzy
 );
 
 /** French (français)
@@ -206,7 +206,7 @@ $messages['fr'] = array(
 	'gettingstarted-msg' => 'Un administrateur sur {{SITENAME}} devrait personnaliser ce message en modifiant [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Bienvenue sur $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Bienvenue sur $1!',
-	'gettingstarted-return' => 'Non merci, ramenez-moi d’où je viens',
+	'gettingstarted-return' => 'Non merci, ramenez-moi d’où je viens', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Balise]]: un nouvel éditeur [[{{MediaWiki:gettingstarted-project-link}}|a débuté]]',
 	'tag-gettingstarted_edit-description' => "Modification d'une page choisie par l’utilisateur dans la liste des tâches dans [[Special:GettingStarted]]",
@@ -219,7 +219,7 @@ $messages['frp'] = array(
 	'gettingstarted' => 'Por emmodar',
 	'gettingstarted-welcomesiteuser' => 'Benvegnua dessus $1, $2 !',
 	'gettingstarted-welcomesiteuseranon' => 'Benvegnua dessus $1 !',
-	'gettingstarted-return' => 'Nan, bien grant-marci, ramenâd-mè de yô que vegno',
+	'gettingstarted-return' => 'Nan, bien grant-marci, ramenâd-mè de yô que vegno', # Fuzzy
 );
 
 /** Galician (galego)
@@ -251,7 +251,7 @@ $messages['hsb'] = array(
 	'gettingstarted-msg' => 'Administrator na {{GRAMMAR:lokatiw|{{SITENAME}}}} měł tutu zdźělenku přez wobdźěłowanje [[{{ns:MediaWiki}}:gettingstarted-msg]] přiměrić.',
 	'gettingstarted-welcomesiteuser' => 'Witaj do $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Witaj do $1',
-	'gettingstarted-return' => 'Ně, dźakuju so, dowjedź mje wróćo',
+	'gettingstarted-return' => 'Ně, dźakuju so, dowjedź mje wróćo', # Fuzzy
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -263,7 +263,7 @@ $messages['id'] = array(
 	'gettingstarted-msg' => 'Seorang pengurus {{SITENAME}} harus mengubah pesain ini dengan menyunting [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Selamat datang di $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Selamat datang di $1!',
-	'gettingstarted-return' => 'Tidak, terima kasih. Bawa saya kembali',
+	'gettingstarted-return' => 'Tidak, terima kasih. Bawa saya kembali', # Fuzzy
 );
 
 /** Italian (italiano)
@@ -276,7 +276,7 @@ $messages['it'] = array(
 	'gettingstarted-msg' => 'Un amministratore di {{SITENAME}} dovrebbe personalizzare questo messaggio modificando [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Benvenuto su $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Benvenuto su $1!',
-	'gettingstarted-return' => 'No grazie, riportami dove stavo prima',
+	'gettingstarted-return' => 'No grazie, riportami dove stavo prima', # Fuzzy
 );
 
 /** Japanese (日本語)
@@ -326,7 +326,7 @@ $messages['lb'] = array(
 	'gettingstarted-desc' => 'Setzt eng [[Special:GettingStarted|Begréissungssäit]] fir nei Benotzer derbäi (gëtt nom Opmaache vum Benotzerkont gewisen)',
 	'gettingstarted-welcomesiteuser' => 'Wëllkomm op $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Wëllkomm op $1!',
-	'gettingstarted-return' => 'Nee Merci, bréngt mech zréck wou ech virdru war',
+	'gettingstarted-return' => 'Nee Merci, bréngt mech zréck wou ech virdru war', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:Fir unzefänken',
 	'tag-gettingstarted_edit-description' => 'Eng Säit änneren déi de Benotzer aus der Lëscht op [[Special:GettingStarted]] eraussicht',
 );
@@ -369,7 +369,7 @@ $messages['ms'] = array(
 	'gettingstarted-msg' => 'Seorang pentadbir di {{SITENAME}} harus mengubahsuai pesanan ini dengan menyunting [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Selamat datang ke $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Selamat datang ke $1!',
-	'gettingstarted-return' => 'Tak apalah, bawa saya balik',
+	'gettingstarted-return' => 'Tak apalah, bawa saya balik', # Fuzzy
 );
 
 /** Maltese (Malti)
@@ -381,7 +381,7 @@ $messages['mt'] = array(
 	'gettingstarted-msg' => 'Amministratur fuq {{SITENAME}} għandu jirranġa dan il-messaġġ billi jimmodifika lil [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Merbħa fuq $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Merbħa fuq $1!',
-	'gettingstarted-return' => 'Le grazzi, ħudni lura',
+	'gettingstarted-return' => 'Le grazzi, ħudni lura', # Fuzzy
 );
 
 /** Dutch (Nederlands)
@@ -393,7 +393,7 @@ $messages['nl'] = array(
 	'gettingstarted-msg' => 'Een beheerder van {{SITENAAM}} hoort dit bericht aan te passen door [[{{ns:MediaWiki}}:gettingstarted-msg]] te bewerken.',
 	'gettingstarted-welcomesiteuser' => 'Welkom bij $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Welkom bij $1',
-	'gettingstarted-return' => 'Nee bedankt. Ik wil graag terug',
+	'gettingstarted-return' => 'Nee bedankt. Ik wil graag terug', # Fuzzy
 );
 
 /** Piedmontese (Piemontèis)
@@ -405,7 +405,7 @@ $messages['pms'] = array(
 	'gettingstarted-msg' => "N'aministrador dzor {{SITENAME}} a dovrìa përsonalisé sto mëssagi modificand [[{{ns:MediaWiki}}:gettingstarted-msg]].",
 	'gettingstarted-welcomesiteuser' => 'Bin-ëvnà a $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Bin ëvnù a $1!',
-	'gettingstarted-return' => 'Nò mersì, pòrtme andré',
+	'gettingstarted-return' => 'Nò mersì, pòrtme andré', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tichëtta]]: editor neuv [[{{MediaWiki:gettingstarted-project-link}}|ancaminé]]',
 	'tag-gettingstarted_edit-description' => "Modìfica ëd na pagina che l'utent a sern da la lista dij travaj an [[Special:GettingStarted]]",
@@ -418,7 +418,7 @@ $messages['ro'] = array(
 	'gettingstarted' => 'Primii pași',
 	'gettingstarted-welcomesiteuser' => 'Bine ați venit la $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Bine ați venit la $1!',
-	'gettingstarted-return' => 'Nu, mulțumesc, du-mă înapoi',
+	'gettingstarted-return' => 'Nu, mulțumesc, du-mă înapoi', # Fuzzy
 );
 
 /** tarandíne (tarandíne)
@@ -461,7 +461,7 @@ $messages['sv'] = array(
 	'gettingstarted-desc' => 'Lägger till en [[Special:GettingStarted|välkomstsida]] för nya användare (visas efter kontot har skapats)',
 	'gettingstarted-welcomesiteuser' => 'Välkommen till $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Välkommen till $1!',
-	'gettingstarted-return' => 'Nej tack, ta mig tillbaka',
+	'gettingstarted-return' => 'Nej tack, ta mig tillbaka', # Fuzzy
 );
 
 /** Tamil (தமிழ்)
@@ -480,7 +480,7 @@ $messages['te'] = array(
 	'gettingstarted-msg' => '[[{{ns:MediaWiki}}:gettingstarted-msg]] ద్వారా {{SITENAME}} నిర్వాహకులు ఈ సందేశాన్ని మార్చవచ్చు.',
 	'gettingstarted-welcomesiteuser' => '$1కి స్వాగతం, $2!',
 	'gettingstarted-welcomesiteuseranon' => '$1కి స్వాగతం!',
-	'gettingstarted-return' => 'వద్దు, నన్ను వెనక్కు తీసుకువెళ్ళు',
+	'gettingstarted-return' => 'వద్దు, నన్ను వెనక్కు తీసుకువెళ్ళు', # Fuzzy
 );
 
 /** Ukrainian (українська)
@@ -492,7 +492,7 @@ $messages['uk'] = array(
 	'gettingstarted-msg' => 'Адміністраторам проекту {{SITENAME}} слід налаштувати це повідомлення, відредагувавши [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Вітаємо у проекті $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Вітаємо у проекті $1!',
-	'gettingstarted-return' => 'Ні, дякую, поверніть мене назад',
+	'gettingstarted-return' => 'Ні, дякую, поверніть мене назад', # Fuzzy
 );
 
 /** Vietnamese (Tiếng Việt)
@@ -504,7 +504,7 @@ $messages['vi'] = array(
 	'gettingstarted-msg' => 'Các bảo quản viên tại {{SITENAME}} cần tùy chỉnh thông điệp này bằng cách sửa đổi [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Chào mừng $2 đến với $1!',
 	'gettingstarted-welcomesiteuseranon' => 'Chào mừng bạn đến với $1!',
-	'gettingstarted-return' => 'Thôi, quay lại',
+	'gettingstarted-return' => 'Thôi, quay lại', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:Bắt đầu',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Thẻ]]: Người dùng mới đang [[{{MediaWiki:gettingstarted-project-link}}|bắt đầu]]',
 	'tag-gettingstarted_edit-description' => 'Sửa đổi trang được gợi ý trong danh sách việc cần làm tại [[Special:GettingStarted]]',
@@ -519,7 +519,7 @@ $messages['zh-hans'] = array(
 	'gettingstarted-msg' => '一个{{SITENAME}}的管理员应该编辑[[{{ns:MediaWiki}}:gettingstarted-msg]]来定制此信息。',
 	'gettingstarted-welcomesiteuser' => '欢迎光临$1，$2！',
 	'gettingstarted-welcomesiteuseranon' => '欢迎光临$1！',
-	'gettingstarted-return' => '不必了，请带我会去',
+	'gettingstarted-return' => '不必了，请带我会去', # Fuzzy
 );
 
 /** Traditional Chinese (中文（繁體）‎)
