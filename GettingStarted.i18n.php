@@ -276,7 +276,7 @@ $messages['it'] = array(
 	'gettingstarted-msg' => 'Un amministratore di {{SITENAME}} dovrebbe personalizzare questo messaggio modificando [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Benvenuto su $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Benvenuto su $1!',
-	'gettingstarted-return' => 'No grazie, riportami dove stavo prima', # Fuzzy
+	'gettingstarted-return' => '← No grazie, riportami alla pagina che stavo leggendo',
 );
 
 /** Japanese (日本語)
@@ -288,7 +288,7 @@ $messages['ja'] = array(
 	'gettingstarted-welcomesiteuseranon' => '$1へようこそ!',
 	'gettingstarted-return' => '不要です。元のページに戻ります。', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
-	'tag-gettingstarted_edit-description' => '利用者が [[Special:GettingStarted]] のタスク一覧から選択したページの編集',
+	'tag-gettingstarted_edit-description' => '利用者が [[Special:GettingStarted|Getting started]] のタスク一覧から選択したページの編集',
 	'guidedtour-tour-gettingstartedpage-fix-spelling-title' => 'スペルや文法の修正',
 	'guidedtour-tour-gettingstartedpage-fix-spelling-description' => 'スペルや文法を修正することで、容易に{{SITENAME}}の読みやすさを容易に改善できます。編集をクリックして少し修正するだけです。', # Fuzzy
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'リンクの追加',
@@ -393,7 +393,16 @@ $messages['nl'] = array(
 	'gettingstarted-msg' => 'Een beheerder van {{SITENAAM}} hoort dit bericht aan te passen door [[{{ns:MediaWiki}}:gettingstarted-msg]] te bewerken.',
 	'gettingstarted-welcomesiteuser' => 'Welkom bij $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Welkom bij $1',
-	'gettingstarted-return' => 'Nee bedankt. Ik wil graag terug', # Fuzzy
+	'gettingstarted-return' => '← Nee bedankt. Terug naar de pagina die ik aan het lezen was',
+	'gettingstarted-project-link' => '{{ns:Project}}:Aan de slag',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Label]]: nieuwe bewerker [[{{MediaWiki:gettingstarted-project-link}}|aan de slag]]',
+	'tag-gettingstarted_edit-description' => 'Bewerking aan een pagina die de gebruiker heeft gekozen uit de takenlijst op [[Special:GettingStarted|aan de slag]]',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Eindredactie',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Eindredactie is het verbeteren van hoe dingen zijn verwoord. De onderstaande pagina\'s zijn in redelijke staat, maar er zijn gebruikers die denken dat ze beter gemaakt kunnen worden. Kijk of u dingen kunt verbeteren. Klik daarvoor gewoon op het tabblad "{{int:vector-view-edit}}"!',
+	'guidedtour-tour-gettingstartedpage-fix-spelling-title' => 'Spelling- en grammaticacontrole',
+	'guidedtour-tour-gettingstartedpage-fix-spelling-description' => 'Het verbeteren van spelling en grammatica is een eenvoudige manier om de leesbaarheid van {{SITENAME}} te verbeteren. Klik daarvoor gewoon op het tabblad "{{int:vector-view-edit}}" en maak een paar verbeteringen!',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Koppelingen toevoegen',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Hebt u ooit zomaar twee uur rondgeklikt op {{SITENAME}}? Wij wel. Kies een van deze pagina\'s en kijk of u koppelingen naar andere pagina\'s kunt aanbrengen. Klik gewoon op het tabblad "{{int:vector-view-edit}}" om ze toe te voegen!',
 );
 
 /** Piedmontese (Piemontèis)
