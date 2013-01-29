@@ -206,10 +206,16 @@ $messages['fr'] = array(
 	'gettingstarted-msg' => 'Un administrateur sur {{SITENAME}} devrait personnaliser ce message en modifiant [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Bienvenue sur $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Bienvenue sur $1!',
-	'gettingstarted-return' => 'Non merci, ramenez-moi d’où je viens', # Fuzzy
+	'gettingstarted-return' => 'Non merci, retour sur la page que je lisais',
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Balise]]: un nouvel éditeur [[{{MediaWiki:gettingstarted-project-link}}|a débuté]]',
 	'tag-gettingstarted_edit-description' => "Modification d'une page choisie par l’utilisateur dans la liste des tâches dans [[Special:GettingStarted]]",
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Copier la modification',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'La copie de la modification améliore simplement la manière de formuler les choses. Les pages ci-dessous sont dans un bon état, mais certains utilisateurs pensent qu’elles pourraient être encore meilleures. Voyez si vous pouvez améliorer les choses. Cliquez simplement que l’onglet {{int:vector-view-edit}}!',
+	'guidedtour-tour-gettingstartedpage-fix-spelling-title' => 'Corriger l’orthographe et la grammaire',
+	'guidedtour-tour-gettingstartedpage-fix-spelling-description' => 'Corriger l’orthographe et la grammaire est un moyen facile d’améliorer la lisibilité de {{SITENAME}}. Cliquez simplement sur l’onglet {{int:vector-view-edit}} et faites quelques corrections!',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Ajouter des liens',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Avez-vous déjà, par hasard, passé deux heures à cliquer ici et là dans {{SITENAME}}? Nous avons été là. Choisissez une de ces pages et recherchez les liens potentiels vers d’autres. Cliquez simplement sur l’onglet {{int:vector-view-edit}} pour les ajouter!',
 );
 
 /** Franco-Provençal (arpetan)
@@ -513,10 +519,16 @@ $messages['vi'] = array(
 	'gettingstarted-msg' => 'Các bảo quản viên tại {{SITENAME}} cần tùy chỉnh thông điệp này bằng cách sửa đổi [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Chào mừng $2 đến với $1!',
 	'gettingstarted-welcomesiteuseranon' => 'Chào mừng bạn đến với $1!',
-	'gettingstarted-return' => 'Thôi, quay lại', # Fuzzy
+	'gettingstarted-return' => 'Thôi, quay lại trang đọc trước',
 	'gettingstarted-project-link' => '{{ns:Project}}:Bắt đầu',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Thẻ]]: Người dùng mới đang [[{{MediaWiki:gettingstarted-project-link}}|bắt đầu]]',
 	'tag-gettingstarted_edit-description' => 'Sửa đổi trang được gợi ý trong danh sách việc cần làm tại [[Special:GettingStarted]]',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Sửa văn phong',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Các trang ở dưới có vẻ được nhưng có người cảm thấy nó còn có khả năng cải tiến về văn phong. Hãy giúp đỡ: chỉ việc nhấn vào thẻ {{int:vector-view-edit}}!',
+	'guidedtour-tour-gettingstartedpage-fix-spelling-title' => 'Sửa lỗi chính tả và ngữ pháp',
+	'guidedtour-tour-gettingstartedpage-fix-spelling-description' => 'Bạn có thể dễ dàng làm cho {{SITENAME}} dễ đọc hơn, bằng cách sửa các lỗi chính tả và ngữ pháp. Chỉ việc nhấn vào thẻ {{int:vector-view-edit}} và bắt đầu sửa chữa!',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Đặt liên kết',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Bạn có bao giờ mất hai tiếng đồng hồ đi tới đi lui tại {{SITENAME}}? Chúng tôi cũng đi tới đi lui vậy. Hãy chọn một trang ở dưới và tìm những cụm từ nên có liên kết đến trang khác. Chỉ việc nhấn vào thẻ {{int:vector-view-edit}} để bổ sung liên kết!',
 );
 
 /** Simplified Chinese (中文（简体）‎)
