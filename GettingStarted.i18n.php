@@ -199,6 +199,7 @@ $messages['fi'] = array(
 /** French (français)
  * @author Crochet.david
  * @author Gomoko
+ * @author Jean-Frédéric
  */
 $messages['fr'] = array(
 	'gettingstarted' => 'Pour commencer',
@@ -210,8 +211,8 @@ $messages['fr'] = array(
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Balise]]: un nouvel éditeur [[{{MediaWiki:gettingstarted-project-link}}|a débuté]]',
 	'tag-gettingstarted_edit-description' => "Modification d'une page choisie par l’utilisateur dans la liste des tâches dans [[Special:GettingStarted]]",
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Copier la modification',
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'La copie de la modification améliore simplement la manière de formuler les choses. Les pages ci-dessous sont dans un bon état, mais certains utilisateurs pensent qu’elles pourraient être encore meilleures. Voyez si vous pouvez améliorer les choses. Cliquez simplement que l’onglet {{int:vector-view-edit}}!',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Relecture',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Relire consiste à améliorer les tournures de phrases. Les pages ci-dessous sont dans un bon état, mais certains utilisateurs pensent qu’elles pourraient être encore meilleures. Voyez si vous pouvez améliorer les choses. Cliquez simplement sur l’onglet {{int:vector-view-edit}}!',
 	'guidedtour-tour-gettingstartedpage-fix-spelling-title' => 'Corriger l’orthographe et la grammaire',
 	'guidedtour-tour-gettingstartedpage-fix-spelling-description' => 'Corriger l’orthographe et la grammaire est un moyen facile d’améliorer la lisibilité de {{SITENAME}}. Cliquez simplement sur l’onglet {{int:vector-view-edit}} et faites quelques corrections!',
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Ajouter des liens',
