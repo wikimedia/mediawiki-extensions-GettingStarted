@@ -13,6 +13,9 @@ require_once( "$IP/extensions/GettingStarted/GettingStarted.php" );
 Dependencies
 
 * https://www.mediawiki.org/wiki/Extension:GuidedTour
+* (optional) Read and write access to MediaWiki API must be enabled to avoid
+showing the GettingStarted tour repeatedly to logged in users if they
+ regularly visit Special:GettingStarted.
 
 License
 

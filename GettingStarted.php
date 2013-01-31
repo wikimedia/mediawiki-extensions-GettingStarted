@@ -50,7 +50,11 @@ $wgResourceModules[ 'ext.gettingstarted' ] = array(
 	'scripts' => 'ext.gettingstarted.js',
 	'styles' => 'ext.gettingstarted.css',
 	'position' => 'top', // For CSS
-	'dependencies' => 'ext.guidedTour.tour.gettingstartedpage',
+	'dependencies' => array(
+		'mediawiki.api',
+		'user.options',
+		'ext.guidedTour.tour.gettingstartedpage',
+	),
 ) + $gettingStartedModuleInfo;
 
 // This is the version that runs on account creation.  It depends on the CSS code above.
