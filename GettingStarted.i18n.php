@@ -247,6 +247,7 @@ $messages['gl'] = array(
 	'guidedtour-tour-gettingstartedpage-fix-spelling-title' => 'Corrixir a lingua e a gramática',
 	'guidedtour-tour-gettingstartedpage-fix-spelling-description' => 'A corrección da lingua e da gramática é un xeito doado de mellorar a lexibilidade de {{SITENAME}}. Prema na lapela "{{int:vector-view-edit}}" e faga un par de arranxos!',
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Engadir ligazóns',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Algunha vez pasou un par de horas premendo aquí e acolá nas páxinas de {{SITENAME}}? Nós xa estivemos alí. Escolle unha desas páxinas e busque ligazóns potenciais a outras páxinas. Prema na lapela "{{int:vector-view-edit}}" para engadilas!',
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -314,6 +315,9 @@ $messages['ko'] = array(
 	'gettingstarted-project-link' => '{{ns:Project}}:시작하기',
 	'tag-gettingstarted_edit' => '[[Special:Tags|태그]]: 새 편집자 [[{{MediaWiki:gettingstarted-project-link}}|시작하기]]',
 	'tag-gettingstarted_edit-description' => '사용자가 [[Special:GettingStarted]]에 작업 목록에서 선택한 문서의 편집',
+	'guidedtour-tour-gettingstartedpage-fix-spelling-title' => '철자와 문법 고치기',
+	'guidedtour-tour-gettingstartedpage-fix-spelling-description' => '철자와 문법 고치기는 {{SITENAME}}의 가독성을 쉽게 향상시킬 수 있습니다. {{int:vector-view-edit}} 탭을 클릭하고 약간 고치면 됩니다.',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => '링크 추가',
 );
 
 /** Kirghiz (Кыргызча)
