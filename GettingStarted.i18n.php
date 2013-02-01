@@ -67,15 +67,21 @@ See also:
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
-	'gettingstarted' => 'Пачатак працы',
+	'gettingstarted' => 'З чаго пачаць',
 	'gettingstarted-desc' => 'Дадае [[Special:GettingStarted|вітальную старонку]] для новых удзельнікаў (паказваецца па стварэньні рахунку)',
 	'gettingstarted-msg' => 'Адміністратар {{GRAMMAR:родны|{{SITENAME}}}} мусіць наладзіць гэтае паведамленьне, адрэдагаваўшы [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Вітаем у {{GRAMMAR:месны|$1}}, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Вітаем у {{GRAMMAR:месны|$1}}',
-	'gettingstarted-return' => 'Не, дзякую, вярніце мяне назад', # Fuzzy
+	'gettingstarted-welcomesiteuseranon' => 'Вітаем у {{GRAMMAR:месны|$1}}!',
+	'gettingstarted-return' => '&rarr; Не, дзякую, вярніце туды, дзе я чытаў',
 	'gettingstarted-project-link' => '{{ns:Project}}:Пачатак працы',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Метка]]: [[{{MediaWiki:gettingstarted-project-link}}|пачатак працы]] новага рэдактара',
-	'tag-gettingstarted_edit-description' => 'Рэдагаваньне старонкі зь сьпісу задачаў у [[Special:GettingStarted]], якую абраў удзельнік',
+	'tag-gettingstarted_edit-description' => 'Рэдагаваньне старонкі зь сьпісу задачаў «[[Special:GettingStarted|З чаго пачаць]]», якую абраў удзельнік',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Вычытка',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Вычытка — гэта паляпшэньне ўжо напісанага. Старонкі, пералічаныя ніжэй, ужо набылі форму, але некаторым удзельнікам падалося, што можна зрабіць лепш. Можа вы зможаце іх палепшыць? Проста націсьніце картку «{{int:vector-view-edit}}»!',
+	'guidedtour-tour-gettingstartedpage-fix-spelling-title' => 'Выпраўленьне артаграфіі',
+	'guidedtour-tour-gettingstartedpage-fix-spelling-description' => 'Выпраўленьне апісак і артаграфіі — лёгкі спосаб палепшыць чытэльнасьць {{GRAMMAR:родны|{{SITENAME}}}}. Проста націсьніце картку «{{int:vector-view-edit}}» і выпраўце парачку!',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Даданьне спасылак',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Ці вы не блукалі выпадкова пару гадзін, пстрыкаючы па спасылках у {{GRAMMAR:месны|{{SITENAME}}}}? Мы блукалі. Выберыце адну з гэтых старонак і адшукайце, на якое слова можна было б дадаць спасылку да старонкі. Проста пстрыкніце «{{int:vector-view-edit}}» і дадайце яе!',
 );
 
 /** Czech (česky)
@@ -307,7 +313,7 @@ $messages['ja'] = array(
  */
 $messages['ko'] = array(
 	'gettingstarted' => '시작하기',
-	'gettingstarted-desc' => '새 사용자를 위한 [[Special:GettingStarted|환영 문서]] 추가 (계정을 만들고 나서 나타남)',
+	'gettingstarted-desc' => '새 사용자를 위한 [[Special:GettingStarted|환영 문서]]를 추가합니다 (계정을 만들고 나서 나타남)',
 	'gettingstarted-msg' => '{{SITENAME}}의 관리자가 [[{{ns:MediaWiki}}:gettingstarted-msg]] 메시지를 편집하여 이 메시지를 사용자 정의해야 합니다.',
 	'gettingstarted-welcomesiteuser' => '$2님, $1에 오신 것을 환영합니다!',
 	'gettingstarted-welcomesiteuseranon' => '$1에 오신 것을 환영합니다!',
