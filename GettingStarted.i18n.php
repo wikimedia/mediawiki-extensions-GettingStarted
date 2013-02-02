@@ -58,7 +58,7 @@ $messages['be-tarask'] = array(
 	'gettingstarted-return' => 'Не, дзякую, вярніце мяне назад',
 	'gettingstarted-project-link' => '{{ns:Project}}:Пачатак працы',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Метка]]: [[{{MediaWiki:gettingstarted-project-link}}|пачатак працы]] новага рэдактара',
-	'tag-gettingstarted_edit-description' => 'Рэдагаваньне старонкі зь сьпісу задачаў у [[Special:GettingStarted]], якую абраў удзельнік',
+	'tag-gettingstarted_edit-description' => 'Рэдагаваньне старонкі зь сьпісу задачаў у [[Special:GettingStarted]], якую абраў удзельнік', # Fuzzy
 );
 
 /** Czech (česky)
@@ -186,7 +186,7 @@ $messages['fr'] = array(
 	'gettingstarted-return' => 'Non merci, ramenez-moi d’où je viens',
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Balise]]: un nouvel éditeur [[{{MediaWiki:gettingstarted-project-link}}|a débuté]]',
-	'tag-gettingstarted_edit-description' => "Modification d'une page choisie par l’utilisateur dans la liste des tâches dans [[Special:GettingStarted]]",
+	'tag-gettingstarted_edit-description' => "Modification d'une page choisie par l’utilisateur dans la liste des tâches dans [[Special:GettingStarted]]", # Fuzzy
 );
 
 /** Franco-Provençal (arpetan)
@@ -211,7 +211,7 @@ $messages['gl'] = array(
 	'gettingstarted-return' => 'Non grazas, levádeme de volta',
 	'gettingstarted-project-link' => '{{ns:Project}}:Primeiros pasos',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Etiqueta]]: Novo editor dando os [[{{MediaWiki:gettingstarted-project-link}}|primeiros pasos]]',
-	'tag-gettingstarted_edit-description' => 'Modificación dunha páxina que o usuario elixiu desde a lista de tarefas en [[Special:GettingStarted]]',
+	'tag-gettingstarted_edit-description' => 'Modificación dunha páxina que o usuario elixiu desde a lista de tarefas en [[Special:GettingStarted]]', # Fuzzy
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -248,7 +248,7 @@ $messages['it'] = array(
 	'gettingstarted-msg' => 'Un amministratore di {{SITENAME}} dovrebbe personalizzare questo messaggio modificando [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Benvenuto su $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Benvenuto su $1!',
-	'gettingstarted-return' => 'No grazie, riportami dove stavo prima',
+	'gettingstarted-return' => 'No grazie, riportami dove stavo prima', # Fuzzy
 );
 
 /** Japanese (日本語)
@@ -258,9 +258,18 @@ $messages['ja'] = array(
 	'gettingstarted-desc' => '新しい利用者向けに[[Special:GettingStarted|ようこそページ]]を追加する (アカウント作成した際に表示される)',
 	'gettingstarted-welcomesiteuser' => '$2さん、$1へようこそ!',
 	'gettingstarted-welcomesiteuseranon' => '$1へようこそ!',
-	'gettingstarted-return' => '不要です。元のページに戻ります。',
+	'gettingstarted-return' => '不要です。戻ります。',
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
-	'tag-gettingstarted_edit-description' => '利用者が [[Special:GettingStarted]] のタスク一覧から選択したページの編集',
+	'tag-gettingstarted_edit-description' => '利用者が [[Special:GettingStarted]] のタスク一覧から選択したページの編集', # Fuzzy
+);
+
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'gettingstarted-welcomesiteuser' => 'მოგესალმებით $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'მოგესალმებით, $1!',
+	'gettingstarted-return' => 'არა გმადლობთ, დამაბრუნეთ უკან',
 );
 
 /** Korean (한국어)
@@ -272,10 +281,10 @@ $messages['ko'] = array(
 	'gettingstarted-msg' => '{{SITENAME}}의 관리자가 [[{{ns:MediaWiki}}:gettingstarted-msg]] 메시지를 편집하여 이 메시지를 사용자 정의해야 합니다.',
 	'gettingstarted-welcomesiteuser' => '$2님, $1에 오신 것을 환영합니다!',
 	'gettingstarted-welcomesiteuseranon' => '$1에 오신 것을 환영합니다!',
-	'gettingstarted-return' => '괜찮습니다, 되돌아가겠습니다',
+	'gettingstarted-return' => '괜찮습니다, 돌아가겠습니다',
 	'gettingstarted-project-link' => '{{ns:Project}}:시작하기',
 	'tag-gettingstarted_edit' => '[[Special:Tags|태그]]: 새 편집자 [[{{MediaWiki:gettingstarted-project-link}}|시작하기]]',
-	'tag-gettingstarted_edit-description' => '사용자가 [[Special:GettingStarted]]에 작업 목록에서 선택한 문서의 편집',
+	'tag-gettingstarted_edit-description' => '사용자가 [[Special:GettingStarted]]에 작업 목록에서 선택한 문서의 편집', # Fuzzy
 );
 
 /** Kirghiz (Кыргызча)
@@ -320,7 +329,7 @@ $messages['mk'] = array(
 	'gettingstarted-return' => 'Не благодарам. Врати ме назад',
 	'gettingstarted-project-link' => '{{ns:Project}}:ПрвиЧекори',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Ознака]]: нов уредник [[{{MediaWiki:gettingstarted-project-link}}|почнува со работа]]',
-	'tag-gettingstarted_edit-description' => 'Уредување на страница што корисникот ја одбрал од списокот на задачи на [[Special:GettingStarted]]',
+	'tag-gettingstarted_edit-description' => 'Уредување на страница што корисникот ја одбрал од списокот на задачи на [[Special:GettingStarted]]', # Fuzzy
 );
 
 /** Malay (Bahasa Melayu)
@@ -357,6 +366,9 @@ $messages['nl'] = array(
 	'gettingstarted-welcomesiteuser' => 'Welkom bij $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Welkom bij $1',
 	'gettingstarted-return' => 'Nee bedankt. Ik wil graag terug',
+	'gettingstarted-project-link' => '{{ns:Project}}:Aan de slag',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Label]]: nieuwe bewerker [[{{MediaWiki:gettingstarted-project-link}}|aan de slag]]',
+	'tag-gettingstarted_edit-description' => 'Bewerking aan een pagina die de gebruiker heeft gekozen uit de takenlijst op [[Special:GettingStarted|aan de slag]]', # Fuzzy
 );
 
 /** Piedmontese (Piemontèis)
@@ -414,14 +426,19 @@ $messages['si'] = array(
 );
 
 /** Swedish (svenska)
+ * @author Ainali
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
 	'gettingstarted' => 'Komma igång',
 	'gettingstarted-desc' => 'Lägger till en [[Special:GettingStarted|välkomstsida]] för nya användare (visas efter kontot har skapats)',
+	'gettingstarted-msg' => 'En administratör på {{SITENAME}} borde anpassa detta meddelande genom att redigera [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Välkommen till $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Välkommen till $1!',
-	'gettingstarted-return' => 'Nej tack, ta mig tillbaka',
+	'gettingstarted-return' => '← Nej tack, gå tillbaka till sidan jag nyss läste', # Fuzzy
+	'gettingstarted-project-link' => '{{ns:Project}}:Komigång',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Tagg]]: ny bidragsgivare [[{{MediaWiki:gettingstarted-project-link}}|kom i gång]]',
+	'tag-gettingstarted_edit-description' => 'Redigering av en sida som användaren har valt från listan i [[Special:GettingStarted|Kom i gång]]', # Fuzzy
 );
 
 /** Tamil (தமிழ்)
@@ -464,10 +481,10 @@ $messages['vi'] = array(
 	'gettingstarted-msg' => 'Các bảo quản viên tại {{SITENAME}} cần tùy chỉnh thông điệp này bằng cách sửa đổi [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Chào mừng $2 đến với $1!',
 	'gettingstarted-welcomesiteuseranon' => 'Chào mừng bạn đến với $1!',
-	'gettingstarted-return' => 'Thôi, quay lại',
+	'gettingstarted-return' => 'Thôi, quay lại', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:Bắt đầu',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Thẻ]]: Người dùng mới đang [[{{MediaWiki:gettingstarted-project-link}}|bắt đầu]]',
-	'tag-gettingstarted_edit-description' => 'Sửa đổi trang được gợi ý trong danh sách việc cần làm tại [[Special:GettingStarted]]',
+	'tag-gettingstarted_edit-description' => 'Sửa đổi trang được gợi ý trong danh sách việc cần làm tại [[Special:GettingStarted]]', # Fuzzy
 );
 
 /** Simplified Chinese (中文（简体）‎)
