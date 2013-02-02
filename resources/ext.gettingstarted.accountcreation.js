@@ -3,20 +3,28 @@
 	$( function () {
 		var title = mw.msg( 'gettingstarted-welcomesiteuser', mw.config.get( 'wgSiteName' ), mw.config.get( 'wgUserName' ) ),
 			$returnTo = $( '#mw-returnto' ),
-			$returnToA = $returnTo.find( 'a' ),
-			$onboardingContainer = $( '.onboarding-container' ),
+			$returnToA = $( $returnTo ).find( 'a' ),
+			returnToUrl = $returnToA.attr( 'href' ),
+			returnToTitle = $returnToA.attr( 'title' ),
+			$returnToAgora,
 			state,
 			url;
 
 		document.title = title;
 		$( '#firstHeading span' ).text( title );
 
-		$returnTo.detach();
-		$returnToA.detach().text( mw.msg( 'gettingstarted-return' ) );
-		// Want to remove all siblings of the link, including text, which siblings does
-		// not return.
-		$returnTo.empty().append( $returnToA );
-		$onboardingContainer.append( $returnTo );
+		// Remove original return to button, then add Agora one in header.
+		$returnTo.remove();
+
+		$returnToAgora = $( '<a />', {
+			id: 'back-to-referrer',
+			href: returnToUrl,
+			title: returnToTitle,
+			'class': 'blue mw-ui-button',
+			text: '← ' + mw.msg('gettingstarted-return')
+		} );
+
+		$( '#onboarding-more' ).append( $returnToAgora );
 
 		state = {}; // Currently unused
 		url = mw.util.wikiGetlink( 'Special:GettingStarted' );
