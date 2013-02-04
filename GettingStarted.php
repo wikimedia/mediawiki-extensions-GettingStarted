@@ -26,17 +26,26 @@ $wgSpecialPages[ 'GettingStarted' ] = 'SpecialGettingStarted';
 $wgSpecialPageGroups[ 'GettingStarted' ] = 'users';
 
 // Modules
-$wgResourceModules[ 'ext.gettingstarted' ] = array(
-	'styles' => 'resources/ext.gettingstarted.css',
-	'position' => 'top',
 
-	'localBasePath' => __DIR__,
-	'remoteExtPath' => 'GettingStarted',
+$gettingStartedModuleInfo = array(
+	'localBasePath' => __DIR__ . '/resources',
+	'remoteExtPath' => 'GettingStarted/resources',
 );
+
+$wgResourceModules[ 'ext.gettingstarted' ] = array(
+	'scripts' => 'ext.gettingstarted.js',
+	'styles' => 'ext.gettingstarted.css',
+	'position' => 'top', // For CSS
+	'dependencies' => array(
+		'mediawiki.api',
+		'user.options',
+		'ext.guidedTour.lib',
+	),
+) + $gettingStartedModuleInfo;
 
 // This is the version that runs on account creation.  It depends on the CSS code above.
 $wgResourceModules[ 'ext.gettingstarted.accountcreation' ] = array(
-	'scripts' => 'resources/ext.gettingstarted.accountcreation.js',
+	'scripts' => 'ext.gettingstarted.accountcreation.js',
 	'messages' => array(
 		'gettingstarted-welcomesiteuser', // XXX (mattflaschen, 2012-12-12): This is a workaround until we move this into core, at which point it can be done server-side.
 		'gettingstarted-return',
@@ -46,10 +55,7 @@ $wgResourceModules[ 'ext.gettingstarted.accountcreation' ] = array(
 		'mediawiki.util',
 	),
 	'position' => 'top',
-
-	'localBasePath' => __DIR__,
-	'remoteExtPath' => 'GettingStarted',
-);
+) + $gettingStartedModuleInfo;
 
 $wgHooks[ 'BeforeWelcomeCreation' ][] = function( &$welcome_creation_msg, &$inject_html ) {
 	global $wgUser, $wgOut;
