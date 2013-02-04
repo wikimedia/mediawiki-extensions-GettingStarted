@@ -18,6 +18,11 @@ $specialPageAliases['de'] = array(
 	'GettingStarted' => array( 'Anfangen' ),
 );
 
+/** Hungarian (magyar) */
+$specialPageAliases['hu'] = array(
+	'GettingStarted' => array( 'Első_lépések' ),
+);
+
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
 	'GettingStarted' => array( '시작하기' ),
