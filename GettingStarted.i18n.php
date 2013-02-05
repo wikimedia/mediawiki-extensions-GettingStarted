@@ -208,10 +208,10 @@ $messages['gl'] = array(
 	'gettingstarted-msg' => 'Un adminitrador de {{SITENAME}} debería personalizar esta mensaxe editando "[[{{ns:MediaWiki}}:gettingstarted-msg]]".',
 	'gettingstarted-welcomesiteuser' => '{{GENDER:$2|Benvido|Benvida}} a $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Dámoslle a benvida a $1!',
-	'gettingstarted-return' => 'Non grazas, levádeme de volta',
+	'gettingstarted-return' => 'Non, grazas; levádeme de volta',
 	'gettingstarted-project-link' => '{{ns:Project}}:Primeiros pasos',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Etiqueta]]: Novo editor dando os [[{{MediaWiki:gettingstarted-project-link}}|primeiros pasos]]',
-	'tag-gettingstarted_edit-description' => 'Modificación dunha páxina que o usuario elixiu desde a lista de tarefas en [[Special:GettingStarted]]', # Fuzzy
+	'tag-gettingstarted_edit-description' => 'Modificación dunha páxina que o usuario elixiu desde a lista de tarefas en [[Special:GettingStarted]]',
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -263,7 +263,7 @@ $messages['it'] = array(
 	'gettingstarted-msg' => 'Un amministratore di {{SITENAME}} dovrebbe personalizzare questo messaggio modificando [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Benvenuto su $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Benvenuto su $1!',
-	'gettingstarted-return' => 'No grazie, riportami dove stavo prima', # Fuzzy
+	'gettingstarted-return' => 'No grazie, riportami dove stavo prima',
 );
 
 /** Japanese (日本語)
