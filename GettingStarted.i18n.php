@@ -214,6 +214,20 @@ $messages['gl'] = array(
 	'tag-gettingstarted_edit-description' => 'Modificación dunha páxina que o usuario elixiu desde a lista de tarefas en [[Special:GettingStarted]]',
 );
 
+/** Hebrew (עברית)
+ * @author Amire80
+ */
+$messages['he'] = array(
+	'gettingstarted' => 'איך להתחיל',
+	'gettingstarted-desc' => 'הוספת [[Special:GettingStarted|דף "ברוך בואך"]] למשתמשים חדשים (מוצג אחרי יצירת החשבון)',
+	'gettingstarted-msg' => 'מפעיל באתר {{SITENAME}} אמור להתאים את ההודעה הזאת על ידי עריכת הדף [[{{ns:MediaWiki}}:gettingstarted-msg]].',
+	'gettingstarted-welcomesiteuser' => 'ברוך בואך אל $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'ברוך בואך אל $1!',
+	'gettingstarted-return' => 'לא תודה, קחו אותי חזרה',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: עורך חדש [[{{MediaWiki:gettingstarted-project-link}}|מתחיל לעבוד]]',
+	'tag-gettingstarted_edit-description' => 'עריכה של דף שהמשתמש בחר מתוך רשימת מטלות בדף [[Special:GettingStarted]]',
+);
+
 /** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
@@ -224,6 +238,7 @@ $messages['hsb'] = array(
 	'gettingstarted-welcomesiteuser' => 'Witaj do $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Witaj do $1',
 	'gettingstarted-return' => 'Ně, dźakuju so, dowjedź mje wróćo',
+	'gettingstarted-project-link' => '{{ns:Project}}:Prěnje kroki',
 );
 
 /** Hungarian (magyar)

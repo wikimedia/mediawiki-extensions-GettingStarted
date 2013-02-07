@@ -23,6 +23,11 @@ $specialPageAliases['hu'] = array(
 	'GettingStarted' => array( 'Első_lépések' ),
 );
 
+/** Indonesian (Bahasa Indonesia) */
+$specialPageAliases['id'] = array(
+	'GettingStarted' => array( 'Mulai' ),
+);
+
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
 	'GettingStarted' => array( '시작하기' ),
