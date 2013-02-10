@@ -95,7 +95,7 @@ $messages['de'] = array(
 	'gettingstarted-return' => 'Nein danke, bring mich zurück',
 	'gettingstarted-project-link' => '{{ns:Project}}:Erste Schritte',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Markierung]]: [[{{MediaWiki:gettingstarted-project-link}}|Erste Schritte]] eines neuen Autors',
-	'tag-gettingstarted_edit-description' => 'Bearbeitung einer Seite, die der Benutzer aus der Aufgabenliste von [[Special:GettingStarted]] ausgewählt hat',
+	'tag-gettingstarted_edit-description' => 'Bearbeitung einer Seite, die der Benutzer aus der Aufgabenliste der Spezialseite „[[Special:GettingStarted|Anfangen]]“ ausgewählt hat',
 );
 
 /** Lower Sorbian (dolnoserbski)
@@ -211,7 +211,7 @@ $messages['gl'] = array(
 	'gettingstarted-return' => 'Non, grazas; levádeme de volta',
 	'gettingstarted-project-link' => '{{ns:Project}}:Primeiros pasos',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Etiqueta]]: Novo editor dando os [[{{MediaWiki:gettingstarted-project-link}}|primeiros pasos]]',
-	'tag-gettingstarted_edit-description' => 'Modificación dunha páxina que o usuario elixiu desde a lista de tarefas en [[Special:GettingStarted]]',
+	'tag-gettingstarted_edit-description' => 'Modificación dunha páxina que o usuario elixiu desde a lista de tarefas en [[Special:GettingStarted]]', # Fuzzy
 );
 
 /** Hebrew (עברית)
@@ -225,7 +225,7 @@ $messages['he'] = array(
 	'gettingstarted-welcomesiteuseranon' => 'ברוך בואך אל $1!',
 	'gettingstarted-return' => 'לא תודה, קחו אותי חזרה',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: עורך חדש [[{{MediaWiki:gettingstarted-project-link}}|מתחיל לעבוד]]',
-	'tag-gettingstarted_edit-description' => 'עריכה של דף שהמשתמש בחר מתוך רשימת מטלות בדף [[Special:GettingStarted]]',
+	'tag-gettingstarted_edit-description' => 'עריכה של דף שהמשתמש בחר מתוך רשימת מטלות בדף [[Special:GettingStarted]]', # Fuzzy
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -253,7 +253,7 @@ $messages['hu'] = array(
 	'gettingstarted-return' => 'Nem érdekel, vissza az előző oldalra',
 	'gettingstarted-project-link' => '{{ns:Project}}:Első lépések',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Címke]]: új szerkesztő [[{{MediaWiki:gettingstarted-project-link}}|első lépései]]',
-	'tag-gettingstarted_edit-description' => 'A [[Special:GettingStarted|Speciális:Első lépések]] listáról választott oldal szerkesztése',
+	'tag-gettingstarted_edit-description' => 'A [[Special:GettingStarted|Speciális:Első lépések]] listáról választott oldal szerkesztése', # Fuzzy
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -314,7 +314,7 @@ $messages['ko'] = array(
 	'gettingstarted-return' => '괜찮습니다, 돌아가겠습니다',
 	'gettingstarted-project-link' => '{{ns:Project}}:시작하기',
 	'tag-gettingstarted_edit' => '[[Special:Tags|태그]]: 새 편집자 [[{{MediaWiki:gettingstarted-project-link}}|시작하기]]',
-	'tag-gettingstarted_edit-description' => '사용자가 [[Special:GettingStarted]]에 작업 목록에서 선택한 문서의 편집',
+	'tag-gettingstarted_edit-description' => '사용자가 [[Special:GettingStarted]]에 작업 목록에서 선택한 문서의 편집', # Fuzzy
 );
 
 /** Kirghiz (Кыргызча)
@@ -398,7 +398,7 @@ $messages['nl'] = array(
 	'gettingstarted-return' => 'Nee bedankt. Ik wil graag terug',
 	'gettingstarted-project-link' => '{{ns:Project}}:Aan de slag',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Label]]: nieuwe bewerker [[{{MediaWiki:gettingstarted-project-link}}|aan de slag]]',
-	'tag-gettingstarted_edit-description' => 'Bewerking aan een pagina die de gebruiker heeft gekozen uit de takenlijst op [[Special:GettingStarted|aan de slag]]', # Fuzzy
+	'tag-gettingstarted_edit-description' => 'Bewerking aan een pagina die de gebruiker heeft gekozen uit de takenlijst op [[Special:GettingStarted|aan de slag]]',
 );
 
 /** Piedmontese (Piemontèis)
@@ -528,8 +528,9 @@ $messages['zh-hans'] = array(
 	'gettingstarted-welcomesiteuser' => '欢迎光临$1，$2！',
 	'gettingstarted-welcomesiteuseranon' => '欢迎光临$1！',
 	'gettingstarted-return' => '不必了，请带我回去',
-	'gettingstarted-project-link' => '{{ns:Project}}：入门', # Fuzzy
+	'gettingstarted-project-link' => '{{ns:Project}}:入门指南',
 	'tag-gettingstarted_edit' => '[[Special:Tags|标签]]：新编者 [[{{MediaWiki:gettingstarted-project-link}}|入门]]',
+	'tag-gettingstarted_edit-description' => '用户在 [[Special:GettingStarted]] 上选择的页面的一个编辑。', # Fuzzy
 );
 
 /** Traditional Chinese (中文（繁體）‎)
