@@ -20,7 +20,7 @@ $messages['en'] = array(
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	// Change tags
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: new editor [[{{MediaWiki:gettingstarted-project-link}}|getting started]]',
-	'tag-gettingstarted_edit-description' => 'Edit of a page that the user chose from the task list in [[Special:GettingStarted]]',
+	'tag-gettingstarted_edit-description' => 'Edit of a page that the user chose from the task list in [[Special:GettingStarted|Getting started]]',
 );
 
 /** Message documentation (Message documentation)
