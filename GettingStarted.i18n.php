@@ -61,6 +61,13 @@ $messages['be-tarask'] = array(
 	'tag-gettingstarted_edit-description' => 'Рэдагаваньне старонкі зь сьпісу задачаў у [[Special:GettingStarted]], якую абраў удзельнік', # Fuzzy
 );
 
+/** Breton (brezhoneg)
+ * @author Y-M D
+ */
+$messages['br'] = array(
+	'gettingstarted' => 'Kregiñ ganti',
+);
+
 /** Czech (česky)
  * @author Vks
  */
@@ -131,6 +138,7 @@ $messages['eo'] = array(
 
 /** Spanish (español)
  * @author Armando-Martin
+ * @author Fitoschido
  */
 $messages['es'] = array(
 	'gettingstarted' => 'Primeros pasos',
@@ -138,7 +146,8 @@ $messages['es'] = array(
 	'gettingstarted-msg' => 'Un administrador de {{SITENAME}} debe personalizar este mensaje editando [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Hola $2 ¡Bienvenido a $1!',
 	'gettingstarted-welcomesiteuseranon' => '¡Bienvenido a $1!',
-	'gettingstarted-return' => 'No gracias, volver atrás',
+	'gettingstarted-return' => 'No gracias, volver atrás', # Fuzzy
+	'gettingstarted-project-link' => '{{ns:Project}}:PrimerosPasos',
 );
 
 /** Estonian (eesti)
@@ -186,7 +195,7 @@ $messages['fr'] = array(
 	'gettingstarted-return' => 'Non merci, ramenez-moi d’où je viens',
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Balise]]: un nouvel éditeur [[{{MediaWiki:gettingstarted-project-link}}|a débuté]]',
-	'tag-gettingstarted_edit-description' => "Modification d'une page choisie par l’utilisateur dans la liste des tâches dans [[Special:GettingStarted]]",
+	'tag-gettingstarted_edit-description' => "Modification d'une page choisie par l’utilisateur dans la liste des tâches dans [[Special:GettingStarted|Pour commencer]]",
 );
 
 /** Franco-Provençal (arpetan)
@@ -211,7 +220,7 @@ $messages['gl'] = array(
 	'gettingstarted-return' => 'Non, grazas; levádeme de volta',
 	'gettingstarted-project-link' => '{{ns:Project}}:Primeiros pasos',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Etiqueta]]: Novo editor dando os [[{{MediaWiki:gettingstarted-project-link}}|primeiros pasos]]',
-	'tag-gettingstarted_edit-description' => 'Modificación dunha páxina que o usuario elixiu desde a lista de tarefas en [[Special:GettingStarted]]', # Fuzzy
+	'tag-gettingstarted_edit-description' => 'Modificación dunha páxina que o usuario elixiu desde a lista de tarefas dos [[Special:GettingStarted|primeiros pasos]]',
 );
 
 /** Hebrew (עברית)
@@ -290,7 +299,7 @@ $messages['ja'] = array(
 	'gettingstarted-welcomesiteuseranon' => '$1へようこそ!',
 	'gettingstarted-return' => '不要です。戻ります。',
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
-	'tag-gettingstarted_edit-description' => '利用者が [[Special:GettingStarted]] のタスク一覧から選択したページの編集', # Fuzzy
+	'tag-gettingstarted_edit-description' => '利用者が [[Special:GettingStarted|Getting started]] のタスク一覧から選択したページの編集',
 );
 
 /** Georgian (ქართული)
@@ -359,7 +368,7 @@ $messages['mk'] = array(
 	'gettingstarted-return' => 'Не благодарам. Врати ме назад',
 	'gettingstarted-project-link' => '{{ns:Project}}:ПрвиЧекори',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Ознака]]: нов уредник [[{{MediaWiki:gettingstarted-project-link}}|почнува со работа]]',
-	'tag-gettingstarted_edit-description' => 'Уредување на страница што корисникот ја одбрал од списокот на задачи на [[Special:GettingStarted]]',
+	'tag-gettingstarted_edit-description' => 'Уредување на страница што корисникот ја одбрал од списокот на задачи на [[Special:GettingStarted|Први чекори]]',
 );
 
 /** Malay (Bahasa Melayu)
@@ -402,18 +411,19 @@ $messages['nl'] = array(
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
 	'gettingstarted' => 'Për ancaminé',
-	'gettingstarted-desc' => "A gionta na [[Special:GettingStarted|pagina ëd bin-ëvnù]] për utent neuv (mostà d'apress la creassion dël cont)",
-	'gettingstarted-msg' => "N'aministrador dzor {{SITENAME}} a dovrìa përsonalisé sto mëssagi modificand [[{{ns:MediaWiki}}:gettingstarted-msg]].",
-	'gettingstarted-welcomesiteuser' => 'Bin-ëvnà a $1, $2!',
+	'gettingstarted-desc' => "A gionta na [[Special:GettingStarted|pàgina ëd bin-ëvnù]] për j'utent neuv (smonùa apress la creassion dël cont)",
+	'gettingstarted-msg' => "N'aministrator dzor {{SITENAME}} a dovrìa përsonalisé ës mëssagi an modificand [[{{ns:MediaWiki}}:gettingstarted-msg]].",
+	'gettingstarted-welcomesiteuser' => 'Bin-ëvnù su $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Bin ëvnù a $1!',
-	'gettingstarted-return' => 'Nò mersì, pòrtme andré',
+	'gettingstarted-return' => 'Nò mersì, pòrtme andré', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tichëtta]]: editor neuv [[{{MediaWiki:gettingstarted-project-link}}|ancaminé]]',
-	'tag-gettingstarted_edit-description' => "Modìfica ëd na pagina che l'utent a sern da la lista dij travaj an [[Special:GettingStarted]]",
+	'tag-gettingstarted_edit-description' => "Modìfica ëd na pagina che l'utent a sern da la lista dij travaj an [[Special:GettingStarted]]", # Fuzzy
 );
 
 /** Romanian (română)
