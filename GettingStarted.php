@@ -38,7 +38,6 @@ $wgResourceModules[ 'ext.gettingstarted' ] = array(
 	'position' => 'top', // For CSS
 	'dependencies' => array(
 		'mediawiki.api',
-		'user.options',
 		'ext.guidedTour.lib',
 	),
 ) + $gettingStartedModuleInfo;
