@@ -540,7 +540,7 @@ $messages['zh-hans'] = array(
 	'gettingstarted-return' => '不必了，请带我回去',
 	'gettingstarted-project-link' => '{{ns:Project}}:入门指南',
 	'tag-gettingstarted_edit' => '[[Special:Tags|标签]]：新编者 [[{{MediaWiki:gettingstarted-project-link}}|入门]]',
-	'tag-gettingstarted_edit-description' => '用户在 [[Special:GettingStarted]] 上选择的页面的一个编辑。', # Fuzzy
+	'tag-gettingstarted_edit-description' => '用户在[[Special:GettingStarted|入门指南]]上选择的页面的一个编辑。',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
