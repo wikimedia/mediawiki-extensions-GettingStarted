@@ -33,8 +33,7 @@
 		}
 
 		// Manually visited Special:GettingStarted, or E3Experiments not installed
-		prefValue = mw.user.options.get( PREF_NAME );
-		return prefValue === null || prefValue === '1';
+		return false;
 	}
 
 	function getOptionsToken() {
