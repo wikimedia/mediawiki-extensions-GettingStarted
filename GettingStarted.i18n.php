@@ -440,6 +440,7 @@ $messages['ro'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'gettingstarted' => 'Pe accumenzà',
 	'gettingstarted-welcomesiteuser' => 'Bovègne sus a, $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Bovègne sus a, $1!',
 );
@@ -502,6 +503,7 @@ $messages['te'] = array(
 
 /** Ukrainian (українська)
  * @author Base
+ * @author Ата
  */
 $messages['uk'] = array(
 	'gettingstarted' => 'Початок роботи',
@@ -510,6 +512,7 @@ $messages['uk'] = array(
 	'gettingstarted-welcomesiteuser' => 'Вітаємо у проекті $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Вітаємо у проекті $1!',
 	'gettingstarted-return' => 'Ні, дякую, поверніть мене назад',
+	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 );
 
 /** Vietnamese (Tiếng Việt)
