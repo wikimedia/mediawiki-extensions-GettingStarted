@@ -381,6 +381,7 @@ $messages['ms'] = array(
 	'gettingstarted-welcomesiteuser' => 'Selamat datang ke $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Selamat datang ke $1!',
 	'gettingstarted-return' => 'Tak apalah, bawa saya balik',
+	'gettingstarted-project-link' => '{{ns:Project}}:Permulaan',
 );
 
 /** Maltese (Malti)
