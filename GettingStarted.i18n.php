@@ -382,6 +382,8 @@ $messages['ms'] = array(
 	'gettingstarted-welcomesiteuseranon' => 'Selamat datang ke $1!',
 	'gettingstarted-return' => 'Tak apalah, bawa saya balik',
 	'gettingstarted-project-link' => '{{ns:Project}}:Permulaan',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Teg]]: penyunting baru [[{{MediaWiki:gettingstarted-project-link}}|hendak bermula]]',
+	'tag-gettingstarted_edit-description' => 'Suntingan halaman yang dipilih oleh pengguna dari senarai tugas dalam [[Special:GettingStarted|Permulaan]]',
 );
 
 /** Maltese (Malti)
@@ -477,10 +479,10 @@ $messages['sv'] = array(
 	'gettingstarted-msg' => 'En administratör på {{SITENAME}} borde anpassa detta meddelande genom att redigera [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Välkommen till $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Välkommen till $1!',
-	'gettingstarted-return' => '← Nej tack, gå tillbaka till sidan jag nyss läste', # Fuzzy
+	'gettingstarted-return' => 'Nej tack, ta mig tillbaka',
 	'gettingstarted-project-link' => '{{ns:Project}}:Komigång',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tagg]]: ny bidragsgivare [[{{MediaWiki:gettingstarted-project-link}}|kom i gång]]',
-	'tag-gettingstarted_edit-description' => 'Redigering av en sida som användaren har valt från listan i [[Special:GettingStarted|Kom i gång]]', # Fuzzy
+	'tag-gettingstarted_edit-description' => 'Redigering av en sida som användaren valde från listan i [[Special:GettingStarted|Kom i gång]]',
 );
 
 /** Tamil (தமிழ்)
