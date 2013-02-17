@@ -234,7 +234,7 @@ $messages['he'] = array(
 	'gettingstarted-welcomesiteuseranon' => 'ברוך בואך אל $1!',
 	'gettingstarted-return' => 'לא תודה, קחו אותי חזרה',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: עורך חדש [[{{MediaWiki:gettingstarted-project-link}}|מתחיל לעבוד]]',
-	'tag-gettingstarted_edit-description' => 'עריכה של דף שהמשתמש בחר מתוך רשימת מטלות בדף [[Special:GettingStarted]]', # Fuzzy
+	'tag-gettingstarted_edit-description' => 'עריכה של דף שהמשתמש בחר מתוך רשימת מטלות בדף [[Special:GettingStarted|איך להתחיל]]',
 );
 
 /** Upper Sorbian (hornjoserbsce)
