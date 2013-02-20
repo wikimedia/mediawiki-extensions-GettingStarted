@@ -13,11 +13,15 @@ $messages = array();
 $messages['en'] = array(
 	'gettingstarted' => "Getting started",
 	'gettingstarted-desc' => 'Adds a [[Special:GettingStarted|welcome page]] for new users (shown after account creation)',
-	'gettingstarted-msg' => 'An administrator on {{SITENAME}} should customize this message by editing [[{{ns:MediaWiki}}:gettingstarted-msg]].',
+	'gettingstarted-msg' => '', // Intentionally blank
 	'gettingstarted-welcomesiteuser' => "Welcome to $1, $2!",
 	'gettingstarted-welcomesiteuseranon' => "Welcome to $1!",
+	'gettingstarted-task-header' => 'Here are some ways you can get started. Select an article below and try to improve it.',
 	'gettingstarted-return' => "← No thanks, return to the page I was reading",
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
+	'gettingstarted-task-1' => '',
+	'gettingstarted-task-2' => '',
+	'gettingstarted-task-3' => '',
 	// Change tags
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: new editor [[{{MediaWiki:gettingstarted-project-link}}|getting started]]',
 	'tag-gettingstarted_edit-description' => 'Edit of a page that the user chose from the task list in [[Special:GettingStarted|Getting started]]',
@@ -27,8 +31,8 @@ $messages['en'] = array(
 	// gettingstartedpage
 	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Copy editing',
 	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Copy editing is simply improving how things are worded. The pages below are in decent shape, but some users felt they could be better. See if you can improve things. Just click the {{int:vector-view-edit}} tab!',
-	'guidedtour-tour-gettingstartedpage-fix-spelling-title' => 'Fix spelling and grammar',
-	'guidedtour-tour-gettingstartedpage-fix-spelling-description' => 'Fixing spelling and grammar is an easy way to improve the readability of {{SITENAME}}. Just click the {{int:vector-view-edit}} tab and make a couple fixes!',
+	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Fix spelling and grammar',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Fixing spelling and grammar is an easy way to improve the readability of {{SITENAME}}. Just click the {{int:vector-view-edit}} tab and make a couple fixes!',
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Adding links',
 	'guidedtour-tour-gettingstartedpage-add-links-description' => "Have you ever accidentally spent two hours clicking around on {{SITENAME}}? We've been there. Pick one of these pages and look for potential links to others. Just click the {{int:vector-view-edit}} tab to add them!",
 
@@ -41,15 +45,18 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'gettingstarted' => "The name of the extension's entry in [[Special:SpecialPages]]",
 	'gettingstarted-desc' => '{{desc|name=Getting Started|url=http://www.mediawiki.org/wiki/Extension:GettingStarted}}',
-	'gettingstarted-msg' => 'Main content of Special:GettingStarted page.
-* $1 - username',
+	'gettingstarted-msg' => 'Blank message used to replace welcomecreation-msg.  Additional dynamically generated task HTML is injected',
 	'gettingstarted-welcomesiteuser' => 'The title of the Getting Started page for logged-in users.
 * $1 - sitename
 * $2 - username; GENDER is supported',
 	'gettingstarted-welcomesiteuseranon' => 'The title of the Getting Started page for anonymous users.
 * $1 - sitename',
+	'gettingstarted-task-header' => 'Header above task information',
 	'gettingstarted-return' => 'Text of navigation button for returning to previous page',
 	'gettingstarted-project-link' => 'Name of page that describes how GettingStarted is used on the wiki',
+	'gettingstarted-task-1' => 'Wikitext for first randomly ordered GettingStarted task message',
+	'gettingstarted-task-2' => 'Wikitext for second randomly ordered GettingStarted task message',
+	'gettingstarted-task-3' => 'Wikitext for third randomly ordered GettingStarted task message',
 	'tag-gettingstarted_edit' => 'Text of tag identifying an edit from GettingStarted that appears e.g. in [[Special:RecentChanges]].
 
 See also:
@@ -57,8 +64,8 @@ See also:
 	'tag-gettingstarted_edit-description' => 'Description of tag that appears e.g. in [[Special:Tags]]',
 	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Title of copy-editing tooltip on Special:GettingStarted',
 	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Description of copy-editing tooltip on Special:GettingStarted',
-	'guidedtour-tour-gettingstartedpage-fix-spelling-title' => 'Title of spelling and grammar tooltip on Special:GettingStarted',
-	'guidedtour-tour-gettingstartedpage-fix-spelling-description' => 'Description of spelling and grammar tooltip on Special:GettingStarted',
+	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Title of clarification tooltip on Special:GettingStarted',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Description of clarification tooltip on Special:GettingStarted',
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Title of tooltip about adding links on Special:GettingStarted',
 	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Description of tooltip about adding links on Special:GettingStarted',
 );

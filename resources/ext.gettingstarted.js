@@ -57,10 +57,7 @@
 		var $ancestorLi, stepNumber, tourId;
 		$ancestorLi = $( this ).closest( 'li' );
 		stepNumber = $ancestorLi.index() + 1;
-		tourId = gt.makeTourId( {
-			name: 'gettingstartedpage',
-			step: stepNumber
-		} );
+		tourId = $ancestorLi.data( 'guiderId' );
 
 		// Wait until the event is over before showing it, so the
 		// event doesn't propagate up and hide the guider we just showed.

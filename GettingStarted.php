@@ -46,6 +46,7 @@ $wgResourceModules['ext.guidedTour.tour.gettingstartedpage'] = array(
 	),
 ) + $gettingStartedModuleInfo;
 
+// This runs on both account creation and the special page
 $wgResourceModules[ 'ext.gettingstarted' ] = array(
 	'scripts' => 'ext.gettingstarted.js',
 	'styles' => 'ext.gettingstarted.css',
@@ -57,7 +58,7 @@ $wgResourceModules[ 'ext.gettingstarted' ] = array(
 	),
 ) + $gettingStartedModuleInfo;
 
-// This is the version that runs on account creation.  It depends on the CSS code above.
+// This is the version that runs on account creation.
 $wgResourceModules[ 'ext.gettingstarted.accountcreation' ] = array(
 	'scripts' => 'ext.gettingstarted.accountcreation.js',
 	'messages' => array(

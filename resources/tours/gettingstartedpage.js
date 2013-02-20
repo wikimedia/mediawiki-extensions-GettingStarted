@@ -11,9 +11,9 @@
 			attachTo: '.onboarding-help.copyedit',
 			position: 'right'
 		}, {
-			titlemsg: 'guidedtour-tour-gettingstartedpage-fix-spelling-title',
-			descriptionmsg: 'guidedtour-tour-gettingstartedpage-fix-spelling-description',
-			attachTo: '.onboarding-help.fixspelling',
+			titlemsg: 'guidedtour-tour-gettingstartedpage-clarification-title',
+			descriptionmsg: 'guidedtour-tour-gettingstartedpage-clarification-description',
+			attachTo: '.onboarding-help.clarification',
 			position: 'right'
 		}, {
 			titlemsg: 'guidedtour-tour-gettingstartedpage-add-links-title',

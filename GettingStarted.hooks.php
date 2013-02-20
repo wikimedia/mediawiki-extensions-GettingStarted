@@ -62,8 +62,10 @@ class GettingStartedHooks {
 			}
 		}
 
+		// Replace default message with blank one
 		$welcomeCreationMsg = 'gettingstarted-msg';
-
+		$specialGS = new SpecialGettingStarted();
+		$injectHtml = $specialGS->getHtmlResult() . $injectHtml;
 		$wgOut->addModules( 'ext.gettingstarted.accountcreation' );
 
 		return true;
