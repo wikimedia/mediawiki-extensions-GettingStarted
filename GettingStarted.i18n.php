@@ -58,7 +58,7 @@ $messages['be-tarask'] = array(
 	'gettingstarted-return' => 'Не, дзякую, вярніце мяне назад',
 	'gettingstarted-project-link' => '{{ns:Project}}:Пачатак працы',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Метка]]: [[{{MediaWiki:gettingstarted-project-link}}|пачатак працы]] новага рэдактара',
-	'tag-gettingstarted_edit-description' => 'Рэдагаваньне старонкі зь сьпісу задачаў у [[Special:GettingStarted]], якую абраў удзельнік', # Fuzzy
+	'tag-gettingstarted_edit-description' => 'Рэдагаваньне старонкі зь сьпісу задачаў на старонцы «[[Special:GettingStarted|З чаго пачаць]]», якую абраў удзельнік',
 );
 
 /** Breton (brezhoneg)
