@@ -25,7 +25,10 @@
 			// E3Experiments is presumably installed
 			isNewRegistration = mw.config.get( 'wgIsWelcomeCreation', false );
 			if( isNewRegistration ) {
-				return true;
+				// Split test.  Even gets GuidedTour treatment.
+				// Logging is still in E3Experiments
+				return ( userId % 2 === 0 );
+
 			}
 		}
 
