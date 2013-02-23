@@ -48,6 +48,11 @@ $specialPageAliases['vi'] = array(
 	'GettingStarted' => array( 'Bắt_đầu' ),
 );
 
+/** Simplified Chinese (中文（简体）‎) */
+$specialPageAliases['zh-hans'] = array(
+	'GettingStarted' => array( '入门' ),
+);
+
 /** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
 	'GettingStarted' => array( '入門指南' ),
