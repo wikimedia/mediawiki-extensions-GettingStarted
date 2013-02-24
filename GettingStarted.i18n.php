@@ -248,6 +248,8 @@ $messages['hsb'] = array(
 	'gettingstarted-welcomesiteuseranon' => 'Witaj do $1',
 	'gettingstarted-return' => 'Ně, dźakuju so, dowjedź mje wróćo',
 	'gettingstarted-project-link' => '{{ns:Project}}:Prěnje kroki',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Značka]]: [[{{MediaWiki:gettingstarted-project-link}}|Prěnje kroki]] noweho wobdźěłarja',
+	'tag-gettingstarted_edit-description' => 'Změna strony, kotruž wužiwar je z lisćiny nadawkow ze strony [[Special:GettingStarted|Prěnje kroki]] wubrał',
 );
 
 /** Hungarian (magyar)
@@ -267,14 +269,15 @@ $messages['hu'] = array(
 
 /** Indonesian (Bahasa Indonesia)
  * @author Farras
+ * @author Iwan Novirion
  */
 $messages['id'] = array(
 	'gettingstarted' => 'Memulai',
 	'gettingstarted-desc' => 'Menambahkan [[Special:GettingStarted|halaman selamat datang]] untuk pengguna baru (ditampilkan setelah membuat akun)',
-	'gettingstarted-msg' => 'Seorang pengurus {{SITENAME}} harus mengubah pesain ini dengan menyunting [[{{ns:MediaWiki}}:gettingstarted-msg]].',
+	'gettingstarted-msg' => 'Seorang pengurus {{SITENAME}} harus mengubah pesan ini dengan menyunting pesan sistem [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Selamat datang di $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Selamat datang di $1!',
-	'gettingstarted-return' => 'Tidak, terima kasih. Bawa saya kembali',
+	'gettingstarted-return' => 'Tidak, terima kasih. Bawa saya kembali', # Fuzzy
 );
 
 /** Italian (italiano)
@@ -354,6 +357,21 @@ $messages['lb'] = array(
 $messages['lt'] = array(
 	'gettingstarted-welcomesiteuser' => 'Sveiki atvykę į $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Sveiki atvykę į $1!',
+);
+
+/** Minangkabau (Baso Minangkabau)
+ * @author Iwan Novirion
+ */
+$messages['min'] = array(
+	'gettingstarted' => 'Awal mulonyo',
+	'gettingstarted-desc' => 'Manambahkan [[Special:GettingStarted|laman salamaik datang]] untuak pangguno baru (langsuang nampak salasai mambuek akun)',
+	'gettingstarted-msg' => 'Panguruih {{SITENAME}} harus mangubah pasan ko jo manyuntiang pasan sistem [[{{ns:MediaWiki}}:gettingstarted-msg]].',
+	'gettingstarted-welcomesiteuser' => 'Salamaik datang di $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Salamaik datang di $1!',
+	'gettingstarted-return' => 'Mokasih sajolah. Bawok Ambo baliak',
+	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: pangguno baru [[{{MediaWiki:gettingstarted-project-link}}|awal mulonyo]]',
+	'tag-gettingstarted_edit-description' => 'Suntiangan laman nan pangguno piliah dari dafta tugas [[Special:GettingStarted|Awal mulonyo]]',
 );
 
 /** Macedonian (македонски)
