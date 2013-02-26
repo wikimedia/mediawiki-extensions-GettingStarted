@@ -53,6 +53,22 @@
 		} );
 	}
 
+	function launchTaskGuider() {
+		var $ancestorLi, stepNumber, tourId;
+		$ancestorLi = $( this ).closest( 'li' );
+		stepNumber = $ancestorLi.index() + 1;
+		tourId = gt.makeTourId( {
+			name: 'gettingstartedpage',
+			step: stepNumber
+		} );
+
+		// Wait until the event is over before showing it, so the
+		// event doesn't propagate up and hide the guider we just showed.
+		window.setTimeout( function () {
+			mw.libs.guiders.resume( tourId );
+		}, 0 );
+	}
+
 	/**
 	 * Sends them to their intended article, after setting a tour cookie.
 	 */
@@ -68,23 +84,15 @@
 	}
 
 	$( function () {
+		var $taskLis = $('#onboarding-tasks li');
+
 		// Show the appropriate step from the gettingstartedpage tour when the user clicks a
 		// question mark help icon.
-		$( '.onboarding-help' ).on( 'click', function ( evt ) {
-			var $ancestorLi, stepNumber, tourId;
-			$ancestorLi = $( this ).closest( 'li' );
-			stepNumber = $ancestorLi.index() + 1;
-			tourId = gt.makeTourId( {
-				name: 'gettingstartedpage',
-				step: stepNumber
+		$taskLis.find( '.onboarding-help' ).click( launchTaskGuider )
+			.mouseenter( launchTaskGuider )
+			.mouseleave( function() {
+				gt.hideAll();
 			} );
-
-			// Wait until the click event is over before showing it, so the
-			// event doesn't propagate up and hide the guider we just showed.
-			window.setTimeout( function () {
-				mw.libs.guiders.resume( tourId );
-			}, 0 );
-		} );
 
 		if ( shouldStartTour ) {
 			$( '.onboarding-article-list' ).on( 'click', 'a', prepareToSendOnTour);
