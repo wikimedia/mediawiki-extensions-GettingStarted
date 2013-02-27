@@ -46,11 +46,14 @@ $wgResourceModules['ext.guidedTour.tour.gettingstartedpage'] = array(
 	),
 ) + $gettingStartedModuleInfo;
 
+// This loads on both account creation and the special page, even if JS is off
+$wgResourceModules[ 'ext.gettingstarted.styles' ] = array(
+	'styles' => 'ext.gettingstarted.css',
+) + $gettingStartedModuleInfo;
+
 // This runs on both account creation and the special page
 $wgResourceModules[ 'ext.gettingstarted' ] = array(
 	'scripts' => 'ext.gettingstarted.js',
-	'styles' => 'ext.gettingstarted.css',
-	'position' => 'top', // For CSS
 	'dependencies' => array(
 		'mediawiki.api',
 		'user.options',

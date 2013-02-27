@@ -20,6 +20,8 @@ class SpecialGettingStarted extends SpecialPage {
 			$output->setPageTitle( $this->msg( 'gettingstarted-welcomesiteuseranon', $wgSitename ) );
 		}
 
+		$output->addModuleStyles( 'ext.gettingstarted.styles' );
+
 		$output->addModules( array(
 				'ext.guidedTour.tour.gettingstartedpage',
 				'ext.gettingstarted'
