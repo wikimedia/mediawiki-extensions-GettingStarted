@@ -5,6 +5,7 @@
 			$returnTo = $( '#mw-returnto' ),
 			$returnToA = $returnTo.find( 'a' ),
 			$onboardingContainer = $( '.onboarding-container' ),
+			$notices,
 			state,
 			url;
 
@@ -18,9 +19,14 @@
 		$returnTo.empty().append( $returnToA );
 		$onboardingContainer.append( $returnTo );
 
-		state = {}; // Currently unused
-		url = mw.util.wikiGetlink( 'Special:GettingStarted' );
+		// Mainly intended for email confirmation message, but others are possible.
+		// There is not a more specific selector in core for this.
+		$notices = $( '#mw-content-text > p' );
+		$notices.insertAfter( $onboardingContainer );
+
 		if ( history.replaceState ) {
+			state = {}; // Currently unused
+			url = mw.util.wikiGetlink( 'Special:GettingStarted' );
 			history.replaceState( state, title, url );
 		}
 	} );

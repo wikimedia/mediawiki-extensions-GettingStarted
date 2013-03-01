@@ -17,19 +17,15 @@
 
 .onboarding-help {
 	display: inline-block;
-	margin-left: 0.5em;
-	color: #999;
-	font-weight: bold;
-	font-size: 11px;
-	line-height: 11px;
-	width: 16px;
-	height: 16px;
-	text-align: center;
 }
 
-.onboarding-help:hover {
-	color: #222;
+.onboarding-help img {
+	opacity: 0.6;
+}
+
+.onboarding-help img:hover {
 	cursor: pointer;
+	opacity: 1;
 }
 
 /********************* Header Banner *********************/
@@ -98,8 +94,9 @@
 	-o-filter: grayscale(0%);
 }
 
-/********************* Email Notification *********************/
-#mw-content-text > p:first-child {
+/********************* Notifications *********************/
+/* Core currently doesn't offer any more stable selector. */
+#mw-content-text > p {
 	font-size: 0.8em;
 	color: gray;
 }
