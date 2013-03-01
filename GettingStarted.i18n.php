@@ -363,15 +363,15 @@ $messages['lt'] = array(
  * @author Iwan Novirion
  */
 $messages['min'] = array(
-	'gettingstarted' => 'Awal mulonyo',
+	'gettingstarted' => 'Caro mamulai',
 	'gettingstarted-desc' => 'Manambahkan [[Special:GettingStarted|laman salamaik datang]] untuak pangguno baru (langsuang nampak salasai mambuek akun)',
 	'gettingstarted-msg' => 'Panguruih {{SITENAME}} harus mangubah pasan ko jo manyuntiang pasan sistem [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Salamaik datang di $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Salamaik datang di $1!',
 	'gettingstarted-return' => 'Mokasih sajolah. Bawok Ambo baliak',
-	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: pangguno baru [[{{MediaWiki:gettingstarted-project-link}}|awal mulonyo]]',
-	'tag-gettingstarted_edit-description' => 'Suntiangan laman nan pangguno piliah dari dafta tugas [[Special:GettingStarted|Awal mulonyo]]',
+	'gettingstarted-project-link' => '{{ns:Project}}:Caro mamulai',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: pangguno baru [[{{MediaWiki:gettingstarted-project-link}}|caro mamulai]]',
+	'tag-gettingstarted_edit-description' => 'Suntiangan laman nan pangguno piliah dari dafta tugas pado [[Special:GettingStarted|Caro mamulai]]',
 );
 
 /** Macedonian (македонски)
