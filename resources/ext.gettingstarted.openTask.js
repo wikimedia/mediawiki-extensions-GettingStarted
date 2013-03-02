@@ -109,6 +109,32 @@
 		return titleObject.getNamespaceId() !== SPECIAL_NAMESPACE;
 	}
 
+	/**
+	 * Gets a page name from the value of a title attribute
+	 *
+	 * @param {string} titleText title text
+	 *
+	 * @return {string} page name
+	 */
+	function getPageFromTitleAttribute( titleText ) {
+		// Access the map directly, since we're processing it unusually.
+		var redLinkFormat = mw.messages.get( 'red-link-title' ),
+			redLinkRegexText,
+			redLinkRegex,
+			redLinkMatch;
+
+		redLinkRegexText = $.escapeRE( redLinkFormat );
+		// Replace escaped $1 with capturing group for one or more characters
+		redLinkRegexText = redLinkRegexText.replace( '\\$1', '(.+)' );
+		redLinkRegex = new RegExp( '^' + redLinkRegexText + '$' );
+
+		redLinkMatch = titleText.match( redLinkRegex );
+		if ( redLinkMatch !== null ) {
+			return redLinkMatch[1];
+		} else {
+			return titleText;
+		}
+	}
 
 	/**
 	 * Runs on every page, checks to see if this page is in the user's task list,
@@ -162,7 +188,6 @@
 
 		var $returnTo = $( '#mw-returnto a, #back-to-referrer' ),
 			returnToTitle,
-			article,
 			isNew,
 			bucketId;
 
@@ -187,11 +212,11 @@
 
 		// If the user clicks on a task, log it and start a funnel.
 		$( '#onboarding-tasks a' ).stall( 'click', function () {
-			var $el = $( this );
-			article = $el.attr( 'title' );
-			if ( !article ) {
-				return false;
-			}
+			var $el = $( this ),
+				articleTitle = $el.attr( 'title' ),
+				article;
+
+			article = getPageFromTitleAttribute( articleTitle );
 			mw.eventLog.logEvent( 'GettingStarted', {
 				action      : 'gettingstarted-click',
 				funnel      : 'gettingstarted',
@@ -203,15 +228,9 @@
 
 		// If the user clicks the returnTo link, log it and maybe start a funnel.
 		returnToTitle = $returnTo.attr( 'title' );
-		if ( typeof returnToTitle !== 'string' ) {
-			returnToTitle = '';
-		}
 
 		$returnTo.stall( 'click', function () {
-			// XXX i18n, derive this from red-link-title?
-			// I haven't seen other junk in the title of the returnTo link, such as
-			// query string.
-			article = returnToTitle.replace( ' (page does not exist)', '');
+			var article = getPageFromTitleAttribute( returnToTitle );
 			mw.eventLog.logEvent( 'GettingStarted', {
 				action      : 'gettingstarted-click',
 				funnel      : 'returnto',

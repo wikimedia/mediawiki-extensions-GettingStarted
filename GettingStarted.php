@@ -59,10 +59,14 @@ $wgResourceModules[ 'ext.gettingstarted.openTask' ] = array(
 		'jquery.cookie',
 		'jquery.json',
 		'mediawiki.Title',
+		'jquery.mwExtension', // $.escapeRE
 		'mediawiki.user',
 		'ext.Experiments.lib',
 		'ext.postEdit',
 		'schema.GettingStarted',
+	),
+	'messages' => array(
+		'red-link-title'
 	)
 ) + $gettingStartedModuleInfo;
 
