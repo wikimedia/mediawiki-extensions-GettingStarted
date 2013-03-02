@@ -53,17 +53,27 @@
 		} );
 	}
 
-	function launchTaskGuider() {
+	/**
+	 * Launches an on-page guider
+	 *
+	 * @param {HTMLElement} el help element
+	 * @param {boolean} isClick true if triggered by click, false otherwise
+	 */
+	function launchTaskGuider( el, isClick ) {
 		var $ancestorLi, stepNumber, tourId;
-		$ancestorLi = $( this ).closest( 'li' );
+		$ancestorLi = $( el ).closest( 'li' );
 		stepNumber = $ancestorLi.index() + 1;
 		tourId = $ancestorLi.data( 'guiderId' );
 
-		// Wait until the event is over before showing it, so the
-		// event doesn't propagate up and hide the guider we just showed.
-		window.setTimeout( function () {
+		if ( isClick ) {
+			// Wait until the event is over before showing it, so the click
+			// event doesn't propagate up and hide the guider we just showed.
+			window.setTimeout( function () {
+				mw.libs.guiders.resume( tourId );
+			}, 0 );
+		} else {
 			mw.libs.guiders.resume( tourId );
-		}, 0 );
+		}
 	}
 
 	/**
@@ -83,13 +93,17 @@
 	$( function () {
 		var $taskLis = $('#onboarding-tasks li');
 
-		// Show the appropriate step from the gettingstartedpage tour when the user clicks a
-		// question mark help icon.
-		$taskLis.find( '.onboarding-help' ).click( launchTaskGuider )
-			.mouseenter( launchTaskGuider )
-			.mouseleave( function() {
-				gt.hideAll();
-			} );
+		// When the user interacts with a help icon (question mark), show the appropriate step from the on-page guider.
+		// When they end hover, hide the guiders.
+		$taskLis.find( '.onboarding-help' ).click( function () {
+			launchTaskGuider( this, true );
+		} )
+		.mouseenter( function () {
+			launchTaskGuider( this, false );
+		} )
+		.mouseleave( function() {
+			gt.hideAll();
+		} );
 
 		if ( shouldStartTour ) {
 			$( '.onboarding-article-list' ).on( 'click', 'a', prepareToSendOnTour);
