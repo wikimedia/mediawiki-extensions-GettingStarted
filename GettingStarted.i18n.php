@@ -15,7 +15,8 @@ $messages['en'] = array(
 	'gettingstarted-desc' => 'Adds a [[Special:GettingStarted|welcome page]] for new users (shown after account creation)',
 	'gettingstarted-msg' => '', // Intentionally blank
 	'gettingstarted-welcomesiteuser' => "Welcome to $1, $2!",
-	'gettingstarted-welcomesiteuseranon' => "Welcome to $1!",
+	'gettingstarted-welcomesiteuseranon' => "Getting started",
+	'gettingstarted-welcome-back-site-user' => "Welcome back, $2",
 	'gettingstarted-task-header' => "We're glad you're here. Below are some easy ways to get started with contributing.",
 	'gettingstarted-return' => "← No thanks, go back to where I was",
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
@@ -46,11 +47,17 @@ $messages['qqq'] = array(
 	'gettingstarted' => "The name of the extension's entry in [[Special:SpecialPages]]",
 	'gettingstarted-desc' => '{{desc|name=Getting Started|url=http://www.mediawiki.org/wiki/Extension:GettingStarted}}',
 	'gettingstarted-msg' => 'Blank message used to replace welcomecreation-msg.  Additional dynamically generated task HTML is injected',
-	'gettingstarted-welcomesiteuser' => 'The title of the Getting Started page for logged-in users.
+	'gettingstarted-welcomesiteuser' => 'The title of the Getting Started page shown automatically to users after they create an account
 * $1 - sitename
 * $2 - username; GENDER is supported',
-	'gettingstarted-welcomesiteuseranon' => 'The title of the Getting Started page for anonymous users.
+	'gettingstarted-welcomesiteuseranon' => 'The title of the Getting Started page for anonymous users who manually visit it.
+The parameter is not used in the default message.
 * $1 - sitename',
+	'gettingstarted-welcome-back-site-user' => 'The title of the Getting Started page for logged in users who manually visit it.
+These may or may not have seen it when they created their account, depending on account age.
+Only $2 is currently used in the default message, but the order is the same as {{msg-mw|gettingstarted-welcomesiteuser}} for consistency.
+* $1 - sitename
+* $2 - username; GENDER is supported',
 	'gettingstarted-task-header' => 'Header above task information',
 	'gettingstarted-return' => 'Text of navigation button for returning to previous page',
 	'gettingstarted-project-link' => 'Name of page that describes how GettingStarted is used on the wiki',

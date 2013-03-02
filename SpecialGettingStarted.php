@@ -15,7 +15,7 @@ class SpecialGettingStarted extends SpecialPage {
 
 		$user = $this->getUser();
 		if( !$user->isAnon() ) {
-			$output->setPageTitle( $this->msg( 'gettingstarted-welcomesiteuser', $wgSitename, $user->getName() ) );
+			$output->setPageTitle( $this->msg( 'gettingstarted-welcome-back-site-user', $wgSitename, $user->getName() ) );
 		} else {
 			$output->setPageTitle( $this->msg( 'gettingstarted-welcomesiteuseranon', $wgSitename ) );
 		}
