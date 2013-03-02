@@ -11,9 +11,9 @@
 ( function ( window, document, mw, $ ) {
 	'use strict';
 	var cfg = mw.config.get( [
-		'wgAction', 'wgTitle', 'wgCanonicalSpecialPageName',
+		'wgAction', 'wgPageName', 'wgTitle', 'wgCanonicalSpecialPageName',
 		'wgArticleId', 'wgCurRevisionId',
-		'wgNamespaceNumber', 'wgFormattedNamespaces',
+		'wgNamespaceNumber',
 		// Wiki server variables we supply:
 		'wgIsWelcomeCreation', 'wgUserId',
 		// Wiki server variable supplied by Extension:PostEdit:
@@ -33,19 +33,6 @@
 		};
 
 		mw.eventLog.setDefaults( schema, defaults );
-	}
-
-
-	// FIXME Verbatim copypasta from mediawiki.user.js, which doesn't export it.
-	function generateId() {
-		var i, r,
-			id = '',
-			seed = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-		for ( i = 0; i < 32; i++ ) {
-			r = Math.floor( Math.random() * seed.length );
-			id += seed.substring( r, r + 1 );
-		}
-		return id;
 	}
 
 	/**
@@ -108,7 +95,7 @@
 	 * @return boolean
 	 */
 	function isAppropriateTask( title ) {
-		var specialNamespace = cfg.wgFormattedNamespaces[ -1 ];
+		var SPECIAL_NAMESPACE = -1, titleObject;
 
 		if ( typeof title !== 'string' || title === '' ) {
 			return false;
@@ -117,12 +104,9 @@
 			return false;
 		}
 
-		// Check if in Special namespace (using the mw.Title module just for
-		// this seems like overkill).
-		if ( title.indexOf (specialNamespace + ':' ) === 0 ) {
-			return false;
-		}
-		return true;
+		titleObject = new mw.Title( title );
+
+		return titleObject.getNamespaceId() !== SPECIAL_NAMESPACE;
 	}
 
 
@@ -132,7 +116,7 @@
 	 * @return {void}
 	 */
 	function checkProgress() {
-		var action, pageTitle, pageNamespace, task,
+		var action, fullPageTitle, pageNamespace, task,
 			schema, event, isEditable,
 			loggedActions = {
 				view : 'page-impression',
@@ -149,14 +133,10 @@
 			return;
 		}
 
-		// The task title stored in the cookie may include a namespace.
-		pageTitle = cfg.wgTitle;
-		pageNamespace = cfg.wgFormattedNamespaces[ cfg.wgNamespaceNumber ];
-		if ( pageNamespace ) {
-			pageTitle = pageNamespace + ':' + pageTitle;
-		}
+		// The task title stored in the cookie may include a namespace in this format.
+		fullPageTitle = new mw.Title( cfg.wgPageName ).getPrefixedText();
 
-		task = getTasks()[ pageTitle ];
+		task = getTasks()[ fullPageTitle ];
 		if ( task ) {
 			schema = getSchemaForTask( task );
 
