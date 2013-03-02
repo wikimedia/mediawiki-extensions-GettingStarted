@@ -32,6 +32,12 @@ $gettingStartedModuleInfo = array(
 	'remoteExtPath' => 'GettingStarted/resources',
 );
 
+$wgResourceModules[ 'schema.GettingStarted' ] = array(
+	'class'    => 'ResourceLoaderSchemaModule',
+	'schema'   => 'GettingStarted',
+	'revision' => 5285779,
+);
+
 $wgResourceModules['ext.guidedTour.tour.gettingstartedpage'] = array(
 	'scripts' => 'tours/gettingstartedpage.js',
 	'dependencies' => 'ext.guidedTour.lib',
@@ -44,6 +50,19 @@ $wgResourceModules['ext.guidedTour.tour.gettingstartedpage'] = array(
 		'guidedtour-tour-gettingstartedpage-add-links-title',
 		'guidedtour-tour-gettingstartedpage-add-links-description',
 	),
+) + $gettingStartedModuleInfo;
+
+// Every page site-wide
+$wgResourceModules[ 'ext.gettingstarted.openTask' ] = array(
+	'scripts' => 'ext.gettingstarted.openTask.js',
+	'dependencies' => array(
+		'jquery.cookie',
+		'jquery.json',
+		'mediawiki.user',
+		'ext.Experiments.lib',
+		'ext.postEdit',
+		'schema.GettingStarted',
+	)
 ) + $gettingStartedModuleInfo;
 
 // This loads on both account creation and the special page, even if JS is off
@@ -75,6 +94,7 @@ $wgResourceModules[ 'ext.gettingstarted.accountcreation' ] = array(
 	'position' => 'top',
 ) + $gettingStartedModuleInfo;
 
+$wgHooks[ 'BeforePageDisplay' ][] = 'GettingStartedHooks::onBeforePageDisplay';
 $wgHooks[ 'BeforeWelcomeCreation' ][] = 'GettingStartedHooks::onBeforeWelcomeCreation';
 $wgHooks[ 'RecentChange_save' ][] = 'GettingStartedHooks::onRecentChange_save';
 $wgHooks[ 'ListDefinedTags' ][] = 'GettingStartedHooks::onListDefinedTags';

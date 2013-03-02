@@ -7,12 +7,23 @@
  */
 
 class GettingStartedHooks {
+	/**
+	 * Adds the openTask module to the page
+	 *
+	 * @param OutputPage $out output page
+	 * @param Skin $skin current skin
+	 * @return bool
+	 */
+	public static function onBeforePageDisplay( $out, $skin ) {
+		$out->addModules( 'ext.gettingstarted.openTask' );
+		return true;
+	}
 
 	/**
 	 * Look for page edits where there's an item in the user's openTask cookie
 	 * matching the title whose task is 'gettingstarted'
 	 * Approach comes from AbuseFilter and MobileFrontend extensions.
-	 * @param $recentChange RecentChange
+	 * @param RecentChange $recentChange RecentChanges entry
 	 * @return bool
 	 */
 	public static function onRecentChange_save( $recentChange ) {
