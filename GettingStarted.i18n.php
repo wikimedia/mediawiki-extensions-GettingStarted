@@ -16,8 +16,8 @@ $messages['en'] = array(
 	'gettingstarted-msg' => '', // Intentionally blank
 	'gettingstarted-welcomesiteuser' => "Welcome to $1, $2!",
 	'gettingstarted-welcomesiteuseranon' => "Welcome to $1!",
-	'gettingstarted-task-header' => 'Here are some ways you can get started. Select an article below and try to improve it.',
-	'gettingstarted-return' => "← No thanks, return to the page I was reading",
+	'gettingstarted-task-header' => "We're glad you're here. Below are some easy ways to get started with contributing.",
+	'gettingstarted-return' => "← No thanks, go back to where I was",
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	'gettingstarted-task-1' => '',
 	'gettingstarted-task-2' => '',
@@ -29,12 +29,12 @@ $messages['en'] = array(
 	// Tours
 
 	// gettingstartedpage
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Copy editing',
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Copy editing is simply improving how things are worded. The pages below are in decent shape, but some users felt they could be better. See if you can improve things. Just click the {{int:vector-view-edit}} tab!',
-	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Fix spelling and grammar',
-	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Fixing spelling and grammar is an easy way to improve the readability of {{SITENAME}}. Just click the {{int:vector-view-edit}} tab and make a couple fixes!',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Adding links',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => "Have you ever accidentally spent two hours clicking around on {{SITENAME}}? We've been there. Pick one of these pages and look for potential links to others. Just click the {{int:vector-view-edit}} tab to add them!",
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Copyedit',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Copy editing is simply improving the spelling, grammar, and style. The pages below are in decent shape, but some people felt they could be better. See if you can improve things.',
+	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Improve clarity',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Other people have marked these pages as confusing, unclear, or vague. You don\'t have to be an expert in the topic, just look for \'Clarification needed\' tags to see what needs fixing.',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Add links',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Ever spent hours just clicking around on {{SITENAME}}? Every link is added by hand, and we need your help adding some.'
 
 );
 
