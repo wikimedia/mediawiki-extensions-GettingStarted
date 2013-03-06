@@ -127,6 +127,13 @@ $messages['el'] = array(
 	'gettingstarted-return' => 'Όχι ευχαριστώ, πήγαινε με πίσω',
 );
 
+/** British English (British English)
+ * @author Shirayuki
+ */
+$messages['en-gb'] = array(
+	'gettingstarted-msg' => 'An administrator on {{SITENAME}} should customise this message by editing [[{{ns:MediaWiki}}:gettingstarted-msg]].',
+);
+
 /** Esperanto (Esperanto)
  * @author Yekrats
  */
