@@ -58,6 +58,7 @@ $wgResourceModules[ 'ext.gettingstarted.openTask' ] = array(
 	'dependencies' => array(
 		'jquery.cookie',
 		'jquery.json',
+		'mediawiki.Title',
 		'mediawiki.user',
 		'ext.Experiments.lib',
 		'ext.postEdit',
