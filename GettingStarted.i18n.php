@@ -73,7 +73,8 @@ See also:
 	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Description of copy-editing tooltip on Special:GettingStarted',
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Title of clarification tooltip on Special:GettingStarted',
 	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Description of clarification tooltip on Special:GettingStarted',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Title of tooltip about adding links on Special:GettingStarted',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Title of tooltip about adding links on Special:GettingStarted.
+{{Identical|Add link}}',
 	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Description of tooltip about adding links on Special:GettingStarted',
 );
 
@@ -129,11 +130,22 @@ $messages['de'] = array(
 	'gettingstarted-desc' => 'Ergänzt eine [[Special:GettingStarted|Willkommensseite]] für neue Benutzer, die nach deren Registrierung angezeigt wird',
 	'gettingstarted-msg' => 'Ein Administrator auf {{SITENAME}} sollte diese Nachricht durch das Bearbeiten von [[{{ns:MediaWiki}}:gettingstarted-msg]] anpassen.',
 	'gettingstarted-welcomesiteuser' => 'Willkommen bei $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Willkommen bei $1!',
-	'gettingstarted-return' => 'Nein danke, bring mich zurück',
+	'gettingstarted-welcomesiteuseranon' => 'Erste Schritte',
+	'gettingstarted-welcome-back-site-user' => 'Willkommen zurück, $2',
+	'gettingstarted-task-header' => 'Wir freuen uns, dass du hier bist. Unten gibt es einige einfache Wege, um anzufangen.',
+	'gettingstarted-return' => 'Nein danke. Dort zurückgehen, wo ich war.',
 	'gettingstarted-project-link' => '{{ns:Project}}:Erste Schritte',
+	'gettingstarted-task-1' => '',
+	'gettingstarted-task-2' => '',
+	'gettingstarted-task-3' => '',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Markierung]]: [[{{MediaWiki:gettingstarted-project-link}}|Erste Schritte]] eines neuen Autors',
 	'tag-gettingstarted_edit-description' => 'Bearbeitung einer Seite, die der Benutzer aus der Aufgabenliste der Spezialseite „[[Special:GettingStarted|Anfangen]]“ ausgewählt hat',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Lektorat',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Redigieren ist das einfache Verbessern der Rechtschreibung, Grammatik und der Gestaltung. Die unten stehenden Seiten sind in annehmbarer Form, aber einige Leute denken, dass sie besser sein könnten. Schaue, ob du Dinge verbessern kannst.',
+	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Klarheit verbessern',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Andere Leute haben diese Seiten als verwirrend, unklar oder ungenau markiert. Du musst kein Experte in dem Thema sein. Schaue einfach nach „Klärung nötig“-Markierungen, um zu sehen, was einer Verbesserung bedarf.',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Links hinzufügen',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Hast du schon mehrere Stunden mit Herumklicken auf {{SITENAME}} verbracht? Jeder Link wird manuell hinzugefügt und wir brauchen dazu deine Hilfe.',
 );
 
 /** Lower Sorbian (dolnoserbski)
@@ -144,8 +156,14 @@ $messages['dsb'] = array(
 	'gettingstarted-desc' => 'Pśidawa [[Special:GettingStarted|pówitański bok]] za nowych wužywarjow, kótaryž pokazujo se pó załoženju konta',
 	'gettingstarted-msg' => 'Administrator na {{GRAMMAR:lokatiw|{{SITENAME}}}} by měł toś tu powěźeńku pśez wobźěłowanje [[{{ns:MediaWiki}}:gettingstarted-msg]] pśiměriś.',
 	'gettingstarted-welcomesiteuser' => 'Witaj do $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Witaj do $1',
-	'gettingstarted-return' => 'Ně, źěkujom se, spóraj mě slědk',
+	'gettingstarted-welcomesiteuseranon' => 'Prědne kšace',
+	'gettingstarted-welcome-back-site-user' => 'Witaj slědk, $2',
+	'gettingstarted-return' => 'Ně, źěkujom se, źi slědk',
+	'gettingstarted-project-link' => '{{ns:Project}}:Prědne kšace',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Marka]]: [[{{MediaWiki:gettingstarted-project-link}}|Prědne kšace]] nowego wobźěłarja',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Redakcija',
+	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Jasnosć pólěpšyś',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Wótkaze pśidaś',
 );
 
 /** Greek (Ελληνικά)
@@ -223,17 +241,29 @@ $messages['fi'] = array(
 /** French (français)
  * @author Crochet.david
  * @author Gomoko
+ * @author Jean-Frédéric
  */
 $messages['fr'] = array(
 	'gettingstarted' => 'Pour commencer',
 	'gettingstarted-desc' => 'Ajoute une [[Special:GettingStarted|page d’accueil]] pour les nouveaux utilisateurs (affichée après la création de compte)',
 	'gettingstarted-msg' => 'Un administrateur sur {{SITENAME}} devrait personnaliser ce message en modifiant [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Bienvenue sur $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Bienvenue sur $1!',
-	'gettingstarted-return' => 'Non merci, ramenez-moi d’où je viens',
+	'gettingstarted-welcomesiteuseranon' => 'Pour commencer',
+	'gettingstarted-welcome-back-site-user' => 'Bienvenue de nouveau, $2',
+	'gettingstarted-task-header' => 'Nous sommes heureux que vous soyez ici. Vous trouverez ci-dessous quelques moyens faciles de démarrer votre contribution.',
+	'gettingstarted-return' => 'Non merci, revenir là où j’étais',
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
+	'gettingstarted-task-1' => ' ',
+	'gettingstarted-task-2' => ' ',
+	'gettingstarted-task-3' => ' ',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Balise]]: un nouvel éditeur [[{{MediaWiki:gettingstarted-project-link}}|a débuté]]',
 	'tag-gettingstarted_edit-description' => "Modification d'une page choisie par l’utilisateur dans la liste des tâches dans [[Special:GettingStarted|Pour commencer]]",
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Relecture',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => "Reprendre la copie consiste à améliorer l'orthographe, la grammaire et le style. Les pages ci-dessous sont dans un bon état, mais certains pensent qu’elles pourraient être encore meilleures. Voyez si vous pouvez améliorer les choses.",
+	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Améliorer la clarté',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => "D’autres personnes ont marqué ces pages comme confuses, non claires, ou vagues. Vous n’avez pas besoin d’être un expert du domaine, mais juste de regarder les balises 'Clarification demandée' pour voir ce qui doit être corrigé.",
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Ajouter des liens',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Avez-vous déjà passé des heures à cliquer ici et là dans {{SITENAME}}? Chaque lien est ajouté à la main, et nous avons besoin de votre aide pour en ajouter d’autres.',
 );
 
 /** Franco-Provençal (arpetan)
@@ -254,11 +284,19 @@ $messages['gl'] = array(
 	'gettingstarted-desc' => 'Engade unha [[Special:GettingStarted|páxina de benvida]] aos novos usuarios (móstrase despois da creación da conta)',
 	'gettingstarted-msg' => 'Un adminitrador de {{SITENAME}} debería personalizar esta mensaxe editando "[[{{ns:MediaWiki}}:gettingstarted-msg]]".',
 	'gettingstarted-welcomesiteuser' => '{{GENDER:$2|Benvido|Benvida}} a $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Dámoslle a benvida a $1!',
-	'gettingstarted-return' => 'Non, grazas; levádeme de volta',
+	'gettingstarted-welcomesiteuseranon' => 'Primeiros pasos',
+	'gettingstarted-welcome-back-site-user' => '{{GENDER:$2|Benvido|Benvida}} de volta, $2',
+	'gettingstarted-task-header' => 'Alegrámonos de que estea aquí. A continuación hai algunhas maneiras fáciles de empezar a contribuír.',
+	'gettingstarted-return' => '← Non, grazas; volver a onde estaba',
 	'gettingstarted-project-link' => '{{ns:Project}}:Primeiros pasos',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Etiqueta]]: Novo editor dando os [[{{MediaWiki:gettingstarted-project-link}}|primeiros pasos]]',
 	'tag-gettingstarted_edit-description' => 'Modificación dunha páxina que o usuario elixiu desde a lista de tarefas dos [[Special:GettingStarted|primeiros pasos]]',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Corrección',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'A corrección consiste na mellora da redacción, gramática e estilo. As páxinas que hai a continuación teñen un formato decente, pero algunhas persoas cren que poden estar mellor. A ver se vostede pode mellorar as cousas.',
+	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Mellorar a claridade',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Outras persoas marcaron estas páxinas como confusas, pouco claras ou imprecisas. Non ten que ser experto na materia, simplemente busque as etiquetas de "Cómpre clarificar" para saber o que necesita corrixirse.',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Engadir ligazóns',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Algunha vez pasou horas premendo aquí e acolá nas páxinas de {{SITENAME}}? Cada ligazón engádese á man e necesitamos a súa axuda para engadir algunhas.',
 );
 
 /** Hebrew (עברית)
@@ -283,11 +321,15 @@ $messages['hsb'] = array(
 	'gettingstarted-desc' => 'Přidawa [[Special:GettingStarted|witansku stronu]] za nowych wužiwarjow, kotraž so po załoženju konta pokazuje',
 	'gettingstarted-msg' => 'Administrator na {{GRAMMAR:lokatiw|{{SITENAME}}}} měł tutu zdźělenku přez wobdźěłowanje [[{{ns:MediaWiki}}:gettingstarted-msg]] přiměrić.',
 	'gettingstarted-welcomesiteuser' => 'Witaj do $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Witaj do $1',
-	'gettingstarted-return' => 'Ně, dźakuju so, dowjedź mje wróćo',
+	'gettingstarted-welcomesiteuseranon' => 'Prěnje kroki',
+	'gettingstarted-welcome-back-site-user' => 'Witaj wróćo, $2',
+	'gettingstarted-return' => 'Ně, dźakuju so, dźi wróćo',
 	'gettingstarted-project-link' => '{{ns:Project}}:Prěnje kroki',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Značka]]: [[{{MediaWiki:gettingstarted-project-link}}|Prěnje kroki]] noweho wobdźěłarja',
 	'tag-gettingstarted_edit-description' => 'Změna strony, kotruž wužiwar je z lisćiny nadawkow ze strony [[Special:GettingStarted|Prěnje kroki]] wubrał',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Redakcija',
+	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Jasnosć polěpšić',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Wotkazy přidać',
 );
 
 /** Hungarian (magyar)
@@ -303,6 +345,13 @@ $messages['hu'] = array(
 	'gettingstarted-project-link' => '{{ns:Project}}:Első lépések',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Címke]]: új szerkesztő [[{{MediaWiki:gettingstarted-project-link}}|első lépései]]',
 	'tag-gettingstarted_edit-description' => 'A [[Special:GettingStarted|Speciális:Első lépések]] listáról választott oldal szerkesztése', # Fuzzy
+);
+
+/** Armenian (Հայերեն)
+ * @author Vadgt
+ */
+$messages['hy'] = array(
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Ստեղծել հղումը',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -337,10 +386,12 @@ $messages['it'] = array(
 $messages['ja'] = array(
 	'gettingstarted-desc' => '新しい利用者向けに[[Special:GettingStarted|ようこそページ]]を追加する (アカウント作成した際に表示される)',
 	'gettingstarted-welcomesiteuser' => '$2さん、$1へようこそ!',
-	'gettingstarted-welcomesiteuseranon' => '$1へようこそ!',
-	'gettingstarted-return' => '不要です。戻ります。',
+	'gettingstarted-welcomesiteuseranon' => '$1へようこそ!', # Fuzzy
+	'gettingstarted-welcome-back-site-user' => '$2さん、おかえりなさい',
+	'gettingstarted-return' => '← 不要です。元の場所に戻ります',
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	'tag-gettingstarted_edit-description' => '利用者が [[Special:GettingStarted|Getting started]] のタスク一覧から選択したページの編集',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'リンクの追加',
 );
 
 /** Georgian (ქართული)
@@ -405,8 +456,8 @@ $messages['min'] = array(
 	'gettingstarted-desc' => 'Manambahkan [[Special:GettingStarted|laman salamaik datang]] untuak pangguno baru (langsuang nampak salasai mambuek akun)',
 	'gettingstarted-msg' => 'Panguruih {{SITENAME}} harus mangubah pasan ko jo manyuntiang pasan sistem [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Salamaik datang di $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Salamaik datang di $1!',
-	'gettingstarted-return' => 'Mokasih sajolah. Bawok Ambo baliak',
+	'gettingstarted-welcomesiteuseranon' => 'Salamaik datang di $1!', # Fuzzy
+	'gettingstarted-return' => 'Mokasih sajolah. Bawok Ambo baliak', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:Caro mamulai',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: pangguno baru [[{{MediaWiki:gettingstarted-project-link}}|caro mamulai]]',
 	'tag-gettingstarted_edit-description' => 'Suntiangan laman nan pangguno piliah dari dafta tugas pado [[Special:GettingStarted|Caro mamulai]]',
@@ -420,11 +471,18 @@ $messages['mk'] = array(
 	'gettingstarted-desc' => 'Става [[Special:GettingStarted|страница за добре дојде]] за новите корисници (се прикажува откако ќе ја направат сметката)',
 	'gettingstarted-msg' => 'Администратор на {{SITENAME}} треба да ја прилагоди поракава, менувајќи го [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Добре дојдовте на $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Добре дојдовте на $1!',
-	'gettingstarted-return' => 'Не благодарам. Врати ме назад',
+	'gettingstarted-welcomesiteuseranon' => 'Како да почнете',
+	'gettingstarted-welcome-back-site-user' => 'Добре дојдвте повторно, $2',
+	'gettingstarted-task-header' => 'Драго ни е што сте тука. Еве како лесно да почнете со придонесување.',
+	'gettingstarted-return' => '← Не благодарам. Врати ме назад',
 	'gettingstarted-project-link' => '{{ns:Project}}:ПрвиЧекори',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Ознака]]: нов уредник [[{{MediaWiki:gettingstarted-project-link}}|почнува со работа]]',
 	'tag-gettingstarted_edit-description' => 'Уредување на страница што корисникот ја одбрал од списокот на задачи на [[Special:GettingStarted|Први чекори]]',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Лекторирање',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Лекторирањето едноставно значи исправка на изразувањето. Долунаведените статии се пристојно направени, но некои корисници сметаат дека можат да бидат подобри. Видете дали можете да ги подобрите. Едноставно стиснете на јазичето „{{int:vector-view-edit}}“!', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Текстот треба да биде појасен',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Додај врски',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Дали некогаш по грешка сте провеле два часа стискајќи по {{SITENAME}}? Ете, и ние исто. Изберете една од статиите и гледајте по зборовите каде може да се стават врски до други статии. Едноставно стиснете на јазичето „{{int:vector-view-edit}}“ за да ги ставите!', # Fuzzy
 );
 
 /** Malay (Bahasa Melayu)
@@ -501,7 +559,10 @@ $messages['ro'] = array(
 $messages['roa-tara'] = array(
 	'gettingstarted' => 'Pe accumenzà',
 	'gettingstarted-welcomesiteuser' => 'Bovègne sus a, $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Bovègne sus a, $1!',
+	'gettingstarted-welcomesiteuseranon' => 'Pe accumenzà',
+	'gettingstarted-welcome-back-site-user' => 'Bovègne arrete, $2',
+	'gettingstarted-project-link' => '{{ns:Project}}:Pe accumenzà',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Aggiunge le collegaminde',
 );
 
 /** Russian (русский)
