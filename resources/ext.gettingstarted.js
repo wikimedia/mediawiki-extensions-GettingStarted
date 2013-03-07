@@ -12,14 +12,7 @@
 	 * @return {Boolean} true if and only if it should be started
 	 */
 	function shouldStartGettingStartedTour() {
-		if ( !isLoggedIn ) {
-			// For now, we decided it's better not to show at all then show every time they
-			// return to Special:GettingStarted (anonymous users can not change prefs)
-			return false;
-		}
-
-		var prefValue = mw.user.options.get( PREF_NAME );
-		return ( prefValue === null || prefValue === '1' );
+		return false;
 	}
 
 	function getOptionsToken() {
