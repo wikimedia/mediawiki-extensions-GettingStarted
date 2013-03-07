@@ -81,7 +81,7 @@
 	margin-top: 8em;
 }
 .centralauth-login-box img {
-	border: 0px;
+	border: 0;
 	opacity: 0.5;
 	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
