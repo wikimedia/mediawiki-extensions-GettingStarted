@@ -13,14 +13,30 @@ $messages = array();
 $messages['en'] = array(
 	'gettingstarted' => "Getting started",
 	'gettingstarted-desc' => 'Adds a [[Special:GettingStarted|welcome page]] for new users (shown after account creation)',
-	'gettingstarted-msg' => 'An administrator on {{SITENAME}} should customize this message by editing [[{{ns:MediaWiki}}:gettingstarted-msg]].',
+	'gettingstarted-msg' => '', // Intentionally blank
 	'gettingstarted-welcomesiteuser' => "Welcome to $1, $2!",
-	'gettingstarted-welcomesiteuseranon' => "Welcome to $1!",
-	'gettingstarted-return' => "No thanks, take me back",
+	'gettingstarted-welcomesiteuseranon' => "Getting started",
+	'gettingstarted-welcome-back-site-user' => "Welcome back, $2",
+	'gettingstarted-task-header' => "We're glad you're here. Below are some easy ways to get started with contributing.",
+	'gettingstarted-return' => "← No thanks, go back to where I was",
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
+	'gettingstarted-task-1' => '',
+	'gettingstarted-task-2' => '',
+	'gettingstarted-task-3' => '',
 	// Change tags
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: new editor [[{{MediaWiki:gettingstarted-project-link}}|getting started]]',
 	'tag-gettingstarted_edit-description' => 'Edit of a page that the user chose from the task list in [[Special:GettingStarted|Getting started]]',
+
+	// Tours
+
+	// gettingstartedpage
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Copyedit',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Copy editing is simply improving the spelling, grammar, and style. The pages below are in decent shape, but some people felt they could be better. See if you can improve things.',
+	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Improve clarity',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Other people have marked these pages as confusing, unclear, or vague. You don\'t have to be an expert in the topic, just look for \'Clarification needed\' tags to see what needs fixing.',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Add links',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Ever spent hours just clicking around on {{SITENAME}}? Every link is added by hand, and we need your help adding some.'
+
 );
 
 /** Message documentation (Message documentation)
@@ -30,20 +46,35 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'gettingstarted' => "The name of the extension's entry in [[Special:SpecialPages]]",
 	'gettingstarted-desc' => '{{desc|name=Getting Started|url=http://www.mediawiki.org/wiki/Extension:GettingStarted}}',
-	'gettingstarted-msg' => 'Main content of Special:GettingStarted page.
-* $1 - username',
-	'gettingstarted-welcomesiteuser' => 'The title of the Getting Started page for logged-in users.
+	'gettingstarted-msg' => 'Blank message used to replace welcomecreation-msg.  Additional dynamically generated task HTML is injected',
+	'gettingstarted-welcomesiteuser' => 'The title of the Getting Started page shown automatically to users after they create an account
 * $1 - sitename
 * $2 - username; GENDER is supported',
-	'gettingstarted-welcomesiteuseranon' => 'The title of the Getting Started page for anonymous users.
+	'gettingstarted-welcomesiteuseranon' => 'The title of the Getting Started page for anonymous users who manually visit it.
+The parameter is not used in the default message.
 * $1 - sitename',
+	'gettingstarted-welcome-back-site-user' => 'The title of the Getting Started page for logged in users who manually visit it.
+These may or may not have seen it when they created their account, depending on account age.
+Only $2 is currently used in the default message, but the order is the same as {{msg-mw|gettingstarted-welcomesiteuser}} for consistency.
+* $1 - sitename
+* $2 - username; GENDER is supported',
+	'gettingstarted-task-header' => 'Header above task information',
 	'gettingstarted-return' => 'Text of navigation button for returning to previous page',
 	'gettingstarted-project-link' => 'Name of page that describes how GettingStarted is used on the wiki',
+	'gettingstarted-task-1' => 'Wikitext for first randomly ordered GettingStarted task message',
+	'gettingstarted-task-2' => 'Wikitext for second randomly ordered GettingStarted task message',
+	'gettingstarted-task-3' => 'Wikitext for third randomly ordered GettingStarted task message',
 	'tag-gettingstarted_edit' => 'Text of tag identifying an edit from GettingStarted that appears e.g. in [[Special:RecentChanges]].
 
 See also:
 * {{msg-mw|tag-gettingstarted_edit-description}}',
 	'tag-gettingstarted_edit-description' => 'Description of tag that appears e.g. in [[Special:Tags]]',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Title of copy-editing tooltip on Special:GettingStarted',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Description of copy-editing tooltip on Special:GettingStarted',
+	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Title of clarification tooltip on Special:GettingStarted',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Description of clarification tooltip on Special:GettingStarted',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Title of tooltip about adding links on Special:GettingStarted',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Description of tooltip about adding links on Special:GettingStarted',
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)

@@ -12,28 +12,14 @@
 	 * @return {Boolean} true if and only if it should be started
 	 */
 	function shouldStartGettingStartedTour() {
-		var userId, isNewRegistration, prefValue, crc;
-
 		if ( !isLoggedIn ) {
 			// For now, we decided it's better not to show at all then show every time they
 			// return to Special:GettingStarted (anonymous users can not change prefs)
 			return false;
 		}
 
-		userId = mw.config.get( 'wgUserId' );
-		if ( userId !== null ) {
-			// E3Experiments is presumably installed
-			isNewRegistration = mw.config.get( 'wgIsWelcomeCreation', false );
-			if( isNewRegistration ) {
-				// Split test.  Even gets GuidedTour treatment.
-				// Logging is still in E3Experiments
-				return ( userId % 2 === 0 );
-
-			}
-		}
-
-		// Manually visited Special:GettingStarted, or E3Experiments not installed
-		return false;
+		var prefValue = mw.user.options.get( PREF_NAME );
+		return ( prefValue === null || prefValue === '1' );
 	}
 
 	function getOptionsToken() {
@@ -61,12 +47,33 @@
 				} )
 				// Even if we couldn't save, still send on tour
 				.always( function () {
-					// XXX (mattflaschen, 2013-02-04): This is firing twice.
-					// It's not a blocker, since it's idempotent, but I'd like to track it down.
 					sendOnTour( url );
 				} );
 			}
 		} );
+	}
+
+	/**
+	 * Launches an on-page guider
+	 *
+	 * @param {HTMLElement} el help element
+	 * @param {boolean} isClick true if triggered by click, false otherwise
+	 */
+	function launchTaskGuider( el, isClick ) {
+		var $ancestorLi, stepNumber, tourId;
+		$ancestorLi = $( el ).closest( 'li' );
+		stepNumber = $ancestorLi.index() + 1;
+		tourId = $ancestorLi.data( 'guiderId' );
+
+		if ( isClick ) {
+			// Wait until the event is over before showing it, so the click
+			// event doesn't propagate up and hide the guider we just showed.
+			window.setTimeout( function () {
+				mw.libs.guiders.resume( tourId );
+			}, 0 );
+		} else {
+			mw.libs.guiders.resume( tourId );
+		}
 	}
 
 	/**
@@ -77,12 +84,29 @@
 		window.location = url;
 	}
 
-	if ( shouldStartGettingStartedTour() ) {
+	shouldStartTour = shouldStartGettingStartedTour();
+	if ( shouldStartTour ) {
 		// Start getting the options token right away, rather than waiting until they click the link.
 		getOptionsToken();
-
-		$( function () {
-			$( '#onboarding-tasks' ).on( 'click', 'a', prepareToSendOnTour);
-		} );
 	}
+
+	$( function () {
+		var $taskLis = $('#onboarding-tasks li');
+
+		// When the user interacts with a help icon (question mark), show the appropriate step from the on-page guider.
+		// When they end hover, hide the guiders.
+		$taskLis.find( '.onboarding-help' ).click( function () {
+			launchTaskGuider( this, true );
+		} )
+		.mouseenter( function () {
+			launchTaskGuider( this, false );
+		} )
+		.mouseleave( function() {
+			gt.hideAll();
+		} );
+
+		if ( shouldStartTour ) {
+			$( '.onboarding-article-list' ).on( 'click', 'a', prepareToSendOnTour);
+		}
+	} );
 } ( jQuery, mediaWiki, mediaWiki.guidedTour ) );
