@@ -376,8 +376,12 @@ $messages['it'] = array(
 	'gettingstarted-desc' => "Aggiunge una [[Special:GettingStarted|pagina di benvenuto]] per i nuovi utenti (mostrata dopo la creazione dell'account)",
 	'gettingstarted-msg' => 'Un amministratore di {{SITENAME}} dovrebbe personalizzare questo messaggio modificando [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Benvenuto su $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Benvenuto su $1!',
-	'gettingstarted-return' => 'No grazie, riportami dove stavo prima',
+	'gettingstarted-welcomesiteuseranon' => 'Guida introduttiva',
+	'gettingstarted-welcome-back-site-user' => 'Bentornato, $2',
+	'gettingstarted-task-header' => 'Siamo felici che tu sia qui. Di seguito sono riportati alcuni semplici passi per iniziare a contribuire.',
+	'gettingstarted-return' => '← No grazie, torna indietro a dove ero',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Aggiungi collegamenti',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Mai speso ore cliccando in giro su {{SITENAME}}? Ogni link viene aggiunto a mano, e abbiamo bisogno del tuo aiuto per aggiungerne alcuni.',
 );
 
 /** Japanese (日本語)
@@ -479,10 +483,11 @@ $messages['mk'] = array(
 	'tag-gettingstarted_edit' => '[[Special:Tags|Ознака]]: нов уредник [[{{MediaWiki:gettingstarted-project-link}}|почнува со работа]]',
 	'tag-gettingstarted_edit-description' => 'Уредување на страница што корисникот ја одбрал од списокот на задачи на [[Special:GettingStarted|Први чекори]]',
 	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Лекторирање',
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Лекторирањето едноставно значи исправка на изразувањето. Долунаведените статии се пристојно направени, но некои корисници сметаат дека можат да бидат подобри. Видете дали можете да ги подобрите. Едноставно стиснете на јазичето „{{int:vector-view-edit}}“!', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Лекторирањето едноставно значи исправка на правописот, граматиката и стилот. Долунаведените статии се пристојно направени, но некои корисници сметаат дека можат да бидат подобри. Видете дали можете да ги подобрите.',
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Текстот треба да биде појасен',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Други корисници ги означиле странициве како збунителни, нејасни или недоречени. Не мора да сте стручњак на оваа тема - само погледајте ги ознаките „Треба разјаснување“ и ќе видите што треба да се исправи.',
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Додај врски',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Дали некогаш по грешка сте провеле два часа стискајќи по {{SITENAME}}? Ете, и ние исто. Изберете една од статиите и гледајте по зборовите каде може да се стават врски до други статии. Едноставно стиснете на јазичето „{{int:vector-view-edit}}“ за да ги ставите!', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Дали некогаш сте провеле часови стискајќи по {{SITENAME}}? Секоја врска се додава рачно. Ни треба вашата помош да ставаме нови.',
 );
 
 /** Malay (Bahasa Melayu)
@@ -643,11 +648,19 @@ $messages['vi'] = array(
 	'gettingstarted-desc' => 'Thêm một [[Special:GettingStarted|trang hoan nghênh]] xuất hiện cho người dùng lúc khi mở tài khoản xong',
 	'gettingstarted-msg' => 'Các bảo quản viên tại {{SITENAME}} cần tùy chỉnh thông điệp này bằng cách sửa đổi [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Chào mừng $2 đến với $1!',
-	'gettingstarted-welcomesiteuseranon' => 'Chào mừng bạn đến với $1!',
-	'gettingstarted-return' => 'Thôi, quay lại',
+	'gettingstarted-welcomesiteuseranon' => 'Bắt đầu',
+	'gettingstarted-welcome-back-site-user' => 'Chào mừng $2 đã trở lại',
+	'gettingstarted-task-header' => 'Chúng tôi vui mừng bạn đã ghé vào đây. Dưới đây có một số gợi ý để bắt đầu đóng góp.',
+	'gettingstarted-return' => 'Thôi, quay lại trang vừa rồi',
 	'gettingstarted-project-link' => '{{ns:Project}}:Bắt đầu',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Thẻ]]: Người dùng mới đang [[{{MediaWiki:gettingstarted-project-link}}|bắt đầu]]',
-	'tag-gettingstarted_edit-description' => 'Sửa đổi trang được gợi ý trong danh sách việc cần làm tại [[Special:GettingStarted]]',
+	'tag-gettingstarted_edit-description' => 'Sửa đổi trang được gợi ý trong danh sách việc cần làm tại [[Special:GettingStarted|Bắt đầu]]',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Sửa văn phong',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Các trang ở dưới có vẻ được nhưng có người cảm thấy nó còn có khả năng cải tiến về chính tả, ngữ pháp, và văn phong. Mời bạn giúp đỡ!',
+	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Viết rõ hơn',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Người ta đã đánh dấu các trang này là khó hiểu, không rõ, hoặc mơ hồ. Bạn không cần phải là chuyên gia về các đề tài này, chỉ việc kiếm các thẻ “Cần giải thích” để biết những gì cần sửa chữa.',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Đặt liên kết',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Bạn có bao giờ mất vài tiếng đồng hồ đi tới đi lui tại {{SITENAME}}? Mỗi liên kết được bổ sung thủ công, và chúng tôi cần bạn giúp bằng cách thêm liên kết.',
 );
 
 /** Simplified Chinese (中文（简体）‎)
