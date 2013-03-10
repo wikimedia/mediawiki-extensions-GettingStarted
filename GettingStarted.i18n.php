@@ -213,7 +213,7 @@ $messages['es'] = array(
 $messages['et'] = array(
 	'gettingstarted' => 'Alustamine',
 	'gettingstarted-welcomesiteuser' => 'Tere tulemast võrgukohta $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Tere tulemast võrgukohta $1!',
+	'gettingstarted-welcomesiteuseranon' => 'Alustamine',
 );
 
 /** Persian (فارسی)
@@ -460,8 +460,8 @@ $messages['min'] = array(
 	'gettingstarted-desc' => 'Manambahkan [[Special:GettingStarted|laman salamaik datang]] untuak pangguno baru (langsuang nampak salasai mambuek akun)',
 	'gettingstarted-msg' => 'Panguruih {{SITENAME}} harus mangubah pasan ko jo manyuntiang pasan sistem [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Salamaik datang di $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Salamaik datang di $1!', # Fuzzy
-	'gettingstarted-return' => 'Mokasih sajolah. Bawok Ambo baliak', # Fuzzy
+	'gettingstarted-welcomesiteuseranon' => 'Caro mamulai',
+	'gettingstarted-return' => 'Mokasih sajolah, bawok Ambo baliak',
 	'gettingstarted-project-link' => '{{ns:Project}}:Caro mamulai',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: pangguno baru [[{{MediaWiki:gettingstarted-project-link}}|caro mamulai]]',
 	'tag-gettingstarted_edit-description' => 'Suntiangan laman nan pangguno piliah dari dafta tugas pado [[Special:GettingStarted|Caro mamulai]]',
