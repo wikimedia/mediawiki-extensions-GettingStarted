@@ -43,6 +43,8 @@
 
 #onboarding-tasks li {
 	display: inline-block;
+	*display: inline; /* IE7 and below */
+	zoom: 1;          /* IE7 and below */
 	margin-right: 3em;
 	width: 16em;
 	text-align: center;
