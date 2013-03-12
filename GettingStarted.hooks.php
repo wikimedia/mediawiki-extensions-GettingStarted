@@ -64,7 +64,7 @@ class GettingStartedHooks {
 	}
 
 	public static function onBeforeWelcomeCreation( &$welcomeCreationMsg, &$injectHtml ) {
-		global $wgOut;
+		global $wgOut, $wgUser;
 
 		// Do nothing on mobile.
 		if ( class_exists( 'MobileContext' ) ) {
@@ -73,14 +73,18 @@ class GettingStartedHooks {
 			}
 		}
 
-		// Replace default message with blank one
-		$welcomeCreationMsg = 'gettingstarted-msg';
-		$specialGS = new SpecialGettingStarted();
-		$injectHtml = $specialGS->getHtmlResult() . $injectHtml;
+		// Activate for users with even user IDs.
+		if ( ( $wgUser->getId() % 2 ) === 0 ) {
+			// Replace default message with blank one
+			$welcomeCreationMsg = 'gettingstarted-msg';
+			$specialGS = new SpecialGettingStarted();
+			$injectHtml = $specialGS->getHtmlResult() . $injectHtml;
 
-		$wgOut->addModuleStyles( 'ext.gettingstarted.styles' );
+			// Styles are added separately so they load without needing JS
+			$wgOut->addModuleStyles( 'ext.gettingstarted.styles' );
 
-		$wgOut->addModules( 'ext.gettingstarted.accountcreation' );
+			$wgOut->addModules( 'ext.gettingstarted.accountcreation' );
+		}
 
 		return true;
 	}
