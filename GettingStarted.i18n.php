@@ -511,13 +511,20 @@ $messages['mt'] = array(
 $messages['nl'] = array(
 	'gettingstarted' => 'Aan de slag',
 	'gettingstarted-desc' => 'Voegt een [[Special:GettingStarted|welkomstpagina]] voor nieuwe gebruikers toe na registereren',
-	'gettingstarted-msg' => 'Een beheerder van {{SITENAAM}} hoort dit bericht aan te passen door [[{{ns:MediaWiki}}:gettingstarted-msg]] te bewerken.',
 	'gettingstarted-welcomesiteuser' => 'Welkom bij $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Welkom bij $1',
-	'gettingstarted-return' => 'Nee bedankt. Ik wil graag terug',
+	'gettingstarted-welcomesiteuseranon' => 'Aan de slag',
+	'gettingstarted-welcome-back-site-user' => 'Welkom terug, $2',
+	'gettingstarted-task-header' => 'We zijn blij dat u er bent. Hieronder staan een paar makkelijke manieren om bij te dragen.',
+	'gettingstarted-return' => '← Nee bedankt. Ik wil graag terug naar waar ik vandaan kom',
 	'gettingstarted-project-link' => '{{ns:Project}}:Aan de slag',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Label]]: nieuwe bewerker [[{{MediaWiki:gettingstarted-project-link}}|aan de slag]]',
 	'tag-gettingstarted_edit-description' => 'Bewerking aan een pagina die de gebruiker heeft gekozen uit de takenlijst op [[Special:GettingStarted|aan de slag]]',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Eindredactie',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => "Eindredactie is het verbeteren van spelling, grammatica en stijl. De onderstaande pagina's zijn in redelijke staat, maar er zijn gebruikers die denken dat ze beter gemaakt kunnen worden. Kijk of u dingen kunt verbeteren.",
+	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Duidelijkheid verbeteren',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Andere gebruikers hebben aangegeven dat deze pagina\'s verwarrend, onduidelijk of vaag zijn. U hoeft geen expert te zijn op het gebied van het onderwerp te zijn. Zoek naar de labels "Verduidelijking nodig" om te zien waar verbetering nodig is.',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Koppelingen toevoegen',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Hebt u ooit zomaar uren rondgeklikt op {{SITENAME}}? Iedere koppeling wordt met de hand aangebracht en we hebben uw hulp nodig om er een aantal toe te voegen.',
 );
 
 /** Piedmontese (Piemontèis)
