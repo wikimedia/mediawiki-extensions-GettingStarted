@@ -14,9 +14,22 @@ $wgExtensionCredits[ 'specialpage' ][] = array(
 	'version' => '0.0.1',
 );
 
+/**
+ * @var array|false: Array mapping task names to category names.
+ * @example array: array( 'Copy edit' => 'All_articles_needing_copy_edit' );
+ */
+$wgGettingStartedCategories = false;
+
+/**
+ * @var string|bool: redis host to use; false if unset.
+ * @example string: '127.0.0.1'
+ */
+$wgGettingStartedRedis = false;
+
 $wgAutoloadClasses += array(
 	'SpecialGettingStarted' => __DIR__ . '/SpecialGettingStarted.php',
-	'GettingStartedHooks' => __DIR__ . '/GettingStarted.hooks.php'
+	'GettingStartedHooks'   => __DIR__ . '/GettingStarted.hooks.php',
+	'RedisCategorySync'     => __DIR__ . '/RedisCategorySync.php'
 );
 
 $wgExtensionMessagesFiles[ 'GettingStarted' ] = __DIR__ . '/GettingStarted.i18n.php';
@@ -102,4 +115,7 @@ $wgResourceModules[ 'ext.gettingstarted.accountcreation' ] = array(
 $wgHooks[ 'BeforePageDisplay' ][] = 'GettingStartedHooks::onBeforePageDisplay';
 $wgHooks[ 'BeforeWelcomeCreation' ][] = 'GettingStartedHooks::onBeforeWelcomeCreation';
 $wgHooks[ 'RecentChange_save' ][] = 'GettingStartedHooks::onRecentChange_save';
+$wgHooks[ 'CategoryAfterPageAdded' ][] = 'RedisCategorySync::onCategoryAfterPageAdded';
+$wgHooks[ 'CategoryAfterPageRemoved' ][] = 'RedisCategorySync::onCategoryAfterPageRemoved';
+$wgHooks[ 'LinksUpdateComplete' ][] = 'RedisCategorySync::onLinksUpdateComplete';
 $wgHooks[ 'ListDefinedTags' ][] = 'GettingStartedHooks::onListDefinedTags';
