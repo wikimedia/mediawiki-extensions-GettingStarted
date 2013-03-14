@@ -1,6 +1,5 @@
 ( function ( $, mw, gt ) {
 	var PREF_NAME = 'userjs-gettingstarted-showtour',
-		isLoggedIn = ( mw.config.get( 'wgUserName' ) !== null ),
 		shouldStartTour,
 		api = new mw.Api(),
 		optionsPromise,
@@ -53,9 +52,8 @@
 	 * @param {boolean} isClick true if triggered by click, false otherwise
 	 */
 	function launchTaskGuider( el, isClick ) {
-		var $ancestorLi, stepNumber, tourId;
+		var $ancestorLi, tourId;
 		$ancestorLi = $( el ).closest( 'li' );
-		stepNumber = $ancestorLi.index() + 1;
 		tourId = $ancestorLi.data( 'guiderId' );
 
 		if ( isClick ) {

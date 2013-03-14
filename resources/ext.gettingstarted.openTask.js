@@ -18,7 +18,12 @@
 		'wgIsWelcomeCreation', 'wgUserId',
 		// Wiki server variable supplied by Extension:PostEdit:
 		'wgPostEdit'
-	] );
+	] ),
+		$returnTo,
+		returnToTitle,
+		isNew,
+		bucketId;
+
 
 	if ( mw.user.isAnon() ) {
 		// Do no logging for anonymous users
@@ -142,7 +147,7 @@
 	 * @return {void}
 	 */
 	function checkProgress() {
-		var action, fullPageTitle, pageNamespace, task,
+		var action, fullPageTitle, task,
 			schema, event, isEditable,
 			loggedActions = {
 				view : 'page-impression',
@@ -186,10 +191,7 @@
 
 	if ( isGettingStarted() ) {
 
-		var $returnTo = $( '#mw-returnto a, #back-to-referrer' ),
-			returnToTitle,
-			isNew,
-			bucketId;
+		$returnTo = $( '#mw-returnto a, #back-to-referrer' ),
 
 		isNew = !!cfg.wgIsWelcomeCreation;
 
