@@ -127,17 +127,17 @@ $messages['de'] = array(
 	'gettingstarted-welcomesiteuser' => 'Willkommen bei $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Erste Schritte',
 	'gettingstarted-welcome-back-site-user' => 'Willkommen zurück, $2',
-	'gettingstarted-task-header' => 'Wir freuen uns, dass du hier bist. Unten gibt es einige einfache Wege, um anzufangen.',
+	'gettingstarted-task-header' => 'Suchst du nach einem einfachen Weg, um anzufangen? Wähle einfach eine Seite aus einer der drei unten stehenden Listen aus.',
 	'gettingstarted-return' => 'Nein danke. Dort zurückgehen, wo ich war.',
 	'gettingstarted-project-link' => '{{ns:Project}}:Erste Schritte',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Markierung]]: [[{{MediaWiki:gettingstarted-project-link}}|Erste Schritte]] eines neuen Autors',
 	'tag-gettingstarted_edit-description' => 'Bearbeitung einer Seite, die der Benutzer aus der Aufgabenliste der Spezialseite „[[Special:GettingStarted|Anfangen]]“ ausgewählt hat',
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Lektorat',
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Redigieren ist das einfache Verbessern der Rechtschreibung, Grammatik und der Gestaltung. Die unten stehenden Seiten sind in annehmbarer Form, aber einige Leute denken, dass sie besser sein könnten. Schaue, ob du Dinge verbessern kannst.',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Grammatik und Rechtschreibung korrigieren',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Diese Seiten sind in annehmbarer Form, aber einige Leute denken, dass sie besser sein könnten. Schaue, ob du Grammatik, Rechtschreibung und Stil verbessern kannst.',
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Klarheit verbessern',
-	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Andere Leute haben diese Seiten als verwirrend, unklar oder ungenau markiert. Du musst kein Experte in dem Thema sein. Schaue einfach nach „Klärung nötig“-Markierungen, um zu sehen, was einer Verbesserung bedarf.',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Links hinzufügen',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Hast du schon mehrere Stunden mit Herumklicken auf {{SITENAME}} verbracht? Jeder Link wird manuell hinzugefügt und wir brauchen dazu deine Hilfe.',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Andere Leute haben diese Seiten als verwirrend, unklar oder ungenau markiert. Es kann sein, dass du die ganze Seite oder nur einen Satz korrigieren musst. Du musst kein Experte in dem Thema sein. Versuche einfach, Sachen verständlicher zu machen.',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Seiten miteinander verlinken',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Jeder Link zwischen {{SITENAME}}-Seiten wird manuell hinzugefügt. Diese Seiten haben zu wenige davon. Füge einfach beim Bearbeiten zwei eckige Klammern um Schlüsselthemen hinzu und es wird auf die betreffende {{SITENAME}}-Seite verlinkt.',
 );
 
 /** Lower Sorbian (dolnoserbski)
@@ -152,9 +152,9 @@ $messages['dsb'] = array(
 	'gettingstarted-return' => 'Ně, źěkujom se, źi slědk',
 	'gettingstarted-project-link' => '{{ns:Project}}:Prědne kšace',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Marka]]: [[{{MediaWiki:gettingstarted-project-link}}|Prědne kšace]] nowego wobźěłarja',
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Redakcija',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Redakcija', # Fuzzy
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Jasnosć pólěpšyś',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Wótkaze pśidaś',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Wótkaze pśidaś', # Fuzzy
 );
 
 /** Greek (Ελληνικά)
@@ -240,17 +240,17 @@ $messages['fr'] = array(
 	'gettingstarted-welcomesiteuser' => 'Bienvenue sur $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Pour commencer',
 	'gettingstarted-welcome-back-site-user' => 'Bienvenue de nouveau, $2',
-	'gettingstarted-task-header' => 'Nous sommes heureux que vous soyez ici. Vous trouverez ci-dessous quelques moyens faciles de démarrer votre contribution.',
+	'gettingstarted-task-header' => 'Nous sommes heureux que vous soyez ici. Vous trouverez ci-dessous quelques moyens faciles de démarrer votre contribution.', # Fuzzy
 	'gettingstarted-return' => 'Non merci, revenir là où j’étais',
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Balise]]: un nouvel éditeur [[{{MediaWiki:gettingstarted-project-link}}|a débuté]]',
 	'tag-gettingstarted_edit-description' => "Modification d'une page choisie par l’utilisateur dans la liste des tâches dans [[Special:GettingStarted|Pour commencer]]",
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Relecture',
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => "Reprendre la copie consiste à améliorer l'orthographe, la grammaire et le style. Les pages ci-dessous sont dans un bon état, mais certains pensent qu’elles pourraient être encore meilleures. Voyez si vous pouvez améliorer les choses.",
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Relecture', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => "Reprendre la copie consiste à améliorer l'orthographe, la grammaire et le style. Les pages ci-dessous sont dans un bon état, mais certains pensent qu’elles pourraient être encore meilleures. Voyez si vous pouvez améliorer les choses.", # Fuzzy
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Améliorer la clarté',
-	'guidedtour-tour-gettingstartedpage-clarification-description' => "D’autres personnes ont marqué ces pages comme confuses, non claires, ou vagues. Vous n’avez pas besoin d’être un expert du domaine, mais juste de regarder les balises 'Clarification demandée' pour voir ce qui doit être corrigé.",
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Ajouter des liens',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Avez-vous déjà passé des heures à cliquer ici et là dans {{SITENAME}}? Chaque lien est ajouté à la main, et nous avons besoin de votre aide pour en ajouter d’autres.',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => "D’autres personnes ont marqué ces pages comme confuses, non claires, ou vagues. Vous n’avez pas besoin d’être un expert du domaine, mais juste de regarder les balises 'Clarification demandée' pour voir ce qui doit être corrigé.", # Fuzzy
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Ajouter des liens', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Avez-vous déjà passé des heures à cliquer ici et là dans {{SITENAME}}? Chaque lien est ajouté à la main, et nous avons besoin de votre aide pour en ajouter d’autres.', # Fuzzy
 );
 
 /** Franco-Provençal (arpetan)
@@ -272,17 +272,17 @@ $messages['gl'] = array(
 	'gettingstarted-welcomesiteuser' => '{{GENDER:$2|Benvido|Benvida}} a $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Primeiros pasos',
 	'gettingstarted-welcome-back-site-user' => '{{GENDER:$2|Benvido|Benvida}} de volta, $2',
-	'gettingstarted-task-header' => 'Alegrámonos de que estea aquí. A continuación hai algunhas maneiras fáciles de empezar a contribuír.',
+	'gettingstarted-task-header' => 'Alegrámonos de que estea aquí. A continuación hai algunhas maneiras fáciles de empezar a contribuír.', # Fuzzy
 	'gettingstarted-return' => '← Non, grazas; volver a onde estaba',
 	'gettingstarted-project-link' => '{{ns:Project}}:Primeiros pasos',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Etiqueta]]: Novo editor dando os [[{{MediaWiki:gettingstarted-project-link}}|primeiros pasos]]',
 	'tag-gettingstarted_edit-description' => 'Modificación dunha páxina que o usuario elixiu desde a lista de tarefas dos [[Special:GettingStarted|primeiros pasos]]',
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Corrección',
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'A corrección consiste na mellora da redacción, gramática e estilo. As páxinas que hai a continuación teñen un formato decente, pero algunhas persoas cren que poden estar mellor. A ver se vostede pode mellorar as cousas.',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Corrección', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'A corrección consiste na mellora da redacción, gramática e estilo. As páxinas que hai a continuación teñen un formato decente, pero algunhas persoas cren que poden estar mellor. A ver se vostede pode mellorar as cousas.', # Fuzzy
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Mellorar a claridade',
-	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Outras persoas marcaron estas páxinas como confusas, pouco claras ou imprecisas. Non ten que ser experto na materia, simplemente busque as etiquetas de "Cómpre clarificar" para saber o que necesita corrixirse.',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Engadir ligazóns',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Algunha vez pasou horas premendo aquí e acolá nas páxinas de {{SITENAME}}? Cada ligazón engádese á man e necesitamos a súa axuda para engadir algunhas.',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Outras persoas marcaron estas páxinas como confusas, pouco claras ou imprecisas. Non ten que ser experto na materia, simplemente busque as etiquetas de "Cómpre clarificar" para saber o que necesita corrixirse.', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Engadir ligazóns', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Algunha vez pasou horas premendo aquí e acolá nas páxinas de {{SITENAME}}? Cada ligazón engádese á man e necesitamos a súa axuda para engadir algunhas.', # Fuzzy
 );
 
 /** Hebrew (עברית)
@@ -312,9 +312,9 @@ $messages['hsb'] = array(
 	'gettingstarted-project-link' => '{{ns:Project}}:Prěnje kroki',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Značka]]: [[{{MediaWiki:gettingstarted-project-link}}|Prěnje kroki]] noweho wobdźěłarja',
 	'tag-gettingstarted_edit-description' => 'Změna strony, kotruž wužiwar je z lisćiny nadawkow ze strony [[Special:GettingStarted|Prěnje kroki]] wubrał',
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Redakcija',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Gramatiku a prawopis korigować',
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Jasnosć polěpšić',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Wotkazy přidać',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Strony ze sobu zwjazać',
 );
 
 /** Hungarian (magyar)
@@ -336,7 +336,7 @@ $messages['hu'] = array(
  * @author Vadgt
  */
 $messages['hy'] = array(
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Ստեղծել հղումը',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Ստեղծել հղումը', # Fuzzy
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -362,10 +362,10 @@ $messages['it'] = array(
 	'gettingstarted-welcomesiteuser' => 'Benvenuto su $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Guida introduttiva',
 	'gettingstarted-welcome-back-site-user' => 'Bentornato, $2',
-	'gettingstarted-task-header' => 'Siamo felici che tu sia qui. Di seguito sono riportati alcuni semplici passi per iniziare a contribuire.',
+	'gettingstarted-task-header' => 'Siamo felici che tu sia qui. Di seguito sono riportati alcuni semplici passi per iniziare a contribuire.', # Fuzzy
 	'gettingstarted-return' => '← No grazie, torna indietro a dove ero',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Aggiungi collegamenti',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Mai speso ore cliccando in giro su {{SITENAME}}? Ogni link viene aggiunto a mano, e abbiamo bisogno del tuo aiuto per aggiungerne alcuni.',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Aggiungi collegamenti', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Mai speso ore cliccando in giro su {{SITENAME}}? Ogni link viene aggiunto a mano, e abbiamo bisogno del tuo aiuto per aggiungerne alcuni.', # Fuzzy
 );
 
 /** Japanese (日本語)
@@ -379,7 +379,7 @@ $messages['ja'] = array(
 	'gettingstarted-return' => '← 不要です。元の場所に戻ります',
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	'tag-gettingstarted_edit-description' => '利用者が [[Special:GettingStarted|Getting started]] のタスク一覧から選択したページの編集',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'リンクの追加',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'リンクの追加', # Fuzzy
 );
 
 /** Georgian (ქართული)
@@ -459,17 +459,17 @@ $messages['mk'] = array(
 	'gettingstarted-welcomesiteuser' => 'Добре дојдовте на $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Како да почнете',
 	'gettingstarted-welcome-back-site-user' => 'Добре дојдвте повторно, $2',
-	'gettingstarted-task-header' => 'Драго ни е што сте тука. Еве како лесно да почнете со придонесување.',
+	'gettingstarted-task-header' => 'Драго ни е што сте тука. Еве како лесно да почнете со придонесување.', # Fuzzy
 	'gettingstarted-return' => '← Не благодарам. Врати ме назад',
 	'gettingstarted-project-link' => '{{ns:Project}}:ПрвиЧекори',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Ознака]]: нов уредник [[{{MediaWiki:gettingstarted-project-link}}|почнува со работа]]',
 	'tag-gettingstarted_edit-description' => 'Уредување на страница што корисникот ја одбрал од списокот на задачи на [[Special:GettingStarted|Први чекори]]',
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Лекторирање',
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Лекторирањето едноставно значи исправка на правописот, граматиката и стилот. Долунаведените статии се пристојно направени, но некои корисници сметаат дека можат да бидат подобри. Видете дали можете да ги подобрите.',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Лекторирање', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Лекторирањето едноставно значи исправка на правописот, граматиката и стилот. Долунаведените статии се пристојно направени, но некои корисници сметаат дека можат да бидат подобри. Видете дали можете да ги подобрите.', # Fuzzy
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Текстот треба да биде појасен',
-	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Други корисници ги означиле странициве како збунителни, нејасни или недоречени. Не мора да сте стручњак на оваа тема - само погледајте ги ознаките „Треба разјаснување“ и ќе видите што треба да се исправи.',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Додај врски',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Дали некогаш сте провеле часови стискајќи по {{SITENAME}}? Секоја врска се додава рачно. Ни треба вашата помош да ставаме нови.',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Други корисници ги означиле странициве како збунителни, нејасни или недоречени. Не мора да сте стручњак на оваа тема - само погледајте ги ознаките „Треба разјаснување“ и ќе видите што треба да се исправи.', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Додај врски', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Дали некогаш сте провеле часови стискајќи по {{SITENAME}}? Секоја врска се додава рачно. Ни треба вашата помош да ставаме нови.', # Fuzzy
 );
 
 /** Malay (Bahasa Melayu)
@@ -508,17 +508,17 @@ $messages['nl'] = array(
 	'gettingstarted-welcomesiteuser' => 'Welkom bij $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Aan de slag',
 	'gettingstarted-welcome-back-site-user' => 'Welkom terug, $2',
-	'gettingstarted-task-header' => 'We zijn blij dat u er bent. Hieronder staan een paar makkelijke manieren om bij te dragen.',
+	'gettingstarted-task-header' => 'We zijn blij dat u er bent. Hieronder staan een paar makkelijke manieren om bij te dragen.', # Fuzzy
 	'gettingstarted-return' => '← Nee bedankt. Ik wil graag terug naar waar ik vandaan kom',
 	'gettingstarted-project-link' => '{{ns:Project}}:Aan de slag',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Label]]: nieuwe bewerker [[{{MediaWiki:gettingstarted-project-link}}|aan de slag]]',
 	'tag-gettingstarted_edit-description' => 'Bewerking aan een pagina die de gebruiker heeft gekozen uit de takenlijst op [[Special:GettingStarted|aan de slag]]',
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Eindredactie',
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => "Eindredactie is het verbeteren van spelling, grammatica en stijl. De onderstaande pagina's zijn in redelijke staat, maar er zijn gebruikers die denken dat ze beter gemaakt kunnen worden. Kijk of u dingen kunt verbeteren.",
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Eindredactie', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => "Eindredactie is het verbeteren van spelling, grammatica en stijl. De onderstaande pagina's zijn in redelijke staat, maar er zijn gebruikers die denken dat ze beter gemaakt kunnen worden. Kijk of u dingen kunt verbeteren.", # Fuzzy
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Duidelijkheid verbeteren',
-	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Andere gebruikers hebben aangegeven dat deze pagina\'s verwarrend, onduidelijk of vaag zijn. U hoeft geen expert te zijn op het gebied van het onderwerp te zijn. Zoek naar de labels "Verduidelijking nodig" om te zien waar verbetering nodig is.',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Koppelingen toevoegen',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Hebt u ooit zomaar uren rondgeklikt op {{SITENAME}}? Iedere koppeling wordt met de hand aangebracht en we hebben uw hulp nodig om er een aantal toe te voegen.',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Andere gebruikers hebben aangegeven dat deze pagina\'s verwarrend, onduidelijk of vaag zijn. U hoeft geen expert te zijn op het gebied van het onderwerp te zijn. Zoek naar de labels "Verduidelijking nodig" om te zien waar verbetering nodig is.', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Koppelingen toevoegen', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Hebt u ooit zomaar uren rondgeklikt op {{SITENAME}}? Iedere koppeling wordt met de hand aangebracht en we hebben uw hulp nodig om er een aantal toe te voegen.', # Fuzzy
 );
 
 /** Piedmontese (Piemontèis)
@@ -555,8 +555,10 @@ $messages['roa-tara'] = array(
 	'gettingstarted-welcomesiteuser' => 'Bovègne sus a, $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Pe accumenzà',
 	'gettingstarted-welcome-back-site-user' => 'Bovègne arrete, $2',
+	'gettingstarted-return' => '← No grazie, tuèrne rrete addò stave',
 	'gettingstarted-project-link' => '{{ns:Project}}:Pe accumenzà',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Aggiunge le collegaminde',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Corregge grammateche & pronunge',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => "Colleghe le pàggene 'nzieme",
 );
 
 /** Russian (русский)
@@ -638,17 +640,17 @@ $messages['vi'] = array(
 	'gettingstarted-welcomesiteuser' => 'Chào mừng $2 đến với $1!',
 	'gettingstarted-welcomesiteuseranon' => 'Bắt đầu',
 	'gettingstarted-welcome-back-site-user' => 'Chào mừng $2 đã trở lại',
-	'gettingstarted-task-header' => 'Chúng tôi vui mừng bạn đã ghé vào đây. Dưới đây có một số gợi ý để bắt đầu đóng góp.',
+	'gettingstarted-task-header' => 'Chúng tôi vui mừng bạn đã ghé vào đây. Dưới đây có một số gợi ý để bắt đầu đóng góp.', # Fuzzy
 	'gettingstarted-return' => 'Thôi, quay lại trang vừa rồi',
 	'gettingstarted-project-link' => '{{ns:Project}}:Bắt đầu',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Thẻ]]: Người dùng mới đang [[{{MediaWiki:gettingstarted-project-link}}|bắt đầu]]',
 	'tag-gettingstarted_edit-description' => 'Sửa đổi trang được gợi ý trong danh sách việc cần làm tại [[Special:GettingStarted|Bắt đầu]]',
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Sửa văn phong',
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Các trang ở dưới có vẻ được nhưng có người cảm thấy nó còn có khả năng cải tiến về chính tả, ngữ pháp, và văn phong. Mời bạn giúp đỡ!',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Sửa văn phong', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Các trang ở dưới có vẻ được nhưng có người cảm thấy nó còn có khả năng cải tiến về chính tả, ngữ pháp, và văn phong. Mời bạn giúp đỡ!', # Fuzzy
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Viết rõ hơn',
-	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Người ta đã đánh dấu các trang này là khó hiểu, không rõ, hoặc mơ hồ. Bạn không cần phải là chuyên gia về các đề tài này, chỉ việc kiếm các thẻ “Cần giải thích” để biết những gì cần sửa chữa.',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Đặt liên kết',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Bạn có bao giờ mất vài tiếng đồng hồ đi tới đi lui tại {{SITENAME}}? Mỗi liên kết được bổ sung thủ công, và chúng tôi cần bạn giúp bằng cách thêm liên kết.',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Người ta đã đánh dấu các trang này là khó hiểu, không rõ, hoặc mơ hồ. Bạn không cần phải là chuyên gia về các đề tài này, chỉ việc kiếm các thẻ “Cần giải thích” để biết những gì cần sửa chữa.', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Đặt liên kết', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Bạn có bao giờ mất vài tiếng đồng hồ đi tới đi lui tại {{SITENAME}}? Mỗi liên kết được bổ sung thủ công, và chúng tôi cần bạn giúp bằng cách thêm liên kết.', # Fuzzy
 );
 
 /** Simplified Chinese (中文（简体）‎)
