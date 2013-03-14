@@ -6,7 +6,8 @@
 
 #mw-returnto a {
 	display: inline-block;
-	font-size: 0.8em;
+	float: left; /* hack for .guider_button */
+	font-size: 0.9em;
 	margin-top: 3.5em;
 }
 
