@@ -1,6 +1,8 @@
 <?php
 class SpecialGettingStarted extends SpecialPage {
+
 	const ARTICLE_COUNT = 3;
+	const MAX_ARTICLE_LENGTH = 10000;
 
 	public function __construct() {
 		parent::__construct( 'GettingStarted' );
@@ -32,6 +34,7 @@ class SpecialGettingStarted extends SpecialPage {
 
 	public function getHtmlResult() {
 		global $wgExtensionAssetsPath, $wgGettingStartedTasks;
+
 		$result = '';
 		$headerText = $this->msg( 'gettingstarted-task-header' )->escaped();
 
@@ -57,7 +60,22 @@ EOF;
 		);
 		foreach ( $tasks as $task ) {
 			$roulette = new CategoryRoulette( Category::newFromName( $task['category']  ) );
-			$taskArticles = $roulette->getRandomArticles( self::ARTICLE_COUNT );
+
+			// Get ARTICLE_COUNT * 2 articles and pick the first ARTICLE_COUNT
+			// articles that meet the requirements (not too big and is editable
+			// by the current user). If fewer than ARTICLE_COUNT articles in
+			// result set meet requirements, get as many as possible.
+			// FIXME(ori-l, 14-March-2013): should be a separate method.
+			$taskArticles = array();
+			foreach( $roulette->getRandomArticles( self::ARTICLE_COUNT * 2 ) as $article ) {
+				$length = $article->getLength();
+				if ( $length > 0 && $length <= self::MAX_ARTICLE_LENGTH && $article->userCan( 'edit' ) ) {
+					$taskArticles[] = $article;
+				}
+				if ( count( $taskArticles ) === self::ARTICLE_COUNT ) {
+					break;
+				}
+			}
 
 			$imageSrc = wfFindFile( $task['image'] )->getURL();
 			$descriptionMessage = $this->msg( $task['descriptionMessage'] );
