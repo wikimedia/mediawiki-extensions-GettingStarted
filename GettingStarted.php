@@ -29,7 +29,8 @@ $wgGettingStartedRedis = false;
 $wgAutoloadClasses += array(
 	'SpecialGettingStarted' => __DIR__ . '/SpecialGettingStarted.php',
 	'GettingStartedHooks'   => __DIR__ . '/GettingStarted.hooks.php',
-	'RedisCategorySync'     => __DIR__ . '/RedisCategorySync.php'
+	'RedisCategorySync'     => __DIR__ . '/RedisCategorySync.php',
+	'CategoryRoulette'      => __DIR__ . '/CategoryRoulette.php',
 );
 
 $wgExtensionMessagesFiles[ 'GettingStarted' ] = __DIR__ . '/GettingStarted.i18n.php';
