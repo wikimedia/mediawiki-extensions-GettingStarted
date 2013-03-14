@@ -22,8 +22,8 @@
 
 		// Mainly intended for email confirmation message, but others are possible.
 		// There is not a more specific selector in core for this.
-		$notices = $( '#mw-content-text > p' );
-		$notices.insertAfter( $onboardingContainer );
+		$notices = $( '#mw-content-text > p' ).addClass( 'onboarding-notice' );
+		$onboardingContainer.append( $notices );
 
 		if ( history.replaceState ) {
 			state = {}; // Currently unused

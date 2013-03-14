@@ -98,8 +98,13 @@
 }
 
 /********************* Notifications *********************/
-/* Core currently doesn't offer any more stable selector. */
-#mw-content-text > p {
+/*
+   Core currently doesn't offer a stable selector.
+   We add this class ourselves.
+*/
+.onboarding-notice {
 	font-size: 0.8em;
 	color: gray;
+	float: left;
+	margin-left: 6px;
 }
