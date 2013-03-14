@@ -1,7 +1,6 @@
 <?php
 class SpecialGettingStarted extends SpecialPage {
-	// Update GettingStarted.i18n.php too if this is changed
-	const TASK_COUNT = 3;
+	const ARTICLE_COUNT = 3;
 
 	public function __construct() {
 		parent::__construct( 'GettingStarted' );
@@ -32,6 +31,7 @@ class SpecialGettingStarted extends SpecialPage {
 	}
 
 	public function getHtmlResult() {
+		global $wgExtensionAssetsPath, $wgGettingStartedTasks;
 		$result = '';
 		$headerText = $this->msg( 'gettingstarted-task-header' )->escaped();
 
@@ -42,15 +42,39 @@ class SpecialGettingStarted extends SpecialPage {
 				</h3>
 				<ul class="clearfix" id="onboarding-tasks">
 EOF;
-		$tasks = array();
-		for ( $i = 1; $i <= self::TASK_COUNT; $i++ ) {
-			$tasks[] = "gettingstarted-task-$i";
+		$tasks = $wgGettingStartedTasks;
+		for ( $i = 0; $i < count( $tasks ); $i++ ) {
+			$stepId = $i + 1;
+			$tasks[$i]['guiderId'] = "gt-gettingstartedpage-$stepId";
 		}
 		shuffle( $tasks );
+		$questionIcon = Html::element( 'img', array(
+				'width' => 14,
+				'height' => 14,
+				'src' => "$wgExtensionAssetsPath/GettingStarted/resources/images/question-icon-darker.png",
+				'alt' => $this->msg( 'help' )->text()
+			)
+		);
 		foreach ( $tasks as $task ) {
-			$result .= $this->msg( $task )->parse();
-		}
+			$roulette = new CategoryRoulette( Category::newFromName( $task['category']  ) );
+			$taskArticles = $roulette->getRandomArticles( self::ARTICLE_COUNT );
 
+			$imageSrc = wfFindFile( $task['image'] )->getURL();
+			$descriptionMessage = $this->msg( $task['descriptionMessage'] );
+			$taskContents = Html::element( 'img', array( 'src' => $imageSrc, 'alt' => $descriptionMessage->text() ) )
+				.  '<h4>'
+				. $descriptionMessage->escaped() . ' '
+				.  Html::rawElement( 'span', array( 'class' => 'onboarding-help ' . $task['taskName'] ),
+						$questionIcon
+				)
+				.  '</h4>'
+				.  '<ul class="onboarding-article-list">';
+			foreach ( $taskArticles as $article ) {
+				$taskContents .= '<li>' . Linker::link( $article ) . '</li>';
+			}
+			$taskContents .= '</ul>';
+			$result .= Html::rawElement( 'li', array( 'class' => 'onboarding-task', 'data-guider-id' => $task['guiderId'], 'data-task-name' => $task['taskName'] ), $taskContents );
+		}
 		$result .= <<< 'EOF'
 				</ul>
 			</div>

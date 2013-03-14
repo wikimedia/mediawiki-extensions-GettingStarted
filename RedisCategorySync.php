@@ -5,24 +5,16 @@
  *
  * FIXME(ori-l, 2012-03-06): Use RedisConnectionPool
  *
- * Requires a redis server and the phpredis extension.
- * To set up on Ubuntu / Debian:
- *
- * <code>
- * sudo pear channel-discover drewish.github.com/phpredis
- * sudo pecl install drewishPhpRedis/PhpRedis
- * sudo apt-get install redis-server
- * </code>
- *
- * Then add 'extension=redis.so' to php.ini and restart PHP-FPM.
+ * See Redis requirements in README.
  *
  * Sample extension configuration:
  * <code>
  * $wgGettingStartedRedis = '127.0.0.1';
- * $wgGettingStartedCategories = array( 'Copy edit' => 'All_articles_needing_copy_edit' );
  * </code>
  */
 class RedisCategorySync {
+	/** @var array: array of relevant categories */
+	public static $categories;
 
 	/** @var array: arrays of [Category, WikiPage] additions to process. **/
 	public static $additions = array();
@@ -60,13 +52,31 @@ class RedisCategorySync {
 	}
 
 	/**
+	 * Gets relevant categories
+	 *
+	 * @return array relevant categories
+	 */
+	public static function getCategories() {
+		global $wgGettingStartedTasks;
+
+		if ( self::$categories === null ) {
+			self::$categories = array();
+			foreach ( $wgGettingStartedTasks as $task ) {
+				self::$categories[] = $task['category'];
+			}
+		}
+
+		return self::$categories;
+	}
+
+	/**
 	 * @param Category $category
 	 * @param WikiPage $page
 	 * @return bool If category / page pair should be tracked in redis.
 	 */
 	public static function isUpdateRelevant( Category $category, WikiPage $page ) {
-		global $wgGettingStartedCategories;
-		return ( in_array( $category->getName(), $wgGettingStartedCategories, true )
+		$categories = self::getCategories();
+		return ( in_array( $category->getName(), $categories, true )
 			&& $page->getTitle()->getNamespace() === NS_MAIN );
 	}
 

@@ -1,8 +1,7 @@
 <?php
 /**
  * Helper class for retrieving random pages from a category.
- * Requires redis 2.6. phpredis needs to be (re-)compiled against 2.6 if
- * upgrading from 2.4 to ensure SRANDMEMBER takes count parameter.
+ * See Redis requirements in README.
  *
  * Sample usage:
  * <code>
@@ -15,7 +14,7 @@
 class CategoryRoulette {
 
 	/** @var Category **/
-	var $category = null;
+	public $category = null;
 
 	/**
 	 * Constructor.

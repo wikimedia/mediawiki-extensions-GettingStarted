@@ -13,7 +13,7 @@
 		}, {
 			titlemsg: 'guidedtour-tour-gettingstartedpage-clarification-title',
 			descriptionmsg: 'guidedtour-tour-gettingstartedpage-clarification-description',
-			attachTo: '.onboarding-help.clarification',
+			attachTo: '.onboarding-help.clarify',
 			position: 'right'
 		}, {
 			titlemsg: 'guidedtour-tour-gettingstartedpage-add-links-title',

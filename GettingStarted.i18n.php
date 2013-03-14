@@ -17,12 +17,9 @@ $messages['en'] = array(
 	'gettingstarted-welcomesiteuser' => "Welcome to $1, $2!",
 	'gettingstarted-welcomesiteuseranon' => "Getting started",
 	'gettingstarted-welcome-back-site-user' => "Welcome back, $2",
-	'gettingstarted-task-header' => "We're glad you're here. Below are some easy ways to get started with contributing.",
+	'gettingstarted-task-header' => 'Looking for an easy way to get started? Just choose a page from one of the three lists below.',
 	'gettingstarted-return' => "← No thanks, go back to where I was",
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
-	'gettingstarted-task-1' => '',
-	'gettingstarted-task-2' => '',
-	'gettingstarted-task-3' => '',
 	// Change tags
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: new editor [[{{MediaWiki:gettingstarted-project-link}}|getting started]]',
 	'tag-gettingstarted_edit-description' => 'Edit of a page that the user chose from the task list in [[Special:GettingStarted|Getting started]]',
@@ -30,12 +27,12 @@ $messages['en'] = array(
 	// Tours
 
 	// gettingstartedpage
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Copyedit',
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Copy editing is simply improving the spelling, grammar, and style. The pages below are in decent shape, but some people felt they could be better. See if you can improve things.',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Fix grammar & spelling',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'These pages are in decent shape, but some people felt they could be better. See if you can improve the grammar, spelling, and style.',
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Improve clarity',
-	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Other people have marked these pages as confusing, unclear, or vague. You don\'t have to be an expert in the topic, just look for \'Clarification needed\' tags to see what needs fixing.',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Add links',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Ever spent hours just clicking around on {{SITENAME}}? Every link is added by hand, and we need your help adding some.'
+	'guidedtour-tour-gettingstartedpage-clarification-description' => "Other people have tagged these pages as confusing, unclear, or vague. It might be the whole page that needs fixing, or just a sentence. You don't need to be an expert in the topic, just try to make things easier to understand.",
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Link pages together',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => "Every link between {{SITENAME}} pages is added by hand, and these pages don't have enough. Just add two square brackets around key topics when you're editing, and it will link to the relevant {{SITENAME}} page."
 
 );
 
@@ -61,9 +58,6 @@ Only $2 is currently used in the default message, but the order is the same as {
 	'gettingstarted-task-header' => 'Header above task information',
 	'gettingstarted-return' => 'Text of navigation button for returning to previous page',
 	'gettingstarted-project-link' => 'Name of page that describes how GettingStarted is used on the wiki',
-	'gettingstarted-task-1' => 'Wikitext for first randomly ordered GettingStarted task message',
-	'gettingstarted-task-2' => 'Wikitext for second randomly ordered GettingStarted task message',
-	'gettingstarted-task-3' => 'Wikitext for third randomly ordered GettingStarted task message',
 	'tag-gettingstarted_edit' => 'Text of tag identifying an edit from GettingStarted that appears e.g. in [[Special:RecentChanges]].
 
 See also:

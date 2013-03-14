@@ -13,7 +13,6 @@
 	var cfg = mw.config.get( [
 		'wgAction', 'wgPageName', 'wgTitle', 'wgCanonicalSpecialPageName',
 		'wgArticleId', 'wgCurRevisionId',
-		'wgNamespaceNumber',
 		// Wiki server variables we supply:
 		'wgIsWelcomeCreation', 'wgUserId',
 		// Wiki server variable supplied by Extension:PostEdit:
@@ -22,7 +21,7 @@
 		$returnTo,
 		returnToTitle,
 		isNew,
-		bucketId;
+		bucket;
 
 
 	if ( mw.user.isAnon() ) {
@@ -32,9 +31,13 @@
 
 	// Set some fields common to both clicks and fixing articles.
 	function setCommonDefaults( schema ) {
+		// Split test.  Even gets GettingStartedv2 treatment
+		var bucket = ( cfg.wgUserId % 2 === 0 ) ? 'test' : 'control';
+
 		var defaults = {
-			experimentId : 'ob3-split-retest-split',
-			userId : cfg.wgUserId
+			version: 1,
+			userId : cfg.wgUserId,
+			bucket: bucket
 		};
 
 		mw.eventLog.setDefaults( schema, defaults );
@@ -61,8 +64,8 @@
 	 * @return {string} the schema of the task.
 	 */
 	function getSchemaForTask( task ) {
-		// The tasks for GettingStarted are fixed and correspond to its two funnels.
-		var schema = ( task === 'gettingstarted' || task === 'returnto' ) ?
+		// The tasks for GettingStarted are fixed and correspond to its two tasks.
+		var schema = ( task.indexOf( 'gettingstarted' ) === 0 || task === 'returnto' ) ?
 			'GettingStarted' : 'CommunityPortal';
 		return schema;
 	}
@@ -179,7 +182,6 @@
 				action     : action,
 				funnel     : task,
 				pageId     : cfg.wgArticleId,
-				pageNs     : cfg.wgNamespaceNumber,
 				revId      : cfg.wgCurRevisionId,
 				isEditable : isEditable
 			};
@@ -191,16 +193,10 @@
 
 	if ( isGettingStarted() ) {
 
-		$returnTo = $( '#mw-returnto a, #back-to-referrer' ),
-
+		$returnTo = $( '#mw-returnto a, #back-to-referrer' );
 		isNew = !!cfg.wgIsWelcomeCreation;
-
-		if ( isNew ) {
-			// Split test.  Even gets GuidedTour treatment
-			bucketId = ( cfg.wgUserId % 2 === 0 ) ? 'ob3b' : 'ob3a';
-		}
-
 		setCommonDefaults( 'GettingStarted' );
+
 		// Log isNew while looking at GettingStarted, but not while
 		// interacting with a task.
 		mw.eventLog.setDefaults( 'GettingStarted', {
@@ -208,23 +204,28 @@
 		} );
 
 		mw.eventLog.logEvent( 'GettingStarted', {
-			action : 'gettingstarted-impression',
-			bucketId: bucketId
+			action : 'gettingstarted-impression'
 		} );
 
 		// If the user clicks on a task, log it and start a funnel.
 		$( '#onboarding-tasks a' ).stall( 'click', function () {
 			var $el = $( this ),
 				articleTitle = $el.attr( 'title' ),
-				article;
+				article,
+				$taskEl,
+				taskName,
+				fullTask;
 
+			$taskEl = $el.closest( '.onboarding-task' );
+			taskName = $taskEl.data( 'taskName' );
+			fullTask = 'gettingstarted-' + taskName;
 			article = getPageFromTitleAttribute( articleTitle );
 			mw.eventLog.logEvent( 'GettingStarted', {
-				action      : 'gettingstarted-click',
-				funnel      : 'gettingstarted',
+				action : 'gettingstarted-click',
+				funnel : fullTask,
 				targetTitle : article
 			} );
-			setTask( article, 'gettingstarted' );
+			setTask( article, fullTask );
 		} );
 
 
@@ -232,14 +233,15 @@
 		returnToTitle = $returnTo.attr( 'title' );
 
 		$returnTo.stall( 'click', function () {
-			var article = getPageFromTitleAttribute( returnToTitle );
+			var article = getPageFromTitleAttribute( returnToTitle ),
+				task = 'returnto';
 			mw.eventLog.logEvent( 'GettingStarted', {
 				action      : 'gettingstarted-click',
-				funnel      : 'returnto',
+				funnel      : task,
 				targetTitle : article
 			} );
 			if ( isAppropriateTask( article ) ) {
-				setTask( article, 'returnto' );
+				setTask( article, task );
 			}
 		} );
 

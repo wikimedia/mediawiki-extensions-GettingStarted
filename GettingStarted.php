@@ -11,14 +11,46 @@ $wgExtensionCredits[ 'specialpage' ][] = array(
 	),
 	'url' => 'https://www.mediawiki.org/wiki/Extension:GettingStarted',
 	'descriptionmsg' => 'gettingstarted-desc',
-	'version' => '0.0.1',
+	'version' => '1',
 );
 
+// TODO (mattflaschen, 2013-03-13):
+// We're including gettingstartedpage.js in the extension with specific English Wikipedia
+// task types embedded in the tour.  Note the steps must be in the same order as the tour.
+// So we may as well set these in the extension as well for now.
+// This should change when we decide how to generalize the extension to other wikis.
+
+// The images are on-wiki (or Commons) which should make this generalization a
+// little easier.
+
 /**
- * @var array|false: Array mapping task names to category names.
- * @example array: array( 'Copy edit' => 'All_articles_needing_copy_edit' );
+ * @var array Array of arrays.  Each subarray has:
+ *  'name' - internal non-displayed name, e.g. 'copyedit'
+ *  'descriptionmsg' - message key for description
+ *  'category' Category articles are from, e.g. 'All_articles_needing_copy_edit'
+ *  'image' (on-wiki or Commons filename without the File:)
  */
-$wgGettingStartedCategories = false;
+$wgGettingStartedTasks = array(
+	array(
+		'taskName' => 'copyedit',
+		// Reusing the messages from the single-page tour for now
+		'descriptionMessage' => 'guidedtour-tour-gettingstartedpage-copy-editing-title',
+		'category' => 'All_articles_needing_copy_edit',
+		'image' => 'Icon-pencil.png'
+	),
+	array(
+		'taskName' => 'clarify',
+		'descriptionMessage' => 'guidedtour-tour-gettingstartedpage-clarification-title',
+		'category' => 'All_Wikipedia_articles_needing_clarification',
+		'image' => 'Icon-wrench.png'
+	),
+	array(
+		'taskName' => 'addlinks',
+		'descriptionMessage' => 'guidedtour-tour-gettingstartedpage-add-links-title',
+		'category' => 'All_articles_with_too_few_wikilinks',
+		'image' => 'Icon-addlinks.png'
+	)
+);
 
 /**
  * @var string|bool: redis host to use; false if unset.
@@ -49,7 +81,7 @@ $gettingStartedModuleInfo = array(
 $wgResourceModules[ 'schema.GettingStarted' ] = array(
 	'class'    => 'ResourceLoaderSchemaModule',
 	'schema'   => 'GettingStarted',
-	'revision' => 5285779,
+	'revision' => 5320430,
 );
 
 $wgResourceModules['ext.guidedTour.tour.gettingstartedpage'] = array(
