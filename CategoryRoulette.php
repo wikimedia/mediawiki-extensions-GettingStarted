@@ -12,6 +12,7 @@
  *
  */
 class CategoryRoulette {
+	const MAX_ATTEMPTS = 20;
 
 	/** @var Category **/
 	public $category = null;
@@ -43,15 +44,24 @@ class CategoryRoulette {
 			return array();
 		}
 
-		try {
-			$articleIDs = $redis->sRandMember( $key, $numWanted );
-		} catch ( RedisException $e ) {
-			wfDebugLog( 'GettingStarted', 'Redis exception: ' . $e->getMessage() . "\n" );
-			return array();
-		}
-
-		if ( !$articleIDs ) {
-			return array();
+		$articleIDs = array();
+		$attempts = 0;
+		while ( count( $articleIDs ) < $numWanted ) {
+			$attempts++;
+			// Sanity check to prevent calling srand too many times
+			if ( $attempts >= self::MAX_ATTEMPTS ) {
+				wfDebugLog( 'GettingStarted', 'Returning early after ' . self::MAX_ATTEMPTS . ".\n" );
+				return Title::newFromIDs( $articleIDs );
+			}
+			try {
+				$randomID = $redis->sRandMember( $key );
+				if ( !in_array( $randomID, $articleIDs, true ) ) {
+					$articleIDs[] = $randomID;
+				}
+			} catch ( RedisException $e ) {
+				wfDebugLog( 'GettingStarted', 'Redis exception: ' . $e->getMessage() . ".  Returning early.\n" );
+				return Title::newFromIDs( $articleIDs );
+			}
 		}
 
 		return Title::newFromIDs( $articleIDs );
