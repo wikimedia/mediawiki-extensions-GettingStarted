@@ -12,7 +12,8 @@
  *
  */
 class CategoryRoulette {
-	const MAX_ATTEMPTS = 20;
+
+	const MAX_ATTEMPTS = 100;
 
 	/** @var Category **/
 	public $category = null;

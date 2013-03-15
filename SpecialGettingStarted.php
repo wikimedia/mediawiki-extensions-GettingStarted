@@ -65,7 +65,7 @@ EOF;
 			// result set meet requirements, get as many as possible.
 			// FIXME(ori-l, 14-March-2013): should be a separate method.
 			$taskArticles = array();
-			foreach( $roulette->getRandomArticles( self::ARTICLE_COUNT * 2 ) as $article ) {
+			foreach( $roulette->getRandomArticles( self::ARTICLE_COUNT * 4 ) as $article ) {
 				$length = $article->getLength();
 				if ( $length > 0 && $length <= self::MAX_ARTICLE_LENGTH && $article->userCan( 'edit' ) ) {
 					$taskArticles[] = $article;
