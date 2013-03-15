@@ -46,7 +46,7 @@ class GettingStartedHooks {
 		$decoded = FormatJson::decode( $openTasks, true );
 		if ( $title
 			&&  array_key_exists( $title, $decoded )
-			&& $decoded[ $title ] === 'gettingstarted'
+			&& strpos( $decoded[$title], 'gettingstarted' ) === 0
 		) {
 			ChangeTags::addTags(
 				'gettingstarted edit',
