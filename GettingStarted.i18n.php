@@ -67,8 +67,7 @@ See also:
 	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Description of copy-editing tooltip on Special:GettingStarted',
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Title of clarification tooltip on Special:GettingStarted',
 	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Description of clarification tooltip on Special:GettingStarted',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Title of tooltip about adding links on Special:GettingStarted.
-{{Identical|Add link}}',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Title of tooltip about adding links on Special:GettingStarted.',
 	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Description of tooltip about adding links on Special:GettingStarted',
 );
 
@@ -272,17 +271,17 @@ $messages['gl'] = array(
 	'gettingstarted-welcomesiteuser' => '{{GENDER:$2|Benvido|Benvida}} a $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Primeiros pasos',
 	'gettingstarted-welcome-back-site-user' => '{{GENDER:$2|Benvido|Benvida}} de volta, $2',
-	'gettingstarted-task-header' => 'Alegrámonos de que estea aquí. A continuación hai algunhas maneiras fáciles de empezar a contribuír.', # Fuzzy
+	'gettingstarted-task-header' => 'Busca un modo sinxelo de comezar? Escolla unha páxina dalgunha das tres listas inferiores.',
 	'gettingstarted-return' => '← Non, grazas; volver a onde estaba',
 	'gettingstarted-project-link' => '{{ns:Project}}:Primeiros pasos',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Etiqueta]]: Novo editor dando os [[{{MediaWiki:gettingstarted-project-link}}|primeiros pasos]]',
 	'tag-gettingstarted_edit-description' => 'Modificación dunha páxina que o usuario elixiu desde a lista de tarefas dos [[Special:GettingStarted|primeiros pasos]]',
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Corrección', # Fuzzy
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'A corrección consiste na mellora da redacción, gramática e estilo. As páxinas que hai a continuación teñen un formato decente, pero algunhas persoas cren que poden estar mellor. A ver se vostede pode mellorar as cousas.', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Corrixir a gramática e a ortografía',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Estas páxinas teñen un formato decente, pero algunhas persoas cren que poden estar mellor. A ver se vostede pode mellorar a gramática, a ortografía e o estilo.',
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Mellorar a claridade',
-	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Outras persoas marcaron estas páxinas como confusas, pouco claras ou imprecisas. Non ten que ser experto na materia, simplemente busque as etiquetas de "Cómpre clarificar" para saber o que necesita corrixirse.', # Fuzzy
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Engadir ligazóns', # Fuzzy
-	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Algunha vez pasou horas premendo aquí e acolá nas páxinas de {{SITENAME}}? Cada ligazón engádese á man e necesitamos a súa axuda para engadir algunhas.', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Outras persoas marcaron estas páxinas como confusas, pouco claras ou imprecisas. Poida que sexa a páxina ao completo a que necesite correccións ou que só sexa unha oración. Non ten que ser experto na materia, simplemente intente facer que as cousas sexan máis fáciles de entender.',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Engadir ligazóns entre as páxinas',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Todas as ligazóns entre as páxinas de {{SITENAME}} engádense á man, e estas páxinas non teñen as suficientes ligazóns. Basta con engadir dous corchetes ao redor dos temas clave durante a edición; así se creará unha ligazón cara á páxina de {{SITENAME}} relevante.',
 );
 
 /** Hebrew (עברית)
@@ -364,7 +363,7 @@ $messages['it'] = array(
 	'gettingstarted-welcome-back-site-user' => 'Bentornato, $2',
 	'gettingstarted-task-header' => 'Siamo felici che tu sia qui. Di seguito sono riportati alcuni semplici passi per iniziare a contribuire.', # Fuzzy
 	'gettingstarted-return' => '← No grazie, torna indietro a dove ero',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Aggiungi collegamenti', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Collega pagine insieme',
 	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Mai speso ore cliccando in giro su {{SITENAME}}? Ogni link viene aggiunto a mano, e abbiamo bisogno del tuo aiuto per aggiungerne alcuni.', # Fuzzy
 );
 
