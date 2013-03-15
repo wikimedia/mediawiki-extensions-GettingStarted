@@ -69,7 +69,7 @@ EOF;
 			$taskArticles = array();
 			foreach( $roulette->getRandomArticles( self::ARTICLE_COUNT * 2 ) as $article ) {
 				$length = $article->getLength();
-				if ( $length > 0 && $length <= self::MAX_ARTICLE_LENGTH ) {
+				if ( $length > 0 && $length <= self::MAX_ARTICLE_LENGTH && $article->userCan( 'edit' ) ) {
 					$taskArticles[] = $article;
 				}
 				if ( count( $taskArticles ) === self::ARTICLE_COUNT ) {
