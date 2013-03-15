@@ -52,8 +52,6 @@ EOF;
 		}
 		shuffle( $tasks );
 		$questionIcon = Html::element( 'img', array(
-				'width' => 14,
-				'height' => 14,
 				'src' => "$wgExtensionAssetsPath/GettingStarted/resources/images/question-icon-darker.png",
 				'alt' => $this->msg( 'help' )->text()
 			)

@@ -20,8 +20,7 @@
 	] ),
 		$returnTo,
 		returnToTitle,
-		isNew,
-		bucket;
+		isNew;
 
 
 	if ( mw.user.isAnon() ) {
@@ -32,13 +31,12 @@
 	// Set some fields common to both clicks and fixing articles.
 	function setCommonDefaults( schema ) {
 		// Split test.  Even gets GettingStartedv2 treatment
-		var bucket = ( cfg.wgUserId % 2 === 0 ) ? 'test' : 'control';
-
-		var defaults = {
-			version: 1,
-			userId : cfg.wgUserId,
-			bucket: bucket
-		};
+		var bucket = ( cfg.wgUserId % 2 === 0 ) ? 'test' : 'control',
+			defaults = {
+				version: 1,
+				userId : cfg.wgUserId,
+				bucket: bucket
+			};
 
 		mw.eventLog.setDefaults( schema, defaults );
 	}
