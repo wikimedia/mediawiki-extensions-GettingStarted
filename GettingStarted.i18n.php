@@ -396,13 +396,20 @@ $messages['ka'] = array(
 $messages['ko'] = array(
 	'gettingstarted' => '시작하기',
 	'gettingstarted-desc' => '새 사용자를 위한 [[Special:GettingStarted|환영 문서]]를 추가합니다 (계정을 만들고 나서 나타납니다)',
-	'gettingstarted-msg' => '{{SITENAME}}의 관리자가 [[{{ns:MediaWiki}}:gettingstarted-msg]] 메시지를 편집하여 이 메시지를 사용자 정의해야 합니다.',
 	'gettingstarted-welcomesiteuser' => '$2님, $1에 오신 것을 환영합니다!',
-	'gettingstarted-welcomesiteuseranon' => '$1에 오신 것을 환영합니다!',
-	'gettingstarted-return' => '괜찮습니다, 돌아가겠습니다',
+	'gettingstarted-welcomesiteuseranon' => '시작하기',
+	'gettingstarted-welcome-back-site-user' => '$2님, 다시 오신 것을 환영합니다',
+	'gettingstarted-task-header' => '시작하는 쉬운 방법을 찾고 계십니까? 아래 세 목록 중 하나에서 문서를 선택하세요.',
+	'gettingstarted-return' => '← 괜찮습니다, 있던 곳으로 돌아갑니다',
 	'gettingstarted-project-link' => '{{ns:Project}}:시작하기',
 	'tag-gettingstarted_edit' => '[[Special:Tags|태그]]: 새 편집자 [[{{MediaWiki:gettingstarted-project-link}}|시작하기]]',
-	'tag-gettingstarted_edit-description' => '사용자가 [[Special:GettingStarted]]에 작업 목록에서 선택한 문서의 편집', # Fuzzy
+	'tag-gettingstarted_edit-description' => '사용자가 [[Special:GettingStarted|시작하기]]에 작업 목록에서 선택한 문서의 편집',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => '문법과 맞춤법 고치기',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => '몇몇 문서는 괜찮은 모습이지만 어떤 사람은 더 나은 모습으로 될 수 있는 것을 느꼈습니다. 문법, 맞춤법과 스타일을 향상시킬 수 있는지 확인하세요.',
+	'guidedtour-tour-gettingstartedpage-clarification-title' => '명확성 향상',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => '다른 사람은 혼란스럽고 불분명하거나 모호한 몇몇 문서에 태그합니다. 고치거나 문장이 필요한 전체 문서일 수 있습니다. 주제에 전문가일 필요는 없으며 이해하기 더 쉽게 만드세요.',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => '같이 문서 링크',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => '{{SITENAME}} 문서 사이의 모든 링크는 직접 추가하며 몇몇 문서는 충분한 링크가 없습니다. 편집할 때 주요 주제에 두 대괄호를 추가하면 관련된 {{SITENAME}} 문서로 링크합니다.',
 );
 
 /** Kirghiz (Кыргызча)
@@ -654,18 +661,20 @@ $messages['vi'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Hydra
+ * @author Yfdyh000
  * @author 乌拉跨氪
  */
 $messages['zh-hans'] = array(
 	'gettingstarted' => '开始',
 	'gettingstarted-desc' => '添加一个为新用户的[[Special:GettingStarted|欢迎页面]]（在用户创建后显示）',
-	'gettingstarted-msg' => '一个{{SITENAME}}的管理员应该编辑[[{{ns:MediaWiki}}:gettingstarted-msg]]来定制此信息。',
 	'gettingstarted-welcomesiteuser' => '欢迎光临$1，$2！',
-	'gettingstarted-welcomesiteuseranon' => '欢迎光临$1！',
-	'gettingstarted-return' => '不必了，请带我回去',
+	'gettingstarted-welcomesiteuseranon' => '欢迎光临$1！', # Fuzzy
+	'gettingstarted-return' => '不必了，请带我回去', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:入门指南',
 	'tag-gettingstarted_edit' => '[[Special:Tags|标签]]：新编者 [[{{MediaWiki:gettingstarted-project-link}}|入门]]',
 	'tag-gettingstarted_edit-description' => '用户在[[Special:GettingStarted|入门指南]]上选择的页面的一个编辑。',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => '修正语法和拼写',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => '将页面链接在一起',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
