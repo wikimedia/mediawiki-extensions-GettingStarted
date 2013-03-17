@@ -151,9 +151,9 @@ $messages['dsb'] = array(
 	'gettingstarted-return' => 'Ně, źěkujom se, źi slědk',
 	'gettingstarted-project-link' => '{{ns:Project}}:Prědne kšace',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Marka]]: [[{{MediaWiki:gettingstarted-project-link}}|Prědne kšace]] nowego wobźěłarja',
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Redakcija', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Gramatiku a pšawopis korigěrowaś',
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Jasnosć pólěpšyś',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Wótkaze pśidaś', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Boki ze sobu zwězaś',
 );
 
 /** Greek (Ελληνικά)
@@ -231,6 +231,7 @@ $messages['fi'] = array(
 /** French (français)
  * @author Crochet.david
  * @author Gomoko
+ * @author Hello71
  * @author Jean-Frédéric
  */
 $messages['fr'] = array(
@@ -245,7 +246,7 @@ $messages['fr'] = array(
 	'tag-gettingstarted_edit' => '[[Special:Tags|Balise]]: un nouvel éditeur [[{{MediaWiki:gettingstarted-project-link}}|a débuté]]',
 	'tag-gettingstarted_edit-description' => "Modification d'une page choisie par l’utilisateur dans la liste des tâches dans [[Special:GettingStarted|Pour commencer]]",
 	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Relecture', # Fuzzy
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => "Reprendre la copie consiste à améliorer l'orthographe, la grammaire et le style. Les pages ci-dessous sont dans un bon état, mais certains pensent qu’elles pourraient être encore meilleures. Voyez si vous pouvez améliorer les choses.", # Fuzzy
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => "Ces pages sont dans un bon état, mais certains pensent qu’elles pourraient être encore meilleures. Voyez si vous pouvez améliorer la grammaire, l'orthographe, et le style.",
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Améliorer la clarté',
 	'guidedtour-tour-gettingstartedpage-clarification-description' => "D’autres personnes ont marqué ces pages comme confuses, non claires, ou vagues. Vous n’avez pas besoin d’être un expert du domaine, mais juste de regarder les balises 'Clarification demandée' pour voir ce qui doit être corrigé.", # Fuzzy
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Ajouter des liens', # Fuzzy
@@ -674,6 +675,7 @@ $messages['zh-hans'] = array(
 	'tag-gettingstarted_edit' => '[[Special:Tags|标签]]：新编者 [[{{MediaWiki:gettingstarted-project-link}}|入门]]',
 	'tag-gettingstarted_edit-description' => '用户在[[Special:GettingStarted|入门指南]]上选择的页面的一个编辑。',
 	'guidedtour-tour-gettingstartedpage-copy-editing-title' => '修正语法和拼写',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => '这些页面的状况很好，但有些人认为它们能变得更好。看看你能否帮忙改善语法、排版和样式。',
 	'guidedtour-tour-gettingstartedpage-add-links-title' => '将页面链接在一起',
 );
 
