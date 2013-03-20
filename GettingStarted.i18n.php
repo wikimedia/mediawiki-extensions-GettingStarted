@@ -362,10 +362,10 @@ $messages['it'] = array(
 	'gettingstarted-welcomesiteuser' => 'Benvenuto su $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Guida introduttiva',
 	'gettingstarted-welcome-back-site-user' => 'Bentornato, $2',
-	'gettingstarted-task-header' => 'Siamo felici che tu sia qui. Di seguito sono riportati alcuni semplici passi per iniziare a contribuire.', # Fuzzy
+	'gettingstarted-task-header' => 'Stai cercando un modo semplice per iniziare? Basta scegliere una pagina da uno dei tre elenchi qui sotto.',
 	'gettingstarted-return' => '← No grazie, torna indietro a dove ero',
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Collega pagine insieme',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Mai speso ore cliccando in giro su {{SITENAME}}? Ogni link viene aggiunto a mano, e abbiamo bisogno del tuo aiuto per aggiungerne alcuni.', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Ogni collegamento tra le pagine di {{SITENAME}} è aggiunto a mano, e queste pagine non hanno abbastanza. Basta aggiungere due parentesi quadre alle parole sugli argomenti chiave quando si sta modificando, e collegherà alla pagina pertinente di {{SITENAME}}.',
 );
 
 /** Japanese (日本語)
@@ -507,6 +507,7 @@ $messages['mt'] = array(
 );
 
 /** Dutch (Nederlands)
+ * @author Konovalov
  * @author Siebrand
  */
 $messages['nl'] = array(
@@ -515,16 +516,16 @@ $messages['nl'] = array(
 	'gettingstarted-welcomesiteuser' => 'Welkom bij $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Aan de slag',
 	'gettingstarted-welcome-back-site-user' => 'Welkom terug, $2',
-	'gettingstarted-task-header' => 'We zijn blij dat u er bent. Hieronder staan een paar makkelijke manieren om bij te dragen.', # Fuzzy
+	'gettingstarted-task-header' => "Op zoek naar een makkelijke manier om te beginnen? Kies een pagina uit een van de drie ondergenoemde pagina's.",
 	'gettingstarted-return' => '← Nee bedankt. Ik wil graag terug naar waar ik vandaan kom',
 	'gettingstarted-project-link' => '{{ns:Project}}:Aan de slag',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Label]]: nieuwe bewerker [[{{MediaWiki:gettingstarted-project-link}}|aan de slag]]',
 	'tag-gettingstarted_edit-description' => 'Bewerking aan een pagina die de gebruiker heeft gekozen uit de takenlijst op [[Special:GettingStarted|aan de slag]]',
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Eindredactie', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Corrigeer grammatica & spelling',
 	'guidedtour-tour-gettingstartedpage-copy-editing-description' => "Eindredactie is het verbeteren van spelling, grammatica en stijl. De onderstaande pagina's zijn in redelijke staat, maar er zijn gebruikers die denken dat ze beter gemaakt kunnen worden. Kijk of u dingen kunt verbeteren.", # Fuzzy
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Duidelijkheid verbeteren',
 	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Andere gebruikers hebben aangegeven dat deze pagina\'s verwarrend, onduidelijk of vaag zijn. U hoeft geen expert te zijn op het gebied van het onderwerp te zijn. Zoek naar de labels "Verduidelijking nodig" om te zien waar verbetering nodig is.', # Fuzzy
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Koppelingen toevoegen', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-add-links-title' => "Pagina's aan elkaar koppelen",
 	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Hebt u ooit zomaar uren rondgeklikt op {{SITENAME}}? Iedere koppeling wordt met de hand aangebracht en we hebben uw hulp nodig om er een aantal toe te voegen.', # Fuzzy
 );
 
