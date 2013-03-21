@@ -522,11 +522,11 @@ $messages['nl'] = array(
 	'tag-gettingstarted_edit' => '[[Special:Tags|Label]]: nieuwe bewerker [[{{MediaWiki:gettingstarted-project-link}}|aan de slag]]',
 	'tag-gettingstarted_edit-description' => 'Bewerking aan een pagina die de gebruiker heeft gekozen uit de takenlijst op [[Special:GettingStarted|aan de slag]]',
 	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Corrigeer grammatica & spelling',
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => "Eindredactie is het verbeteren van spelling, grammatica en stijl. De onderstaande pagina's zijn in redelijke staat, maar er zijn gebruikers die denken dat ze beter gemaakt kunnen worden. Kijk of u dingen kunt verbeteren.", # Fuzzy
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => "Deze pagina's zijn in redelijke staat, maar er zijn gebruikers die denken dat ze beter gemaakt kunnen worden. Kijk of u de grammatica, spelling en stijl kunt verbeteren.",
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Duidelijkheid verbeteren',
-	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Andere gebruikers hebben aangegeven dat deze pagina\'s verwarrend, onduidelijk of vaag zijn. U hoeft geen expert te zijn op het gebied van het onderwerp te zijn. Zoek naar de labels "Verduidelijking nodig" om te zien waar verbetering nodig is.', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-clarification-description' => "Andere gebruikers hebben aangegeven dat deze pagina's verwarrend, onduidelijk of vaag zijn. Het kan zijn dat de gehele pagina gerepareerd moet worden of slechts een zin. U hoeft geen expert in het gebied te zijn, maar probeer de dingen wat makkelijker te begrijpen te maken.",
 	'guidedtour-tour-gettingstartedpage-add-links-title' => "Pagina's aan elkaar koppelen",
-	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Hebt u ooit zomaar uren rondgeklikt op {{SITENAME}}? Iedere koppeling wordt met de hand aangebracht en we hebben uw hulp nodig om er een aantal toe te voegen.', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-add-links-description' => "Elke koppeling tussen {{SITENAME}} pagina's is met de hand toegevoegd en deze pagina's hebben niet genoeg. Voeg simpelweg twee vierkante haken toe rond belangrijke onderwerpen wanneer u aan het bewerken bent en het zal de relevante {{SITENAME}} pagina koppelen.",
 );
 
 /** Piedmontese (Piemontèis)
