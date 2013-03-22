@@ -18,6 +18,11 @@ $specialPageAliases['de'] = array(
 	'GettingStarted' => array( 'Anfangen' ),
 );
 
+/** Esperanto (Esperanto) */
+$specialPageAliases['eo'] = array(
+	'GettingStarted' => array( 'Komencado', 'Komencante' ),
+);
+
 /** Hungarian (magyar) */
 $specialPageAliases['hu'] = array(
 	'GettingStarted' => array( 'Első_lépések' ),
