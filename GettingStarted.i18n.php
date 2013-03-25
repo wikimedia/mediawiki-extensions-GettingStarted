@@ -41,7 +41,7 @@ $messages['en'] = array(
  * @author spage
  */
 $messages['qqq'] = array(
-	'gettingstarted' => "The name of the extension's entry in [[Special:SpecialPages]]",
+	'gettingstarted' => '{{doc-special|GettingStarted}}',
 	'gettingstarted-desc' => '{{desc|name=Getting Started|url=http://www.mediawiki.org/wiki/Extension:GettingStarted}}',
 	'gettingstarted-msg' => 'Blank message used to replace welcomecreation-msg.  Additional dynamically generated task HTML is injected',
 	'gettingstarted-welcomesiteuser' => 'The title of the Getting Started page shown automatically to users after they create an account
@@ -521,7 +521,7 @@ $messages['nl'] = array(
 	'gettingstarted-project-link' => '{{ns:Project}}:Aan de slag',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Label]]: nieuwe bewerker [[{{MediaWiki:gettingstarted-project-link}}|aan de slag]]',
 	'tag-gettingstarted_edit-description' => 'Bewerking aan een pagina die de gebruiker heeft gekozen uit de takenlijst op [[Special:GettingStarted|aan de slag]]',
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Corrigeer grammatica & spelling',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Grammatica en spelling corrigeren',
 	'guidedtour-tour-gettingstartedpage-copy-editing-description' => "Deze pagina's zijn in redelijke staat, maar er zijn gebruikers die denken dat ze beter gemaakt kunnen worden. Kijk of u de grammatica, spelling en stijl kunt verbeteren.",
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Duidelijkheid verbeteren',
 	'guidedtour-tour-gettingstartedpage-clarification-description' => "Andere gebruikers hebben aangegeven dat deze pagina's verwarrend, onduidelijk of vaag zijn. Het kan zijn dat de gehele pagina gerepareerd moet worden of slechts een zin. U hoeft geen expert in het gebied te zijn, maar probeer de dingen wat makkelijker te begrijpen te maken.",
@@ -648,17 +648,17 @@ $messages['vi'] = array(
 	'gettingstarted-welcomesiteuser' => 'Chào mừng $2 đến với $1!',
 	'gettingstarted-welcomesiteuseranon' => 'Bắt đầu',
 	'gettingstarted-welcome-back-site-user' => 'Chào mừng $2 đã trở lại',
-	'gettingstarted-task-header' => 'Chúng tôi vui mừng bạn đã ghé vào đây. Dưới đây có một số gợi ý để bắt đầu đóng góp.', # Fuzzy
+	'gettingstarted-task-header' => 'Muốn bắt đầu một cách dễ dàng? Chỉ việc chọn một trang từ những danh sách ở dưới.',
 	'gettingstarted-return' => 'Thôi, quay lại trang vừa rồi',
 	'gettingstarted-project-link' => '{{ns:Project}}:Bắt đầu',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Thẻ]]: Người dùng mới đang [[{{MediaWiki:gettingstarted-project-link}}|bắt đầu]]',
 	'tag-gettingstarted_edit-description' => 'Sửa đổi trang được gợi ý trong danh sách việc cần làm tại [[Special:GettingStarted|Bắt đầu]]',
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Sửa văn phong', # Fuzzy
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Các trang ở dưới có vẻ được nhưng có người cảm thấy nó còn có khả năng cải tiến về chính tả, ngữ pháp, và văn phong. Mời bạn giúp đỡ!', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Sửa ngữ pháp và chính tả',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Các trang ở dưới có vẻ được nhưng có người cảm thấy nó còn có khả năng cải tiến về chính tả, ngữ pháp, và văn phong. Mời bạn giúp đỡ!',
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Viết rõ hơn',
-	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Người ta đã đánh dấu các trang này là khó hiểu, không rõ, hoặc mơ hồ. Bạn không cần phải là chuyên gia về các đề tài này, chỉ việc kiếm các thẻ “Cần giải thích” để biết những gì cần sửa chữa.', # Fuzzy
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Đặt liên kết', # Fuzzy
-	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Bạn có bao giờ mất vài tiếng đồng hồ đi tới đi lui tại {{SITENAME}}? Mỗi liên kết được bổ sung thủ công, và chúng tôi cần bạn giúp bằng cách thêm liên kết.', # Fuzzy
+	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Người ta đã đánh dấu các trang này là khó hiểu, không rõ, hoặc mơ hồ. Có thể cần sửa cả trang hoặc chỉ cần sửa một câu. Bạn không cần phải là chuyên gia về các đề tài này, chỉ cần cố gắng giải thích rõ hơn.',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Đặt liên kết giữa các trang',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Mỗi liên kết được bổ sung thủ công, và chúng tôi cần bạn giúp bằng cách thêm liên kết. Vào lúc sửa đổi, chỉ việc đưa những cụm từ quan trọng vào trong hai dấu ngoặc vuông mỗi bên để đặt liên kết đến trang với tên đó.',
 );
 
 /** Simplified Chinese (中文（简体）‎)
