@@ -664,20 +664,26 @@ $messages['vi'] = array(
 /** Simplified Chinese (中文（简体）‎)
  * @author Hydra
  * @author Yfdyh000
+ * @author Zhuyifei1999
  * @author 乌拉跨氪
  */
 $messages['zh-hans'] = array(
 	'gettingstarted' => '开始',
 	'gettingstarted-desc' => '添加一个为新用户的[[Special:GettingStarted|欢迎页面]]（在用户创建后显示）',
 	'gettingstarted-welcomesiteuser' => '欢迎光临$1，$2！',
-	'gettingstarted-welcomesiteuseranon' => '欢迎光临$1！', # Fuzzy
-	'gettingstarted-return' => '不必了，请带我回去', # Fuzzy
+	'gettingstarted-welcomesiteuseranon' => '开始',
+	'gettingstarted-welcome-back-site-user' => '欢迎回来$2',
+	'gettingstarted-task-header' => '在寻找简单的方法开始吗？只要从下面三个列表之一选择择一个页面。',
+	'gettingstarted-return' => '← 不必了，回我原来所在的地方',
 	'gettingstarted-project-link' => '{{ns:Project}}:入门指南',
 	'tag-gettingstarted_edit' => '[[Special:Tags|标签]]：新编者 [[{{MediaWiki:gettingstarted-project-link}}|入门]]',
 	'tag-gettingstarted_edit-description' => '用户在[[Special:GettingStarted|入门指南]]上选择的页面的一个编辑。',
 	'guidedtour-tour-gettingstartedpage-copy-editing-title' => '修正语法和拼写',
 	'guidedtour-tour-gettingstartedpage-copy-editing-description' => '这些页面的状况很好，但有些人认为它们能变得更好。看看你能否帮忙改善语法、排版和样式。',
+	'guidedtour-tour-gettingstartedpage-clarification-title' => '提高清晰度',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => '其他人已经标记这些页面令人困惑、 不清楚，或含糊不清。可能是整个页面需要修复，或者只是一句。你不需要是这主题的一位专家，只需尝试使事情更易于理解。',
 	'guidedtour-tour-gettingstartedpage-add-links-title' => '将页面链接在一起',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => '{{SITENAME}} 页面之间的每一个链接都是手动添加的，且这些页面不够。当您编辑时，只需添加两个方括号在关键主题周围，它就将链接到相关的 {{SITENAME}} 页面。',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
