@@ -28,6 +28,16 @@
 		return;
 	}
 
+	// Wrapper around mw.eventLog.logEvent that returns a promise that resolves
+	// when either the logging attempt concludes or `timeout` miliseconds have
+	// elapsed, whichever is sooner.
+	function logUnlessTimeout( schema, event, timeout ) {
+		var dfd = $.Deferred();
+		setTimeout( dfd.reject, timeout );
+		mw.eventLog.logEvent( schema, event ).then( dfd.resolve, dfd.reject );
+		return dfd.promise();
+	}
+
 	// Set some fields common to both clicks and fixing articles.
 	function setCommonDefaults( schema ) {
 		// Split test.  Even gets GettingStartedv2 treatment
@@ -206,7 +216,7 @@
 		} );
 
 		// If the user clicks on a task, log it and start a funnel.
-		$( '#onboarding-tasks a' ).stall( 'click', function () {
+		$( '#onboarding-tasks a' ).on( 'click', function ( e ) {
 			var $el = $( this ),
 				articleTitle = $el.attr( 'title' ),
 				article,
@@ -218,29 +228,40 @@
 			taskName = $taskEl.data( 'taskName' );
 			fullTask = 'gettingstarted-' + taskName;
 			article = getPageFromTitleAttribute( articleTitle );
-			mw.eventLog.logEvent( 'GettingStarted', {
+
+			setTask( article, fullTask );
+
+			logUnlessTimeout( 'GettingStarted', {
 				action : 'gettingstarted-click',
 				funnel : fullTask,
 				targetTitle : article
+			}, 500 ).always( function () {
+				location.href = $el.attr( 'href' );
 			} );
-			setTask( article, fullTask );
+
+			e.preventDefault();
 		} );
 
 
 		// If the user clicks the returnTo link, log it and maybe start a funnel.
 		returnToTitle = $returnTo.attr( 'title' );
 
-		$returnTo.stall( 'click', function () {
+		$returnTo.on( 'click', function ( e ) {
 			var article = getPageFromTitleAttribute( returnToTitle ),
 				task = 'returnto';
-			mw.eventLog.logEvent( 'GettingStarted', {
-				action      : 'gettingstarted-click',
-				funnel      : task,
-				targetTitle : article
-			} );
 			if ( isAppropriateTask( article ) ) {
 				setTask( article, task );
 			}
+
+			logUnlessTimeout( 'GettingStarted', {
+				action      : 'gettingstarted-click',
+				funnel      : task,
+				targetTitle : article
+			}, 500 ).always( function () {
+				location.href = $returnTo.attr( 'href' );
+			} );
+
+			e.preventDefault();
 		} );
 
 	} else {
