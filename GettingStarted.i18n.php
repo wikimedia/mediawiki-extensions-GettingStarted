@@ -233,6 +233,7 @@ $messages['fi'] = array(
  * @author Gomoko
  * @author Hello71
  * @author Jean-Frédéric
+ * @author Valystant
  */
 $messages['fr'] = array(
 	'gettingstarted' => 'Pour commencer',
@@ -245,7 +246,7 @@ $messages['fr'] = array(
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Balise]]: un nouvel éditeur [[{{MediaWiki:gettingstarted-project-link}}|a débuté]]',
 	'tag-gettingstarted_edit-description' => "Modification d'une page choisie par l’utilisateur dans la liste des tâches dans [[Special:GettingStarted|Pour commencer]]",
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Corriger la grammaire & l’orthographe',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Corriger la grammaire et l’orthographe',
 	'guidedtour-tour-gettingstartedpage-copy-editing-description' => "Ces pages sont dans un bon état, mais certains pensent qu’elles pourraient être encore meilleures. Voyez si vous pouvez améliorer la grammaire, l'orthographe, et le style.",
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Améliorer la clarté',
 	'guidedtour-tour-gettingstartedpage-clarification-description' => 'D’autres personnes ont marqué ces pages comme confuses, non claires, ou vagues. Ce peut être l’ensemble de la page qui doit être corrigé, ou simplement une phrase. Vous n’avez pas besoin d’être un expert du domaine, mais juste essayer de rendre les choses plus faciles à comprendre.',
