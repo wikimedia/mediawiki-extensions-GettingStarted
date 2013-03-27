@@ -33,6 +33,11 @@ class GettingStartedHooks {
 	 */
 	public static function onBeforePageDisplay( $out, $skin ) {
 		$out->addModules( 'ext.gettingstarted.openTask' );
+
+		if ( class_exists( 'EchoNotifier' ) ) {
+			$out->addModules( 'ext.gettingstarted.echo' );
+		}
+
 		return true;
 	}
 
@@ -101,6 +106,112 @@ class GettingStartedHooks {
 		$wgOut->addModuleStyles( 'ext.gettingstarted.styles' );
 
 		$wgOut->addModules( 'ext.gettingstarted.accountcreation' );
+
+		return true;
+	}
+
+	public static function onBeforeCreateEchoEvent( &$notifications, &$categories ) {
+		// Currently not used, but most notifications seem to include agent as a param.
+		// It will allow username to be included later with just a message change.
+		$defaults = array(
+			'category' => 'system',
+			'group' => 'positive',
+			'title-params' => array( 'agent' ),
+			'email-subject-params' => array( 'agent' ),
+			'email-body-params' => array( 'agent', 'titlelink', 'email-footer' ),
+			'email-body-batch-params' => array( 'agent', 'titlelink' ),
+			'icon' => 'gettingstarted',
+		);
+
+		$notifications['gettingstarted-start-editing'] = array(
+			'title-message' => 'notification-gettingstarted-start-editing',
+			'email-subject-message' => 'notification-gettingstarted-start-editing-email-subject',
+			'email-body-message' => 'notification-gettingstarted-start-editing-text-email-body',
+			'email-body-batch-message' => 'notification-gettingstarted-start-editing-text-email-batch-body',
+		) + $defaults;
+
+		$notifications['gettingstarted-continue-editing'] = array(
+			'title-message' => 'notification-gettingstarted-continue-editing',
+			'email-subject-message' => 'notification-gettingstarted-continue-editing-email-subject',
+			'email-body-message' => 'notification-gettingstarted-continue-editing-text-email-body',
+			'email-body-batch-message' => 'notification-gettingstarted-continue-editing-text-email-batch-body',
+		) + $defaults;
+
+		return true;
+	}
+
+	public static function onEchoGetDefaultNotifiedUsers( $event, &$users ) {
+		$type = $event->getType();
+		if ( $type === 'gettingstarted-start-editing' || $type === 'gettingstarted-continue-editing' ) {
+			$users[$event->getAgent()->getId()] = $event->getAgent();
+		}
+
+		return true;
+	}
+
+	/**
+	 * Checks if they have edited the main namespace
+	 *
+	 * @param User $user user to check
+	 * @return true if they have, false otherwise
+	 */
+	protected static function hasEditedMainNamespace( $user ) {
+		global $wgRequest;
+
+		$api = new ApiMain(
+			new DerivativeRequest(
+				$wgRequest,
+				array(
+					'action' => 'query',
+					'list' => 'usercontribs',
+					'ucuser' => $user->getName(),
+					'uclimit' => 1,
+					'ucnamespace' => NS_MAIN,
+				),
+				false // not posted
+			),
+			false // disable write
+		);
+
+		$api->execute();
+		$result = $api->getResultData();
+		return isset( $result['query']['usercontribs'] ) && count( $result['query']['usercontribs'] ) >= 1;
+	}
+
+	/**
+	 * Checks if they signed up within wgGettingStartedRecentPeriodInSeconds period.
+	 *
+	 * @param User $user user to check
+	 * @return boolean true if recent, false otherwise
+	 */
+	protected static function isRecentSignup( $user ) {
+		global $wgGettingStartedRecentPeriodInSeconds;
+
+		$registration = $user->getRegistration();
+		if ( $registration === null ) {
+			return false;
+		}
+
+		$secondsSinceSignup = wfTimestamp( TS_UNIX ) - wfTimestamp( TS_UNIX, $registration );
+		return $secondsSinceSignup < $wgGettingStartedRecentPeriodInSeconds;
+	}
+
+	public static function onConfirmEmailComplete( $user ) {
+		if ( class_exists( 'EchoNotifier' ) ) {
+			// The goal is to only do this notification once per-user.
+			// Absent a clean way to do that, this notifies them if they signed up with a given time duration.
+			if ( self::isRecentSignup( $user ) ) {
+				$type = self::hasEditedMainNamespace( $user ) ? 'gettingstarted-continue-editing' : 'gettingstarted-start-editing';
+				EchoEvent::create( array(
+					'type' => $type,
+					'title' => SpecialPage::getTitleFor( 'GettingStarted' ),
+					'agent' => $user,
+					'extra' => array(
+						'notifyAgent' => true,
+					),
+				) );
+			}
+		}
 
 		return true;
 	}

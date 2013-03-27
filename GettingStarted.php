@@ -52,6 +52,10 @@ $wgGettingStartedTasks = array(
 	)
 );
 
+// If they signed up with this number of seconds, it's considered recent
+// Below default is 30 days.
+$wgGettingStartedRecentPeriodInSeconds = 2592000;
+
 /**
  * @var string|bool: redis host to use; false if unset.
  * @example string: '127.0.0.1'
@@ -98,7 +102,7 @@ $wgResourceModules['ext.guidedTour.tour.gettingstartedpage'] = array(
 	),
 ) + $gettingStartedModuleInfo;
 
-// Every page site-wide
+// ext.gettingstarted.openTask and ext.gettingstarted.echo (if Echo is enabled) are every page site-wide.
 $wgResourceModules[ 'ext.gettingstarted.openTask' ] = array(
 	'scripts' => 'ext.gettingstarted.openTask.js',
 	'dependencies' => array(
@@ -113,6 +117,10 @@ $wgResourceModules[ 'ext.gettingstarted.openTask' ] = array(
 	'messages' => array(
 		'red-link-title'
 	)
+) + $gettingStartedModuleInfo;
+
+$wgResourceModules[ 'ext.gettingstarted.echo' ] = array(
+	'styles' => 'ext.gettingstarted.echo.css'
 ) + $gettingStartedModuleInfo;
 
 // This loads on both account creation and the special page, even if JS is off
@@ -152,3 +160,6 @@ $wgHooks[ 'CategoryAfterPageRemoved' ][] = 'RedisCategorySync::onCategoryAfterPa
 $wgHooks[ 'LinksUpdateComplete' ][] = 'RedisCategorySync::onLinksUpdateComplete';
 $wgHooks[ 'ListDefinedTags' ][] = 'GettingStartedHooks::onListDefinedTags';
 $wgHooks[ 'MakeGlobalVariablesScript' ][] = 'GettingStartedHooks::onMakeGlobalVariablesScript';
+$wgHooks[ 'BeforeCreateEchoEvent' ][] = 'GettingStartedHooks::onBeforeCreateEchoEvent';
+$wgHooks[ 'EchoGetDefaultNotifiedUsers' ][] = 'GettingStartedHooks::onEchoGetDefaultNotifiedUsers';
+$wgHooks[ 'ConfirmEmailComplete' ][] = 'GettingStartedHooks::onConfirmEmailComplete';

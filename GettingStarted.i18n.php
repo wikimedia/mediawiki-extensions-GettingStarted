@@ -32,8 +32,23 @@ $messages['en'] = array(
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Improve clarity',
 	'guidedtour-tour-gettingstartedpage-clarification-description' => "Other people have tagged these pages as confusing, unclear, or vague. It might be the whole page that needs fixing, or just a sentence. You don't need to be an expert in the topic, just try to make things easier to understand.",
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Link pages together',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => "Every link between {{SITENAME}} pages is added by hand, and these pages don't have enough. Just add two square brackets around key topics when you're editing, and it will link to the relevant {{SITENAME}} page."
+	'guidedtour-tour-gettingstartedpage-add-links-description' => "Every link between {{SITENAME}} pages is added by hand, and these pages don't have enough. Just add two square brackets around key topics when you're editing, and it will link to the relevant {{SITENAME}} page.",
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} is a free encyclopedia written by people like you. [[Special:GettingStarted|Get started]] by making your first contribution!',
+	'notification-gettingstarted-start-editing-email-subject' => 'Get started with editing {{SITENAME}}',
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} is a free encyclopedia written by people like you. Get started by making your first contribution!
 
+Visit $2 for a list of easy ways to improve pages.
+
+$3',
+	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Get started with {{SITENAME}} editing by visiting $2',
+	'notification-gettingstarted-continue-editing' => 'Nice work! You\'ve already made your first edits to {{SITENAME}}. If you\'re looking for more to do, here are some [[Special:GettingStarted|easy ways to contribute]].',
+	'notification-gettingstarted-continue-editing-email-subject' => 'Easy ways to improve {{SITENAME}}',
+	'notification-gettingstarted-continue-editing-text-email-body' => 'Nice work! You\'ve already made your first edits to {{SITENAME}}.
+
+If you\'re looking for more to do, there\'s a list of easy ways to help at $2
+
+$3',
+	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Looking for more to do? Visit $2 for a list of easy ways to help.',
 );
 
 /** Message documentation (Message documentation)
@@ -69,6 +84,28 @@ See also:
 	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Description of clarification tooltip on Special:GettingStarted',
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Title of tooltip about adding links on Special:GettingStarted.',
 	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Description of tooltip about adding links on Special:GettingStarted',
+	'notification-gettingstarted-start-editing' => 'Text shown on web when someone confirms their email but has not yet edited the main namespace:
+* $1 - username (unused); GENDER is supported',
+	'notification-gettingstarted-start-editing-email-subject' => 'Subject of email sent when someone confirms their email but has not yet edited the main namespace:
+* $1 - username (unused); GENDER is supported',
+	'notification-gettingstarted-start-editing-text-email-body' => 'Body of text email sent when someone confirms their email but has not yet edited the main namespace:
+* $1 - username (unused); GENDER is supported
+* $2 - URL of Special:GettingStarted
+* $3 - email footer',
+	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Body of batch version of text email sent when someone confirms their email but has not yet edited the main namespace:
+* $1 - username (unused); GENDER is supported
+* $2 - URL of Special:GettingStarted',
+	'notification-gettingstarted-continue-editing' => 'Text shown on web when someone confirms their email, and has already edited the main namespace:
+* $1 - username (unused); GENDER is supported',
+	'notification-gettingstarted-continue-editing-email-subject' => 'Subject of email sent when someone confirms their email, and has already edited the main namespace:
+* $1 - username (unused); GENDER is supported',
+	'notification-gettingstarted-continue-editing-text-email-body' => 'Body of text email sent when someone confirms their email, and has already edited the main namespace:
+* $1 - username (unused); GENDER is supported
+* $2 - URL of Special:GettingStarted
+* $3 - email footer',
+	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Body of batch version of text email sent when someone confirms their email, and has already edited the main namespace:
+* $1 - username (unused); GENDER is supported
+* $2 - URL of Special:GettingStarted',
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
