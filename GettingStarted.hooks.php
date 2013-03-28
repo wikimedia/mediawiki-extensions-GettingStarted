@@ -7,6 +7,23 @@
  */
 
 class GettingStartedHooks {
+	public static $isWelcomeCreation = false;
+
+	/**
+	 * MakeGlobalVariablesScript hook.
+	 * Add config vars to mw.config.
+	 *
+	 * @param $vars array
+	 * @param $out OutputPage output page
+	 * @return bool
+	 */
+	public static function onMakeGlobalVariablesScript( &$vars, $out ) {
+		if ( self::$isWelcomeCreation ) {
+			$vars[ 'wgIsWelcomeCreation' ] = true;
+		}
+		return true;
+	}
+
 	/**
 	 * Adds the openTask module to the page
 	 *
@@ -65,6 +82,8 @@ class GettingStartedHooks {
 
 	public static function onBeforeWelcomeCreation( &$welcomeCreationMsg, &$injectHtml ) {
 		global $wgOut, $wgUser;
+
+		self::$isWelcomeCreation = true;
 
 		// Do nothing on mobile.
 		if ( class_exists( 'MobileContext' ) ) {
