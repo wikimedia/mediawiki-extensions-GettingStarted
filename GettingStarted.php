@@ -107,7 +107,6 @@ $wgResourceModules[ 'ext.gettingstarted.openTask' ] = array(
 		'mediawiki.Title',
 		'jquery.mwExtension', // $.escapeRE
 		'mediawiki.user',
-		'ext.Experiments.lib',
 		'ext.postEdit',
 		'schema.GettingStarted',
 	),
