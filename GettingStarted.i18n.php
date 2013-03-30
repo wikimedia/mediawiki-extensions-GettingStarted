@@ -546,6 +546,13 @@ $messages['pms'] = array(
 	'tag-gettingstarted_edit-description' => "Modìfica ëd na pagina che l'utent a sern da la lista dij travaj an [[Special:GettingStarted]]", # Fuzzy
 );
 
+/** Brazilian Portuguese (português do Brasil)
+ * @author Raylton P. Sousa
+ */
+$messages['pt-br'] = array(
+	'gettingstarted' => 'Primeiros passos',
+);
+
 /** Romanian (română)
  * @author Firilacroco
  */
