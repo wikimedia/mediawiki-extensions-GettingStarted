@@ -551,6 +551,13 @@ $messages['pms'] = array(
  */
 $messages['pt-br'] = array(
 	'gettingstarted' => 'Primeiros passos',
+	'gettingstarted-desc' => 'Adiciona uma página de [[Special:GettingStarted|boas vindas]] para novos usuários(exibido após a criação da conta)',
+	'gettingstarted-welcomesiteuser' => '{{GENDER:$2|Bem-vindo|Bem-vinda|Bem-vindo(a)}} a $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Primeiros passos',
+	'gettingstarted-welcome-back-site-user' => 'Bem-vindo de volta, $2',
+	'gettingstarted-task-header' => 'Procurando uma maneira fácil de começar? Basta escolher uma página de uma das três listas abaixo.',
+	'gettingstarted-return' => '← Não, obrigado, volte para onde estava',
+	'gettingstarted-project-link' => '{{ns:Project}}:PrimeirosPassos',
 );
 
 /** Romanian (română)
