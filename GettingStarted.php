@@ -78,7 +78,7 @@ $gettingStartedModuleInfo = array(
 	'remoteExtPath' => 'GettingStarted/resources',
 );
 
-$wgResourceModules[ 'schema.GettingStarted' ] = array(
+$wgResourceModules[ 'schema.GettingStartedNewLandingPage' ] = array(
 	'class'    => 'ResourceLoaderSchemaModule',
 	'schema'   => 'GettingStarted',
 	'revision' => 5320430,
@@ -108,7 +108,7 @@ $wgResourceModules[ 'ext.gettingstarted.openTask' ] = array(
 		'jquery.mwExtension', // $.escapeRE
 		'mediawiki.user',
 		'ext.postEdit',
-		'schema.GettingStarted',
+		'schema.GettingStartedNewLandingPage',
 	),
 	'messages' => array(
 		'red-link-title'

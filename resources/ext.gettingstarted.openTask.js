@@ -40,13 +40,11 @@
 
 	// Set some fields common to both clicks and fixing articles.
 	function setCommonDefaults( schema ) {
-		// Split test.  Even gets GettingStartedv2 treatment
-		var bucket = ( cfg.wgUserId % 2 === 0 ) ? 'test' : 'control',
-			defaults = {
-				version: 1,
-				userId : cfg.wgUserId,
-				bucket: bucket
-			};
+		var defaults = {
+			version: 2,
+			userId : cfg.wgUserId,
+			bucket: 'test'
+		};
 
 		mw.eventLog.setDefaults( schema, defaults );
 	}
