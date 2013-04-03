@@ -96,12 +96,20 @@ $messages['br'] = array(
 );
 
 /** Czech (česky)
+ * @author Mormegil
  * @author Vks
  */
 $messages['cs'] = array(
+	'gettingstarted-desc' => 'Přidává [[Special:GettingStarted|uvítací stránku]] pro nové uživatele (zobrazenou po vytvoření účtu)',
 	'gettingstarted-welcomesiteuser' => 'Vítá vás $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Vítejte na $1!',
-	'gettingstarted-return' => 'Ne, děkuji, vemte mě zpět',
+	'gettingstarted-welcomesiteuseranon' => 'Jak začít',
+	'gettingstarted-welcome-back-site-user' => 'Vítejte zpět, {{GENDER:$2|uživateli|uživatelko}} $2',
+	'gettingstarted-task-header' => 'Hledáte snadný způsob, jak začít? Stačí si vybrat stránku z jednoho ze tří níže uvedených seznamů.',
+	'gettingstarted-return' => '← Ne, děkuji, chci zpět tam, kde jsem byl',
+	'gettingstarted-project-link' => '{{ns:Project}}:Jak začít',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Značka]]: nový uživatel [[{{MediaWiki:gettingstarted-project-link}}|začíná]]',
+	'tag-gettingstarted_edit-description' => 'Editace stránky, kterou si uživatel zvolil ze seznamu úkolů na stránce [[Special:GettingStarted|Jak začít]]',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Opravy pravopisu a gramatiky',
 );
 
 /** Danish (dansk)
