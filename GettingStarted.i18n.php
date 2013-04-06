@@ -331,9 +331,20 @@ $messages['fr'] = array(
 	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Chaque lien entre les pages de {{SITENAME}} est ajouté à la main, et ces pages n’en ont pas assez. Ajoutez simplement deux crochets autour des sujets clé lorsque vous écrivez, et cela créera un lien vers la page de {{SITENAME}} appropriée.',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} est une encyclopédie libre écrite par des gens comme vous. [[Special:GettingStarted|Débutez]] en effectuant votre première contribution !',
 	'notification-gettingstarted-start-editing-email-subject' => "Débuter avec l'édition sur {{SITENAME}}",
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} est une encyclopédie libre écrite par des gens comme vous. Commencer par faire votre première contribution !
+
+Visitez $2 pour obtenir la liste des astuces pour améliorer les pages.
+
+$3',
 	'notification-gettingstarted-start-editing-text-email-batch-body' => "Débuter avec l'édition sur {{SITENAME}} en visitant $2",
 	'notification-gettingstarted-continue-editing' => 'Beau travail ! Vous avez fait votre première contribution sur {{SITENAME}}. Si vous cherchez à faire plus, voici quelques [[Special:GettingStarted|manières faciles de contribuer]].',
 	'notification-gettingstarted-continue-editing-email-subject' => "Manières simples d'améliorer {{SITENAME}}",
+	'notification-gettingstarted-continue-editing-text-email-body' => 'Très beau travail ! Vous avez déjà fait vos premières modifications à {{SITENAME}}.
+
+Si vous cherchez à faire plus, il y a une liste de méthodes simples pour aider à  $2
+
+$3',
+	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Vous cherchez à faire plus ? Visitez $2 pour obtenir la liste des astuces pour aider.',
 );
 
 /** Franco-Provençal (arpetan)
@@ -526,6 +537,14 @@ $messages['lt'] = array(
 	'gettingstarted-welcomesiteuseranon' => 'Sveiki atvykę į $1!',
 );
 
+/** Latvian (latviešu)
+ * @author Admresdeserv.
+ */
+$messages['lv'] = array(
+	'notification-gettingstarted-start-editing-email-subject' => 'Iepazīsties ar {{SITENAME}} rediģēšanas',
+	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Iepazīsties ar {{SITENAME}} rediģēšanu apmeklējot $2',
+);
+
 /** Minangkabau (Baso Minangkabau)
  * @author Iwan Novirion
  */
@@ -562,9 +581,19 @@ $messages['mk'] = array(
 	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Секоја врска помеѓу страниците на {{SITENAME}} се става рачно, а овие страници немаат доволно врски. Ставете им двојни квадратни загради на тематски битните зборови кога уредувате - со ова зборот ќе води до релевантната страница на {{SITENAME}} за тој поим.',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} е слободна енциклопедија што ја пишуваат луѓе како вас. [[Special:GettingStarted|Почнете]] со вашиот прв придонес!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Започнете со уредување на {{SITENAME}}',
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} е слободна енциклопедија што ја пишуваат луѓе како вас. Почнете со вашиот прв придонес!
+
+Список на лесни начини да ги подобрите страниците ќе најдете на $2.
+
+$3',
 	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Почнете да уредувате на {{SITENAME}}, посетувајќи ја страницата $2',
 	'notification-gettingstarted-continue-editing' => 'Одлично! Веќе ги направивте првите уредувања на {{SITENAME}}. Ако барате уште работа, еве некои совети [[Special:GettingStarted|како лесно да учествувате]].',
 	'notification-gettingstarted-continue-editing-email-subject' => 'Лесни начини да ја подобрите {{SITENAME}}',
+	'notification-gettingstarted-continue-editing-text-email-body' => 'Одлично! Веќе ги направивте привите уредувања на {{SITENAME}}.
+
+Ако сакате уште работа, еве список на лесни начини да помагате: $2
+
+$3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Сакате уште работа? Лесни начини да помогнете ќе најдете на $2.',
 );
 
