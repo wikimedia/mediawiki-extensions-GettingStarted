@@ -51,10 +51,7 @@ $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Looking for more to do? Visit $2 for a list of easy ways to help.',
 );
 
-/** Message documentation (This is the name of the message documentation language code (qqq). Follow the rules of your languages and use small first letter if it doesn't capitalize language names always.
-
-It might be easier to translate it as "translation guidelines" or "translation help".
-{{Identical|Message documentation}})
+/** Message documentation (Message documentation)
  * @author Shirayuki
  * @author spage
  */
@@ -791,6 +788,22 @@ $messages['vi'] = array(
 	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Người ta đã đánh dấu các trang này là khó hiểu, không rõ, hoặc mơ hồ. Có thể cần sửa cả trang hoặc chỉ cần sửa một câu. Bạn không cần phải là chuyên gia về các đề tài này, chỉ cần cố gắng giải thích rõ hơn.',
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Đặt liên kết giữa các trang',
 	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Mỗi liên kết được bổ sung thủ công, và chúng tôi cần bạn giúp bằng cách thêm liên kết. Vào lúc sửa đổi, chỉ việc đưa những cụm từ quan trọng vào trong hai dấu ngoặc vuông mỗi bên để đặt liên kết đến trang với tên đó.',
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} là bách khoa toàn thư mở do công sức của nhiều người như bạn. Hãy [[Special:GettingStarted|bắt đầu đóng góp]] với thay đổi đầu tiên của bạn!',
+	'notification-gettingstarted-start-editing-email-subject' => 'Bắt đầu sửa đổi {{SITENAME}}',
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} là bách khoa toàn thư mở do công sức của nhiều người như bạn. Hãy bắt đầu đóng góp với thay đổi đầu tiên của bạn!
+
+Ghé vào $2 để xem danh sách những cách cải thiện trang dễ dàng.
+
+$3',
+	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Hãy bắt đầu sửa đổi {{SITENAME}}: xem chi tiết tại $2',
+	'notification-gettingstarted-continue-editing' => 'Cám ơn bạn đã bắt đầu sửa đổi {{SITENAME}}. Gợi ý xem một vài [[Special:GettingStarted|cách dễ dàng để tiếp tục đóng góp]].',
+	'notification-gettingstarted-continue-editing-email-subject' => 'Những cách dễ dàng để cải thiện {{SITENAME}}',
+	'notification-gettingstarted-continue-editing-text-email-body' => 'Cám ơn bạn đã bắt đầu sửa đổi {{SITENAME}}.
+
+Gợi ý xem danh sách những cách dễ dàng để tiếp tục đóng góp tại $2
+
+$3',
+	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Muốn tiếp tục đóng góp? Gợi ý xem danh sách những cách dễ dàng để giúp đỡ tại $2 .',
 );
 
 /** Simplified Chinese (中文（简体）‎)
