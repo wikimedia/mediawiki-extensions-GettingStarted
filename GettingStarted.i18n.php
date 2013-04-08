@@ -639,7 +639,7 @@ $messages['nl'] = array(
 	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Grammatica en spelling corrigeren',
 	'guidedtour-tour-gettingstartedpage-copy-editing-description' => "Deze pagina's zijn in redelijke staat, maar er zijn gebruikers die denken dat ze beter gemaakt kunnen worden. Kijk of u de grammatica, spelling en stijl kunt verbeteren.",
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Duidelijkheid verbeteren',
-	'guidedtour-tour-gettingstartedpage-clarification-description' => "Andere gebruikers hebben aangegeven dat deze pagina's verwarrend, onduidelijk of vaag zijn. Het kan zijn dat de gehele pagina gerepareerd moet worden of slechts een zin. U hoeft geen expert in het gebied te zijn, maar probeer de dingen wat makkelijker te begrijpen te maken.",
+	'guidedtour-tour-gettingstartedpage-clarification-description' => "Andere gebruikers hebben opgegeven dat deze pagina's verwarrend, onduidelijk of vaag zijn. Het kan zijn dat de gehele pagina gerepareerd moet worden of slechts een zin. U hoeft geen expert in het gebied te zijn, maar probeer de dingen wat makkelijker te begrijpen te maken.",
 	'guidedtour-tour-gettingstartedpage-add-links-title' => "Pagina's aan elkaar koppelen",
 	'guidedtour-tour-gettingstartedpage-add-links-description' => "Elke koppeling tussen {{SITENAME}} pagina's is met de hand toegevoegd en deze pagina's hebben niet genoeg. Voeg simpelweg twee vierkante haken toe rond belangrijke onderwerpen wanneer u aan het bewerken bent en het zal de relevante {{SITENAME}} pagina koppelen.",
 );
@@ -726,13 +726,14 @@ $messages['si'] = array(
 $messages['sv'] = array(
 	'gettingstarted' => 'Komma igång',
 	'gettingstarted-desc' => 'Lägger till en [[Special:GettingStarted|välkomstsida]] för nya användare (visas efter kontot har skapats)',
-	'gettingstarted-msg' => 'En administratör på {{SITENAME}} borde anpassa detta meddelande genom att redigera [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Välkommen till $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Välkommen till $1!',
-	'gettingstarted-return' => 'Nej tack, ta mig tillbaka',
+	'gettingstarted-welcomesiteuseranon' => 'Komma igång',
+	'gettingstarted-return' => 'Nej tack, gå tillbaka där jag var',
 	'gettingstarted-project-link' => '{{ns:Project}}:Komigång',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tagg]]: ny bidragsgivare [[{{MediaWiki:gettingstarted-project-link}}|kom i gång]]',
 	'tag-gettingstarted_edit-description' => 'Redigering av en sida som användaren valde från listan i [[Special:GettingStarted|Kom i gång]]',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Länka ihop sidor',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Har du någonsin av misstag använt två timmar att klicka runt på {{SITENAME}}? Vi har gjort det. Välj en av dessa sidor och leta efter potentiella länkar till andra. Klicka på {{int:vector-view-edit}} fliken för att lägga till dem!', # Fuzzy
 );
 
 /** Tamil (தமிழ்)
