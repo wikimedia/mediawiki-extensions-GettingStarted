@@ -38,6 +38,11 @@ $specialPageAliases['ko'] = array(
 	'GettingStarted' => array( '시작하기' ),
 );
 
+/** Luxembourgish (Lëtzebuergesch) */
+$specialPageAliases['lb'] = array(
+	'GettingStarted' => array( 'Fir_unzefänken' ),
+);
+
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'GettingStarted' => array( 'КакоДаПочнете' ),
