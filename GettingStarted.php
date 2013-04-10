@@ -52,6 +52,13 @@ $wgGettingStartedTasks = array(
 	)
 );
 
+/**
+ * @var array: Array of category names. Articles that are members of
+ * these categories are disqualified from being served as tasks.
+ * @example array: array( 'Living_people' )
+ */
+$wgGettingStartedExcludedCategories = array();
+
 // If they signed up with this number of seconds, it's considered recent
 // Below default is 30 days.
 $wgGettingStartedRecentPeriodInSeconds = 2592000;

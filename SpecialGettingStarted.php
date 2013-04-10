@@ -32,6 +32,26 @@ class SpecialGettingStarted extends SpecialPage {
 		$output->addHTML( $this->getHtmlResult() );
 	}
 
+	public function inExcludedCategories( $title ) {
+		global $wgGettingStartedExcludedCategories;
+
+		$articleID = $title->getArticleID();
+
+		$dbr = wfGetDB( DB_SLAVE );
+		foreach( $wgGettingStartedExcludedCategories as $cat ) {
+			$res = $dbr->selectRow( 'categorylinks', '1', array(
+				'cl_from' => $articleID,
+				'cl_to' => $cat,
+			), __METHOD__ );
+
+			if ( $res !== false ) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
 	public function getHtmlResult() {
 		global $wgExtensionAssetsPath, $wgGettingStartedTasks;
 
@@ -67,7 +87,12 @@ EOF;
 			$taskArticles = array();
 			foreach( $roulette->getRandomArticles( self::ARTICLE_COUNT * 4 ) as $article ) {
 				$length = $article->getLength();
-				if ( $length > 0 && $length <= self::MAX_ARTICLE_LENGTH && $article->userCan( 'edit' ) ) {
+				if (
+					$length > 0
+					&& $length <= self::MAX_ARTICLE_LENGTH
+					&& $article->userCan( 'edit' )
+					&& !$this->inExcludedCategories( $title )
+				) {
 					$taskArticles[] = $article;
 				}
 				if ( count( $taskArticles ) === self::ARTICLE_COUNT ) {
