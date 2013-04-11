@@ -91,7 +91,7 @@ EOF;
 					$length > 0
 					&& $length <= self::MAX_ARTICLE_LENGTH
 					&& $article->userCan( 'edit' )
-					&& !$this->inExcludedCategories( $title )
+					&& !$this->inExcludedCategories( $article )
 				) {
 					$taskArticles[] = $article;
 				}
