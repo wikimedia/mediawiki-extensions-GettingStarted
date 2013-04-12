@@ -290,15 +290,16 @@ $messages['fa'] = array(
 );
 
 /** Finnish (suomi)
+ * @author Silvonen
  * @author VezonThunder
  */
 $messages['fi'] = array(
 	'gettingstarted' => 'Alkuaskeleet',
 	'gettingstarted-desc' => 'Lisää [[Special:GettingStarted|tervetulosivun]] uusille käyttäjille (näytetään tunnuksen luonnin jälkeen)',
-	'gettingstarted-msg' => 'Sivuston {{SITENAME}} ylläpitäjän tulisi mukauttaa tätä viestiä muokkaamalla sivua [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Tervetuloa sivustolle $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Tervetuloa sivustolle $1!',
-	'gettingstarted-return' => 'Ei kiitos, vie minut takaisin',
+	'gettingstarted-welcomesiteuseranon' => 'Tervetuloa sivustolle $1!', # Fuzzy
+	'gettingstarted-welcome-back-site-user' => 'Tervetuloa takaisin, $2',
+	'gettingstarted-return' => 'Ei kiitos, vie minut takaisin', # Fuzzy
 );
 
 /** French (français)
