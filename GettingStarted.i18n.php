@@ -177,7 +177,7 @@ $messages['de'] = array(
 	'tag-gettingstarted_edit' => '[[Special:Tags|Markierung]]: [[{{MediaWiki:gettingstarted-project-link}}|Erste Schritte]] eines neuen Autors',
 	'tag-gettingstarted_edit-description' => 'Bearbeitung einer Seite, die der Benutzer aus der Aufgabenliste der Spezialseite „[[Special:GettingStarted|Anfangen]]“ ausgewählt hat',
 	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Grammatik und Rechtschreibung korrigieren',
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Diese Seiten sind in annehmbarer Form, aber einige Leute denken, dass sie besser sein könnten. Schaue, ob du Grammatik, Rechtschreibung und Stil verbessern kannst.',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Diese Seiten sind in annehmbarer Form, aber einige Leute denken, dass sie besser sein könnten. Schaue, ob du die Grammatik, Rechtschreibung und Gestaltung verbessern kannst.',
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Klarheit verbessern',
 	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Andere Leute haben diese Seiten als verwirrend, unklar oder ungenau markiert. Es kann sein, dass du die ganze Seite oder nur einen Satz korrigieren musst. Du musst kein Experte in dem Thema sein. Versuche einfach, Sachen verständlicher zu machen.',
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Seiten miteinander verlinken',
@@ -659,7 +659,7 @@ $messages['nl'] = array(
 	'guidedtour-tour-gettingstartedpage-clarification-description' => "Andere gebruikers hebben opgegeven dat deze pagina's verwarrend, onduidelijk of vaag zijn. Het kan zijn dat de gehele pagina gerepareerd moet worden of slechts een zin. U hoeft geen expert in het gebied te zijn, maar probeer de dingen wat makkelijker te begrijpen te maken.",
 	'guidedtour-tour-gettingstartedpage-add-links-title' => "Pagina's aan elkaar koppelen",
 	'guidedtour-tour-gettingstartedpage-add-links-description' => "Elke koppeling tussen {{SITENAME}} pagina's is met de hand toegevoegd en deze pagina's hebben niet genoeg. Voeg simpelweg twee vierkante haken toe rond belangrijke onderwerpen wanneer u aan het bewerken bent en het zal de relevante {{SITENAME}} pagina koppelen.",
-	'notification-gettingstarted-start-editing' => '{{SITENAME}} is een vrije encyclopedie geschreven door mensen zoals u. [[Special: GettingStarted|Ga aan de slag]] door uw eerste bijdrage te leveren!', # Fuzzy
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} is een vrije encyclopedie geschreven door mensen zoals u. [[Special:GettingStarted|Ga aan de slag]] door uw eerste bijdrage te leveren!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Aan de slag met het bewerken van {{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-body' => "{{SITENAME}} is een vrije encyclopedie geschreven door mensen zoals u. Ga aan de slag door uw eerste bijdrage te leveren!
 
@@ -728,7 +728,9 @@ $messages['roa-tara'] = array(
 	'gettingstarted-return' => '← No grazie, tuèrne rrete addò stave',
 	'gettingstarted-project-link' => '{{ns:Project}}:Pe accumenzà',
 	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Corregge grammateche & pronunge',
+	'guidedtour-tour-gettingstartedpage-clarification-title' => "Migliore 'a chiarezze",
 	'guidedtour-tour-gettingstartedpage-add-links-title' => "Colleghe le pàggene 'nzieme",
+	'notification-gettingstarted-continue-editing-email-subject' => 'Mode facile pe migliorà {{SITENAME}}',
 );
 
 /** Russian (русский)
