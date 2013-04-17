@@ -17,22 +17,55 @@ $messages['en'] = array(
 	'gettingstarted-welcomesiteuser' => "Welcome to $1, $2!",
 	'gettingstarted-welcomesiteuseranon' => "Getting started",
 	'gettingstarted-welcome-back-site-user' => "Welcome back, $2",
-	'gettingstarted-task-header' => 'Looking for an easy way to get started? Just choose a page from one of the three lists below.',
-	'gettingstarted-return' => "← No thanks, go back to where I was",
+	'gettingstarted-task-header' => 'Thanks for joining {{SITENAME}}! Here are some ways you can get involved.
+
+Choose an option below, and you will see a random article that needs help.',
+	'gettingstarted-return' => "← No thanks, return to the page I was reading",
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	// Change tags
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: new editor [[{{MediaWiki:gettingstarted-project-link}}|getting started]]',
 	'tag-gettingstarted_edit-description' => 'Edit of a page that the user chose from the task list in [[Special:GettingStarted|Getting started]]',
 
-	// Tours
+	// Main text of the special page
+	'gettingstarted-task-copyedit-main-description' => 'Fix Spelling & Grammar',
+	'gettingstarted-task-copyedit-secondary-description' => 'The easiest way to get started!',
+	'gettingstarted-task-clarify-main-description' => 'Improve Clarity',
+	'gettingstarted-task-clarify-secondary-description' => 'Simplify or reword sentences.',
+	'gettingstarted-task-addlinks-main-description' => 'Add Links',
+	'gettingstarted-task-addlinks-secondary-description' => 'Connect {{SITENAME}} articles together.',
 
-	// gettingstartedpage
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Fix grammar & spelling',
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'These pages are in decent shape, but some people felt they could be better. See if you can improve the grammar, spelling, and style.',
-	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Improve clarity',
-	'guidedtour-tour-gettingstartedpage-clarification-description' => "Other people have tagged these pages as confusing, unclear, or vague. It might be the whole page that needs fixing, or just a sentence. You don't need to be an expert in the topic, just try to make things easier to understand.",
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Link pages together',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => "Every link between {{SITENAME}} pages is added by hand, and these pages don't have enough. Just add two square brackets around key topics when you're editing, and it will link to the relevant {{SITENAME}} page.",
+	// Toolbar above article, when they have chosen a task and been redirected
+
+	/// Shared among all tasks
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Back to list',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Return to the list of articles',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Show help',
+	'gettingstarted-task-toolbar-editing-help-title' => 'Show a guide on how to edit',
+	'gettingstarted-task-toolbar-try-another-text' => 'Try another article ►',
+	'gettingstarted-task-toolbar-close-title' => 'Close this toolbar',
+
+	/// Specific to each task
+	'gettingstarted-task-copyedit-toolbar-description' => 'This article has spelling and grammar errors you can fix.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Go to a random article you can improve by copyediting',
+
+	'gettingstarted-task-clarify-toolbar-description' => 'This article is confusing or vague. Look for ways you can make it clearer.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Go to a random article you can clarify',
+
+	'gettingstarted-task-addlinks-toolbar-description' => 'This article needs more links. Look for terms that have a {{SITENAME}} article.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Go to a random article you can add links to',
+
+	// Tours
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'How to get started',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Just start scanning through the article and looking for improvements. If you feel overwhelmed, don\'t worry. You don\'t have to be an expert on this topic! If you need help or want to try another article, use the links in the top bar.',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Ideas on what to do',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'These banners identify problems with this article. You don\'t need to address them all, just stick with what you\'re comfortable doing.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Click {{int:vector-view-edit}}',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'You can edit the entire article by clicking here.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Edit a section',
+	// TODO (mattflaschen, 2013-04-25): Use <nowiki>[edit]</nowiki> after bug 45173 is fixed.
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'If you want to edit a specific section, you can click on the blue \'{{int:editsection}}\' link at the top of each section.',
+
+	// Notifications
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} is a free encyclopedia written by people like you. [[Special:GettingStarted|Get started]] by making your first edit!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Get started with editing {{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} is a free encyclopedia written by people like you. Get started by making your first edit!
@@ -78,6 +111,25 @@ Only $2 is currently used in the default message, but the order is the same as {
 See also:
 * {{msg-mw|tag-gettingstarted_edit-description}}',
 	'tag-gettingstarted_edit-description' => 'Description of tag that appears e.g. in [[Special:Tags]]',
+
+	'gettingstarted-task-copyedit-main-description' => 'Main description for copy-editing task; shown on Special:GettingStarted',
+	'gettingstarted-task-copyedit-secondary-description' => 'Secondary description for copy-editing task; shown on Special:GettingStarted',
+	'gettingstarted-task-clarify-main-description' => 'Main description for clarification task; shown on Special:GettingStarted',
+	'gettingstarted-task-clarify-secondary-description' => 'Secondary description for clarification task; shown on Special:GettingStarted',
+	'gettingstarted-task-addlinks-main-description' => 'Main description for link-adding task; shown on Special:GettingStarted',
+	'gettingstarted-task-addlinks-secondary-description' => 'Secondary description for link-adding task; shown on Special:GettingStarted',
+	'gettingstarted-task-toolbar-return-to-list' => 'Link shown on task toolbar to return to Special:GettingStarted',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Title text of link to return to Special:GettingStarted',
+	'gettingstarted-task-toolbar-editing-help-title' => 'Title text of help button on toolbar',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Text of help button',
+	'gettingstarted-task-toolbar-try-another' => 'Link shown to try another article for the current task.',
+	'gettingstarted-task-toolbar-close-title' => 'Title text of toolbar close button',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Main text shown on toolbar, explaining the copy-editing task',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Title text of link to try another article for the copy-editing task',
+	'gettingstarted-task-clarify-toolbar-description' => 'Main text shown on toolbar, explaining the clarification task',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Title text of link to try another article for the clarification task',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Main text shown on toolbar, explaining the link-adding task',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Title text of link to try another article for link-adding task',
 	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Title of copy-editing tooltip on Special:GettingStarted',
 	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Description of copy-editing tooltip on Special:GettingStarted',
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Title of clarification tooltip on Special:GettingStarted',

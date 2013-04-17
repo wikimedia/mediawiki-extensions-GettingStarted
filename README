@@ -17,7 +17,6 @@ Dependencies
 * (optional) Read and write access to MediaWiki API must be enabled to avoid
 showing the GettingStarted tour repeatedly to logged in users if they
  regularly visit Special:GettingStarted.
-* https://www.mediawiki.org/wiki/Extension:PostEdit until core wgPostEdit is deployed
 * phpredis extension installed on the same machine, and Redis installed on some
 machine that can be accessed.
 

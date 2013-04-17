@@ -1,78 +1,79 @@
 /********************* Root Onboarding Container *********************/
-.onboarding-container {
+.mw-gettingstarted-container {
 	width: 60em;
 	margin: 1em 0;
 }
 
+/********************* Link back to page user was on previously *********************/
 #mw-returnto a {
-	margin-top: 3.5em;
+	display: block;
+	margin-top: 20px;
+	float: left;
 }
 
-/********************* Question Marks *********************/
-.client-nojs .onboarding-help {
-	display: none;
-}
-
-.onboarding-help {
-	display: inline-block;
-}
-
-.onboarding-help img {
-	opacity: 0.6;
-	height: 14px;
-	width: 14px;
-}
-
-.onboarding-help img:hover {
-	cursor: pointer;
-	opacity: 1;
-}
 
 /********************* Header Banner *********************/
-.onboarding-header {
+.mw-gettingstarted-header {
 	font-weight: normal;
+	font-size: 132%;
 }
 
-/********************* To-do matrix *********************/
-
-#onboarding-tasks {
+/********************* Task Choice *********************/
+.mw-gettingstarted-tasks {
 	margin: 0 auto;
 	margin-top: 30px;
 	width: 100%;
 }
 
-#onboarding-tasks li {
-	display: inline-block;
-	*display: inline; /* IE7 and below */
-	zoom: 1;          /* IE7 and below */
-	margin-right: 3em;
-	width: 16em;
-	text-align: center;
-	vertical-align: top;
-}
-
-.onboarding-article-list {
-	width: 100%;
-	margin-left: 0;
-	border-top: 1px solid #ddd;
-}
-
-#onboarding-tasks .onboarding-article-list li {
-	padding: 0;
-	text-align: left;
-}
-
-#onboarding-tasks .onboarding-article-list li:hover {
-	background-color: #efefef;
-}
-
-#onboarding-tasks .onboarding-article-list li a {
+.mw-gettingstarted-tasks a {
 	display: block;
-	margin: 0.5em 1em;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	text-decoration: none;
+	width: 25em;
+	min-height: 5em;
+	padding: 1em;
+	margin: 1.5em 0;
+	background-color: #eee;
+	background: #f4f4f4; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f4f4f4 0%, #eaeaea 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f4f4), color-stop(100%,#eaeaea)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f4f4f4 0%,#eaeaea 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f4f4f4 0%,#eaeaea 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f4f4f4 0%,#eaeaea 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f4f4f4 0%,#eaeaea 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
+
+	border-radius: 3px;
+	border: 1px solid #dedede;
+}
+
+.mw-gettingstarted-tasks a:hover {
+	background: #e5e5e5; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e5e5e5 0%, #d6d6d6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(100%,#d6d6d6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e5e5e5 0%,#d6d6d6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e5e5e5 0%,#d6d6d6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e5e5e5 0%,#d6d6d6 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e5e5e5 0%,#d6d6d6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#d6d6d6',GradientType=0 ); /* IE6-9 */
+}
+
+/* TODO (mattflaschen, 2013-04-16): Is there a less verbose way to do this? */
+.mw-gettingstarted-tasks a:link,
+.mw-gettingstarted-tasks a:visited,
+.mw-gettingstarted-tasks a:hover,
+.mw-gettingstarted-tasks a:active {
+	color: inherit;
+}
+
+.mw-gettingstarted-task-icon {
+	display: inline-block;
+	float: left;
+	width: 20%;
+}
+
+.mw-gettingstarted-task-text {
+	display: inline-block;
+	float: right;
+	width: 75%;
 }
 
 /********************* CentralAuth *********************/
@@ -102,7 +103,7 @@
    Core currently doesn't offer a stable selector.
    We add this class ourselves.
 */
-.onboarding-notice {
+.mw-gettingstarted-notice {
 	font-size: 0.8em;
 	color: gray;
 	float: left;
