@@ -399,12 +399,16 @@ $3',
 $messages['he'] = array(
 	'gettingstarted' => 'איך להתחיל',
 	'gettingstarted-desc' => 'הוספת [[Special:GettingStarted|דף "ברוך בואך"]] למשתמשים חדשים (מוצג אחרי יצירת החשבון)',
-	'gettingstarted-msg' => 'מפעיל באתר {{SITENAME}} אמור להתאים את ההודעה הזאת על ידי עריכת הדף [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'ברוך בואך אל $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'ברוך בואך אל $1!',
-	'gettingstarted-return' => 'לא תודה, קחו אותי חזרה',
+	'gettingstarted-welcomesiteuseranon' => 'איך לתהחיל',
+	'gettingstarted-welcome-back-site-user' => 'ברוך שובך, $2',
+	'gettingstarted-task-header' => 'תהית איך אפשר להתחיל בקלות? רק צריך לבחור דף מתוך אחד משלושת הרשימות להלן.',
+	'gettingstarted-return' => '→ לא תודה, קחו אותי חזרה',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: עורך חדש [[{{MediaWiki:gettingstarted-project-link}}|מתחיל לעבוד]]',
 	'tag-gettingstarted_edit-description' => 'עריכה של דף שהמשתמש בחר מתוך רשימת מטלות בדף [[Special:GettingStarted|איך להתחיל]]',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'תיקון דקדוק וכתיב',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'הדפים האלה במצב סביר, אבל יש אנשים שחושבים שאפשר היה לשפר אותם. ביכולתך לשפר בהם את הדקדוק, את האיות ואת הסגנון.',
+	'guidedtour-tour-gettingstartedpage-clarification-title' => 'שיפור הבהירות',
 );
 
 /** Upper Sorbian (hornjoserbsce)
