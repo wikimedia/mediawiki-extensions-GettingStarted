@@ -22,6 +22,10 @@ class RedisCategorySync {
 	/** @var array: arrays of [Category, WikiPage] removals to process. **/
 	public static $removals = array();
 
+	/** @var bool: whether or not an update callback has been registered. **/
+	public static $callbackSet = false;
+
+
 	/**
 	 * Acquire a Redis connection.
 	 * @return Redis|bool Redis client or false.
@@ -87,6 +91,7 @@ class RedisCategorySync {
 	public static function onCategoryAfterPageAdded( Category $category, WikiPage $page ) {
 		if ( self::isUpdateRelevant( $category, $page ) ) {
 			self::$additions[] = array( $category, $page );
+			self::setCallback();
 		}
 		return true;
 	}
@@ -98,39 +103,49 @@ class RedisCategorySync {
 	public static function onCategoryAfterPageRemoved( Category $category, WikiPage $page ) {
 		if ( self::isUpdateRelevant( $category, $page ) ) {
 			self::$removals[] = array( $category, $page );
+			self::setCallback();
 		}
 		return true;
 	}
 
 	/**
-	 * @param LinksUpdate &$linksUpdate
+	 * Register a callback function that will perform all redis updates once
+	 * the current transaction completes.
+	 * @return bool True if callback was set, false if it was set already.
 	 */
-	public static function onLinksUpdateComplete( $linksUpdate ) {
-		if ( !count( self::$additions ) && !count( self::$removals ) ) {
-			return true;
+	public static function setCallback() {
+		if ( self::$callbackSet ) {
+			return false;
 		}
+		self::$callbackSet = true;
 
-		$conn = self::getClient();
-		if ( !$conn ) {
-			wfDebugLog( 'GettingStarted', "Unable to acquire redis connection.\n" );
-			return true;
-		}
+		$dbw = wfGetDB( DB_MASTER );
+		$dbw->onTransactionIdle( function () {
+			// Any category updates that happen after this will require an
+			// additional run of the callback.
+			RedisCategorySync::$callbackSet = false;
 
-		try {
-			$redis = $conn->multi( Redis::PIPELINE );
-			foreach( self::$additions as $addition ) {
-				list( $category, $page ) = $addition;
-				$redis->sAdd( self::makeCategoryKey( $category ), $page->getId() );
+			$conn = RedisCategorySync::getClient();
+			if ( !$conn ) {
+				wfDebugLog( 'GettingStarted', "Unable to acquire redis connection.\n" );
+				return;
 			}
-			foreach( self::$removals as $removal ) {
-				list( $category, $page ) = $removal;
-				$redis->sRem( self::makeCategoryKey( $category ), $page->getId() );
-			}
-			$redis->exec();
-		} catch ( RedisException $e ) {
-			wfDebugLog( 'GettingStarted', 'Redis exception: ' . $e->getMessage() . "\n" );
-		}
 
+			try {
+				$redis = $conn->multi( Redis::PIPELINE );
+				while ( RedisCategorySync::$additions ) {
+					list( $category, $page ) = array_pop( RedisCategorySync::$additions );
+					$redis->sAdd( RedisCategorySync::makeCategoryKey( $category ), $page->getId() );
+				}
+				while ( RedisCategorySync::$removals ) {
+					list( $category, $page ) = array_pop( RedisCategorySync::$removals );
+					$redis->sRem( RedisCategorySync::makeCategoryKey( $category ), $page->getId() );
+				}
+				$redis->exec();
+			} catch ( RedisException $e ) {
+				wfDebugLog( 'GettingStarted', 'Redis exception: ' . $e->getMessage() . "\n" );
+			}
+		} );
 		return true;
 	}
 }
