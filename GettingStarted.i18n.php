@@ -622,12 +622,35 @@ $messages['ms'] = array(
 	'gettingstarted' => 'Permulaan',
 	'gettingstarted-desc' => 'Meletakkan [[Special:GettingStarted|halaman selamat datang]] untuk pengguna baru (dipaparkan selepas pembukaan akaun)',
 	'gettingstarted-welcomesiteuser' => 'Selamat datang ke $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Selamat datang ke $1!', # Fuzzy
+	'gettingstarted-welcomesiteuseranon' => 'Permulaan',
 	'gettingstarted-welcome-back-site-user' => 'Selamat kembali, $2',
+	'gettingstarted-task-header' => 'Ingin mencari jalan mudah untuk bermula? Pilih sahaja satu halaman dari mana-mana dalam tiga senarai yang berikut.',
 	'gettingstarted-return' => '← Tak apalah, bawa saya kembali ke tempat asal',
 	'gettingstarted-project-link' => '{{ns:Project}}:Permulaan',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Teg]]: penyunting baru [[{{MediaWiki:gettingstarted-project-link}}|hendak bermula]]',
 	'tag-gettingstarted_edit-description' => 'Suntingan halaman yang dipilih oleh pengguna dari senarai tugas dalam [[Special:GettingStarted|Permulaan]]',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Betulkan tatabahasa & ejaan',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Halaman-halaman ini sudah elok bentuknya, tetapi sesentengah pihak berpendapat bahawa peningkatan masih diperlukan. Sila cuba memperbaiki tatabahasa, ejaan dan gaya penulisannya.',
+	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Perbaiki kejelasan',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Halaman-halaman ini telah diadukan oleh pihak lain atas sebab mengelirukan, kurang jelas atau kabur. Mungkin seluruh isi halaman yang perlu diperbaiki, tidak pun hanya sebaris ayat. Anda tidak semestinya menjadi pakar dalam topik, sebaliknya hanya diharap untuk cuba mempermudah kefahaman pembaca.',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Pautkan halaman bersama-sama',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Setiap pautan antara halaman {{SITENAME}} ditambah secara insani, tetapi halaman-halaman ini pula kekurangan pautan. Hanya bubuh dua pasang tanda kurung siku untuk mengapit topik penting apabila menyunting supaya ia akan dipautkan dengan halaman yang berkenaan di {{SITENAME}}.',
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} merupakan sebuah ensiklopedia bebas yang dikarang oleh orang ramai seperti anda. [[Special:GettingStarted|Mulakan]] dengan membuat sumbangan pertama anda!',
+	'notification-gettingstarted-start-editing-email-subject' => 'Bermula dengan menyunting {{SITENAME}}',
+	'notification-gettingstarted-start-editing-text-email-body' => 'Setiap pautan antara halaman {{SITENAME}} ditambah secara insani, tetapi halaman-halaman ini pula kekurangan pautan. Hanya bubuh dua pasang tanda kurung siku untuk mengapit topik penting apabila menyunting supaya ia akan dipautkan dengan halaman yang berkenaan di {{SITENAME}}.
+
+Layari $2 untuk senarai cara-cara yang mudah untuk menambah baik halaman.
+
+$3',
+	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Belajar menyunting di {{SITENAME}} dengan melayari $2',
+	'notification-gettingstarted-continue-editing' => 'Cantik! Anda sudah pun membuat suntingan sulung anda di {{SITENAME}}. Jika anda ingin mencari kerja lain, yang berikut adalah beberapa [[Special:GettingStarted|cara yang mudah untuk menyumbang]].',
+	'notification-gettingstarted-continue-editing-email-subject' => 'Cara mudah untuk menambah baik {{SITENAME}}',
+	'notification-gettingstarted-continue-editing-text-email-body' => 'Cantik! Anda sudah pun membuat suntingan sulung anda di {{SITENAME}}.
+
+Jika anda ingin mencari kerja lain, terdapat pelbagai cara yang mudah untuk membantu di $2
+
+$3',
+	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Ingin mencari kerja lain? Layari $2 untuk pelbagai cara yang mudah untuk membantu.',
 );
 
 /** Maltese (Malti)
