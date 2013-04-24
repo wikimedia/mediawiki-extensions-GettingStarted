@@ -6,6 +6,9 @@
  *
  * It may result in a large amount of information in production.
  *
+ * Further, --all should not be used in production, since it does
+ * a linear scan of the keyspace.
+ *
  * @author Ori Livneh <ori@wikimedia.org>
  * @author Matthew Flaschen <mflaschen@wikimedia.org>
  */
@@ -20,7 +23,7 @@ require_once "$IP/maintenance/Maintenance.php";
 class DumpRedisCategorySync extends Maintenance {
 	public function __construct() {
 		parent::__construct();
-		$this->addOption( 'all', 'Dump all keys with the prefix; can show keys from old naming schemes and other wikis (e.g. a different language), but can perform poorly in large Redis databases.  Will not include category name', false, false );
+		$this->addOption( 'all', 'Dump all keys with the prefix; can show keys from old naming schemes and other wikis (e.g. a different language).  Will perform poorly in large Redis databases, so should not be used in production.  Will not include category name', false, false );
 		$this->mDescription = 'Dump Redis data used for RedisCategorySync';
 	}
 
