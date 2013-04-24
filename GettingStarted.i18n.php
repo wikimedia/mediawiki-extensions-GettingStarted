@@ -33,15 +33,15 @@ $messages['en'] = array(
 	'guidedtour-tour-gettingstartedpage-clarification-description' => "Other people have tagged these pages as confusing, unclear, or vague. It might be the whole page that needs fixing, or just a sentence. You don't need to be an expert in the topic, just try to make things easier to understand.",
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Link pages together',
 	'guidedtour-tour-gettingstartedpage-add-links-description' => "Every link between {{SITENAME}} pages is added by hand, and these pages don't have enough. Just add two square brackets around key topics when you're editing, and it will link to the relevant {{SITENAME}} page.",
-	'notification-gettingstarted-start-editing' => '{{SITENAME}} is a free encyclopedia written by people like you. [[Special:GettingStarted|Get started]] by making your first contribution!',
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} is a free encyclopedia written by people like you. [[Special:GettingStarted|Get started]] by making your first edit!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Get started with editing {{SITENAME}}',
-	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} is a free encyclopedia written by people like you. Get started by making your first contribution!
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} is a free encyclopedia written by people like you. Get started by making your first edit!
 
 Visit $2 for a list of easy ways to improve pages.
 
 $3',
 	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Get started with {{SITENAME}} editing by visiting $2',
-	'notification-gettingstarted-continue-editing' => 'Nice work! You\'ve already made your first edits to {{SITENAME}}. If you\'re looking for more to do, here are some [[Special:GettingStarted|easy ways to contribute]].',
+	'notification-gettingstarted-continue-editing' => 'Nice work! You\'ve already made your first edits to {{SITENAME}}. If you\'re looking for more to do, here are some [[Special:GettingStarted|easy ways to help]].',
 	'notification-gettingstarted-continue-editing-email-subject' => 'Easy ways to improve {{SITENAME}}',
 	'notification-gettingstarted-continue-editing-text-email-body' => 'Nice work! You\'ve already made your first edits to {{SITENAME}}.
 
