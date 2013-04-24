@@ -182,15 +182,15 @@ $messages['de'] = array(
 	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Andere Leute haben diese Seiten als verwirrend, unklar oder ungenau markiert. Es kann sein, dass du die ganze Seite oder nur einen Satz korrigieren musst. Du musst kein Experte in dem Thema sein. Versuche einfach, Sachen verständlicher zu machen.',
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Seiten miteinander verlinken',
 	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Jeder Link zwischen {{SITENAME}}-Seiten wird manuell hinzugefügt. Diese Seiten haben zu wenige davon. Füge einfach beim Bearbeiten zwei eckige Klammern um Schlüsselthemen hinzu und es wird auf die betreffende {{SITENAME}}-Seite verlinkt.',
-	'notification-gettingstarted-start-editing' => '{{SITENAME}} ist eine freie Enzyklopädie, verfasst von Leuten wie dir. [[Special:GettingStarted|Fang an]], indem du deinen ersten Beitrag machst!',
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} ist eine freie Enzyklopädie, verfasst von Leuten wie dir. [[Special:GettingStarted|Fang an]], indem du deine erste Bearbeitung machst!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Fang an, {{SITENAME}} zu bearbeiten',
-	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} ist eine freie Enzyklopädie, verfasst von Leuten wie dir. Fang an, indem du deinen ersten Beitrag machst!
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} ist eine freie Enzyklopädie, verfasst von Leuten wie dir. Fang an, indem du deine erste Bearbeitung machst!
 
 Besuche $2 für eine Liste mit einfachen Wegen, um Seiten zu verbessern.
 
 $3',
 	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Fang an, {{SITENAME}} zu bearbeiten, indem du $2 besuchst.',
-	'notification-gettingstarted-continue-editing' => 'Gute Arbeit! Du hast bereits deine ersten Bearbeitungen auf {{SITENAME}} gemacht. Falls du nach mehr suchst, hier sind einige [[Special:GettingStarted|einfache Wege, um beizutragen]].',
+	'notification-gettingstarted-continue-editing' => 'Gute Arbeit! Du hast bereits deine ersten Bearbeitungen auf {{SITENAME}} gemacht. Falls du nach mehr suchst, hier sind einige [[Special:GettingStarted|einfache Wege zum helfen]].',
 	'notification-gettingstarted-continue-editing-email-subject' => 'Einfache Wege, um {{SITENAME}} zu verbessern',
 	'notification-gettingstarted-continue-editing-text-email-body' => 'Gute Arbeit! Du hast bereits deine ersten Bearbeitungen auf {{SITENAME}} gemacht.
 
@@ -635,15 +635,15 @@ $messages['ms'] = array(
 	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Halaman-halaman ini telah diadukan oleh pihak lain atas sebab mengelirukan, kurang jelas atau kabur. Mungkin seluruh isi halaman yang perlu diperbaiki, tidak pun hanya sebaris ayat. Anda tidak semestinya menjadi pakar dalam topik, sebaliknya hanya diharap untuk cuba mempermudah kefahaman pembaca.',
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Pautkan halaman bersama-sama',
 	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Setiap pautan antara halaman {{SITENAME}} ditambah secara insani, tetapi halaman-halaman ini pula kekurangan pautan. Hanya bubuh dua pasang tanda kurung siku untuk mengapit topik penting apabila menyunting supaya ia akan dipautkan dengan halaman yang berkenaan di {{SITENAME}}.',
-	'notification-gettingstarted-start-editing' => '{{SITENAME}} merupakan sebuah ensiklopedia bebas yang dikarang oleh orang ramai seperti anda. [[Special:GettingStarted|Mulakan]] dengan membuat sumbangan pertama anda!',
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} merupakan sebuah ensiklopedia bebas yang dikarang oleh orang ramai seperti anda. [[Special:GettingStarted|Mulakan]] dengan membuat sumbangan pertama anda!', # Fuzzy
 	'notification-gettingstarted-start-editing-email-subject' => 'Bermula dengan menyunting {{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-body' => 'Setiap pautan antara halaman {{SITENAME}} ditambah secara insani, tetapi halaman-halaman ini pula kekurangan pautan. Hanya bubuh dua pasang tanda kurung siku untuk mengapit topik penting apabila menyunting supaya ia akan dipautkan dengan halaman yang berkenaan di {{SITENAME}}.
 
 Layari $2 untuk senarai cara-cara yang mudah untuk menambah baik halaman.
 
-$3',
+$3', # Fuzzy
 	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Belajar menyunting di {{SITENAME}} dengan melayari $2',
-	'notification-gettingstarted-continue-editing' => 'Cantik! Anda sudah pun membuat suntingan sulung anda di {{SITENAME}}. Jika anda ingin mencari kerja lain, yang berikut adalah beberapa [[Special:GettingStarted|cara yang mudah untuk menyumbang]].',
+	'notification-gettingstarted-continue-editing' => 'Cantik! Anda sudah pun membuat suntingan sulung anda di {{SITENAME}}. Jika anda ingin mencari kerja lain, yang berikut adalah beberapa [[Special:GettingStarted|cara yang mudah untuk menyumbang]].', # Fuzzy
 	'notification-gettingstarted-continue-editing-email-subject' => 'Cara mudah untuk menambah baik {{SITENAME}}',
 	'notification-gettingstarted-continue-editing-text-email-body' => 'Cantik! Anda sudah pun membuat suntingan sulung anda di {{SITENAME}}.
 
