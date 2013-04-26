@@ -327,15 +327,15 @@ $messages['fr'] = array(
 	'guidedtour-tour-gettingstartedpage-clarification-description' => 'D’autres personnes ont marqué ces pages comme confuses, non claires, ou vagues. Ce peut être l’ensemble de la page qui doit être corrigé, ou simplement une phrase. Vous n’avez pas besoin d’être un expert du domaine, mais juste essayer de rendre les choses plus faciles à comprendre.',
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Lier les pages ensemble',
 	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Chaque lien entre les pages de {{SITENAME}} est ajouté à la main, et ces pages n’en ont pas assez. Ajoutez simplement deux crochets autour des sujets clé lorsque vous écrivez, et cela créera un lien vers la page de {{SITENAME}} appropriée.',
-	'notification-gettingstarted-start-editing' => '{{SITENAME}} est une encyclopédie libre écrite par des gens comme vous. [[Special:GettingStarted|Débutez]] en effectuant votre première contribution !',
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} est une encyclopédie libre écrite par des gens comme vous. [[Special:GettingStarted|Débutez]] en effectuant votre première modification !',
 	'notification-gettingstarted-start-editing-email-subject' => "Débuter avec l'édition sur {{SITENAME}}",
-	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} est une encyclopédie libre écrite par des gens comme vous. Commencer par faire votre première contribution !
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} est une encyclopédie libre écrite par des gens comme vous. Commencer par faire votre première modification !
 
 Visitez $2 pour obtenir la liste des astuces pour améliorer les pages.
 
 $3',
 	'notification-gettingstarted-start-editing-text-email-batch-body' => "Débuter avec l'édition sur {{SITENAME}} en visitant $2",
-	'notification-gettingstarted-continue-editing' => 'Beau travail ! Vous avez fait votre première contribution sur {{SITENAME}}. Si vous cherchez à faire plus, voici quelques [[Special:GettingStarted|manières faciles de contribuer]].',
+	'notification-gettingstarted-continue-editing' => 'Beau travail ! Vous avez fait votre première contribution sur {{SITENAME}}. Si vous cherchez à faire plus, voici quelques [[Special:GettingStarted|manières faciles d’aider]].',
 	'notification-gettingstarted-continue-editing-email-subject' => "Manières simples d'améliorer {{SITENAME}}",
 	'notification-gettingstarted-continue-editing-text-email-body' => 'Très beau travail ! Vous avez déjà fait vos premières modifications à {{SITENAME}}.
 
@@ -375,15 +375,15 @@ $messages['gl'] = array(
 	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Outras persoas marcaron estas páxinas como confusas, pouco claras ou imprecisas. Poida que sexa a páxina ao completo a que necesite correccións ou que só sexa unha oración. Non ten que ser experto na materia, simplemente intente facer que as cousas sexan máis fáciles de entender.',
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Engadir ligazóns entre as páxinas',
 	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Todas as ligazóns entre as páxinas de {{SITENAME}} engádense á man, e estas páxinas non teñen as suficientes ligazóns. Basta con engadir dous corchetes ao redor dos temas clave durante a edición; así se creará unha ligazón cara á páxina de {{SITENAME}} relevante.',
-	'notification-gettingstarted-start-editing' => '{{SITENAME}} é unha enciclopedia libre escrita por xente coma vostede. [[Special:GettingStarted|Empece]] facendo a súa primeira contribución!',
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} é unha enciclopedia libre escrita por xente coma vostede. [[Special:GettingStarted|Empece]] facendo a súa primeira edición!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Empece a editar {{SITENAME}}',
-	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} é unha enciclopedia libre escrita por xente coma vostede. Empece facendo a súa primeira contribución!
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} é unha enciclopedia libre escrita por xente coma vostede. Empece facendo a súa primeira edición!
 
 Visite $2 para ver unha lista dos modos máis fáciles de mellorar as páxinas.
 
 $3',
 	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Dea os primeiros pasos coa edición en {{SITENAME}} visitando $2',
-	'notification-gettingstarted-continue-editing' => 'Bo traballo! Xa fixo as primeiras edicións en {{SITENAME}}. Se busca algo máis que facer, aquí hai outros [[Special:GettingStarted|modos fáciles de contribuír]].',
+	'notification-gettingstarted-continue-editing' => 'Bo traballo! Xa fixo as primeiras edicións en {{SITENAME}}. Se busca algo máis que facer, aquí hai outros [[Special:GettingStarted|modos fáciles de axudar]].',
 	'notification-gettingstarted-continue-editing-email-subject' => 'Modos fáciles de mellorar {{SITENAME}}',
 	'notification-gettingstarted-continue-editing-text-email-body' => 'Bo traballo! Xa fixo as primeiras edicións en {{SITENAME}}.
 
@@ -567,14 +567,19 @@ $messages['lv'] = array(
  * @author Iwan Novirion
  */
 $messages['min'] = array(
-	'gettingstarted' => 'Caro mamulai',
+	'gettingstarted' => "Ba'a ka mulai",
 	'gettingstarted-desc' => 'Manambahkan [[Special:GettingStarted|laman salamaik datang]] untuak pangguno baru (langsuang nampak salasai mambuek akun)',
 	'gettingstarted-welcomesiteuser' => 'Salamaik datang di $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Caro mamulai',
+	'gettingstarted-welcomesiteuseranon' => "Ba'a ka mulai",
+	'gettingstarted-welcome-back-site-user' => 'Apo kaba, $2?',
+	'gettingstarted-task-header' => "Mancari caro mudah ba'a ka mulai? Piliahlah sabuah laman dari daftar dibawah ko.",
 	'gettingstarted-return' => 'Mokasih sajolah, bawok Ambo baliak',
-	'gettingstarted-project-link' => '{{ns:Project}}:Caro mamulai',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: pangguno baru [[{{MediaWiki:gettingstarted-project-link}}|caro mamulai]]',
-	'tag-gettingstarted_edit-description' => 'Suntiangan laman nan pangguno piliah dari dafta tugas pado [[Special:GettingStarted|Caro mamulai]]',
+	'gettingstarted-project-link' => "{{ns:Project}}:Ba'a ka mulai",
+	'tag-gettingstarted_edit' => "[[Special:Tags|Tag]]: pangguno baru [[{{MediaWiki:gettingstarted-project-link}}|ba'a ka mulai]]",
+	'tag-gettingstarted_edit-description' => "Suntiangan laman nan pangguno piliah dari daftar tugas pado [[Special:GettingStarted|Ba'a ka mulai]]",
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Pelokan tata bahaso jo ejaan',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Laman ko lah dalam bantuak nan layak, tapi urang lain maraso alun layak lai. Pariso kok Sanak dapek maningkekan tata bahaso, ejaan, jo gayanyo.',
+	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Tingkekan kajalehan',
 );
 
 /** Macedonian (македонски)
@@ -597,15 +602,15 @@ $messages['mk'] = array(
 	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Корисниците ги означија странициве како збунителни, нејасни или неточни. Ова може да се однесува целата страница, или пак само една реченица. Не ви требаат стручни познавања од темата - само потрудете се страницата да биде поразбирлива.',
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Меѓусебно поврзување на страници',
 	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Секоја врска помеѓу страниците на {{SITENAME}} се става рачно, а овие страници немаат доволно врски. Ставете им двојни квадратни загради на тематски битните зборови кога уредувате - со ова зборот ќе води до релевантната страница на {{SITENAME}} за тој поим.',
-	'notification-gettingstarted-start-editing' => '{{SITENAME}} е слободна енциклопедија што ја пишуваат луѓе како вас. [[Special:GettingStarted|Почнете]] со вашиот прв придонес!',
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} е слободна енциклопедија што ја пишуваат луѓе како вас. [[Special:GettingStarted|Почнете]] со вашето прво уредување!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Започнете со уредување на {{SITENAME}}',
-	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} е слободна енциклопедија што ја пишуваат луѓе како вас. Почнете со вашиот прв придонес!
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} е слободна енциклопедија што ја пишуваат луѓе како вас. Почнете со вашето прво уредување!
 
 Список на лесни начини да ги подобрите страниците ќе најдете на $2.
 
 $3',
 	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Почнете да уредувате на {{SITENAME}}, посетувајќи ја страницата $2',
-	'notification-gettingstarted-continue-editing' => 'Одлично! Веќе ги направивте првите уредувања на {{SITENAME}}. Ако барате уште работа, еве некои совети [[Special:GettingStarted|како лесно да учествувате]].',
+	'notification-gettingstarted-continue-editing' => 'Одлично! Веќе ги направивте првите уредувања на {{SITENAME}}. Ако барате уште работа, еве некои [[Special:GettingStarted|лесни начини да помогнете]].',
 	'notification-gettingstarted-continue-editing-email-subject' => 'Лесни начини да ја подобрите {{SITENAME}}',
 	'notification-gettingstarted-continue-editing-text-email-body' => 'Одлично! Веќе ги направивте привите уредувања на {{SITENAME}}.
 
