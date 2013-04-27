@@ -836,6 +836,18 @@ $messages['uk'] = array(
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 );
 
+/** Urdu (اردو)
+ * @author Noor2020
+ */
+$messages['ur'] = array(
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} آپ جیسے لوگوں کی طرف سے لکھا گیا ایک آزاد دائرۃ المعارف ہے ۔[[Special:GettingStarted|Get started]] آپ کی طرف سے پہلی ترمیم کے نتیجے میں !',
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} آپ جیسے لوگوں کی طرف سے لکھا گیا ایک آزاد دائرۃ المعارف ہے ۔ آپ سب سے پہلے تدوین بنا کر شروع کریں !
+
+ملاحظہ کریں $2 کو تا کہ فہرست دیکھ سکیں آسان طریقۂ کار
+
+$3',
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
  */
