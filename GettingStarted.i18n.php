@@ -499,8 +499,8 @@ $messages['ja'] = array(
  */
 $messages['ka'] = array(
 	'gettingstarted-welcomesiteuser' => 'მოგესალმებით $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'მოგესალმებით, $1!',
-	'gettingstarted-return' => 'არა გმადლობთ, დამაბრუნეთ უკან',
+	'gettingstarted-welcomesiteuseranon' => 'მუშაობის დაწყება',
+	'gettingstarted-return' => '← არა გმადლობთ, დამაბრუნეთ უკან სადაც ვიყავი',
 );
 
 /** Korean (한국어)
