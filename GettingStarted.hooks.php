@@ -34,10 +34,6 @@ class GettingStartedHooks {
 	public static function onBeforePageDisplay( $out, $skin ) {
 		$out->addModules( 'ext.gettingstarted.openTask' );
 
-		if ( class_exists( 'EchoNotifier' ) ) {
-			$out->addModules( 'ext.gettingstarted.echo' );
-		}
-
 		return true;
 	}
 

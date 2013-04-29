@@ -109,7 +109,7 @@ $wgResourceModules['ext.guidedTour.tour.gettingstartedpage'] = array(
 	),
 ) + $gettingStartedModuleInfo;
 
-// ext.gettingstarted.openTask and ext.gettingstarted.echo (if Echo is enabled) are every page site-wide.
+// ext.gettingstarted.openTask is every page site-wide.
 $wgResourceModules[ 'ext.gettingstarted.openTask' ] = array(
 	'scripts' => 'ext.gettingstarted.openTask.js',
 	'dependencies' => array(
@@ -124,10 +124,6 @@ $wgResourceModules[ 'ext.gettingstarted.openTask' ] = array(
 	'messages' => array(
 		'red-link-title'
 	)
-) + $gettingStartedModuleInfo;
-
-$wgResourceModules[ 'ext.gettingstarted.echo' ] = array(
-	'styles' => 'ext.gettingstarted.echo.css'
 ) + $gettingStartedModuleInfo;
 
 // This loads on both account creation and the special page, even if JS is off
