@@ -110,9 +110,14 @@ class GettingStartedHooks {
 		return true;
 	}
 
-	public static function onBeforeCreateEchoEvent( &$notifications, &$categories ) {
+	public static function onBeforeCreateEchoEvent( &$notifications, &$categories, &$icons ) {
 		// Currently not used, but most notifications seem to include agent as a param.
 		// It will allow username to be included later with just a message change.
+
+		$icons['gettingstarted-contribute'] = array(
+			'path' => 'GettingStarted/resources/images/echo-gettingstarted-icon.png',
+		);
+
 		$defaults = array(
 			'category' => 'system',
 			'group' => 'positive',
@@ -120,7 +125,7 @@ class GettingStartedHooks {
 			'email-subject-params' => array( 'agent' ),
 			'email-body-params' => array( 'agent', 'titlelink', 'email-footer' ),
 			'email-body-batch-params' => array( 'agent', 'titlelink' ),
-			'icon' => 'gettingstarted',
+			'icon' => 'gettingstarted-contribute',
 		);
 
 		$notifications['gettingstarted-start-editing'] = array(

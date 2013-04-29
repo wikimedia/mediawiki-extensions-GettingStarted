@@ -1,7 +1,0 @@
-/* Loaded on every page so it is available for Echo */
-
-/* I had to add extra specificity to override the default 'none' background */
-.mw-echo-icon.mw-echo-icon-gettingstarted {
-	/* @embed */
-	background-image: url(images/echo-gettingstarted-icon.png);
-}
