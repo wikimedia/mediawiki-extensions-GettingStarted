@@ -476,8 +476,32 @@ $messages['it'] = array(
 	'gettingstarted-welcome-back-site-user' => 'Bentornato, $2',
 	'gettingstarted-task-header' => 'Stai cercando un modo semplice per iniziare? Basta scegliere una pagina da uno dei tre elenchi qui sotto.',
 	'gettingstarted-return' => '← No grazie, torna indietro a dove ero',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Collega pagine insieme',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Ogni collegamento tra le pagine di {{SITENAME}} è aggiunto a mano, e queste pagine non hanno abbastanza. Basta aggiungere due parentesi quadre alle parole sugli argomenti chiave quando si sta modificando, e collegherà alla pagina pertinente di {{SITENAME}}.',
+	'gettingstarted-project-link' => '{{ns:Project}}:Guida introduttiva',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: nuovo contributore dalla [[{{MediaWiki:gettingstarted-project-link}}|guida introduttiva]]',
+	'tag-gettingstarted_edit-description' => "Modifica di una pagina che l'utente ha scelto dall'elenco delle attività nella [[Special:GettingStarted|guida introduttiva]]",
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Correggi grammatica e ortografia',
+	'guidedtour-tour-gettingstartedpage-copy-editing-description' => "Queste pagine sono in una forma decente, ma alcune persone pensano che possono essere ancora meglio. Vedi se è possibile migliorare la grammatica, l'ortografia e lo stile.",
+	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Migliora la chiarezza',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => "Altre persone hanno ritenuto queste pagine confuse, poco chiare o vaghe. Potrebbe essere l'intera pagina che ha bisogno di un controllo, o solo una frase. Non è necessario essere un esperto nell'argomento, basta provare a rendere le cose più facili da capire.",
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Collega insieme le pagine',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Ogni collegamento tra le pagine di {{SITENAME}} è aggiunto a mano, e queste pagine non ne hanno abbastanza. Basta aggiungere due parentesi quadre alle parole sugli argomenti chiave quando si sta modificando, e questo basta per collegare alla pagina pertinente di {{SITENAME}}.',
+	'notification-gettingstarted-start-editing' => "{{SITENAME}} è un'enciclopedia libera, scritta da persone come te.
+[[Special:GettingStarted|Inizia]] facendo la tua prima modifica!",
+	'notification-gettingstarted-start-editing-email-subject' => 'Inizia a modificare {{SITENAME}}',
+	'notification-gettingstarted-start-editing-text-email-body' => "{{SITENAME}} è un'enciclopedia libera, scritta da persone come te. Inizia facendo la tua prima modifica!
+
+Visita $2 per avere un'elenco di semplici consigli per migliorare le pagine.
+
+$3",
+	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Inizia a modificare {{SITENAME}} visitando $2',
+	'notification-gettingstarted-continue-editing' => 'Bel lavoro! Hai già fatto le tue prime modifiche a {{SITENAME}}. Se stai cercando altro da fare, ecco alcuni [[Special:GettingStarted|semplici consigli per aiutare]].',
+	'notification-gettingstarted-continue-editing-email-subject' => 'Semplici consigli per migliorare {{SITENAME}}',
+	'notification-gettingstarted-continue-editing-text-email-body' => 'Bel lavoro! Hai già fatto le tue prime modifiche a {{SITENAME}}.
+
+Se stai cercando altro da fare, puoi trovare alcuni semplici consigli per aiutare su $2.
+
+$3',
+	'notification-gettingstarted-continue-editing-text-email-batch-body' => "Cerchi altro da fare? Visita $2 per un'elenco di alcuni semplici consigli per aiutare.",
 );
 
 /** Japanese (日本語)
@@ -691,15 +715,15 @@ $messages['nl'] = array(
 	'guidedtour-tour-gettingstartedpage-clarification-description' => "Andere gebruikers hebben opgegeven dat deze pagina's verwarrend, onduidelijk of vaag zijn. Het kan zijn dat de gehele pagina gerepareerd moet worden of slechts een zin. U hoeft geen expert in het gebied te zijn, maar probeer de dingen wat makkelijker te begrijpen te maken.",
 	'guidedtour-tour-gettingstartedpage-add-links-title' => "Pagina's aan elkaar koppelen",
 	'guidedtour-tour-gettingstartedpage-add-links-description' => "Elke koppeling tussen {{SITENAME}} pagina's is met de hand toegevoegd en deze pagina's hebben niet genoeg. Voeg simpelweg twee vierkante haken toe rond belangrijke onderwerpen wanneer u aan het bewerken bent en het zal de relevante {{SITENAME}} pagina koppelen.",
-	'notification-gettingstarted-start-editing' => '{{SITENAME}} is een vrije encyclopedie geschreven door mensen zoals u. [[Special:GettingStarted|Ga aan de slag]] door uw eerste bijdrage te leveren!',
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} is een vrije encyclopedie geschreven door mensen zoals u. [[Special:GettingStarted|Ga aan de slag]] door uw eerste bewerking te maken!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Aan de slag met het bewerken van {{SITENAME}}',
-	'notification-gettingstarted-start-editing-text-email-body' => "{{SITENAME}} is een vrije encyclopedie geschreven door mensen zoals u. Ga aan de slag door uw eerste bijdrage te leveren!
+	'notification-gettingstarted-start-editing-text-email-body' => "{{SITENAME}} is een vrije encyclopedie geschreven door mensen zoals u. Ga aan de slag door uw eerste bewerking te maken!
 
 Ga naar $2 voor een lijst van eenvoudige manieren om pagina's te verbeteren.
 
 $3",
 	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Ga naar de volgende pagina om aan de slag te gaan met het bewerken van {{SITENAME}}: $2',
-	'notification-gettingstarted-continue-editing' => 'Mooi werk! U hebt nu al uw eerste bijdragen gemaakt aan {{SITENAME}}. Als u meer zoekt om te doen, dan zijn er nog [[Special:GettingStarted|meer eenvoudige manieren om bij te dragen]].',
+	'notification-gettingstarted-continue-editing' => 'Mooi werk! U hebt nu al uw eerste bijdragen gemaakt aan {{SITENAME}}. Als u meer zoekt om te doen, dan zijn er nog [[Special:GettingStarted|meer eenvoudige manieren om te helpen]].',
 	'notification-gettingstarted-continue-editing-email-subject' => 'Eenvoudige manieren om {{SITENAME}} te verbeteren',
 	'notification-gettingstarted-continue-editing-text-email-body' => 'Mooi werk! U hebt nu al uw eerste bijdragen gemaakt aan {{SITENAME}}.
 
