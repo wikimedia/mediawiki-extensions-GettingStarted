@@ -116,7 +116,7 @@ class GettingStartedHooks {
 
 		$defaults = array(
 			'category' => 'system',
-			'group' => 'positive',
+			'group' => 'neutral',
 			'title-params' => array( 'agent' ),
 			'email-subject-params' => array( 'agent' ),
 			'email-body-params' => array( 'agent', 'titlelink', 'email-footer' ),
