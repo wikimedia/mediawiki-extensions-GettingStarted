@@ -41,7 +41,7 @@
 	// Set some fields common to both clicks and fixing articles.
 	function setCommonDefaults( schema ) {
 		var defaults = {
-			version: 3,
+			version: 4,
 			userId : cfg.wgUserId,
 			bucket: 'test'
 		};
