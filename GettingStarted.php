@@ -69,6 +69,11 @@ $wgGettingStartedRecentPeriodInSeconds = 2592000;
  */
 $wgGettingStartedRedis = false;
 
+/**
+ * @var array Options to pass to RedisConnectionPool::singleton()
+ */
+$wgGettingStartedRedisOptions = array();
+
 $wgAutoloadClasses += array(
 	'SpecialGettingStarted' => __DIR__ . '/SpecialGettingStarted.php',
 	'GettingStartedHooks'   => __DIR__ . '/GettingStarted.hooks.php',

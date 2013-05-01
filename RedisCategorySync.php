@@ -3,8 +3,6 @@
  * Maintains sets in redis representing page IDs of NS_MAIN pages in
  * configured categories.
  *
- * FIXME(ori-l, 2012-03-06): Use RedisConnectionPool
- *
  * See Redis requirements in README.
  *
  * Sample extension configuration:
@@ -31,19 +29,14 @@ class RedisCategorySync {
 	 * @return Redis|bool Redis client or false.
 	 */
 	public static function getClient() {
-		global $wgGettingStartedRedis;
+		global $wgGettingStartedRedis, $wgGettingStartedRedisOptions;
 
 		if ( !$wgGettingStartedRedis || !extension_loaded( 'redis' ) ) {
 			return false;
 		}
 
-		$redis = new Redis();
-		try {
-			$redis->connect( $wgGettingStartedRedis, 6379, 0.1 );
-		} catch ( RedisException $e ) {
-			return false;
-		}
-		return $redis;
+		$pool = RedisConnectionPool::singleton( $wgGettingStartedRedisOptions );
+		return $pool->getConnection( $wgGettingStartedRedis );
 	}
 
 	/**
