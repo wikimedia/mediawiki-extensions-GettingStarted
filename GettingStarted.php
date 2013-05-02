@@ -72,7 +72,9 @@ $wgGettingStartedRedis = false;
 /**
  * @var array Options to pass to RedisConnectionPool::singleton()
  */
-$wgGettingStartedRedisOptions = array();
+$wgGettingStartedRedisOptions = array(
+	'serializer' => 'none',
+);
 
 $wgAutoloadClasses += array(
 	'SpecialGettingStarted' => __DIR__ . '/SpecialGettingStarted.php',
