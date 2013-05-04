@@ -740,13 +740,12 @@ $3',
 $messages['pms'] = array(
 	'gettingstarted' => 'Për ancaminé',
 	'gettingstarted-desc' => "A gionta na [[Special:GettingStarted|pàgina ëd bin-ëvnù]] për j'utent neuv (smonùa apress la creassion dël cont)",
-	'gettingstarted-msg' => "N'aministrator dzor {{SITENAME}} a dovrìa përsonalisé ës mëssagi an modificand [[{{ns:MediaWiki}}:gettingstarted-msg]].",
 	'gettingstarted-welcomesiteuser' => 'Bin-ëvnù su $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Bin ëvnù a $1!',
+	'gettingstarted-welcomesiteuseranon' => 'Bin ëvnù a $1!', # Fuzzy
 	'gettingstarted-return' => 'Nò mersì, pòrtme andré', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Tichëtta]]: editor neuv [[{{MediaWiki:gettingstarted-project-link}}|ancaminé]]',
-	'tag-gettingstarted_edit-description' => "Modìfica ëd na pagina che l'utent a sern da la lista dij travaj an [[Special:GettingStarted]]", # Fuzzy
+	'tag-gettingstarted_edit' => "[[Special:Tags|Tichëtta]]: n'editor neuv [[{{MediaWiki:gettingstarted-project-link}}|a l'ha ancaminà]]",
+	'tag-gettingstarted_edit-description' => "Modìfica ëd na pàgina che l'utent a sern da la lista dij travaj an [[Special:GettingStarted|Për ancaminé]]",
 );
 
 /** Brazilian Portuguese (português do Brasil)
