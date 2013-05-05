@@ -253,13 +253,14 @@ $messages['es'] = array(
 	'gettingstarted-desc' => 'Agrega una [[Special:GettingStarted|página de bienvenida]] a los nuevos usuarios (se muestra después de la creación de la cuenta)',
 	'gettingstarted-welcomesiteuser' => 'Hola $2 ¡Bienvenido a $1!',
 	'gettingstarted-welcomesiteuseranon' => '¡Bienvenido a $1!', # Fuzzy
-	'gettingstarted-return' => 'No gracias, volver atrás', # Fuzzy
+	'gettingstarted-return' => '← No, gracias; volver a donde estaba',
 	'gettingstarted-project-link' => '{{ns:Project}}:PrimerosPasos',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Corregir ortografía y gramática',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} es una enciclopedia libre que está realizada por personas como tú. [[Especial:Cómo empezar|Empieza haciendo tu primera contribución]]', # Fuzzy
 	'notification-gettingstarted-start-editing-email-subject' => 'Empieza a editar {{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-body' => 'Visita $2 para obtener una lista de maneras fáciles de mejorar páginas.', # Fuzzy
 	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Visita $2 y empieza a editar {{SITENAME}}',
-	'notification-gettingstarted-continue-editing' => '¡Buen trabajo! Has realizado tu primeras ediciones a {{SITENAME}}. Si quieres hacer más, aquí hay algunas   [[Especial: Cómo empezar| maneras fáciles de contribuir]].', # Fuzzy
+	'notification-gettingstarted-continue-editing' => '¡Buen trabajo! Has realizado tu primeras ediciones en {{SITENAME}}. Si quieres hacer alguna otra tarea, aquí hay algunas [[Special:Primeros pasos|formas de colaboración fáciles]].', # Fuzzy
 	'notification-gettingstarted-continue-editing-email-subject' => 'Maneras fáciles de mejorar {{SITENAME}}',
 	'notification-gettingstarted-continue-editing-text-email-body' => '¡Buen trabajo! Has realizado tus primeras ediciones de  {{SITENAME}}.
 
@@ -916,22 +917,38 @@ $3',
  * @author 乌拉跨氪
  */
 $messages['zh-hans'] = array(
-	'gettingstarted' => '开始',
-	'gettingstarted-desc' => '添加一个为新用户的[[Special:GettingStarted|欢迎页面]]（在用户创建后显示）',
-	'gettingstarted-welcomesiteuser' => '欢迎光临$1，$2！',
-	'gettingstarted-welcomesiteuseranon' => '开始',
-	'gettingstarted-welcome-back-site-user' => '欢迎回来$2',
-	'gettingstarted-task-header' => '在寻找简单的方法开始吗？只要从下面三个列表之一选择择一个页面。',
-	'gettingstarted-return' => '← 不必了，回我原来所在的地方',
+	'gettingstarted' => '入门',
+	'gettingstarted-desc' => '为新用户添加一个[[Special:GettingStarted|欢迎页面]]（在帐户创建后显示）',
+	'gettingstarted-welcomesiteuser' => '欢迎来到$1，$2！',
+	'gettingstarted-welcomesiteuseranon' => '入门指南',
+	'gettingstarted-welcome-back-site-user' => '欢迎回来，$2',
+	'gettingstarted-task-header' => '在寻找简单的方法入门吗？只需从下面三项的列表中选择一个页面。',
+	'gettingstarted-return' => '← 不必了，回到我原来的地方',
 	'gettingstarted-project-link' => '{{ns:Project}}:入门指南',
 	'tag-gettingstarted_edit' => '[[Special:Tags|标签]]：新编者 [[{{MediaWiki:gettingstarted-project-link}}|入门]]',
-	'tag-gettingstarted_edit-description' => '用户在[[Special:GettingStarted|入门指南]]上选择的页面的一个编辑。',
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => '修正语法和拼写',
+	'tag-gettingstarted_edit-description' => '用户从[[Special:GettingStarted|入门指南]]任务列表上选择而作的编辑。',
+	'guidedtour-tour-gettingstartedpage-copy-editing-title' => '纠正文法和拼写',
 	'guidedtour-tour-gettingstartedpage-copy-editing-description' => '这些页面的状况很好，但有些人认为它们能变得更好。看看你能否帮忙改善语法、排版和样式。',
 	'guidedtour-tour-gettingstartedpage-clarification-title' => '提高清晰度',
-	'guidedtour-tour-gettingstartedpage-clarification-description' => '其他人已经标记这些页面令人困惑、 不清楚，或含糊不清。可能是整个页面需要修复，或者只是一句。你不需要是这主题的一位专家，只需尝试使事情更易于理解。',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => '将页面链接在一起',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => '{{SITENAME}} 页面之间的每一个链接都是手动添加的，且这些页面不够。当您编辑时，只需添加两个方括号在关键主题周围，它就将链接到相关的 {{SITENAME}} 页面。',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => '其他人标记了这些页面令人困惑或含糊不清。可能整个页面或者只是一句需要修正。你不需要是该主题的一位专家，只需尝试使事情变得更易于理解。',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => '将页面链在一起',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => '{{SITENAME}}页面之间的每一个链接都是手动添加的，且这些页面的链接不够充足。在您编辑时，只需在在关键词的周围各添加两个方括号，就可将其链接到相应的{{SITENAME}}页面。',
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} 是由像你一样的人们撰写的一部自由的百科全书。[[Special:GettingStarted|开始]]尝试做你的第一次编辑吧！',
+	'notification-gettingstarted-start-editing-email-subject' => '开始初次编辑{{SITENAME}}',
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} 是像你一样的人们撰写的一部自由的百科全书。尝试做你的第一次编辑吧！
+
+访问 $2 轻松获得待改善页面的名单。
+
+$3',
+	'notification-gettingstarted-start-editing-text-email-batch-body' => '开始编辑 {{SITENAME}}，通过访问 $2',
+	'notification-gettingstarted-continue-editing' => '干得好！你已经作出了你在{{SITENAME}}的第一次编辑。如果你还想寻找更多待完成的任务，前往[[Special:GettingStarted|这里]]获得帮助。',
+	'notification-gettingstarted-continue-editing-email-subject' => '方便地改善{{SITENAME}}',
+	'notification-gettingstarted-continue-editing-text-email-body' => '干得好！你已经作出了你在{{SITENAME}}的第一次编辑
+
+如果你还想寻找更多待完成的任务，前往 $2。
+
+$3',
+	'notification-gettingstarted-continue-editing-text-email-batch-body' => '想找更多事来做？访问 $2 获得需要帮助的名单。',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
