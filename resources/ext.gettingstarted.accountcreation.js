@@ -14,7 +14,7 @@
 
 		$returnTo.detach();
 		$returnToA.detach().text( mw.msg( 'gettingstarted-return' ) );
-		$returnToA.addClass( 'guider_button' ); // Avoid Agora dependence for now.
+		$returnToA.addClass( 'mw-ui-button mw-ui-primary' );
 		// Want to remove all siblings of the link, including text, which siblings does
 		// not return.
 		$returnTo.empty().append( $returnToA );

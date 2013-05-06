@@ -99,7 +99,10 @@ class GettingStartedHooks {
 		$injectHtml = $specialGS->getHtmlResult() . $injectHtml;
 
 		// Styles are added separately so they load without needing JS
-		$wgOut->addModuleStyles( 'ext.gettingstarted.styles' );
+		$wgOut->addModuleStyles( array(
+			'mediawiki.ui',
+			'ext.gettingstarted.styles',
+		) );
 
 		$wgOut->addModules( 'ext.gettingstarted.accountcreation' );
 
