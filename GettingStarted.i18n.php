@@ -396,6 +396,7 @@ $3',
 
 /** Hebrew (עברית)
  * @author Amire80
+ * @author אור שפירא
  */
 $messages['he'] = array(
 	'gettingstarted' => 'איך להתחיל',
@@ -405,11 +406,31 @@ $messages['he'] = array(
 	'gettingstarted-welcome-back-site-user' => 'ברוך שובך, $2',
 	'gettingstarted-task-header' => 'תהית איך אפשר להתחיל בקלות? רק צריך לבחור דף מתוך אחד משלושת הרשימות להלן.',
 	'gettingstarted-return' => '→ לא תודה, קחו אותי חזרה',
+	'gettingstarted-project-link' => '{{ns:Project}}:התחלה',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: עורך חדש [[{{MediaWiki:gettingstarted-project-link}}|מתחיל לעבוד]]',
 	'tag-gettingstarted_edit-description' => 'עריכה של דף שהמשתמש בחר מתוך רשימת מטלות בדף [[Special:GettingStarted|איך להתחיל]]',
 	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'תיקון דקדוק וכתיב',
 	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'הדפים האלה במצב סביר, אבל יש אנשים שחושבים שאפשר היה לשפר אותם. ביכולתך לשפר בהם את הדקדוק, את האיות ואת הסגנון.',
 	'guidedtour-tour-gettingstartedpage-clarification-title' => 'שיפור הבהירות',
+	'guidedtour-tour-gettingstartedpage-clarification-description' => 'אנשים אחרים תייגו את הדפים הללו כ:מבלבלים, לא ברורים או מעורפלים. יכול להיות שיש צורך לתקן את כל הדף או רק משפט בודד. אין צורך להיות מומחה בנושא, רק לנסות להפוך את הדברים לקלים להבנה.',
+	'guidedtour-tour-gettingstartedpage-add-links-title' => 'לקשר את הדפים יחד',
+	'guidedtour-tour-gettingstartedpage-add-links-description' => 'כל קישור בין דפי {{SITENAME}} מתווסף ידנית, לדפים אלו אין מספיק קישורים. כל מה שצריך זה רק להוסיף שני סוגריים מרובעים סביב נושאים מרכזיים בזמן העריכה, וכך ליצור קישור לדף רלוונטי ב{{SITENAME}}.',
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} היא אנציקלופדיה חופשית שנכתבה על ידי אנשים כמוך. [[מיוחד:GettingStarted|להתחיל]] בביצוע העריכה הראשונה שלך!', # Fuzzy
+	'notification-gettingstarted-start-editing-email-subject' => 'להתחיל עם עריכת {{SITENAME}}',
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} היא אנציקלופדיה חופשית שנכתבה על ידי אנשים כמוך.התחל את העריכה הראשונה שלך!
+
+בקר $2 לקבלת רשימה של דרכים קלות כדי לשפר דפים.
+
+$3',
+	'notification-gettingstarted-start-editing-text-email-batch-body' => 'להתחיל בעריכת {{SITENAME}} על-ידי ביקור ב$2',
+	'notification-gettingstarted-continue-editing' => 'עבודה טובה! ביצעת את העריכה הראשונה שלך ב{{SITENAME}}. אם אתה מחפש עוד דברים לעשות, הנה כמה [[מיוחדים: GettingStarted|easy דרכים לסייע]].', # Fuzzy
+	'notification-gettingstarted-continue-editing-email-subject' => 'דרכים קלות כדי לשפר את {{SITENAME}}',
+	'notification-gettingstarted-continue-editing-text-email-body' => 'עבודה טובה! ביצעת את העריכה הראשונה ב{{SITENAME}}.
+
+אם אתה מחפש עוד דברים לעשות, רשימה של דרכים קלות לסייע נמצאת ב$2 
+
+$3',
+	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'מחפש עוד לעשות? בקר ב$2 לקבלת רשימה של דרכים קלות לעזור.',
 );
 
 /** Upper Sorbian (hornjoserbsce)
