@@ -807,6 +807,7 @@ $messages['roa-tara'] = array(
 	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Corregge grammateche & pronunge',
 	'guidedtour-tour-gettingstartedpage-clarification-title' => "Migliore 'a chiarezze",
 	'guidedtour-tour-gettingstartedpage-add-links-title' => "Colleghe le pàggene 'nzieme",
+	'notification-gettingstarted-start-editing-email-subject' => 'Accuminze a cangià {{SITENAME}}',
 	'notification-gettingstarted-continue-editing-email-subject' => 'Mode facile pe migliorà {{SITENAME}}',
 );
 
