@@ -125,9 +125,8 @@
 		}
 
 		function showToolbar() {
-			if ( cfg.wgPostEdit && mw.loader.getState( 'ext.postEdit' ) !== null ) {
-				// TODO (mattflaschen, 2013-05-10): I have a patch to change this to use mw.hook when that's in the release branch.
-				window.setTimeout( showToolbarInternal, 4000 );
+			if ( cfg.wgPostEdit ) {
+				mw.hook( 'postEdit.afterRemoval' ).add( showToolbarInternal );
 			} else {
 				showToolbarInternal();
 			}
