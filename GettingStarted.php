@@ -14,39 +14,47 @@ $wgExtensionCredits[ 'specialpage' ][] = array(
 	'version' => '1',
 );
 
-// TODO (mattflaschen, 2013-03-13):
-// We're including gettingstartedpage.js in the extension with specific English Wikipedia
-// task types embedded in the tour.  Note the steps must be in the same order as the tour.
-// So we may as well set these in the extension as well for now.
-// This should change when we decide how to generalize the extension to other wikis.
-
+// TODO (mattflaschen, 2013-04-24):
+//
+// There are no longer any task types embedded in the tour, so we may be able to pull this
+// config out of the extension.
+//
 // The images are on-wiki (or Commons) which should make this generalization a
 // little easier.
 
 /**
- * @var array Array of arrays.  Each subarray has:
- *  'name' - internal non-displayed name, e.g. 'copyedit'
- *  'descriptionmsg' - message key for description
+ * @var array Associative array of arrays.  The key is an internal non-displayed name, such as 'copyedit'
+ *
+ *  Each value array has:
+ *  'mainDescription' - message key for main description on Special:GettingStarted
+ *  'secondaryDescription' - message key for secondary description on Special:GettingStarted
+ *  'toolbarDescription' - message key for primary description on toolbar
+ *  'toolbarTryAnotherTitle' - message key for title text of 'Try Another' link
  *  'category' Category articles are from, e.g. 'All_articles_needing_copy_edit'
  *  'image' (on-wiki or Commons filename without the File:)
  */
 $wgGettingStartedTasks = array(
-	array(
-		'taskName' => 'copyedit',
-		// Reusing the messages from the single-page tour for now
-		'descriptionMessage' => 'guidedtour-tour-gettingstartedpage-copy-editing-title',
+	'copyedit' => array(
+		'mainDescription' => 'gettingstarted-task-copyedit-main-description',
+		'secondaryDescription' => 'gettingstarted-task-copyedit-secondary-description',
+		'toolbarDescription' => 'gettingstarted-task-copyedit-toolbar-description',
+		'toolbarTryAnotherTitle' => 'gettingstarted-task-copyedit-toolbar-try-another-title',
 		'category' => 'All_articles_needing_copy_edit',
 		'image' => 'Icon-pencil.png'
 	),
-	array(
-		'taskName' => 'clarify',
-		'descriptionMessage' => 'guidedtour-tour-gettingstartedpage-clarification-title',
+	'clarify' => array(
+		'mainDescription' => 'gettingstarted-task-clarify-main-description',
+		'secondaryDescription' => 'gettingstarted-task-clarify-secondary-description',
+		'toolbarDescription' => 'gettingstarted-task-clarify-toolbar-description',
+		'toolbarTryAnotherTitle' => 'gettingstarted-task-clarify-toolbar-try-another-title',
 		'category' => 'All_Wikipedia_articles_needing_clarification',
 		'image' => 'Icon-wrench.png'
 	),
-	array(
-		'taskName' => 'addlinks',
-		'descriptionMessage' => 'guidedtour-tour-gettingstartedpage-add-links-title',
+	'addlinks' => array(
+		'mainDescription' => 'gettingstarted-task-addlinks-main-description',
+		'secondaryDescription' => 'gettingstarted-task-addlinks-secondary-description',
+		'toolbarDescription' => 'gettingstarted-task-addlinks-toolbar-description',
+		'toolbarTryAnotherTitle' => 'gettingstarted-task-addlinks-toolbar-try-another-title',
 		'category' => 'All_articles_with_too_few_wikilinks',
 		'image' => 'Icon-addlinks.png'
 	)
@@ -96,41 +104,68 @@ $gettingStartedModuleInfo = array(
 	'remoteExtPath' => 'GettingStarted/resources',
 );
 
-$wgResourceModules[ 'schema.GettingStartedNewLandingPage' ] = array(
+$gettingStartedSchemaModuleName = 'schema.' . GettingStartedHooks::SCHEMA_NAME;
+
+$wgResourceModules[ $gettingStartedSchemaModuleName ] = array(
 	'class'    => 'ResourceLoaderSchemaModule',
-	'schema'   => 'GettingStarted',
-	'revision' => 5320430,
+	'schema'   => GettingStartedHooks::SCHEMA_NAME,
+	'revision' => GettingStartedHooks::SCHEMA_REV_ID,
 );
 
-$wgResourceModules['ext.guidedTour.tour.gettingstartedpage'] = array(
-	'scripts' => 'tours/gettingstartedpage.js',
-	'dependencies' => 'ext.guidedTour.lib',
+$wgResourceModules['ext.guidedTour.tour.gettingstartedtasktoolbarintro'] = array(
+	'scripts' => 'tours/gettingstartedtasktoolbarintro.js',
+	'dependencies' => 'ext.guidedTour',
 	'messages' => array(
-		'vector-view-edit',
-		'guidedtour-tour-gettingstartedpage-copy-editing-title',
-		'guidedtour-tour-gettingstartedpage-copy-editing-description',
-		'guidedtour-tour-gettingstartedpage-clarification-title',
-		'guidedtour-tour-gettingstartedpage-clarification-description',
-		'guidedtour-tour-gettingstartedpage-add-links-title',
-		'guidedtour-tour-gettingstartedpage-add-links-description',
+		'guidedtour-tour-gettingstartedtasktoolbarintro-title',
+		'guidedtour-tour-gettingstartedtasktoolbarintro-description',
 	),
 ) + $gettingStartedModuleInfo;
 
-// ext.gettingstarted.openTask is every page site-wide.
-$wgResourceModules[ 'ext.gettingstarted.openTask' ] = array(
-	'scripts' => 'ext.gettingstarted.openTask.js',
+$wgResourceModules['ext.guidedTour.tour.gettingstartedtasktoolbar'] = array(
+	'scripts' => 'tours/gettingstartedtasktoolbar.js',
+	'dependencies' => array(
+		'ext.guidedTour',
+		'ext.gettingstarted.logging',
+	),
+	'messages' => array(
+		'editsection',
+		'savearticle',
+		'showpreview',
+		'vector-view-edit',
+		'guidedtour-tour-gettingstartedtasktoolbar-ambox-title',
+		'guidedtour-tour-gettingstartedtasktoolbar-ambox-description',
+		'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title',
+		'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description',
+		'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title',
+		'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description',
+		'guidedtour-tour-gettingstarted-click-preview-title',
+		'guidedtour-tour-gettingstarted-click-preview-description',
+		'guidedtour-tour-gettingstarted-click-save-title',
+		'guidedtour-tour-gettingstarted-click-save-description',
+		'guidedtour-tour-gettingstarted-end-title',
+		'guidedtour-tour-gettingstarted-end-description',
+	),
+) + $gettingStartedModuleInfo;
+
+// ext.gettingstarted.logging and ext.gettingstarted.openTask are on every page site-wide
+// regardless of bucket.
+$wgResourceModules[ 'ext.gettingstarted.logging' ] = array(
+	'scripts' => 'ext.gettingstarted.logging.js',
 	'dependencies' => array(
 		'jquery.cookie',
 		'jquery.json',
 		'mediawiki.Title',
-		'jquery.mwExtension', // $.escapeRE
 		'mediawiki.user',
-		'ext.postEdit',
-		'schema.GettingStartedNewLandingPage',
-	),
-	'messages' => array(
-		'red-link-title'
+		$gettingStartedSchemaModuleName,
 	)
+) + $gettingStartedModuleInfo;
+
+$wgResourceModules[ 'ext.gettingstarted.openTask' ] = array(
+	'scripts' => 'ext.gettingstarted.openTask.js',
+	'dependencies' => array(
+		'mediawiki.util',
+		'ext.gettingstarted.logging',
+	),
 ) + $gettingStartedModuleInfo;
 
 // This loads on both account creation and the special page, even if JS is off
@@ -138,29 +173,81 @@ $wgResourceModules[ 'ext.gettingstarted.styles' ] = array(
 	'styles' => 'ext.gettingstarted.css',
 ) + $gettingStartedModuleInfo;
 
+// Added if they are in the test group and this page is one of their GettingStarted tasks
+$wgResourceModules[ 'ext.gettingstarted.taskToolbar' ] = array(
+	'scripts' => 'ext.gettingstarted.taskToolbar.js',
+	'styles' => 'ext.gettingstarted.taskToolbar.css',
+	'dependencies' => array(
+		'mediawiki.jqueryMsg',
+		'mediawiki.Title',
+		'mediawiki.ui',
+		'mediawiki.Uri',
+		'mediawiki.util',
+		'mediawiki.libs.guiders',
+		'ext.guidedTour.lib',
+		'ext.guidedTour.tour.gettingstartedtasktoolbar',
+		'ext.gettingstarted.logging',
+	),
+	'messages' => array(
+		'gettingstarted-task-toolbar-return-to-list-text',
+		'gettingstarted-task-toolbar-return-to-list-title',
+		'gettingstarted-task-toolbar-editing-help-text',
+		'gettingstarted-task-toolbar-editing-help-title',
+		'gettingstarted-task-toolbar-try-another-text',
+		'gettingstarted-task-toolbar-close-title',
+		'gettingstarted-task-copyedit-toolbar-description',
+		'gettingstarted-task-copyedit-toolbar-try-another-title',
+		'gettingstarted-task-clarify-toolbar-description',
+		'gettingstarted-task-clarify-toolbar-try-another-title',
+		'gettingstarted-task-addlinks-toolbar-description',
+		'gettingstarted-task-addlinks-toolbar-try-another-title',
+	),
+) + $gettingStartedModuleInfo;
+
 // This runs on both account creation and the special page
 $wgResourceModules[ 'ext.gettingstarted' ] = array(
 	'scripts' => 'ext.gettingstarted.js',
 	'dependencies' => array(
-		'mediawiki.api',
-		'user.options',
-		'ext.guidedTour.tour.gettingstartedpage',
+		'ext.gettingstarted.logging',
 	),
 ) + $gettingStartedModuleInfo;
 
-// This is the version that runs on account creation.
-$wgResourceModules[ 'ext.gettingstarted.accountcreation' ] = array(
-	'scripts' => 'ext.gettingstarted.accountcreation.js',
+// This runs on account creation for both test and control
+$wgResourceModules[ 'ext.gettingstarted.common.accountCreation' ] = array(
+	'scripts' => 'ext.gettingstarted.common.accountCreation.js',
+	'dependencies' => 'ext.gettingstarted.logging',
+	'position' => 'top',
+) + $gettingStartedModuleInfo;
+
+// This runs on account creation for the test group
+$wgResourceModules[ 'ext.gettingstarted.test.accountCreation' ] = array(
+	'scripts' => 'ext.gettingstarted.test.accountCreation.js',
 	'messages' => array(
+		'red-link-title',
 		'gettingstarted-welcomesiteuser', // XXX (mattflaschen, 2012-12-12): This is a workaround until we move this into core, at which point it can be done server-side.
 		'gettingstarted-return',
 	),
 	'dependencies' => array(
-		'ext.gettingstarted',
+		'jquery.mwExtension', // $.escapeRE
+		'mediawiki.Title',
 		'mediawiki.util',
+		'ext.gettingstarted',
+		'ext.gettingstarted.common.accountCreation',
+		'ext.gettingstarted.logging',
 	),
 	'position' => 'top',
 ) + $gettingStartedModuleInfo;
+
+$wgResourceModules[ 'ext.gettingstarted.specialPage' ] = array(
+	'scripts' => 'ext.gettingstarted.specialPage.js',
+	'dependencies' => array(
+		'mediawiki.util',
+		'ext.gettingstarted.logging',
+		'ext.gettingstarted',
+	),
+) + $gettingStartedModuleInfo;
+
+$wgDefaultUserOptions[ GettingStartedHooks::INTRO_OPTION ] = true;
 
 $wgHooks[ 'BeforePageDisplay' ][] = 'GettingStartedHooks::onBeforePageDisplay';
 $wgHooks[ 'BeforeWelcomeCreation' ][] = 'GettingStartedHooks::onBeforeWelcomeCreation';
@@ -172,3 +259,5 @@ $wgHooks[ 'MakeGlobalVariablesScript' ][] = 'GettingStartedHooks::onMakeGlobalVa
 $wgHooks[ 'BeforeCreateEchoEvent' ][] = 'GettingStartedHooks::onBeforeCreateEchoEvent';
 $wgHooks[ 'EchoGetDefaultNotifiedUsers' ][] = 'GettingStartedHooks::onEchoGetDefaultNotifiedUsers';
 $wgHooks[ 'ConfirmEmailComplete' ][] = 'GettingStartedHooks::onConfirmEmailComplete';
+$wgHooks[ 'EditPage::attemptSave' ][] = 'GettingStartedHooks::onEditPageAttemptSave';
+$wgHooks[ 'GetPreferences' ][] = 'GettingStartedHooks::onGetPreferences';

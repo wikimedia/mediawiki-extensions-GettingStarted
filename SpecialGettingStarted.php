@@ -8,10 +8,57 @@ class SpecialGettingStarted extends SpecialPage {
 		parent::__construct( 'GettingStarted' );
 	}
 
-	public function execute( $par ) {
+	/**
+	 * Check if the task is valid.  If so, send them to a random article for the task.
+	 *
+	 * @param string $taskName task name
+	 * @param string $source source, or null
+	 * @return bool whether they were redirected
+	 */
+	public function sendToTask( $taskName ) {
+		global $wgGettingStartedTasks;
+
+		if ( isset( $wgGettingStartedTasks[$taskName] ) ) {
+			$task = $wgGettingStartedTasks[$taskName];
+			$roulette = new CategoryRoulette( Category::newFromName( $task['category']  ) );
+			$titles = $roulette->getRandomArticles( 1 );
+			if ( count( $titles ) === 1 ) {
+				$title = $titles[0];
+				$out = $this->getOutput();
+				$request = $out->getRequest();
+				$source = $request->getVal( 'source' );
+				$query = array();
+				if ( $source !== null ) {
+					$query['source'] = $source;
+				}
+				$url = $title->getLocalUrl( $query );
+
+				$fullTaskName = "gettingstarted-$taskName";
+				GettingStartedHooks::setPageTask( $request, $title, $fullTaskName );
+
+				$out->redirect( $url, '302' );
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	public function execute( $parameter ) {
 		global $wgSitename;
 
 		$this->setHeaders();
+
+		$parameterInfo = explode( '/', $parameter );
+
+		// If parameters match treat as task redirect.
+		// Otherwise, ignore parameters.
+		if ( count( $parameterInfo === 2 ) && $parameterInfo[0] === 'task' ) {
+			if ( self::sendToTask( $parameterInfo[1] ) ) {
+				return;
+			}
+		}
+
 		$output = $this->getOutput();
 
 		$user = $this->getUser();
@@ -25,8 +72,8 @@ class SpecialGettingStarted extends SpecialPage {
 		$output->addModuleStyles( 'ext.gettingstarted.styles' );
 
 		$output->addModules( array(
-				'ext.guidedTour.tour.gettingstartedpage',
-				'ext.gettingstarted'
+			'ext.gettingstarted',
+			'ext.gettingstarted.specialPage',
 		) );
 
 		$output->addHTML( $this->getHtmlResult() );
@@ -56,68 +103,52 @@ class SpecialGettingStarted extends SpecialPage {
 		global $wgExtensionAssetsPath, $wgGettingStartedTasks;
 
 		$result = '';
-		$headerText = $this->msg( 'gettingstarted-task-header' )->escaped();
+		$header = $this->msg( 'gettingstarted-task-header' )->parseAsBlock();
 
 		$result .= <<< EOF
-			<div class="onboarding-container clearfix">
-				<h3 class="onboarding-header">
-					$headerText
-				</h3>
-				<ul class="clearfix" id="onboarding-tasks">
+			<div class="mw-gettingstarted-container">
+				<div class="mw-gettingstarted-header">
+					$header
+				</div>
+				<div class="mw-gettingstarted-tasks">
 EOF;
-		$tasks = $wgGettingStartedTasks;
-		for ( $i = 0; $i < count( $tasks ); $i++ ) {
-			$stepId = $i + 1;
-			$tasks[$i]['guiderId'] = "gt-gettingstartedpage-$stepId";
+		$tasks = array();
+		foreach ( $wgGettingStartedTasks as $taskName => $task ) {
+			$task['taskName'] = $taskName;
+			$tasks[] = $task;
 		}
 		shuffle( $tasks );
-		$questionIcon = Html::element( 'img', array(
-				'src' => "$wgExtensionAssetsPath/GettingStarted/resources/images/question-icon-darker.png",
-				'alt' => $this->msg( 'help' )->text()
-			)
-		);
+
 		foreach ( $tasks as $task ) {
-			$roulette = new CategoryRoulette( Category::newFromName( $task['category']  ) );
-
-			// Get ARTICLE_COUNT * 2 articles and pick the first ARTICLE_COUNT
-			// articles that meet the requirements (not too big and is editable
-			// by the current user). If fewer than ARTICLE_COUNT articles in
-			// result set meet requirements, get as many as possible.
-			// FIXME(ori-l, 14-March-2013): should be a separate method.
-			$taskArticles = array();
-			foreach( $roulette->getRandomArticles( self::ARTICLE_COUNT * 4 ) as $article ) {
-				$length = $article->getLength();
-				if (
-					$length > 0
-					&& $length <= self::MAX_ARTICLE_LENGTH
-					&& $article->userCan( 'edit' )
-					&& !$this->inExcludedCategories( $article )
-				) {
-					$taskArticles[] = $article;
-				}
-				if ( count( $taskArticles ) === self::ARTICLE_COUNT ) {
-					break;
-				}
-			}
-
-			$imageSrc = wfFindFile( $task['image'] )->getURL();
-			$descriptionMessage = $this->msg( $task['descriptionMessage'] );
-			$taskContents = Html::element( 'img', array( 'src' => $imageSrc, 'alt' => $descriptionMessage->text() ) )
-				.  '<h4>'
-				. $descriptionMessage->escaped() . ' '
-				.  Html::rawElement( 'span', array( 'class' => 'onboarding-help ' . $task['taskName'] ),
-						$questionIcon
-				)
-				.  '</h4>'
-				.  '<ul class="onboarding-article-list">';
-			foreach ( $taskArticles as $article ) {
-				$taskContents .= '<li>' . Linker::link( $article ) . '</li>';
-			}
-			$taskContents .= '</ul>';
-			$result .= Html::rawElement( 'li', array( 'class' => 'onboarding-task', 'data-guider-id' => $task['guiderId'], 'data-task-name' => $task['taskName'] ), $taskContents );
+			$mainDescription = $this->msg( $task['mainDescription'] )->text();
+			$taskHtml = Html::rawElement( 'div', array(
+				'class' => 'mw-gettingstarted-task-icon',
+			),
+				Html::element( 'img', array(
+					'alt' => $mainDescription,
+					'src' => wfFindFile( $task['image'] )->getURL(),
+				) )
+			) .
+			Html::rawElement( 'div', array(
+				'class' => 'mw-gettingstarted-task-text',
+			),
+				Html::element( 'h4', array(), $mainDescription ) .
+				Html::element( 'p', array(), $this->msg( $task['secondaryDescription'] )->text() )
+			);
+			$result .= Linker::link( SpecialPage::getTitleFor( 'GettingStarted', 'task/' . $task['taskName'] ),
+					$taskHtml,
+					array(
+						'title' => $mainDescription,
+						'data-task-name' => $task['taskName']
+					),
+					array(
+						'source' => 'gettingstarted',
+					)
+			);
 		}
+
 		$result .= <<< 'EOF'
-				</ul>
+				</div>
 			</div>
 EOF;
 		return $result;
