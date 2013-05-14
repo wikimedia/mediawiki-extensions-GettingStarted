@@ -2,13 +2,7 @@
 class SpecialGettingStarted extends SpecialPage {
 
 	const MAX_ARTICLE_LENGTH = 10000;
-
-	// Arbitrary
-	const MAX_ATTEMPTS = 20;
-
-	const NO_ARTICLE_SCHEMA_NAME = 'GettingStartedNavbarNoArticle';
-	const NO_ARTICLE_SCHEMA_REV_ID = 5483117;
-	const NO_ARTICLE_VERSION = 1;
+	const MAX_ATTEMPTS = 20;  // Somewhat arbitrary for now.
 
 	public function __construct() {
 		parent::__construct( 'GettingStarted' );
@@ -34,46 +28,53 @@ class SpecialGettingStarted extends SpecialPage {
 	}
 
 	/**
-	 * Check if the task is valid.  If so, send them to a random article for the task.
+	 * Dispatch the user to a task.
+	 * Construct a task URL and issue an HTTP 302 redirect.
+	 * @param Title $title Title of task target page
+	 */
+	public function sendToTask( Title $title, $taskName ) {
+		$out = $this->getOutput();
+		$request = $out->getRequest();
+		$source = $request->getVal( 'source' );
+		$query = array();
+		if ( $source !== null ) {
+			$query['source'] = $source;
+		}
+		$url = $title->getLocalUrl( $query );
+		GettingStartedHooks::setPageTask( $request, $title, "gettingstarted-$taskName" );
+		$out->redirect( $url, '302' );
+		return true;
+	}
+
+	/**
+	 * Chooses a random article from the set of articles that are
+	 * task-appropriate and returns its Title object. Returns false if the task
+	 * name is invalid or if we failed to draw an article that meets the
+	 * constraints.
 	 *
 	 * @param string $taskName task name
 	 * @return bool whether they were redirected
 	 */
-	public function sendToTask( $taskName ) {
+	public function chooseTitleForTask( $taskName ) {
 		global $wgGettingStartedTasks;
 
-		$fullTaskName = "gettingstarted-$taskName";
+		if ( !isset( $wgGettingStartedTasks[$taskName] ) ) {
+			return false;
+		}
+		$task = $wgGettingStartedTasks[$taskName];
+		$taskCategory = Category::newFromName( $task['category'] );
+		$roulette = new CategoryRoulette( $taskCategory );
 		$user = $this->getUser();
 
 		$excludedPageName = $this->getRequest()->getVal( 'exclude' );
 
-		if ( isset( $wgGettingStartedTasks[$taskName] ) ) {
-			$task = $wgGettingStartedTasks[$taskName];
-			$roulette = new CategoryRoulette( Category::newFromName( $task['category']  ) );
-			$attempts = 0;
-			do {
-				$titles = $roulette->getRandomArticles( 1 );
-				$attempts++;
-				if ( count( $titles ) === 1 && $this->isAllowedArticle( $titles[0], $user, $excludedPageName ) ) {
-					$title = $titles[0];
-					$out = $this->getOutput();
-					$request = $out->getRequest();
-					$source = $request->getVal( 'source' );
-					$query = array();
-					if ( $source !== null ) {
-						$query['source'] = $source;
-					}
-					$url = $title->getLocalUrl( $query );
-					GettingStartedHooks::setPageTask( $request, $title, $fullTaskName );
-					$out->redirect( $url, '302' );
-					return true;
-				}
-			} while ( $attempts < self::MAX_ATTEMPTS );
-
-			efLogServerSideEvent( self::NO_ARTICLE_SCHEMA_NAME, self::NO_ARTICLE_SCHEMA_REV_ID, array(
-				'version' => self::NO_ARTICLE_VERSION,
-				'funnel' => $fullTaskName,
-			) );
+		for ( $i = 0; $i < self::MAX_ATTEMPTS; $i++ ) {
+			$titles = $roulette->getRandomArticles( 1 );
+			if ( count( $titles ) === 1
+				&& $this->isAllowedArticle( $titles[0], $user, $excludedPageName )
+			) {
+				return $titles[0];
+			}
 		}
 
 		return false;
@@ -89,8 +90,16 @@ class SpecialGettingStarted extends SpecialPage {
 		// If parameters match treat as task redirect.
 		// Otherwise, ignore parameters.
 		if ( count( $parameterInfo === 2 ) && $parameterInfo[0] === 'task' ) {
-			if ( self::sendToTask( $parameterInfo[1] ) ) {
-				return;
+			$task = $parameterInfo[1];
+			$title = self::chooseTitleForTask( $task );
+			if ( $title === false ) {
+				$fullTaskName = "gettingstarted-$task";
+				efLogServerSideEvent( 'GettingStartedNavbarNoArticle', 5483117, array(
+					'version' => 1,
+					'funnel' => $fullTaskName,
+				) );
+			} else {
+				return self::sendToTask( $title, $task );
 			}
 		}
 
