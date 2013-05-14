@@ -1,11 +1,31 @@
 <?php
 class SpecialGettingStarted extends SpecialPage {
 
-	const ARTICLE_COUNT = 3;
 	const MAX_ARTICLE_LENGTH = 10000;
+
+	// Completely arbitrary, based on * 4 in old version of code
+	const MAX_ATTEMPTS = 4;
+
+	const NO_ARTICLE_SCHEMA_NAME = 'GettingStartedNavbarNoArticle';
+	const NO_ARTICLE_SCHEMA_REV_ID = 5483117;
+	const NO_ARTICLE_VERSION = 1;
 
 	public function __construct() {
 		parent::__construct( 'GettingStarted' );
+	}
+
+	/**
+	 * Determines if title is an allowed task, based on user and configuration.
+	 *
+	 * @param Title $title title of article
+	 * @param User $user user to check
+	 */
+	protected function isAllowedArticle( Title $title, User $user ) {
+		$length = $title->getLength();
+		return $length > 0
+			&& $length <= self::MAX_ARTICLE_LENGTH
+			&& $title->userCan( 'edit', $user )
+			&& !$this->inExcludedCategories( $title );
 	}
 
 	/**
@@ -18,27 +38,36 @@ class SpecialGettingStarted extends SpecialPage {
 	public function sendToTask( $taskName ) {
 		global $wgGettingStartedTasks;
 
+		$fullTaskName = "gettingstarted-$taskName";
+		$user = $this->getUser();
+
 		if ( isset( $wgGettingStartedTasks[$taskName] ) ) {
 			$task = $wgGettingStartedTasks[$taskName];
 			$roulette = new CategoryRoulette( Category::newFromName( $task['category']  ) );
-			$titles = $roulette->getRandomArticles( 1 );
-			if ( count( $titles ) === 1 ) {
-				$title = $titles[0];
-				$out = $this->getOutput();
-				$request = $out->getRequest();
-				$source = $request->getVal( 'source' );
-				$query = array();
-				if ( $source !== null ) {
-					$query['source'] = $source;
+			$attempts = 0;
+			do {
+				$titles = $roulette->getRandomArticles( 1 );
+				$attempts++;
+				if ( count( $titles ) === 1 && $this->isAllowedArticle( $titles[0], $user ) ) {
+					$title = $titles[0];
+					$out = $this->getOutput();
+					$request = $out->getRequest();
+					$source = $request->getVal( 'source' );
+					$query = array();
+					if ( $source !== null ) {
+						$query['source'] = $source;
+					}
+					$url = $title->getLocalUrl( $query );
+					GettingStartedHooks::setPageTask( $request, $title, $fullTaskName );
+					$out->redirect( $url, '302' );
+					return true;
 				}
-				$url = $title->getLocalUrl( $query );
+			} while ( $attempts < self::MAX_ATTEMPTS );
 
-				$fullTaskName = "gettingstarted-$taskName";
-				GettingStartedHooks::setPageTask( $request, $title, $fullTaskName );
-
-				$out->redirect( $url, '302' );
-				return true;
-			}
+			efLogServerSideEvent( self::NO_ARTICLE_SCHEMA_NAME, self::NO_ARTICLE_SCHEMA_REV_ID, array(
+				'version' => self::NO_ARTICLE_VERSION,
+				'funnel' => $fullTaskName,
+			) );
 		}
 
 		return false;
@@ -79,7 +108,7 @@ class SpecialGettingStarted extends SpecialPage {
 		$output->addHTML( $this->getHtmlResult() );
 	}
 
-	public function inExcludedCategories( $title ) {
+	public function inExcludedCategories( Title $title ) {
 		global $wgGettingStartedExcludedCategories;
 
 		$articleID = $title->getArticleID();

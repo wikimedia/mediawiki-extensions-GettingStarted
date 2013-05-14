@@ -29,13 +29,15 @@ class GettingStartedHooks {
 	const SCHEMA_REV_ID = 5467309;
 
 	// Keep following two lines in sync with ext.gettingstarted.logging.js
+	// These are for the primary schema.  There is a secondary schema,
+	// GettingStartedNavbarNoArticle, for a particular error case.
 	const LOGGING_VERSION = 1;
 	const SCHEMA_NAME = 'GettingStartedNavbar';
 
 	const INTRO_OPTION = 'gettingstarted-task-toolbar-show-intro';
 
 	/**
-	 * Logs a server-side event, with default properties, if the user is logged in
+	 * Logs a server-side event for the main schema, with default properties, if the user is logged in
 	 */
 	protected static function logEvent( $event ) {
 		global $wgUser;
