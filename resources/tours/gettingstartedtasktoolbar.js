@@ -8,6 +8,10 @@
 		return;
 	}
 
+	// The code around here is a bit of a hack, but I want to see if this is common so
+	// I don't over-framework it.
+	var hasEditSection = $( '.mw-editsection' ).length > 0;
+
 	gt.defineTour( {
 		name: 'gettingstartedtasktoolbar',
 		shouldLog: true,
@@ -32,15 +36,16 @@
 			width: 300,
 			shouldSkip: gt.isEditing,
 			buttons: [ {
-				action: 'okay',
+				namemsg: hasEditSection ? 'guidedtour-next-button' : 'guidedtour-okay-button',
 				onclick: function () {
-					if ( $( '.mw-editsection' ).length > 0 ) {
+					if ( hasEditSection ) {
 						mw.libs.guiders.next();
 					} else {
 						mw.libs.guiders.hideAll();
 					}
 				}
-			} ]
+			} ],
+			allowAutomaticOkay: false
 		}, {
 			titlemsg: 'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title',
 			descriptionmsg: 'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description',
