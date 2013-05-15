@@ -57,7 +57,10 @@
 
 		tryAnotherUri = new mw.Uri(
 			mw.util.wikiGetlink( 'Special:GettingStarted/task/' + toolbarInfo.taskName )
-		).extend( {source: 'navbar-next'} );
+		).extend( {
+			exclude: cfg.wgPageName,
+			source: 'navbar-next'
+		} );
 
 		$tryAnother = $( '<a>' ).attr( {
 			href: tryAnotherUri.toString(),

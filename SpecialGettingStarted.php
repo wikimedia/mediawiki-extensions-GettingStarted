@@ -3,8 +3,8 @@ class SpecialGettingStarted extends SpecialPage {
 
 	const MAX_ARTICLE_LENGTH = 10000;
 
-	// Completely arbitrary, based on * 4 in old version of code
-	const MAX_ATTEMPTS = 4;
+	// Arbitrary
+	const MAX_ATTEMPTS = 20;
 
 	const NO_ARTICLE_SCHEMA_NAME = 'GettingStartedNavbarNoArticle';
 	const NO_ARTICLE_SCHEMA_REV_ID = 5483117;
@@ -19,11 +19,16 @@ class SpecialGettingStarted extends SpecialPage {
 	 *
 	 * @param Title $title title of article
 	 * @param User $user user to check
+	 * @param string|null $excludedPageName page name to be excluded, in in getPrefixedDBkey() format,
+	 *  or null for no exclusion
 	 */
-	protected function isAllowedArticle( Title $title, User $user ) {
+	protected function isAllowedArticle( Title $title, User $user, $excludedPageName ) {
 		$length = $title->getLength();
+		$passesExclude = $excludedPageName === null ||
+			$title->getPrefixedDBkey() !== $excludedPageName;
 		return $length > 0
 			&& $length <= self::MAX_ARTICLE_LENGTH
+			&& $passesExclude
 			&& $title->userCan( 'edit', $user )
 			&& !$this->inExcludedCategories( $title );
 	}
@@ -32,7 +37,6 @@ class SpecialGettingStarted extends SpecialPage {
 	 * Check if the task is valid.  If so, send them to a random article for the task.
 	 *
 	 * @param string $taskName task name
-	 * @param string $source source, or null
 	 * @return bool whether they were redirected
 	 */
 	public function sendToTask( $taskName ) {
@@ -41,6 +45,8 @@ class SpecialGettingStarted extends SpecialPage {
 		$fullTaskName = "gettingstarted-$taskName";
 		$user = $this->getUser();
 
+		$excludedPageName = $this->getRequest()->getVal( 'exclude' );
+
 		if ( isset( $wgGettingStartedTasks[$taskName] ) ) {
 			$task = $wgGettingStartedTasks[$taskName];
 			$roulette = new CategoryRoulette( Category::newFromName( $task['category']  ) );
@@ -48,7 +54,7 @@ class SpecialGettingStarted extends SpecialPage {
 			do {
 				$titles = $roulette->getRandomArticles( 1 );
 				$attempts++;
-				if ( count( $titles ) === 1 && $this->isAllowedArticle( $titles[0], $user ) ) {
+				if ( count( $titles ) === 1 && $this->isAllowedArticle( $titles[0], $user, $excludedPageName ) ) {
 					$title = $titles[0];
 					$out = $this->getOutput();
 					$request = $out->getRequest();
