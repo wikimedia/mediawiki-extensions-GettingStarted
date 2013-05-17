@@ -174,6 +174,14 @@ The label for the link is {{msg-mw|Gettingstarted-task-toolbar-try-another-text}
 * $2 - URL of Special:GettingStarted',
 );
 
+/** Aramaic (ܐܪܡܝܐ)
+ * @author Basharh
+ */
+$messages['arc'] = array(
+	'gettingstarted-task-addlinks-main-description' => 'ܐܘܣܦ ܐܣܘܪ̈ܐ',
+	'gettingstarted-task-toolbar-editing-help-text' => 'ܚܘܝ ܥܘܕܪܢܐ',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Wizardist
  */
@@ -1148,6 +1156,7 @@ $3',
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Hydra
+ * @author Li3939108
  * @author Yfdyh000
  * @author Zhuyifei1999
  * @author 乌拉跨氪
@@ -1165,6 +1174,8 @@ $messages['zh-hans'] = array(
 	'tag-gettingstarted_edit-description' => '用户从[[Special:GettingStarted|入门指南]]任务列表上选择而作的编辑。',
 	'gettingstarted-task-copyedit-main-description' => '纠正文法和拼写', # Fuzzy
 	'gettingstarted-task-clarify-main-description' => '提高清晰度', # Fuzzy
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => '如何开始',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => '您可以通过单击此处编辑整篇文章。',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} 是由像你一样的人们撰写的一部自由的百科全书。[[Special:GettingStarted|开始]]尝试做你的第一次编辑吧！',
 	'notification-gettingstarted-start-editing-email-subject' => '开始初次编辑{{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} 是像你一样的人们撰写的一部自由的百科全书。尝试做你的第一次编辑吧！
