@@ -26,7 +26,7 @@ class GettingStartedHooks {
 	// There is used unprefixed for legacy reasons.
 	const COOKIE_NAME = 'openTask';
 
-	const SCHEMA_REV_ID = 5467309;
+	const SCHEMA_REV_ID = 5496876;
 
 	// Keep following two lines in sync with ext.gettingstarted.logging.js
 	// These are for the primary schema.  There is a secondary schema,
@@ -420,7 +420,7 @@ class GettingStartedHooks {
 			self::logEvent( array(
 				'action' => 'page-save-attempt',
 				'funnel' => $fullTask,
-				'bucket' => 'test',
+				'bucket' => self::isInTestGroup( $wgUser ) ? 'test' : 'control',
 				'pageId' => $title->getArticleID(),
 				'revId' => $title->getLatestRevID(),
 				'isEditable' => $title->quickUserCan( 'edit', $wgUser ),

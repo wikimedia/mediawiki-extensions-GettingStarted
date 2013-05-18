@@ -214,6 +214,9 @@ $wgResourceModules[ 'ext.gettingstarted' ] = array(
 
 // This runs on account creation for both test and control
 $wgResourceModules[ 'ext.gettingstarted.common.accountCreation' ] = array(
+	'messages' => array(
+		'red-link-title',
+	),
 	'scripts' => 'ext.gettingstarted.common.accountCreation.js',
 	'dependencies' => 'ext.gettingstarted.logging',
 	'position' => 'top',
@@ -223,7 +226,6 @@ $wgResourceModules[ 'ext.gettingstarted.common.accountCreation' ] = array(
 $wgResourceModules[ 'ext.gettingstarted.test.accountCreation' ] = array(
 	'scripts' => 'ext.gettingstarted.test.accountCreation.js',
 	'messages' => array(
-		'red-link-title',
 		'gettingstarted-welcomesiteuser', // XXX (mattflaschen, 2012-12-12): This is a workaround until we move this into core, at which point it can be done server-side.
 		'gettingstarted-return',
 	),

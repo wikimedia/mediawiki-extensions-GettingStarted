@@ -2,7 +2,8 @@
 	$( document ).ready( function () {
 		var $toolbar, $left, $center, $right, $tryAnother, $close,
 		toolbarInfo, $relativeElements, $marginElements, logging,
-		cfg, $returnToList, returnToListUri, tryAnotherUri, $showGuide;
+		cfg, $returnToList, returnToListUri, tryAnotherUri, $showGuide,
+		fullTask;
 
 		logging = mw.gettingStarted.logging;
 
@@ -12,6 +13,7 @@
 		] );
 
 		toolbarInfo = cfg.wgGettingStartedToolbar;
+		fullTask = 'gettingstarted-' + toolbarInfo.taskName;
 
 		returnToListUri = new mw.Uri( mw.util.wikiGetlink( 'Special:GettingStarted' ) )
 			.extend( {source: 'navbar-return'} );
@@ -25,6 +27,7 @@
 
 				logging.logUnlessTimeout( {
 					action: 'navbar-return-click',
+					funnel: fullTask,
 					pageId: cfg.wgArticleId,
 					revId : cfg.wgCurRevisionId
 				}, 500 ).always( function () {
@@ -70,6 +73,7 @@
 				var $this = $( this );
 				logging.logUnlessTimeout( {
 					action: 'navbar-next-click',
+					funnel: fullTask,
 					pageId: cfg.wgArticleId,
 					revId : cfg.wgCurRevisionId
 				}, 500 ).always( function () {
