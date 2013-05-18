@@ -1,7 +1,8 @@
 // Tour started on article page, with task toolbar showing
 
 ( function ( window, document, $, mw, gt ) {
-	var task = mw.gettingStarted.logging.getTaskForCurrentPage() || '';
+	var task = mw.gettingStarted.logging.getTaskForCurrentPage() || '',
+		hasEditSection;
 
 	// https://bugzilla.wikimedia.org/show_bug.cgi?id=48198
 	if ( mw.config.get( 'wgCanonicalNamespace' ) !== '' || task.indexOf( 'gettingstarted-' ) !== 0 ) {
@@ -10,7 +11,7 @@
 
 	// The code around here is a bit of a hack, but I want to see if this is common so
 	// I don't over-framework it.
-	var hasEditSection = $( '.mw-editsection' ).length > 0;
+	hasEditSection = $( '.mw-editsection' ).length > 0;
 
 	gt.defineTour( {
 		name: 'gettingstartedtasktoolbar',
