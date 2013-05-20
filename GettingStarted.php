@@ -214,11 +214,12 @@ $wgResourceModules[ 'ext.gettingstarted' ] = array(
 
 // This runs on account creation for both test and control
 $wgResourceModules[ 'ext.gettingstarted.common.accountCreation' ] = array(
-	'messages' => array(
-		'red-link-title',
-	),
 	'scripts' => 'ext.gettingstarted.common.accountCreation.js',
-	'dependencies' => 'ext.gettingstarted.logging',
+	'dependencies' => array(
+		'mediawiki.Title',
+		'mediawiki.util',
+		'ext.gettingstarted.logging',
+	),
 	'position' => 'top',
 ) + $gettingStartedModuleInfo;
 
