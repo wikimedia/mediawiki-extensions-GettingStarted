@@ -28,27 +28,23 @@
 	}
 
 	/**
-	 * Gets a page name from the value of a title attribute
+	 * Gets a page name from a jQuery-wrapped link, in prefixed text format.
 	 *
-	 * @param {string} titleText title text
+	 * @param {jQuery} $link wrapped link
 	 *
 	 * @return {string} page name
 	 */
-	function getPageFromTitleAttribute( titleText ) {
-		// Access the map directly, since we're processing it unusually.
-		var redLinkFormat = mw.messages.get( 'red-link-title' ),
-		redLinkRegexText,
-		redLinkRegex,
-		redLinkMatch;
+	function getPageFromLink( $link ) {
+		var titleText, href, titleFromQuery, titleObj;
 
-		redLinkRegexText = $.escapeRE( redLinkFormat );
-		// Replace escaped $1 with capturing group for one or more characters
-		redLinkRegexText = redLinkRegexText.replace( '\\$1', '(.+)' );
-		redLinkRegex = new RegExp( '^' + redLinkRegexText + '$' );
+		titleText = $link.attr( 'title' );
+		href = $link.attr( 'href' );
 
-		redLinkMatch = titleText.match( redLinkRegex );
-		if ( redLinkMatch !== null ) {
-			return redLinkMatch[1];
+		titleFromQuery = mw.util.getParamValue( 'title', href );
+		// Red links will use first branch.
+		if ( titleFromQuery !== null ) {
+			titleObj = new mw.Title( titleFromQuery );
+			return titleObj.getPrefixedText();
 		} else {
 			return titleText;
 		}
@@ -69,7 +65,7 @@
 
 		// If the user clicks the returnTo link, log it and maybe start a funnel.
 		$returnToA.on( 'click', function ( e ) {
-			var article = getPageFromTitleAttribute( $returnToA.attr( 'title' ) ),
+			var article = getPageFromLink( $returnToA ),
 				task = 'returnto';
 
 			if ( isAppropriateTaskArticle( article ) ) {
