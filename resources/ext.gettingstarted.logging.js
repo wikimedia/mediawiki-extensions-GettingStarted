@@ -53,7 +53,7 @@
 		userId = mw.config.get( 'wgUserId' );
 		bucket = ( userId % 2 === 0 ) ? 'test' : 'control';
 		defaults = {
-			version: 1,
+			version: 2,
 			userId: userId,
 			bucket: bucket
 		};
