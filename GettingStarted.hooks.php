@@ -31,7 +31,9 @@ class GettingStartedHooks {
 	// Keep following two lines in sync with ext.gettingstarted.logging.js
 	// These are for the primary schema.  There is a secondary schema,
 	// GettingStartedNavbarNoArticle, for a particular error case.
-	const LOGGING_VERSION = 1;
+	//
+	// TODO (mattflaschen, 2013-05-20): Consider exporting this to JS so it's not redundant.
+	const LOGGING_VERSION = 2;
 	const SCHEMA_NAME = 'GettingStartedNavbar';
 
 	const INTRO_OPTION = 'gettingstarted-task-toolbar-show-intro';
