@@ -507,17 +507,26 @@ $messages['gl'] = array(
 	'gettingstarted-welcomesiteuser' => '{{GENDER:$2|Benvido|Benvida}} a $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Primeiros pasos',
 	'gettingstarted-welcome-back-site-user' => '{{GENDER:$2|Benvido|Benvida}} de volta, $2',
-	'gettingstarted-task-header' => 'Busca un modo sinxelo de comezar? Escolla unha páxina dalgunha das tres listas inferiores.',
-	'gettingstarted-return' => '← Non, grazas; volver a onde estaba',
+	'gettingstarted-task-header' => 'Busca un modo sinxelo de comezar? Escolla unha páxina dalgunha das tres listas inferiores.', # Fuzzy
+	'gettingstarted-return' => '← Non, grazas; volver á páxina que estaba lendo',
 	'gettingstarted-project-link' => '{{ns:Project}}:Primeiros pasos',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Etiqueta]]: Novo editor dando os [[{{MediaWiki:gettingstarted-project-link}}|primeiros pasos]]',
 	'tag-gettingstarted_edit-description' => 'Modificación dunha páxina que o usuario elixiu desde a lista de tarefas dos [[Special:GettingStarted|primeiros pasos]]',
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Corrixir a gramática e a ortografía',
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Estas páxinas teñen un formato decente, pero algunhas persoas cren que poden estar mellor. A ver se vostede pode mellorar a gramática, a ortografía e o estilo.',
-	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Mellorar a claridade',
-	'guidedtour-tour-gettingstartedpage-clarification-description' => 'Outras persoas marcaron estas páxinas como confusas, pouco claras ou imprecisas. Poida que sexa a páxina ao completo a que necesite correccións ou que só sexa unha oración. Non ten que ser experto na materia, simplemente intente facer que as cousas sexan máis fáciles de entender.',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Engadir ligazóns entre as páxinas',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Todas as ligazóns entre as páxinas de {{SITENAME}} engádense á man, e estas páxinas non teñen as suficientes ligazóns. Basta con engadir dous corchetes ao redor dos temas clave durante a edición; así se creará unha ligazón cara á páxina de {{SITENAME}} relevante.',
+	'gettingstarted-task-copyedit-main-description' => 'Corrixir a ortografía e a gramática',
+	'gettingstarted-task-copyedit-secondary-description' => 'O xeito máis fácil de comezar!',
+	'gettingstarted-task-clarify-main-description' => 'Mellorar a claridade',
+	'gettingstarted-task-clarify-secondary-description' => 'Simplificar ou reelaborar as oracións.',
+	'gettingstarted-task-addlinks-main-description' => 'Engadir ligazóns',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Volver á lista',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Volver á lista de artigos',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Mostrar a axuda',
+	'gettingstarted-task-toolbar-editing-help-title' => 'Ollar unha guía sobre como editar',
+	'gettingstarted-task-toolbar-try-another-text' => 'Probar outro artigo ►',
+	'gettingstarted-task-toolbar-close-title' => 'Pechar esta barra de ferramentas',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Como comezar',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Prema en "{{int:vector-view-edit}}"',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Pode editar todo o artigo premendo aquí.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Editar unha sección',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} é unha enciclopedia libre escrita por xente coma vostede. [[Special:GettingStarted|Empece]] facendo a súa primeira edición!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Empece a editar {{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} é unha enciclopedia libre escrita por xente coma vostede. Empece facendo a súa primeira edición!
@@ -546,13 +555,15 @@ $messages['he'] = array(
 	'gettingstarted-welcomesiteuser' => 'ברוך בואך אל $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'איך לתהחיל',
 	'gettingstarted-welcome-back-site-user' => 'ברוך שובך, $2',
-	'gettingstarted-task-header' => 'תהית איך אפשר להתחיל בקלות? רק צריך לבחור דף מתוך אחד משלושת הרשימות להלן.', # Fuzzy
-	'gettingstarted-return' => '→ לא תודה, קחו אותי חזרה', # Fuzzy
+	'gettingstarted-task-header' => 'תודה על הצטרפותך ל{{GRAMMAR:תחילית|$1}}! הנה כמה דרכים להיות מעורה בקהילה.
+
+לחיצה על אחת מהאפשרויות להלן תראה לך ערך שמתאים לבחירתך.', # Fuzzy
+	'gettingstarted-return' => '→ לא תודה, קחו אותי חזרה לדף שקראתי',
 	'gettingstarted-project-link' => '{{ns:Project}}:התחלה',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: עורך חדש [[{{MediaWiki:gettingstarted-project-link}}|מתחיל לעבוד]]',
 	'tag-gettingstarted_edit-description' => 'עריכה של דף שהמשתמש בחר מתוך רשימת מטלות בדף [[Special:GettingStarted|איך להתחיל]]',
-	'gettingstarted-task-copyedit-main-description' => 'תיקון דקדוק וכתיב', # Fuzzy
-	'gettingstarted-task-clarify-main-description' => 'שיפור הבהירות', # Fuzzy
+	'gettingstarted-task-copyedit-main-description' => 'תיקון כתיב ודקדוק',
+	'gettingstarted-task-clarify-main-description' => 'שיפור הבהירות',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} היא אנציקלופדיה חופשית שנכתבה על ידי אנשים כמוך. [[מיוחד:GettingStarted|להתחיל]] בביצוע העריכה הראשונה שלך!', # Fuzzy
 	'notification-gettingstarted-start-editing-email-subject' => 'להתחיל עם עריכת {{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} היא אנציקלופדיה חופשית שנכתבה על ידי אנשים כמוך.התחל את העריכה הראשונה שלך!
@@ -590,15 +601,15 @@ $messages['hsb'] = array(
 );
 
 /** Hungarian (magyar)
+ * @author Tacsipacsi
  * @author Tgr
  */
 $messages['hu'] = array(
 	'gettingstarted' => 'Első lépések',
 	'gettingstarted-desc' => 'Egy [[Special:GettingStarted|üdvözlőlapot]] mutat az új felhasználóknak a regisztráció után',
-	'gettingstarted-msg' => 'Ezt az oldalt a {{SITENAME}} adminisztrátorai tudják tartalommal megtölteni, a [[{{ns:MediaWiki}}:gettingstarted-msg]] lap átírásával.',
 	'gettingstarted-welcomesiteuser' => 'Üdvözlünk a $1 oldalain, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Üdvözlünk a $1 oldalain!',
-	'gettingstarted-return' => 'Nem érdekel, vissza az előző oldalra',
+	'gettingstarted-welcomesiteuseranon' => 'Üdvözlünk a $1 oldalain!', # Fuzzy
+	'gettingstarted-return' => '← Nem érdekel, vissza arra az oldalra, amit éppen olvastam',
 	'gettingstarted-project-link' => '{{ns:Project}}:Első lépések',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Címke]]: új szerkesztő [[{{MediaWiki:gettingstarted-project-link}}|első lépései]]',
 	'tag-gettingstarted_edit-description' => 'A [[Special:GettingStarted|Speciális:Első lépések]] listáról választott oldal szerkesztése', # Fuzzy
@@ -747,10 +758,39 @@ $messages['lb'] = array(
 	'gettingstarted' => 'Fir unzefänken',
 	'gettingstarted-desc' => 'Setzt eng [[Special:GettingStarted|Begréissungssäit]] fir nei Benotzer derbäi (gëtt nom Opmaache vum Benotzerkont gewisen)',
 	'gettingstarted-welcomesiteuser' => 'Wëllkomm op $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Wëllkomm op $1!',
-	'gettingstarted-return' => 'Nee Merci, bréngt mech zréck',
+	'gettingstarted-welcomesiteuseranon' => 'Fir unzefänken',
+	'gettingstarted-welcome-back-site-user' => 'Wëllkomm zréck, $2',
+	'gettingstarted-return' => 'Nee Merci, zréck op déi Säit déi ech am gaang war mat liesen',
 	'gettingstarted-project-link' => '{{ns:Project}}:Fir unzefänken',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: Nei Auteure [[{{MediaWiki:gettingstarted-project-link}}|wéi ufänken]]',
 	'tag-gettingstarted_edit-description' => 'Eng Säit änneren déi de Benotzer aus der Lëscht op [[Special:GettingStarted|Ufänken]] eraussicht',
+	'gettingstarted-task-copyedit-main-description' => 'Orthographie a Grammaire verbesseren',
+	'gettingstarted-task-copyedit-secondary-description' => 'Den einfachste Wee fir unzefänken!',
+	'gettingstarted-task-clarify-main-description' => 'Kloerheet verbesseren',
+	'gettingstarted-task-clarify-secondary-description' => 'Sätz vereinfachen oder ëmformuléieren.',
+	'gettingstarted-task-addlinks-main-description' => 'Linken derbäisetzen',
+	'gettingstarted-task-addlinks-secondary-description' => '{{SITENAME}}-Artikel matenee verbannen.',
+	'gettingstarted-task-toolbar-return-to-list-text' => "◄ Zréck op d'Lëscht",
+	'gettingstarted-task-toolbar-return-to-list-title' => "Zréck op d'Lëscht vun Artikelen",
+	'gettingstarted-task-toolbar-editing-help-text' => 'Hëllef weisen',
+	'gettingstarted-task-toolbar-editing-help-title' => 'E Guide weise wéi een ännere kann',
+	'gettingstarted-task-toolbar-try-another-text' => 'Probéiert een aneren Artikel ►',
+	'gettingstarted-task-toolbar-close-title' => 'Dës Toolbar zoumaachen',
+	'gettingstarted-task-copyedit-toolbar-description' => 'An dësem Artikel si Schreif- a grammatesch Feeler déi Dir verbessere kënnt.',
+	'gettingstarted-task-clarify-toolbar-description' => 'Dësen Artikel ass konfus oder vague. Kuckt no Weeër wéi Dir e méi kloer maache kënnt.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Gitt op een zoufällegen Artikel deen Dir präziséiere kënnt',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Dësen Artikel brauch méi Linken. Sicht no Begrëffer déi een {{SITENAME}}-Artikel hunn.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Gitt op een zoufällegen Artikel wou Dir Linken derbäisetze kënnt',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Wéi een ufänkt',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Iddie wat Dir maache kënnt',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Klickt op {{int:vector-view-edit}}',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Dir Kënnt de ganzen Artikel ännere wann Dir hei klickt.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'En Abschnitt änneren',
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} ass eng fräi Enzyklopedie geschriwwe vu Leit wéi Iech. [[Special:GettingStarted|Fänkt un]] andeems Dir Är éischt Ännerung maacht!',
+	'notification-gettingstarted-start-editing-email-subject' => 'Ufänke mat Änneren op {{SITENAME}}',
+	'notification-gettingstarted-start-editing-text-email-batch-body' => "Fänkt un op {{SITENAME}} z'änneren andeem Dir op $2 gitt",
+	'notification-gettingstarted-continue-editing-email-subject' => 'Einfach Manéiere fir {{SITENAME}} ze verbesseren',
+	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Wëllt Dir méi maachen? Besicht $2 fir eng Lëscht vun einfache Méiglechkeete wéi Dir eng Hand upake kënnt.',
 );
 
 /** Lithuanian (lietuvių)
