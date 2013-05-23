@@ -33,7 +33,7 @@ class GettingStartedHooks {
 	// GettingStartedNavbarNoArticle, for a particular error case.
 	//
 	// TODO (mattflaschen, 2013-05-20): Consider exporting this to JS so it's not redundant.
-	const LOGGING_VERSION = 2;
+	const LOGGING_VERSION = 3;
 	const SCHEMA_NAME = 'GettingStartedNavbar';
 
 	const INTRO_OPTION = 'gettingstarted-task-toolbar-show-intro';
@@ -58,8 +58,7 @@ class GettingStartedHooks {
 	}
 
 	protected static function isInTestGroup( User $user ) {
-		// Even, logged in users are in test group
-		return $user->isLoggedIn() && ( ( $user->getId() % 2 ) === 0 );
+		return true;
 	}
 
 	/**

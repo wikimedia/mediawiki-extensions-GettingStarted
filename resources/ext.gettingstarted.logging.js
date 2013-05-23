@@ -48,12 +48,11 @@
 
 	// Set some fields common to both clicks and fixing articles.
 	function setCommonDefaults() {
-		// Split test.  Even gets GettingStartedv2 treatment
 		var userId, bucket, defaults;
 		userId = mw.config.get( 'wgUserId' );
-		bucket = ( userId % 2 === 0 ) ? 'test' : 'control';
+		bucket = 'test';
 		defaults = {
-			version: 2,
+			version: 3,
 			userId: userId,
 			bucket: bucket
 		};
