@@ -507,7 +507,9 @@ $messages['gl'] = array(
 	'gettingstarted-welcomesiteuser' => '{{GENDER:$2|Benvido|Benvida}} a $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Primeiros pasos',
 	'gettingstarted-welcome-back-site-user' => '{{GENDER:$2|Benvido|Benvida}} de volta, $2',
-	'gettingstarted-task-header' => 'Busca un modo sinxelo de comezar? Escolla unha páxina dalgunha das tres listas inferiores.', # Fuzzy
+	'gettingstarted-task-header' => 'Grazas por unirse a {{SITENAME}}! Velaquí hai algúns modos de involucrarse no proxecto.
+
+Escolla unha das opcións inferiores para ir ata un artigo que necesite axuda.',
 	'gettingstarted-return' => '← Non, grazas; volver á páxina que estaba lendo',
 	'gettingstarted-project-link' => '{{ns:Project}}:Primeiros pasos',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Etiqueta]]: Novo editor dando os [[{{MediaWiki:gettingstarted-project-link}}|primeiros pasos]]',
@@ -517,13 +519,21 @@ $messages['gl'] = array(
 	'gettingstarted-task-clarify-main-description' => 'Mellorar a claridade',
 	'gettingstarted-task-clarify-secondary-description' => 'Simplificar ou reelaborar as oracións.',
 	'gettingstarted-task-addlinks-main-description' => 'Engadir ligazóns',
+	'gettingstarted-task-addlinks-secondary-description' => 'Conectar artigos de {{SITENAME}}.',
 	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Volver á lista',
 	'gettingstarted-task-toolbar-return-to-list-title' => 'Volver á lista de artigos',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Mostrar a axuda',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Ollar unha guía sobre como editar',
 	'gettingstarted-task-toolbar-try-another-text' => 'Probar outro artigo ►',
 	'gettingstarted-task-toolbar-close-title' => 'Pechar esta barra de ferramentas',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Este artigo ten erros ortográficos e gramáticos que vostede pode corrixir.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Ir a un artigo ao chou para mellorar a súa redacción',
+	'gettingstarted-task-clarify-toolbar-description' => 'Este artigo é confuso ou impreciso. Busque formas de facelo máis claro.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Ir a un artigo ao chou para clarificalo',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Este artigo necesita máis ligazóns. Busque termos que teñan artigo en {{SITENAME}}.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Ir a un artigo ao chou para engadirlle ligazóns',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Como comezar',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Ideas sobre o que facer',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Prema en "{{int:vector-view-edit}}"',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Pode editar todo o artigo premendo aquí.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Editar unha sección',
@@ -547,6 +557,7 @@ $3',
 
 /** Hebrew (עברית)
  * @author Amire80
+ * @author ExampleTomer
  * @author אור שפירא
  */
 $messages['he'] = array(
@@ -564,6 +575,12 @@ $messages['he'] = array(
 	'tag-gettingstarted_edit-description' => 'עריכה של דף שהמשתמש בחר מתוך רשימת מטלות בדף [[Special:GettingStarted|איך להתחיל]]',
 	'gettingstarted-task-copyedit-main-description' => 'תיקון כתיב ודקדוק',
 	'gettingstarted-task-clarify-main-description' => 'שיפור הבהירות',
+	'gettingstarted-task-clarify-secondary-description' => 'לפשט או לנסח משפטים מחדש.',
+	'gettingstarted-task-addlinks-main-description' => 'הוספת קישורים',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'חזרה לרשימת המאמרים',
+	'gettingstarted-task-toolbar-editing-help-text' => 'הצג עזרה',
+	'gettingstarted-task-toolbar-close-title' => 'סגור סרגל כלים זה',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'באפשרותך לערוך את המאמר כולו על-ידי לחיצה כאן.',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} היא אנציקלופדיה חופשית שנכתבה על ידי אנשים כמוך. [[מיוחד:GettingStarted|להתחיל]] בביצוע העריכה הראשונה שלך!', # Fuzzy
 	'notification-gettingstarted-start-editing-email-subject' => 'להתחיל עם עריכת {{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} היא אנציקלופדיה חופשית שנכתבה על ידי אנשים כמוך.התחל את העריכה הראשונה שלך!
