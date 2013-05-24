@@ -991,7 +991,9 @@ Kies een van de onderstaande mogelijkheden voor een willekeurige pagina die uw h
 	'gettingstarted-task-addlinks-toolbar-description' => 'Op deze pagina zijn meer koppelingen nodig. Zoek naar termen die een pagina hebben op {{SITENAME}}.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Ga naar een willekeurig pagina waar u koppelingen aan kunt toevoegen',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Hoe u aan de slag kunt gaan',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Controleer de pagina en ga op zoek naar mogelijkheden om deze te verbeteren. Maak u geen zorgen als u zich overweldigd voelt. U hoeft geen expert te worden over dit onderwerp! Als u hulp nodig hebt of liever aan een andere pagina werkt, gebruik dan de koppelingen in de werkbalk bovenaan.',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Wat u kunt doen',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Deze banners geven aan dat er problemen zijn met deze pagina. U hoeft niet alle problemen aan te pakken; doe waar u zich prettig bij voelt.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Klik op {{int:vector-view-edit}}',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'U kunt de hele pagina bewerken door hier te klikken.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Een paragraaf bewerken',
@@ -1089,6 +1091,14 @@ $messages['si'] = array(
 	'gettingstarted' => 'දැන් අරඹමු',
 	'gettingstarted-welcomesiteuser' => '$1 වෙත පිළිගනිමු, $2!',
 	'gettingstarted-welcomesiteuseranon' => '$1 වෙත පිළිගනිමු!',
+);
+
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
+ * @author Milicevic01
+ */
+$messages['sr-ec'] = array(
+	'gettingstarted-task-addlinks-main-description' => 'Додај везе',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Прикажи помоћ',
 );
 
 /** Swedish (svenska)
