@@ -185,6 +185,7 @@ $wgResourceModules[ 'ext.gettingstarted.taskToolbar' ] = array(
 		'mediawiki.util',
 		'mediawiki.libs.guiders',
 		'ext.guidedTour.lib',
+		'ext.guidedTour.tour.gettingstartedtasktoolbarintro',
 		'ext.guidedTour.tour.gettingstartedtasktoolbar',
 		'ext.gettingstarted.logging',
 	),
