@@ -245,6 +245,12 @@ class GettingStartedHooks {
 			return true;
 		}
 
+		$performer = $recentChange->getPerformer();
+
+		if ( $performer->isAllowed( 'autoconfirmed' ) ) {
+			return true;
+		}
+
 		$titleObj = $recentChange->getTitle();
 		$task = self::getPageTask( $wgRequest, $titleObj );
 
