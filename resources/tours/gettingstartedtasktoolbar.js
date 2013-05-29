@@ -21,6 +21,7 @@
 			descriptionmsg: 'guidedtour-tour-gettingstartedtasktoolbar-ambox-description',
 			attachTo: '.ambox',
 			position: 'bottomLeft',
+			autoFocus: true,
 			width: 450,
 			buttons: [ {
 				action: 'next'
@@ -63,6 +64,7 @@
 			descriptionmsg: 'guidedtour-tour-gettingstarted-click-preview-description',
 			attachTo: '#wpPreview',
 			position: 'top',
+			autoFocus: true,
 			closeOnClickOutside: false,
 			shouldSkip: function() {
 				return !gt.isEditing();
@@ -72,6 +74,7 @@
 			descriptionmsg: 'guidedtour-tour-gettingstarted-click-save-description',
 			attachTo: '#wpSave',
 			position: 'top',
+			autoFocus: true,
 			closeOnClickOutside: false,
 			shouldSkip: function() {
 				return !gt.isReviewing();
