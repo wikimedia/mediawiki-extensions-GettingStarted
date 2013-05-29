@@ -558,6 +558,7 @@ $3',
 /** Hebrew (עברית)
  * @author Amire80
  * @author ExampleTomer
+ * @author YaronSh
  * @author אור שפירא
  */
 $messages['he'] = array(
@@ -577,9 +578,12 @@ $messages['he'] = array(
 	'gettingstarted-task-clarify-main-description' => 'שיפור הבהירות',
 	'gettingstarted-task-clarify-secondary-description' => 'לפשט או לנסח משפטים מחדש.',
 	'gettingstarted-task-addlinks-main-description' => 'הוספת קישורים',
+	'gettingstarted-task-toolbar-return-to-list-text' => '►‎ חזרה לרשימה',
 	'gettingstarted-task-toolbar-return-to-list-title' => 'חזרה לרשימת המאמרים',
 	'gettingstarted-task-toolbar-editing-help-text' => 'הצג עזרה',
+	'gettingstarted-task-toolbar-try-another-text' => 'לנסות מאמר אחר ◄',
 	'gettingstarted-task-toolbar-close-title' => 'סגור סרגל כלים זה',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'כיצד להתחיל',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'באפשרותך לערוך את המאמר כולו על-ידי לחיצה כאן.',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} היא אנציקלופדיה חופשית שנכתבה על ידי אנשים כמוך. [[מיוחד:GettingStarted|להתחיל]] בביצוע העריכה הראשונה שלך!', # Fuzzy
 	'notification-gettingstarted-start-editing-email-subject' => 'להתחיל עם עריכת {{SITENAME}}',
@@ -704,12 +708,14 @@ $3',
 );
 
 /** Japanese (日本語)
+ * @author Fryed-peach
  * @author Shirayuki
  */
 $messages['ja'] = array(
+	'gettingstarted' => 'はじめに',
 	'gettingstarted-desc' => '新しい利用者向けに[[Special:GettingStarted|ようこそページ]]を追加する (アカウント作成した際に表示される)',
 	'gettingstarted-welcomesiteuser' => '$2さん、$1へようこそ!',
-	'gettingstarted-welcomesiteuseranon' => '$1へようこそ!', # Fuzzy
+	'gettingstarted-welcomesiteuseranon' => 'はじめに',
 	'gettingstarted-welcome-back-site-user' => '$2さん、おかえりなさい',
 	'gettingstarted-return' => '← 不要です。元の場所に戻ります', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
@@ -935,15 +941,28 @@ Pilih satu pilihan di bawah, dan anda akan melihat sebuah rencana pilihan rawak 
 	'gettingstarted-task-toolbar-try-another-text' => 'Cuba rencana lain ►',
 	'gettingstarted-task-toolbar-close-title' => 'Tutup palang alat ini',
 	'gettingstarted-task-copyedit-toolbar-description' => 'Rencana ini ada kesalahan ejaan dan tatabahasa yang boleh anda betulkan.',
-	'notification-gettingstarted-start-editing' => '{{SITENAME}} merupakan sebuah ensiklopedia bebas yang dikarang oleh orang ramai seperti anda. [[Special:GettingStarted|Mulakan]] dengan membuat sumbangan pertama anda!', # Fuzzy
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Pergi ke satu rencana pilihan rawak yang anda boleh perbaiki dengan menyunting',
+	'gettingstarted-task-clarify-toolbar-description' => 'Rencana ini kabur atau mengelirukan. Fikirkan cara untuk memperjelasnya.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Pergi ke satu rencana pilihan rawak yang boleh anda perjelas',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Rencana ini memerlukan lebih banyak pautan. Cari istilah-istilah yang mempunyai rencana di {{SITENAME}}.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Pergi ke satu rencana pilihan rawak yang boleh anda menambah pautannya',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Bagaimana untuk bermula',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Mulakan dengan menyemak imbas rencana terbabit untuk mencari di mana perlu diperbaiki. Jika anda berasa susah hati, jangan risau. Anda tidak semestinya perlu menjadi pakar dalam topik ini! Jika anda memerlukan bantuan atau ingin mencuba rencana lain, gunakan pautan pada palang di atas.',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Cadangan kerja',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Sepanduk-sepanduk ini mengenal pasti masalah pada rencana ini. Anda tidak semestinya perlu menyelesaikan kesemuanya, betulkan sahaja yang mana anda rasa senang.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Klik {{int:vector-view-edit}}',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Anda boleh menyunting keseluruhan rencana dengan mengklik di sini.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Sunting satu bahagian',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Jika anda ingin menyunting suatu bahagian tertentu, anda boleh klik pada pautan biru '{{int:editsection}}' di atas setiap bahagian.",
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} merupakan sebuah ensiklopedia bebas yang dikarang oleh orang ramai seperti anda. [[Special:GettingStarted|Mulakan]] dengan membuat suntingan pertama anda!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Bermula dengan menyunting {{SITENAME}}',
-	'notification-gettingstarted-start-editing-text-email-body' => 'Setiap pautan antara halaman {{SITENAME}} ditambah secara insani, tetapi halaman-halaman ini pula kekurangan pautan. Hanya bubuh dua pasang tanda kurung siku untuk mengapit topik penting apabila menyunting supaya ia akan dipautkan dengan halaman yang berkenaan di {{SITENAME}}.
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} adalah sebuah ensiklopedia yang diusahakan oleh orang keramaian seperti anda. Bermulalah dengan membuat suntingan pertama anda!
 
-Layari $2 untuk senarai cara-cara yang mudah untuk menambah baik halaman.
+Layari $2 untuk senarai cara mudah untuk memperbaiki halaman-halaman di sini.
 
-$3', # Fuzzy
+$3',
 	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Belajar menyunting di {{SITENAME}} dengan melayari $2',
-	'notification-gettingstarted-continue-editing' => 'Cantik! Anda sudah pun membuat suntingan sulung anda di {{SITENAME}}. Jika anda ingin mencari kerja lain, yang berikut adalah beberapa [[Special:GettingStarted|cara yang mudah untuk menyumbang]].', # Fuzzy
+	'notification-gettingstarted-continue-editing' => 'Cantik! Anda sudah pun membuat suntingan sulung anda di {{SITENAME}}. Jika anda ingin mencari kerja lain, yang berikut adalah beberapa [[Special:GettingStarted|cara yang mudah untuk menolong]].',
 	'notification-gettingstarted-continue-editing-email-subject' => 'Cara mudah untuk menambah baik {{SITENAME}}',
 	'notification-gettingstarted-continue-editing-text-email-body' => 'Cantik! Anda sudah pun membuat suntingan sulung anda di {{SITENAME}}.
 
