@@ -182,6 +182,66 @@ $messages['arc'] = array(
 	'gettingstarted-task-toolbar-editing-help-text' => 'ܚܘܝ ܥܘܕܪܢܐ',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'gettingstarted' => 'Primeros pasos',
+	'gettingstarted-desc' => "Amiesta una [[Special:GettingStarted|páxina de bienvenida]] a los nuevos usuarios (qu'apaez dempués de crear la cuenta)",
+	'gettingstarted-welcomesiteuser' => '¡{{GENDER:$2|Bienveníu|Bienvenida}} a $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Primeros pasos',
+	'gettingstarted-welcome-back-site-user' => '{{GENDER:$2|Bienveníu|Bienvenida}} otra vez, $2',
+	'gettingstarted-task-header' => '¡Gracies por xunise a {{SITENAME}}! Estes son dalgunes maneres que tien pa collaborar.
+
+Escueya una de les opciones de más abaxo, y verá un artículu al debalu que necesita ayuda.',
+	'gettingstarted-return' => '← Non, gracies, volver a la páxina que taba lleendo',
+	'gettingstarted-project-link' => '{{ns:Project}}:PrimerosPasos',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Etiqueta]]: Editor nuevu dando los [[{{MediaWiki:gettingstarted-project-link}}|primeros pasos]]',
+	'tag-gettingstarted_edit-description' => "Edición d'una páxina que'l usuariu elixó na llista de xeres de [[Special:GettingStarted|Primeros pasos]]",
+	'gettingstarted-task-copyedit-main-description' => 'Iguar ortografía y gramática',
+	'gettingstarted-task-copyedit-secondary-description' => '¡La manera más fácil de principiar!',
+	'gettingstarted-task-clarify-main-description' => 'Ameyorar la claridá',
+	'gettingstarted-task-clarify-secondary-description' => 'Simplificar o reescribir les frases.',
+	'gettingstarted-task-addlinks-main-description' => 'Amestar enllaces',
+	'gettingstarted-task-addlinks-secondary-description' => 'Coneutar los artículos de {{SITENAME}} ente ellos.',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Volver a la llista',
+	'gettingstarted-task-toolbar-return-to-list-title' => "Volver a la llista d'artículos",
+	'gettingstarted-task-toolbar-editing-help-text' => "Ver l'ayuda",
+	'gettingstarted-task-toolbar-editing-help-title' => 'Ver una guía de cómo editar',
+	'gettingstarted-task-toolbar-try-another-text' => 'Probar con otru artículu ►',
+	'gettingstarted-task-toolbar-close-title' => 'Zarrar esta barra de ferramientes',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Esti artículu tien errores ortográficos y gramaticales que pue iguar.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Dir a un artículu al debalu que pue ameyorar copiando y editando',
+	'gettingstarted-task-clarify-toolbar-description' => 'Esti artículu ye confusu o imprecisu. Busque maneres de facelu más claru.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Dir a un artículu al debalu que pue aclarar',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Esti artículu necesita más enllaces. Busque términos que tengan un artículu en {{SITENAME}}.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Dir a un artículu al debalu al que pue amesta-y enllaces',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Como principiar',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => "Namái principie a revisar l'artículu y mire cómo ameyoralu. Si se siente ablucáu, nun se preocupe. ¡Nun necesita ser un espertu nesti asuntu! Si necesita ayuda o quier probar con otru artículu, use los enllaces de la barra superior.",
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Ideas sobre qué facer',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => "Estos carteles identifiquen problemes con esti artículu. Nun necesita arreglalos toos, namái faiga les coses coles que s'afaye meyor.",
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Calque {{int:vector-view-edit}}',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => "Pue editar l'artículu enteru calcando equí.",
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Editar una seición',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Si quier editar una seición específica, pue calcar nel enllaz azul '{{int:editsection}}' del principiu de cada seición.",
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} ye una enciclopedia llibre escrita por xente como vusté. ¡De los [[Special:GettingStarted|primeros pasos]] faciendo la so primera edición!',
+	'notification-gettingstarted-start-editing-email-subject' => 'De los primeros pasos editando {{SITENAME}}',
+	'notification-gettingstarted-start-editing-text-email-body' => "{{SITENAME}} ye una enciclopedia llibre escrita por xente como vusté. ¡De los primeros pasos faciendo la primera edición!
+
+Visite $2 para ver una llista de maneres fáciles d'ameyorar les páxines.
+
+$3",
+	'notification-gettingstarted-start-editing-text-email-batch-body' => 'De los primeros pasos cola edición de {{SITENAME}} visitando $2',
+	'notification-gettingstarted-continue-editing' => "¡Bon trabayu! Acaba de facer les primeres ediciones en {{SITENAME}}. Si busca algo más que facer, equí hai otres [[Special:GettingStarted|maneres fáciles d'ayudar]].",
+	'notification-gettingstarted-continue-editing-email-subject' => "Maneres fáciles d'ameyorar {{SITENAME}}",
+	'notification-gettingstarted-continue-editing-text-email-body' => "¡Bon trabayu! Acaba de facer les primeres ediciones en {{SITENAME}}.
+
+Si busca más que facer, hai una llista  de maneres fáciles d'ayudar en $2
+
+$3",
+	'notification-gettingstarted-continue-editing-text-email-batch-body' => "¿Busca más coses que facer? Visite $2 pa ver una llista de maneres fáciles d'ayudar.",
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Wizardist
  */
@@ -472,9 +532,9 @@ Choisissez une option ci-dessous et vous verrez un article pris au hasard qui a 
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Si vous souhaitez modifier une section spécifique, vous pouvez cliquer sur le lien '{{int:editsection}}' bleu en haut de chaque section.",
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} est une encyclopédie libre écrite par des gens comme vous. [[Special:GettingStarted|Débutez]] en effectuant votre première modification !',
 	'notification-gettingstarted-start-editing-email-subject' => "Débuter avec l'édition sur {{SITENAME}}",
-	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} est une encyclopédie libre écrite par des gens comme vous. Commencer par faire votre première modification !
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} est une encyclopédie libre écrite par des gens comme vous. Commencez par faire votre première modification !
 
-Visitez $2 pour obtenir la liste des astuces pour améliorer les pages.
+Consultez $2 pour obtenir la liste des astuces pour améliorer les pages.
 
 $3',
 	'notification-gettingstarted-start-editing-text-email-batch-body' => "Débuter avec l'édition sur {{SITENAME}} en visitant $2",
@@ -533,10 +593,13 @@ Escolla unha das opcións inferiores para ir ata un artigo que necesite axuda.',
 	'gettingstarted-task-addlinks-toolbar-description' => 'Este artigo necesita máis ligazóns. Busque termos que teñan artigo en {{SITENAME}}.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Ir a un artigo ao chou para engadirlle ligazóns',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Como comezar',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Empece analizando o artigo e buscando melloras. Se sente que non vai poder, non se preocupe. Non é necesario ser experto na materia! Se necesita axuda ou quere probar outro artigo, utilice as ligazóns da barra superior.',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Ideas sobre o que facer',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Estes carteis identifican os problemas do artigo. Non é necesario corrixilos todos, encárguese daquilo co que sinta comodidade.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Prema en "{{int:vector-view-edit}}"',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Pode editar todo o artigo premendo aquí.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Editar unha sección',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Se quere modificar unha sección específica, pode premer na ligazón azul "{{int:editsection}}" que hai ao comezo de cada sección.',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} é unha enciclopedia libre escrita por xente coma vostede. [[Special:GettingStarted|Empece]] facendo a súa primeira edición!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Empece a editar {{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} é unha enciclopedia libre escrita por xente coma vostede. Empece facendo a súa primeira edición!
@@ -553,6 +616,18 @@ Se busca algo máis que facer, hai unha lista dos modos fáciles de axudar en $2
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Busca facer algo máis? Visite $2 para ver unha lista de modos fáciles de axudar.',
+);
+
+/** Gujarati (ગુજરાતી)
+ * @author Ashok modhvadia
+ */
+$messages['gu'] = array(
+	'gettingstarted-task-addlinks-main-description' => 'કડીઓ ઉમેરો',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ યાદી પર પાછા ફરો',
+	'gettingstarted-task-toolbar-editing-help-text' => 'મદદ માટે જુઓ',
+	'gettingstarted-task-toolbar-try-another-text' => 'અન્ય લેખ માટે પ્રયત્ન કરો ►',
+	'gettingstarted-task-toolbar-close-title' => 'આ સાધનપેટી બંધ કરો',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'કેવી રીતે શરૂઆત કરશો',
 );
 
 /** Hebrew (עברית)
