@@ -248,13 +248,13 @@ $3",
 $messages['be-tarask'] = array(
 	'gettingstarted' => 'Пачатак працы',
 	'gettingstarted-desc' => 'Дадае [[Special:GettingStarted|вітальную старонку]] для новых удзельнікаў (паказваецца па стварэньні рахунку)',
-	'gettingstarted-msg' => 'Адміністратар {{GRAMMAR:родны|{{SITENAME}}}} мусіць наладзіць гэтае паведамленьне, адрэдагаваўшы [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Вітаем у {{GRAMMAR:месны|$1}}, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Вітаем у {{GRAMMAR:месны|$1}}',
-	'gettingstarted-return' => 'Не, дзякую, вярніце мяне назад',
+	'gettingstarted-welcomesiteuseranon' => 'Вітаем у {{GRAMMAR:месны|$1}}', # Fuzzy
+	'gettingstarted-return' => 'Не, дзякую, вярніце мяне назад', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:Пачатак працы',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Метка]]: [[{{MediaWiki:gettingstarted-project-link}}|пачатак працы]] новага рэдактара',
 	'tag-gettingstarted_edit-description' => 'Рэдагаваньне старонкі зь сьпісу задачаў на старонцы «[[Special:GettingStarted|З чаго пачаць]]», якую абраў удзельнік',
+	'gettingstarted-task-copyedit-main-description' => 'Вычытка', # Fuzzy
 );
 
 /** Breton (brezhoneg)
@@ -275,12 +275,12 @@ $messages['cs'] = array(
 	'gettingstarted-welcomesiteuser' => 'Vítá vás $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Jak začít',
 	'gettingstarted-welcome-back-site-user' => 'Vítejte zpět, {{GENDER:$2|uživateli|uživatelko}} $2',
-	'gettingstarted-task-header' => 'Hledáte snadný způsob, jak začít? Stačí si vybrat stránku z jednoho ze tří níže uvedených seznamů.',
-	'gettingstarted-return' => '← Ne, děkuji, chci zpět tam, kde jsem byl',
+	'gettingstarted-task-header' => 'Hledáte snadný způsob, jak začít? Stačí si vybrat stránku z jednoho ze tří níže uvedených seznamů.', # Fuzzy
+	'gettingstarted-return' => '← Ne, děkuji, chci zpět tam, kde jsem byl', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:Jak začít',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Značka]]: nový uživatel [[{{MediaWiki:gettingstarted-project-link}}|začíná]]',
 	'tag-gettingstarted_edit-description' => 'Editace stránky, kterou si uživatel zvolil ze seznamu úkolů na stránce [[Special:GettingStarted|Jak začít]]',
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Opravy pravopisu a gramatiky',
+	'gettingstarted-task-copyedit-main-description' => 'Opravy pravopisu a gramatiky', # Fuzzy
 );
 
 /** Danish (dansk)
@@ -289,10 +289,9 @@ $messages['cs'] = array(
 $messages['da'] = array(
 	'gettingstarted' => 'Kom i gang',
 	'gettingstarted-desc' => 'Tilføjer en [[Special:GettingStarted|velkomstside]] for nye brugere (vist efter oprettelse af konto)',
-	'gettingstarted-msg' => 'En administrator på {{SITENAME}} bør tilpasse denne meddelelse ved at redigere [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Velkommen til $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Velkommen til $1!',
-	'gettingstarted-return' => 'Nej tak, tag mig tilbage',
+	'gettingstarted-welcomesiteuseranon' => 'Velkommen til $1!', # Fuzzy
+	'gettingstarted-return' => 'Nej tak, tag mig tilbage', # Fuzzy
 );
 
 /** German (Deutsch)
@@ -365,12 +364,11 @@ $messages['dsb'] = array(
 	'gettingstarted-welcomesiteuser' => 'Witaj do $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Prědne kšace',
 	'gettingstarted-welcome-back-site-user' => 'Witaj slědk, $2',
-	'gettingstarted-return' => 'Ně, źěkujom se, źi slědk',
+	'gettingstarted-return' => 'Ně, źěkujom se, źi slědk', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:Prědne kšace',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Marka]]: [[{{MediaWiki:gettingstarted-project-link}}|Prědne kšace]] nowego wobźěłarja',
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Gramatiku a pšawopis korigěrowaś',
-	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Jasnosć pólěpšyś',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Boki ze sobu zwězaś',
+	'gettingstarted-task-copyedit-main-description' => 'Gramatiku a pšawopis korigěrowaś', # Fuzzy
+	'gettingstarted-task-clarify-main-description' => 'Jasnosć pólěpšyś', # Fuzzy
 );
 
 /** Greek (Ελληνικά)
@@ -379,8 +377,8 @@ $messages['dsb'] = array(
 $messages['el'] = array(
 	'gettingstarted' => 'Ξεκινώντας',
 	'gettingstarted-welcomesiteuser' => 'Καλώς ήλθατε στο $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Καλώς ήλθατε στο $1!',
-	'gettingstarted-return' => 'Όχι ευχαριστώ, πήγαινε με πίσω',
+	'gettingstarted-welcomesiteuseranon' => 'Καλώς ήλθατε στο $1!', # Fuzzy
+	'gettingstarted-return' => 'Όχι ευχαριστώ, πήγαινε με πίσω', # Fuzzy
 );
 
 /** British English (British English)
@@ -396,7 +394,7 @@ $messages['en-gb'] = array(
 $messages['eo'] = array(
 	'gettingstarted' => 'Unuaj paŝoj',
 	'gettingstarted-welcomesiteuser' => 'Bonvenon al $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Bonvenon al $1!',
+	'gettingstarted-welcomesiteuseranon' => 'Bonvenon al $1!', # Fuzzy
 );
 
 /** Spanish (español)
@@ -442,8 +440,8 @@ $messages['et'] = array(
 $messages['fa'] = array(
 	'gettingstarted' => 'شروع',
 	'gettingstarted-welcomesiteuser' => '$2، به $1 خوش‌آمدید!',
-	'gettingstarted-welcomesiteuseranon' => 'به $1 خوش‌آمدید!',
-	'gettingstarted-return' => 'نه متشکرم، من را برگردان',
+	'gettingstarted-welcomesiteuseranon' => 'به $1 خوش‌آمدید!', # Fuzzy
+	'gettingstarted-return' => 'نه متشکرم، من را برگردان', # Fuzzy
 );
 
 /** Finnish (suomi)
@@ -554,8 +552,8 @@ $3',
 $messages['frp'] = array(
 	'gettingstarted' => 'Por emmodar',
 	'gettingstarted-welcomesiteuser' => 'Benvegnua dessus $1, $2 !',
-	'gettingstarted-welcomesiteuseranon' => 'Benvegnua dessus $1 !',
-	'gettingstarted-return' => 'Nan, bien grant-marci, ramenâd-mè de yô que vegno',
+	'gettingstarted-welcomesiteuseranon' => 'Benvegnua dessus $1 !', # Fuzzy
+	'gettingstarted-return' => 'Nan, bien grant-marci, ramenâd-mè de yô que vegno', # Fuzzy
 );
 
 /** Galician (galego)
@@ -687,13 +685,12 @@ $messages['hsb'] = array(
 	'gettingstarted-welcomesiteuser' => 'Witaj do $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Prěnje kroki',
 	'gettingstarted-welcome-back-site-user' => 'Witaj wróćo, $2',
-	'gettingstarted-return' => 'Ně, dźakuju so, dźi wróćo',
+	'gettingstarted-return' => 'Ně, dźakuju so, dźi wróćo', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:Prěnje kroki',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Značka]]: [[{{MediaWiki:gettingstarted-project-link}}|Prěnje kroki]] noweho wobdźěłarja',
 	'tag-gettingstarted_edit-description' => 'Změna strony, kotruž wužiwar je z lisćiny nadawkow ze strony [[Special:GettingStarted|Prěnje kroki]] wubrał',
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Gramatiku a prawopis korigować',
-	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Jasnosć polěpšić',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Strony ze sobu zwjazać',
+	'gettingstarted-task-copyedit-main-description' => 'Gramatiku a prawopis korigować', # Fuzzy
+	'gettingstarted-task-clarify-main-description' => 'Jasnosć polěpšić', # Fuzzy
 );
 
 /** Hungarian (magyar)
@@ -725,9 +722,8 @@ $messages['hy'] = array(
 $messages['id'] = array(
 	'gettingstarted' => 'Memulai',
 	'gettingstarted-desc' => 'Menambahkan [[Special:GettingStarted|halaman selamat datang]] untuk pengguna baru (ditampilkan setelah membuat akun)',
-	'gettingstarted-msg' => 'Seorang pengurus {{SITENAME}} harus mengubah pesan ini dengan menyunting pesan sistem [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Selamat datang di $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Selamat datang di $1!',
+	'gettingstarted-welcomesiteuseranon' => 'Selamat datang di $1!', # Fuzzy
 	'gettingstarted-return' => 'Tidak, terima kasih. Bawa saya kembali', # Fuzzy
 );
 
@@ -815,7 +811,7 @@ $messages['ja'] = array(
 $messages['ka'] = array(
 	'gettingstarted-welcomesiteuser' => 'მოგესალმებით $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'მუშაობის დაწყება',
-	'gettingstarted-return' => '← არა გმადლობთ, დამაბრუნეთ უკან სადაც ვიყავი',
+	'gettingstarted-return' => '← არა გმადლობთ, დამაბრუნეთ უკან სადაც ვიყავი', # Fuzzy
 );
 
 /** Korean (한국어)
@@ -827,17 +823,13 @@ $messages['ko'] = array(
 	'gettingstarted-welcomesiteuser' => '$2님, $1에 오신 것을 환영합니다!',
 	'gettingstarted-welcomesiteuseranon' => '시작하기',
 	'gettingstarted-welcome-back-site-user' => '$2님, 다시 오신 것을 환영합니다',
-	'gettingstarted-task-header' => '시작하는 쉬운 방법을 찾고 계십니까? 아래 세 목록 중 하나에서 문서를 선택하세요.',
-	'gettingstarted-return' => '← 괜찮습니다, 있던 곳으로 돌아갑니다',
+	'gettingstarted-task-header' => '시작하는 쉬운 방법을 찾고 계십니까? 아래 세 목록 중 하나에서 문서를 선택하세요.', # Fuzzy
+	'gettingstarted-return' => '← 괜찮습니다, 있던 곳으로 돌아갑니다', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:시작하기',
 	'tag-gettingstarted_edit' => '[[Special:Tags|태그]]: 새 편집자 [[{{MediaWiki:gettingstarted-project-link}}|시작하기]]',
 	'tag-gettingstarted_edit-description' => '사용자가 [[Special:GettingStarted|시작하기]]에 작업 목록에서 선택한 문서의 편집',
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => '문법과 맞춤법 고치기',
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => '몇몇 문서는 괜찮은 모습이지만 어떤 사람은 더 나은 모습으로 될 수 있는 것을 느꼈습니다. 문법, 맞춤법과 스타일을 향상시킬 수 있는지 확인하세요.',
-	'guidedtour-tour-gettingstartedpage-clarification-title' => '명확성 향상',
-	'guidedtour-tour-gettingstartedpage-clarification-description' => '다른 사람은 혼란스럽고 불분명하거나 모호한 몇몇 문서에 태그합니다. 고치거나 문장이 필요한 전체 문서일 수 있습니다. 주제에 전문가일 필요는 없으며 이해하기 더 쉽게 만드세요.',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => '같이 문서 링크',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => '{{SITENAME}} 문서 사이의 모든 링크는 직접 추가하며 몇몇 문서는 충분한 링크가 없습니다. 편집할 때 주요 주제에 두 대괄호를 추가하면 관련된 {{SITENAME}} 문서로 링크합니다.',
+	'gettingstarted-task-copyedit-main-description' => '문법과 맞춤법 고치기', # Fuzzy
+	'gettingstarted-task-clarify-main-description' => '명확성 향상', # Fuzzy
 );
 
 /** Kirghiz (Кыргызча)
@@ -846,7 +838,7 @@ $messages['ko'] = array(
 $messages['ky'] = array(
 	'gettingstarted' => 'Иштин башталышы',
 	'gettingstarted-welcomesiteuser' => '$1 сайтына кош келиңиз, $2!',
-	'gettingstarted-welcomesiteuseranon' => '$1 сайтына кош келиңиз!',
+	'gettingstarted-welcomesiteuseranon' => '$1 сайтына кош келиңиз!', # Fuzzy
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -897,7 +889,7 @@ $messages['lb'] = array(
  */
 $messages['lt'] = array(
 	'gettingstarted-welcomesiteuser' => 'Sveiki atvykę į $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Sveiki atvykę į $1!',
+	'gettingstarted-welcomesiteuseranon' => 'Sveiki atvykę į $1!', # Fuzzy
 );
 
 /** Latvian (latviešu)
@@ -917,14 +909,13 @@ $messages['min'] = array(
 	'gettingstarted-welcomesiteuser' => 'Salamaik datang di $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => "Ba'a ka mulai",
 	'gettingstarted-welcome-back-site-user' => 'Apo kaba, $2?',
-	'gettingstarted-task-header' => "Mancari caro mudah ba'a ka mulai? Piliahlah sabuah laman dari daftar dibawah ko.",
-	'gettingstarted-return' => 'Mokasih sajolah, bawok Ambo baliak',
+	'gettingstarted-task-header' => "Mancari caro mudah ba'a ka mulai? Piliahlah sabuah laman dari daftar dibawah ko.", # Fuzzy
+	'gettingstarted-return' => 'Mokasih sajolah, bawok Ambo baliak', # Fuzzy
 	'gettingstarted-project-link' => "{{ns:Project}}:Ba'a ka mulai",
 	'tag-gettingstarted_edit' => "[[Special:Tags|Tag]]: pangguno baru [[{{MediaWiki:gettingstarted-project-link}}|ba'a ka mulai]]",
 	'tag-gettingstarted_edit-description' => "Suntiangan laman nan pangguno piliah dari daftar tugas pado [[Special:GettingStarted|Ba'a ka mulai]]",
-	'guidedtour-tour-gettingstartedpage-copy-editing-title' => 'Pelokan tata bahaso jo ejaan',
-	'guidedtour-tour-gettingstartedpage-copy-editing-description' => 'Laman ko lah dalam bantuak nan layak, tapi urang lain maraso alun layak lai. Pariso kok Sanak dapek maningkekan tata bahaso, ejaan, jo gayanyo.',
-	'guidedtour-tour-gettingstartedpage-clarification-title' => 'Tingkekan kajalehan',
+	'gettingstarted-task-copyedit-main-description' => 'Pelokan tata bahaso jo ejaan', # Fuzzy
+	'gettingstarted-task-clarify-main-description' => 'Tingkekan kajalehan', # Fuzzy
 );
 
 /** Macedonian (македонски)
@@ -1053,10 +1044,9 @@ $3',
 $messages['mt'] = array(
 	'gettingstarted' => 'Gwida introduttorja',
 	'gettingstarted-desc' => "Iżżid [[Special:GettingStarted|paġna ta' merħba]] għal utenti ġodda (murija wara l-ħolqien tal-kont)",
-	'gettingstarted-msg' => 'Amministratur fuq {{SITENAME}} għandu jirranġa dan il-messaġġ billi jimmodifika lil [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Merbħa fuq $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Merbħa fuq $1!',
-	'gettingstarted-return' => 'Le grazzi, ħudni lura',
+	'gettingstarted-welcomesiteuseranon' => 'Merbħa fuq $1!', # Fuzzy
+	'gettingstarted-return' => 'Le grazzi, ħudni lura', # Fuzzy
 );
 
 /** Dutch (Nederlands)
@@ -1144,8 +1134,8 @@ $messages['pt-br'] = array(
 	'gettingstarted-welcomesiteuser' => '{{GENDER:$2|Bem-vindo|Bem-vinda|Bem-vindo(a)}} a $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Primeiros passos',
 	'gettingstarted-welcome-back-site-user' => 'Bem-vindo de volta, $2',
-	'gettingstarted-task-header' => 'Procurando uma maneira fácil de começar? Basta escolher uma página de uma das três listas abaixo.',
-	'gettingstarted-return' => '← Não, obrigado, volte para onde estava',
+	'gettingstarted-task-header' => 'Procurando uma maneira fácil de começar? Basta escolher uma página de uma das três listas abaixo.', # Fuzzy
+	'gettingstarted-return' => '← Não, obrigado, volte para onde estava', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:PrimeirosPassos',
 );
 
@@ -1155,8 +1145,8 @@ $messages['pt-br'] = array(
 $messages['ro'] = array(
 	'gettingstarted' => 'Primii pași',
 	'gettingstarted-welcomesiteuser' => 'Bine ați venit la $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Bine ați venit la $1!',
-	'gettingstarted-return' => 'Nu, mulțumesc, du-mă înapoi',
+	'gettingstarted-welcomesiteuseranon' => 'Bine ați venit la $1!', # Fuzzy
+	'gettingstarted-return' => 'Nu, mulțumesc, du-mă înapoi', # Fuzzy
 );
 
 /** tarandíne (tarandíne)
@@ -1177,15 +1167,17 @@ $messages['roa-tara'] = array(
 );
 
 /** Russian (русский)
+ * @author DCamer
  * @author Ole Yves
  */
 $messages['ru'] = array(
 	'gettingstarted' => 'Приступая к работе',
 	'gettingstarted-desc' => 'Добавляет [[Special:GettingStarted|страницу приветствия]] для новых участников (показывается после создания учётной записи)',
-	'gettingstarted-msg' => 'Администратор {{SITENAME}} должен настроить это сообщение правкой [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Добро пожаловать в $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Добро пожаловать в $1!',
-	'gettingstarted-return' => 'Нет, спасибо, верните меня обратно',
+	'gettingstarted-welcomesiteuseranon' => 'Добро пожаловать в $1!', # Fuzzy
+	'gettingstarted-return' => 'Нет, спасибо, верните меня обратно', # Fuzzy
+	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
+	'tag-gettingstarted_edit-description' => 'Редактировать страницы, которые участник выбрал из списка задач в [[Special:GettingStarted]]', # Fuzzy
 );
 
 /** Sinhala (සිංහල)
@@ -1194,7 +1186,7 @@ $messages['ru'] = array(
 $messages['si'] = array(
 	'gettingstarted' => 'දැන් අරඹමු',
 	'gettingstarted-welcomesiteuser' => '$1 වෙත පිළිගනිමු, $2!',
-	'gettingstarted-welcomesiteuseranon' => '$1 වෙත පිළිගනිමු!',
+	'gettingstarted-welcomesiteuseranon' => '$1 වෙත පිළිගනිමු!', # Fuzzy
 );
 
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
@@ -1214,12 +1206,10 @@ $messages['sv'] = array(
 	'gettingstarted-desc' => 'Lägger till en [[Special:GettingStarted|välkomstsida]] för nya användare (visas efter kontot har skapats)',
 	'gettingstarted-welcomesiteuser' => 'Välkommen till $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Komma igång',
-	'gettingstarted-return' => 'Nej tack, gå tillbaka där jag var',
+	'gettingstarted-return' => 'Nej tack, gå tillbaka där jag var', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:Komigång',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tagg]]: ny bidragsgivare [[{{MediaWiki:gettingstarted-project-link}}|kom i gång]]',
 	'tag-gettingstarted_edit-description' => 'Redigering av en sida som användaren valde från listan i [[Special:GettingStarted|Kom i gång]]',
-	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Länka ihop sidor',
-	'guidedtour-tour-gettingstartedpage-add-links-description' => 'Har du någonsin av misstag använt två timmar att klicka runt på {{SITENAME}}? Vi har gjort det. Välj en av dessa sidor och leta efter potentiella länkar till andra. Klicka på {{int:vector-view-edit}} fliken för att lägga till dem!', # Fuzzy
 );
 
 /** Tamil (தமிழ்)
@@ -1227,7 +1217,7 @@ $messages['sv'] = array(
  */
 $messages['ta'] = array(
 	'gettingstarted-welcomesiteuser' => '$1-க்கு வருக, $2!',
-	'gettingstarted-welcomesiteuseranon' => '$1-க்கு வருக!',
+	'gettingstarted-welcomesiteuseranon' => '$1-க்கு வருக!', # Fuzzy
 );
 
 /** Telugu (తెలుగు)
@@ -1235,10 +1225,9 @@ $messages['ta'] = array(
  */
 $messages['te'] = array(
 	'gettingstarted' => 'మొదలుపెట్టడం',
-	'gettingstarted-msg' => '[[{{ns:MediaWiki}}:gettingstarted-msg]] ద్వారా {{SITENAME}} నిర్వాహకులు ఈ సందేశాన్ని మార్చవచ్చు.',
 	'gettingstarted-welcomesiteuser' => '$1కి స్వాగతం, $2!',
-	'gettingstarted-welcomesiteuseranon' => '$1కి స్వాగతం!',
-	'gettingstarted-return' => 'వద్దు, నన్ను వెనక్కు తీసుకువెళ్ళు',
+	'gettingstarted-welcomesiteuseranon' => '$1కి స్వాగతం!', # Fuzzy
+	'gettingstarted-return' => 'వద్దు, నన్ను వెనక్కు తీసుకువెళ్ళు', # Fuzzy
 );
 
 /** Ukrainian (українська)
@@ -1248,10 +1237,9 @@ $messages['te'] = array(
 $messages['uk'] = array(
 	'gettingstarted' => 'Початок роботи',
 	'gettingstarted-desc' => 'Додає [[Special:GettingStarted|вітальну сторінку]] для нових користувачів (показується після створення облікового запису)',
-	'gettingstarted-msg' => 'Адміністраторам проекту {{SITENAME}} слід налаштувати це повідомлення, відредагувавши [[{{ns:MediaWiki}}:gettingstarted-msg]].',
 	'gettingstarted-welcomesiteuser' => 'Вітаємо у проекті $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Вітаємо у проекті $1!',
-	'gettingstarted-return' => 'Ні, дякую, поверніть мене назад',
+	'gettingstarted-welcomesiteuseranon' => 'Вітаємо у проекті $1!', # Fuzzy
+	'gettingstarted-return' => 'Ні, дякую, поверніть мене назад', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 );
 
