@@ -135,8 +135,8 @@ class GettingStartedHooks {
 
 		self::$openTask[$title->getPrefixedText()] = $task;
 
-		// WebResponse setcookie can not set session cookies
-		// This encoding style will get decoded as intended by decodeURIComponent
+		// WebResponse->setcookie cannot set session cookies
+		// This encoding will be decoded properly by jQuery.cookie (it uses decodeURIComponent).
 		setrawcookie( self::COOKIE_NAME, rawurlencode( FormatJson::encode( self::$openTask ) ), 0, '/' );
 	}
 
