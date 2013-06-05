@@ -178,6 +178,7 @@ $wgResourceModules[ 'ext.gettingstarted.taskToolbar' ] = array(
 	'scripts' => 'ext.gettingstarted.taskToolbar.js',
 	'styles' => 'ext.gettingstarted.taskToolbar.css',
 	'dependencies' => array(
+		'mediawiki.action.view.postEdit',
 		'mediawiki.jqueryMsg',
 		'mediawiki.Title',
 		'mediawiki.ui',
