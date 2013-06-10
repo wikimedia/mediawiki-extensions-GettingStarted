@@ -886,10 +886,17 @@ $messages['lb'] = array(
 
 /** Lithuanian (lietuvių)
  * @author Eitvys200
+ * @author Mantak111
  */
 $messages['lt'] = array(
 	'gettingstarted-welcomesiteuser' => 'Sveiki atvykę į $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Sveiki atvykę į $1!', # Fuzzy
+	'gettingstarted-task-addlinks-main-description' => 'Pridėti nuorodas',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Grįžti į sąrašą',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Grįžti į straipsnių sąrašą',
+	'gettingstarted-task-toolbar-try-another-text' => 'Pabandykite kitą straipsnį ►',
+	'gettingstarted-task-toolbar-close-title' => 'Uždaryti šią įrankių juostą',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Kaip pradėti',
 );
 
 /** Latvian (latviešu)
@@ -1126,6 +1133,7 @@ $messages['pms'] = array(
 );
 
 /** Brazilian Portuguese (português do Brasil)
+ * @author OTAVIO1981
  * @author Raylton P. Sousa
  */
 $messages['pt-br'] = array(
@@ -1134,9 +1142,55 @@ $messages['pt-br'] = array(
 	'gettingstarted-welcomesiteuser' => '{{GENDER:$2|Bem-vindo|Bem-vinda|Bem-vindo(a)}} a $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Primeiros passos',
 	'gettingstarted-welcome-back-site-user' => 'Bem-vindo de volta, $2',
-	'gettingstarted-task-header' => 'Procurando uma maneira fácil de começar? Basta escolher uma página de uma das três listas abaixo.', # Fuzzy
-	'gettingstarted-return' => '← Não, obrigado, volte para onde estava', # Fuzzy
+	'gettingstarted-task-header' => 'Obrigado por se juntar a {{SITENAME}}! Veja alguns caminhos para se envolver.
+
+Escolha uma opção abaixo, e veja um artigo aleatório que precisa de ajdua',
+	'gettingstarted-return' => '← Não, obrigado, volte para onde estava',
 	'gettingstarted-project-link' => '{{ns:Project}}:PrimeirosPassos',
+	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: novo editor [[{{MediaWiki:gettingstarted-project-link}}|começando]]',
+	'tag-gettingstarted_edit-description' => 'Edição de uma página que o editor escolheu da lista de tarefas em [[Special:GettingStarted|Começando]]',
+	'gettingstarted-task-copyedit-main-description' => 'Ajuste de Ortografia & Gramática',
+	'gettingstarted-task-copyedit-secondary-description' => 'O jeito mais fácil de começar!',
+	'gettingstarted-task-clarify-main-description' => 'Melhore a Clareza',
+	'gettingstarted-task-clarify-secondary-description' => 'Simplifique ou reescreva a sentença.',
+	'gettingstarted-task-addlinks-main-description' => 'Adicione Links',
+	'gettingstarted-task-addlinks-secondary-description' => 'Conecte os artigos do {{SITENAME}}.',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Voltar para a lista',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Retorne para a lista de artigos',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Mostrar ajuda',
+	'gettingstarted-task-toolbar-editing-help-title' => 'Mostrar um guia sobre como editar',
+	'gettingstarted-task-toolbar-try-another-text' => 'Tentar outro artigo ►',
+	'gettingstarted-task-toolbar-close-title' => 'Feche esta barra de ferramentas',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Este artigo tem erros de ortografia e gramática que você pode consertar.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Vá a um artigo aleatório que pode melhorar pela correção do texto',
+	'gettingstarted-task-clarify-toolbar-description' => 'Este artigo é confuso ou vago. Procure meios de você torná-lo claro.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Vá a um artigo aleatório que pode clarificar.',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Este artigo precisa de mais links. Procure por termos que possuam artigo na {{SITENAME}}.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Vá a um artigo aleatório que possa adicionar links',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Como começar',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'apens começe varrendo o artigo e procurando por melhorias. Se se sentir sobrecarregado, não se preocupe. Você não precisa ser um expert neste tópico! Se você precisar de ajuda ou quiser tentar outro artigo, use o link no topo da barra.',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Ideias sobre o que fazer',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Estes banners identificam problemas com este artigo. Você não precisa corrigir todos, faça apenas o que está confortável de fazer.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Clique {{int:vector-view-edit}}',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Você pode editar o artigo inteiro ao clicar aqui.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Edite uma seção',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Se você quiser editar uma seção específica, pode cliclar no link azul '{{int:editsection}}' no topo de cada seção.",
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} é uma enciclopédia livre escrita por pessoas como você. [[Special:GettingStarted|Inicie]] fazendo sua primeira edição!',
+	'notification-gettingstarted-start-editing-email-subject' => 'Comece com a edição de {{SITENAME}}',
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} é uma enciclopédia livre escrita por pessoas como você. Começe fazendo sua primeira edição!
+
+Visite $2 para uma lista de jeitos fáceis de melhorar páginas.
+
+$3',
+	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Começe a editar {{SITENAME}} ao visitar $2',
+	'notification-gettingstarted-continue-editing' => 'Bom trabalho! Você já fez sua primeira edição na {{SITENAME}}. Se procura por mais coisas a fazer, aqui estão alguns [[Special:GettingStarted|jeitos fáceis de ajudar]].',
+	'notification-gettingstarted-continue-editing-email-subject' => 'Jeitos fáceis de melhorar {{SITENAME}}',
+	'notification-gettingstarted-continue-editing-text-email-body' => 'Bom trabalho! Você já fez sua primeira edição na {{SITENAME}}.
+
+Se procura por mais coisas a fazer,aqui está uma lista de jeitos fáceis de ajudar em $2
+
+$3',
+	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Procurando por mais por fazer? Visite $2 para uma lista de jeitos fáceis de ajudar.',
 );
 
 /** Romanian (română)
