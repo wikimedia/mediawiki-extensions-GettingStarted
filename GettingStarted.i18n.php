@@ -867,6 +867,7 @@ $messages['lb'] = array(
 	'gettingstarted-task-toolbar-try-another-text' => 'Probéiert een aneren Artikel ►',
 	'gettingstarted-task-toolbar-close-title' => 'Dës Toolbar zoumaachen',
 	'gettingstarted-task-copyedit-toolbar-description' => 'An dësem Artikel si Schreif- a grammatesch Feeler déi Dir verbessere kënnt.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Gitt op en zoufällegen Artikel, deen Dir duerch ännere verbessere kënnt',
 	'gettingstarted-task-clarify-toolbar-description' => 'Dësen Artikel ass konfus oder vague. Kuckt no Weeër wéi Dir e méi kloer maache kënnt.',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Gitt op een zoufällegen Artikel deen Dir präziséiere kënnt',
 	'gettingstarted-task-addlinks-toolbar-description' => 'Dësen Artikel brauch méi Linken. Sicht no Begrëffer déi een {{SITENAME}}-Artikel hunn.',
