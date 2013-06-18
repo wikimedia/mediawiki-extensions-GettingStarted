@@ -32,6 +32,37 @@
 		return mw.eventLog.logEvent( SCHEMA_NAME, eventInstance );
 	}
 
+	/**
+	* Gets the applicable client-side page action (for logging purposes), or null if there is
+	* none.
+	*
+	* @return {string} 'page-impression', 'page-edit-impression', or 'page-save-success', or
+	*   null
+	*/
+	function getPageSchemaAction() {
+		var wgAction, wgPostEdit, loggedActions, schemaAction;
+
+		wgAction = mw.config.get( 'wgAction' );
+		wgPostEdit = mw.config.get( 'wgPostEdit' );
+		loggedActions = {
+			view : 'page-impression',
+			edit : 'page-edit-impression'
+		};
+
+		if ( wgPostEdit ) {
+			schemaAction = 'page-save-success';
+		} else {
+			schemaAction = loggedActions[ wgAction ];
+		}
+
+		// We ignore history, submit, etc.
+		if ( !schemaAction ) {
+			schemaAction = null;
+		}
+
+		return schemaAction;
+	}
+
 	// Wrapper around logEvent that returns a promise that resolves
 	// when either the logging attempt concludes or `timeout` miliseconds have
 	// elapsed, whichever is sooner.
@@ -52,7 +83,7 @@
 		userId = mw.config.get( 'wgUserId' );
 		bucket = 'test';
 		defaults = {
-			version: 3,
+			version: 4,
 			userId: userId,
 			bucket: bucket
 		};
@@ -125,6 +156,45 @@
 		}
 	}
 
+	/**
+	 * Logs a page impression, noting whether the toolbar is visible
+	 *
+	 * @param {string} fullTask full task name (returnto or gettingstarted-*)
+	 * @param {string} schemaAction action field of schema
+	 *
+	 * @return {jQuery.Deferred} Promise object from EventLogging logEvent,
+	 *   or null for invalid schema
+	 */
+	function logImpression( fullTask, schemaAction) {
+		var isEditable, schema, event, querySource;
+
+		schema = getSchemaForTask( fullTask );
+		if ( schema === null ) {
+			return null;
+		}
+
+		// Hack: look for the edit tab. This id works in most skins, but
+		// not e.g. nostalgia
+		isEditable = !! $( '#ca-edit').length;
+		event = {
+			action: schemaAction,
+			funnel: fullTask,
+			pageId: mw.config.get( 'wgArticleId' ),
+			revId: mw.config.get( 'wgCurRevisionId' ),
+			isEditable: isEditable,
+			isNavbarVisible: $( '#mw-gettingstarted-toolbar' ).is( ':visible' )
+		};
+
+		if ( schemaAction === 'page-impression' ) {
+			querySource = mw.util.getParamValue( 'source' );
+			if ( querySource === 'navbar-next' || querySource === 'gettingstarted' ) {
+				event.source = querySource;
+			}
+		}
+
+		return logEvent( event );
+	}
+
 	// Execution logic
 
 	setCommonDefaults();
@@ -140,4 +210,6 @@
 	mw.gettingStarted.logging.getTaskForCurrentPage = getTaskForCurrentPage;
 	mw.gettingStarted.logging.getSchemaForTask = getSchemaForTask;
 	mw.gettingStarted.logging.logEvent = logEvent;
+	mw.gettingStarted.logging.getPageSchemaAction = getPageSchemaAction;
+	mw.gettingStarted.logging.logImpression = logImpression;
 }( window, document, mediaWiki, jQuery ) );

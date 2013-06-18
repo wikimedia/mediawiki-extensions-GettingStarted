@@ -1,6 +1,6 @@
 ( function ( $, mw ) {
 	$( document ).ready( function () {
-		var $toolbar, $left, $center, $right, $tryAnother, $close,
+		var $toolbar, $left, $center, $centerMessage, $right, $tryAnother, $close,
 		toolbarInfo, $relativeElements, $marginElements, logging,
 		cfg, $returnToList, returnToListUri, tryAnotherUri, $showGuide,
 		fullTask;
@@ -43,6 +43,10 @@
 
 		$center = $( '<div>' ).attr( {
 			'class': 'mw-gettingstarted-toolbar-center'
+		} );
+
+		$centerMessage = $( '<span>' ).attr( {
+			'class': 'mw-gettingstarted-toolbar-center-message'
 		} ).text( mw.message( toolbarInfo.description ) );
 
 		$showGuide = $( '<a>' ).attr( {
@@ -55,7 +59,7 @@
 				evt.stopPropagation();
 			} );
 
-		$center.append( $showGuide );
+		$center.append( $centerMessage, $showGuide );
 
 
 		tryAnotherUri = new mw.Uri(
@@ -97,8 +101,8 @@
 			logging.setTask( title.getPrefixedText(), null );
 
 			$toolbar.slideUp( 200, function () {
-				$relativeElements.removeClass( 'mw-gettingstarted-relative-40' );
-				$marginElements.removeClass( 'mw-gettingstarted-margin-40' );
+				$relativeElements.removeClass( 'mw-gettingstarted-relative-vshift' );
+				$marginElements.removeClass( 'mw-gettingstarted-margin-vshift' );
 			} );
 		} );
 
@@ -116,10 +120,13 @@
 		$marginElements = $( '#mw-head, #mw-panel' );
 
 		function showToolbarInternal() {
-			$relativeElements.addClass( 'mw-gettingstarted-relative-40' );
-			$marginElements.addClass( 'mw-gettingstarted-margin-40' );
+			$relativeElements.addClass( 'mw-gettingstarted-relative-vshift' );
+			$marginElements.addClass( 'mw-gettingstarted-margin-vshift' );
 
 			$toolbar.slideDown( 200, function () {
+				var schemaAction = logging.getPageSchemaAction();
+
+				logging.logImpression( fullTask, schemaAction );
 				mw.libs.guiders.reposition();
 			} );
 		}

@@ -26,14 +26,14 @@ class GettingStartedHooks {
 	// There is used unprefixed for legacy reasons.
 	const COOKIE_NAME = 'openTask';
 
-	const SCHEMA_REV_ID = 5496876;
+	const SCHEMA_REV_ID = 5588671;
 
 	// Keep following two lines in sync with ext.gettingstarted.logging.js
 	// These are for the primary schema.  There is a secondary schema,
 	// GettingStartedNavbarNoArticle, for a particular error case.
 	//
 	// TODO (mattflaschen, 2013-05-20): Consider exporting this to JS so it's not redundant.
-	const LOGGING_VERSION = 3;
+	const LOGGING_VERSION = 4;
 	const SCHEMA_NAME = 'GettingStartedNavbar';
 
 	const INTRO_OPTION = 'gettingstarted-task-toolbar-show-intro';
@@ -141,7 +141,10 @@ class GettingStartedHooks {
 	}
 
 	/**
-	 * Checks if the task toolbar should be loaded
+	 * Checks if the task toolbar should be loaded.
+	 *
+	 * It will load if they are in the test group, it's a view, and they have a
+	 * gettingstarted-* task.
 	 *
 	 * @param OutputPage $out
 	 * @param User $user

@@ -173,10 +173,21 @@ $wgResourceModules[ 'ext.gettingstarted.styles' ] = array(
 	'styles' => 'ext.gettingstarted.css',
 ) + $gettingStartedModuleInfo;
 
-// Added if they are in the test group and this page is one of their GettingStarted tasks
+// Added if this page is one of their GettingStarted tasks
 $wgResourceModules[ 'ext.gettingstarted.taskToolbar' ] = array(
 	'scripts' => 'ext.gettingstarted.taskToolbar.js',
-	'styles' => 'ext.gettingstarted.taskToolbar.css',
+	'styles' => array(
+		'ext.gettingstarted.taskToolbar.css' => array( 'media' => 'screen ' ),
+		'ext.gettingstarted.taskToolbar.lowWidth.css' =>
+			array( 'media' => 'only screen and (min-width: 851px) and (max-width: 1005px)' ),
+
+		// Requires fix for https://bugzilla.wikimedia.org/show_bug.cgi?id=49722 and
+		// https://bugzilla.wikimedia.org/show_bug.cgi?id=49851 to work on printable=yes view.
+		//
+		// But works for small screens and actual printouts now.  Keep print before screen.
+		'ext.gettingstarted.taskToolbar.hidden.css' =>
+			array( 'media' =>'print, only screen and (max-width: 850px)' ),
+	),
 	'dependencies' => array(
 		'mediawiki.action.view.postEdit',
 		'mediawiki.jqueryMsg',
