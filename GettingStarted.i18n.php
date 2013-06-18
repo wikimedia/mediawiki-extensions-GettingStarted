@@ -1254,6 +1254,7 @@ $messages['sr-ec'] = array(
 
 /** Swedish (svenska)
  * @author Ainali
+ * @author Jopparn
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
@@ -1261,10 +1262,27 @@ $messages['sv'] = array(
 	'gettingstarted-desc' => 'Lägger till en [[Special:GettingStarted|välkomstsida]] för nya användare (visas efter kontot har skapats)',
 	'gettingstarted-welcomesiteuser' => 'Välkommen till $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Komma igång',
+	'gettingstarted-welcome-back-site-user' => 'Välkommen tillbaka, $2',
 	'gettingstarted-return' => 'Nej tack, gå tillbaka där jag var', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:Komigång',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tagg]]: ny bidragsgivare [[{{MediaWiki:gettingstarted-project-link}}|kom i gång]]',
 	'tag-gettingstarted_edit-description' => 'Redigering av en sida som användaren valde från listan i [[Special:GettingStarted|Kom i gång]]',
+	'gettingstarted-task-copyedit-main-description' => 'Fixa stavning & grammatik',
+	'gettingstarted-task-copyedit-secondary-description' => 'Det enklaste sättet att komma igång!',
+	'gettingstarted-task-clarify-secondary-description' => 'Förenkla eller formulera om meningar.',
+	'gettingstarted-task-addlinks-main-description' => 'Lägg till länkar',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Tillbaka till listan',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Återgå till listan med artiklar',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Visa hjälp',
+	'gettingstarted-task-toolbar-editing-help-title' => 'Visa en guide om hur man redigerar',
+	'gettingstarted-task-toolbar-try-another-text' => 'Försök med en annan artikel ►',
+	'gettingstarted-task-toolbar-close-title' => 'Stäng detta verktygsfält',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Denna artikel har stavnings- och grammatikfel som du kan åtgärda.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Gå till en slumpmässig artikel som du kan förbättra genom copyediting',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Gå till en slumpmässig artikel du kan klargöra',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Den här artikeln behöver fler länkar. Leta efter termer som har en artikel på {{SITENAME}}.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Gå till en slumpmässig artikel där du kan lägga till länkar',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Hur du kommer igång',
 );
 
 /** Tamil (தமிழ்)
