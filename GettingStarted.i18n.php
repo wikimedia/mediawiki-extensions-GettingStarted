@@ -249,12 +249,24 @@ $messages['be-tarask'] = array(
 	'gettingstarted' => 'Пачатак працы',
 	'gettingstarted-desc' => 'Дадае [[Special:GettingStarted|вітальную старонку]] для новых удзельнікаў (паказваецца па стварэньні рахунку)',
 	'gettingstarted-welcomesiteuser' => 'Вітаем у {{GRAMMAR:месны|$1}}, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Вітаем у {{GRAMMAR:месны|$1}}', # Fuzzy
-	'gettingstarted-return' => 'Не, дзякую, вярніце мяне назад', # Fuzzy
+	'gettingstarted-welcomesiteuseranon' => 'Пачатак працы',
+	'gettingstarted-welcome-back-site-user' => 'Вітаем зноў, $2',
+	'gettingstarted-task-header' => 'Дзякуй за тое, што далучыліся да {{GRAMMAR:родны|{{SITENAME}}}}! Вось вам некалькі спосабаў хутка ўключыцца ў працу.
+
+Выберыце варыянт ніжэй, і вы пабачыце адвольны артыкул, які патрабуе дагляду.',
+	'gettingstarted-return' => '← Не, дзякую, вярніце мяне назад',
 	'gettingstarted-project-link' => '{{ns:Project}}:Пачатак працы',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Метка]]: [[{{MediaWiki:gettingstarted-project-link}}|пачатак працы]] новага рэдактара',
 	'tag-gettingstarted_edit-description' => 'Рэдагаваньне старонкі зь сьпісу задачаў на старонцы «[[Special:GettingStarted|З чаго пачаць]]», якую абраў удзельнік',
-	'gettingstarted-task-copyedit-main-description' => 'Вычытка', # Fuzzy
+	'gettingstarted-task-copyedit-main-description' => 'Артаграфія і граматыка',
+	'gettingstarted-task-copyedit-secondary-description' => 'Найлягчэйшы спосаб для пачаткоўцы!',
+	'gettingstarted-task-clarify-main-description' => 'Удакладненьне',
+	'gettingstarted-task-clarify-secondary-description' => 'Спрашчэньне або перафармуляваньне сьцверджаньняў.',
+	'gettingstarted-task-addlinks-main-description' => 'Спасылкі',
+	'gettingstarted-task-addlinks-secondary-description' => 'Злучэньне артыкулаў {{GRAMMAR:родны|{{SITENAME}}}}.',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Назад да сьпісу',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Вярнуцца да сьпісу артыкулаў',
+	'gettingstarted-task-toolbar-try-another-text' => 'Паспрабуйце іншы артыкул  ►',
 );
 
 /** Breton (brezhoneg)
@@ -1283,6 +1295,15 @@ $messages['sv'] = array(
 	'gettingstarted-task-addlinks-toolbar-description' => 'Den här artikeln behöver fler länkar. Leta efter termer som har en artikel på {{SITENAME}}.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Gå till en slumpmässig artikel där du kan lägga till länkar',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Hur du kommer igång',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Börja bara titta igenom artikeln efter förbättringar. Om du känner dig överväldigad, oroa dig inte. Du behöver inte vara expert på ämnet. Om du behöver hjälp eller vill försöka med en annan artikel så använder du länkarna i det översta fältet.',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Idéer på vad du kan göra',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Dessa banners identifiera problem med denna artikel. Du behöver inte ta itu med dem alla, fokusera bara på de som du känner dig bekväm med att åtgärda.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Klicka på {{int:vector-view-edit}}',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Du kan redigera hela artikeln genom att klicka här.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Redigera ett avsnitt',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Om du vill redigera ett särskilt avsnitt, kan du klicka på den blå länken '{{int:editsection}}', högst upp i varje avsnitt.",
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} är en fri encyklopedi skriven av människor som dig. [[Special:GettingStarted|Kom igång]] genom att göra din första redigering!',
+	'notification-gettingstarted-start-editing-email-subject' => 'Komma igång genom att redigera {{SITENAME}}',
 );
 
 /** Tamil (தமிழ்)
