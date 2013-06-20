@@ -10,7 +10,8 @@
  */
 ( function ( window, document, mw, $ ) {
 	'use strict';
-	var SCHEMA_NAME = 'GettingStartedNavbar';
+	var SCHEMA_NAME = 'GettingStartedNavbar',
+		cookieOptions = { path: '/' };
 
 	/**
 	 * Log an event with the GettingStarted schema
@@ -119,9 +120,9 @@
 		if ( $.isEmptyObject( tasks ) ) {
 			// TODO (2012-01 spage) use removeCookie() when we upgrade to
 			// jquery.cookie version 1.2
-			$.cookie( 'openTask', null );
+			$.cookie( 'openTask', null, cookieOptions );
 		} else {
-			$.cookie( 'openTask', $.toJSON( tasks ), { path: '/' } );
+			$.cookie( 'openTask', $.toJSON( tasks ), cookieOptions );
 		}
 	}
 
