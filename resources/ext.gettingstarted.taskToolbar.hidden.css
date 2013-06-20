@@ -1,0 +1,12 @@
+#mw-gettingstarted-toolbar {
+	/* Overide jQuery slideDown's inline style */
+	display: none !important;
+}
+
+.mw-gettingstarted-relative-vshift {
+	top: 0;
+}
+
+.mw-gettingstarted-margin-vshift {
+	margin-top: 0;
+}

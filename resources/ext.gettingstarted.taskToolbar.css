@@ -2,12 +2,12 @@
    below the onboarding toolbar.
    TODO (mattflaschen, 2013-04-18): This can probably be done in a better way. */
 
-.mw-gettingstarted-relative-40 {
+.mw-gettingstarted-relative-vshift {
 	position: relative;
 	top: 40px;
 }
 
-.mw-gettingstarted-margin-40 {
+.mw-gettingstarted-margin-vshift {
 	margin-top: 40px;
 }
 
