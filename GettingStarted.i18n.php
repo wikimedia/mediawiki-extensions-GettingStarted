@@ -1332,9 +1332,12 @@ $messages['uk'] = array(
 	'gettingstarted' => 'Початок роботи',
 	'gettingstarted-desc' => 'Додає [[Special:GettingStarted|вітальну сторінку]] для нових користувачів (показується після створення облікового запису)',
 	'gettingstarted-welcomesiteuser' => 'Вітаємо у проекті $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Вітаємо у проекті $1!', # Fuzzy
+	'gettingstarted-welcomesiteuseranon' => 'Початок роботи',
+	'gettingstarted-welcome-back-site-user' => 'Вітаємо знову, $2',
 	'gettingstarted-return' => 'Ні, дякую, поверніть мене назад', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Назад до списку',
+	'gettingstarted-task-toolbar-try-another-text' => 'Спробувати іншу статтю ►',
 );
 
 /** Urdu (اردو)
