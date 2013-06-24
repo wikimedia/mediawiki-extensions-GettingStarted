@@ -1275,12 +1275,13 @@ $messages['sv'] = array(
 	'gettingstarted-welcomesiteuser' => 'Välkommen till $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Komma igång',
 	'gettingstarted-welcome-back-site-user' => 'Välkommen tillbaka, $2',
-	'gettingstarted-return' => 'Nej tack, gå tillbaka där jag var', # Fuzzy
+	'gettingstarted-return' => 'Nej tack, gå tillbaka till sidan jag läste',
 	'gettingstarted-project-link' => '{{ns:Project}}:Komigång',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tagg]]: ny bidragsgivare [[{{MediaWiki:gettingstarted-project-link}}|kom i gång]]',
 	'tag-gettingstarted_edit-description' => 'Redigering av en sida som användaren valde från listan i [[Special:GettingStarted|Kom i gång]]',
 	'gettingstarted-task-copyedit-main-description' => 'Fixa stavning & grammatik',
 	'gettingstarted-task-copyedit-secondary-description' => 'Det enklaste sättet att komma igång!',
+	'gettingstarted-task-clarify-main-description' => 'Förbättra tydligheten',
 	'gettingstarted-task-clarify-secondary-description' => 'Förenkla eller formulera om meningar.',
 	'gettingstarted-task-addlinks-main-description' => 'Lägg till länkar',
 	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Tillbaka till listan',
@@ -1304,6 +1305,7 @@ $messages['sv'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Om du vill redigera ett särskilt avsnitt, kan du klicka på den blå länken '{{int:editsection}}', högst upp i varje avsnitt.",
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} är en fri encyklopedi skriven av människor som dig. [[Special:GettingStarted|Kom igång]] genom att göra din första redigering!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Komma igång genom att redigera {{SITENAME}}',
+	'notification-gettingstarted-continue-editing-email-subject' => 'Enkla sätt att förbättra {{SITENAME}}',
 );
 
 /** Tamil (தமிழ்)
