@@ -10,7 +10,7 @@
 
 	// No task or no schema.
 	// Expected to be task but not schemaAction in cases such as the history view.
-	if ( !task || !schemaAction) {
+	if ( !task || !schemaAction ) {
 		return;
 	}
 
