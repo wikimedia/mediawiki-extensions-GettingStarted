@@ -892,8 +892,18 @@ $messages['lb'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Wann Dir e bestëmmten Abschnitt ännere wëllt, da klickt op de bloen  '{{int:editsection}}' Link uewen op all Abschnitt.",
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} ass eng fräi Enzyklopedie geschriwwe vu Leit wéi Iech. [[Special:GettingStarted|Fänkt un]] andeems Dir Är éischt Ännerung maacht!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Ufänke mat Änneren op {{SITENAME}}',
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} ass eng fräi Encyclopedie, geschriwwe vu Leit wéi Iech. Fänkt un, andeem Dir eng éischt Ännerung maacht!
+
+Besicht $2 fir eng Lëscht wéi Dir einfach Säite verbessere kënnt.
+
+$3',
 	'notification-gettingstarted-start-editing-text-email-batch-body' => "Fänkt un op {{SITENAME}} z'änneren andeem Dir op $2 gitt",
 	'notification-gettingstarted-continue-editing-email-subject' => 'Einfach Manéiere fir {{SITENAME}} ze verbesseren',
+	'notification-gettingstarted-continue-editing-text-email-body' => 'Gutt geschafft! Dir hutt schonn Är éischt Ännerung op {{SITENAME}} gemaacht.
+
+Wann Dir méi maache wëllt fannt Dir eng Lëscht wéi Dir einfach hëllefe kënnt op $2
+
+$3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Wëllt Dir méi maachen? Besicht $2 fir eng Lëscht vun einfache Méiglechkeete wéi Dir eng Hand upake kënnt.',
 );
 
