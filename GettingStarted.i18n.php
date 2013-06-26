@@ -66,6 +66,7 @@ Choose an option below, and you will see a random article that needs help.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'If you want to edit a specific section, you can click on the blue \'{{int:editsection}}\' link at the top of each section.',
 
 	// Notifications
+	'notification-gettingstarted-link-text-get-started' => 'Get started',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} is a free encyclopedia written by people like you. [[Special:GettingStarted|Get started]] by making your first edit!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Get started with editing {{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} is a free encyclopedia written by people like you. Get started by making your first edit!
@@ -150,6 +151,7 @@ The label for the link is {{msg-mw|Gettingstarted-task-toolbar-try-another-text}
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Used as tooltip for the link to try another article for the link-adding task.
 
 The label for the link is {{msg-mw|Gettingstarted-task-toolbar-try-another-text}}.',
+	'notification-gettingstarted-link-text-get-started' => 'Label for button that links to the page to get started for editing',
 	'notification-gettingstarted-start-editing' => 'Text shown on web when someone confirms their email but has not yet edited the main namespace:
 * $1 - username (unused); GENDER is supported',
 	'notification-gettingstarted-start-editing-email-subject' => 'Subject of email sent when someone confirms their email but has not yet edited the main namespace:

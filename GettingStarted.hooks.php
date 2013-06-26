@@ -314,6 +314,7 @@ class GettingStartedHooks {
 		);
 
 		$defaults = array(
+			'primary-link' => array( 'message' => 'notification-gettingstarted-link-text-get-started', 'destination' => 'title' ),
 			'category' => 'system',
 			'group' => 'neutral',
 			'title-params' => array( 'agent' ),
