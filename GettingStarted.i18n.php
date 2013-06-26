@@ -800,7 +800,7 @@ $messages['ja'] = array(
 	'gettingstarted-welcomesiteuser' => '$2さん、$1へようこそ!',
 	'gettingstarted-welcomesiteuseranon' => 'はじめに',
 	'gettingstarted-welcome-back-site-user' => '$2さん、おかえりなさい',
-	'gettingstarted-return' => '← 不要です。元の場所に戻ります', # Fuzzy
+	'gettingstarted-return' => '← 不要です。元のページに戻ります',
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	'tag-gettingstarted_edit-description' => '利用者が [[Special:GettingStarted|Getting started]] のタスク一覧から選択したページの編集',
 	'gettingstarted-task-copyedit-main-description' => 'スペルや文法の修正',
@@ -898,6 +898,7 @@ Besicht $2 fir eng Lëscht wéi Dir einfach Säite verbessere kënnt.
 
 $3',
 	'notification-gettingstarted-start-editing-text-email-batch-body' => "Fänkt un op {{SITENAME}} z'änneren andeem Dir op $2 gitt",
+	'notification-gettingstarted-continue-editing' => 'Gutt geschafft! Dir hutt schonn Är éischt Ännerungen op {{SITENAME}} gemaach. Wann Dir méi maache wëllt, hei sinn e puer [[Special:GettingStarted|einfach Saache wou Dir eng Hand upake kënnt]].',
 	'notification-gettingstarted-continue-editing-email-subject' => 'Einfach Manéiere fir {{SITENAME}} ze verbesseren',
 	'notification-gettingstarted-continue-editing-text-email-body' => 'Gutt geschafft! Dir hutt schonn Är éischt Ännerung op {{SITENAME}} gemaacht.
 
