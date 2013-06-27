@@ -153,6 +153,14 @@ The label for the link is {{msg-mw|Gettingstarted-task-toolbar-try-another-text}
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Used as tooltip for the link to try another article for the link-adding task.
 
 The label for the link is {{msg-mw|Gettingstarted-task-toolbar-try-another-text}}.',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Title of step shown when they choose a GettingStarted task for the first time.',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Description of step shown when they choose a GettingStarted task for the first time.',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Title of step pointing to article message box (which states suggested improvements).',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Description of step pointing to article message box (which states suggested improvements).',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Title of step showing user where to click {{msg-mw|vector-view-edit}}.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Description of step showing user where to click {{msg-mw|vector-view-edit}}.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Title of step showing user how to edit a section.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Description of step showing user how to edit a section.',
 	'notification-gettingstarted-link-text-get-started' => 'Label for button that links to the page to get started for editing.
 {{Identical|Get started}}',
 	'notification-gettingstarted-start-editing' => 'Text shown on web when someone confirms their email but has not yet edited the main namespace:
