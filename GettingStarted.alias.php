@@ -18,6 +18,11 @@ $specialPageAliases['de'] = array(
 	'GettingStarted' => array( 'Anfangen' ),
 );
 
+/** Zazaki (Zazaki) */
+$specialPageAliases['diq'] = array(
+	'GettingStarted' => array( 'ŞoSerterin' ),
+);
+
 /** Esperanto (Esperanto) */
 $specialPageAliases['eo'] = array(
 	'GettingStarted' => array( 'Komencado', 'Komencante' ),
