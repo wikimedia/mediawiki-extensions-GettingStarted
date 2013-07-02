@@ -90,7 +90,8 @@ $3',
  * @author spage
  */
 $messages['qqq'] = array(
-	'gettingstarted' => '{{doc-special|GettingStarted}}',
+	'gettingstarted' => '{{doc-special|GettingStarted}}
+{{Identical|Getting started}}',
 	'gettingstarted-desc' => '{{desc|name=Getting Started|url=http://www.mediawiki.org/wiki/Extension:GettingStarted}}',
 	'gettingstarted-msg' => 'Blank message used to replace welcomecreation-msg.  Additional dynamically generated task HTML is injected',
 	'gettingstarted-welcomesiteuser' => 'The title of the Getting Started page shown automatically to users after they create an account
@@ -98,7 +99,8 @@ $messages['qqq'] = array(
 * $2 - username; GENDER is supported',
 	'gettingstarted-welcomesiteuseranon' => 'The title of the Getting Started page for anonymous users who manually visit it.
 The parameter is not used in the default message.
-* $1 - sitename',
+* $1 - sitename
+{{Identical|Getting started}}',
 	'gettingstarted-welcome-back-site-user' => 'The title of the Getting Started page for logged in users who manually visit it.
 These may or may not have seen it when they created their account, depending on account age.
 Only $2 is currently used in the default message, but the order is the same as {{msg-mw|gettingstarted-welcomesiteuser}} for consistency.
@@ -151,7 +153,8 @@ The label for the link is {{msg-mw|Gettingstarted-task-toolbar-try-another-text}
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Used as tooltip for the link to try another article for the link-adding task.
 
 The label for the link is {{msg-mw|Gettingstarted-task-toolbar-try-another-text}}.',
-	'notification-gettingstarted-link-text-get-started' => 'Label for button that links to the page to get started for editing',
+	'notification-gettingstarted-link-text-get-started' => 'Label for button that links to the page to get started for editing.
+{{Identical|Get started}}',
 	'notification-gettingstarted-start-editing' => 'Text shown on web when someone confirms their email but has not yet edited the main namespace:
 * $1 - username (unused); GENDER is supported',
 	'notification-gettingstarted-start-editing-email-subject' => 'Subject of email sent when someone confirms their email but has not yet edited the main namespace:
@@ -351,6 +354,7 @@ Wähle unten eine Option aus und du wirst sehen, dass ein zufälliger Artikel Hi
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Du kannst den ganzen Artikel bearbeiten, indem du hier klickst.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Einen Abschnitt bearbeiten',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Falls du einen bestimmten Abschnitt bearbeiten möchtest, kannst du auf den blauen „{{int:editsection}}“-Link zu Beginn jeden Abschnitts klicken.',
+	'notification-gettingstarted-link-text-get-started' => 'Erste Schritte',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} ist eine freie Enzyklopädie, verfasst von Leuten wie dir. [[Special:GettingStarted|Fang an]], indem du deine erste Bearbeitung machst!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Fang an, {{SITENAME}} zu bearbeiten',
 	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} ist eine freie Enzyklopädie, verfasst von Leuten wie dir. Fang an, indem du deine erste Bearbeitung machst!
@@ -542,6 +546,7 @@ Choisissez une option ci-dessous et vous verrez un article pris au hasard qui a 
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => "Vous pouvez modifier l'article en entier en cliquant ici.",
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Modifier une section',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Si vous souhaitez modifier une section spécifique, vous pouvez cliquer sur le lien '{{int:editsection}}' bleu en haut de chaque section.",
+	'notification-gettingstarted-link-text-get-started' => 'Commencer',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} est une encyclopédie libre écrite par des gens comme vous. [[Special:GettingStarted|Débutez]] en effectuant votre première modification !',
 	'notification-gettingstarted-start-editing-email-subject' => "Débuter avec l'édition sur {{SITENAME}}",
 	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} est une encyclopédie libre écrite par des gens comme vous. Commencez par faire votre première modification !
@@ -612,6 +617,7 @@ Escolla unha das opcións inferiores para ir ata un artigo que necesite axuda.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Pode editar todo o artigo premendo aquí.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Editar unha sección',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Se quere modificar unha sección específica, pode premer na ligazón azul "{{int:editsection}}" que hai ao comezo de cada sección.',
+	'notification-gettingstarted-link-text-get-started' => 'Comezar',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} é unha enciclopedia libre escrita por xente coma vostede. [[Special:GettingStarted|Empece]] facendo a súa primeira edición!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Empece a editar {{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} é unha enciclopedia libre escrita por xente coma vostede. Empece facendo a súa primeira edición!
@@ -993,6 +999,7 @@ $messages['mk'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Стискајќи тука, можете да ја уредите целата статија',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Уреди поднаслов',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Ако сакате да уредите даден поднаслов, стиснете на сината врска „{{int:editsection}}“ до него.',
+	'notification-gettingstarted-link-text-get-started' => 'Започнете',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} е слободна енциклопедија што ја пишуваат луѓе како вас. [[Special:GettingStarted|Почнете]] со вашето прво уредување!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Започнете со уредување на {{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} е слободна енциклопедија што ја пишуваат луѓе како вас. Почнете со вашето прво уредување!
