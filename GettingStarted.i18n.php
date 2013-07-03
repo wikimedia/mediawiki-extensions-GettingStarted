@@ -229,6 +229,7 @@ Escueya una de les opciones de más abaxo, y verá un artículu al debalu que ne
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => "Pue editar l'artículu enteru calcando equí.",
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Editar una seición',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Si quier editar una seición específica, pue calcar nel enllaz azul '{{int:editsection}}' del principiu de cada seición.",
+	'notification-gettingstarted-link-text-get-started' => 'Primeros pasos',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} ye una enciclopedia llibre escrita por xente como vusté. ¡De los [[Special:GettingStarted|primeros pasos]] faciendo la so primera edición!',
 	'notification-gettingstarted-start-editing-email-subject' => 'De los primeros pasos editando {{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-body' => "{{SITENAME}} ye una enciclopedia llibre escrita por xente como vusté. ¡De los primeros pasos faciendo la primera edición!
