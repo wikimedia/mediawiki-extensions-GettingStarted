@@ -152,6 +152,7 @@ $wgResourceModules['ext.guidedTour.tour.gettingstartedtasktoolbar'] = array(
 $wgResourceModules[ 'ext.gettingstarted.logging' ] = array(
 	'scripts' => 'ext.gettingstarted.logging.js',
 	'dependencies' => array(
+		'mediawiki.action.view.postEdit',
 		'jquery.cookie',
 		'jquery.json',
 		'mediawiki.Title',
