@@ -746,6 +746,7 @@ $messages['id'] = array(
 	'gettingstarted-welcomesiteuser' => 'Selamat datang di $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Selamat datang di $1!', # Fuzzy
 	'gettingstarted-return' => 'Tidak, terima kasih. Bawa saya kembali', # Fuzzy
+	'notification-gettingstarted-link-text-get-started' => 'Memulai',
 );
 
 /** Italian (italiano)
@@ -1061,6 +1062,7 @@ Pilih satu pilihan di bawah, dan anda akan melihat sebuah rencana pilihan rawak 
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Anda boleh menyunting keseluruhan rencana dengan mengklik di sini.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Sunting satu bahagian',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Jika anda ingin menyunting suatu bahagian tertentu, anda boleh klik pada pautan biru '{{int:editsection}}' di atas setiap bahagian.",
+	'notification-gettingstarted-link-text-get-started' => 'Mulakan',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} merupakan sebuah ensiklopedia bebas yang dikarang oleh orang ramai seperti anda. [[Special:GettingStarted|Mulakan]] dengan membuat suntingan pertama anda!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Bermula dengan menyunting {{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} adalah sebuah ensiklopedia yang diusahakan oleh orang keramaian seperti anda. Bermulalah dengan membuat suntingan pertama anda!
