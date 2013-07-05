@@ -1153,6 +1153,13 @@ $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Zoekt u nog meer te doen? Volg deze koppeling voor een lijst met eenvoudige manieren om te helpen: $2',
 );
 
+/** Polish (polski)
+ * @author Rzuwig
+ */
+$messages['pl'] = array(
+	'gettingstarted-welcome-back-site-user' => 'Witaj ponownie, $2',
+);
+
 /** Piedmontese (Piemontèis)
  * @author Borichèt
  * @author Dragonòt
