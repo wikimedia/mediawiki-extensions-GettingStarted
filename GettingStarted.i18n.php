@@ -714,12 +714,12 @@ $messages['hsb'] = array(
 	'gettingstarted-welcomesiteuser' => 'Witaj do $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Prěnje kroki',
 	'gettingstarted-welcome-back-site-user' => 'Witaj wróćo, $2',
-	'gettingstarted-return' => 'Ně, dźakuju so, dźi wróćo', # Fuzzy
+	'gettingstarted-return' => 'Ně, dźakuju so, dźi wróćo k přečitanej stronje',
 	'gettingstarted-project-link' => '{{ns:Project}}:Prěnje kroki',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Značka]]: [[{{MediaWiki:gettingstarted-project-link}}|Prěnje kroki]] noweho wobdźěłarja',
 	'tag-gettingstarted_edit-description' => 'Změna strony, kotruž wužiwar je z lisćiny nadawkow ze strony [[Special:GettingStarted|Prěnje kroki]] wubrał',
-	'gettingstarted-task-copyedit-main-description' => 'Gramatiku a prawopis korigować', # Fuzzy
-	'gettingstarted-task-clarify-main-description' => 'Jasnosć polěpšić', # Fuzzy
+	'gettingstarted-task-copyedit-main-description' => 'Prawopis a gramatiku korigować',
+	'gettingstarted-task-clarify-main-description' => 'Jasnosć polěpšić',
 );
 
 /** Hungarian (magyar)

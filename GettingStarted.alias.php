@@ -53,6 +53,11 @@ $specialPageAliases['mk'] = array(
 	'GettingStarted' => array( 'КакоДаПочнете' ),
 );
 
+/** Low Saxon (Netherlands) (Nedersaksies) */
+$specialPageAliases['nds-nl'] = array(
+	'GettingStarted' => array( 'An_de_slag' ),
+);
+
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'GettingStarted' => array( 'AanDeSlag' ),
