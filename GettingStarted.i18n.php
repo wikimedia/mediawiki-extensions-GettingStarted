@@ -1432,6 +1432,7 @@ $messages['vi'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Nhấn chuột vào đây để sửa toàn bộ bài.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Sửa đổi phần',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Để chỉ sửa đổi một phần, bạn có thể nhấn chuột vào liên kết “{{int:editsection}}” màu xanh bên cạnh đề mục của phần đó.',
+	'notification-gettingstarted-link-text-get-started' => 'Bắt đầu',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} là bách khoa toàn thư mở do công sức của nhiều người như bạn. Hãy [[Special:GettingStarted|bắt đầu đóng góp]] với thay đổi đầu tiên của bạn!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Bắt đầu sửa đổi {{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} là bách khoa toàn thư mở do công sức của nhiều người như bạn. Hãy bắt đầu đóng góp với thay đổi đầu tiên của bạn!
