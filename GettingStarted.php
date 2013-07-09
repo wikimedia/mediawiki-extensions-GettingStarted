@@ -147,6 +147,29 @@ $wgResourceModules['ext.guidedTour.tour.gettingstartedtasktoolbar'] = array(
 	),
 ) + $gettingStartedModuleInfo;
 
+$wgResourceModules['ext.guidedTour.tour.gettingstartedtasktoolbarve'] = array(
+	'scripts' => 'tours/gettingstartedtasktoolbarve.js',
+	'dependencies' => array(
+		'ext.guidedTour',
+		'ext.gettingstarted.logging',
+	),
+	'messages' => array(
+		'editsection',
+		'vector-view-edit',
+		'visualeditor-toolbar-savedialog',
+		'guidedtour-tour-gettingstartedtasktoolbar-ambox-title',
+		'guidedtour-tour-gettingstartedtasktoolbar-ambox-description',
+		'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title',
+		'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description',
+		'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title',
+		'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description',
+		'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title',
+		'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description',
+		'guidedtour-tour-gettingstarted-end-title',
+		'guidedtour-tour-gettingstarted-end-description',
+	),
+) + $gettingStartedModuleInfo;
+
 // ext.gettingstarted.logging and ext.gettingstarted.openTask are on every page site-wide
 // regardless of bucket.
 $wgResourceModules[ 'ext.gettingstarted.logging' ] = array(
@@ -199,7 +222,6 @@ $wgResourceModules[ 'ext.gettingstarted.taskToolbar' ] = array(
 		'mediawiki.libs.guiders',
 		'ext.guidedTour.lib',
 		'ext.guidedTour.tour.gettingstartedtasktoolbarintro',
-		'ext.guidedTour.tour.gettingstartedtasktoolbar',
 		'ext.gettingstarted.logging',
 	),
 	'messages' => array(

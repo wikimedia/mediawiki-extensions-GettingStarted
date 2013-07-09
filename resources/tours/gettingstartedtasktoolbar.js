@@ -1,4 +1,5 @@
 // Tour started on article page, with task toolbar showing
+// Used for wikitext editing.  The 'gettingstartedtasktoolbarve' tour is for VisualEditor.
 
 ( function ( window, document, $, mw, gt ) {
 	var task = mw.gettingStarted.logging.getTaskForCurrentPage() || '',
@@ -16,6 +17,7 @@
 	gt.defineTour( {
 		name: 'gettingstartedtasktoolbar',
 		shouldLog: true,
+		showConditionally: 'wikitext',
 		steps: [ {
 			titlemsg: 'guidedtour-tour-gettingstartedtasktoolbar-ambox-title',
 			descriptionmsg: 'guidedtour-tour-gettingstartedtasktoolbar-ambox-description',
