@@ -37,26 +37,26 @@ Choose an option below, and you will see a random article that needs help.',
 	// Toolbar above article, when they have chosen a task and been redirected
 
 	/// Shared among all tasks
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Back to list',
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Return to the list of articles',
-	'gettingstarted-task-toolbar-editing-help-text' => 'Show help',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Choose another task',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Return to the task choice page',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Show me how',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Show a guide on how to edit',
 	'gettingstarted-task-toolbar-try-another-text' => 'Try another article ►',
 	'gettingstarted-task-toolbar-close-title' => 'Close this toolbar',
 
 	/// Specific to each task
-	'gettingstarted-task-copyedit-toolbar-description' => 'This article has spelling and grammar errors you can fix.',
+	'gettingstarted-task-copyedit-toolbar-description' => 'This article may have spelling or grammar errors you can fix.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Go to a random article you can improve by copyediting',
 
-	'gettingstarted-task-clarify-toolbar-description' => 'This article is confusing or vague. Look for ways you can make it clearer.',
+	'gettingstarted-task-clarify-toolbar-description' => 'This article may be confusing or vague. Look for ways you can make it clearer.',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Go to a random article you can clarify',
 
-	'gettingstarted-task-addlinks-toolbar-description' => 'This article needs more links. Look for terms that have a {{SITENAME}} article.',
+	'gettingstarted-task-addlinks-toolbar-description' => 'This article may need more links. Look for terms that have a {{SITENAME}} article.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Go to a random article you can add links to',
 
 	// Tours
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'How to get started',
-	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Just start scanning through the article and looking for improvements. If you feel overwhelmed, don\'t worry. You don\'t have to be an expert on this topic! If you need help or want to try another article, use the links in the top bar.',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Just start scanning through the article looking for improvements. If you feel overwhelmed, don\'t worry. You don\'t have to be an expert on this topic! If you need help or want to try another article, use the links in the top bar.',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Ideas on what to do',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'These banners identify problems with this article. You don\'t need to address them all, just stick with what you\'re comfortable doing.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Click {{int:vector-view-edit}}',
