@@ -22,6 +22,9 @@ class SpecialGettingStarted extends SpecialPage {
 			$title->getPrefixedDBkey() !== $excludedPageName;
 		return $length > 0
 			&& $length <= self::MAX_ARTICLE_LENGTH
+			// RedisCategorySync ignores category changes outside NS_MAIN,
+			// but CategoryRoulette can still return pages outside.
+			&& $title->inNamespace( NS_MAIN )
 			&& $passesExclude
 			&& $title->userCan( 'edit', $user )
 			&& !$this->inExcludedCategories( $title );

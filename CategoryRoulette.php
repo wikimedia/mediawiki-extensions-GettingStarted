@@ -27,7 +27,7 @@ class CategoryRoulette {
 	}
 
 	/**
-	 * Get a random set of $numWanted unique articles (NS_MAIN) in the
+	 * Get a random set of $numWanted unique pages in the
 	 * category. If fewer than $numWanted pages exist in category,
 	 * return as many as are available. It is up to the caller to decide
 	 * how to handle the deficit.
