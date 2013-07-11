@@ -28,6 +28,11 @@ $specialPageAliases['eo'] = array(
 	'GettingStarted' => array( 'Komencado', 'Komencante' ),
 );
 
+/** Persian (فارسی) */
+$specialPageAliases['fa'] = array(
+	'GettingStarted' => array( 'شروع‌کردن' ),
+);
+
 /** Hungarian (magyar) */
 $specialPageAliases['hu'] = array(
 	'GettingStarted' => array( 'Első_lépések' ),

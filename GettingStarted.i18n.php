@@ -1162,10 +1162,12 @@ $3',
 );
 
 /** Polish (polski)
+ * @author Chrumps
  * @author Rzuwig
  */
 $messages['pl'] = array(
 	'gettingstarted-welcome-back-site-user' => 'Witaj ponownie, $2',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Jak zacząć',
 );
 
 /** Piedmontese (Piemontèis)
