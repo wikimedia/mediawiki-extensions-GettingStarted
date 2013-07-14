@@ -880,6 +880,9 @@ $messages['lb'] = array(
 	'gettingstarted-welcomesiteuser' => 'Wëllkomm op $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Fir unzefänken',
 	'gettingstarted-welcome-back-site-user' => 'Wëllkomm zréck, $2',
+	'gettingstarted-task-header' => 'Merci datt Iech op {{SITENAME}} ageschriwwen hutt! Hei sinn e puer Manéiere wéi Dir matmaache kënnt.
+
+Sicht eng Optioun hei drënner eraus an Dir kritt en zoufällegen Artikel gewisen deen nach Hëllef brauch.',
 	'gettingstarted-return' => 'Nee Merci, zréck op déi Säit déi ech am gaang war mat liesen',
 	'gettingstarted-project-link' => '{{ns:Project}}:Fir unzefänken',
 	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: Nei Auteure [[{{MediaWiki:gettingstarted-project-link}}|wéi ufänken]]',
