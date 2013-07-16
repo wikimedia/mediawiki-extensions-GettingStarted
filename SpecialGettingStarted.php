@@ -83,6 +83,16 @@ class SpecialGettingStarted extends SpecialPage {
 		return false;
 	}
 
+	/**
+	 * Displays Special:GettingStarted page, unless the request is for
+	 * Special:GettingStarted/task/kind in which case this sends the user
+	 * to that task.
+	 * If the query string contains postCreateAccount=true it indicates that
+	 * CentralAuth redirected to it after account creation.
+	 * If the query string parameter contains a returnto=somepage, that
+	 * represents the page the user was on before creating an account, and
+	 * Special:GettingStarted should style it and track user clicks on it.
+	 */
 	public function execute( $parameter ) {
 		global $wgSitename;
 
@@ -106,13 +116,35 @@ class SpecialGettingStarted extends SpecialPage {
 			}
 		}
 
+		$user = $this->getUser();
+		$request = $this->getRequest();
+		$isPostCreate = $request->getVal( 'postCreateAccount' ) === 'true' ? true : false;
+
 		$output = $this->getOutput();
 
-		$user = $this->getUser();
-		if( !$user->isAnon() ) {
-			$output->setPageTitle( $this->msg( 'gettingstarted-welcome-back-site-user', $wgSitename, $user->getName() ) );
+		if ( $isPostCreate ) {
+			// Do what GettingStartedHooks::onBeforeWelcomeCreation and
+			// SpecialUserlogin.php successfulCreation() would have done.
+
+			$output->addModules( array(
+				'ext.gettingstarted.test.accountCreation',
+				'ext.gettingstarted.common.accountCreation',
+			) );
+			// Styles are added separately so they load without needing JS
+			$output->addModuleStyles( array(
+				'mediawiki.ui',
+				'ext.gettingstarted.styles',
+			) );
+
+			$output->setPageTitle( $this->msg( 'gettingstarted-welcomesiteuser', $wgSitename, $user->getName() ) );
+
 		} else {
-			$output->setPageTitle( $this->msg( 'gettingstarted-welcomesiteuseranon', $wgSitename ) );
+
+			if( !$user->isAnon() ) {
+				$output->setPageTitle( $this->msg( 'gettingstarted-welcome-back-site-user', $wgSitename, $user->getName() ) );
+			} else {
+				$output->setPageTitle( $this->msg( 'gettingstarted-welcomesiteuseranon', $wgSitename ) );
+			}
 		}
 
 		// Styles are added separately so they load without needing JS
@@ -124,6 +156,17 @@ class SpecialGettingStarted extends SpecialPage {
 		) );
 
 		$output->addHTML( $this->getHtmlResult() );
+
+		if ( $isPostCreate ) {
+			// TODO (spage, 2013-07-17) does the CentralAuthPostLoginRedirect
+			// hook pass us a blank returnTo, or empty returnTo, or 'Main_Page'
+			// when the create account form didn't receive a returnto?
+			$returnTo = Title::newFromText( $request->getVal( 'returnto' ) );
+			$returnToQuery = wfCgiToArray( $request->getVal( 'returntoquery' ) );
+			if ( $returnTo !== null ) {
+				$output->addReturnto( $returnTo, $returnToQuery);
+			}
+		}
 	}
 
 	public function inExcludedCategories( Title $title ) {
@@ -146,6 +189,14 @@ class SpecialGettingStarted extends SpecialPage {
 		return false;
 	}
 
+	/**
+	 * Returns the main container HTML for the welcome page.
+	 *
+	 * TODO (spage, 2013-07-16) if the BeforeWelcomeCreation hook no
+	 * longer has to incorporate this HTML into the form results page,
+	 * then we can remove this and just output the HTML in execute().
+	 * @return string
+	 */
 	public function getHtmlResult() {
 		global $wgExtensionAssetsPath, $wgGettingStartedTasks;
 

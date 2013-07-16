@@ -62,6 +62,20 @@ class GettingStartedHooks {
 	}
 
 	/**
+	 * Detects if on the mobile version of the site
+	 *
+	 * @return bool
+	 */
+	protected static function isOnMobile() {
+		if ( class_exists( 'MobileContext' ) ) {
+			if ( MobileContext::singleton()->shouldDisplayMobileView() ) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	/**
 	 * Initializes openTask structure if needed.
 	 *
 	 * Reads request cookie, and uses empty array if cookie is missing
@@ -129,9 +143,7 @@ class GettingStartedHooks {
 	 * @param WebRequest $request current request
 	 * @param Title $title title to set
 	 * @param string $task task to set
-	 */
-	public static function setPageTask( WebRequest $request, Title $title, $task ) {
-		self::initializeOpenTask( $request );
+	 */ public static function setPageTask( WebRequest $request, Title $title, $task ) { self::initializeOpenTask( $request );
 
 		self::$openTask[$title->getPrefixedText()] = $task;
 
@@ -279,10 +291,8 @@ class GettingStartedHooks {
 		self::$isWelcomeCreation = true;
 
 		// Do nothing on mobile.
-		if ( class_exists( 'MobileContext' ) ) {
-			if ( MobileContext::singleton()->shouldDisplayMobileView() ) {
-				return true;
-			}
+		if ( self::isOnMobile() ) {
+			return true;
 		}
 
 		$wgOut->addModules( 'ext.gettingstarted.common.accountCreation' );
@@ -446,6 +456,63 @@ class GettingStartedHooks {
 		$preferences[self::INTRO_OPTION] = array(
 			'type' => 'api',
 		);
+
+		return true;
+	}
+
+	/**
+	 * When the CentralAuth extension has redirected away from the create
+	 * account form, preventing the BeforeWelcomeCreation hook, it runs this
+	 * hook.  In response, redirect user to Special:GettingStarted if the user
+	 * is not mobile and is in the test.
+	 */
+	public static function onCentralAuthPostLoginRedirect( &$returnTo, &$returnToQuery, $stickHTTPS, $type ) {
+		global $wgUser;
+
+		// Do nothing on mobile.
+		if ( self::isOnMobile() ) {
+			return true;
+		}
+
+		// GettingStarted only runs on signup, for now.
+		if ( $type !== 'signup' ) {
+			return true;
+		}
+
+		if ( !self::isInTestGroup( $wgUser ) ) {
+			return true;
+		}
+
+		// Want to send user to GettingStarted unless the page tells us not to with
+		// &showGettingStarted=false in the returnToQuery.
+		if ( $returnToQuery ) {
+			$qsParams = wfCgiToArray( $returnToQuery );
+			if ( array_key_exists( 'showGettingStarted', $qsParams )
+				&& $qsParams['showGettingStarted'] === 'false'
+			) {
+			return true;
+			}
+		}
+
+
+		$newQueryParams = array();
+
+		// Tell GettingStarted we arrived from creation
+		$newQueryParams['postCreateAccount'] = 'true';
+
+		// Provide GettingStarted the originating page so it can display a
+		// [← No thanks, return to the page I was reading] link, by
+		// turning the passed-in parameters back into query string parameters.
+		if ( $returnTo !== '' && $returnTo !== null ) {
+			$newQueryParams['returnto'] =  $returnTo;
+		}
+		if ( $returnToQuery ) {
+			$newQueryParams['returntoquery'] =  $returnToQuery;
+		}
+
+		// Redirect to Special:GettingStarted
+		$returnTo = SpecialPage::getTitleFor( 'GettingStarted' )->getPrefixedText();
+		$returnToQuery = wfArrayToCgi( $newQueryParams );
 
 		return true;
 	}

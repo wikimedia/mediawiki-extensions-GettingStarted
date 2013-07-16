@@ -278,3 +278,5 @@ $wgHooks[ 'EchoGetDefaultNotifiedUsers' ][] = 'GettingStartedHooks::onEchoGetDef
 $wgHooks[ 'ConfirmEmailComplete' ][] = 'GettingStartedHooks::onConfirmEmailComplete';
 $wgHooks[ 'EditPage::attemptSave' ][] = 'GettingStartedHooks::onEditPageAttemptSave';
 $wgHooks[ 'GetPreferences' ][] = 'GettingStartedHooks::onGetPreferences';
+// Extension:CentralAuth's hook
+$wgHooks[ 'CentralAuthPostLoginRedirect' ][] = 'GettingStartedHooks::onCentralAuthPostLoginRedirect';
