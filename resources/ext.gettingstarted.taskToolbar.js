@@ -103,10 +103,7 @@
 			// Clear task
 			logging.setTask( title.getPrefixedText(), null );
 
-			$toolbar.slideUp( 200, function () {
-				$relativeElements.removeClass( 'mw-gettingstarted-relative-vshift' );
-				$marginElements.removeClass( 'mw-gettingstarted-margin-vshift' );
-			} );
+			hideToolbar();
 		} );
 
 		$right = $( '<div>' ).attr( {
@@ -122,6 +119,9 @@
 		$relativeElements = $( '#mw-page-base, #mw-head-base, #content, #footer' );
 		$marginElements = $( '#mw-head, #mw-panel' );
 
+
+		// This intentionally logs again if the toolbar redisplays after VE is hidden,
+		// either due to a save or simply returning to Read.
 		function showToolbarInternal() {
 			$relativeElements.addClass( 'mw-gettingstarted-relative-vshift' );
 			$marginElements.addClass( 'mw-gettingstarted-margin-vshift' );
@@ -131,6 +131,13 @@
 
 				logging.logImpression( fullTask, schemaAction );
 				mw.libs.guiders.reposition();
+			} );
+		}
+
+		function hideToolbar() {
+			$toolbar.slideUp( 200, function () {
+				$relativeElements.removeClass( 'mw-gettingstarted-relative-vshift' );
+				$marginElements.removeClass( 'mw-gettingstarted-margin-vshift' );
 			} );
 		}
 
@@ -153,5 +160,8 @@
 			$showGuide.css( 'opacity', 1 );
 			showToolbar();
 		}
+
+		mw.hook( 've.activationComplete' ).add( hideToolbar );
+		mw.hook( 've.deactivationComplete' ).add( showToolbarInternal );
 	} );
 } ( jQuery, mediaWiki ) );
