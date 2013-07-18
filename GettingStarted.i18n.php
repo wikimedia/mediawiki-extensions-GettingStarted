@@ -463,12 +463,14 @@ $messages['et'] = array(
 
 /** Persian (فارسی)
  * @author Mjbmr
+ * @author Taha
  */
 $messages['fa'] = array(
 	'gettingstarted' => 'شروع',
 	'gettingstarted-welcomesiteuser' => '$2، به $1 خوش‌آمدید!',
 	'gettingstarted-welcomesiteuseranon' => 'به $1 خوش‌آمدید!', # Fuzzy
-	'gettingstarted-return' => 'نه متشکرم، من را برگردان', # Fuzzy
+	'gettingstarted-welcome-back-site-user' => 'خوش بازگشتید، $2',
+	'gettingstarted-return' => 'نه متشکرم، من را برگردان',
 );
 
 /** Finnish (suomi)
