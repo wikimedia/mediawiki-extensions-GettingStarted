@@ -65,6 +65,9 @@ Choose an option below, and you will see a random article that needs help.',
 	// TODO (mattflaschen, 2013-04-25): Use <nowiki>[edit]</nowiki> after bug 45173 is fixed.
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'If you want to edit a specific section, you can click on the blue \'{{int:editsection}}\' link at the top of each section.',
 
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'You can edit!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'You can now edit the page. When you\'re done, click \'{{int:visualeditor-toolbar-savedialog}}\' to review and save your changes.',
+
 	// Notifications
 	'notification-gettingstarted-link-text-get-started' => 'Get started',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} is a free encyclopedia written by people like you. [[Special:GettingStarted|Get started]] by making your first edit!',
@@ -163,6 +166,9 @@ The label for the link is {{msg-mw|Gettingstarted-task-toolbar-try-another-text}
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Description of step showing user how to edit a section.',
 	'notification-gettingstarted-link-text-get-started' => 'Label for button that links to the page to get started for editing.
 {{Identical|Get started}}',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Title of first step of GettingStarted tour that is on the VisualEditor screen.  It points to the {{msg-mw|visualeditor-toolbar-savedialog}} button.',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Description of first step of GettingStarted tour that is on the VisualEditor screen.  It points to the {{msg-mw|visualeditor-toolbar-savedialog}} button.',
+
 	'notification-gettingstarted-start-editing' => 'Text shown on web when someone confirms their email but has not yet edited the main namespace:
 * $1 - username (unused); GENDER is supported',
 	'notification-gettingstarted-start-editing-email-subject' => 'Subject of email sent when someone confirms their email but has not yet edited the main namespace:

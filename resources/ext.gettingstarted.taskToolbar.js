@@ -54,7 +54,10 @@
 			title: mw.message( 'gettingstarted-task-toolbar-editing-help-title' ).text()
 		} ).text( mw.message( 'gettingstarted-task-toolbar-editing-help-text' ).text() )
 			.click( function ( evt ) {
-				mw.guidedTour.launchTour( 'gettingstartedtasktoolbar' );
+				var tourName = mw.libs.ve !== undefined ?
+					'gettingstartedtasktoolbarve' : 'gettingstartedtasktoolbar';
+
+				mw.guidedTour.launchTour( tourName );
 
 				evt.stopPropagation();
 			} );
