@@ -23,7 +23,7 @@ Choose an option below, and you will see a random article that needs help.',
 	'gettingstarted-return' => "← No thanks, return to the page I was reading",
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	// Change tags
-	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: new editor [[{{MediaWiki:gettingstarted-project-link}}|getting started]]',
+	'tag-gettingstarted_edit' => 'new editor [[{{MediaWiki:gettingstarted-project-link}}|getting started]]',
 	'tag-gettingstarted_edit-description' => 'Edit of a page that the user chose from the task list in [[Special:GettingStarted|Getting started]]',
 
 	// Main text of the special page
@@ -215,7 +215,7 @@ $messages['ast'] = array(
 Escueya una de les opciones de más abaxo, y verá un artículu al debalu que necesita ayuda.',
 	'gettingstarted-return' => '← Non, gracies, volver a la páxina que taba lleendo',
 	'gettingstarted-project-link' => '{{ns:Project}}:PrimerosPasos',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Etiqueta]]: Editor nuevu dando los [[{{MediaWiki:gettingstarted-project-link}}|primeros pasos]]',
+	'tag-gettingstarted_edit' => 'Editor nuevu dando los [[{{MediaWiki:gettingstarted-project-link}}|primeros pasos]]',
 	'tag-gettingstarted_edit-description' => "Edición d'una páxina que'l usuariu elixó na llista de xeres de [[Special:GettingStarted|Primeros pasos]]",
 	'gettingstarted-task-copyedit-main-description' => 'Iguar ortografía y gramática',
 	'gettingstarted-task-copyedit-secondary-description' => '¡La manera más fácil de principiar!',
@@ -276,7 +276,7 @@ $messages['be-tarask'] = array(
 Выберыце варыянт ніжэй, і вы пабачыце адвольны артыкул, які патрабуе дагляду.',
 	'gettingstarted-return' => '← Не, дзякую, вярніце мяне назад',
 	'gettingstarted-project-link' => '{{ns:Project}}:Пачатак працы',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Метка]]: [[{{MediaWiki:gettingstarted-project-link}}|пачатак працы]] новага рэдактара',
+	'tag-gettingstarted_edit' => '[[{{MediaWiki:gettingstarted-project-link}}|пачатак працы]] новага рэдактара',
 	'tag-gettingstarted_edit-description' => 'Рэдагаваньне старонкі зь сьпісу задачаў на старонцы «[[Special:GettingStarted|З чаго пачаць]]», якую абраў удзельнік',
 	'gettingstarted-task-copyedit-main-description' => 'Артаграфія і граматыка',
 	'gettingstarted-task-copyedit-secondary-description' => 'Найлягчэйшы спосаб для пачаткоўцы!',
@@ -310,7 +310,7 @@ $messages['cs'] = array(
 	'gettingstarted-task-header' => 'Hledáte snadný způsob, jak začít? Stačí si vybrat stránku z jednoho ze tří níže uvedených seznamů.', # Fuzzy
 	'gettingstarted-return' => '← Ne, děkuji, chci zpět tam, kde jsem byl', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:Jak začít',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Značka]]: nový uživatel [[{{MediaWiki:gettingstarted-project-link}}|začíná]]',
+	'tag-gettingstarted_edit' => 'nový uživatel [[{{MediaWiki:gettingstarted-project-link}}|začíná]]',
 	'tag-gettingstarted_edit-description' => 'Editace stránky, kterou si uživatel zvolil ze seznamu úkolů na stránce [[Special:GettingStarted|Jak začít]]',
 	'gettingstarted-task-copyedit-main-description' => 'Opravy pravopisu a gramatiky', # Fuzzy
 );
@@ -341,7 +341,7 @@ $messages['de'] = array(
 Wähle unten eine Option aus und du wirst sehen, dass ein zufälliger Artikel Hilfe benötigt.',
 	'gettingstarted-return' => '← Nein danke, zurück zur gelesenen Seite.',
 	'gettingstarted-project-link' => '{{ns:Project}}:Erste Schritte',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Markierung]]: [[{{MediaWiki:gettingstarted-project-link}}|Erste Schritte]] eines neuen Autors',
+	'tag-gettingstarted_edit' => '[[{{MediaWiki:gettingstarted-project-link}}|Erste Schritte]] eines neuen Autors',
 	'tag-gettingstarted_edit-description' => 'Bearbeitung einer Seite, die der Benutzer aus der Aufgabenliste der Spezialseite „[[Special:GettingStarted|Anfangen]]“ ausgewählt hat',
 	'gettingstarted-task-copyedit-main-description' => 'Rechtschreibung und Grammatik korrigieren',
 	'gettingstarted-task-copyedit-secondary-description' => 'Der einfachste Weg, um anzufangen!',
@@ -399,7 +399,7 @@ $messages['dsb'] = array(
 	'gettingstarted-welcome-back-site-user' => 'Witaj slědk, $2',
 	'gettingstarted-return' => 'Ně, źěkujom se, źi slědk', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:Prědne kšace',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Marka]]: [[{{MediaWiki:gettingstarted-project-link}}|Prědne kšace]] nowego wobźěłarja',
+	'tag-gettingstarted_edit' => '[[{{MediaWiki:gettingstarted-project-link}}|Prědne kšace]] nowego wobźěłarja',
 	'gettingstarted-task-copyedit-main-description' => 'Gramatiku a pšawopis korigěrowaś', # Fuzzy
 	'gettingstarted-task-clarify-main-description' => 'Jasnosć pólěpšyś', # Fuzzy
 );
@@ -535,7 +535,7 @@ $messages['fr'] = array(
 Choisissez une option ci-dessous et vous verrez un article pris au hasard qui a besoin d’aide.',
 	'gettingstarted-return' => '← Non merci, revenir à la page que j’étais en train de lire',
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Balise]]: un nouvel éditeur [[{{MediaWiki:gettingstarted-project-link}}|a débuté]]',
+	'tag-gettingstarted_edit' => 'un nouvel éditeur [[{{MediaWiki:gettingstarted-project-link}}|a débuté]]',
 	'tag-gettingstarted_edit-description' => "Modification d'une page choisie par l’utilisateur dans la liste des tâches dans [[Special:GettingStarted|Pour commencer]]",
 	'gettingstarted-task-copyedit-main-description' => 'Corriger la grammaire et l’orthographe',
 	'gettingstarted-task-copyedit-secondary-description' => 'La meilleure façon de commencer !',
@@ -606,7 +606,7 @@ $messages['gl'] = array(
 Escolla unha das opcións inferiores para ir ata un artigo que necesite axuda.',
 	'gettingstarted-return' => '← Non, grazas; volver á páxina que estaba lendo',
 	'gettingstarted-project-link' => '{{ns:Project}}:Primeiros pasos',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Etiqueta]]: Novo editor dando os [[{{MediaWiki:gettingstarted-project-link}}|primeiros pasos]]',
+	'tag-gettingstarted_edit' => 'Novo editor dando os [[{{MediaWiki:gettingstarted-project-link}}|primeiros pasos]]',
 	'tag-gettingstarted_edit-description' => 'Modificación dunha páxina que o usuario elixiu desde a lista de tarefas dos [[Special:GettingStarted|primeiros pasos]]',
 	'gettingstarted-task-copyedit-main-description' => 'Corrixir a ortografía e a gramática',
 	'gettingstarted-task-copyedit-secondary-description' => 'O xeito máis fácil de comezar!',
@@ -682,7 +682,7 @@ $messages['he'] = array(
 לחיצה על אחת מהאפשרויות להלן תראה לך ערך שמתאים לבחירתך.', # Fuzzy
 	'gettingstarted-return' => '→ לא תודה, קחו אותי חזרה לדף שקראתי',
 	'gettingstarted-project-link' => '{{ns:Project}}:התחלה',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: עורך חדש [[{{MediaWiki:gettingstarted-project-link}}|מתחיל לעבוד]]',
+	'tag-gettingstarted_edit' => 'עורך חדש [[{{MediaWiki:gettingstarted-project-link}}|מתחיל לעבוד]]',
 	'tag-gettingstarted_edit-description' => 'עריכה של דף שהמשתמש בחר מתוך רשימת מטלות בדף [[Special:GettingStarted|איך להתחיל]]',
 	'gettingstarted-task-copyedit-main-description' => 'תיקון כתיב ודקדוק',
 	'gettingstarted-task-clarify-main-description' => 'שיפור הבהירות',
@@ -724,7 +724,7 @@ $messages['hsb'] = array(
 	'gettingstarted-welcome-back-site-user' => 'Witaj wróćo, $2',
 	'gettingstarted-return' => 'Ně, dźakuju so, dźi wróćo k přečitanej stronje',
 	'gettingstarted-project-link' => '{{ns:Project}}:Prěnje kroki',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Značka]]: [[{{MediaWiki:gettingstarted-project-link}}|Prěnje kroki]] noweho wobdźěłarja',
+	'tag-gettingstarted_edit' => '[[{{MediaWiki:gettingstarted-project-link}}|Prěnje kroki]] noweho wobdźěłarja',
 	'tag-gettingstarted_edit-description' => 'Změna strony, kotruž wužiwar je z lisćiny nadawkow ze strony [[Special:GettingStarted|Prěnje kroki]] wubrał',
 	'gettingstarted-task-copyedit-main-description' => 'Prawopis a gramatiku korigować',
 	'gettingstarted-task-clarify-main-description' => 'Jasnosć polěpšić',
@@ -741,7 +741,7 @@ $messages['hu'] = array(
 	'gettingstarted-welcomesiteuseranon' => 'Üdvözlünk a $1 oldalain!', # Fuzzy
 	'gettingstarted-return' => '← Nem érdekel, vissza arra az oldalra, amit éppen olvastam',
 	'gettingstarted-project-link' => '{{ns:Project}}:Első lépések',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Címke]]: új szerkesztő [[{{MediaWiki:gettingstarted-project-link}}|első lépései]]',
+	'tag-gettingstarted_edit' => 'új szerkesztő [[{{MediaWiki:gettingstarted-project-link}}|első lépései]]',
 	'tag-gettingstarted_edit-description' => 'A [[Special:GettingStarted|Speciális:Első lépések]] listáról választott oldal szerkesztése', # Fuzzy
 );
 
@@ -780,7 +780,7 @@ $messages['it'] = array(
 Scegli un'opzione qui sotto e vedrai una voce casuale che ha bisogno di aiuto.",
 	'gettingstarted-return' => '← No grazie, ritorna alla pagina che stavo leggendo',
 	'gettingstarted-project-link' => '{{ns:Project}}:Guida introduttiva',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: nuovo contributore dalla [[{{MediaWiki:gettingstarted-project-link}}|guida introduttiva]]',
+	'tag-gettingstarted_edit' => 'nuovo contributore dalla [[{{MediaWiki:gettingstarted-project-link}}|guida introduttiva]]',
 	'tag-gettingstarted_edit-description' => "Modifica di una pagina che l'utente ha scelto dall'elenco delle attività nella [[Special:GettingStarted|guida introduttiva]]",
 	'gettingstarted-task-copyedit-main-description' => 'Correggi ortografia e grammatica',
 	'gettingstarted-task-copyedit-secondary-description' => 'Il modo più semplice per iniziare!',
@@ -864,7 +864,7 @@ $messages['ko'] = array(
 	'gettingstarted-task-header' => '시작하는 쉬운 방법을 찾고 계십니까? 아래 세 목록 중 하나에서 문서를 선택하세요.', # Fuzzy
 	'gettingstarted-return' => '← 괜찮습니다, 있던 곳으로 돌아갑니다', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:시작하기',
-	'tag-gettingstarted_edit' => '[[Special:Tags|태그]]: 새 편집자 [[{{MediaWiki:gettingstarted-project-link}}|시작하기]]',
+	'tag-gettingstarted_edit' => '새 편집자 [[{{MediaWiki:gettingstarted-project-link}}|시작하기]]',
 	'tag-gettingstarted_edit-description' => '사용자가 [[Special:GettingStarted|시작하기]]에 작업 목록에서 선택한 문서의 편집',
 	'gettingstarted-task-copyedit-main-description' => '문법과 맞춤법 고치기', # Fuzzy
 	'gettingstarted-task-clarify-main-description' => '명확성 향상', # Fuzzy
@@ -893,7 +893,7 @@ $messages['lb'] = array(
 Sicht eng Optioun hei drënner eraus an Dir kritt en zoufällegen Artikel gewisen deen nach Hëllef brauch.',
 	'gettingstarted-return' => 'Nee Merci, zréck op déi Säit déi ech am gaang war mat liesen',
 	'gettingstarted-project-link' => '{{ns:Project}}:Fir unzefänken',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: Nei Auteure [[{{MediaWiki:gettingstarted-project-link}}|wéi ufänken]]',
+	'tag-gettingstarted_edit' => 'Nei Auteure [[{{MediaWiki:gettingstarted-project-link}}|wéi ufänken]]',
 	'tag-gettingstarted_edit-description' => 'Eng Säit änneren déi de Benotzer aus der Lëscht op [[Special:GettingStarted|Ufänken]] eraussicht',
 	'gettingstarted-task-copyedit-main-description' => 'Orthographie a Grammaire verbesseren',
 	'gettingstarted-task-copyedit-secondary-description' => 'Den einfachste Wee fir unzefänken!',
@@ -973,7 +973,7 @@ $messages['min'] = array(
 	'gettingstarted-task-header' => "Mancari caro mudah ba'a ka mulai? Piliahlah sabuah laman dari daftar dibawah ko.", # Fuzzy
 	'gettingstarted-return' => 'Mokasih sajolah, bawok Ambo baliak', # Fuzzy
 	'gettingstarted-project-link' => "{{ns:Project}}:Ba'a ka mulai",
-	'tag-gettingstarted_edit' => "[[Special:Tags|Tag]]: pangguno baru [[{{MediaWiki:gettingstarted-project-link}}|ba'a ka mulai]]",
+	'tag-gettingstarted_edit' => "pangguno baru [[{{MediaWiki:gettingstarted-project-link}}|ba'a ka mulai]]",
 	'tag-gettingstarted_edit-description' => "Suntiangan laman nan pangguno piliah dari daftar tugas pado [[Special:GettingStarted|Ba'a ka mulai]]",
 	'gettingstarted-task-copyedit-main-description' => 'Pelokan tata bahaso jo ejaan', # Fuzzy
 	'gettingstarted-task-clarify-main-description' => 'Tingkekan kajalehan', # Fuzzy
@@ -993,7 +993,7 @@ $messages['mk'] = array(
 Одберете една од можностите подолу и ќе ви се појави случајна статија на која ѝ треба помош.',
 	'gettingstarted-return' => '← Не, благодарам. Врати ме на страницата што си ја читав',
 	'gettingstarted-project-link' => '{{ns:Project}}:ПрвиЧекори',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Ознака]]: нов уредник [[{{MediaWiki:gettingstarted-project-link}}|почнува со работа]]',
+	'tag-gettingstarted_edit' => 'нов уредник [[{{MediaWiki:gettingstarted-project-link}}|почнува со работа]]',
 	'tag-gettingstarted_edit-description' => 'Уредување на страница што корисникот ја одбрал од списокот на задачи на [[Special:GettingStarted|Први чекори]]',
 	'gettingstarted-task-copyedit-main-description' => 'Исправка на граматика и правопис',
 	'gettingstarted-task-copyedit-secondary-description' => 'Најлесен начин да почнете!',
@@ -1054,7 +1054,7 @@ $messages['ms'] = array(
 Pilih satu pilihan di bawah, dan anda akan melihat sebuah rencana pilihan rawak yang memerlukan pertolongan.',
 	'gettingstarted-return' => '← Tak apalah, bawa saya kembali ke halaman yang saya baca tadi',
 	'gettingstarted-project-link' => '{{ns:Project}}:Permulaan',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Teg]]: penyunting baru [[{{MediaWiki:gettingstarted-project-link}}|hendak bermula]]',
+	'tag-gettingstarted_edit' => 'penyunting baru [[{{MediaWiki:gettingstarted-project-link}}|hendak bermula]]',
 	'tag-gettingstarted_edit-description' => 'Suntingan halaman yang dipilih oleh pengguna dari senarai tugas dalam [[Special:GettingStarted|Permulaan]]',
 	'gettingstarted-task-copyedit-main-description' => 'Membetulkan Ejaan & Tatabahsa',
 	'gettingstarted-task-copyedit-secondary-description' => 'Cara yang paling senang untuk bermula!',
@@ -1127,7 +1127,7 @@ $messages['nl'] = array(
 Kies een van de onderstaande mogelijkheden voor een willekeurige pagina die uw hulp nodig heeft.',
 	'gettingstarted-return' => '← Nee bedankt. Ik wil graag terug naar waar ik vandaan kom',
 	'gettingstarted-project-link' => '{{ns:Project}}:Aan de slag',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Label]]: nieuwe bewerker [[{{MediaWiki:gettingstarted-project-link}}|aan de slag]]',
+	'tag-gettingstarted_edit' => 'nieuwe bewerker [[{{MediaWiki:gettingstarted-project-link}}|aan de slag]]',
 	'tag-gettingstarted_edit-description' => 'Bewerking aan een pagina die de gebruiker heeft gekozen uit de takenlijst op [[Special:GettingStarted|aan de slag]]',
 	'gettingstarted-task-copyedit-main-description' => 'Grammatica en spelling corrigeren',
 	'gettingstarted-task-copyedit-secondary-description' => 'De eenvoudigste manier om aan de slag te gaan!',
@@ -1194,7 +1194,7 @@ $messages['pms'] = array(
 	'gettingstarted-welcomesiteuseranon' => 'Bin ëvnù a $1!', # Fuzzy
 	'gettingstarted-return' => 'Nò mersì, pòrtme andré', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
-	'tag-gettingstarted_edit' => "[[Special:Tags|Tichëtta]]: n'editor neuv [[{{MediaWiki:gettingstarted-project-link}}|a l'ha ancaminà]]",
+	'tag-gettingstarted_edit' => "n'editor neuv [[{{MediaWiki:gettingstarted-project-link}}|a l'ha ancaminà]]",
 	'tag-gettingstarted_edit-description' => "Modìfica ëd na pàgina che l'utent a sern da la lista dij travaj an [[Special:GettingStarted|Për ancaminé]]",
 );
 
@@ -1213,7 +1213,7 @@ $messages['pt-br'] = array(
 Escolha uma opção abaixo, e veja um artigo aleatório que precisa de ajdua',
 	'gettingstarted-return' => '← Não, obrigado, volte para onde estava',
 	'gettingstarted-project-link' => '{{ns:Project}}:PrimeirosPassos',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Tag]]: novo editor [[{{MediaWiki:gettingstarted-project-link}}|começando]]',
+	'tag-gettingstarted_edit' => 'novo editor [[{{MediaWiki:gettingstarted-project-link}}|começando]]',
 	'tag-gettingstarted_edit-description' => 'Edição de uma página que o editor escolheu da lista de tarefas em [[Special:GettingStarted|Começando]]',
 	'gettingstarted-task-copyedit-main-description' => 'Ajuste de Ortografia & Gramática',
 	'gettingstarted-task-copyedit-secondary-description' => 'O jeito mais fácil de começar!',
@@ -1330,7 +1330,7 @@ $messages['sv'] = array(
 	'gettingstarted-welcome-back-site-user' => 'Välkommen tillbaka, $2',
 	'gettingstarted-return' => 'Nej tack, gå tillbaka till sidan jag läste',
 	'gettingstarted-project-link' => '{{ns:Project}}:Komigång',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Tagg]]: ny bidragsgivare [[{{MediaWiki:gettingstarted-project-link}}|kom i gång]]',
+	'tag-gettingstarted_edit' => 'ny bidragsgivare [[{{MediaWiki:gettingstarted-project-link}}|kom i gång]]',
 	'tag-gettingstarted_edit-description' => 'Redigering av en sida som användaren valde från listan i [[Special:GettingStarted|Kom i gång]]',
 	'gettingstarted-task-copyedit-main-description' => 'Fixa stavning & grammatik',
 	'gettingstarted-task-copyedit-secondary-description' => 'Det enklaste sättet att komma igång!',
@@ -1419,7 +1419,7 @@ $messages['vi'] = array(
 	'gettingstarted-task-header' => 'Cám ơn bạn đã tham gia {{SITENAME}}! Bạn có thể bắt đầu đóng góp với các công việc cơ bản này.',
 	'gettingstarted-return' => 'Thôi, quay lại trang vừa rồi',
 	'gettingstarted-project-link' => '{{ns:Project}}:Bắt đầu',
-	'tag-gettingstarted_edit' => '[[Special:Tags|Thẻ]]: Người dùng mới đang [[{{MediaWiki:gettingstarted-project-link}}|bắt đầu]]',
+	'tag-gettingstarted_edit' => 'Người dùng mới đang [[{{MediaWiki:gettingstarted-project-link}}|bắt đầu]]',
 	'tag-gettingstarted_edit-description' => 'Sửa đổi trang được gợi ý trong danh sách việc cần làm tại [[Special:GettingStarted|Bắt đầu]]',
 	'gettingstarted-task-copyedit-main-description' => 'Sửa chính tả & ngữ pháp',
 	'gettingstarted-task-copyedit-secondary-description' => 'Cách bắt đầu dễ nhất!',
