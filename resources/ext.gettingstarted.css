@@ -4,14 +4,6 @@
 	margin: 1em 0;
 }
 
-/********************* Link back to page user was on previously *********************/
-#mw-returnto a {
-	display: block;
-	margin-top: 20px;
-	float: left;
-}
-
-
 /********************* Header Banner *********************/
 .mw-gettingstarted-header {
 	font-weight: normal;
