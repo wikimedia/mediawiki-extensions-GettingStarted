@@ -610,7 +610,7 @@ $messages['gl'] = array(
 Escolla unha das opcións inferiores para ir ata un artigo que necesite axuda.',
 	'gettingstarted-return' => '← Non, grazas; volver á páxina que estaba lendo',
 	'gettingstarted-project-link' => '{{ns:Project}}:Primeiros pasos',
-	'tag-gettingstarted_edit' => 'Novo editor dando os [[{{MediaWiki:gettingstarted-project-link}}|primeiros pasos]]', # Fuzzy
+	'tag-gettingstarted_edit' => 'novo editor dando os [[{{MediaWiki:gettingstarted-project-link}}|primeiros pasos]]',
 	'tag-gettingstarted_edit-description' => 'Modificación dunha páxina que o usuario elixiu desde a lista de tarefas dos [[Special:GettingStarted|primeiros pasos]]',
 	'gettingstarted-task-copyedit-main-description' => 'Corrixir a ortografía e a gramática',
 	'gettingstarted-task-copyedit-secondary-description' => 'O xeito máis fácil de comezar!',
@@ -638,6 +638,8 @@ Escolla unha das opcións inferiores para ir ata un artigo que necesite axuda.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Pode editar todo o artigo premendo aquí.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Editar unha sección',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Se quere modificar unha sección específica, pode premer na ligazón azul "{{int:editsection}}" que hai ao comezo de cada sección.',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Pode editar!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Agora pode editar a páxina. Cando remate, prema en "{{int:visualeditor-toolbar-savedialog}}" para revisar e gardar os seus cambios.',
 	'notification-gettingstarted-link-text-get-started' => 'Comezar',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} é unha enciclopedia libre escrita por xente coma vostede. [[Special:GettingStarted|Empece]] facendo a súa primeira edición!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Empece a editar {{SITENAME}}',
@@ -999,7 +1001,7 @@ $messages['mk'] = array(
 Одберете една од можностите подолу и ќе ви се појави случајна статија на која ѝ треба помош.',
 	'gettingstarted-return' => '← Не, благодарам. Врати ме на страницата што си ја читав',
 	'gettingstarted-project-link' => '{{ns:Project}}:ПрвиЧекори',
-	'tag-gettingstarted_edit' => 'нов уредник [[{{MediaWiki:gettingstarted-project-link}}|почнува со работа]]', # Fuzzy
+	'tag-gettingstarted_edit' => 'нов уредник [[{{MediaWiki:gettingstarted-project-link}}|почнува со работа]]',
 	'tag-gettingstarted_edit-description' => 'Уредување на страница што корисникот ја одбрал од списокот на задачи на [[Special:GettingStarted|Први чекори]]',
 	'gettingstarted-task-copyedit-main-description' => 'Исправка на граматика и правопис',
 	'gettingstarted-task-copyedit-secondary-description' => 'Најлесен начин да почнете!',
@@ -1027,6 +1029,8 @@ $messages['mk'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Стискајќи тука, можете да ја уредите целата статија',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Уреди поднаслов',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Ако сакате да уредите даден поднаслов, стиснете на сината врска „{{int:editsection}}“ до него.',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Можете да уредувате!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Сега можете да ја уредите страницата. Кога ќе завршите, стиснете на „{{int:visualeditor-toolbar-savedialog}}“ за да ги прегледате и зачувате промените.',
 	'notification-gettingstarted-link-text-get-started' => 'Започнете',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} е слободна енциклопедија што ја пишуваат луѓе како вас. [[Special:GettingStarted|Почнете]] со вашето прво уредување!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Започнете со уредување на {{SITENAME}}',
@@ -1060,7 +1064,7 @@ $messages['ms'] = array(
 Pilih satu pilihan di bawah, dan anda akan melihat sebuah rencana pilihan rawak yang memerlukan pertolongan.',
 	'gettingstarted-return' => '← Tak apalah, bawa saya kembali ke halaman yang saya baca tadi',
 	'gettingstarted-project-link' => '{{ns:Project}}:Permulaan',
-	'tag-gettingstarted_edit' => 'penyunting baru [[{{MediaWiki:gettingstarted-project-link}}|hendak bermula]]', # Fuzzy
+	'tag-gettingstarted_edit' => 'penyunting baru [[{{MediaWiki:gettingstarted-project-link}}|hendak bermula]]',
 	'tag-gettingstarted_edit-description' => 'Suntingan halaman yang dipilih oleh pengguna dari senarai tugas dalam [[Special:GettingStarted|Permulaan]]',
 	'gettingstarted-task-copyedit-main-description' => 'Membetulkan Ejaan & Tatabahsa',
 	'gettingstarted-task-copyedit-secondary-description' => 'Cara yang paling senang untuk bermula!',
@@ -1088,6 +1092,8 @@ Pilih satu pilihan di bawah, dan anda akan melihat sebuah rencana pilihan rawak 
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Anda boleh menyunting keseluruhan rencana dengan mengklik di sini.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Sunting satu bahagian',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Jika anda ingin menyunting suatu bahagian tertentu, anda boleh klik pada pautan biru '{{int:editsection}}' di atas setiap bahagian.",
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Anda boleh menyunting!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "Anda kini boleh menyunting halaman ini. Selepas siap, klik '{{int:visualeditor-toolbar-savedialog}}' untuk menyemak dan menyimpan suntingan anda.",
 	'notification-gettingstarted-link-text-get-started' => 'Mulakan',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} merupakan sebuah ensiklopedia bebas yang dikarang oleh orang ramai seperti anda. [[Special:GettingStarted|Mulakan]] dengan membuat suntingan pertama anda!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Bermula dengan menyunting {{SITENAME}}',
@@ -1298,19 +1304,62 @@ $messages['roa-tara'] = array(
  * @author Ole Yves
  */
 $messages['ru'] = array(
-	'gettingstarted' => 'Приступая к работе',
+	'gettingstarted' => 'Начало работы',
 	'gettingstarted-desc' => 'Добавляет [[Special:GettingStarted|страницу приветствия]] для новых участников (показывается после создания учётной записи)',
 	'gettingstarted-welcomesiteuser' => 'Добро пожаловать в $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Добро пожаловать в $1!', # Fuzzy
+	'gettingstarted-welcomesiteuseranon' => 'Начало работы',
 	'gettingstarted-welcome-back-site-user' => 'И вновь добро пожаловать, $2',
 	'gettingstarted-task-header' => 'Спасибо за то, что присоединились к {{SITENAME}}! Вот несколько способов быстро включиться в работу.
 Выберите внизу соответствующий вариант, и вы увидите случайные статьи, которые нуждаются в вашей помощи.',
-	'gettingstarted-return' => 'Нет, спасибо, верните меня обратно', # Fuzzy
-	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
-	'tag-gettingstarted_edit' => '[[{{MediaWiki:gettingstarted-project-link}}|Начало работы]] нового редактора',
-	'tag-gettingstarted_edit-description' => 'Редактировать страницы, которые участник выбрал из списка задач в [[Special:GettingStarted]]', # Fuzzy
+	'gettingstarted-return' => 'Нет, спасибо, верните на страницу, которую я читал',
+	'gettingstarted-project-link' => '{{ns:Project}}:Начало работы',
+	'tag-gettingstarted_edit' => 'Новый редактор [[{{MediaWiki:gettingstarted-project-link}}|приступил к работе]]',
+	'tag-gettingstarted_edit-description' => 'Редактировать страницы, которые участник выбрал из списка задач на странице [[Special:GettingStarted|Начала работы]]',
 	'gettingstarted-task-copyedit-main-description' => 'Править правописание и грамматику',
 	'gettingstarted-task-copyedit-secondary-description' => 'Самый простой способ начать работу!',
+	'gettingstarted-task-clarify-main-description' => 'Повысить точность',
+	'gettingstarted-task-clarify-secondary-description' => 'Упростите или измените формулировки предложений.',
+	'gettingstarted-task-addlinks-main-description' => 'Добавить ссылки',
+	'gettingstarted-task-addlinks-secondary-description' => 'Соединение статей {{SITENAME}}.',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Вернуться к списку',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Вернуться к списку статей',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Показать справку',
+	'gettingstarted-task-toolbar-editing-help-title' => 'Показать руководство по редактированию',
+	'gettingstarted-task-toolbar-try-another-text' => 'Попробовать в другой статье ►',
+	'gettingstarted-task-toolbar-close-title' => 'Закрыть эту панель',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Эта статья имеет орфографические и грамматические ошибки. Вы можете их исправить.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Перейти к случайной статье, которую вы можете улучшить',
+	'gettingstarted-task-clarify-toolbar-description' => 'Эта статья является слишком запутанной или неопределённой. Найдите способ сделать её более понятной.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Перейти к случайной статье, точность стиля изложения которой вы можете повысить',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Эта статья нуждается в ссылках. Найдите термины, статьи о которых есть в {{SITENAME}}.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Перейти к случайной статье, в которой вы можете добавить ссылки',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Как начать работу',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Просто читайте статью и ищите способ её улучшить. Если вы чувствуете себя некомфортно, не волнуйтесь. Вам вовсе не нужно быть экспертом в этой теме. Если же вам нужна помощь или вы хотите попробовать в другой статье, используйте ссылки на верхней панели.',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Идеи о том, что делать',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Эти баннеры перечисляют проблемы статьи. Вам не нужно решать их все, просто сделайте то, что вам по силам.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Нажмите {{int:vector-view-edit}}',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Вы можете приступить к редактированию всей статьи целиком, нажав здесь.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Редактировать раздел',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Если вы хотите отредактировать конкретный раздел, то можете нажать на синюю ссылку '{{int:editsection}}', которая имеется сверху каждого раздела.",
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Вы можете отредактировать!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "Сейчас вы можете редактировать страницу. Когда вы закончите, нажмите кнопку '{{int:visualeditor-toolbar-savedialog}}' для просмотра и сохранения изменений.",
+	'notification-gettingstarted-link-text-get-started' => 'Приступить к работе',
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} является свободной энциклопедией, написанные такими же людьми, как вы. [[Special:GettingStarted|Приступите к работе]] и совершите свои первые правки!',
+	'notification-gettingstarted-start-editing-email-subject' => 'Начните работу по редактированию {{SITENAME}}',
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} является свободной энциклопедии, написанной такими же людьми, как вы. Сделайте вашу первую правку!
+
+Посетите $2 для получения списка простых способов улучшить страницы.
+
+$3',
+	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Приступить к редактированию {{SITENAME}}, посетив $2',
+	'notification-gettingstarted-continue-editing' => 'Отличная работа! Вы уже совершили первые правки в {{SITENAME}}. Если вы хотите продолжить, то вот некоторые [[Special:GettingStarted|простые задачи]], в решении которых вы можете помочь.',
+	'notification-gettingstarted-continue-editing-email-subject' => 'Простые способы улучшить {{SITENAME}}',
+	'notification-gettingstarted-continue-editing-text-email-body' => 'Отличная работа! Вы уже совершили первые правки в {{SITENAME}}.
+
+Если вы хотите продолжить, имеется список простых задач, в решении которых вы можете помочь: $2 
+
+$3',
+	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Хотите продолжить? Посетите $2 для получения списка простых задач, в решении которых вы можете помочь.',
 );
 
 /** Sinhala (සිංහල)
@@ -1432,7 +1481,7 @@ $messages['vi'] = array(
 	'gettingstarted-task-header' => 'Cám ơn bạn đã tham gia {{SITENAME}}! Bạn có thể bắt đầu đóng góp với các công việc cơ bản này.',
 	'gettingstarted-return' => 'Thôi, quay lại trang vừa rồi',
 	'gettingstarted-project-link' => '{{ns:Project}}:Bắt đầu',
-	'tag-gettingstarted_edit' => 'Người dùng mới đang [[{{MediaWiki:gettingstarted-project-link}}|bắt đầu]]', # Fuzzy
+	'tag-gettingstarted_edit' => 'Người dùng mới đang [[{{MediaWiki:gettingstarted-project-link}}|bắt đầu]]',
 	'tag-gettingstarted_edit-description' => 'Sửa đổi trang được gợi ý trong danh sách việc cần làm tại [[Special:GettingStarted|Bắt đầu]]',
 	'gettingstarted-task-copyedit-main-description' => 'Sửa chính tả & ngữ pháp',
 	'gettingstarted-task-copyedit-secondary-description' => 'Cách bắt đầu dễ nhất!',
@@ -1460,6 +1509,8 @@ $messages['vi'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Nhấn chuột vào đây để sửa toàn bộ bài.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Sửa đổi phần',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Để chỉ sửa đổi một phần, bạn có thể nhấn chuột vào liên kết “{{int:editsection}}” màu xanh bên cạnh đề mục của phần đó.',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Bạn có thể sửa đổi!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Bạn hiện có thể sửa đổi trang này. Sau khi hoàn tất, hãy bấm “{{int:visualeditor-toolbar-savedialog}}” để xem lại và lưu các thay đổi của bạn.',
 	'notification-gettingstarted-link-text-get-started' => 'Bắt đầu',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} là bách khoa toàn thư mở do công sức của nhiều người như bạn. Hãy [[Special:GettingStarted|bắt đầu đóng góp]] với thay đổi đầu tiên của bạn!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Bắt đầu sửa đổi {{SITENAME}}',
