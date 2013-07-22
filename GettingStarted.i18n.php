@@ -786,7 +786,7 @@ $messages['it'] = array(
 Scegli un'opzione qui sotto e vedrai una voce casuale che ha bisogno di aiuto.",
 	'gettingstarted-return' => '← No grazie, ritorna alla pagina che stavo leggendo',
 	'gettingstarted-project-link' => '{{ns:Project}}:Guida introduttiva',
-	'tag-gettingstarted_edit' => 'nuovo contributore dalla [[{{MediaWiki:gettingstarted-project-link}}|guida introduttiva]]', # Fuzzy
+	'tag-gettingstarted_edit' => 'nuovo contributore dalla [[{{MediaWiki:gettingstarted-project-link}}|guida introduttiva]]',
 	'tag-gettingstarted_edit-description' => "Modifica di una pagina che l'utente ha scelto dall'elenco delle attività nella [[Special:GettingStarted|guida introduttiva]]",
 	'gettingstarted-task-copyedit-main-description' => 'Correggi ortografia e grammatica',
 	'gettingstarted-task-copyedit-secondary-description' => 'Il modo più semplice per iniziare!',
