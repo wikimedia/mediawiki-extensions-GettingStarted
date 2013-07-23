@@ -122,13 +122,14 @@ class SpecialGettingStarted extends SpecialPage {
 
 		$output = $this->getOutput();
 
+		$output->addHTML( $this->getHtmlResult() );
+
 		if ( $isPostCreate ) {
 			// Do what GettingStartedHooks::onBeforeWelcomeCreation and
 			// SpecialUserlogin.php successfulCreation() would have done.
 
 			$output->addModules( array(
-				'ext.gettingstarted.test.accountCreation',
-				'ext.gettingstarted.common.accountCreation',
+				'ext.gettingstarted.showSeparatePage.accountCreation',
 			) );
 			// Styles are added separately so they load without needing JS
 			$output->addModuleStyles( array(
@@ -137,6 +138,21 @@ class SpecialGettingStarted extends SpecialPage {
 			) );
 
 			$output->setPageTitle( $this->msg( 'gettingstarted-welcomesiteuser', $wgSitename, $user->getName() ) );
+
+			// TODO (spage, 2013-07-17) does the CentralAuthPostLoginRedirect
+			// hook pass us a blank returnTo, or empty returnTo, or 'Main_Page'
+			// when the create account form didn't receive a returnto?
+			$returnTo = Title::newFromText( $request->getVal( 'returnto' ) );
+			$returnToQuery = wfCgiToArray( $request->getVal( 'returntoquery' ) );
+			if ( $returnTo !== null ) {
+				$returnToLink = Linker::link(
+					$returnTo,
+					$this->msg( 'gettingstarted-return' )->text(),
+					array(),
+					$returnToQuery
+				);
+				$output->addHTML( $returnToLink );
+			}
 
 		} else {
 
@@ -154,19 +170,6 @@ class SpecialGettingStarted extends SpecialPage {
 			'ext.gettingstarted',
 			'ext.gettingstarted.specialPage',
 		) );
-
-		$output->addHTML( $this->getHtmlResult() );
-
-		if ( $isPostCreate ) {
-			// TODO (spage, 2013-07-17) does the CentralAuthPostLoginRedirect
-			// hook pass us a blank returnTo, or empty returnTo, or 'Main_Page'
-			// when the create account form didn't receive a returnto?
-			$returnTo = Title::newFromText( $request->getVal( 'returnto' ) );
-			$returnToQuery = wfCgiToArray( $request->getVal( 'returntoquery' ) );
-			if ( $returnTo !== null ) {
-				$output->addReturnto( $returnTo, $returnToQuery);
-			}
-		}
 	}
 
 	public function inExcludedCategories( Title $title ) {
@@ -219,13 +222,20 @@ EOF;
 
 		foreach ( $tasks as $task ) {
 			$mainDescription = $this->msg( $task['mainDescription'] )->text();
+			$imgFile = wfFindFile( $task['image'] );
 			$taskHtml = Html::rawElement( 'div', array(
 				'class' => 'mw-gettingstarted-task-icon',
 			),
-				Html::element( 'img', array(
-					'alt' => $mainDescription,
-					'src' => wfFindFile( $task['image'] )->getURL(),
-				) )
+				$imgFile ?
+					Html::element( 'img', array(
+						'alt' => $mainDescription,
+						// wfFindFile() can fail if there are network problems.
+						// TODO (spage, 2013-08-04) Does Extension:GettingStarated
+						// document that it depends on these File pages locally or?
+						// instant commons for its icons?
+						'src' => $imgFile->getURL(),
+					) )
+					: ''
 			) .
 			Html::rawElement( 'div', array(
 				'class' => 'mw-gettingstarted-task-text',
@@ -240,7 +250,7 @@ EOF;
 						'data-task-name' => $task['taskName']
 					),
 					array(
-						'source' => 'gettingstarted',
+						'source' => 'gettingstarted-specialpage-click',
 					)
 			);
 		}

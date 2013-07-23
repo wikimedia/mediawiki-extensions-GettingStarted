@@ -52,6 +52,9 @@
 	padding-left: 10px;
 }
 
+.mw-gettingstarted-bucket-test .mw-gettingstarted-toolbar-left {
+	visibility: hidden;
+}
 
 /* center region */
 .mw-gettingstarted-toolbar-center {

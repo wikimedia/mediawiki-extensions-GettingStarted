@@ -1,7 +1,7 @@
 // This file is based on openTask from the E3Experiments extension, so consult that repo for earlier history.
 
 /**
- * @class mediaWiki.openTask
+ * @class mw.gettingStarted.logging
  * @singleton
  * This handles clicks and the user choosing and acting on open tasks,
  * initiated from the "Getting Started" page. This means it runs on
@@ -10,7 +10,10 @@
  */
 ( function ( window, document, mw, $ ) {
 	'use strict';
-	var SCHEMA_NAME = 'GettingStartedNavbar',
+
+	var gettingStartedStatic = mw.config.get( 'wgGettingStartedConfig' ),
+		requestData = mw.config.get( 'wgGettingStarted' ),
+		schemaName = gettingStartedStatic.schemaName,
 		cookieOptions = { path: '/' };
 
 	/**
@@ -30,16 +33,16 @@
 			return noopDeferred;
 		}
 
-		return mw.eventLog.logEvent( SCHEMA_NAME, eventInstance );
+		return mw.eventLog.logEvent( schemaName, eventInstance );
 	}
 
 	/**
-	* Gets the applicable client-side page action (for logging purposes), or null if there is
-	* none.
-	*
-	* @return {string} 'page-impression', 'page-edit-impression', or 'page-save-success', or
-	*   null
-	*/
+	 * Gets the applicable client-side page action (for logging purposes), or null if there is
+	 * none.
+	 *
+	 * @return {string} 'page-impression', 'page-edit-impression', or 'page-save-success', or
+	 *   null
+	 */
 	function getPageSchemaAction() {
 		var wgAction, wgPostEdit, loggedActions, schemaAction;
 
@@ -75,18 +78,25 @@
 	}
 
 	function setDefaults( defaults ) {
-		mw.eventLog.setDefaults( SCHEMA_NAME, defaults );
+		mw.eventLog.setDefaults( schemaName, defaults );
 	}
 
 	// Set some fields common to both clicks and fixing articles.
 	function setCommonDefaults() {
-		var userId, bucket, defaults;
-		userId = mw.config.get( 'wgUserId' );
-		bucket = 'test';
+		var defaults, cfg;
+
+		if ( mw.user.isAnon() ) {
+			// No logging, so no defaults needed for anons
+			return;
+		}
+
+		cfg = mw.config.get( [ 'wgUserId', 'wgNamespaceNumber' ] );
+
 		defaults = {
-			version: 4,
-			userId: userId,
-			bucket: bucket
+			version: gettingStartedStatic.loggingVersion,
+			userId: cfg.wgUserId,
+			pageNS: cfg.wgNamespaceNumber,
+			bucket: requestData.bucket
 		};
 
 		setDefaults( defaults );
@@ -121,17 +131,6 @@
 	}
 
 	/**
-	 * @param {string} task The task name.
-	 * @return {string} the schema of the task, or null for legacy tasks
-	 */
-	function getSchemaForTask( task ) {
-		// The tasks for GettingStarted are fixed and correspond to its two tasks.
-		var schema = ( task.indexOf( 'gettingstarted' ) === 0 || task === 'returnto' ) ?
-			SCHEMA_NAME : null;
-		return schema;
-	}
-
-	/**
 	 * Remembers a task the user has chosen by adding it to a session cookie.
 	 * @param {string} article The article title (possibly including a namespace), in prefixed
 	 *  text format.  You can get this from mw.Title.getPrefixedText()
@@ -158,39 +157,52 @@
 	}
 
 	/**
-	 * Logs a page impression, noting whether the toolbar is visible
+	 * Sets a task for the current page.
+	 * Does no error checking; callers should ensure this page is suitable for the task
 	 *
-	 * @param {string} fullTask full task name (returnto or gettingstarted-*)
+	 * @param {string|null} task The kind of task, such as 'redirect'
+	 *  or null to clear the task for the article.
+	 * @return {string|undefined} task string if there is one, or undefined
+	 */
+	function setTaskForCurrentPage( task ) {
+		var title = new mw.Title( mw.config.get( 'wgPageName' ) );
+		return setTask( title.getPrefixedText(), task );
+	}
+
+	/**
+	 * Logs a page impression.
+	 *
+	 * As part of the data, it logs whether the toolbar is visible.
+	 *
+	 * This is called when the user is shown a page for fixing.  But with OB6, it
+	 * is also called from the initial redirect-page-impression (before the user
+	 * has responded to the CTA).
+	 *
+	 * @param {string|null} fullTask full task name (redirect or gettingstarted-*),
+	 *   or null
 	 * @param {string} schemaAction action field of schema
 	 *
 	 * @return {jQuery.Deferred} Promise object from EventLogging logEvent,
 	 *   or null for invalid schema
 	 */
 	function logImpression( fullTask, schemaAction) {
-		var isEditable, schema, event, querySource;
+		var event,
+			cfg = mw.config.get( [ 'wgArticleId', 'wgRevisionId', 'wgIsProbablyEditable' ] );
 
-		schema = getSchemaForTask( fullTask );
-		if ( schema === null ) {
-			return null;
-		}
-
-		// Hack: look for the edit tab. This id works in most skins, but
-		// not e.g. nostalgia
-		isEditable = !! $( '#ca-edit').length;
 		event = {
 			action: schemaAction,
-			funnel: fullTask,
-			pageId: mw.config.get( 'wgArticleId' ),
-			revId: mw.config.get( 'wgCurRevisionId' ),
-			isEditable: isEditable,
-			isNavbarVisible: $( '#mw-gettingstarted-toolbar' ).is( ':visible' )
+			pageId: cfg.wgArticleId,
+			revId: cfg.wgRevisionId,
+			isEditable: cfg.wgIsProbablyEditable
 		};
+		if ( fullTask !== null ) {
+			event.funnel = fullTask;
+		}
 
 		if ( schemaAction === 'page-impression' ) {
-			querySource = mw.util.getParamValue( 'source' );
-			if ( querySource === 'navbar-next' || querySource === 'gettingstarted' ) {
-				event.source = querySource;
-			}
+			// EventLogging will still log it, but mark the event clientValidated false
+			// if the source is invalid.
+			event.source = mw.util.getParamValue( 'source' );
 		}
 
 		return logEvent( event );
@@ -206,10 +218,10 @@
 	mw.gettingStarted.logging.logUnlessTimeout = logUnlessTimeout;
 	mw.gettingStarted.logging.setDefaults = setDefaults;
 	mw.gettingStarted.logging.setTask = setTask;
+	mw.gettingStarted.logging.setTaskForCurrentPage = setTaskForCurrentPage;
 	mw.gettingStarted.logging.getTasks = getTasks;
 	mw.gettingStarted.logging.getTask = getTask;
 	mw.gettingStarted.logging.getTaskForCurrentPage = getTaskForCurrentPage;
-	mw.gettingStarted.logging.getSchemaForTask = getSchemaForTask;
 	mw.gettingStarted.logging.logEvent = logEvent;
 	mw.gettingStarted.logging.getPageSchemaAction = getPageSchemaAction;
 	mw.gettingStarted.logging.logImpression = logImpression;
