@@ -309,7 +309,7 @@ $messages['cs'] = array(
 	'gettingstarted-task-header' => 'Hledáte snadný způsob, jak začít? Stačí si vybrat stránku z jednoho ze tří níže uvedených seznamů.', # Fuzzy
 	'gettingstarted-return' => '← Ne, děkuji, chci zpět tam, kde jsem byl', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:Jak začít',
-	'tag-gettingstarted_edit' => 'nový uživatel [[{{MediaWiki:gettingstarted-project-link}}|začíná]]', # Fuzzy
+	'tag-gettingstarted_edit' => 'nový uživatel [[{{MediaWiki:gettingstarted-project-link}}|začíná]]',
 	'tag-gettingstarted_edit-description' => 'Editace stránky, kterou si uživatel zvolil ze seznamu úkolů na stránce [[Special:GettingStarted|Jak začít]]',
 	'gettingstarted-task-copyedit-main-description' => 'Opravy pravopisu a gramatiky', # Fuzzy
 );
@@ -869,13 +869,56 @@ $messages['ko'] = array(
 	'gettingstarted-welcomesiteuser' => '$2님, $1에 오신 것을 환영합니다!',
 	'gettingstarted-welcomesiteuseranon' => '시작하기',
 	'gettingstarted-welcome-back-site-user' => '$2님, 다시 오신 것을 환영합니다',
-	'gettingstarted-task-header' => '시작하는 쉬운 방법을 찾고 계십니까? 아래 세 목록 중 하나에서 문서를 선택하세요.', # Fuzzy
-	'gettingstarted-return' => '← 괜찮습니다, 있던 곳으로 돌아갑니다', # Fuzzy
+	'gettingstarted-task-header' => '{{SITENAME}}에 가입해주셔서 감사합니다! 여기에 참여할 수 있는 몇 가지 방법이 있습니다.
+
+아래에 옵션을 선택하고 나서 도움을 필요로 하는 임의 문서를 볼 수 있습니다.',
+	'gettingstarted-return' => '← 괜찮습니다, 읽던 문서로 돌아갑니다',
 	'gettingstarted-project-link' => '{{ns:Project}}:시작하기',
-	'tag-gettingstarted_edit' => '새 편집자 [[{{MediaWiki:gettingstarted-project-link}}|시작하기]]', # Fuzzy
+	'tag-gettingstarted_edit' => '새 편집자 [[{{MediaWiki:gettingstarted-project-link}}|시작하기]]',
 	'tag-gettingstarted_edit-description' => '사용자가 [[Special:GettingStarted|시작하기]]에 작업 목록에서 선택한 문서의 편집',
-	'gettingstarted-task-copyedit-main-description' => '문법과 맞춤법 고치기', # Fuzzy
-	'gettingstarted-task-clarify-main-description' => '명확성 향상', # Fuzzy
+	'gettingstarted-task-copyedit-main-description' => '맞춤법과 문법 고치기',
+	'gettingstarted-task-copyedit-secondary-description' => '시작하는 가장 쉬운 방법!',
+	'gettingstarted-task-clarify-main-description' => '명확성 향상',
+	'gettingstarted-task-clarify-secondary-description' => '문장을 간단하게 하거나 바꾸어 적으세요.',
+	'gettingstarted-task-addlinks-main-description' => '링크 추가',
+	'gettingstarted-task-addlinks-secondary-description' => '{{SITENAME}} 문서끼리 연결합니다.',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ 목록으로 돌아가기',
+	'gettingstarted-task-toolbar-return-to-list-title' => '문서의 목록으로 돌아갑니다',
+	'gettingstarted-task-toolbar-editing-help-text' => '도움말 보기',
+	'gettingstarted-task-toolbar-editing-help-title' => '편집하는 방법에 대한 가이드 보기',
+	'gettingstarted-task-toolbar-try-another-text' => '다른 기사에 도전 ►',
+	'gettingstarted-task-toolbar-close-title' => '이 툴바 닫기',
+	'gettingstarted-task-copyedit-toolbar-description' => '이 문서는 고칠 수 있는 맞춤법과 문법 오류가 있습니다.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => '교정에 의해 향상할 수 있는 임의 문서로 갑니다',
+	'gettingstarted-task-clarify-toolbar-description' => '이 문서는 혼란하거나 막연합니다. 명확하게 할 수 있는 방법을 찾아보세요.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => '명확하게 할 수 있는 임의 문서로 갑니다',
+	'gettingstarted-task-addlinks-toolbar-description' => '이 문서에는 더 많은 링크가 필요합니다. {{SITENAME}} 문서로 용어를 찾아보세요.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => '링크를 추가할 수 있는 임의 문서로 갑니다',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => '시작하는 방법',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => '무엇을 해야할 지에 대한 아이디어',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => '{{int:vector-view-edit}} 클릭',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => '여기를 클릭해 전체 문서를 편집할 수 있습니다.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => '문단 편집',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "특정 문단을 편집하려면 각 편집의 위에 파란 '{{int:editsection}}' 링크를 클릭할 수 있습니다.",
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => '편집할 수 있습니다!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "이제 문서를 편집할 수 있습니다. 완료되면, 바뀜을 검토하고 저장하려면 '{{int:visualeditor-toolbar-savedialog}}'을 클릭하세요.",
+	'notification-gettingstarted-link-text-get-started' => '시작하기',
+	'notification-gettingstarted-start-editing' => '{{SITENAME}}(은)는 여러분과 같은 사람들이 작성한 자유 백과사전입니다. 첫 편집을 하는 것을 [[Special:GettingStarted|시작하세요]]!',
+	'notification-gettingstarted-start-editing-email-subject' => '{{SITENAME}} 편집 시작하기',
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}}(은)는 여러분과 같은 사람들이 작성한 자유 백과사전입니다. 첫 편집을 하는 것을 시작하세요!
+
+문서를 개선하는 쉬운 방법의 목록에 대해서는 $2(을)를 방문하세요.
+
+$3',
+	'notification-gettingstarted-start-editing-text-email-batch-body' => '$2(을)를 방문하여 {{SITENAME}} 편집 시작하기',
+	'notification-gettingstarted-continue-editing' => '잘했습니다! 이미 {{SITENAME}}에 첫 편집을 했습니다. 할 일을 더 찾고 있다면, 여기에 [[Special:GettingStarted|도움이 되는 쉬운 방법]]이 있습니다.',
+	'notification-gettingstarted-continue-editing-email-subject' => '{{SITENAME}}(을)를 개선하는 쉬운 방법',
+	'notification-gettingstarted-continue-editing-text-email-body' => '잘했습니다! 이미 {{SITENAME}}에 첫 편집을 했습니다.
+
+할 일을 더 찾고 있다면 $2에 도움이 되는 쉬운 방법의 목록이 있습니다
+
+$3',
+	'notification-gettingstarted-continue-editing-text-email-batch-body' => '할 일을 더 찾고 있습니까? 도움이 되는 쉬운 방법의 목록에 대해서는 $2(을)를 방문하세요.',
 );
 
 /** Kirghiz (Кыргызча)
