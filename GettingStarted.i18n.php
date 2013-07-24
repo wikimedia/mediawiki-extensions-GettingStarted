@@ -1433,15 +1433,19 @@ $messages['sv'] = array(
 	'gettingstarted-welcomesiteuser' => 'Välkommen till $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Komma igång',
 	'gettingstarted-welcome-back-site-user' => 'Välkommen tillbaka, $2',
+	'gettingstarted-task-header' => 'Tack för att du gått med i {{SITENAME}}! Här är några sätt du kan engagera dig.
+
+Välj ett alternativ nedan och du kommer att se en slumpmässig artikel som behöver hjälp.',
 	'gettingstarted-return' => 'Nej tack, gå tillbaka till sidan jag läste',
 	'gettingstarted-project-link' => '{{ns:Project}}:Komigång',
-	'tag-gettingstarted_edit' => 'ny bidragsgivare [[{{MediaWiki:gettingstarted-project-link}}|kom i gång]]', # Fuzzy
+	'tag-gettingstarted_edit' => 'ny bidragsgivare [[{{MediaWiki:gettingstarted-project-link}}|komma igång]]',
 	'tag-gettingstarted_edit-description' => 'Redigering av en sida som användaren valde från listan i [[Special:GettingStarted|Kom i gång]]',
 	'gettingstarted-task-copyedit-main-description' => 'Fixa stavning & grammatik',
 	'gettingstarted-task-copyedit-secondary-description' => 'Det enklaste sättet att komma igång!',
 	'gettingstarted-task-clarify-main-description' => 'Förbättra tydligheten',
 	'gettingstarted-task-clarify-secondary-description' => 'Förenkla eller formulera om meningar.',
 	'gettingstarted-task-addlinks-main-description' => 'Lägg till länkar',
+	'gettingstarted-task-addlinks-secondary-description' => 'Koppla ihop artiklar från {{SITENAME}}.',
 	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Tillbaka till listan',
 	'gettingstarted-task-toolbar-return-to-list-title' => 'Återgå till listan med artiklar',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Visa hjälp',
@@ -1450,6 +1454,7 @@ $messages['sv'] = array(
 	'gettingstarted-task-toolbar-close-title' => 'Stäng detta verktygsfält',
 	'gettingstarted-task-copyedit-toolbar-description' => 'Denna artikel har stavnings- och grammatikfel som du kan åtgärda.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Gå till en slumpmässig artikel som du kan förbättra genom copyediting',
+	'gettingstarted-task-clarify-toolbar-description' => 'Denna artikel är förvirrande eller otydlig. Titta efter sätt som du kan göra den tydligare.',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Gå till en slumpmässig artikel du kan klargöra',
 	'gettingstarted-task-addlinks-toolbar-description' => 'Den här artikeln behöver fler länkar. Leta efter termer som har en artikel på {{SITENAME}}.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Gå till en slumpmässig artikel där du kan lägga till länkar',
@@ -1462,10 +1467,12 @@ $messages['sv'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Redigera ett avsnitt',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Om du vill redigera ett särskilt avsnitt, kan du klicka på den blå länken '{{int:editsection}}', högst upp i varje avsnitt.",
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Du kan redigera!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "Du kan nu redigera sidan. När du är färdig, klicka på  '{{int:visualeditor-toolbar-savedialog}}' för att förhandsgranska och spara dina ändringar.",
 	'notification-gettingstarted-link-text-get-started' => 'Kom igång',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} är en fri encyklopedi skriven av människor som dig. [[Special:GettingStarted|Kom igång]] genom att göra din första redigering!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Komma igång genom att redigera {{SITENAME}}',
 	'notification-gettingstarted-continue-editing-email-subject' => 'Enkla sätt att förbättra {{SITENAME}}',
+	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Söker du efter mer att göra? Besök $2 för en lista över saker du enkelt kan hjälpa till med.',
 );
 
 /** Tamil (தமிழ்)
