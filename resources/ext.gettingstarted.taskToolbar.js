@@ -138,6 +138,7 @@
 			$toolbar.slideUp( 200, function () {
 				$relativeElements.removeClass( 'mw-gettingstarted-relative-vshift' );
 				$marginElements.removeClass( 'mw-gettingstarted-margin-vshift' );
+				mw.libs.guiders.reposition();
 			} );
 		}
 
