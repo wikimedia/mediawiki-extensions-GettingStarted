@@ -155,8 +155,8 @@ class GettingStartedHooks {
 	/**
 	 * Checks if the task toolbar should be loaded.
 	 *
-	 * It will load if they are in the test group, it's a view, and they have a
-	 * gettingstarted-* task.
+	 * It will load if they are in the test group, it's a view of an existing page, and
+	 * they have a gettingstarted-* task.
 	 *
 	 * @param OutputPage $out
 	 * @param User $user
@@ -166,7 +166,9 @@ class GettingStartedHooks {
 	protected static function shouldLoadToolbar( OutputPage $out, User $user ) {
 		global $wgGettingStartedTasks;
 
-		if ( !self::isInTestGroup( $user ) || Action::getActionName( $out ) !== 'view' ) {
+		if ( !self::isInTestGroup( $user )
+			|| Action::getActionName( $out ) !== 'view'
+			|| !$out->getTitle()->exists() ) {
 			return false;
 		}
 
