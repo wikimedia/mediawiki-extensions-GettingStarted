@@ -1,13 +1,24 @@
 extensions/GettingStarted
 https://www.mediawiki.org/wiki/Extension:GettingStarted
 
-The GettingStarted page creates a new special page, Special:GettingStarted,
-that is automatically shown on signup.  It can also be visited later at any time.
+The GettingStarted extension
+* Creates a new special page, Special:GettingStarted,
+  that is automatically shown on signup, and users can visit it at any time.
+* Maintains lists of pages that need easy editing work based on article
+  categories such as 'Category:All articles needing copy edit'
+* Special:GettingStarted presents these tasks; if the user clicks one, it shows
+  an article in that category with a taskbar that
+  - invites the user to fix the article,
+  - offers to show help (using GuidedTours),
+  - links to another article in the same task.
+  - allows the user to choose an alternate task/category.
 
 To use:
 * Put the extension files in your extension directory
 * Add the following line to your LocalSettings.php
 require_once( "$IP/extensions/GettingStarted/GettingStarted.php" );
+* Categorize some wiki articles in the main namespace with the categories in
+  $wgGettingStartedTasks.
 * Create a new user to test.
 
 Dependencies
