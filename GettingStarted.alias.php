@@ -53,6 +53,11 @@ $specialPageAliases['lb'] = array(
 	'GettingStarted' => array( 'Fir_unzefänken' ),
 );
 
+/** Minangkabau (Baso Minangkabau) */
+$specialPageAliases['min'] = array(
+	'GettingStarted' => array( 'Mamulai' ),
+);
+
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'GettingStarted' => array( 'КакоДаПочнете' ),
