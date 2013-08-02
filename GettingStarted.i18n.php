@@ -275,7 +275,7 @@ $messages['be-tarask'] = array(
 Выберыце варыянт ніжэй, і вы пабачыце адвольны артыкул, які патрабуе дагляду.',
 	'gettingstarted-return' => '← Не, дзякую, вярніце мяне назад',
 	'gettingstarted-project-link' => '{{ns:Project}}:Пачатак працы',
-	'tag-gettingstarted_edit' => '[[{{MediaWiki:gettingstarted-project-link}}|пачатак працы]] новага рэдактара', # Fuzzy
+	'tag-gettingstarted_edit' => 'новы рэдактар [[{{MediaWiki:gettingstarted-project-link}}|пачаў працу]]',
 	'tag-gettingstarted_edit-description' => 'Рэдагаваньне старонкі зь сьпісу задачаў на старонцы «[[Special:GettingStarted|З чаго пачаць]]», якую абраў удзельнік',
 	'gettingstarted-task-copyedit-main-description' => 'Артаграфія і граматыка',
 	'gettingstarted-task-copyedit-secondary-description' => 'Найлягчэйшы спосаб для пачаткоўцы!',
@@ -285,7 +285,22 @@ $messages['be-tarask'] = array(
 	'gettingstarted-task-addlinks-secondary-description' => 'Злучэньне артыкулаў {{GRAMMAR:родны|{{SITENAME}}}}.',
 	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Назад да сьпісу',
 	'gettingstarted-task-toolbar-return-to-list-title' => 'Вярнуцца да сьпісу артыкулаў',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Паказаць даведку',
+	'gettingstarted-task-toolbar-editing-help-title' => 'Паказаць дапамогу па рэдагаваньні',
 	'gettingstarted-task-toolbar-try-another-text' => 'Паспрабуйце іншы артыкул  ►',
+	'gettingstarted-task-toolbar-close-title' => 'Зачыніць гэтую панэль',
+	'gettingstarted-task-copyedit-toolbar-description' => 'У гэтым артыкуле маюцца артаграфічныя й граматычныя памылкі, якія вы можаце выправіць.',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Гэтаму артыкулу бракуе спасылак. Пашукайце тэрміны, артыкулы пра якія маюцца ў {{GRAMMAR:месны|{{SITENAME}}}}.',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Як пачаць',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Што рабіць',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Пстрыкніце «{{int:vector-view-edit}}»',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Рэдагаваньне разьдзелаў',
+	'notification-gettingstarted-continue-editing-email-subject' => 'Лёгкі спосаб палепшыць {{GRAMMAR:вінавальны|{{SITENAME}}}}',
+	'notification-gettingstarted-continue-editing-text-email-body' => 'Выдатна! Вы ўжо зрабілі першыя праўкі ў {{GRAMMAR:месны|{{SITENAME}}}}.
+
+Калі вы ахвотныя заняцца нечым яшчэ, вось сьпіс лёгкіх спосабаў дапамагчы — $2.
+
+$3',
 );
 
 /** Breton (brezhoneg)
@@ -440,10 +455,30 @@ $messages['es'] = array(
 	'gettingstarted' => 'Primeros pasos',
 	'gettingstarted-desc' => 'Agrega una [[Special:GettingStarted|página de bienvenida]] a los nuevos usuarios (se muestra después de la creación de la cuenta)',
 	'gettingstarted-welcomesiteuser' => 'Hola $2 ¡Bienvenido a $1!',
-	'gettingstarted-welcomesiteuseranon' => '¡Bienvenido a $1!', # Fuzzy
-	'gettingstarted-return' => '← No, gracias; volver a donde estaba', # Fuzzy
+	'gettingstarted-welcomesiteuseranon' => 'Primeros pasos',
+	'gettingstarted-welcome-back-site-user' => '{{GENDER:$1|Bienvenido|Bienvenida}} de nuevo, $2', # Fuzzy
+	'gettingstarted-task-header' => '¡Gracias por unirte a {{SITENAME}}! He aquí algunas maneras en que puedes involucrarte.
+
+Elige una opción a continuación y verás un artículo aleatorio que necesita de tu ayuda.',
+	'gettingstarted-return' => '← No, gracias; volver a la página que estaba leyendo',
 	'gettingstarted-project-link' => '{{ns:Project}}:PrimerosPasos',
 	'gettingstarted-task-copyedit-main-description' => 'Corregir ortografía y gramática', # Fuzzy
+	'gettingstarted-task-clarify-main-description' => 'Mejorar la claridad',
+	'gettingstarted-task-clarify-secondary-description' => 'Simplificar o reescribir oraciones.',
+	'gettingstarted-task-addlinks-main-description' => 'Añadir enlaces',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Volver a la lista',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Volver a la lista de artículos',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Mostrar la ayuda',
+	'gettingstarted-task-toolbar-editing-help-title' => 'Mostrar una guía de edición',
+	'gettingstarted-task-toolbar-try-another-text' => 'Probar otro artículo ►',
+	'gettingstarted-task-toolbar-close-title' => 'Cerrar esta barra de herramientas',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Este artículo tiene errores ortográficos y gramaticales que puedes corregir.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Ir a un artículo aleatorio cuyo estilo puedes mejorar',
+	'gettingstarted-task-clarify-toolbar-description' => 'Este artículo es confuso o ambiguo. Busca maneras de hacerlo más claro.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Ir a un artículo aleatorio que puedes clarificar',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Pulsa en {{int:vector-view-edit}}',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Editar una sección',
+	'notification-gettingstarted-link-text-get-started' => 'Primeros pasos',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} es una enciclopedia libre que está realizada por personas como tú. [[Especial:Cómo empezar|Empieza haciendo tu primera contribución]]', # Fuzzy
 	'notification-gettingstarted-start-editing-email-subject' => 'Empieza a editar {{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-body' => 'Visita $2 para obtener una lista de maneras fáciles de mejorar páginas.', # Fuzzy
