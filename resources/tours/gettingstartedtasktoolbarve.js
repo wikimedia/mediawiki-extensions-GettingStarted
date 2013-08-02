@@ -46,7 +46,7 @@
 			titlemsg: 'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title',
 			descriptionmsg: 'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description',
 			position: 'bottom',
-			attachTo: '#ca-edit',
+			attachTo: '#ca-ve-edit',
 			autoFocus: true,
 			width: 300,
 			shouldSkip: gt.isVisualEditorOpen,
