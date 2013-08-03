@@ -214,7 +214,7 @@ $messages['ast'] = array(
 Escueya una de les opciones de más abaxo, y verá un artículu al debalu que necesita ayuda.',
 	'gettingstarted-return' => '← Non, gracies, volver a la páxina que taba lleendo',
 	'gettingstarted-project-link' => '{{ns:Project}}:PrimerosPasos',
-	'tag-gettingstarted_edit' => 'Editor nuevu dando los [[{{MediaWiki:gettingstarted-project-link}}|primeros pasos]]', # Fuzzy
+	'tag-gettingstarted_edit' => '[[{{MediaWiki:gettingstarted-project-link}}|primeros pasos]] col nuevu editor',
 	'tag-gettingstarted_edit-description' => "Edición d'una páxina que'l usuariu elixó na llista de xeres de [[Special:GettingStarted|Primeros pasos]]",
 	'gettingstarted-task-copyedit-main-description' => 'Iguar ortografía y gramática',
 	'gettingstarted-task-copyedit-secondary-description' => '¡La manera más fácil de principiar!',
@@ -242,6 +242,8 @@ Escueya una de les opciones de más abaxo, y verá un artículu al debalu que ne
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => "Pue editar l'artículu enteru calcando equí.",
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Editar una seición',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Si quier editar una seición específica, pue calcar nel enllaz azul '{{int:editsection}}' del principiu de cada seición.",
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => '¡Pue editar!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Agora pue editar la páxina. En acabando, faiga click en "{{int:visualeditor-toolbar-savedialog}}" pa revisar y guardar los cambios.',
 	'notification-gettingstarted-link-text-get-started' => 'Primeros pasos',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} ye una enciclopedia llibre escrita por xente como vusté. ¡De los [[Special:GettingStarted|primeros pasos]] faciendo la so primera edición!',
 	'notification-gettingstarted-start-editing-email-subject' => 'De los primeros pasos editando {{SITENAME}}',
