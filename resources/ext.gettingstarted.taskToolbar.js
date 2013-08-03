@@ -54,8 +54,13 @@
 			title: mw.message( 'gettingstarted-task-toolbar-editing-help-title' ).text()
 		} ).text( mw.message( 'gettingstarted-task-toolbar-editing-help-text' ).text() )
 			.click( function ( evt ) {
-				var tourName = mw.libs.ve !== undefined ?
-					'gettingstartedtasktoolbarve' : 'gettingstartedtasktoolbar';
+				var tourName;
+
+				if ( mw.libs.ve && mw.libs.ve.isAvailable ) {
+					tourName = 'gettingstartedtasktoolbarve';
+				} else {
+					tourName = 'gettingstartedtasktoolbar';
+				}
 
 				mw.guidedTour.launchTour( tourName );
 
