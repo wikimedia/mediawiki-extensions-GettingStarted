@@ -983,7 +983,7 @@ $messages['lb'] = array(
 Sicht eng Optioun hei drënner eraus an Dir kritt en zoufällegen Artikel gewisen deen nach Hëllef brauch.',
 	'gettingstarted-return' => 'Nee Merci, zréck op déi Säit déi ech am gaang war mat liesen',
 	'gettingstarted-project-link' => '{{ns:Project}}:Fir unzefänken',
-	'tag-gettingstarted_edit' => 'Nei Auteure [[{{MediaWiki:gettingstarted-project-link}}|wéi ufänken]]', # Fuzzy
+	'tag-gettingstarted_edit' => 'Neien Auteur [[{{MediaWiki:gettingstarted-project-link}}|wéi ufänken]]',
 	'tag-gettingstarted_edit-description' => 'Eng Säit änneren déi de Benotzer aus der Lëscht op [[Special:GettingStarted|Ufänken]] eraussicht',
 	'gettingstarted-task-copyedit-main-description' => 'Orthographie a Grammaire verbesseren',
 	'gettingstarted-task-copyedit-secondary-description' => 'Den einfachste Wee fir unzefänken!',
@@ -1009,6 +1009,8 @@ Sicht eng Optioun hei drënner eraus an Dir kritt en zoufällegen Artikel gewise
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Dir Kënnt de ganzen Artikel ännere wann Dir hei klickt.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'En Abschnitt änneren',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Wann Dir e bestëmmten Abschnitt ännere wëllt, da klickt op de bloen  '{{int:editsection}}' Link uewen op all Abschnitt.",
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Dir kënnt änneren!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "Dir kënnt d'Säit elo änneren. Wann dir fäerdeg sidd, klickt  '{{int:visualeditor-toolbar-savedialog}}' fir nozekucken an Är Ännerungen ze späicheren.",
 	'notification-gettingstarted-link-text-get-started' => 'Fir unzefänken',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} ass eng fräi Enzyklopedie geschriwwe vu Leit wéi Iech. [[Special:GettingStarted|Fänkt un]] andeems Dir Är éischt Ännerung maacht!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Ufänke mat Änneren op {{SITENAME}}',
