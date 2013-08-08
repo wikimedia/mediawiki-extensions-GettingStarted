@@ -1134,6 +1134,14 @@ $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Сакате уште работа? Лесни начини да помогнете ќе најдете на $2.',
 );
 
+/** Marathi (मराठी)
+ * @author V.narsikar
+ */
+$messages['mr'] = array(
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'आपण संपादन करू शकता!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "आपण आता हे पान संपादु शकता.ते पूर्ण झाल्यावर,झलक पाहण्यास व आपले बदल जतन करण्यास'{{int:visualeditor-toolbar-savedialog}}' वर टिचका.",
+);
+
 /** Malay (Bahasa Melayu)
  * @author Anakmalaysia
  */
