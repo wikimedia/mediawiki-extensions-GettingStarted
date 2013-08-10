@@ -1530,7 +1530,19 @@ Välj ett alternativ nedan och du kommer att se en slumpmässig artikel som beh�
 	'notification-gettingstarted-link-text-get-started' => 'Kom igång',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} är en fri encyklopedi skriven av människor som dig. [[Special:GettingStarted|Kom igång]] genom att göra din första redigering!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Komma igång genom att redigera {{SITENAME}}',
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} är en fri encyklopedi skriven av människor som du. Kom igång genom att göra din första redigering!
+
+Besök $2 för en lista över enkla sätt att förbättra sidor.
+
+$3',
+	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Komma igång med {{SITENAME}} redigering genom att besöka $2',
+	'notification-gettingstarted-continue-editing' => 'Bra jobbat! Du har redan gjort dina första redigeringar i {{SITENAME}}. Om du letar efter mer att göra, finns här några [[Special:GettingStarted|lätta sätt att hjälpa till på]].',
 	'notification-gettingstarted-continue-editing-email-subject' => 'Enkla sätt att förbättra {{SITENAME}}',
+	'notification-gettingstarted-continue-editing-text-email-body' => 'Bra jobbat! Du har redan gjort din första redigeringar i {{SITENAME}}.
+
+Om du letar efter mer att göra, det finns en lista över enkla sätt att hjälpa till på i $2
+ 
+$3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Söker du efter mer att göra? Besök $2 för en lista över saker du enkelt kan hjälpa till med.',
 );
 
