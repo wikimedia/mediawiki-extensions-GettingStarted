@@ -3,7 +3,7 @@
 
 ( function ( $, mw, gt ) {
 	var task = mw.gettingStarted.logging.getTaskForCurrentPage() || '',
-		editSectionSelector = '.mw-editsection-link-primary',
+		editSectionSelector = '.mw-editsection-visualeditor',
 		hasEditSectionAtLoadTime;
 
 	// The code around the section stuff is a bit of a hack, but I want to see if this is common
