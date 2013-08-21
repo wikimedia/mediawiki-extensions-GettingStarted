@@ -1601,7 +1601,7 @@ $messages['uk'] = array(
 	'gettingstarted-welcomesiteuser' => 'Вітаємо у проекті $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Початок роботи',
 	'gettingstarted-welcome-back-site-user' => 'Вітаємо знову, $2',
-	'gettingstarted-task-header' => 'Дякуємо, що приєднались до {{SITENAME}}! Ось кілька способів включитись в роботу.
+	'gettingstarted-task-header' => 'Дякуємо, що приєднались до {{grammar:genitive|{{SITENAME}}}}! Ось кілька способів включитись в роботу.
 
 Оберіть варіант внизу, і Ви побачите випадкову статтю, яка потребує допомоги.',
 	'gettingstarted-return' => '← Ні, дякую, поверніть на сторінку, яку я читав',
@@ -1638,7 +1638,7 @@ $messages['uk'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "Ви тепер можете редагувати сторінку. Коли закінчите, натисніть '{{int:visualeditor-toolbar-savedialog}}', щоб переглянути і зберегти свої зміни.",
 	'notification-gettingstarted-link-text-get-started' => 'Почати роботу',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} — це вільна енциклопедія, написана такими ж людьми, як і Ви. [[Special:GettingStarted|Почніть роботу]], зробивши своє перше редагування!',
-	'notification-gettingstarted-start-editing-email-subject' => 'Почніть роботу з редагування {{SITENAME}}',
+	'notification-gettingstarted-start-editing-email-subject' => 'Почніть роботу з редагування {{grammar:genitive|{{SITENAME}}}}',
 	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} — це вільна енциклопедія, написана такими ж людьми, як і Ви. Почніть роботу, зробивши своє перше редагування!
 
 Відвідайте $2, щоб отримати список простих способів покращення сторінок.
