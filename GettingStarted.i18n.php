@@ -338,6 +338,17 @@ $messages['cs'] = array(
 	'gettingstarted-task-copyedit-main-description' => 'Opravy pravopisu a gramatiky', # Fuzzy
 );
 
+/** Welsh (Cymraeg)
+ * @author Lloffiwr
+ */
+$messages['cy'] = array(
+	'gettingstarted' => 'Camau cyntaf',
+	'gettingstarted-welcomesiteuser' => 'Croeso i $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Camau cyntaf',
+	'gettingstarted-welcome-back-site-user' => 'Croeso nôl, $2',
+	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
+);
+
 /** Danish (dansk)
  * @author Christian List
  */
