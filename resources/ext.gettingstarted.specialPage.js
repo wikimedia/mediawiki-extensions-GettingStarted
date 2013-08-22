@@ -1,4 +1,6 @@
 ( function ( mw ) {
+	'use strict';
+
 	var event = {
 		action: 'gettingstarted-specialpage-impression',
 		isNew: false

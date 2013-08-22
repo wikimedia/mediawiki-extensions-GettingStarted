@@ -1,6 +1,8 @@
 // Tour started on article page, with task toolbar showing
 
 ( function ( window, document, $, mw, gt ) {
+	'use strict';
+
 	gt.defineTour( {
 		name: 'gettingstartedtasktoolbarintro',
 		shouldLog: true,

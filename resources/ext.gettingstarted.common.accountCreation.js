@@ -1,4 +1,6 @@
 ( function ( mw, $ ) {
+	'use strict';
+
 	var logging = mw.gettingStarted.logging;
 
 	/**

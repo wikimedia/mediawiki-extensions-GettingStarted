@@ -2,6 +2,8 @@
 // Used for wikitext editing.  The 'gettingstartedtasktoolbarve' tour is for VisualEditor.
 
 ( function ( window, document, $, mw, gt ) {
+	'use strict';
+
 	var task = mw.gettingStarted.logging.getTaskForCurrentPage() || '',
 		hasEditSection;
 

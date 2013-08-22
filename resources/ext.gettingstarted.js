@@ -2,6 +2,8 @@
 // special page, or the post-account creation version.
 
 ( function ( $, mw ) {
+	'use strict';
+
 	$( function () {
 		var isWelcomeCreation = mw.config.get( 'wgIsWelcomeCreation' ),
 			isNew = !!isWelcomeCreation,
