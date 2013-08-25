@@ -752,17 +752,17 @@ $messages['he'] = array(
 	'gettingstarted-task-clarify-secondary-description' => 'לפשט או לנסח משפטים מחדש.',
 	'gettingstarted-task-addlinks-main-description' => 'הוספת קישורים',
 	'gettingstarted-task-addlinks-secondary-description' => 'חבר יחדיו ערכים מ{{SITENAME}}',
-	'gettingstarted-task-toolbar-return-to-list-text' => '►‎ חזרה לרשימה', # Fuzzy
-	'gettingstarted-task-toolbar-return-to-list-title' => 'חזרה לרשימת המאמרים', # Fuzzy
-	'gettingstarted-task-toolbar-editing-help-text' => 'הצג עזרה', # Fuzzy
+	'gettingstarted-task-toolbar-return-to-list-text' => '►‎ בחירת משימה אחרת',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'חזרה לדף בחירת משימה',
+	'gettingstarted-task-toolbar-editing-help-text' => 'תראו לי איך',
 	'gettingstarted-task-toolbar-editing-help-title' => 'הצג מדריך על כיצד לערוך',
 	'gettingstarted-task-toolbar-try-another-text' => 'לנסות מאמר אחר ◄',
 	'gettingstarted-task-toolbar-close-title' => 'סגור סרגל כלים זה',
-	'gettingstarted-task-copyedit-toolbar-description' => 'ערך זה מכיל שגיאות איות ודקדוק שתוכלו לתקן.', # Fuzzy
+	'gettingstarted-task-copyedit-toolbar-description' => 'ייתכן שהערך הזה מכיל שגיאות איות ודקדוק שביכולתך לתקן.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'עברו לערך אקראי שניתן לשפר באמצעות העתקה וליטוש',
-	'gettingstarted-task-clarify-toolbar-description' => 'הערך מבלבל או מעורפל. חפשו דרכים להפכו לברור יותר.', # Fuzzy
+	'gettingstarted-task-clarify-toolbar-description' => 'ייתכן שהערך הזה מבלבל או מעורפל. צריך לחפש דרכים לעשות אותו ברור יותר.',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => 'עברו לערך אקראי שאתם יכולים להבהיר',
-	'gettingstarted-task-addlinks-toolbar-description' => 'ערך זה דורש עוד קישורים. חפשו מושגים שלהם ערך {{SITENAME}}.', # Fuzzy
+	'gettingstarted-task-addlinks-toolbar-description' => 'ייתכן שערך זה דורש עוד קישורים. חפשו מושגים שיש להם ערך ב{{GRAMMAR:תחילית|{{SITENAME}}}}.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'עברו לערך אקראי לשם הוספת קישורים',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'כיצד להתחיל',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'קראו ברפרוף את הערך וחפשו דברים לשפר.  אם אתם מרגישים מבולבלים, אל דאגה. אינכם צריכים להיות מומחים בנושא! אם הנכם צריכים עזרה או מעוניינים לנסות ערך אחר, השתמשו בקישורים בתפריט העליון.',
@@ -783,7 +783,7 @@ $messages['he'] = array(
 
 $3',
 	'notification-gettingstarted-start-editing-text-email-batch-body' => 'להתחיל בעריכת {{SITENAME}} על-ידי ביקור ב$2',
-	'notification-gettingstarted-continue-editing' => 'עבודה טובה! ביצעת את העריכה הראשונה שלך ב{{GRAMMAR:תחילית|{{SITENAME}}}}. אם חיפשת עוד דברים לעשות, הנה כמה [[מיוחדים: GettingStarted|דרכים קלות לעזור]].', # Fuzzy
+	'notification-gettingstarted-continue-editing' => 'עבודה טובה! ביצעת את העריכות הראשונות שלך ב{{GRAMMAR:תחילית|{{SITENAME}}}}. אם חיפשת עוד דברים לעשות, הנה כמה [[Special: GettingStarted|דרכים קלות לעזור]].', # Fuzzy
 	'notification-gettingstarted-continue-editing-email-subject' => 'דרכים קלות כדי לשפר את {{SITENAME}}',
 	'notification-gettingstarted-continue-editing-text-email-body' => 'עבודה טובה! ביצעת את העריכה הראשונה ב{{SITENAME}}.
 
@@ -956,17 +956,17 @@ $messages['ko'] = array(
 	'gettingstarted-task-clarify-secondary-description' => '문장을 간단하게 하거나 바꾸어 적으세요.',
 	'gettingstarted-task-addlinks-main-description' => '링크 추가',
 	'gettingstarted-task-addlinks-secondary-description' => '{{SITENAME}} 문서끼리 연결합니다.',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ 목록으로 돌아가기',
-	'gettingstarted-task-toolbar-return-to-list-title' => '문서의 목록으로 돌아갑니다',
-	'gettingstarted-task-toolbar-editing-help-text' => '도움말 보기',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ 다른 작업 선택',
+	'gettingstarted-task-toolbar-return-to-list-title' => '작업 선택 문서로 돌아갑니다',
+	'gettingstarted-task-toolbar-editing-help-text' => '방법 보기',
 	'gettingstarted-task-toolbar-editing-help-title' => '편집하는 방법에 대한 가이드 보기',
 	'gettingstarted-task-toolbar-try-another-text' => '다른 기사에 도전 ►',
 	'gettingstarted-task-toolbar-close-title' => '이 툴바 닫기',
-	'gettingstarted-task-copyedit-toolbar-description' => '이 문서는 고칠 수 있는 맞춤법과 문법 오류가 있습니다.',
+	'gettingstarted-task-copyedit-toolbar-description' => '이 문서는 고칠 수 있는 맞춤법이나 문법 오류가 있을 수 있습니다.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => '교정에 의해 향상할 수 있는 임의 문서로 갑니다',
-	'gettingstarted-task-clarify-toolbar-description' => '이 문서는 혼란하거나 막연합니다. 명확하게 할 수 있는 방법을 찾아보세요.',
+	'gettingstarted-task-clarify-toolbar-description' => '이 문서는 혼동스럽거나 막연할 수 있습니다. 명확하게 할 수 있는 방법을 찾아보세요.',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => '명확하게 할 수 있는 임의 문서로 갑니다',
-	'gettingstarted-task-addlinks-toolbar-description' => '이 문서에는 더 많은 링크가 필요합니다. {{SITENAME}} 문서로 용어를 찾아보세요.',
+	'gettingstarted-task-addlinks-toolbar-description' => '이 문서에는 더 많은 링크가 필요할 수 있습니다. {{SITENAME}} 문서로 용어를 찾아보세요.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => '링크를 추가할 수 있는 임의 문서로 갑니다',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => '시작하는 방법',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => '문서를 검사하고 개선에 대해 찾기를 시작하세요. 압도당한다고 느껴지면 걱정하지 마세요. 이 주제에 대해 전문가가 될 필요가 없습니다! 도움이 필요하거나 다른 문서를 시도하려면 위 줄의 링크를 사용하세요.',
@@ -1737,6 +1737,16 @@ Gợi ý xem danh sách những cách dễ dàng để tiếp tục đóng góp 
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Muốn tiếp tục đóng góp? Gợi ý xem danh sách những cách dễ dàng để giúp đỡ tại $2 .',
+);
+
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'gettingstarted-task-toolbar-return-to-list-text' => 'קלויבט אן אנדער אויפגאב.',
+	'gettingstarted-task-toolbar-editing-help-text' => 'ווײַז מיך וויאזוי',
+	'gettingstarted-task-copyedit-toolbar-description' => 'דער ארטיקל האט אפשר אויסלייג אדער גראמאטיק גרײַזן וואס איר קענט פאררעכטן.',
+	'gettingstarted-task-addlinks-toolbar-description' => 'דער ארטיקלע דארף אפשר נאך לינקען. זוכט אויס טערמינען וואס האב א {{SITENAME}}־ארטיקל.',
 );
 
 /** Simplified Chinese (中文（简体）‎)
