@@ -197,7 +197,7 @@ The label for the link is {{msg-mw|Gettingstarted-task-toolbar-try-another-text}
  */
 $messages['arc'] = array(
 	'gettingstarted-task-addlinks-main-description' => 'ܐܘܣܦ ܐܣܘܪ̈ܐ',
-	'gettingstarted-task-toolbar-editing-help-text' => 'ܚܘܝ ܥܘܕܪܢܐ',
+	'gettingstarted-task-toolbar-editing-help-text' => 'ܚܘܝ ܠܝ ܐܝܟܢܐ',
 );
 
 /** Asturian (asturianu)
@@ -600,17 +600,17 @@ Choisissez une option ci-dessous et vous verrez un article pris au hasard qui a 
 	'gettingstarted-task-clarify-secondary-description' => 'Simplifier ou reformuler des phrases.',
 	'gettingstarted-task-addlinks-main-description' => 'Ajouter des liens',
 	'gettingstarted-task-addlinks-secondary-description' => 'Relier des articles de {{SITENAME}} entre eux.',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Retour à la liste',
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Retour à la liste des articles',
-	'gettingstarted-task-toolbar-editing-help-text' => 'Afficher l’aide',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Choisir une autre tâche',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Retour à la page de choix des tâches',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Me montrer comment faire',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Voir un guide sur la façon de modifier',
 	'gettingstarted-task-toolbar-try-another-text' => 'Essayer un autre article ►',
 	'gettingstarted-task-toolbar-close-title' => 'Fermer cette barre d’outils',
-	'gettingstarted-task-copyedit-toolbar-description' => 'Cet article a des erreurs d’orthographe et de grammaire que vous pouvez corriger.',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Cet article peut comporter des erreurs d’orthographe ou de grammaire que vous pouvez corriger.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Aller à un article au hasard que vous pouvez améliorer en modifiant par copie',
-	'gettingstarted-task-clarify-toolbar-description' => 'Cet article est source de confusion ou de vague. Cherchez des façons de le rendre plus clair.',
+	'gettingstarted-task-clarify-toolbar-description' => 'Cet article peut être source de confusion ou vague. Cherchez des façons de le rendre plus clair.',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Aller à un article au hasard que vous pouvez préciser',
-	'gettingstarted-task-addlinks-toolbar-description' => 'Cet article a besoin e plus de liens. Cherchez les termes qui ont un article sur {{SITENAME}}.',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Cet article peut avoir besoin de plus de liens. Cherchez les termes qui ont un article sur {{SITENAME}}.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Aller à un article au hasard auquel vous pouvez ajouter des liens',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Comment débuter',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Commencez simplement à analyser l’article et à chercher des améliorations. Si vous vous sentez dépassé, ne vous inquiétez pas. Vous n’avez pas besoin d’être un expert de ce sujet ! Si vous avez besoin d’aide ou voulez essayer un autre article, utilisez les liens de la barre du haut.',
@@ -1038,7 +1038,7 @@ Sicht eng Optioun hei drënner eraus an Dir kritt en zoufällegen Artikel gewise
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Gitt op en zoufällegen Artikel, deen Dir duerch ännere verbessere kënnt',
 	'gettingstarted-task-clarify-toolbar-description' => 'Dësen Artikel ass méiglecherweis konfus oder vague. Kuckt no Weeër wéi Dir e méi kloer maache kënnt.',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Gitt op een zoufällegen Artikel deen Dir präziséiere kënnt',
-	'gettingstarted-task-addlinks-toolbar-description' => 'Dësen Artikel brauch méi Linken. Sicht no Begrëffer déi een {{SITENAME}}-Artikel hunn.', # Fuzzy
+	'gettingstarted-task-addlinks-toolbar-description' => 'Dësen Artikel brauch méi Linken. Kuckt no Begrëffer déi een {{SITENAME}}-Artikel hunn.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Gitt op een zoufällegen Artikel wou Dir Linken derbäisetze kënnt',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Wéi een ufänkt',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Iddie wat Dir maache kënnt',
@@ -1625,17 +1625,17 @@ $messages['uk'] = array(
 	'gettingstarted-task-clarify-secondary-description' => 'Спростити або перефразувати речення.',
 	'gettingstarted-task-addlinks-main-description' => 'Додати посилання',
 	'gettingstarted-task-addlinks-secondary-description' => "Об'єднати статті {{SITENAME}}.",
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Назад до списку', # Fuzzy
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Повернутися до списку статей', # Fuzzy
-	'gettingstarted-task-toolbar-editing-help-text' => 'Показати довідку', # Fuzzy
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Вибрати інше завдання',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Повернутися на сторінку вибору завдання',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Показати мені, як',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Показати посібник з редагування',
 	'gettingstarted-task-toolbar-try-another-text' => 'Спробувати іншу статтю ►',
 	'gettingstarted-task-toolbar-close-title' => 'Закрити цю панель',
-	'gettingstarted-task-copyedit-toolbar-description' => 'У цій статті є орфографічні і граматичні помилки, які Ви можете виправити.', # Fuzzy
+	'gettingstarted-task-copyedit-toolbar-description' => 'У цій статті, можливо, має орфографічні або граматичні помилки, які Ви можете виправити.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Перейти до випадкової статті, яку ви можете покращити технічним редагуванням',
-	'gettingstarted-task-clarify-toolbar-description' => 'Ця стаття заплутана чи невизначена. Знайдіть спосіб зробити її зрозумілішою.', # Fuzzy
+	'gettingstarted-task-clarify-toolbar-description' => 'Ця стаття може бути заплутаною чи розпливчастою. Знайдіть спосіб зробити її зрозумілішою.',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Перейти до випадкової сторінки, яку ви можете зробити чіткішою',
-	'gettingstarted-task-addlinks-toolbar-description' => 'Ця стаття потребує більше посилань. Дивитися терміни, статті про які є у {{SITENAME}}.', # Fuzzy
+	'gettingstarted-task-addlinks-toolbar-description' => 'Ця стаття може знадобитися більше посилань. Пошукайте терміни, статті про які є у {{SITENAME}}.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Перейти до випадкової статті, до якої ви можете додати посилання',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Як розпочати роботу',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Просто прогляньте статтю і пошукайте те, що ви можете покращити. Якщо почуваєтесь спантеличено, не хвилюйтесь. Вам не треба бути експертом з цього питання! Якщо вам треба допомога чи ви хочете спробувати іншу статтю, скористайтесь посиланнями на верхній панелі.',
