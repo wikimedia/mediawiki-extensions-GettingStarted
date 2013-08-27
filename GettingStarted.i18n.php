@@ -97,18 +97,29 @@ $messages['qqq'] = array(
 {{Identical|Getting started}}',
 	'gettingstarted-desc' => '{{desc|name=Getting Started|url=http://www.mediawiki.org/wiki/Extension:GettingStarted}}',
 	'gettingstarted-msg' => 'Blank message used to replace welcomecreation-msg.  Additional dynamically generated task HTML is injected',
-	'gettingstarted-welcomesiteuser' => 'The title of the Getting Started page shown automatically to users after they create an account
+	'gettingstarted-welcomesiteuser' => 'The title of the Getting Started page shown automatically to users after they create an account.
+
+Parameters:
 * $1 - sitename
 * $2 - username; GENDER is supported',
 	'gettingstarted-welcomesiteuseranon' => 'The title of the Getting Started page for anonymous users who manually visit it.
-The parameter is not used in the default message.
-* $1 - sitename
+
+Parameters:
+* $1 - (Unused) sitename
+See also:
+* {{msg-mw|Gettingstarted-welcome-back-site-user}}
 {{Identical|Getting started}}',
 	'gettingstarted-welcome-back-site-user' => 'The title of the Getting Started page for logged in users who manually visit it.
+
 These may or may not have seen it when they created their account, depending on account age.
+
 Only $2 is currently used in the default message, but the order is the same as {{msg-mw|gettingstarted-welcomesiteuser}} for consistency.
-* $1 - sitename
-* $2 - username; GENDER is supported',
+
+Parameters:
+* $1 - (Unused) sitename
+* $2 - username; GENDER is supported
+See also:
+* {{msg-mw|Gettingstarted-welcomesiteuseranon}}',
 	'gettingstarted-task-header' => 'Header above task information',
 	'gettingstarted-return' => 'Text of navigation button for returning to previous page',
 	'gettingstarted-project-link' => 'Name of page that describes how GettingStarted is used on the wiki',
@@ -673,17 +684,17 @@ Escolla unha das opcións inferiores para ir ata un artigo que necesite axuda.',
 	'gettingstarted-task-clarify-secondary-description' => 'Simplificar ou reelaborar as oracións.',
 	'gettingstarted-task-addlinks-main-description' => 'Engadir ligazóns',
 	'gettingstarted-task-addlinks-secondary-description' => 'Conectar artigos de {{SITENAME}}.',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Volver á lista',
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Volver á lista de artigos',
-	'gettingstarted-task-toolbar-editing-help-text' => 'Mostrar a axuda',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Elixir outra tarefa',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Volver á páxina de selección de tarefas',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Mostrádeme como',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Ollar unha guía sobre como editar',
 	'gettingstarted-task-toolbar-try-another-text' => 'Probar outro artigo ►',
 	'gettingstarted-task-toolbar-close-title' => 'Pechar esta barra de ferramentas',
-	'gettingstarted-task-copyedit-toolbar-description' => 'Este artigo ten erros ortográficos e gramáticos que vostede pode corrixir.',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Este artigo pode ter erros ortográficos ou gramaticais que vostede pode corrixir.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Ir a un artigo ao chou para mellorar a súa redacción',
-	'gettingstarted-task-clarify-toolbar-description' => 'Este artigo é confuso ou impreciso. Busque formas de facelo máis claro.',
+	'gettingstarted-task-clarify-toolbar-description' => 'Este artigo pode ser confuso ou impreciso. Busque formas de facelo máis claro.',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Ir a un artigo ao chou para clarificalo',
-	'gettingstarted-task-addlinks-toolbar-description' => 'Este artigo necesita máis ligazóns. Busque termos que teñan artigo en {{SITENAME}}.',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Este artigo pode necesitar máis ligazóns. Busque termos que teñan artigo en {{SITENAME}}.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Ir a un artigo ao chou para engadirlle ligazóns',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Como comezar',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Empece analizando o artigo e buscando melloras. Se sente que non vai poder, non se preocupe. Non é necesario ser experto na materia! Se necesita axuda ou quere probar outro artigo, utilice as ligazóns da barra superior.',
@@ -1130,15 +1141,15 @@ $messages['mk'] = array(
 	'gettingstarted-task-clarify-secondary-description' => 'Упростете ги речениците или срочете ги поинаку',
 	'gettingstarted-task-addlinks-main-description' => 'Додај врски',
 	'gettingstarted-task-addlinks-secondary-description' => 'Поврзете ги статиите на {{SITENAME}}.',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Назад на списокот',
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Назад кон списокот на статии',
-	'gettingstarted-task-toolbar-editing-help-text' => 'Прикажи помош',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Изберете друга задача',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Назад кон изборот на задачи',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Покажи ми како',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Прикажи водич за уредување',
 	'gettingstarted-task-toolbar-try-another-text' => 'Пробајте друга статија ►',
 	'gettingstarted-task-toolbar-close-title' => 'Затвори го алатников',
-	'gettingstarted-task-copyedit-toolbar-description' => 'Статијава има правописни и граматички грешки што можете да ги поправите.',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Статијава може да има правописни или граматички грешки што можете да ги поправите.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Оди на случајна статија што бара коректура',
-	'gettingstarted-task-clarify-toolbar-description' => 'Статијата е збунителна или недоречена. Размислете како можете да ја направите појасна.',
+	'gettingstarted-task-clarify-toolbar-description' => 'Статијава може да е збунителна или недоречена. Размислете како можете да ја направите појасна.',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Одете на случајна страница што бара разјаснување',
 	'gettingstarted-task-addlinks-toolbar-description' => 'На статијава ѝ требаат повеќе врски. Побарајте ги поимите што имаат статија на {{SITENAME}}.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Појдете на случајна статија што бара повеќе врски',
