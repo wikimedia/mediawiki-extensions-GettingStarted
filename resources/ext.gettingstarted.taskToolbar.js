@@ -47,7 +47,7 @@
 
 		$centerMessage = $( '<span>' ).attr( {
 			'class': 'mw-gettingstarted-toolbar-center-message'
-		} ).text( mw.message( toolbarInfo.description ) );
+		} ).text( mw.message( toolbarInfo.description ).text() );
 
 		$showGuide = $( '<a>' ).attr( {
 			'class': 'mw-ui-button mw-ui-primary mw-gettingstarted-toolbar-show-guiders',
