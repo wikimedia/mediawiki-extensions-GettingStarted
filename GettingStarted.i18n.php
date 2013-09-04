@@ -829,11 +829,21 @@ $messages['hu'] = array(
 	'gettingstarted' => 'Első lépések',
 	'gettingstarted-desc' => 'Egy [[Special:GettingStarted|üdvözlőlapot]] mutat az új felhasználóknak a regisztráció után',
 	'gettingstarted-welcomesiteuser' => 'Üdvözlünk a $1 oldalain, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Üdvözlünk a $1 oldalain!', # Fuzzy
+	'gettingstarted-welcomesiteuseranon' => 'Első lépések',
+	'gettingstarted-welcome-back-site-user' => 'Üdv újra, $2',
+	'gettingstarted-task-header' => 'Köszönjük, hogy csatlakoztál a {{SITENAME}} szerkesztői közé! Itt van néhány tipp, hogyan kapcsolódhatsz be a munkába.
+
+Válassz egy opciót alább, és egy találomra választott segítségre szoruló cikkhez fogsz jutni.',
 	'gettingstarted-return' => '← Nem érdekel, vissza arra az oldalra, amit éppen olvastam',
 	'gettingstarted-project-link' => '{{ns:Project}}:Első lépések',
-	'tag-gettingstarted_edit' => 'új szerkesztő [[{{MediaWiki:gettingstarted-project-link}}|első lépései]]', # Fuzzy
-	'tag-gettingstarted_edit-description' => 'A [[Special:GettingStarted|Speciális:Első lépések]] listáról választott oldal szerkesztése', # Fuzzy
+	'tag-gettingstarted_edit' => 'új szerkesztő [[{{MediaWiki:gettingstarted-project-link}}|első lépései]]',
+	'tag-gettingstarted_edit-description' => 'Az [[Special:GettingStarted|Első lépések]] listáról választott oldal szerkesztése',
+	'gettingstarted-task-copyedit-main-description' => 'Helyesírási és nyelvtani hibák javítása',
+	'gettingstarted-task-copyedit-secondary-description' => 'A legkönnyebb feladat kezdőknek!',
+	'gettingstarted-task-clarify-main-description' => 'Érthetőség javítása',
+	'gettingstarted-task-clarify-secondary-description' => 'Mondatok egyszerűsítése vagy átfogalmazása',
+	'gettingstarted-task-addlinks-main-description' => 'Linkek hozzáadása',
+	'gettingstarted-task-addlinks-secondary-description' => 'Kösd össze a {{SITENAME}} szócikkeit.',
 );
 
 /** Armenian (Հայերեն)
@@ -892,6 +902,7 @@ Scegli un'opzione qui sotto e vedrai una voce casuale che ha bisogno di aiuto.",
 	'gettingstarted-task-addlinks-toolbar-description' => 'Questa voce può avere bisogno di più collegamenti. Cerca termini che hanno una voce in {{SITENAME}}.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Vai ad una voce a caso cui puoi aggiungere collegamenti',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Come iniziare',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => "Basta leggere la voce e cercare parti che si possono migliorare. Se ti senti sopraffatto, non preoccuparti. Non è necessario essere un esperto in questo argomento! Se hai bisogno di aiuto o vuoi provare con un'altra voce, utilizza i collegamenti nella barra in alto.",
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Idee su cosa fare',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Questi avvisi identificano problemi con questa voce. Non è necessario che ti occupi di tutti, è sufficiente che faccia ciò con cui sei più a tuo agio.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Fai clic su {{int:vector-view-edit}}',
