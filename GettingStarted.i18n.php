@@ -1409,6 +1409,7 @@ $messages['pms'] = array(
 );
 
 /** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
  * @author OTAVIO1981
  * @author Raylton P. Sousa
  */
@@ -1431,17 +1432,17 @@ Escolha uma opção abaixo, e veja um artigo aleatório que precisa de ajdua',
 	'gettingstarted-task-clarify-secondary-description' => 'Simplifique ou reescreva a sentença.',
 	'gettingstarted-task-addlinks-main-description' => 'Adicione Links',
 	'gettingstarted-task-addlinks-secondary-description' => 'Conecte os artigos do {{SITENAME}}.',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Voltar para a lista',
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Retorne para a lista de artigos',
-	'gettingstarted-task-toolbar-editing-help-text' => 'Mostrar ajuda',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Escolher outra tarefa',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Retornar para a página de escolha de tarefas',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Mostrar-me como',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Mostrar um guia sobre como editar',
 	'gettingstarted-task-toolbar-try-another-text' => 'Tentar outro artigo ►',
 	'gettingstarted-task-toolbar-close-title' => 'Feche esta barra de ferramentas',
-	'gettingstarted-task-copyedit-toolbar-description' => 'Este artigo tem erros de ortografia e gramática que você pode consertar.',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Este artigo pode ter erros de ortografia ou gramática que você pode consertar.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Vá a um artigo aleatório que pode melhorar pela correção do texto',
-	'gettingstarted-task-clarify-toolbar-description' => 'Este artigo é confuso ou vago. Procure meios de você torná-lo claro.',
+	'gettingstarted-task-clarify-toolbar-description' => 'Este artigo pode ser confuso ou vago. Procure meios de você torná-lo claro.',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Vá a um artigo aleatório que pode clarificar.',
-	'gettingstarted-task-addlinks-toolbar-description' => 'Este artigo precisa de mais links. Procure por termos que possuam artigo na {{SITENAME}}.',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Este artigo pode necessitar de mais ligações. Procure por termos que possuam artigo na {{SITENAME}}.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Vá a um artigo aleatório que possa adicionar links',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Como começar',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'apens começe varrendo o artigo e procurando por melhorias. Se se sentir sobrecarregado, não se preocupe. Você não precisa ser um expert neste tópico! Se você precisar de ajuda ou quiser tentar outro artigo, use o link no topo da barra.',
