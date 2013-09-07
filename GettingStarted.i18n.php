@@ -844,6 +844,7 @@ Válassz egy opciót alább, és egy találomra választott segítségre szorul�
 	'gettingstarted-task-clarify-secondary-description' => 'Mondatok egyszerűsítése vagy átfogalmazása',
 	'gettingstarted-task-addlinks-main-description' => 'Linkek hozzáadása',
 	'gettingstarted-task-addlinks-secondary-description' => 'Kösd össze a {{SITENAME}} szócikkeit.',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Más feladat választása',
 );
 
 /** Armenian (Հայերեն)
