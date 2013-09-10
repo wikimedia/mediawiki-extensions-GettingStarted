@@ -548,6 +548,7 @@ $messages['fa'] = array(
 
 /** Finnish (suomi)
  * @author Nike
+ * @author Samoasambia
  * @author Silvonen
  * @author VezonThunder
  */
@@ -555,7 +556,7 @@ $messages['fi'] = array(
 	'gettingstarted' => 'Alkuaskeleet',
 	'gettingstarted-desc' => 'Lisää [[Special:GettingStarted|tervetulosivun]] uusille käyttäjille (näytetään tunnuksen luonnin jälkeen)',
 	'gettingstarted-welcomesiteuser' => 'Tervetuloa sivustolle $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Tervetuloa sivustolle $1!', # Fuzzy
+	'gettingstarted-welcomesiteuseranon' => 'Aloittaminen',
 	'gettingstarted-welcome-back-site-user' => 'Tervetuloa takaisin, $2',
 	'gettingstarted-task-header' => 'Kiitos, että liityit {{GRAMMAR:illative|{{SITENAME}}}}! Tässä muutamia tapoja päästä alkuun.
 
@@ -565,16 +566,16 @@ Valitse vaihtoehto alta, niin näet satunnaisen artikkelin, joka tarvitsee huomi
 	'gettingstarted-task-copyedit-secondary-description' => 'Helpoin tapa päästä alkuun!',
 	'gettingstarted-task-clarify-secondary-description' => 'Yksinkertaista tai kirjoita virkkeitä uudelleen.',
 	'gettingstarted-task-addlinks-main-description' => 'Lisää linkkejä',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Takaisin listaan',
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Palaa takaisin listaan artikkeleista',
-	'gettingstarted-task-toolbar-editing-help-text' => 'Näytä ohje',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Takaisin listaan', # Fuzzy
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Palaa takaisin listaan artikkeleista', # Fuzzy
+	'gettingstarted-task-toolbar-editing-help-text' => 'Näytä ohje', # Fuzzy
 	'gettingstarted-task-toolbar-editing-help-title' => 'Näytä muokkausopas',
 	'gettingstarted-task-toolbar-try-another-text' => 'Kokeile toista artikkelia ►',
 	'gettingstarted-task-toolbar-close-title' => 'Sulje työkalurivi',
-	'gettingstarted-task-copyedit-toolbar-description' => 'Tässä artikkelissa on kirjoitus- ja kielioppivirheitä, jotka voit korjata.',
-	'gettingstarted-task-clarify-toolbar-description' => 'Tämä artikkeli on sekava tai epämääräinen. Keksi, miten voit tehdä siitä selkeämmän.',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Tässä artikkelissa voi olla kirjoitus- ja kielioppivirheitä, jotka voit korjata.',
+	'gettingstarted-task-clarify-toolbar-description' => 'Tämä artikkeli on sekava tai epämääräinen. Keksi, miten voit tehdä siitä selkeämmän.', # Fuzzy
 	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Mene satunnaiseen artikkeliin, jota voit selkeyttää',
-	'gettingstarted-task-addlinks-toolbar-description' => 'Tämä artikkeli tarvii lisää linkkejä. Etsi käsitteitä, joilla on {{SITENAME}}-artikkeli.',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Tämä artikkeli tarvii lisää linkkejä. Etsi käsitteitä, joilla on {{SITENAME}}-artikkeli.', # Fuzzy
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Etsii satunnaisen artikkelin, johon voit lisätä linkkejä',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Napsauta {{int:vector-view-edit}}',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Voit muokata artikkelia napsauttamalla tästä.',
