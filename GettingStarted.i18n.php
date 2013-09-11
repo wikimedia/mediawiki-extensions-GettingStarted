@@ -1901,9 +1901,28 @@ $3',
 
 /** Traditional Chinese (中文（繁體）‎)
  * @author Simon Shek
+ * @author StephDC
  */
 $messages['zh-hant'] = array(
 	'gettingstarted' => '入門',
+	'gettingstarted-welcomesiteuser' => '歡迎來到$1，$2!',
+	'gettingstarted-welcomesiteuseranon' => '入門',
+	'gettingstarted-welcome-back-site-user' => '歡迎回來，$2',
+	'gettingstarted-return' => '← 不，謝謝，返回到我剛剛在閱讀的頁面',
+	'gettingstarted-project-link' => '{{ns:Project}}:入門',
 	'gettingstarted-task-addlinks-main-description' => '添加連結',
 	'gettingstarted-task-toolbar-editing-help-text' => '顯示説明',
+	'gettingstarted-task-toolbar-try-another-text' => '換篇文章試試 ►',
+	'gettingstarted-task-toolbar-close-title' => '關閉此工具列',
+	'gettingstarted-task-copyedit-toolbar-description' => '這篇文章可能有拼寫或語法錯誤，你可以修復它們。',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => '隨機轉到一篇您可以澄清的文章',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => '如何開始',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => '來簡單看看整篇亟待改進的文章。如果你感到不知所措，不要擔心。你不必是本主題的專家！如果您需要幫助或想要嘗試另一篇文章，請使用在在頂欄中的連結。',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => '點擊{{int:vector-view-edit}}',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => '點擊此處，您就可以編輯整篇文章',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => '編輯一個章節',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => '如果您希望編輯一個特定的章節，您可以點擊位於該章節頂部的藍色“{{int:editsection}}”連結。',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => '您可以編輯！',
+	'notification-gettingstarted-link-text-get-started' => '入門',
+	'notification-gettingstarted-continue-editing-email-subject' => '提高{{SITENAME}}的簡便方法',
 );
