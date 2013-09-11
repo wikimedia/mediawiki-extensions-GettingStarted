@@ -1,4 +1,6 @@
 ( function ( $, mw ) {
+	'use strict';
+
 	$( document ).ready( function () {
 		var $toolbar, $left, $center, $centerMessage, $right, $tryAnother, $close,
 		toolbarInfo, $relativeElements, $marginElements, logging,

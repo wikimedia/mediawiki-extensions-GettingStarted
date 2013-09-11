@@ -1,6 +1,8 @@
 // This file is based on openTask from the E3Experiments extension, so consult that repo for earlier history.
 
 ( function ( $, mw ) {
+	'use strict';
+
 	// Runs on every page, checks to see if this page is in the user's task list,
 	// and if so logs certain user actions.
 	var task, schemaAction, logging = mw.gettingStarted.logging;
