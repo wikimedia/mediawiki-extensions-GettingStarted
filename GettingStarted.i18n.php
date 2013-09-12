@@ -122,8 +122,12 @@ See also:
 * {{msg-mw|Gettingstarted-welcomesiteuseranon}}',
 	'gettingstarted-task-header' => 'Header above task information',
 	'gettingstarted-return' => 'Text of navigation button for returning to previous page',
-	'gettingstarted-project-link' => 'Name of page that describes how GettingStarted is used on the wiki',
+	'gettingstarted-project-link' => 'Name of page that describes how GettingStarted is used on the wiki.
+
+Used in {{msg-mw|Tag-gettingstarted edit}}.',
 	'tag-gettingstarted_edit' => 'Text of tag identifying an edit from GettingStarted that appears e.g. in [[Special:RecentChanges]].
+
+Refers to {{msg-mw|Gettingstarted-project-link}}.
 
 See also:
 * {{msg-mw|tag-gettingstarted_edit-description}}',
@@ -171,12 +175,16 @@ The label for the link is {{msg-mw|Gettingstarted-task-toolbar-try-another-text}
 	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Description of step shown when they choose a GettingStarted task for the first time.',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Title of step pointing to article message box (which states suggested improvements).',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Description of step pointing to article message box (which states suggested improvements).',
-	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Title of step showing user where to click {{msg-mw|vector-view-edit}}.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Title of step showing user where to click {{msg-mw|Vector-view-edit}}.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Description of step showing user where to click {{msg-mw|vector-view-edit}}.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Title of step showing user how to edit a section.',
-	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Description of step showing user how to edit a section.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Description of step showing user how to edit a section.
+
+Refers to {{msg-mw|Editsection}}.',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Title of first step of GettingStarted tour that is on the VisualEditor screen.  It points to the {{msg-mw|visualeditor-toolbar-savedialog}} button.',
-	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Description of first step of GettingStarted tour that is on the VisualEditor screen.  It points to the {{msg-mw|visualeditor-toolbar-savedialog}} button.',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Description of first step of GettingStarted tour that is on the VisualEditor screen.
+
+Refers to the {{msg-mw|Visualeditor-toolbar-savedialog}} button.',
 	'notification-gettingstarted-link-text-get-started' => 'Label for button that links to the page to get started for editing.
 {{Identical|Get started}}',
 	'notification-gettingstarted-start-editing' => 'Text shown on web when someone confirms their email but has not yet edited the main namespace:
