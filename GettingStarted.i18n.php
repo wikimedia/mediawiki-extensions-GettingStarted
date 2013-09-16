@@ -489,11 +489,12 @@ $messages['eo'] = array(
  * @author Almupg
  * @author Armando-Martin
  * @author Fitoschido
+ * @author McDutchie
  */
 $messages['es'] = array(
 	'gettingstarted' => 'Primeros pasos',
 	'gettingstarted-desc' => 'Agrega una [[Special:GettingStarted|página de bienvenida]] a los nuevos usuarios (se muestra después de la creación de la cuenta)',
-	'gettingstarted-welcomesiteuser' => 'Hola $2 ¡Bienvenido a $1!',
+	'gettingstarted-welcomesiteuser' => 'Hola $2 ¡{{GENDER:$2|Bienvenido|Bienvenida}} a $1!',
 	'gettingstarted-welcomesiteuseranon' => 'Primeros pasos',
 	'gettingstarted-welcome-back-site-user' => '{{GENDER:$1|Bienvenido|Bienvenida}} de nuevo, $2', # Fuzzy
 	'gettingstarted-task-header' => '¡Gracias por unirte a {{SITENAME}}! He aquí algunas maneras en que puedes involucrarte.
@@ -505,15 +506,15 @@ Elige una opción a continuación y verás un artículo aleatorio que necesita d
 	'gettingstarted-task-clarify-main-description' => 'Mejorar la claridad',
 	'gettingstarted-task-clarify-secondary-description' => 'Simplificar o reescribir oraciones.',
 	'gettingstarted-task-addlinks-main-description' => 'Añadir enlaces',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Volver a la lista',
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Volver a la lista de artículos',
-	'gettingstarted-task-toolbar-editing-help-text' => 'Mostrar la ayuda',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Volver a la lista', # Fuzzy
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Volver a la lista de artículos', # Fuzzy
+	'gettingstarted-task-toolbar-editing-help-text' => 'Mostrar la ayuda', # Fuzzy
 	'gettingstarted-task-toolbar-editing-help-title' => 'Mostrar una guía de edición',
 	'gettingstarted-task-toolbar-try-another-text' => 'Probar otro artículo ►',
 	'gettingstarted-task-toolbar-close-title' => 'Cerrar esta barra de herramientas',
-	'gettingstarted-task-copyedit-toolbar-description' => 'Este artículo tiene errores ortográficos y gramaticales que puedes corregir.',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Este artículo tiene errores ortográficos y gramaticales que puedes corregir.', # Fuzzy
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Ir a un artículo aleatorio cuyo estilo puedes mejorar',
-	'gettingstarted-task-clarify-toolbar-description' => 'Este artículo es confuso o ambiguo. Busca maneras de hacerlo más claro.',
+	'gettingstarted-task-clarify-toolbar-description' => 'Este artículo es confuso o ambiguo. Busca maneras de hacerlo más claro.', # Fuzzy
 	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Ir a un artículo aleatorio que puedes clarificar',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Pulsa en {{int:vector-view-edit}}',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Editar una sección',
@@ -863,6 +864,69 @@ $messages['hy'] = array(
 	'guidedtour-tour-gettingstartedpage-add-links-title' => 'Ստեղծել հղումը', # Fuzzy
 );
 
+/** Interlingua (interlingua)
+ * @author McDutchie
+ */
+$messages['ia'] = array(
+	'gettingstarted' => 'Prime passos',
+	'gettingstarted-desc' => 'Adde un [[Special:GettingStarted|pagina de benvenita]] pro nove usatores (monstrate post creation de conto)',
+	'gettingstarted-welcomesiteuser' => 'Benvenite a $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Prime passos',
+	'gettingstarted-welcome-back-site-user' => 'Benvenite de novo, $2',
+	'gettingstarted-task-header' => 'Gratias pro adherer a {{SITENAME}}! Ecce alcun modos de participar.
+
+Selige un option hic infra, e tu videra un articulo prendite al hasardo que ha besonio de adjuta.',
+	'gettingstarted-return' => '← No gratias, retorna me al pagina que io legeva',
+	'gettingstarted-project-link' => '{{ns:Project}}:PrimePassos',
+	'tag-gettingstarted_edit' => 'nove contributor: [[{{MediaWiki:gettingstarted-project-link}}|prime passos]]',
+	'tag-gettingstarted_edit-description' => 'Modification de un pagina que le usator seligeva del lista de cargas in [[Special:GettingStarted|Prime passos]]',
+	'gettingstarted-task-copyedit-main-description' => 'Corriger orthographia e grammatica',
+	'gettingstarted-task-copyedit-secondary-description' => 'Le maniera le plus facile de comenciar!',
+	'gettingstarted-task-clarify-main-description' => 'Meliorar le claritate',
+	'gettingstarted-task-clarify-secondary-description' => 'Simplificar o reformular phrases.',
+	'gettingstarted-task-addlinks-main-description' => 'Adder ligamines',
+	'gettingstarted-task-addlinks-secondary-description' => 'Interconnecter articulos de {{SITENAME}}.',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Seliger un altere carga',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Retornar al pagina de selection de cargas',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Monstrar me como facer',
+	'gettingstarted-task-toolbar-editing-help-title' => 'Monstrar un guida sur como modificar',
+	'gettingstarted-task-toolbar-try-another-text' => 'Essayar un altere articulo ►',
+	'gettingstarted-task-toolbar-close-title' => 'Clauder iste instrumentario',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Iste articulo pote haber errores de orthographia o grammatica que tu pote corriger.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Vader a un articulo aleatori que tu pote meliorar per rediger le texto',
+	'gettingstarted-task-clarify-toolbar-description' => 'Iste articulo pote esser confundente o vage. Cerca manieras de render lo plus clar.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Vader a un articulo aleatori que tu pote clarificar',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Iste articulo pote haber besonio de plus ligamines. Cerca terminos que ha un articulo in {{SITENAME}}.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Vader a un articulo aleatori al qual tu pote adder ligamines',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Como initiar',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Comencia simplemente a percurrer le articulo cercante possibilitates de meliorar lo. Si tu te senti supercargate, non preoccupa te. Non es necessari esser un experto de iste subjecto! Si tu ha besonio de adjuta o vole essayar un altere articulo, usa le ligamines in le barra superior.',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Lo que tu pote facer',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Iste bandieras identifica problemas con iste articulo. Non es necessari corriger totes. Suffice facer lo que tu es confortabile de facer.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Clicca sur {{int:vector-view-edit}}',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Tu pote modificar tote le articulo si tu clicca hic.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Modificar un section',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Si tu vole modificar un section specific, tu pote cliccar sur le ligamine blau '{{int:editsection}}' in le parte superior de cata section.",
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Tu pote modificar!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "Ora tu pote modificar le pagina. Quando tu ha finite, clicca sur '{{int:visualeditor-toolbar-savedialog}}' pro revider e salveguardar le cambiamentos.",
+	'notification-gettingstarted-link-text-get-started' => 'Comenciar',
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} es un encyclopedia libere scribite per gente como tu. [[Special:GettingStarted|Comencia]] e face tu prime modification!',
+	'notification-gettingstarted-start-editing-email-subject' => 'Prime passos a modificar {{SITENAME}}',
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} es un encyclopedia libere scribite per gente como tu. Comencia e face tu prime modification!
+
+Visita $2 pro un lista de manieras facile de meliorar paginas.
+
+$3',
+	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Comencia a modificar {{SITENAME}} per visitar $2',
+	'notification-gettingstarted-continue-editing' => 'Belle travalio! Tu ha jam facite tu prime modificationes in {{SITENAME}}. Si tu cerca altere cosas a facer, ecce alcun [[Special:GettingStarted|manieras facile de adjutar]].',
+	'notification-gettingstarted-continue-editing-email-subject' => 'Manieras facile de meliorar {{SITENAME}}',
+	'notification-gettingstarted-continue-editing-text-email-body' => 'Belle travalio! Tu ha jam facite tu prime modificationes in {{SITENAME}}.
+
+Si tu cerca altere cosas a facer, il ha un lista de manieras facile de adjutar a $2
+
+$3',
+	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Tu cerca altere cosas a facer? Visita $2 pro un lista de manieras facile de adjutar.',
+);
+
 /** Indonesian (Bahasa Indonesia)
  * @author Farras
  * @author Iwan Novirion
@@ -879,13 +943,14 @@ $messages['id'] = array(
 /** Italian (italiano)
  * @author Beta16
  * @author Gianfranco
+ * @author McDutchie
  */
 $messages['it'] = array(
 	'gettingstarted' => 'Guida introduttiva',
 	'gettingstarted-desc' => "Aggiunge una [[Special:GettingStarted|pagina di benvenuto]] per i nuovi utenti (mostrata dopo la creazione dell'account)",
-	'gettingstarted-welcomesiteuser' => 'Benvenuto su $1, $2!',
+	'gettingstarted-welcomesiteuser' => '{{GENDER:$2|Benvenuto|Benvenuta}} su $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Guida introduttiva',
-	'gettingstarted-welcome-back-site-user' => 'Bentornato, $2',
+	'gettingstarted-welcome-back-site-user' => '{{GENDER:$2|Bentornato|Bentornata}}, $2',
 	'gettingstarted-task-header' => "Grazie per esserti registrato su {{SITENAME}}! Qui ci sono alcune cose che potresti fare.
 
 Scegli un'opzione qui sotto e vedrai una voce casuale che ha bisogno di aiuto.",
