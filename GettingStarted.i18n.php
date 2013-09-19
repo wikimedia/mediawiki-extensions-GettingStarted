@@ -1584,6 +1584,7 @@ $messages['roa-tara'] = array(
 /** Russian (русский)
  * @author DCamer
  * @author Iluvatar
+ * @author Okras
  * @author Ole Yves
  */
 $messages['ru'] = array(
@@ -1604,17 +1605,17 @@ $messages['ru'] = array(
 	'gettingstarted-task-clarify-secondary-description' => 'Упростите или измените формулировки предложений.',
 	'gettingstarted-task-addlinks-main-description' => 'Добавить ссылки',
 	'gettingstarted-task-addlinks-secondary-description' => 'Соединение статей {{SITENAME}}.',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Вернуться к списку',
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Вернуться к списку статей',
-	'gettingstarted-task-toolbar-editing-help-text' => 'Показать справку',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Выбрать другую задачу',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Вернуться к странице выбора задачи',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Показать мне, как',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Показать руководство по редактированию',
 	'gettingstarted-task-toolbar-try-another-text' => 'Попробовать в другой статье ►',
 	'gettingstarted-task-toolbar-close-title' => 'Закрыть эту панель',
-	'gettingstarted-task-copyedit-toolbar-description' => 'Эта статья имеет орфографические и грамматические ошибки. Вы можете их исправить.',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Эта статья может содержать орфографические и грамматические ошибки, которые Вы могли бы исправить.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Перейти к случайной статье, которую вы можете улучшить',
-	'gettingstarted-task-clarify-toolbar-description' => 'Эта статья является слишком запутанной или неопределённой. Найдите способ сделать её более понятной.',
+	'gettingstarted-task-clarify-toolbar-description' => 'Эта статья может быть слишком запутанной или неопределённой. Найдите способ сделать её более понятной.',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Перейти к случайной статье, точность стиля изложения которой вы можете повысить',
-	'gettingstarted-task-addlinks-toolbar-description' => 'Эта статья нуждается в ссылках. Найдите термины, статьи о которых есть в {{SITENAME}}.',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Эта статья нуждается в ссылках. Найдите термины, статьи о которых есть в {{SITENAME}}.', # Fuzzy
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Перейти к случайной статье, в которой вы можете добавить ссылки',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Как начать работу',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Просто читайте статью и ищите способ её улучшить. Если вы чувствуете себя некомфортно, не волнуйтесь. Вам вовсе не нужно быть экспертом в этой теме. Если же вам нужна помощь или вы хотите попробовать в другой статье, используйте ссылки на верхней панели.',
