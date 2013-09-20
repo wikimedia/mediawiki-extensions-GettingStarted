@@ -750,6 +750,7 @@ $messages['gu'] = array(
 /** Hebrew (עברית)
  * @author Amire80
  * @author ExampleTomer
+ * @author Guycn1
  * @author NLIGuy
  * @author YaronSh
  * @author אור שפירא
@@ -760,7 +761,7 @@ $messages['he'] = array(
 	'gettingstarted-welcomesiteuser' => 'ברוך בואך אל $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'איך לתהחיל',
 	'gettingstarted-welcome-back-site-user' => 'ברוך שובך, $2',
-	'gettingstarted-task-header' => 'תודה על הצטרפותך ל{{SITENAME}}! הנה כמה דרכים להיות מעורה בקהילה.
+	'gettingstarted-task-header' => 'תודה על הצטרפותך ל{{grammar:תחילית|{{SITENAME}}}}! הנה כמה דרכים להיות מעורה בקהילה.
 
 בחירה באחת מהאפשרויות להלן תראה לך ערך אקראי הדורש סיוע.',
 	'gettingstarted-return' => '→ לא תודה, קחו אותי חזרה לדף שקראתי',
