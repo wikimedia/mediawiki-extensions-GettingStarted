@@ -63,6 +63,11 @@ $specialPageAliases['mk'] = array(
 	'GettingStarted' => array( 'КакоДаПочнете' ),
 );
 
+/** Malayalam (മലയാളം) */
+$specialPageAliases['ml'] = array(
+	'GettingStarted' => array( 'തുടങ്ങുക' ),
+);
+
 /** Low Saxon (Netherlands) (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'GettingStarted' => array( 'An_de_slag' ),
