@@ -559,6 +559,7 @@ $messages['fa'] = array(
  * @author Nike
  * @author Samoasambia
  * @author Silvonen
+ * @author Stryn
  * @author VezonThunder
  */
 $messages['fi'] = array(
@@ -577,12 +578,12 @@ Valitse vaihtoehto alta, niin näet satunnaisen artikkelin, joka tarvitsee huomi
 	'gettingstarted-task-addlinks-main-description' => 'Lisää linkkejä',
 	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Takaisin listaan', # Fuzzy
 	'gettingstarted-task-toolbar-return-to-list-title' => 'Palaa takaisin listaan artikkeleista', # Fuzzy
-	'gettingstarted-task-toolbar-editing-help-text' => 'Näytä ohje', # Fuzzy
+	'gettingstarted-task-toolbar-editing-help-text' => 'Näytä kuinka',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Näytä muokkausopas',
 	'gettingstarted-task-toolbar-try-another-text' => 'Kokeile toista artikkelia ►',
 	'gettingstarted-task-toolbar-close-title' => 'Sulje työkalurivi',
 	'gettingstarted-task-copyedit-toolbar-description' => 'Tässä artikkelissa voi olla kirjoitus- ja kielioppivirheitä, jotka voit korjata.',
-	'gettingstarted-task-clarify-toolbar-description' => 'Tämä artikkeli on sekava tai epämääräinen. Keksi, miten voit tehdä siitä selkeämmän.', # Fuzzy
+	'gettingstarted-task-clarify-toolbar-description' => 'Tämä artikkeli saattaa olla sekava tai epämääräinen. Keksi, miten voit tehdä siitä selkeämmän.',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Mene satunnaiseen artikkeliin, jota voit selkeyttää',
 	'gettingstarted-task-addlinks-toolbar-description' => 'Tämä artikkeli tarvii lisää linkkejä. Etsi käsitteitä, joilla on {{SITENAME}}-artikkeli.', # Fuzzy
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Etsii satunnaisen artikkelin, johon voit lisätä linkkejä',
