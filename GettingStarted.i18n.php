@@ -86,6 +86,15 @@ If you\'re looking for more to do, there\'s a list of easy ways to help at $2
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Looking for more to do? Visit $2 for a list of easy ways to help.',
+	// Post-signup Call To Action, see https://commons.wikimedia.org/wiki/File:Direct-to-page_onboarding_workflow_overview.pdf
+	'gettingstarted-cta-close' => 'Close',
+	'gettingstarted-cta-heading' => 'Help {{SITENAME}}',
+	'gettingstarted-cta-text' => 'You can contribute to {{SITENAME}} in different ways',
+	'gettingstarted-cta-edit-page' => 'Edit this page',
+	'gettingstarted-cta-edit-page-sub' => 'We\'ll show you how',
+	'gettingstarted-cta-fix-pages' => 'Find pages that need easy fixes',
+	'gettingstarted-cta-fix-pages-sub' => 'We\'ll show you how to edit',
+	'gettingstarted-cta-leave' => 'No thanks, maybe later',
 );
 
 /** Message documentation (Message documentation)
@@ -209,6 +218,15 @@ Refers to the {{msg-mw|Visualeditor-toolbar-savedialog}} button.',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Body of batch version of text email sent when someone confirms their email, and has already edited the main namespace:
 * $1 - username (unused); GENDER is supported
 * $2 - URL of Special:GettingStarted',
+	// Post-signup Call To Action, see https://commons.wikimedia.org/wiki/File:Direct-to-page_onboarding_workflow_overview.pdf
+	'gettingstarted-cta-close' => 'Title and aria label text for text close button on Call To Action modal',
+	'gettingstarted-cta-heading' => 'Heading on Call To Action displayed on articles after creating an account',
+	'gettingstarted-cta-text' => 'Text on Call To Action displayed on articles after creating an account',
+	'gettingstarted-cta-edit-page' => 'Main text of button inviting user to edit the current page, shown on Call To Action displayed on editable articles after creating an account',
+	'gettingstarted-cta-edit-page-sub' => 'Additional text of button inviting user to edit the current page, shown on Call To Action displayed on editable articles after creating an account',
+	'gettingstarted-cta-fix-pages' => 'Main text of button inviting user to fix other pages, shown in Call To Action displayed on articles after creating an account',
+	'gettingstarted-cta-fix-pages-sub' => 'Additional text of button inviting user to fix other pages, shown in Call To Action displayed on articles after creating an account',
+	'gettingstarted-cta-leave' => 'Text to leave the Call To Action displayed on articles after creating an account',
 );
 
 /** Aramaic (ܐܪܡܝܐ)

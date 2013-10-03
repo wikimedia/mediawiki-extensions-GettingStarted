@@ -10,11 +10,11 @@
 		logging = mw.gettingStarted.logging;
 
 		cfg = mw.config.get( [
-			'wgGettingStartedToolbar', 'wgPageName', 'wgArticleId', 'wgCurRevisionId',
+			'wgGettingStarted', 'wgPageName', 'wgArticleId', 'wgRevisionId',
 			'wgPostEdit'
 		] );
 
-		toolbarInfo = cfg.wgGettingStartedToolbar;
+		toolbarInfo = cfg.wgGettingStarted.toolbar;
 		fullTask = 'gettingstarted-' + toolbarInfo.taskName;
 
 		returnToListUri = new mw.Uri( mw.util.wikiGetlink( 'Special:GettingStarted' ) )
@@ -31,7 +31,7 @@
 					action: 'navbar-return-click',
 					funnel: fullTask,
 					pageId: cfg.wgArticleId,
-					revId : cfg.wgCurRevisionId
+					revId : cfg.wgRevisionId
 				}, 500 ).always( function () {
 					location.href = $this.attr( 'href' );
 				} );
@@ -89,7 +89,7 @@
 					action: 'navbar-next-click',
 					funnel: fullTask,
 					pageId: cfg.wgArticleId,
-					revId : cfg.wgCurRevisionId
+					revId : cfg.wgRevisionId
 				}, 500 ).always( function () {
 					location.href = $this.attr( 'href' );
 				} );
@@ -119,7 +119,14 @@
 
 		$toolbar= $( '<div>' ).attr( {
 			id: 'mw-gettingstarted-toolbar'
-		} ).append( $left, $center, $right ).hide();
+		} );
+
+		if ( cfg.wgGettingStarted.bucket === 'test' ) {
+			$toolbar.attr( 'class', 'mw-gettingstarted-bucket-test' );
+		}
+
+
+		$toolbar.append( $left, $center, $right ).hide();
 
 		$( document.body ).prepend( $toolbar );
 

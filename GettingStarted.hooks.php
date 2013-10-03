@@ -7,8 +7,6 @@
  */
 
 class GettingStartedHooks {
-	public static $isWelcomeCreation = false;
-
 	/**
 	 * Deserialized vesion of the openTask data structure.
 	 * Initialized as needed.
@@ -26,15 +24,14 @@ class GettingStartedHooks {
 	// There is used unprefixed for legacy reasons.
 	const COOKIE_NAME = 'openTask';
 
-	const SCHEMA_REV_ID = 5588671;
+	const SCHEMA_REV_ID = 5928325;
 
 	// Keep following two lines in sync with ext.gettingstarted.logging.js
 	// These are for the primary schema.  There is a secondary schema,
 	// GettingStartedNavbarNoArticle, for a particular error case.
 	//
-	// TODO (mattflaschen, 2013-05-20): Consider exporting this to JS so it's not redundant.
-	const LOGGING_VERSION = 4;
-	const SCHEMA_NAME = 'GettingStartedNavbar';
+	const LOGGING_VERSION = 1;
+	const SCHEMA_NAME = 'GettingStartedOnRedirect';
 
 	const INTRO_OPTION = 'gettingstarted-task-toolbar-show-intro';
 
@@ -57,8 +54,19 @@ class GettingStartedHooks {
 		efLogServerSideEvent( self::SCHEMA_NAME, self::SCHEMA_REV_ID, $event );
 	}
 
+	// Must keep in sync with ext.gettingstarted.logging.js's isInTestGroup
 	protected static function isInTestGroup( User $user ) {
-		return true;
+		global $wgGettingStartedRunTest;
+
+		if ( !$wgGettingStartedRunTest ) {
+			return false;
+		}
+		// OB6: back to split on odd/even user ID.
+		return $user->isLoggedIn() && ( ( $user->getId() % 2 ) === 0 );
+	}
+
+	protected static function getBucket( User $user ) {
+		return self::isInTestGroup( $user ) ? 'test' : 'control';
 	}
 
 	/**
@@ -143,7 +151,8 @@ class GettingStartedHooks {
 	 * @param WebRequest $request current request
 	 * @param Title $title title to set
 	 * @param string $task task to set
-	 */ public static function setPageTask( WebRequest $request, Title $title, $task ) { self::initializeOpenTask( $request );
+	 */ public static function setPageTask( WebRequest $request, Title $title, $task ) {
+		self::initializeOpenTask( $request );
 
 		self::$openTask[$title->getPrefixedText()] = $task;
 
@@ -155,8 +164,9 @@ class GettingStartedHooks {
 	/**
 	 * Checks if the task toolbar should be loaded.
 	 *
-	 * It will load if they are in the test group, it's a view of an existing page, and
-	 * they have a gettingstarted-* task.
+	 * It will load if it's a view of an existing page, and the user's browser
+	 * has a gettingstarted-* task.
+	 * (In OB6 this doesn't vary with test vs. control.)
 	 *
 	 * @param OutputPage $out
 	 * @param User $user
@@ -166,8 +176,7 @@ class GettingStartedHooks {
 	protected static function shouldLoadToolbar( OutputPage $out, User $user ) {
 		global $wgGettingStartedTasks;
 
-		if ( !self::isInTestGroup( $user )
-			|| Action::getActionName( $out ) !== 'view'
+		if ( Action::getActionName( $out ) !== 'view'
 			|| !$out->getTitle()->exists() ) {
 			return false;
 		}
@@ -177,8 +186,51 @@ class GettingStartedHooks {
 	}
 
 	/**
+	 * Checks if page is the one the user returned to after account creation with
+	 * intent to show some onboarding flow.
+	 */
+	protected static function isPostCreateReturn( OutputPage $out ) {
+		return $out->getRequest()->getFuzzyBool( 'gettingStartedReturn');
+	}
+
+
+	/**
+	 *
+	 * Add CTA to page the user returned to upon signup
+	 */
+	protected static function offerReturnToCTA( &$out, &$skin ) {
+		// OB6: 4 kinds of pages to test, different outcomes for each.
+		// put up popup
+		// load messages
+		// which invites to offer in popup
+		// lots of logging
+		$out->addModuleStyles( 'mediawiki.ui' );
+
+		$out->addModules( 'ext.gettingstarted.return' );
+	}
+
+	/**
+	 * Export static configuration variables to JavaScript.
+	 */
+	public static function onResourceLoaderGetConfigVars( &$vars ) {
+		$vars['wgGettingStartedConfig'] = array(
+			'loggingVersion' => self::LOGGING_VERSION,
+			'schemaName' => self::SCHEMA_NAME,
+		);
+
+		return true;
+	}
+
+	/**
 	 * MakeGlobalVariablesScript hook.
+	 *
 	 * This is used to add request-specific config vars to mw.config.
+	 *
+	 * There is certain data we need for logging, if they are in logged in.
+	 * We need other data we need, if there is a toolbar.
+	 *
+	 * If either of these (or both) are needed, set a request-specific
+	 * variable, wgGettingStarted.
 	 *
 	 * @param $vars array
 	 * @param $out OutputPage output page
@@ -187,12 +239,17 @@ class GettingStartedHooks {
 	public static function onMakeGlobalVariablesScript( &$vars, OutputPage $out ) {
 		global $wgGettingStartedTasks;
 
-		if ( self::$isWelcomeCreation ) {
-			$vars[ 'wgIsWelcomeCreation' ] = true;
-		}
-
 		$request = $out->getRequest();
 		$user = $out->getUser();
+
+		if ( $user->isLoggedIn() ) {
+			$requestData = array(
+				'bucket' => self::getBucket( $user ),
+				'isInTestGroup' => self::isInTestGroup( $user ),
+			);
+		} else {
+			$requestData = array();
+		}
 		if ( self::shouldLoadToolbar( $out, $user ) ) {
 			$taskName = self::getUnprefixedGettingStartedTask( $request, $out->getTitle() );
 			$task = $wgGettingStartedTasks[ $taskName ];
@@ -211,7 +268,7 @@ class GettingStartedHooks {
 				}
 			}
 
-			$vars[ 'wgGettingStartedToolbar' ] = array(
+			$requestData['toolbar'] = array(
 				'taskName' => $taskName,
 				'description' => $task[ 'toolbarDescription' ],
 				'tryAnotherTitle' => $task[ 'toolbarTryAnotherTitle' ],
@@ -219,30 +276,49 @@ class GettingStartedHooks {
 			);
 		}
 
+		if ( count( $requestData ) > 0 ) {
+			$vars['wgGettingStarted'] = $requestData;
+		}
+
 		return true;
 	}
 
 	/**
-	 * Adds the openTask and logging modules to the page
+	 * Adds applicable modules to the page
 	 *
 	 * @param OutputPage $out output page
 	 * @param Skin $skin current skin
 	 * @return bool
 	 */
 	public static function onBeforePageDisplay( OutputPage $out, Skin $skin ) {
-		$out->addModules( array(
-			'ext.gettingstarted.logging',
-			'ext.gettingstarted.openTask'
-		) );
+		$user = $out->getUser();
 
-		if ( self::shouldLoadToolbar( $out, $out->getUser() ) ) {
+		// For logged-in users, we add the Getting Started logging and task
+		// tracking modules on every page.
+		//
+		// There is no logging for anonymous users.
+		if ( $user->isLoggedIn() ) {
 			$out->addModules( array(
-					'mediawiki.ui',
+				'ext.gettingstarted.logging',
+				'ext.gettingstarted.openTask'
+			) );
+		}
+
+		if ( self::shouldLoadToolbar( $out, $user ) ) {
+			// Styles are added separately so they load without needing JS
+			$out->addModuleStyles( array(
+				'mediawiki.ui',
+			) );
+			$out->addModules( array(
 					'ext.guidedTour.tour.gettingstartedtasktoolbarintro',
 					'ext.guidedTour.tour.gettingstartedtasktoolbar',
 					'ext.gettingstarted.taskToolbar',
 				)
 			);
+		}
+
+		if ( self::isPostCreateReturn( $out ) ) {
+			self::offerReturnToCTA( $out, $skin );
 		}
 
 		return true;
@@ -288,31 +364,9 @@ class GettingStartedHooks {
 	}
 
 	public static function onBeforeWelcomeCreation( &$welcomeCreationMsg, &$injectHtml ) {
-		global $wgOut;
-
-		self::$isWelcomeCreation = true;
-
-		// Do nothing on mobile.
-		if ( self::isOnMobile() ) {
-			return true;
-		}
-
-		$wgOut->addModules( 'ext.gettingstarted.common.accountCreation' );
-
-		if ( self::isInTestGroup( $wgOut->getUser() ) ) {
-			// Replace default message with blank one
-			$welcomeCreationMsg = 'gettingstarted-msg';
-			$specialGS = new SpecialGettingStarted();
-			$injectHtml = $specialGS->getHtmlResult() . $injectHtml;
-
-			// Styles are added separately so they load without needing JS
-			$wgOut->addModuleStyles( array(
-				'mediawiki.ui',
-				'ext.gettingstarted.styles',
-			) );
-
-			$wgOut->addModules( 'ext.gettingstarted.test.accountCreation' );
-		}
+		// If the stated flow is configured, the BeforeWelcomeCreation hook will not be called.
+		// XXX: This isn't working, but I think it's just my log group configuration.
+		wfDebugLog( 'GettingStarted', 'GettingStarted requires CentralAuth to be installed with the silent login flow' );
 
 		return true;
 	}
@@ -410,7 +464,10 @@ class GettingStartedHooks {
 	}
 
 	public static function onConfirmEmailComplete( User $user ) {
-		if ( class_exists( 'EchoNotifier' ) && self::isInTestGroup( $user ) ) {
+		global $wgGettingStartedRunTest;
+
+		// Notifications are disabled entirely if the A/B test is in progress.
+		if ( class_exists( 'EchoNotifier' ) && !$wgGettingStartedRunTest ) {
 			// The goal is to only do this notification once per-user.
 			// Absent a clean way to do that, this notifies them if they signed up with a given time duration.
 			if ( self::isRecentSignup( $user ) ) {
@@ -443,7 +500,7 @@ class GettingStartedHooks {
 			self::logEvent( array(
 				'action' => 'page-save-attempt',
 				'funnel' => $fullTask,
-				'bucket' => self::isInTestGroup( $wgUser ) ? 'test' : 'control',
+				'bucket' => self::getBucket( $wgUser ),
 				'pageId' => $title->getArticleID(),
 				'revId' => $title->getLatestRevID(),
 				'isEditable' => $title->quickUserCan( 'edit', $wgUser ),
@@ -465,8 +522,8 @@ class GettingStartedHooks {
 	/**
 	 * When the CentralAuth extension has redirected away from the create
 	 * account form, preventing the BeforeWelcomeCreation hook, it runs this
-	 * hook.  In response, redirect user to Special:GettingStarted if the user
-	 * is not mobile and is in the test.
+	 * hook.  If user is not mobile, tweak the page returned to or its
+	 * parameters.
 	 */
 	public static function onCentralAuthPostLoginRedirect( &$returnTo, &$returnToQuery, $stickHTTPS, $type ) {
 		global $wgUser;
@@ -481,11 +538,7 @@ class GettingStartedHooks {
 			return true;
 		}
 
-		if ( !self::isInTestGroup( $wgUser ) ) {
-			return true;
-		}
-
-		// Want to send user to GettingStarted unless the page tells us not to with
+		// Don't do anything if page tells us not to with
 		// &showGettingStarted=false in the returnToQuery.
 		if ( $returnToQuery ) {
 			$qsParams = wfCgiToArray( $returnToQuery );
@@ -497,25 +550,36 @@ class GettingStartedHooks {
 		}
 
 
-		$newQueryParams = array();
+		if ( self::isInTestGroup( $wgUser ) ) {
+			// OB6: if user is in test group, allow CentralAuth/SUL2 redirect
+			// to the page they were on; append something to returnToQuery so
+			// GettingStarted::onBeforePageDisplay will take action.
+			$returnToQuery = $returnToQuery . '&gettingStartedReturn=true';
+			return true;
+		} else {
 
-		// Tell GettingStarted we arrived from creation
-		$newQueryParams['postCreateAccount'] = 'true';
+			// Send user to GettingStarted
 
-		// Provide GettingStarted the originating page so it can display a
-		// [← No thanks, return to the page I was reading] link, by
-		// turning the passed-in parameters back into query string parameters.
-		if ( $returnTo !== '' && $returnTo !== null ) {
-			$newQueryParams['returnto'] =  $returnTo;
+			$newQueryParams = array();
+
+			// Tell GettingStarted we arrived from creation
+			$newQueryParams['postCreateAccount'] = 'true';
+
+			// Provide GettingStarted the originating page so it can display a
+			// [← No thanks, return to the page I was reading] link, by
+			// turning the passed-in parameters back into query string parameters.
+			if ( $returnTo !== '' && $returnTo !== null ) {
+				$newQueryParams['returnto'] =  $returnTo;
+			}
+			if ( $returnToQuery ) {
+				$newQueryParams['returntoquery'] =  $returnToQuery;
+			}
+
+			// Redirect to Special:GettingStarted
+			$returnTo = SpecialPage::getTitleFor( 'GettingStarted' )->getPrefixedText();
+			$returnToQuery = wfArrayToCgi( $newQueryParams );
+
+			return true;
 		}
-		if ( $returnToQuery ) {
-			$newQueryParams['returntoquery'] =  $returnToQuery;
-		}
-
-		// Redirect to Special:GettingStarted
-		$returnTo = SpecialPage::getTitleFor( 'GettingStarted' )->getPrefixedText();
-		$returnToQuery = wfArrayToCgi( $newQueryParams );
-
-		return true;
 	}
 }

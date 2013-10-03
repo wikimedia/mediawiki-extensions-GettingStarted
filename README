@@ -23,8 +23,11 @@ require_once( "$IP/extensions/GettingStarted/GettingStarted.php" );
 
 Dependencies
 
-* https://www.mediawiki.org/wiki/Extension:EventLogging
-* https://www.mediawiki.org/wiki/Extension:GuidedTour
+* https://www.mediawiki.org/wiki/Extension:CentralAuth - The CentralAuth
+account creation flow is required
+* https://www.mediawiki.org/wiki/Extension:EventLogging - Used for logging
+* https://www.mediawiki.org/wiki/Extension:GuidedTour - Used for introductory
+tours
 * (optional) Read and write access to MediaWiki API must be enabled to avoid
 showing the GettingStarted tour repeatedly to logged in users if they
  regularly visit Special:GettingStarted.

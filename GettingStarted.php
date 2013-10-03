@@ -84,6 +84,11 @@ $wgGettingStartedRedisOptions = array(
 	'serializer' => 'none',
 );
 
+/**
+ * Is the A/B test enabled?
+ */
+$wgGettingStartedRunTest = false;
+
 $wgAutoloadClasses += array(
 	'SpecialGettingStarted' => __DIR__ . '/SpecialGettingStarted.php',
 	'GettingStartedHooks'   => __DIR__ . '/GettingStarted.hooks.php',
@@ -216,7 +221,6 @@ $wgResourceModules[ 'ext.gettingstarted.taskToolbar' ] = array(
 		'mediawiki.action.view.postEdit',
 		'mediawiki.jqueryMsg',
 		'mediawiki.Title',
-		'mediawiki.ui',
 		'mediawiki.Uri',
 		'mediawiki.util',
 		'mediawiki.libs.guiders',
@@ -240,7 +244,7 @@ $wgResourceModules[ 'ext.gettingstarted.taskToolbar' ] = array(
 	),
 ) + $gettingStartedModuleInfo;
 
-// This runs on both account creation and the special page
+// This runs on both account creation and the user simply visiting the special page
 $wgResourceModules[ 'ext.gettingstarted' ] = array(
 	'scripts' => 'ext.gettingstarted.js',
 	'dependencies' => array(
@@ -248,31 +252,42 @@ $wgResourceModules[ 'ext.gettingstarted' ] = array(
 	),
 ) + $gettingStartedModuleInfo;
 
-// This runs on account creation for both test and control
-$wgResourceModules[ 'ext.gettingstarted.common.accountCreation' ] = array(
-	'scripts' => 'ext.gettingstarted.common.accountCreation.js',
+// This runs on account creation for the behavior of
+// showing the user Special:GettingStarted as the welcome new user page.
+// (As of OB6 that is the default (control) behavior.
+$wgResourceModules[ 'ext.gettingstarted.showSeparatePage.accountCreation' ] = array(
+	'scripts' => 'ext.gettingstarted.showSeparatePage.accountCreation.js',
 	'dependencies' => array(
-		'mediawiki.Title',
 		'mediawiki.util',
+		'ext.gettingstarted',
 		'ext.gettingstarted.logging',
 	),
 	'position' => 'top',
 ) + $gettingStartedModuleInfo;
 
-// This runs on account creation for the test group
-$wgResourceModules[ 'ext.gettingstarted.test.accountCreation' ] = array(
-	'scripts' => 'ext.gettingstarted.test.accountCreation.js',
+// This runs on account creation for the OB6 test behavior (returnTo page with
+// special behavior), possibly displaying a Call To Action.
+$wgResourceModules[ 'ext.gettingstarted.return' ] = array(
+	'scripts' => 'ext.gettingstarted.return.js',
+	'styles' => 'ext.gettingstarted.return.css',
 	'messages' => array(
 		'gettingstarted-welcomesiteuser', // XXX (mattflaschen, 2012-12-12): This is a workaround until we move this into core, at which point it can be done server-side.
-		'gettingstarted-return',
+		'gettingstarted-cta-close',
+		'gettingstarted-cta-heading',
+		'gettingstarted-cta-text',
+		'gettingstarted-cta-edit-page',
+		'gettingstarted-cta-edit-page-sub',
+		'gettingstarted-cta-fix-pages',
+		'gettingstarted-cta-fix-pages-sub',
+		'gettingstarted-cta-leave',
 	),
 	'dependencies' => array(
-		'jquery.mwExtension', // $.escapeRE
-		'mediawiki.Title',
-		'mediawiki.util',
-		'ext.gettingstarted',
-		'ext.gettingstarted.common.accountCreation',
 		'ext.gettingstarted.logging',
+		// Needed for isEditing() and tour launching.
+		'ext.guidedTour.lib',
+		// Rest are only used by the Call To Action
+		'mediawiki.Uri',
+		'mediawiki.util',
 	),
 	'position' => 'top',
 ) + $gettingStartedModuleInfo;
@@ -294,6 +309,7 @@ $wgHooks[ 'RecentChange_save' ][] = 'GettingStartedHooks::onRecentChange_save';
 $wgHooks[ 'CategoryAfterPageAdded' ][] = 'RedisCategorySync::onCategoryAfterPageAdded';
 $wgHooks[ 'CategoryAfterPageRemoved' ][] = 'RedisCategorySync::onCategoryAfterPageRemoved';
 $wgHooks[ 'ListDefinedTags' ][] = 'GettingStartedHooks::onListDefinedTags';
+$wgHooks[ 'ResourceLoaderGetConfigVars' ][] = 'GettingStartedHooks::onResourceLoaderGetConfigVars';
 $wgHooks[ 'MakeGlobalVariablesScript' ][] = 'GettingStartedHooks::onMakeGlobalVariablesScript';
 $wgHooks[ 'BeforeCreateEchoEvent' ][] = 'GettingStartedHooks::onBeforeCreateEchoEvent';
 $wgHooks[ 'EchoGetDefaultNotifiedUsers' ][] = 'GettingStartedHooks::onEchoGetDefaultNotifiedUsers';

@@ -1,0 +1,108 @@
+/* IE 6 hacks on the dialog due to lack of position: fixed and min-height */
+
+/* Specific elements */
+#mw-gettingstarted-cta-editable-main-page {
+	width: 40%;
+	margin-left: -20%;
+}
+
+#mw-gettingstarted-cta-other-page {
+	width: 25%;
+	margin-left: -12.5%;
+}
+
+/*
+   TODO (mattflaschen, 2013-10-03): Our approach to widths and wrapping
+   needs further thought when we try to generalize this CSS.
+*/
+
+#mw-gettingstarted-editable-main-edit-page {
+	/*
+	   Can use min-width here to avoid bad wrapping (e.g. text
+	   different on line from icon), since it is not intended
+	   to wrap.
+	*/
+	min-width: 210px;
+}
+
+#mw-gettingstarted-editable-main-fix-pages {
+	/*
+	   Have to use width here since min-width will not wrap in
+	   this context
+	*/
+	width: 250px;
+}
+
+/*
+   Classes that could (in theory at least) be used for more than
+   one element
+*/
+.mw-gettingstarted-cta {
+	position: absolute;
+	border: 1px solid #999999;
+	border-radius: 3px;
+	margin-top: -10%;
+	top: 50%;
+	left: 50%;
+	opacity: 1;
+	background-color: white;
+	padding: 20px 30px;
+}
+
+.mw-gettingstarted-cta-body {
+	margin-bottom: 5px;
+	color: #333333;
+}
+
+.mw-gettingstarted-cta-close {
+	float: right;
+	color: #aaa;
+}
+
+.mw-gettingstarted-cta-heading {
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.mw-gettingstarted-cta .mw-ui-button {
+	display: table;
+	float: left;
+	text-align: left;
+	margin-right: 20px;
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+
+.mw-ui-button.mw-gettingstarted-cta-secondary {
+	/*
+	   TODO (mattflaschen, 2013-10-03): This is inconsistent with
+	   normal mw.ui secondary buttons.  We should make them match.
+	*/
+	background-image: none;
+	background-color: #F5F5F5;
+	border: 1px solid #D3D3D3;
+	color: #444444;
+}
+
+.mw-gettingstarted-cta-button-contents {
+	display: inline;
+	vertical-align: middle;
+}
+
+.mw-gettingstarted-cta-button-sub {
+	display: block;
+	font-weight: normal;
+	font-size: 0.8em;
+}
+
+.mw-gettingstarted-cta-button-icon {
+	float: left;
+	margin: 10px 10px 10px 0;
+	width: 28px;
+}
+
+.mw-gettingstarted-cta-leave-link {
+	float: left;
+	clear: both;
+	margin-top: 20px;
+}
