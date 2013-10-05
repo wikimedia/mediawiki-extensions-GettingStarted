@@ -38,28 +38,22 @@
 
 	/**
 	 * Gets the applicable client-side page action (for logging purposes), or null if there is
-	 * none.
+	 * none.  Actions that were logged before October 2013 are no longer, so the only possible
+	 * log action is 'page-impression'.
 	 *
-	 * @return {string} 'page-impression', 'page-edit-impression', or 'page-save-success', or
-	 *   null
+	 * @return {string} 'page-impression' or null
 	 */
 	function getPageSchemaAction() {
-		var wgAction, wgPostEdit, loggedActions, schemaAction;
+		var wgAction, loggedActions, schemaAction;
 
 		wgAction = mw.config.get( 'wgAction' );
-		wgPostEdit = mw.config.get( 'wgPostEdit' );
 		loggedActions = {
-			view : 'page-impression',
-			edit : 'page-edit-impression'
+			view: 'page-impression'
 		};
 
-		if ( wgPostEdit ) {
-			schemaAction = 'page-save-success';
-		} else {
-			schemaAction = loggedActions[ wgAction ];
-		}
+		schemaAction = loggedActions[wgAction];
 
-		// We ignore history, submit, etc.
+		// We ignore edit, history, submit, etc.
 		if ( !schemaAction ) {
 			schemaAction = null;
 		}
@@ -134,7 +128,7 @@
 	 * Remembers a task the user has chosen by adding it to a session cookie.
 	 * @param {string} article The article title (possibly including a namespace), in prefixed
 	 *  text format.  You can get this from mw.Title.getPrefixedText()
-	 * @param {string|null} task The kind of task, such as 'returnto' or 'gettingstarted-copyedit',
+	 * @param {string|null} task The kind of task, such as 'redirect' or 'gettingstarted-copyedit',
 	 *  or null to clear the task for the article.
 	 * @return {void}
 	 */
@@ -172,8 +166,6 @@
 	/**
 	 * Logs a page impression.
 	 *
-	 * As part of the data, it logs whether the toolbar is visible.
-	 *
 	 * This is called when the user is shown a page for fixing.  But with OB6, it
 	 * is also called from the initial redirect-page-impression (before the user
 	 * has responded to the CTA).
@@ -186,7 +178,7 @@
 	 *   or null for invalid schema
 	 */
 	function logImpression( fullTask, schemaAction) {
-		var event,
+		var event, source,
 			cfg = mw.config.get( [ 'wgArticleId', 'wgRevisionId', 'wgIsProbablyEditable' ] );
 
 		event = {
@@ -201,8 +193,12 @@
 
 		if ( schemaAction === 'page-impression' ) {
 			// EventLogging will still log it, but mark the event clientValidated false
-			// if the source is invalid.
-			event.source = mw.util.getParamValue( 'source' );
+			// if the source is invalid.  However, we don't want events with missing
+			// source to be invalid.
+			source = mw.util.getParamValue( 'source' );
+			if ( source !== null ) {
+				event.source = source;
+			}
 		}
 
 		return logEvent( event );

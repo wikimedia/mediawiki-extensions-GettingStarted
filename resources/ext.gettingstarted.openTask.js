@@ -16,11 +16,12 @@
 		return;
 	}
 
-	// Leave gettingstarted page-impression and page-save-success to taskToolbar, since we need
+	// Leave gettingstarted page-impression to taskToolbar, since we need
 	// to wait until the toolbar is loaded.  NOTE: This needs adjustment if we do another split
 	// test.
-	if ( task.indexOf( 'gettingstarted-' ) === 0 &&
-	     ( schemaAction === 'page-impression' || schemaAction === 'page-save-success' ) ) {
+	// TODO (mattflaschen, 2013-10-05): This can be simplfied, since the original motivation
+	// (isNavbarVisible) is no longer logged.
+	if ( task.indexOf( 'gettingstarted-' ) === 0 && schemaAction === 'page-impression' ) {
 		return;
 	}
 

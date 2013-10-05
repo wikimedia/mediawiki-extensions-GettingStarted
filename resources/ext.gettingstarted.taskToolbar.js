@@ -17,27 +17,13 @@
 		toolbarInfo = cfg.wgGettingStarted.toolbar;
 		fullTask = 'gettingstarted-' + toolbarInfo.taskName;
 
-		returnToListUri = new mw.Uri( mw.util.wikiGetlink( 'Special:GettingStarted' ) )
-			.extend( {source: 'navbar-return'} );
+		returnToListUri = mw.util.wikiGetlink( 'Special:GettingStarted' );
 
 		$returnToList = $( '<a>' ).attr( {
 			href: returnToListUri.toString(),
 			title: mw.message( 'gettingstarted-task-toolbar-return-to-list-title' ).text()
 		} ).text( mw.message( 'gettingstarted-task-toolbar-return-to-list-text' ).text() )
-			.addClass( 'mw-gettingstarted-toolbar-link' ).click( function ( evt ) {
-				var $this = $( this );
-
-				logging.logUnlessTimeout( {
-					action: 'navbar-return-click',
-					funnel: fullTask,
-					pageId: cfg.wgArticleId,
-					revId : cfg.wgRevisionId
-				}, 500 ).always( function () {
-					location.href = $this.attr( 'href' );
-				} );
-
-				evt.preventDefault();
-			} );
+			.addClass( 'mw-gettingstarted-toolbar-link' );
 
 		$left = $( '<div>' ).attr( {
 			'class': 'mw-gettingstarted-toolbar-left'
@@ -75,27 +61,14 @@
 		tryAnotherUri = new mw.Uri(
 			mw.util.wikiGetlink( 'Special:GettingStarted/task/' + toolbarInfo.taskName )
 		).extend( {
-			exclude: cfg.wgPageName,
-			source: 'navbar-next'
+			exclude: cfg.wgPageName
 		} );
 
 		$tryAnother = $( '<a>' ).attr( {
 			href: tryAnotherUri.toString(),
 			title: mw.message( toolbarInfo.tryAnotherTitle ).text()
 		} ).text( mw.message( 'gettingstarted-task-toolbar-try-another-text' ).text() )
-			.addClass( 'mw-gettingstarted-toolbar-link' ).click( function ( evt ) {
-				var $this = $( this );
-				logging.logUnlessTimeout( {
-					action: 'navbar-next-click',
-					funnel: fullTask,
-					pageId: cfg.wgArticleId,
-					revId : cfg.wgRevisionId
-				}, 500 ).always( function () {
-					location.href = $this.attr( 'href' );
-				} );
-
-				evt.preventDefault();
-			} );
+			.addClass( 'mw-gettingstarted-toolbar-link' );
 
 		$close = $( '<a>' ).attr( {
 			'class': 'mw-gettingstarted-toolbar-dismiss',
