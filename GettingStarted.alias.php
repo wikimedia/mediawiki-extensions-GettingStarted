@@ -5,7 +5,6 @@
  * @file
  * @ingroup Extensions
  */
-// @codingStandardsIgnoreFile
 
 $specialPageAliases = array();
 
@@ -77,11 +76,6 @@ $specialPageAliases['nds-nl'] = array(
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'GettingStarted' => array( 'AanDeSlag' ),
-);
-
-/** vèneto (vèneto) */
-$specialPageAliases['vec'] = array(
-	'GettingStarted' => array( 'ParScominsiar' ),
 );
 
 /** Vietnamese (Tiếng Việt) */
