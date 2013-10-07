@@ -1056,6 +1056,14 @@ Se stai cercando altro da fare, puoi trovare alcuni semplici consigli per aiutar
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => "Cerchi altro da fare? Visita $2 per un'elenco di alcuni semplici consigli per aiutare.",
+	'gettingstarted-cta-close' => 'Chiudi',
+	'gettingstarted-cta-heading' => 'Aiuta {{SITENAME}}',
+	'gettingstarted-cta-text' => 'Puoi contribuire a {{SITENAME}} in diversi modi',
+	'gettingstarted-cta-edit-page' => 'Modifica questa pagina',
+	'gettingstarted-cta-edit-page-sub' => 'Ti mostreremo come',
+	'gettingstarted-cta-fix-pages' => 'Trova pagine che necessitano di correzioni semplici',
+	'gettingstarted-cta-fix-pages-sub' => 'Ti mostreremo come modificare',
+	'gettingstarted-cta-leave' => 'No grazie, forse più tardi',
 );
 
 /** Japanese (日本語)
@@ -1104,6 +1112,7 @@ $messages['ka'] = array(
 );
 
 /** Korean (한국어)
+ * @author Hym411
  * @author 아라
  */
 $messages['ko'] = array(
@@ -1164,6 +1173,13 @@ $3',
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => '할 일을 더 찾고 있습니까? 도움이 되는 쉬운 방법의 목록에 대해서는 $2(을)를 방문하세요.',
+	'gettingstarted-cta-close' => '닫기',
+	'gettingstarted-cta-heading' => '{{SITENAME}} 도움말',
+	'gettingstarted-cta-text' => '당신은 {{SITENAME}}에 다양한 방법으로 기여할 수 있습니다.',
+	'gettingstarted-cta-edit-page' => '이 문서 편집',
+	'gettingstarted-cta-edit-page-sub' => '어떻게 하는지 보여드리겠습니다',
+	'gettingstarted-cta-fix-pages-sub' => '어떻게 편집하는지 보여드리겠습니다',
+	'gettingstarted-cta-leave' => '괜찮습니다. 나중에요.',
 );
 
 /** Kirghiz (Кыргызча)
@@ -1973,6 +1989,13 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Tìm các trang cần sữa chữa dễ dàng',
 	'gettingstarted-cta-fix-pages-sub' => 'Chúng tôi sẽ chỉ dẫn bạn cách sửa đổi',
 	'gettingstarted-cta-leave' => 'Thôi, có lẽ lần sau',
+);
+
+/** Wu (吴语)
+ * @author Benojan
+ */
+$messages['wuu'] = array(
+	'gettingstarted-cta-close' => '關',
 );
 
 /** Yiddish (ייִדיש)
