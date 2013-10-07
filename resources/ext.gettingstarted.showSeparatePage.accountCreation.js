@@ -2,14 +2,6 @@
 ( function ( $, mw ) {
 	'use strict';
 
-	var logging = mw.gettingStarted.logging;
-
-	logging.setDefaults( { bucket: 'control' } );
-	logging.logEvent( {
-		action: 'welcomepage-impression'
-	} );
-
-
 	$( document ).ready( function () {
 		var
 			state,

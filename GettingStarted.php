@@ -314,7 +314,6 @@ $wgHooks[ 'MakeGlobalVariablesScript' ][] = 'GettingStartedHooks::onMakeGlobalVa
 $wgHooks[ 'BeforeCreateEchoEvent' ][] = 'GettingStartedHooks::onBeforeCreateEchoEvent';
 $wgHooks[ 'EchoGetDefaultNotifiedUsers' ][] = 'GettingStartedHooks::onEchoGetDefaultNotifiedUsers';
 $wgHooks[ 'ConfirmEmailComplete' ][] = 'GettingStartedHooks::onConfirmEmailComplete';
-$wgHooks[ 'EditPage::attemptSave' ][] = 'GettingStartedHooks::onEditPageAttemptSave';
 $wgHooks[ 'GetPreferences' ][] = 'GettingStartedHooks::onGetPreferences';
 // Extension:CentralAuth's hook
 $wgHooks[ 'CentralAuthPostLoginRedirect' ][] = 'GettingStartedHooks::onCentralAuthPostLoginRedirect';

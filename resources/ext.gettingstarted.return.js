@@ -254,8 +254,16 @@
 			// Background overlay like GuidedTour
 
 			// TODO: Click outside or ESC to close
-			function closeDialog( evt ) {
+			function closeDialogByClick( evt ) {
 				evt.preventDefault();
+
+				// Note: Some users might dismiss the CTA by this click or
+				// other techniques, yet go ahead and edit this page anyway; we
+				// _don't_ set up a funnel for this.
+				logging.logEvent( {
+					action: 'redirect-invite-click'
+				} );
+
 				$dialog.remove();
 			}
 
@@ -284,7 +292,7 @@
 					'aria-label': closeText
 				} )
 				.text( '×' )
-				.click( closeDialog );
+				.click( closeDialogByClick );
 
 			$heading = $( '<div>' )
 				.attr( 'class', 'mw-gettingstarted-cta-heading' )
@@ -317,25 +325,13 @@
 					href: '#'
 				} )
 				.text( mw.message( 'gettingstarted-cta-leave' ).text() )
-				.click( closeDialog );
+				.click( closeDialogByClick );
 
 			return $dialog.append( $leaveLink );
 		},
 
 		showCTA: function ( kind ) {
 			var $cta = self.buildCTA( kind );
-
-			// Hook up the leave link.
-			// XXX should also log clicks on the dismiss button (if we keep it).
-			$cta.find( '#mw-gettingstarted-cta-leave-link') .on( 'click', function ( /* evt */ ) {
-				$cta.dialog( 'close' );
-				// Note: Some users might dismiss the CTA by this click or
-				// other techniques, yet go ahead and edit this page anyway; we
-				// _don't_ set up a funnel for this.
-				logging.logEvent( {
-					action: 'redirect-invite-click'
-				} );
-			} );
 			$cta.show();
 			$( document.body ).append( $cta );
 

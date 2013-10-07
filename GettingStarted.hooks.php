@@ -24,7 +24,7 @@ class GettingStartedHooks {
 	// There is used unprefixed for legacy reasons.
 	const COOKIE_NAME = 'openTask';
 
-	const SCHEMA_REV_ID = 5928325;
+	const SCHEMA_REV_ID = 5944134;
 
 	// Keep following two lines in sync with ext.gettingstarted.logging.js
 	// These are for the primary schema.  There is a secondary schema,
@@ -195,10 +195,12 @@ class GettingStartedHooks {
 
 
 	/**
+	 * Adds the returnTo module to the  page the user returned to upon signup.
 	 *
-	 * Add CTA to page the user returned to upon signup
+	 * Depending on the page, this may do nothing (except log), or add a CTA with
+	 * one or two buttons.
 	 */
-	protected static function offerReturnToCTA( &$out, &$skin ) {
+	protected static function addReturnToModules( &$out, &$skin ) {
 		// OB6: 4 kinds of pages to test, different outcomes for each.
 		// put up popup
 		// load messages
@@ -318,7 +320,14 @@ class GettingStartedHooks {
 		}
 
 		if ( self::isPostCreateReturn( $out ) ) {
-			self::offerReturnToCTA( $out, $skin );
+			// TODO (mattflaschen, 2013-10-05): If we're not going to show
+			// anything, we probably shouldn't add this module for performance
+			// reasons.
+			//
+			// We could move the "no show" logic to isPostCreateReturn (with a
+			// suitable name), then decide what to do about
+			// redirect-page-impression (maybe log on the server, or get rid of it?)
+			self::addReturnToModules( $out, $skin );
 		}
 
 		return true;
@@ -481,30 +490,6 @@ class GettingStartedHooks {
 					),
 				) );
 			}
-		}
-
-		return true;
-	}
-
-	/**
-	 * Called from the beginning of EditPage::internalAttemptSave
-	 *
-	 * @param EditPage $editPage page being edited
-	 */
-	public static function onEditPageAttemptSave( EditPage $editPage ) {
-		global $wgRequest, $wgUser;
-
-		$title = $editPage->getTitle();
-		$fullTask = self::getPageTask( $wgRequest, $title );
-		if ( $fullTask !== null ) {
-			self::logEvent( array(
-				'action' => 'page-save-attempt',
-				'funnel' => $fullTask,
-				'bucket' => self::getBucket( $wgUser ),
-				'pageId' => $title->getArticleID(),
-				'revId' => $title->getLatestRevID(),
-				'isEditable' => $title->quickUserCan( 'edit', $wgUser ),
-			) );
 		}
 
 		return true;

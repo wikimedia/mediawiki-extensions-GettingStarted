@@ -1,5 +1,8 @@
 // Loaded on Getting Started task selection page, regardless of whether it is
 // the actual special page, or the post-account creation version.
+//
+// TODO (mattflaschen, 2013-10-07): This distinction no longer exists.
+// Cleanup the code further.
 
 ( function ( $, mw ) {
 	'use strict';
