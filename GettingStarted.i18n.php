@@ -218,14 +218,19 @@ Refers to the {{msg-mw|Visualeditor-toolbar-savedialog}} button.',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Body of batch version of text email sent when someone confirms their email, and has already edited the main namespace:
 * $1 - username (unused); GENDER is supported
 * $2 - URL of Special:GettingStarted',
-	// Post-signup Call To Action, see https://commons.wikimedia.org/wiki/File:Direct-to-page_onboarding_workflow_overview.pdf
-	'gettingstarted-cta-close' => 'Title and aria label text for text close button on Call To Action modal',
+	'gettingstarted-cta-close' => 'Title and aria label text for text close button on Call To Action modal.
+{{Identical|Close}}',
 	'gettingstarted-cta-heading' => 'Heading on Call To Action displayed on articles after creating an account',
 	'gettingstarted-cta-text' => 'Text on Call To Action displayed on articles after creating an account',
-	'gettingstarted-cta-edit-page' => 'Main text of button inviting user to edit the current page, shown on Call To Action displayed on editable articles after creating an account',
-	'gettingstarted-cta-edit-page-sub' => 'Additional text of button inviting user to edit the current page, shown on Call To Action displayed on editable articles after creating an account',
+	'gettingstarted-cta-edit-page' => 'Main text of button inviting user to edit the current page, shown on Call To Action displayed on editable articles after creating an account.
+{{Identical|Edit this page}}',
+	'gettingstarted-cta-edit-page-sub' => 'Additional text of button inviting user to edit the current page, shown on Call To Action displayed on editable articles after creating an account.
+
+The button text is {{msg-mw|Gettingstarted-cta-edit-page}}.',
 	'gettingstarted-cta-fix-pages' => 'Main text of button inviting user to fix other pages, shown in Call To Action displayed on articles after creating an account',
-	'gettingstarted-cta-fix-pages-sub' => 'Additional text of button inviting user to fix other pages, shown in Call To Action displayed on articles after creating an account',
+	'gettingstarted-cta-fix-pages-sub' => 'Additional text of button inviting user to fix other pages, shown in Call To Action displayed on articles after creating an account.
+
+The button text is {{msg-mw|Gettingstarted-cta-fix-pages}}.',
 	'gettingstarted-cta-leave' => 'Text to leave the Call To Action displayed on articles after creating an account',
 );
 
@@ -298,6 +303,14 @@ Si busca más que facer, hai una llista  de maneres fáciles d'ayudar en $2
 
 $3",
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => "¿Busca más coses que facer? Visite $2 pa ver una llista de maneres fáciles d'ayudar.",
+);
+
+/** Azerbaijani (azərbaycanca)
+ * @author Khan27
+ */
+$messages['az'] = array(
+	'gettingstarted-cta-close' => 'Bağla',
+	'gettingstarted-cta-leave' => 'Xeyr təşəkkürlər, bəlkə sonra',
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
@@ -459,6 +472,14 @@ Falls du nach mehr suchst, gibt es auf $2 eine Liste mit einfachen Wegen, um zu 
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Suchst du nach mehr? Besuche $2 für eine Liste mit einfachen Wegen, wie man helfen kann.',
+	'gettingstarted-cta-close' => 'Schließen',
+	'gettingstarted-cta-heading' => 'Hilf {{SITENAME}}',
+	'gettingstarted-cta-text' => 'Du kannst auf verschiedene Wege zur Verbesserung von {{SITENAME}} beitragen',
+	'gettingstarted-cta-edit-page' => 'Diese Seite bearbeiten',
+	'gettingstarted-cta-edit-page-sub' => 'Wir werden dir zeigen wie',
+	'gettingstarted-cta-fix-pages' => 'Finde Seiten, die einfache Korrekturen brauchen.',
+	'gettingstarted-cta-fix-pages-sub' => 'Wir werden dir zeigen, wie man bearbeitet.',
+	'gettingstarted-cta-leave' => 'Nein danke, vielleicht später.',
 );
 
 /** Lower Sorbian (dolnoserbski)
@@ -613,6 +634,7 @@ Valitse vaihtoehto alta, niin näet satunnaisen artikkelin, joka tarvitsee huomi
 
 /** French (français)
  * @author Crochet.david
+ * @author DavidL
  * @author Gomoko
  * @author Hello71
  * @author Jean-Frédéric
@@ -679,6 +701,14 @@ Si vous cherchez à faire plus, il y a une liste de méthodes simples pour aider
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Vous cherchez à faire plus ? Visitez $2 pour obtenir la liste des astuces pour aider.',
+	'gettingstarted-cta-close' => 'Fermer',
+	'gettingstarted-cta-heading' => 'Aide {{SITENAME}}',
+	'gettingstarted-cta-text' => 'Vous pouvez contribuer à {{SITENAME}} de différentes façons',
+	'gettingstarted-cta-edit-page' => 'Modifier cette page',
+	'gettingstarted-cta-edit-page-sub' => 'Nous allons vous montrer comment',
+	'gettingstarted-cta-fix-pages' => 'Trouver des pages qui ont besoin de corrections faciles',
+	'gettingstarted-cta-fix-pages-sub' => 'Nous allons vous montrer comment modifier',
+	'gettingstarted-cta-leave' => 'Non merci, peut-être plus tard',
 );
 
 /** Franco-Provençal (arpetan)
@@ -692,6 +722,7 @@ $messages['frp'] = array(
 );
 
 /** Galician (galego)
+ * @author Sasuke UcHiA
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -752,6 +783,7 @@ Se busca algo máis que facer, hai unha lista dos modos fáciles de axudar en $2
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Busca facer algo máis? Visite $2 para ver unha lista de modos fáciles de axudar.',
+	'gettingstarted-cta-edit-page' => 'Editar esta páxina',
 );
 
 /** Gujarati (ગુજરાતી)
@@ -1053,6 +1085,13 @@ $messages['ja'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => '節の編集',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => '編集できます!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'ページを編集できるようになりました。編集が完了したら、「{{int:visualeditor-toolbar-savedialog}}」をクリックして、編集内容を確認および保存してください。',
+	'gettingstarted-cta-close' => '閉じる',
+	'gettingstarted-cta-heading' => '{{SITENAME}}を支援しましょう',
+	'gettingstarted-cta-text' => '{{SITENAME}}では、さまざまな方法で貢献できます。',
+	'gettingstarted-cta-edit-page' => 'このページを編集',
+	'gettingstarted-cta-edit-page-sub' => '方法をお見せします',
+	'gettingstarted-cta-fix-pages' => '簡単な修正が必要なページを見つける',
+	'gettingstarted-cta-fix-pages-sub' => '編集方法をお見せします',
 );
 
 /** Georgian (ქართული)
@@ -1195,6 +1234,14 @@ Wann Dir méi maache wëllt fannt Dir eng Lëscht wéi Dir einfach hëllefe kën
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Wëllt Dir méi maachen? Besicht $2 fir eng Lëscht vun einfache Méiglechkeete wéi Dir eng Hand upake kënnt.',
+	'gettingstarted-cta-close' => 'Zoumaachen',
+	'gettingstarted-cta-heading' => 'Hëlleft {{SITENAME}}',
+	'gettingstarted-cta-text' => 'Dir kënnt op verschidde Manéieren op {{SITENAME}} matmaachen',
+	'gettingstarted-cta-edit-page' => 'Dës Säit änneren',
+	'gettingstarted-cta-edit-page-sub' => 'Mir weisen Iech wéi',
+	'gettingstarted-cta-fix-pages' => 'Säite fannen, déi einfach Verbesserunge brauchen',
+	'gettingstarted-cta-fix-pages-sub' => 'Mir weisen Iech wéi Dir ännere kënnt',
+	'gettingstarted-cta-leave' => 'Nee merci, vläicht méi spéit',
 );
 
 /** Lithuanian (lietuvių)
@@ -1332,6 +1379,14 @@ $3',
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Сакате уште работа? Лесни начини да помогнете ќе најдете на $2.',
+	'gettingstarted-cta-close' => 'Затвори',
+	'gettingstarted-cta-heading' => 'Помогнете на {{SITENAME}}',
+	'gettingstarted-cta-text' => 'Можете да придонесувате на {{SITENAME}} на различни начини',
+	'gettingstarted-cta-edit-page' => 'Уредете ја страницава',
+	'gettingstarted-cta-edit-page-sub' => 'Ќе ви покажеме како',
+	'gettingstarted-cta-fix-pages' => 'Пронајдете страници на кои им требаат лесни поправки',
+	'gettingstarted-cta-fix-pages-sub' => 'Ќе ви покажеме како да уредувате',
+	'gettingstarted-cta-leave' => 'Не благодарам. Можеби подоцна.',
 );
 
 /** Marathi (मराठी)
@@ -1439,17 +1494,17 @@ Kies een van de onderstaande mogelijkheden voor een willekeurige pagina die uw h
 	'gettingstarted-task-clarify-secondary-description' => 'Zinnen vereenvoudigen of anders verwoorden.',
 	'gettingstarted-task-addlinks-main-description' => 'Koppelingen toevoegen',
 	'gettingstarted-task-addlinks-secondary-description' => "Koppel pagina's van {{SITENAME}} aan elkaar.",
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Terug naar lijst',
-	'gettingstarted-task-toolbar-return-to-list-title' => "Terug naar de lijst met pagina's",
-	'gettingstarted-task-toolbar-editing-help-text' => 'Hulp weergeven',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Andere taak kiezen',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Terug naar de pagina met taken',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Laten zien hoe',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Gids weergeven over hoe u kunt bewerken',
 	'gettingstarted-task-toolbar-try-another-text' => 'Andere pagina proberen ►',
 	'gettingstarted-task-toolbar-close-title' => 'Werkbalk sluiten',
-	'gettingstarted-task-copyedit-toolbar-description' => 'Deze pagina heeft spel- en grammaticafouten die u kunt corrigeren.',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Deze pagina heeft mogelijk spel- of grammaticafouten die u kunt corrigeren.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Ga naar een willekeurige pagina die u kunt verbeteren door redactie uit te voere',
-	'gettingstarted-task-clarify-toolbar-description' => 'Deze pagina is verwarrend of vaag. Probeer de tekst duidelijker te maken.',
+	'gettingstarted-task-clarify-toolbar-description' => 'Deze pagina is mogelijk verwarrend of vaag. Probeer de tekst duidelijker te maken.',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Ga naar een willekeurig pagina die u kunt verduidelijken',
-	'gettingstarted-task-addlinks-toolbar-description' => 'Op deze pagina zijn meer koppelingen nodig. Zoek naar termen die een pagina hebben op {{SITENAME}}.',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Op deze pagina zijn mogelijk meer koppelingen nodig. Zoek naar termen die een pagina hebben op {{SITENAME}}.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Ga naar een willekeurig pagina waar u koppelingen aan kunt toevoegen',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Hoe u aan de slag kunt gaan',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Controleer de pagina en ga op zoek naar mogelijkheden om deze te verbeteren. Maak u geen zorgen als u zich overweldigd voelt. U hoeft geen expert te worden over dit onderwerp! Als u hulp nodig hebt of liever aan een andere pagina werkt, gebruik dan de koppelingen in de werkbalk bovenaan.',
@@ -1829,6 +1884,14 @@ $3',
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Хочете продовжити? Відвідайте $2, де є список простих способів допомогти.',
+	'gettingstarted-cta-close' => 'Закрити',
+	'gettingstarted-cta-heading' => 'Довідка {{SITENAME}}',
+	'gettingstarted-cta-text' => 'Ви можете внести свій внесок {{SITENAME}} по-різному',
+	'gettingstarted-cta-edit-page' => 'Редагувати цю сторінку',
+	'gettingstarted-cta-edit-page-sub' => 'Ми покажемо вам, як',
+	'gettingstarted-cta-fix-pages' => 'Знайти сторінки, які просто необхідно виправити',
+	'gettingstarted-cta-fix-pages-sub' => 'Ми покажемо вам, як редагувати',
+	'gettingstarted-cta-leave' => 'Ні, дякую, можливо, пізніше',
 );
 
 /** Urdu (اردو)
@@ -1852,7 +1915,7 @@ $messages['vi'] = array(
 	'gettingstarted-welcomesiteuser' => 'Chào mừng $2 đến với $1!',
 	'gettingstarted-welcomesiteuseranon' => 'Bắt đầu',
 	'gettingstarted-welcome-back-site-user' => 'Chào mừng $2 đã trở lại',
-	'gettingstarted-task-header' => 'Cám ơn bạn đã tham gia {{SITENAME}}! Bạn có thể bắt đầu đóng góp với các công việc cơ bản này.',
+	'gettingstarted-task-header' => 'Cảm ơn bạn đã tham gia {{SITENAME}}! Bạn có thể bắt đầu đóng góp với các công việc cơ bản này.',
 	'gettingstarted-return' => 'Thôi, quay lại trang vừa rồi',
 	'gettingstarted-project-link' => '{{ns:Project}}:Bắt đầu',
 	'tag-gettingstarted_edit' => 'Người dùng mới đang [[{{MediaWiki:gettingstarted-project-link}}|bắt đầu]]',
@@ -1894,14 +1957,22 @@ Ghé vào $2 để xem danh sách những cách cải thiện trang dễ dàng.
 
 $3',
 	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Hãy bắt đầu sửa đổi {{SITENAME}}: xem chi tiết tại $2',
-	'notification-gettingstarted-continue-editing' => 'Cám ơn bạn đã bắt đầu sửa đổi {{SITENAME}}. Gợi ý xem một vài [[Special:GettingStarted|cách dễ dàng để tiếp tục giúp đỡ]].',
+	'notification-gettingstarted-continue-editing' => 'Cảm ơn bạn đã bắt đầu sửa đổi {{SITENAME}}. Gợi ý xem một vài [[Special:GettingStarted|cách dễ dàng để tiếp tục giúp đỡ]].',
 	'notification-gettingstarted-continue-editing-email-subject' => 'Những cách dễ dàng để cải thiện {{SITENAME}}',
-	'notification-gettingstarted-continue-editing-text-email-body' => 'Cám ơn bạn đã bắt đầu sửa đổi {{SITENAME}}.
+	'notification-gettingstarted-continue-editing-text-email-body' => 'Cảm ơn bạn đã bắt đầu sửa đổi {{SITENAME}}.
 
 Gợi ý xem danh sách những cách dễ dàng để tiếp tục đóng góp tại $2
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Muốn tiếp tục đóng góp? Gợi ý xem danh sách những cách dễ dàng để giúp đỡ tại $2 .',
+	'gettingstarted-cta-close' => 'Đóng',
+	'gettingstarted-cta-heading' => 'Giúp đỡ {{SITENAME}}',
+	'gettingstarted-cta-text' => 'Có nhiều cách để đóng góp vào {{SITENAME}}',
+	'gettingstarted-cta-edit-page' => 'Sửa đổi trang này',
+	'gettingstarted-cta-edit-page-sub' => 'Chúng tôi sẽ chỉ dẫn bạn',
+	'gettingstarted-cta-fix-pages' => 'Tìm các trang cần sữa chữa dễ dàng',
+	'gettingstarted-cta-fix-pages-sub' => 'Chúng tôi sẽ chỉ dẫn bạn cách sửa đổi',
+	'gettingstarted-cta-leave' => 'Thôi, có lẽ lần sau',
 );
 
 /** Yiddish (ייִדיש)
@@ -1956,6 +2027,7 @@ $3',
  * @author Hydra
  * @author Hzy980512
  * @author Li3939108
+ * @author Liuxinyu970226
  * @author Qiyue2001
  * @author Yfdyh000
  * @author Zhuyifei1999
@@ -1974,9 +2046,12 @@ $messages['zh-hans'] = array(
 	'tag-gettingstarted_edit-description' => '用户从[[Special:GettingStarted|入门指南]]任务列表上选择而作的编辑。',
 	'gettingstarted-task-copyedit-main-description' => '纠正拼写和语法',
 	'gettingstarted-task-clarify-main-description' => '提高清晰度',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ 选择另一个任务',
+	'gettingstarted-task-toolbar-try-another-text' => '试试另一篇文章 ►',
 	'gettingstarted-task-toolbar-close-title' => '关闭此工具条',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => '如何开始',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => '您可以通过单击此处编辑整篇文章。',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => '您可以编辑！',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} 是由像你一样的人们撰写的一部自由的百科全书。[[Special:GettingStarted|开始]]尝试做你的第一次编辑吧！',
 	'notification-gettingstarted-start-editing-email-subject' => '开始初次编辑{{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} 是像你一样的人们撰写的一部自由的百科全书。尝试做你的第一次编辑吧！
@@ -1993,6 +2068,13 @@ $3',
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => '想找更多事来做？访问 $2 获得需要帮助的名单。',
+	'gettingstarted-cta-close' => '关闭',
+	'gettingstarted-cta-heading' => '帮助{{SITENAME}}',
+	'gettingstarted-cta-text' => '您可以以各种方式为{{SITENAME}}做贡献',
+	'gettingstarted-cta-edit-page' => '编辑此页',
+	'gettingstarted-cta-edit-page-sub' => '我们将展示您如何',
+	'gettingstarted-cta-fix-pages-sub' => '我们将展示您如何编辑',
+	'gettingstarted-cta-leave' => '不用了，谢谢，以后再说吧',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
