@@ -151,7 +151,8 @@ class GettingStartedHooks {
 	 * @param WebRequest $request current request
 	 * @param Title $title title to set
 	 * @param string $task task to set
-	 */ public static function setPageTask( WebRequest $request, Title $title, $task ) {
+	 */
+	public static function setPageTask( WebRequest $request, Title $title, $task ) {
 		self::initializeOpenTask( $request );
 
 		self::$openTask[$title->getPrefixedText()] = $task;

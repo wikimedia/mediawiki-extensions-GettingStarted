@@ -1,14 +1,10 @@
-/* IE 6 hacks on the dialog due to lack of position: fixed and min-height */
-
 /* Specific elements */
 #mw-gettingstarted-cta-editable-main-page {
-	width: 40%;
-	margin-left: -20%;
+	width: 600px;
 }
 
 #mw-gettingstarted-cta-other-page {
-	width: 25%;
-	margin-left: -12.5%;
+	width: 450px;
 }
 
 /*
@@ -33,20 +29,49 @@
 	width: 250px;
 }
 
+/* Remove right margin on right-most buttons */
+#mw-gettingstarted-editable-main-fix-pages, #mw-gettingstarted-other-fix-pages {
+	margin-right: 0;
+}
+
+.mw-gettingstarted-cta-overlay {
+	position: fixed;
+	background-color: #000;
+	height: 100%;
+	top: 0;
+	width: 100%;
+	left: 0;
+	filter: alpha(opacity=50); /* IE */
+	opacity: 0.5;
+	/* One z-index above guiders */
+	z-index: 100000006;
+}
+
 /*
    Classes that could (in theory at least) be used for more than
    one element
 */
 .mw-gettingstarted-cta {
+	/*
+	   'absolute' alone doesn't make it looks great (or centered) in IE6, but it's at least above the fold
+	   fixed is entirely ignored, so it falls to the bottom of the page.
+	*/
 	position: absolute;
 	border: 1px solid #999999;
 	border-radius: 3px;
-	margin-top: -10%;
-	top: 50%;
-	left: 50%;
+	/* http://coding.smashingmagazine.com/2013/08/09/absolute-horizontal-vertical-centering-css/ */
+	height: 180px;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 	opacity: 1;
 	background-color: white;
 	padding: 20px 30px;
+	overflow: auto;
+	/* One z-index above overlay above */
+	z-index: 100000007;
 }
 
 .mw-gettingstarted-cta-body {
@@ -73,11 +98,29 @@
 	margin-top: 15px;
 }
 
+.mw-ui-button.mw-gettingstarted-cta-secondary:hover {
+    /*
+      TODO (mattflaschen, 2013-10-03): This is inconsistent with
+      normal mw.ui secondary buttons.  We should make them match.
+    */
+    background-color: #fbfbfb;
+    border-color: #cccccc;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbfbfb), color-stop(100%, #f8f8f8));
+    background-image: -webkit-linear-gradient(top, #fbfbfb, #f8f8f8);
+    background-image: -moz-linear-gradient(top, #fbfbfb, #f8f8f8);
+    background-image: -o-linear-gradient(top, #fbfbfb, #f8f8f8);
+    background-image: linear-gradient(top, #fbfbfb, #f8f8f8);
+}
 .mw-ui-button.mw-gettingstarted-cta-secondary {
-	/*
-	   TODO (mattflaschen, 2013-10-03): This is inconsistent with
-	   normal mw.ui secondary buttons.  We should make them match.
-	*/
+    text-shadow: 0 1px 1px rgba(20,20,20,0.15);
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f8f8), color-stop(100%, #f0f0f0));
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #f0f0f0);
+    background-image: -moz-linear-gradient(top, #f8f8f8, #f0f0f0);
+    background-image: -o-linear-gradient(top, #f8f8f8, #f0f0f0);
+    background-image: linear-gradient(top, #f8f8f8, #f0f0f0);
+ }
+
+.mw-ui-button.mw-gettingstarted-cta-secondary {
 	background-image: none;
 	background-color: #F5F5F5;
 	border: 1px solid #D3D3D3;

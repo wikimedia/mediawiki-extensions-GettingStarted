@@ -12,12 +12,12 @@
 		editablePageButtons, taskOnlyPageButtons,
 		self,
 		MAIN_NAMESPACE = 0,
-		SPECIAL_NAMESPACE = 1;
+		SPECIAL_NAMESPACE = -1;
 
-	function doEditThisPage( $dialog ) {
+	function doEditThisPage( api ) {
 		var funnel = 'redirect', tourName;
 
-		$dialog.remove();
+		api.close();
 		logging.setTaskForCurrentPage( funnel );
 
 		// TODO (mattflaschen, 2013-08-22): Check if VE is available (see taskToolbar), then
@@ -39,10 +39,10 @@
 		} );
 	}
 
-	function doFixPages( $dialog ) {
+	function doFixPages( api ) {
 		var funnel = 'gettingstarted-copyedit';
 
-		$dialog.remove();
+		api.close();
 		logging.logUnlessTimeout( {
 			action: 'redirect-invite-click',
 			funnel: funnel
@@ -57,6 +57,7 @@
 	/**
 	 * Gets a jQuery-wrapped button, from a specification
 	 *
+	 * @param {Object} api API for dialog; passed to button's click handler
 	 * @param {Object} spec button specification
 	 * @param {Object} spec.id HTML id
 	 * @param {string} spec.icon file name of icon, relative to the GettingStarted
@@ -65,6 +66,7 @@
 	 * @param {string} spec.mainText main button text
 	 * @param {string} [spec.subText] lower button text
 	 * @param {Function} spec.click function to call on button click
+	 * @param {Object} spec.click.api trivial API for dialog; probably only need api.close()
 	 * @return {jQuery} created button
 	 *
 	 * @private
@@ -171,6 +173,7 @@
 			ALLOWED_PARAMS = [
 				'title',
 				'gettingStartedReturn',
+				'postCreateAccount',
 				'debug'
 			];
 
@@ -240,18 +243,42 @@
 			}
 		},
 
+
+
 		// TODO (mattflaschen, 2013-09-27): Cleanup and move to mediawiki.ui
 		/**
-		 * Generates and returns CTA (Call To Action) dialog
+		 * Generates a CTA (Call To Action) dialog.
+		 *
+		 * Returns an object with show and close methods.  show shows the CTA that has been
+		 * built, close destroys it.  To display it again, buildCTA must be called again.
+		 *
+		 * Only one CTA at a time is supported.
 		 *
 		 * @param {string} kind kind of page
 		 * @return {jQuery} dialog, wrapped by jQuery
 		 */
 		buildCTA: function ( kind ) {
 			var $dialog, $close, closeText, $heading, $dialogText, $leaveLink,
-				buttonSpecs, dialogId, width, i;
+				buttonSpecs, dialogId, width, i, $overlay, api;
 
 			// Background overlay like GuidedTour
+
+			function showCTA() {
+				var $body = $( document.body );
+				$body.append( $overlay );
+				$dialog.show();
+				$body.append( $dialog );
+			}
+
+			function removeCTA() {
+				$dialog.remove();
+				$overlay.remove();
+			}
+
+			api = {
+				show: showCTA,
+				close: removeCTA
+			};
 
 			// TODO: Click outside or ESC to close
 			function closeDialogByClick( evt ) {
@@ -264,8 +291,10 @@
 					action: 'redirect-invite-click'
 				} );
 
-				$dialog.remove();
+				api.close();
 			}
+
+			$overlay = $( '<div>' ).attr( 'class', 'mw-gettingstarted-cta-overlay' );
 
 			if ( kind === 'editablemain' ) {
 				dialogId = 'mw-gettingstarted-cta-editable-main-page';
@@ -316,7 +345,7 @@
 			//
 			// Not vertically centered, but should look alright
 			for ( i = 0; i < buttonSpecs.length; i++ ) {
-				$dialog.append(	getButton( $dialog, buttonSpecs[i] ) );
+				$dialog.append(	getButton( api, buttonSpecs[i] ) );
 			}
 
 			$leaveLink = $( '<a>' )
@@ -327,16 +356,16 @@
 				.text( mw.message( 'gettingstarted-cta-leave' ).text() )
 				.click( closeDialogByClick );
 
-			return $dialog.append( $leaveLink );
+			$dialog.append( $leaveLink );
+			return api;
 		},
 
 		showCTA: function ( kind ) {
-			var $cta = self.buildCTA( kind );
-			$cta.show();
-			$( document.body ).append( $cta );
+			var cta = self.buildCTA( kind );
+			cta.show();
 
 			logging.logImpression( null, 'redirect-invite-impression' );
-			return  $cta;
+			return  cta;
 		},
 
 		init: function() {
