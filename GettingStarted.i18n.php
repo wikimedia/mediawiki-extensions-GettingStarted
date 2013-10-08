@@ -335,14 +335,14 @@ $messages['be-tarask'] = array(
 	'gettingstarted-task-clarify-secondary-description' => 'Спрашчэньне або перафармуляваньне сьцверджаньняў.',
 	'gettingstarted-task-addlinks-main-description' => 'Спасылкі',
 	'gettingstarted-task-addlinks-secondary-description' => 'Злучэньне артыкулаў {{GRAMMAR:родны|{{SITENAME}}}}.',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Назад да сьпісу',
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Вярнуцца да сьпісу артыкулаў',
-	'gettingstarted-task-toolbar-editing-help-text' => 'Паказаць даведку',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Назад да сьпісу', # Fuzzy
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Вярнуцца да сьпісу артыкулаў', # Fuzzy
+	'gettingstarted-task-toolbar-editing-help-text' => 'Паказаць даведку', # Fuzzy
 	'gettingstarted-task-toolbar-editing-help-title' => 'Паказаць дапамогу па рэдагаваньні',
 	'gettingstarted-task-toolbar-try-another-text' => 'Паспрабуйце іншы артыкул  ►',
 	'gettingstarted-task-toolbar-close-title' => 'Зачыніць гэтую панэль',
-	'gettingstarted-task-copyedit-toolbar-description' => 'У гэтым артыкуле маюцца артаграфічныя й граматычныя памылкі, якія вы можаце выправіць.',
-	'gettingstarted-task-addlinks-toolbar-description' => 'Гэтаму артыкулу бракуе спасылак. Пашукайце тэрміны, артыкулы пра якія маюцца ў {{GRAMMAR:месны|{{SITENAME}}}}.',
+	'gettingstarted-task-copyedit-toolbar-description' => 'У гэтым артыкуле маюцца артаграфічныя й граматычныя памылкі, якія вы можаце выправіць.', # Fuzzy
+	'gettingstarted-task-addlinks-toolbar-description' => 'Гэтаму артыкулу бракуе спасылак. Пашукайце тэрміны, артыкулы пра якія маюцца ў {{GRAMMAR:месны|{{SITENAME}}}}.', # Fuzzy
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Як пачаць',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Што рабіць',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Пстрыкніце «{{int:vector-view-edit}}»',
@@ -791,8 +791,8 @@ $3',
  */
 $messages['gu'] = array(
 	'gettingstarted-task-addlinks-main-description' => 'કડીઓ ઉમેરો',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ યાદી પર પાછા ફરો',
-	'gettingstarted-task-toolbar-editing-help-text' => 'મદદ માટે જુઓ',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ યાદી પર પાછા ફરો', # Fuzzy
+	'gettingstarted-task-toolbar-editing-help-text' => 'મદદ માટે જુઓ', # Fuzzy
 	'gettingstarted-task-toolbar-try-another-text' => 'અન્ય લેખ માટે પ્રયત્ન કરો ►',
 	'gettingstarted-task-toolbar-close-title' => 'આ સાધનપેટી બંધ કરો',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'કેવી રીતે શરૂઆત કરશો',
@@ -1182,7 +1182,7 @@ $3',
 	'gettingstarted-cta-leave' => '괜찮습니다. 나중에요.',
 );
 
-/** Kirghiz (Кыргызча)
+/** Kyrgyz (Кыргызча)
  * @author Growingup
  */
 $messages['ky'] = array(
@@ -1268,8 +1268,8 @@ $messages['lt'] = array(
 	'gettingstarted-welcomesiteuser' => 'Sveiki atvykę į $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Sveiki atvykę į $1!', # Fuzzy
 	'gettingstarted-task-addlinks-main-description' => 'Pridėti nuorodas',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Grįžti į sąrašą',
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Grįžti į straipsnių sąrašą',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Grįžti į sąrašą', # Fuzzy
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Grįžti į straipsnių sąrašą', # Fuzzy
 	'gettingstarted-task-toolbar-try-another-text' => 'Pabandykite kitą straipsnį ►',
 	'gettingstarted-task-toolbar-close-title' => 'Uždaryti šią įrankių juostą',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Kaip pradėti',
@@ -1662,9 +1662,9 @@ $messages['roa-tara'] = array(
 	'gettingstarted-task-clarify-secondary-description' => 'Semblifiche o rescrive le frase.',
 	'gettingstarted-task-addlinks-main-description' => 'Aggiunge le Collegaminde',
 	'gettingstarted-task-addlinks-secondary-description' => 'Colleghe le vôsce de {{SITENAME}} inzieme.',
-	'gettingstarted-task-toolbar-return-to-list-text' => "◄ Tuèrne a l'elenghe",
-	'gettingstarted-task-toolbar-return-to-list-title' => "Tuèrne a l'elenghe de le vôsce",
-	'gettingstarted-task-toolbar-editing-help-text' => "Fà vedè l'aijute",
+	'gettingstarted-task-toolbar-return-to-list-text' => "◄ Tuèrne a l'elenghe", # Fuzzy
+	'gettingstarted-task-toolbar-return-to-list-title' => "Tuèrne a l'elenghe de le vôsce", # Fuzzy
+	'gettingstarted-task-toolbar-editing-help-text' => "Fà vedè l'aijute", # Fuzzy
 	'gettingstarted-task-toolbar-editing-help-title' => "Fà vedè 'a guide su cumme se fanne le cangiaminde",
 	'gettingstarted-task-toolbar-try-another-text' => "Pruève 'n'otra vôsce ►",
 	'gettingstarted-task-toolbar-close-title' => 'Achiude sta barre de le struminde',
@@ -1751,7 +1751,7 @@ $messages['si'] = array(
  */
 $messages['sr-ec'] = array(
 	'gettingstarted-task-addlinks-main-description' => 'Додај везе',
-	'gettingstarted-task-toolbar-editing-help-text' => 'Прикажи помоћ',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Прикажи помоћ', # Fuzzy
 );
 
 /** Swedish (svenska)
