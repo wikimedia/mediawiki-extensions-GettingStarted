@@ -362,6 +362,9 @@ $3',
 $messages['br'] = array(
 	'gettingstarted' => 'Kregiñ ganti',
 	'gettingstarted-welcomesiteuser' => 'Degemer mat en $1, $2 !',
+	'gettingstarted-cta-close' => 'Serriñ',
+	'gettingstarted-cta-edit-page' => 'Degas kemmoù war ar bajenn-mañ',
+	'gettingstarted-cta-leave' => "Ket, diwezhatoc'h marteze",
 );
 
 /** Catalan (català)
@@ -480,6 +483,14 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Finde Seiten, die einfache Korrekturen brauchen.',
 	'gettingstarted-cta-fix-pages-sub' => 'Wir werden dir zeigen, wie man bearbeitet.',
 	'gettingstarted-cta-leave' => 'Nein danke, vielleicht später.',
+);
+
+/** Zazaki (Zazaki)
+ * @author Gorizon
+ */
+$messages['diq'] = array(
+	'gettingstarted-cta-close' => 'Racın',
+	'gettingstarted-cta-heading' => '{{SITENAME}} Desteg',
 );
 
 /** Lower Sorbian (dolnoserbski)
@@ -1548,6 +1559,14 @@ Als u meer zoekt om te doen, dan vindt u hier nog meer eenvoudige manieren om bi
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Zoekt u nog meer te doen? Volg deze koppeling voor een lijst met eenvoudige manieren om te helpen: $2',
+	'gettingstarted-cta-close' => 'Sluiten',
+	'gettingstarted-cta-heading' => 'Help {{SITENAME}}',
+	'gettingstarted-cta-text' => 'U kunt op meerdere manieren bijdragen aan {{SITENAME}}',
+	'gettingstarted-cta-edit-page' => 'Pagina bewerken',
+	'gettingstarted-cta-edit-page-sub' => 'We laten u zien hoe',
+	'gettingstarted-cta-fix-pages' => "Pagina's vinden die eenvoudig te verbeteren zijn",
+	'gettingstarted-cta-fix-pages-sub' => 'We laten u zien hoe u kunt bewerken',
+	'gettingstarted-cta-leave' => 'Nee bedankt, misschien een volgende keer',
 );
 
 /** Polish (polski)
