@@ -34,6 +34,11 @@ $specialPageAliases['fa'] = array(
 	'GettingStarted' => array( 'شروع‌کردن' ),
 );
 
+/** Galician (galego) */
+$specialPageAliases['gl'] = array(
+	'GettingStarted' => array( 'Primeiros_pasos' ),
+);
+
 /** Hungarian (magyar) */
 $specialPageAliases['hu'] = array(
 	'GettingStarted' => array( 'Első_lépések' ),

@@ -2066,6 +2066,7 @@ $3',
 );
 
 /** Simplified Chinese (中文（简体）‎)
+ * @author Dreamism
  * @author Hydra
  * @author Hzy980512
  * @author Li3939108
@@ -2081,19 +2082,32 @@ $messages['zh-hans'] = array(
 	'gettingstarted-welcomesiteuser' => '欢迎来到$1，$2！',
 	'gettingstarted-welcomesiteuseranon' => '入门指南',
 	'gettingstarted-welcome-back-site-user' => '欢迎回来，$2',
-	'gettingstarted-task-header' => '在寻找简单的方法入门吗？只需从下面三项的列表中选择一个页面。', # Fuzzy
+	'gettingstarted-task-header' => '感谢您加入{{SITENAME}}！这里有一些您可以参与的方式。
+
+选择以下选项之一，之后您将看到随机的需要帮助的文章。',
 	'gettingstarted-return' => '← 不必了，回到我原来阅读的地方',
 	'gettingstarted-project-link' => '{{ns:Project}}:入门指南',
 	'tag-gettingstarted_edit' => '新编辑者[[{{MediaWiki:gettingstarted-project-link}}|入门]]',
 	'tag-gettingstarted_edit-description' => '用户从[[Special:GettingStarted|入门指南]]任务列表上选择而作的编辑。',
 	'gettingstarted-task-copyedit-main-description' => '纠正拼写和语法',
+	'gettingstarted-task-copyedit-secondary-description' => '让您入门的最简单的方法！',
 	'gettingstarted-task-clarify-main-description' => '提高清晰度',
+	'gettingstarted-task-clarify-secondary-description' => '简化或重写句子。',
+	'gettingstarted-task-addlinks-main-description' => '添加链接',
+	'gettingstarted-task-addlinks-secondary-description' => '将{{SITENAME}}的文章连接在一起。',
 	'gettingstarted-task-toolbar-return-to-list-text' => '◄ 选择另一个任务',
+	'gettingstarted-task-toolbar-return-to-list-title' => '返回到任务选择页面',
+	'gettingstarted-task-toolbar-editing-help-text' => '告知我如何',
+	'gettingstarted-task-toolbar-editing-help-title' => '显示编辑指南',
 	'gettingstarted-task-toolbar-try-another-text' => '试试另一篇文章 ►',
 	'gettingstarted-task-toolbar-close-title' => '关闭此工具条',
+	'gettingstarted-task-copyedit-toolbar-description' => '这篇文章可能包含可修正的拼写或语法错误。',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => '如何开始',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => '干什么的注意',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => '猛戳{{int:vector-view-edit}}',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => '您可以通过单击此处编辑整篇文章。',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => '您可以编辑！',
+	'notification-gettingstarted-link-text-get-started' => '入门',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} 是由像你一样的人们撰写的一部自由的百科全书。[[Special:GettingStarted|开始]]尝试做你的第一次编辑吧！',
 	'notification-gettingstarted-start-editing-email-subject' => '开始初次编辑{{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} 是像你一样的人们撰写的一部自由的百科全书。尝试做你的第一次编辑吧！
