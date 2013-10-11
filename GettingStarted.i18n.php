@@ -794,7 +794,14 @@ Se busca algo máis que facer, hai unha lista dos modos fáciles de axudar en $2
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Busca facer algo máis? Visite $2 para ver unha lista de modos fáciles de axudar.',
+	'gettingstarted-cta-close' => 'Pechar',
+	'gettingstarted-cta-heading' => 'Axude a {{SITENAME}}',
+	'gettingstarted-cta-text' => 'Pode colaborar en {{SITENAME}} de diferentes xeitos',
 	'gettingstarted-cta-edit-page' => 'Editar esta páxina',
+	'gettingstarted-cta-edit-page-sub' => 'Mostrámoslle como',
+	'gettingstarted-cta-fix-pages' => 'Atopar as páxinas que necesitan correccións sinxelas',
+	'gettingstarted-cta-fix-pages-sub' => 'Mostrámoslle como editar',
+	'gettingstarted-cta-leave' => 'Non grazas, quizais logo',
 );
 
 /** Gujarati (ગુજરાતી)
