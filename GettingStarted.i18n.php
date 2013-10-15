@@ -1821,6 +1821,14 @@ $3',
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Хотите продолжить? Посетите $2 для получения списка простых задач, в решении которых вы можете помочь.',
+	'gettingstarted-cta-close' => 'Закрыть',
+	'gettingstarted-cta-heading' => 'Помочь сайту {{SITENAME}}',
+	'gettingstarted-cta-text' => 'Вы можете помочь сайту {{SITENAME}} по-разному',
+	'gettingstarted-cta-edit-page' => 'Править эту страницу',
+	'gettingstarted-cta-edit-page-sub' => 'Мы покажем вам как',
+	'gettingstarted-cta-fix-pages' => 'Найдите страницы, которые нуждаются в простых исправлениях',
+	'gettingstarted-cta-fix-pages-sub' => 'Мы покажем вам, как редактировать',
+	'gettingstarted-cta-leave' => 'Нет, спасибо, может быть, позже',
 );
 
 /** Sinhala (සිංහල)
