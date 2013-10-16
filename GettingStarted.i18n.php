@@ -1922,6 +1922,7 @@ $messages['ta'] = array(
 );
 
 /** Telugu (తెలుగు)
+ * @author Arjunaraoc
  * @author Veeven
  */
 $messages['te'] = array(
@@ -1929,6 +1930,7 @@ $messages['te'] = array(
 	'gettingstarted-welcomesiteuser' => '$1కి స్వాగతం, $2!',
 	'gettingstarted-welcomesiteuseranon' => '$1కి స్వాగతం!', # Fuzzy
 	'gettingstarted-return' => 'వద్దు, నన్ను వెనక్కు తీసుకువెళ్ళు', # Fuzzy
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'మీరు  మార్పులు చేయవచ్చు!',
 );
 
 /** Ukrainian (українська)
