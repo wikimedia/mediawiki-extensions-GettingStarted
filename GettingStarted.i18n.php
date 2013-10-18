@@ -355,6 +355,14 @@ $messages['be-tarask'] = array(
 $3',
 );
 
+/** Bulgarian (български)
+ * @author DCLXVI
+ */
+$messages['bg'] = array(
+	'gettingstarted-cta-close' => 'Затваряне',
+	'gettingstarted-cta-edit-page' => 'Редактиране на страницата',
+);
+
 /** Breton (brezhoneg)
  * @author Fohanno
  * @author Y-M D
