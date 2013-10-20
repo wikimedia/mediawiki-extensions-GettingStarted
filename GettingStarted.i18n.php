@@ -942,7 +942,7 @@ $messages['he'] = array(
 
 $3',
 	'notification-gettingstarted-start-editing-text-email-batch-body' => 'להתחיל בעריכת {{SITENAME}} על-ידי ביקור ב$2',
-	'notification-gettingstarted-continue-editing' => 'עבודה טובה! ביצעת את העריכות הראשונות שלך ב{{GRAMMAR:תחילית|{{SITENAME}}}}. אם חיפשת עוד דברים לעשות, הנה כמה [[Special: GettingStarted|דרכים קלות לעזור]].', # Fuzzy
+	'notification-gettingstarted-continue-editing' => 'עבודה טובה! ביצעת את העריכות הראשונות שלך ב{{GRAMMAR:תחילית|{{SITENAME}}}}. אם חיפשת עוד דברים לעשות, הנה כמה [[Special:GettingStarted|דרכים קלות לעזור]].',
 	'notification-gettingstarted-continue-editing-email-subject' => 'דרכים קלות כדי לשפר את {{SITENAME}}',
 	'notification-gettingstarted-continue-editing-text-email-body' => 'עבודה טובה! ביצעת את העריכה הראשונה ב{{SITENAME}}.
 
@@ -950,6 +950,14 @@ $3',
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'מחפש עוד לעשות? בקר ב$2 לקבלת רשימה של דרכים קלות לעזור.',
+	'gettingstarted-cta-close' => 'סגירה',
+	'gettingstarted-cta-heading' => 'איך לעזור ל{{GRAMMAR:תחילית|{{SITENAME}}}}',
+	'gettingstarted-cta-text' => 'אפשר לתרום ל{{GRAMMAR:תחילית|{{SITENAME}}}} בדרכים שונות',
+	'gettingstarted-cta-edit-page' => 'לערוך את הדף הזה',
+	'gettingstarted-cta-edit-page-sub' => 'אנחנו נראה לך איך',
+	'gettingstarted-cta-fix-pages' => 'למצוא דפים שצריכים תיקונים קלים',
+	'gettingstarted-cta-fix-pages-sub' => 'אנחנו נראה לך איך לערוך',
+	'gettingstarted-cta-leave' => 'לא תודה, אולי מאוחר יותר',
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -1571,6 +1579,77 @@ $messages['mt'] = array(
 	'gettingstarted-welcomesiteuser' => 'Merbħa fuq $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Merbħa fuq $1!', # Fuzzy
 	'gettingstarted-return' => 'Le grazzi, ħudni lura', # Fuzzy
+);
+
+/** Norwegian Bokmål (norsk bokmål)
+ * @author Danmichaelo
+ */
+$messages['nb'] = array(
+	'gettingstarted' => 'Kom i gang',
+	'gettingstarted-desc' => 'Tilføyer en [[Special:GettingStarted|velkomstside]] for nye brukere (vises etter kontoopprettelse)',
+	'gettingstarted-welcomesiteuser' => 'Velkommen til $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Kom i gang',
+	'gettingstarted-welcome-back-site-user' => 'Velkommen tilbake, $2',
+	'gettingstarted-task-header' => 'Takk for at du registrerte deg på {{SITENAME}}! Her er et par oppgaver som kan hjelpe deg i gang.
+
+Velg et alternativ nedenfor og du vil komme til en tilfeldig artikkel som trenger hjelp.',
+	'gettingstarted-return' => 'Nei takk, ta meg tilbake til siden jeg leste',
+	'gettingstarted-project-link' => '{{ns:Project}}:Kom i gang',
+	'tag-gettingstarted_edit' => '[[{{MediaWiki:gettingstarted-project-link}}|kom i gang]] for nye bidragsytere',
+	'tag-gettingstarted_edit-description' => 'Redigering av en side som brukeren valgte fra oppgavelisten på [[Special:GettingStarted|Kom i gang]]',
+	'gettingstarted-task-copyedit-main-description' => 'Korrekturles og fiks skrivefeil og gramatikk',
+	'gettingstarted-task-copyedit-secondary-description' => 'Den enkleste måten å komme i gang!',
+	'gettingstarted-task-clarify-main-description' => 'Forbedre klarhet og lesbarhet',
+	'gettingstarted-task-clarify-secondary-description' => 'Forenkle og skriv om setninger.',
+	'gettingstarted-task-addlinks-main-description' => 'Legg til lenker',
+	'gettingstarted-task-addlinks-secondary-description' => 'Koble sammen artikler på {{SITENAME}}.',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Velg en annen oppgave',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Gå tilbake til listen med oppgaver',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Vis meg hvordan',
+	'gettingstarted-task-toolbar-editing-help-title' => 'Viser redigeringsveiledning',
+	'gettingstarted-task-toolbar-try-another-text' => 'Prøv en annen artikkel ►',
+	'gettingstarted-task-toolbar-close-title' => 'Lukk denne verktøylinja',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Denne artikkelen kan ha stave- eller gramatikkfeil som du kan fikse.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Gå til en tilfeldig artikkel som du kan hjelpe med språkvask',
+	'gettingstarted-task-clarify-toolbar-description' => 'Denne artikkelen kan være uklar eller vag. Se om det er måter du kan gjøre den klarere og mer forståelig på.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Gå til en tilfeldig artikkel du kan klargjøre',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Denne artikkelen trenger flere lenker. Se etter uttrykk i teksten som kan ha en {{SITENAME}}-artikkel.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Gå til en tilfeldig artikkel som du kan legge til lenker i.',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Hvordan komme i gang',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Begynn bare å titte gjennom artikkelen og se etter noe som kan forbedres eller fikses. Ikke bekymre deg hvis du føler du kan for lite om artikkelens tema. Det er nesten alltid noe man kan gjøre uten å være en ekspert på temaet! Bruk lenkene i toppbjelken hvis du trenger hjelper eller vil prøve en annen artikkel.',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Ideer til hva du kan gjøre',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Disse bannerne identifiserer problemer med denne artikkelen. Husk at du ikke trenger å ordne alt – bare gjør de redigeringene du føler deg komfortabel med å gjøre.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Klikk på {{int:vector-view-edit}}',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Du kan redigere hele artikkelen ved å trykke her.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Rediger et avsnitt',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Hvis du vil redigere et spesifikt avsnitt kan du trykke på den blå '{{int:editsection}}'-lenken øverst i hvert avsnitt.",
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Du kan redigere!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "Nå kan du redigere siden. Når du er ferdig, trykk på '{{int:visualeditor-toolbar-savedialog}}' for å gå gjennom og lagre endringene dine.",
+	'notification-gettingstarted-link-text-get-started' => 'Kom i gang',
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} er en fri encyklopedi skrevet av folk som deg. [[Special:GettingStarted|Kom i gang]] med å gjøre din første redigering!',
+	'notification-gettingstarted-start-editing-email-subject' => 'Kom i gang med å redigere {{SITENAME}}',
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} er en fri encyklopedi skrevet av folk som deg. Kom i gang med å gjøre din første redigering!
+
+Besøk $2 for en liste med enkle måter å forbedre sider på.
+
+$3',
+	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Kom i gang med {{SITENAME}}-redigering ved å besøke $2',
+	'notification-gettingstarted-continue-editing' => 'Bra jobbet! Du har allerede gjort dine første redigeringer på {{SITENAME}}. Ser du etter mer å gjøre? Her er noen [[Special:GettingStarted|enkle måter å bidra på]].',
+	'notification-gettingstarted-continue-editing-email-subject' => 'Enkle måter å forbedre {{SITENAME}}',
+	'notification-gettingstarted-continue-editing-text-email-body' => 'Bra jobbet! Du har allerede gjort dine første redigeringer på {{SITENAME}}. 
+
+Hvis du ser etter mer å gjøre finner du en liste med enkle måter å bidra på $2
+
+$3',
+	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Ser du etter mer å gjøre? Besøk $2 for en liste over enkle måter å bidra på.',
+	'gettingstarted-cta-close' => 'Lukk',
+	'gettingstarted-cta-heading' => 'Hjelp {{SITENAME}}',
+	'gettingstarted-cta-text' => 'Du kan bidra til {{SITENAME}} på forskjellige måter',
+	'gettingstarted-cta-edit-page' => 'Rediger denne siden',
+	'gettingstarted-cta-edit-page-sub' => 'Vi vil vise deg hvordan',
+	'gettingstarted-cta-fix-pages' => 'Finn sider som trenger lette rettelser',
+	'gettingstarted-cta-fix-pages-sub' => 'Vi vil vise deg hvordan du redigerer',
+	'gettingstarted-cta-leave' => 'Nei takk, kanskje senere',
 );
 
 /** Dutch (Nederlands)
