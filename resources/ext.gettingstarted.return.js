@@ -202,7 +202,7 @@
 		 * @return {string} kind of page.
 		 */
 		getPageKind: function () {
-			if ( cfg.wgAction === 'edit' ) {
+			if ( cfg.wgAction === 'edit' || cfg.wgAction === 'submit' ) {
 				return 'alreadyediting';
 			}
 
