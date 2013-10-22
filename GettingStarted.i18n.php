@@ -303,6 +303,14 @@ Si busca más que facer, hai una llista  de maneres fáciles d'ayudar en $2
 
 $3",
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => "¿Busca más coses que facer? Visite $2 pa ver una llista de maneres fáciles d'ayudar.",
+	'gettingstarted-cta-close' => 'Zarrar',
+	'gettingstarted-cta-heading' => 'Ayude a {{SITENAME}}',
+	'gettingstarted-cta-text' => 'Pue collaborar con {{SITENAME}} de diferentes maneres',
+	'gettingstarted-cta-edit-page' => 'Editar esta páxina',
+	'gettingstarted-cta-edit-page-sub' => 'Vamos indica-y cómo',
+	'gettingstarted-cta-fix-pages' => 'Atopar páxines que necesiten igües cencielles',
+	'gettingstarted-cta-fix-pages-sub' => 'Vamos indica-y cómo editar',
+	'gettingstarted-cta-leave' => 'Non gracies, seique más sero',
 );
 
 /** Azerbaijani (azərbaycanca)
