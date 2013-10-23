@@ -2006,6 +2006,14 @@ Om du letar efter mer att göra, det finns en lista över enkla sätt att hjälp
  
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Söker du efter mer att göra? Besök $2 för en lista över saker du enkelt kan hjälpa till med.',
+	'gettingstarted-cta-close' => 'Stäng',
+	'gettingstarted-cta-heading' => 'Hjälp {{SITENAME}}',
+	'gettingstarted-cta-text' => 'Du kan bidra till {{SITENAME}} på olika sätt',
+	'gettingstarted-cta-edit-page' => 'Redigera denna sida',
+	'gettingstarted-cta-edit-page-sub' => 'Vi visar dig hur',
+	'gettingstarted-cta-fix-pages' => 'Hitta sidor som behöver enkla förbättringar',
+	'gettingstarted-cta-fix-pages-sub' => 'Vi visar dig hur du redigerar',
+	'gettingstarted-cta-leave' => 'Nej tack, kanske en annan gång',
 );
 
 /** Tamil (தமிழ்)
