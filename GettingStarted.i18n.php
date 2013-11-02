@@ -614,6 +614,7 @@ $messages['eo'] = array(
 /** Spanish (español)
  * @author Almupg
  * @author Armando-Martin
+ * @author Benfutbol10
  * @author Fitoschido
  * @author McDutchie
  */
@@ -644,6 +645,7 @@ Elige una opción a continuación y verás un artículo aleatorio que necesita d
 	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Ir a un artículo aleatorio que puedes clarificar',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Pulsa en {{int:vector-view-edit}}',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Editar una sección',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Ahora puedes editar la página. Cuando estés listo, haz clic en "{{int:visualeditor-toolbar-savedialog}}" para revisar y guardar tus cambios.',
 	'notification-gettingstarted-link-text-get-started' => 'Primeros pasos',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} es una enciclopedia libre que está realizada por personas como tú. [[Especial:Cómo empezar|Empieza haciendo tu primera contribución]]', # Fuzzy
 	'notification-gettingstarted-start-editing-email-subject' => 'Empieza a editar {{SITENAME}}',
@@ -657,6 +659,11 @@ Si quieres hacer más, hay una lista en  $2  de maneras fáciles de ayudar
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => '¿Quieres hacer más? Visita $2 y obtendrás una lista de maneras fáciles de ayudar',
+	'gettingstarted-cta-text' => 'Puedes contribuir a {{SITENAME}} de diferentes formas',
+	'gettingstarted-cta-edit-page' => 'Editar esta página',
+	'gettingstarted-cta-edit-page-sub' => 'Te mostraremos cómo',
+	'gettingstarted-cta-fix-pages-sub' => 'Te mostraremos cómo editar',
+	'gettingstarted-cta-leave' => 'No gracias, tal vez luego',
 );
 
 /** Estonian (eesti)
