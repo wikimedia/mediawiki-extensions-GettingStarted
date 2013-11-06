@@ -1951,6 +1951,13 @@ $messages['sr-ec'] = array(
 	'gettingstarted-task-toolbar-editing-help-text' => 'Прикажи помоћ', # Fuzzy
 );
 
+/** Serbian (Latin script) (srpski (latinica)‎)
+ * @author Milicevic01
+ */
+$messages['sr-el'] = array(
+	'gettingstarted-task-addlinks-main-description' => 'Dodaj veze',
+);
+
 /** Swedish (svenska)
  * @author Ainali
  * @author Jopparn
