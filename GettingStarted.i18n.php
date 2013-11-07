@@ -68,6 +68,12 @@ Choose an option below, and you will see a random article that needs help.',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'You can edit!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'You can now edit the page. When you\'re done, click \'{{int:visualeditor-toolbar-savedialog}}\' to review and save your changes.',
 
+	// General gettingstarted
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Preview (optional)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Clicking "{{int:showpreview}}" allows you to check what the page will look like with your changes. Just don\'t forget to save.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'You\'re almost finished!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Click "{{int:savearticle}}" and your changes will be visible.',
+
 	// Notifications
 	'notification-gettingstarted-link-text-get-started' => 'Get started',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} is a free encyclopedia written by people like you. [[Special:GettingStarted|Get started]] by making your first edit!',
@@ -194,6 +200,12 @@ Refers to {{msg-mw|Editsection}}.',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Description of first step of GettingStarted tour that is on the VisualEditor screen.
 
 Refers to the {{msg-mw|Visualeditor-toolbar-savedialog}} button.',
+
+	// General gettingstarted
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Title of step showing user where to click {{msg-mw|showpreview}}',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Description of step showing user where to click {{msg-mw|showpreview}}',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Title of step showing user where to click {{msg-mw|savearticle}}',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Description of step showing user where to click {{msg-mw|savearticle}}',
 	'notification-gettingstarted-link-text-get-started' => 'Label for button that links to the page to get started for editing.
 {{Identical|Get started}}',
 	'notification-gettingstarted-start-editing' => 'Text shown on web when someone confirms their email but has not yet edited the main namespace:
@@ -232,6 +244,16 @@ The button text is {{msg-mw|Gettingstarted-cta-edit-page}}.',
 
 The button text is {{msg-mw|Gettingstarted-cta-fix-pages}}.',
 	'gettingstarted-cta-leave' => 'Text to leave the Call To Action displayed on articles after creating an account',
+);
+
+/** Arabic (العربية)
+ * @author Ciphers
+ */
+$messages['ar'] = array(
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'عرض (اختياري)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => "إن الضغط على '{{int:showpreview}}' يساعدك على فحص ما ستظهر عليه الصفحة بعد قيامك بالتغييرات. لكن لا تنس حفظ تلك التغييرات.",
+	'guidedtour-tour-gettingstarted-click-save-title' => 'لقد انتهيت تقريبا!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "اضغط على '{{int:savearticle}}' وسيتم حفظ تغييراتك.",
 );
 
 /** Aramaic (ܐܪܡܝܐ)
@@ -311,6 +333,10 @@ $3",
 	'gettingstarted-cta-fix-pages' => 'Atopar páxines que necesiten igües cencielles',
 	'gettingstarted-cta-fix-pages-sub' => 'Vamos indica-y cómo editar',
 	'gettingstarted-cta-leave' => 'Non gracies, seique más sero',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Vista previa (opcional)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Si calca "{{int:showpreview}}" podrá comprobar como se verá la páxina colos cambios. Pero nun escaeza guardala.',
+	'guidedtour-tour-gettingstarted-click-save-title' => '¡Yá casi acabó!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Calque "{{int:savearticle}}" y los cambios sedrán visibles.',
 );
 
 /** Azerbaijani (azərbaycanca)
@@ -319,6 +345,16 @@ $3",
 $messages['az'] = array(
 	'gettingstarted-cta-close' => 'Bağla',
 	'gettingstarted-cta-leave' => 'Xeyr təşəkkürlər, bəlkə sonra',
+);
+
+/** Belarusian (беларуская)
+ * @author Wizardist
+ */
+$messages['be'] = array(
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Папярэдні прагляд (па жаданні)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Націсніце «{{int:showpreview}}», каб пабачыць, як будзе выглядаць старонка з унесенымі вамі зменамі. Па праглядзе не забудзьце захаваць!',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Ужо амаль усё!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Націсніце «{{int:savearticle}}» і вашыя змены будуць бачныя ўсім.',
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
@@ -361,6 +397,20 @@ $messages['be-tarask'] = array(
 Калі вы ахвотныя заняцца нечым яшчэ, вось сьпіс лёгкіх спосабаў дапамагчы — $2.
 
 $3',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Папярэдні прагляд (па жаданьні)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Націсьніце «{{int:showpreview}}», каб пабачыць, як будзе выглядаць старонка з унесенымі вамі зьменамі. Па праглядзе не забудзьце захаваць!',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Ужо амаль усё!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Націсьніце «{{int:savearticle}}» і вашыя зьмены будуць бачныя ўсім.',
+);
+
+/** Bengali (বাংলা)
+ * @author Aftab1995
+ * @author Bellayet
+ */
+$messages['bn'] = array(
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'প্রাকদর্শন (ঐচ্ছিক)',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'আপনি প্রায় সম্পন্ন করেছেন!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "'{{int:savearticle}}' ক্লিক করুন এবং আপনার পরিবর্তনগুলো দৃশ্যমান হবে।",
 );
 
 /** Bulgarian (български)
@@ -388,6 +438,10 @@ $messages['br'] = array(
  */
 $messages['ca'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Edita una secció',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Mostra previsualització (opcional)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => "Si feu clic a '{{int:showpreview}}' podreu comprovar com es es veurà la pàgina amb els seus canvis. No us oblideu de desar.",
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Gairebé heu acabat!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "Feu clic a '{{int:savearticle}}' i els seus canvis seran visibles.",
 );
 
 /** Czech (česky)
@@ -559,6 +613,10 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Finde Seiten, die einfache Korrekturen brauchen.',
 	'gettingstarted-cta-fix-pages-sub' => 'Wir werden dir zeigen, wie man bearbeitet.',
 	'gettingstarted-cta-leave' => 'Nein danke, vielleicht später.',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Vorschau (optional)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Klicke auf „{{int:showpreview}}“, um zu sehen, wie die Seite mit deinen Änderungen aussieht. Vergiss nicht zu speichern.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Du bist fast fertig!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Klicke auf „{{int:savearticle}}“ und deine Änderungen werden sichtbar.',
 );
 
 /** Zazaki (Zazaki)
@@ -664,16 +722,24 @@ $3',
 	'gettingstarted-cta-edit-page-sub' => 'Te mostraremos cómo',
 	'gettingstarted-cta-fix-pages-sub' => 'Te mostraremos cómo editar',
 	'gettingstarted-cta-leave' => 'No gracias, tal vez luego',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Previsualización (opcional)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => "Clicando en '{{int:showpreview}}' puede comprobar cómo se verá la página con sus cambios. No se olvide de guardar.",
+	'guidedtour-tour-gettingstarted-click-save-title' => '¡Ya casi ha terminado!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "Haga clic en '{{int:savearticle}}' y sus cambios serán visibles.",
 );
 
 /** Estonian (eesti)
  * @author Avjoska
  * @author Pikne
+ * @author RM87
  */
 $messages['et'] = array(
 	'gettingstarted' => 'Alustamine',
 	'gettingstarted-welcomesiteuser' => 'Tere tulemast võrgukohta $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Alustamine',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Eelvaade (valikuline)',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Sa oled peaaegu lõpetanud!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "Vajuta '{{int:savearticle}}' ja sinu muudatused on nähtavad.",
 );
 
 /** Persian (فارسی)
@@ -725,6 +791,7 @@ Valitse vaihtoehto alta, niin näet satunnaisen artikkelin, joka tarvitsee huomi
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Voit muokata artikkelia napsauttamalla tästä.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Muokkaa osiota',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Jos haluat muokata tiettyä osiota, voit napsauttaa sinistä »{{int:editsection}}»-linkkiä jokaisen osion yläpuolella.',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Napsauta »{{int:savearticle}}» ja muutoksesi tulevat näkyviin.',
 );
 
 /** French (français)
@@ -804,6 +871,10 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Trouver des pages qui ont besoin de corrections faciles',
 	'gettingstarted-cta-fix-pages-sub' => 'Nous allons vous montrer comment modifier',
 	'gettingstarted-cta-leave' => 'Non merci, peut-être plus tard',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Aperçu (facultatif)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => "Cliquer sur « {{int:showpreview}} » vous permet de vérifier à quoi ressemblera la page avec vos modifications. Ensuite, n'oubliez pas de publier pour enregistrer.",
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Vous avez presque fini !',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Cliquez sur «”{{int:savearticle}} » et vos modifications seront visibles.',
 );
 
 /** Franco-Provençal (arpetan)
@@ -886,6 +957,10 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Atopar as páxinas que necesitan correccións sinxelas',
 	'gettingstarted-cta-fix-pages-sub' => 'Mostrámoslle como editar',
 	'gettingstarted-cta-leave' => 'Non grazas, quizais logo',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Vista previa (opcional)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Premer en "{{int:showpreview}}" serve para comprobar como se verá a páxina coas modificacións. Non esqueza gardar despois.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Case rematou!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Prema en "{{int:savearticle}}" para facer visibles as súas modificacións.',
 );
 
 /** Gujarati (ગુજરાતી)
@@ -974,6 +1049,10 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'למצוא דפים שצריכים תיקונים קלים',
 	'gettingstarted-cta-fix-pages-sub' => 'אנחנו נראה לך איך לערוך',
 	'gettingstarted-cta-leave' => 'לא תודה, אולי מאוחר יותר',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'תצוגה מקדימה (אופציונלי)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'לחיצה על {{int:showpreview}} מאפשרת לך לבדוק כיצד ייראה העמוד עם השינויים שלך. רק לא לשכוח לשמור!',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'כמעט סיימתם!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'לחצו על {{int:savearticle}} והשינוי שלכם יהיה גלוי.',
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -991,6 +1070,10 @@ $messages['hsb'] = array(
 	'tag-gettingstarted_edit-description' => 'Změna strony, kotruž wužiwar je z lisćiny nadawkow ze strony [[Special:GettingStarted|Prěnje kroki]] wubrał',
 	'gettingstarted-task-copyedit-main-description' => 'Prawopis a gramatiku korigować',
 	'gettingstarted-task-clarify-main-description' => 'Jasnosć polěpšić',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Přehlad (opcionalny)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => "Kliknjenje an '{{int:showpreview}}' ći zmóžnja kontrolować, kak strona z twojimi změnami wupada. Njezabudź na składowanje.",
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Sy nimale hotowy!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "Klikń na '{{int:savearticle}}' a twoje změny budu widźomne.",
 );
 
 /** Hungarian (magyar)
@@ -1017,6 +1100,10 @@ Válassz egy opciót alább, és egy találomra választott segítségre szorul�
 	'gettingstarted-task-addlinks-main-description' => 'Linkek hozzáadása',
 	'gettingstarted-task-addlinks-secondary-description' => 'Kösd össze a {{SITENAME}} szócikkeit.',
 	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Más feladat választása',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Előnézet (opcionális)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Az „{{int:showpreview}}” gombra kattintva megnézheted, hogyan néz majd ki az oldal a módosításaid után. Csak ne felejtsd el elmenteni a végén.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Mindjárt végzünk!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Kattints a „{{int:savearticle}}” gombra, és a változtatásaid megjelennek.',
 );
 
 /** Armenian (Հայերեն)
@@ -1087,6 +1174,10 @@ Si tu cerca altere cosas a facer, il ha un lista de manieras facile de adjutar a
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Tu cerca altere cosas a facer? Visita $2 pro un lista de manieras facile de adjutar.',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Previsualisation (optional)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Cliccar sur "{{int:showpreview}}" permitte verificar le aspecto del pagina con tu modificationes. Solmente non oblida de salveguardar lo.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Tu ha quasi finite!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Clicca sur "{{int:savearticle}}" e tu modificationes essera visibile.',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -1174,6 +1265,10 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Trova pagine che necessitano di correzioni semplici',
 	'gettingstarted-cta-fix-pages-sub' => 'Ti mostreremo come modificare',
 	'gettingstarted-cta-leave' => 'No grazie, forse più tardi',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Anteprima (opzionale)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => "Facendo clic su '{{int:showpreview}}' ti permette di verificare quello che sarà l'aspetto della pagina con le tue modifiche. Basta non dimenticare di salvare.",
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Hai quasi finito!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "Fai click su '{{int:savearticle}}' e le modifiche saranno visibili.",
 );
 
 /** Japanese (日本語)
@@ -1210,6 +1305,10 @@ $messages['ja'] = array(
 	'gettingstarted-cta-edit-page-sub' => '方法をお見せします',
 	'gettingstarted-cta-fix-pages' => '簡単な修正が必要なページを見つける',
 	'gettingstarted-cta-fix-pages-sub' => '編集方法をお見せします',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'プレビュー (省略可能)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => '「{{int:showpreview}}」をクリックすると、編集結果の見た目を確認できます。保存するのを忘れないようにしてください。',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'もう少しで終わります!',
+	'guidedtour-tour-gettingstarted-click-save-description' => '「{{int:savearticle}}」をクリックすると、変更内容が最新版として保存されます。',
 );
 
 /** Georgian (ქართული)
@@ -1290,6 +1389,10 @@ $3',
 	'gettingstarted-cta-edit-page-sub' => '어떻게 하는지 보여드리겠습니다',
 	'gettingstarted-cta-fix-pages-sub' => '어떻게 편집하는지 보여드리겠습니다',
 	'gettingstarted-cta-leave' => '괜찮습니다. 나중에요.',
+	'guidedtour-tour-gettingstarted-click-preview-title' => '미리 보기 (선택 사항)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => '"{{int:showpreview}}"를 클릭하면 문서가 어떻게 바뀌었는지 확인할 수 있습니다. 저장하는 것을 잊지 마세요.',
+	'guidedtour-tour-gettingstarted-click-save-title' => '거의 끝났습니다!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "'{{int:savearticle}}'을 클릭하여 바뀜을 볼 수 있습니다.",
 );
 
 /** Kyrgyz (Кыргызча)
@@ -1368,6 +1471,10 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Säite fannen, déi einfach Verbesserunge brauchen',
 	'gettingstarted-cta-fix-pages-sub' => 'Mir weisen Iech wéi Dir ännere kënnt',
 	'gettingstarted-cta-leave' => 'Nee merci, vläicht méi spéit',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Weisen ouni ze späicheren (fakuktativ)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Klickt op "{{int:showpreview}}", fir ze gesinn, wéi d\'Säit mat dengen Ännerungen ausgesäit. Vergiesst net ze späicheren.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Dir sidd bal fäerdeg!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "Klickt op '{{int:savearticle}}' an Är Ännerunge sinn ze gesinn.",
 );
 
 /** Lithuanian (lietuvių)
@@ -1513,6 +1620,10 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Пронајдете страници на кои им требаат лесни поправки',
 	'gettingstarted-cta-fix-pages-sub' => 'Ќе ви покажеме како да уредувате',
 	'gettingstarted-cta-leave' => 'Не благодарам. Можеби подоцна.',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Преглед (незадолжително)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Ако стиснете на „{{int:showpreview}}“ ќе видите како ќе изгледа страницата со вашите измени. Само не заборавајте да ги зачувате.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Речиси сте готови!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Стиснете на „{{int:savearticle}}“ и измените ќе бидат видливи.',
 );
 
 /** Marathi (मराठी)
@@ -1584,6 +1695,10 @@ Jika anda ingin mencari kerja lain, terdapat pelbagai cara yang mudah untuk memb
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Ingin mencari kerja lain? Layari $2 untuk pelbagai cara yang mudah untuk membantu.',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Pralihat (tidak wajib)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => "Mengklik '{{int:showpreview}}' membolehkan anda untuk menyemak rupa halaman dengan suntingan anda. Jangan lupa untuk simpan.",
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Anda hampir siap!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "Klik '{{int:savearticle}}' untuk memperlihatkan suntingan anda.",
 );
 
 /** Maltese (Malti)
@@ -1737,6 +1852,10 @@ $3',
 	'gettingstarted-cta-fix-pages' => "Pagina's vinden die eenvoudig te verbeteren zijn",
 	'gettingstarted-cta-fix-pages-sub' => 'We laten u zien hoe u kunt bewerken',
 	'gettingstarted-cta-leave' => 'Nee bedankt, misschien een volgende keer',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Voorvertoning (optioneel)������',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Door te klikken op "{{int:showpreview}}" kunt u controleren hoe de pagina wordt weergegeven met uw wijzigingen. Vergeet uw wijzigingen niet op te slaan.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'U bent bijna klaar!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Klik "{{int:savearticle}}" zodat uw wijzigingen zichtbaar worden.',
 );
 
 /** Polish (polski)
@@ -1761,6 +1880,18 @@ $messages['pms'] = array(
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	'tag-gettingstarted_edit' => "n'editor neuv [[{{MediaWiki:gettingstarted-project-link}}|a l'ha ancaminà]]", # Fuzzy
 	'tag-gettingstarted_edit-description' => "Modìfica ëd na pàgina che l'utent a sern da la lista dij travaj an [[Special:GettingStarted|Për ancaminé]]",
+);
+
+/** Portuguese (português)
+ * @author Alchimista
+ * @author Hamilton Abreu
+ * @author Raylton P. Sousa
+ */
+$messages['pt'] = array(
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Antevisão (opcional)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => "Clicar '{{int:showpreview}}' permite verificar como a página ficará após as alterações. Mas não se esqueça de gravá-las.",
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Está quase a terminar!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "Clique em '{{int:savearticle}}' e as suas alterações serão visíveis.",
 );
 
 /** Brazilian Portuguese (português do Brasil)
@@ -1823,6 +1954,10 @@ Se procura por mais coisas a fazer,aqui está uma lista de jeitos fáceis de aju
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Procurando por mais por fazer? Visite $2 para uma lista de jeitos fáceis de ajudar.',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Previsualização(opcional)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => "Clicar em '{{int:showpreview}}' permite que você verifique como a página vai ficar depois das suas alterações. Só não esqueça de salvar.",
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Você está quase terminando!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "Clique em '{{int:savearticle}}' e suas alterações serão visíveis.",
 );
 
 /** Romanian (română)
@@ -1932,6 +2067,10 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Найдите страницы, которые нуждаются в простых исправлениях',
 	'gettingstarted-cta-fix-pages-sub' => 'Мы покажем вам, как редактировать',
 	'gettingstarted-cta-leave' => 'Нет, спасибо, может быть, позже',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Предварительный просмотр (не обязательно)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Нажатие «{{int:showpreview}}» позволяет проверить, как будет выглядеть страница с вашими изменениями. Только не забудьте её потом сохранить.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Вы почти закончили!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Нажмите «{{int:savearticle}}» и ваши изменения станут видны.',
 );
 
 /** Sinhala (සිංහල)
@@ -2029,14 +2168,23 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Hitta sidor som behöver enkla förbättringar',
 	'gettingstarted-cta-fix-pages-sub' => 'Vi visar dig hur du redigerar',
 	'gettingstarted-cta-leave' => 'Nej tack, kanske en annan gång',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Förhandsgranska (valfritt)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => "Genom att klicka på '{{int:showpreview}}' kan du kontrollera hur sidan ser ut med dina ändringar. Glöm bara inte att spara.",
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Du är nästan klar!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "Klicka på '{{int:savearticle}}' och dina ändringar kommer att vara synliga.",
 );
 
 /** Tamil (தமிழ்)
  * @author Shanmugamp7
+ * @author Joetaras
  */
 $messages['ta'] = array(
 	'gettingstarted-welcomesiteuser' => '$1-க்கு வருக, $2!',
 	'gettingstarted-welcomesiteuseranon' => '$1-க்கு வருக!', # Fuzzy
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Andeprime (opzionale)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => "Cazzanne '{{int:showpreview}}' te permette de verificà ca 'a pàgene iesse cu le cangiaminde tune. No te demendicà de reggistrà.",
+	'guidedtour-tour-gettingstarted-click-save-title' => "E' quase spicciate!",
+	'guidedtour-tour-gettingstarted-click-save-description' => "Cazze '{{int:savearticle}}' e le cangiaminde tune devendane visibbile.",
 );
 
 /** Telugu (తెలుగు)
@@ -2122,6 +2270,10 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Знайти сторінки, які просто необхідно виправити',
 	'gettingstarted-cta-fix-pages-sub' => 'Ми покажемо вам, як редагувати',
 	'gettingstarted-cta-leave' => 'Ні, дякую, можливо, пізніше',
+	'guidedtour-tour-gettingstarted-click-preview-title' => "Попередній перегляд (необов'язково)",
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Клацання "{{int:showpreview}}" дає змогу перевіряти вигляд сторінки із внесеними змінами. Тільки не забудьте зберегти.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Ви майже закінчили!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "Натисніть '{{int:savearticle}}' і зміни буде видно.",
 );
 
 /** Urdu (اردو)
@@ -2203,6 +2355,10 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Tìm các trang cần sữa chữa dễ dàng',
 	'gettingstarted-cta-fix-pages-sub' => 'Chúng tôi sẽ chỉ dẫn bạn cách sửa đổi',
 	'gettingstarted-cta-leave' => 'Thôi, có lẽ lần sau',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Xem trước (tùy chọn)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Bấm “{{int:showpreview}}” để kiểm tra các thay đổi của bạn có phải hiển thị đúng hay không. Hãy nhớ lưu trang.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Gần xong!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Bấm “{{int:savearticle}}” là các thay đổi của bạn sẽ được áp dụng vào trang.',
 );
 
 /** Wu (吴语)
@@ -2210,6 +2366,8 @@ $3',
  */
 $messages['wuu'] = array(
 	'gettingstarted-cta-close' => '關',
+	'guidedtour-tour-gettingstarted-click-preview-description' => '點 "{{int:showpreview}}" 讓爾望得著改爻之後頁面個變化，休要忘記爻保存起。',
+	'guidedtour-tour-gettingstarted-click-save-description' => '點 "{{int:savearticle}}" 爾個改動便保存爻。',
 );
 
 /** Yiddish (ייִדיש)
@@ -2326,6 +2484,10 @@ $3',
 	'gettingstarted-cta-edit-page-sub' => '我们将展示您如何',
 	'gettingstarted-cta-fix-pages-sub' => '我们将展示您如何编辑',
 	'gettingstarted-cta-leave' => '不用了，谢谢，以后再说吧',
+	'guidedtour-tour-gettingstarted-click-preview-title' => '预览（可选）',
+	'guidedtour-tour-gettingstarted-click-preview-description' => '点击“{{int:showpreview}}”，您将看到您在该页面作出了哪些更改。请不要忘记保存。',
+	'guidedtour-tour-gettingstarted-click-save-title' => '您马上就完成了！',
+	'guidedtour-tour-gettingstarted-click-save-description' => '点击“{{int:savearticle}}”，您将保存您所作出的更改。',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
