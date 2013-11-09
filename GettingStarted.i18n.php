@@ -1864,6 +1864,7 @@ $messages['roa-tara'] = array(
 /** Russian (русский)
  * @author DCamer
  * @author Iluvatar
+ * @author Lvova
  * @author Okras
  * @author Ole Yves
  */
@@ -1872,7 +1873,7 @@ $messages['ru'] = array(
 	'gettingstarted-desc' => 'Добавляет [[Special:GettingStarted|страницу приветствия]] для новых участников (показывается после создания учётной записи)',
 	'gettingstarted-welcomesiteuser' => 'Добро пожаловать в $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Начало работы',
-	'gettingstarted-welcome-back-site-user' => 'И вновь добро пожаловать, $2',
+	'gettingstarted-welcome-back-site-user' => 'Приятного начала работы, $2',
 	'gettingstarted-task-header' => 'Спасибо за то, что присоединились к {{SITENAME}}! Вот несколько способов быстро включиться в работу.
 Выберите внизу соответствующий вариант, и вы увидите случайные статьи, которые нуждаются в вашей помощи.',
 	'gettingstarted-return' => 'Нет, спасибо, верните на страницу, которую я читал',
@@ -2324,6 +2325,7 @@ $3',
 	'gettingstarted-cta-text' => '您可以以各种方式为{{SITENAME}}做贡献',
 	'gettingstarted-cta-edit-page' => '编辑此页',
 	'gettingstarted-cta-edit-page-sub' => '我们将展示您如何',
+	'gettingstarted-cta-fix-pages' => '查找需要简单修复的页面',
 	'gettingstarted-cta-fix-pages-sub' => '我们将展示您如何编辑',
 	'gettingstarted-cta-leave' => '不用了，谢谢，以后再说吧',
 );
