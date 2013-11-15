@@ -1973,7 +1973,7 @@ $messages['sv'] = array(
 	'gettingstarted-task-header' => 'Tack för att du gått med i {{SITENAME}}! Här är några sätt du kan engagera dig.
 
 Välj ett alternativ nedan och du kommer att se en slumpmässig artikel som behöver hjälp.',
-	'gettingstarted-return' => 'Nej tack, gå tillbaka till sidan jag läste',
+	'gettingstarted-return' => '← Nej tack, gå tillbaka till sidan jag läste',
 	'gettingstarted-project-link' => '{{ns:Project}}:Komigång',
 	'tag-gettingstarted_edit' => 'ny bidragsgivare [[{{MediaWiki:gettingstarted-project-link}}|komma igång]]',
 	'tag-gettingstarted_edit-description' => 'Redigering av en sida som användaren valde från listan i [[Special:GettingStarted|Kom i gång]]',
@@ -1992,7 +1992,7 @@ Välj ett alternativ nedan och du kommer att se en slumpmässig artikel som beh�
 	'gettingstarted-task-copyedit-toolbar-description' => 'Denna artikel kan ha stavnings- och grammatikfel som du kan åtgärda.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Gå till en slumpmässig artikel som du kan förbättra genom copyediting',
 	'gettingstarted-task-clarify-toolbar-description' => 'Denna artikel kan vara förvirrande eller otydlig. Titta efter sätt som du kan göra den tydligare.',
-	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Gå till en slumpmässig artikel du kan klargöra',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Gå till en slumpmässig artikel du kan tydliggöra',
 	'gettingstarted-task-addlinks-toolbar-description' => 'Den här artikeln kan behöva fler länkar. Leta efter termer som har en artikel på {{SITENAME}}.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Gå till en slumpmässig artikel där du kan lägga till länkar',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Hur du kommer igång',
