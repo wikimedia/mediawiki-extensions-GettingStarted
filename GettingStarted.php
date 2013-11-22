@@ -90,16 +90,16 @@ $wgGettingStartedRedisOptions = array(
 $wgGettingStartedRunTest = false;
 
 $wgAutoloadClasses += array(
-	'SpecialGettingStarted' => __DIR__ . '/SpecialGettingStarted.php',
-	'GettingStartedHooks'   => __DIR__ . '/GettingStarted.hooks.php',
-	'RedisCategorySync'     => __DIR__ . '/RedisCategorySync.php',
-	'CategoryRoulette'      => __DIR__ . '/CategoryRoulette.php',
+	'GettingStarted\SpecialGettingStarted' => __DIR__ . '/SpecialGettingStarted.php',
+	'GettingStarted\Hooks'   => __DIR__ . '/Hooks.php',
+	'GettingStarted\RedisCategorySync'     => __DIR__ . '/RedisCategorySync.php',
+	'GettingStarted\CategoryRoulette'      => __DIR__ . '/CategoryRoulette.php',
 );
 
 $wgExtensionMessagesFiles[ 'GettingStarted' ] = __DIR__ . '/GettingStarted.i18n.php';
 $wgExtensionMessagesFiles[ 'GettingStartedAlias' ] = __DIR__ . '/GettingStarted.alias.php';
 
-$wgSpecialPages[ 'GettingStarted' ] = 'SpecialGettingStarted';
+$wgSpecialPages[ 'GettingStarted' ] = 'GettingStarted\SpecialGettingStarted';
 $wgSpecialPageGroups[ 'GettingStarted' ] = 'users';
 
 // Modules
@@ -109,12 +109,12 @@ $gettingStartedModuleInfo = array(
 	'remoteExtPath' => 'GettingStarted/resources',
 );
 
-$gettingStartedSchemaModuleName = 'schema.' . GettingStartedHooks::SCHEMA_NAME;
+$gettingStartedSchemaModuleName = 'schema.' . GettingStarted\Hooks::SCHEMA_NAME;
 
 $wgResourceModules[ $gettingStartedSchemaModuleName ] = array(
 	'class'    => 'ResourceLoaderSchemaModule',
-	'schema'   => GettingStartedHooks::SCHEMA_NAME,
-	'revision' => GettingStartedHooks::SCHEMA_REV_ID,
+	'schema'   => GettingStarted\Hooks::SCHEMA_NAME,
+	'revision' => GettingStarted\Hooks::SCHEMA_REV_ID,
 );
 
 $wgResourceModules['ext.guidedTour.tour.gettingstartedtasktoolbarintro'] = array(
@@ -301,19 +301,19 @@ $wgResourceModules[ 'ext.gettingstarted.specialPage' ] = array(
 	),
 ) + $gettingStartedModuleInfo;
 
-$wgDefaultUserOptions[ GettingStartedHooks::INTRO_OPTION ] = true;
+$wgDefaultUserOptions[ GettingStarted\Hooks::INTRO_OPTION ] = true;
 
-$wgHooks[ 'BeforePageDisplay' ][] = 'GettingStartedHooks::onBeforePageDisplay';
-$wgHooks[ 'BeforeWelcomeCreation' ][] = 'GettingStartedHooks::onBeforeWelcomeCreation';
-$wgHooks[ 'RecentChange_save' ][] = 'GettingStartedHooks::onRecentChange_save';
-$wgHooks[ 'CategoryAfterPageAdded' ][] = 'RedisCategorySync::onCategoryAfterPageAdded';
-$wgHooks[ 'CategoryAfterPageRemoved' ][] = 'RedisCategorySync::onCategoryAfterPageRemoved';
-$wgHooks[ 'ListDefinedTags' ][] = 'GettingStartedHooks::onListDefinedTags';
-$wgHooks[ 'ResourceLoaderGetConfigVars' ][] = 'GettingStartedHooks::onResourceLoaderGetConfigVars';
-$wgHooks[ 'MakeGlobalVariablesScript' ][] = 'GettingStartedHooks::onMakeGlobalVariablesScript';
-$wgHooks[ 'BeforeCreateEchoEvent' ][] = 'GettingStartedHooks::onBeforeCreateEchoEvent';
-$wgHooks[ 'EchoGetDefaultNotifiedUsers' ][] = 'GettingStartedHooks::onEchoGetDefaultNotifiedUsers';
-$wgHooks[ 'ConfirmEmailComplete' ][] = 'GettingStartedHooks::onConfirmEmailComplete';
-$wgHooks[ 'GetPreferences' ][] = 'GettingStartedHooks::onGetPreferences';
+$wgHooks[ 'BeforePageDisplay' ][] = 'GettingStarted\Hooks::onBeforePageDisplay';
+$wgHooks[ 'BeforeWelcomeCreation' ][] = 'GettingStarted\Hooks::onBeforeWelcomeCreation';
+$wgHooks[ 'RecentChange_save' ][] = 'GettingStarted\Hooks::onRecentChange_save';
+$wgHooks[ 'CategoryAfterPageAdded' ][] = 'GettingStarted\RedisCategorySync::onCategoryAfterPageAdded';
+$wgHooks[ 'CategoryAfterPageRemoved' ][] = 'GettingStarted\RedisCategorySync::onCategoryAfterPageRemoved';
+$wgHooks[ 'ListDefinedTags' ][] = 'GettingStarted\Hooks::onListDefinedTags';
+$wgHooks[ 'ResourceLoaderGetConfigVars' ][] = 'GettingStarted\Hooks::onResourceLoaderGetConfigVars';
+$wgHooks[ 'MakeGlobalVariablesScript' ][] = 'GettingStarted\Hooks::onMakeGlobalVariablesScript';
+$wgHooks[ 'BeforeCreateEchoEvent' ][] = 'GettingStarted\Hooks::onBeforeCreateEchoEvent';
+$wgHooks[ 'EchoGetDefaultNotifiedUsers' ][] = 'GettingStarted\Hooks::onEchoGetDefaultNotifiedUsers';
+$wgHooks[ 'ConfirmEmailComplete' ][] = 'GettingStarted\Hooks::onConfirmEmailComplete';
+$wgHooks[ 'GetPreferences' ][] = 'GettingStarted\Hooks::onGetPreferences';
 // Extension:CentralAuth's hook
-$wgHooks[ 'CentralAuthPostLoginRedirect' ][] = 'GettingStartedHooks::onCentralAuthPostLoginRedirect';
+$wgHooks[ 'CentralAuthPostLoginRedirect' ][] = 'GettingStarted\Hooks::onCentralAuthPostLoginRedirect';

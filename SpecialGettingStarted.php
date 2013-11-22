@@ -1,4 +1,9 @@
 <?php
+
+namespace GettingStarted;
+
+use Html, Linker, SpecialPage, Title;
+
 class SpecialGettingStarted extends SpecialPage {
 
 	const MAX_ARTICLE_LENGTH = 10000;
@@ -16,7 +21,7 @@ class SpecialGettingStarted extends SpecialPage {
 	 * @param string|null $excludedPageName page name to be excluded, in in getPrefixedDBkey() format,
 	 *  or null for no exclusion
 	 */
-	protected function isAllowedArticle( Title $title, User $user, $excludedPageName ) {
+	protected function isAllowedArticle( Title $title, \User $user, $excludedPageName ) {
 		$length = $title->getLength();
 		$passesExclude = $excludedPageName === null ||
 			$title->getPrefixedDBkey() !== $excludedPageName;
@@ -44,7 +49,7 @@ class SpecialGettingStarted extends SpecialPage {
 			$query['source'] = $source;
 		}
 		$url = $title->getLocalUrl( $query );
-		GettingStartedHooks::setPageTask( $request, $title, "gettingstarted-$taskName" );
+		Hooks::setPageTask( $request, $title, "gettingstarted-$taskName" );
 		$out->redirect( $url, '302' );
 		return true;
 	}
@@ -65,7 +70,7 @@ class SpecialGettingStarted extends SpecialPage {
 			return false;
 		}
 		$task = $wgGettingStartedTasks[$taskName];
-		$taskCategory = Category::newFromName( $task['category'] );
+		$taskCategory = \Category::newFromName( $task['category'] );
 		$roulette = new CategoryRoulette( $taskCategory );
 		$user = $this->getUser();
 
@@ -125,7 +130,7 @@ class SpecialGettingStarted extends SpecialPage {
 		$output->addHTML( $this->getHtmlResult() );
 
 		if ( $isPostCreate ) {
-			// Do what GettingStartedHooks::onBeforeWelcomeCreation and
+			// Do what Hooks::onBeforeWelcomeCreation and
 			// SpecialUserlogin.php successfulCreation() would have done.
 
 			$output->addModules( array(

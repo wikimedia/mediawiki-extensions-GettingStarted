@@ -1,4 +1,9 @@
 <?php
+
+namespace GettingStarted;
+
+use Title;
+
 /**
  * Helper class for retrieving random pages from a category.
  * See Redis requirements in README.
