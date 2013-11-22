@@ -1,4 +1,9 @@
 <?php
+
+namespace GettingStarted;
+
+use FormatJson, Title, WebRequest, OutputPage, User;
+
 /**
  * Hooks for GettingStarted extension (for stuff beyond being a special page)
  *
@@ -6,7 +11,7 @@
  * @ingroup Extensions
  */
 
-class GettingStartedHooks {
+class Hooks {
 	/**
 	 * Deserialized vesion of the openTask data structure.
 	 * Initialized as needed.
@@ -177,7 +182,7 @@ class GettingStartedHooks {
 	protected static function shouldLoadToolbar( OutputPage $out, User $user ) {
 		global $wgGettingStartedTasks;
 
-		if ( Action::getActionName( $out ) !== 'view'
+		if ( \Action::getActionName( $out ) !== 'view'
 			|| !$out->getTitle()->exists() ) {
 			return false;
 		}
@@ -293,7 +298,7 @@ class GettingStartedHooks {
 	 * @param Skin $skin current skin
 	 * @return bool
 	 */
-	public static function onBeforePageDisplay( OutputPage $out, Skin $skin ) {
+	public static function onBeforePageDisplay( OutputPage $out, \Skin $skin ) {
 		$user = $out->getUser();
 
 		// For logged-in users, we add the Getting Started logging and task
@@ -341,7 +346,7 @@ class GettingStartedHooks {
 	 * @param RecentChange $recentChange RecentChanges entry
 	 * @return bool
 	 */
-	public static function onRecentChange_save( RecentChange $recentChange ) {
+	public static function onRecentChange_save( \RecentChange $recentChange ) {
 		global $wgRequest;
 
 		if ( $recentChange->getAttribute( 'rc_type' ) !== RC_EDIT ) {
@@ -358,7 +363,7 @@ class GettingStartedHooks {
 		$task = self::getPageTask( $wgRequest, $titleObj );
 
 		if ( strpos( $task, 'gettingstarted' ) === 0 ) {
-			ChangeTags::addTags(
+			\ChangeTags::addTags(
 				'gettingstarted edit',
 				$recentChange->getAttribute( 'rc_id' ),
 				$recentChange->getAttribute( 'rc_this_oldid' ),

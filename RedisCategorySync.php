@@ -1,4 +1,9 @@
 <?php
+
+namespace GettingStarted;
+
+use Category, WikiPage;
+
 /**
  * Maintains sets in redis representing page IDs of NS_MAIN pages in
  * configured categories.
@@ -35,7 +40,7 @@ class RedisCategorySync {
 			return false;
 		}
 
-		$pool = RedisConnectionPool::singleton( $wgGettingStartedRedisOptions );
+		$pool = \RedisConnectionPool::singleton( $wgGettingStartedRedisOptions );
 		return $pool->getConnection( $wgGettingStartedRedis );
 	}
 
@@ -45,7 +50,7 @@ class RedisCategorySync {
 	 */
 	public static function makeCategoryKey( Category $category ) {
 		global $wgDBname;
-		return join( ':', array( __CLASS__, 'Category', $wgDBname, md5( $category->getName() ) ) );
+		return join( ':', array( 'RedisCategorySync', 'Category', $wgDBname, md5( $category->getName() ) ) );
 	}
 
 	/**
@@ -125,7 +130,7 @@ class RedisCategorySync {
 			}
 
 			try {
-				$redis = $conn->multi( Redis::PIPELINE );
+				$redis = $conn->multi( \Redis::PIPELINE );
 				while ( RedisCategorySync::$additions ) {
 					list( $category, $page ) = array_pop( RedisCategorySync::$additions );
 					$redis->sAdd( RedisCategorySync::makeCategoryKey( $category ), $page->getId() );
@@ -135,7 +140,7 @@ class RedisCategorySync {
 					$redis->sRem( RedisCategorySync::makeCategoryKey( $category ), $page->getId() );
 				}
 				$redis->exec();
-			} catch ( RedisException $e ) {
+			} catch ( \RedisException $e ) {
 				wfDebugLog( 'GettingStarted', 'Redis exception: ' . $e->getMessage() . "\n" );
 			}
 		} );

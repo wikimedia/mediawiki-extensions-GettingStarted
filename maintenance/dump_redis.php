@@ -1,5 +1,7 @@
 <?php
 
+namespace GettingStarted;
+
 /**
  * Dumps Redis information for GettingStarted.
  * Intended primarily for debugging in test environments.
@@ -20,7 +22,7 @@ if( $IP === false ) {
 
 require_once "$IP/maintenance/Maintenance.php";
 
-class DumpRedisCategorySync extends Maintenance {
+class DumpRedisCategorySync extends \Maintenance {
 	public function __construct() {
 		parent::__construct();
 		$this->addOption( 'all', 'Dump all keys with the prefix; can show keys from old naming schemes and other wikis (e.g. a different language).  Will perform poorly in large Redis databases, so should not be used in production.  Will not include category name', false, false );
@@ -50,7 +52,7 @@ class DumpRedisCategorySync extends Maintenance {
 		} else {
 			$categories = RedisCategorySync::getCategories();
 			foreach ( $categories as $catName ) {
-				$cat = Category::newFromName( $catName );
+				$cat = \Category::newFromName( $catName );
 				$key = RedisCategorySync::makeCategoryKey( $cat );
 				$this->printSet( $client, $key, $catName );
 			}
@@ -58,5 +60,5 @@ class DumpRedisCategorySync extends Maintenance {
 	}
 }
 
-$maintClass = 'DumpRedisCategorySync';
+$maintClass = 'GettingStarted\DumpRedisCategorySync';
 require_once( RUN_MAINTENANCE_IF_MAIN );
