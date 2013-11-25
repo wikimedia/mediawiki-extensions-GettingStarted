@@ -84,6 +84,11 @@ $specialPageAliases['nl'] = array(
 	'GettingStarted' => array( 'AanDeSlag' ),
 );
 
+/** Norwegian Nynorsk (norsk nynorsk) */
+$specialPageAliases['nn'] = array(
+	'GettingStarted' => array( 'Kom_i_gang' ),
+);
+
 /** vèneto (vèneto) */
 $specialPageAliases['vec'] = array(
 	'GettingStarted' => array( 'ParScominsiar' ),

@@ -2268,6 +2268,7 @@ $3',
  * @author Li3939108
  * @author Liuxinyu970226
  * @author Qiyue2001
+ * @author Xiaomingyan
  * @author Yfdyh000
  * @author Zhuyifei1999
  * @author 乌拉跨氪
@@ -2296,12 +2297,12 @@ $messages['zh-hans'] = array(
 	'gettingstarted-task-toolbar-editing-help-text' => '告知我如何',
 	'gettingstarted-task-toolbar-editing-help-title' => '显示编辑指南',
 	'gettingstarted-task-toolbar-try-another-text' => '试试另一篇文章 ►',
-	'gettingstarted-task-toolbar-close-title' => '关闭此工具条',
+	'gettingstarted-task-toolbar-close-title' => '关闭该工具栏',
 	'gettingstarted-task-copyedit-toolbar-description' => '这篇文章可能包含可修正的拼写或语法错误。',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => '如何开始',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => '干什么的注意',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => '猛戳{{int:vector-view-edit}}',
-	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => '您可以通过单击此处编辑整篇文章。',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => '你可以通过单击这里编辑整个文章。',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => '您可以编辑！',
 	'notification-gettingstarted-link-text-get-started' => '入门',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} 是由像你一样的人们撰写的一部自由的百科全书。[[Special:GettingStarted|开始]]尝试做你的第一次编辑吧！',
