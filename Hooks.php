@@ -475,7 +475,7 @@ class Hooks {
 		global $wgGettingStartedRunTest;
 
 		// Notifications are disabled entirely if the A/B test is in progress.
-		if ( class_exists( 'EchoNotifier' ) && !$wgGettingStartedRunTest ) {
+		if ( class_exists( 'EchoEvent' ) && !$wgGettingStartedRunTest ) {
 			// The goal is to only do this notification once per-user.
 			// Absent a clean way to do that, this notifies them if they signed up with a given time duration.
 			if ( self::isRecentSignup( $user ) ) {
