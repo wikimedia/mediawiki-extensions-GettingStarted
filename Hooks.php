@@ -80,12 +80,7 @@ class Hooks {
 	 * @return bool
 	 */
 	protected static function isOnMobile() {
-		if ( class_exists( 'MobileContext' ) ) {
-			if ( MobileContext::singleton()->shouldDisplayMobileView() ) {
-				return true;
-			}
-		}
-		return false;
+		return class_exists( 'MobileContext' ) && \MobileContext::singleton()->shouldDisplayMobileView();
 	}
 
 	/**
@@ -180,8 +175,6 @@ class Hooks {
 	 * @return true to load, false otherwise
 	 */
 	protected static function shouldLoadToolbar( OutputPage $out, User $user ) {
-		global $wgGettingStartedTasks;
-
 		if ( \Action::getActionName( $out ) !== 'view'
 			|| !$out->getTitle()->exists() ) {
 			return false;
@@ -440,8 +433,8 @@ class Hooks {
 	protected static function hasEditedMainNamespace( User $user ) {
 		global $wgRequest;
 
-		$api = new ApiMain(
-			new DerivativeRequest(
+		$api = new \ApiMain(
+			new \DerivativeRequest(
 				$wgRequest,
 				array(
 					'action' => 'query',
@@ -487,9 +480,9 @@ class Hooks {
 			// Absent a clean way to do that, this notifies them if they signed up with a given time duration.
 			if ( self::isRecentSignup( $user ) ) {
 				$type = self::hasEditedMainNamespace( $user ) ? 'gettingstarted-continue-editing' : 'gettingstarted-start-editing';
-				EchoEvent::create( array(
+				\EchoEvent::create( array(
 					'type' => $type,
-					'title' => SpecialPage::getTitleFor( 'GettingStarted' ),
+					'title' => \SpecialPage::getTitleFor( 'GettingStarted' ),
 					'agent' => $user,
 					'extra' => array(
 						'notifyAgent' => true,
@@ -567,7 +560,7 @@ class Hooks {
 			}
 
 			// Redirect to Special:GettingStarted
-			$returnTo = SpecialPage::getTitleFor( 'GettingStarted' )->getPrefixedText();
+			$returnTo = \SpecialPage::getTitleFor( 'GettingStarted' )->getPrefixedText();
 			$returnToQuery = wfArrayToCgi( $newQueryParams );
 
 			return true;
