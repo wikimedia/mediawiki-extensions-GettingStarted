@@ -34,10 +34,6 @@ showing the GettingStarted tour repeatedly to logged in users if they
 * phpredis extension installed on the same machine, and Redis installed on some
 machine that can be accessed.
 
-Since CategoryRoulette uses the two-argument version of
-SRANDMEMBER, it requires Redis 2.6+ for both the server and
-the PHP extension.
-
 That means phpredis needs to be (re-)compiled against 2.6 if
 upgrading from 2.4.
 
