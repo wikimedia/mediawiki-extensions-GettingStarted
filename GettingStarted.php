@@ -91,16 +91,21 @@ $wgGettingStartedRunTest = false;
 
 $wgAutoloadClasses += array(
 	'GettingStarted\SpecialGettingStarted' => __DIR__ . '/SpecialGettingStarted.php',
-	'GettingStarted\Hooks'   => __DIR__ . '/Hooks.php',
-	'GettingStarted\RedisCategorySync'     => __DIR__ . '/RedisCategorySync.php',
-	'GettingStarted\CategoryRoulette'      => __DIR__ . '/CategoryRoulette.php',
+	'GettingStarted\Hooks' => __DIR__ . '/Hooks.php',
+	'GettingStarted\RedisCategorySync' => __DIR__ . '/RedisCategorySync.php',
+	'GettingStarted\PageFilter' => __DIR__ . '/PageFilter.php',
+	'GettingStarted\ApiGettingStartedGetPages' => __DIR__ . '/api/ApiGettingStartedGetPages.php',
 );
 
 $wgExtensionMessagesFiles[ 'GettingStarted' ] = __DIR__ . '/GettingStarted.i18n.php';
 $wgExtensionMessagesFiles[ 'GettingStartedAlias' ] = __DIR__ . '/GettingStarted.alias.php';
 
+// Special pages
 $wgSpecialPages[ 'GettingStarted' ] = 'GettingStarted\SpecialGettingStarted';
 $wgSpecialPageGroups[ 'GettingStarted' ] = 'users';
+
+// APIs
+$wgAPIModules['gettingstartedgetpages'] = 'GettingStarted\ApiGettingStartedGetPages';
 
 // Modules
 
