@@ -893,8 +893,8 @@ $3',
  */
 $messages['gu'] = array(
 	'gettingstarted-task-addlinks-main-description' => 'કડીઓ ઉમેરો',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ યાદી પર પાછા ફરો', # Fuzzy
-	'gettingstarted-task-toolbar-editing-help-text' => 'મદદ માટે જુઓ', # Fuzzy
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ અન્ય કાર્ય પસંદ કરો',
+	'gettingstarted-task-toolbar-editing-help-text' => 'જુઓ કેવી રીતે',
 	'gettingstarted-task-toolbar-try-another-text' => 'અન્ય લેખ માટે પ્રયત્ન કરો ►',
 	'gettingstarted-task-toolbar-close-title' => 'આ સાધનપેટી બંધ કરો',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'કેવી રીતે શરૂઆત કરશો',
