@@ -630,12 +630,13 @@ Elige una opción a continuación y verás un artículo aleatorio que necesita d
 	'gettingstarted-return' => '← No, gracias; volver a la página que estaba leyendo',
 	'gettingstarted-project-link' => '{{ns:Project}}:PrimerosPasos',
 	'gettingstarted-task-copyedit-main-description' => 'Corregir ortografía y gramática', # Fuzzy
+	'gettingstarted-task-copyedit-secondary-description' => '¡La forma más fácil de comenzar!',
 	'gettingstarted-task-clarify-main-description' => 'Mejorar la claridad',
 	'gettingstarted-task-clarify-secondary-description' => 'Simplificar o reescribir oraciones.',
 	'gettingstarted-task-addlinks-main-description' => 'Añadir enlaces',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Volver a la lista', # Fuzzy
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Elegir otra tarea',
 	'gettingstarted-task-toolbar-return-to-list-title' => 'Volver a la lista de artículos', # Fuzzy
-	'gettingstarted-task-toolbar-editing-help-text' => 'Mostrar la ayuda', # Fuzzy
+	'gettingstarted-task-toolbar-editing-help-text' => 'Mostrarme cómo',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Mostrar una guía de edición',
 	'gettingstarted-task-toolbar-try-another-text' => 'Probar otro artículo ►',
 	'gettingstarted-task-toolbar-close-title' => 'Cerrar esta barra de herramientas',
@@ -659,9 +660,12 @@ Si quieres hacer más, hay una lista en  $2  de maneras fáciles de ayudar
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => '¿Quieres hacer más? Visita $2 y obtendrás una lista de maneras fáciles de ayudar',
+	'gettingstarted-cta-close' => 'Cerrar',
+	'gettingstarted-cta-heading' => 'Ayuda a {{SITENAME}}',
 	'gettingstarted-cta-text' => 'Puedes contribuir a {{SITENAME}} de diferentes formas',
 	'gettingstarted-cta-edit-page' => 'Editar esta página',
 	'gettingstarted-cta-edit-page-sub' => 'Te mostraremos cómo',
+	'gettingstarted-cta-fix-pages' => 'Encuentra páginas que necesitan correcciones sencillas',
 	'gettingstarted-cta-fix-pages-sub' => 'Te mostraremos cómo editar',
 	'gettingstarted-cta-leave' => 'No gracias, tal vez luego',
 );
