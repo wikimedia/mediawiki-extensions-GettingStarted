@@ -152,8 +152,6 @@ $wgResourceModules['ext.guidedTour.tour.gettingstartedtasktoolbar'] = array(
 		'guidedtour-tour-gettingstarted-click-preview-description',
 		'guidedtour-tour-gettingstarted-click-save-title',
 		'guidedtour-tour-gettingstarted-click-save-description',
-		'guidedtour-tour-gettingstarted-end-title',
-		'guidedtour-tour-gettingstarted-end-description',
 	),
 ) + $gettingStartedModuleInfo;
 
@@ -175,8 +173,6 @@ $wgResourceModules['ext.guidedTour.tour.gettingstartedtasktoolbarve'] = array(
 		'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description',
 		'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title',
 		'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description',
-		'guidedtour-tour-gettingstarted-end-title',
-		'guidedtour-tour-gettingstarted-end-description',
 	),
 ) + $gettingStartedModuleInfo;
 
