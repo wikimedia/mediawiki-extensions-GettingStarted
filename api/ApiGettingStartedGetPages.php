@@ -95,7 +95,7 @@ class ApiGettingStartedGetPages extends ApiBase {
 		);
 	}
 
-	public function getParamDescriptions() {
+	public function getParamDescription() {
 		return array(
 			'taskname' => 'Task name, for example, "copyedit"',
 			'excludedTitle' => 'Full title of a page to exclude from the list',
