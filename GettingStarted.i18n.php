@@ -200,8 +200,6 @@ Refers to {{msg-mw|Editsection}}.',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Description of first step of GettingStarted tour that is on the VisualEditor screen.
 
 Refers to the {{msg-mw|Visualeditor-toolbar-savedialog}} button.',
-
-	// General gettingstarted
 	'guidedtour-tour-gettingstarted-click-preview-title' => 'Title of step showing user where to click {{msg-mw|showpreview}}',
 	'guidedtour-tour-gettingstarted-click-preview-description' => 'Description of step showing user where to click {{msg-mw|showpreview}}',
 	'guidedtour-tour-gettingstarted-click-save-title' => 'Title of step showing user where to click {{msg-mw|savearticle}}',
@@ -308,6 +306,10 @@ Escueya una de les opciones de más abaxo, y verá un artículu al debalu que ne
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Si quier editar una seición específica, pue calcar nel enllaz azul '{{int:editsection}}' del principiu de cada seición.",
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => '¡Pue editar!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Agora pue editar la páxina. En acabando, faiga click en "{{int:visualeditor-toolbar-savedialog}}" pa revisar y guardar los cambios.',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Vista previa (opcional)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Si calca "{{int:showpreview}}" podrá comprobar como se verá la páxina colos cambios. Pero nun escaeza guardala.',
+	'guidedtour-tour-gettingstarted-click-save-title' => '¡Yá casi acabó!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Calque "{{int:savearticle}}" y los cambios sedrán visibles.',
 	'notification-gettingstarted-link-text-get-started' => 'Primeros pasos',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} ye una enciclopedia llibre escrita por xente como vusté. ¡De los [[Special:GettingStarted|primeros pasos]] faciendo la so primera edición!',
 	'notification-gettingstarted-start-editing-email-subject' => 'De los primeros pasos editando {{SITENAME}}',
@@ -333,10 +335,6 @@ $3",
 	'gettingstarted-cta-fix-pages' => 'Atopar páxines que necesiten igües cencielles',
 	'gettingstarted-cta-fix-pages-sub' => 'Vamos indica-y cómo editar',
 	'gettingstarted-cta-leave' => 'Non gracies, seique más sero',
-	'guidedtour-tour-gettingstarted-click-preview-title' => 'Vista previa (opcional)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => 'Si calca "{{int:showpreview}}" podrá comprobar como se verá la páxina colos cambios. Pero nun escaeza guardala.',
-	'guidedtour-tour-gettingstarted-click-save-title' => '¡Yá casi acabó!',
-	'guidedtour-tour-gettingstarted-click-save-description' => 'Calque "{{int:savearticle}}" y los cambios sedrán visibles.',
 );
 
 /** Azerbaijani (azərbaycanca)
@@ -391,16 +389,16 @@ $messages['be-tarask'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Што рабіць',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Пстрыкніце «{{int:vector-view-edit}}»',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Рэдагаваньне разьдзелаў',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Папярэдні прагляд (па жаданьні)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Націсьніце «{{int:showpreview}}», каб пабачыць, як будзе выглядаць старонка з унесенымі вамі зьменамі. Па праглядзе не забудзьце захаваць!',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Ужо амаль усё!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Націсьніце «{{int:savearticle}}» і вашыя зьмены будуць бачныя ўсім.',
 	'notification-gettingstarted-continue-editing-email-subject' => 'Лёгкі спосаб палепшыць {{GRAMMAR:вінавальны|{{SITENAME}}}}',
 	'notification-gettingstarted-continue-editing-text-email-body' => 'Выдатна! Вы ўжо зрабілі першыя праўкі ў {{GRAMMAR:месны|{{SITENAME}}}}.
 
 Калі вы ахвотныя заняцца нечым яшчэ, вось сьпіс лёгкіх спосабаў дапамагчы — $2.
 
 $3',
-	'guidedtour-tour-gettingstarted-click-preview-title' => 'Папярэдні прагляд (па жаданьні)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => 'Націсьніце «{{int:showpreview}}», каб пабачыць, як будзе выглядаць старонка з унесенымі вамі зьменамі. Па праглядзе не забудзьце захаваць!',
-	'guidedtour-tour-gettingstarted-click-save-title' => 'Ужо амаль усё!',
-	'guidedtour-tour-gettingstarted-click-save-description' => 'Націсьніце «{{int:savearticle}}» і вашыя зьмены будуць бачныя ўсім.',
 );
 
 /** Bulgarian (български)
@@ -435,6 +433,7 @@ $messages['br'] = array(
 
 /** Catalan (català)
  * @author Paucabot
+ * @author QuimGil
  */
 $messages['ca'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Edita una secció',
@@ -444,7 +443,7 @@ $messages['ca'] = array(
 	'guidedtour-tour-gettingstarted-click-save-description' => "Feu clic a '{{int:savearticle}}' i els seus canvis seran visibles.",
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Mormegil
  * @author Vks
  */
@@ -588,6 +587,10 @@ Wähle unten eine Option aus und du wirst sehen, dass ein zufälliger Artikel Hi
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Falls du einen bestimmten Abschnitt bearbeiten möchtest, kannst du auf den blauen „{{int:editsection}}“-Link zu Beginn jeden Abschnitts klicken.',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Du kannst bearbeiten!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Du kannst jetzt die Seite bearbeiten. Wenn du fertig bist, klicke auf „{{int:visualeditor-toolbar-savedialog}}“, um deine Änderungen zu überprüfen und zu speichern.',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Vorschau (optional)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Klicke auf „{{int:showpreview}}“, um zu sehen, wie die Seite mit deinen Änderungen aussieht. Vergiss nicht zu speichern.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Du bist fast fertig!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Klicke auf „{{int:savearticle}}“ und deine Änderungen werden sichtbar.',
 	'notification-gettingstarted-link-text-get-started' => 'Erste Schritte',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} ist eine freie Enzyklopädie, verfasst von Leuten wie dir. [[Special:GettingStarted|Fang an]], indem du deine erste Bearbeitung machst!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Fang an, {{SITENAME}} zu bearbeiten',
@@ -613,10 +616,6 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Finde Seiten, die einfache Korrekturen brauchen.',
 	'gettingstarted-cta-fix-pages-sub' => 'Wir werden dir zeigen, wie man bearbeitet.',
 	'gettingstarted-cta-leave' => 'Nein danke, vielleicht später.',
-	'guidedtour-tour-gettingstarted-click-preview-title' => 'Vorschau (optional)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => 'Klicke auf „{{int:showpreview}}“, um zu sehen, wie die Seite mit deinen Änderungen aussieht. Vergiss nicht zu speichern.',
-	'guidedtour-tour-gettingstarted-click-save-title' => 'Du bist fast fertig!',
-	'guidedtour-tour-gettingstarted-click-save-description' => 'Klicke auf „{{int:savearticle}}“ und deine Änderungen werden sichtbar.',
 );
 
 /** Zazaki (Zazaki)
@@ -807,6 +806,7 @@ Valitse vaihtoehto alta, niin näet satunnaisen artikkelin, joka tarvitsee huomi
  * @author Jean-Frédéric
  * @author Ltrlg
  * @author Metroitendo
+ * @author Trizek
  * @author Valystant
  * @author Wyz
  */
@@ -851,6 +851,10 @@ Choisissez une option ci-dessous et vous verrez un article pris au hasard qui a 
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Si vous souhaitez modifier une section spécifique, vous pouvez cliquer sur le lien '{{int:editsection}}' bleu en haut de chaque section.",
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Vous pouvez modifier !',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Vous pouvez maintenant modifier la page. Quand vous avez terminé, cliquez sur « {{int:visualeditor-toolbar-savedialog}} » pour vérifier et enregistrer vos modifications.',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Aperçu (facultatif)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => "Cliquer sur « {{int:showpreview}} » vous permet de vérifier à quoi ressemblera la page avec vos modifications. Ensuite, n'oubliez pas de publier pour enregistrer.",
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Vous avez presque fini !',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Cliquez sur «”{{int:savearticle}} » et vos modifications seront visibles.',
 	'notification-gettingstarted-link-text-get-started' => 'Commencer',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} est une encyclopédie libre écrite par des gens comme vous. [[Special:GettingStarted|Débutez]] en effectuant votre première modification !',
 	'notification-gettingstarted-start-editing-email-subject' => "Débuter avec l'édition sur {{SITENAME}}",
@@ -876,10 +880,6 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Trouver des pages qui ont besoin de corrections faciles',
 	'gettingstarted-cta-fix-pages-sub' => 'Nous allons vous montrer comment modifier',
 	'gettingstarted-cta-leave' => 'Non merci, peut-être plus tard',
-	'guidedtour-tour-gettingstarted-click-preview-title' => 'Aperçu (facultatif)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => "Cliquer sur « {{int:showpreview}} » vous permet de vérifier à quoi ressemblera la page avec vos modifications. Ensuite, n'oubliez pas de publier pour enregistrer.",
-	'guidedtour-tour-gettingstarted-click-save-title' => 'Vous avez presque fini !',
-	'guidedtour-tour-gettingstarted-click-save-description' => 'Cliquez sur «”{{int:savearticle}} » et vos modifications seront visibles.',
 );
 
 /** Franco-Provençal (arpetan)
@@ -937,6 +937,10 @@ Escolla unha das opcións inferiores para ir ata un artigo que necesite axuda.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Se quere modificar unha sección específica, pode premer na ligazón azul "{{int:editsection}}" que hai ao comezo de cada sección.',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Pode editar!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Agora pode editar a páxina. Cando remate, prema en "{{int:visualeditor-toolbar-savedialog}}" para revisar e gardar os seus cambios.',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Vista previa (opcional)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Premer en "{{int:showpreview}}" serve para comprobar como se verá a páxina coas modificacións. Non esqueza gardar despois.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Case rematou!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Prema en "{{int:savearticle}}" para facer visibles as súas modificacións.',
 	'notification-gettingstarted-link-text-get-started' => 'Comezar',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} é unha enciclopedia libre escrita por xente coma vostede. [[Special:GettingStarted|Empece]] facendo a súa primeira edición!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Empece a editar {{SITENAME}}',
@@ -962,10 +966,6 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Atopar as páxinas que necesitan correccións sinxelas',
 	'gettingstarted-cta-fix-pages-sub' => 'Mostrámoslle como editar',
 	'gettingstarted-cta-leave' => 'Non grazas, quizais logo',
-	'guidedtour-tour-gettingstarted-click-preview-title' => 'Vista previa (opcional)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => 'Premer en "{{int:showpreview}}" serve para comprobar como se verá a páxina coas modificacións. Non esqueza gardar despois.',
-	'guidedtour-tour-gettingstarted-click-save-title' => 'Case rematou!',
-	'guidedtour-tour-gettingstarted-click-save-description' => 'Prema en "{{int:savearticle}}" para facer visibles as súas modificacións.',
 );
 
 /** Gujarati (ગુજરાતી)
@@ -1163,6 +1163,10 @@ Selige un option hic infra, e tu videra un articulo prendite al hasardo que ha b
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Si tu vole modificar un section specific, tu pote cliccar sur le ligamine blau '{{int:editsection}}' in le parte superior de cata section.",
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Tu pote modificar!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "Ora tu pote modificar le pagina. Quando tu ha finite, clicca sur '{{int:visualeditor-toolbar-savedialog}}' pro revider e salveguardar le cambiamentos.",
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Previsualisation (optional)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Cliccar sur "{{int:showpreview}}" permitte verificar le aspecto del pagina con tu modificationes. Solmente non oblida de salveguardar lo.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Tu ha quasi finite!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Clicca sur "{{int:savearticle}}" e tu modificationes essera visibile.',
 	'notification-gettingstarted-link-text-get-started' => 'Comenciar',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} es un encyclopedia libere scribite per gente como tu. [[Special:GettingStarted|Comencia]] e face tu prime modification!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Prime passos a modificar {{SITENAME}}',
@@ -1180,10 +1184,6 @@ Si tu cerca altere cosas a facer, il ha un lista de manieras facile de adjutar a
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Tu cerca altere cosas a facer? Visita $2 pro un lista de manieras facile de adjutar.',
-	'guidedtour-tour-gettingstarted-click-preview-title' => 'Previsualisation (optional)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => 'Cliccar sur "{{int:showpreview}}" permitte verificar le aspecto del pagina con tu modificationes. Solmente non oblida de salveguardar lo.',
-	'guidedtour-tour-gettingstarted-click-save-title' => 'Tu ha quasi finite!',
-	'guidedtour-tour-gettingstarted-click-save-description' => 'Clicca sur "{{int:savearticle}}" e tu modificationes essera visibile.',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -1245,6 +1245,10 @@ Scegli un'opzione qui sotto e vedrai una voce casuale che ha bisogno di aiuto.",
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Se vuoi modificare una sezione specifica, puoi fare clic sul link blu '{{int:editsection}}' nella parte superiore di ogni sezione.",
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Puoi modificare!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "Ora puoi modificare la pagina. Quando hai finito, clicca '{{int:visualeditor-toolbar-savedialog}}' per rivedere e salvare le tue modifiche.",
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Anteprima (opzionale)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => "Facendo clic su '{{int:showpreview}}' ti permette di verificare quello che sarà l'aspetto della pagina con le tue modifiche. Basta non dimenticare di salvare.",
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Hai quasi finito!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "Fai click su '{{int:savearticle}}' e le modifiche saranno visibili.",
 	'notification-gettingstarted-link-text-get-started' => 'Inizia',
 	'notification-gettingstarted-start-editing' => "{{SITENAME}} è un'enciclopedia libera, scritta da persone come te.
 [[Special:GettingStarted|Inizia]] facendo la tua prima modifica!",
@@ -1271,10 +1275,6 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Trova pagine che necessitano di correzioni semplici',
 	'gettingstarted-cta-fix-pages-sub' => 'Ti mostreremo come modificare',
 	'gettingstarted-cta-leave' => 'No grazie, forse più tardi',
-	'guidedtour-tour-gettingstarted-click-preview-title' => 'Anteprima (opzionale)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => "Facendo clic su '{{int:showpreview}}' ti permette di verificare quello che sarà l'aspetto della pagina con le tue modifiche. Basta non dimenticare di salvare.",
-	'guidedtour-tour-gettingstarted-click-save-title' => 'Hai quasi finito!',
-	'guidedtour-tour-gettingstarted-click-save-description' => "Fai click su '{{int:savearticle}}' e le modifiche saranno visibili.",
 );
 
 /** Japanese (日本語)
@@ -1304,6 +1304,10 @@ $messages['ja'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => '節の編集',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => '編集できます!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'ページを編集できるようになりました。編集が完了したら、「{{int:visualeditor-toolbar-savedialog}}」をクリックして、編集内容を確認および保存してください。',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'プレビュー (省略可能)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => '「{{int:showpreview}}」をクリックすると、編集結果の見た目を確認できます。保存するのを忘れないようにしてください。',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'もう少しで終わります!',
+	'guidedtour-tour-gettingstarted-click-save-description' => '「{{int:savearticle}}」をクリックすると、変更内容が最新版として保存されます。',
 	'gettingstarted-cta-close' => '閉じる',
 	'gettingstarted-cta-heading' => '{{SITENAME}}を支援しましょう',
 	'gettingstarted-cta-text' => '{{SITENAME}}では、さまざまな方法で貢献できます。',
@@ -1311,10 +1315,6 @@ $messages['ja'] = array(
 	'gettingstarted-cta-edit-page-sub' => '方法をお見せします',
 	'gettingstarted-cta-fix-pages' => '簡単な修正が必要なページを見つける',
 	'gettingstarted-cta-fix-pages-sub' => '編集方法をお見せします',
-	'guidedtour-tour-gettingstarted-click-preview-title' => 'プレビュー (省略可能)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => '「{{int:showpreview}}」をクリックすると、編集結果の見た目を確認できます。保存するのを忘れないようにしてください。',
-	'guidedtour-tour-gettingstarted-click-save-title' => 'もう少しで終わります!',
-	'guidedtour-tour-gettingstarted-click-save-description' => '「{{int:savearticle}}」をクリックすると、変更内容が最新版として保存されます。',
 );
 
 /** Georgian (ქართული)
@@ -1371,6 +1371,10 @@ $messages['ko'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "특정 문단을 편집하려면 각 편집의 위에 파란 '{{int:editsection}}' 링크를 클릭할 수 있습니다.",
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => '편집할 수 있습니다!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "이제 문서를 편집할 수 있습니다. 완료되면, 바뀜을 검토하고 저장하려면 '{{int:visualeditor-toolbar-savedialog}}'을 클릭하세요.",
+	'guidedtour-tour-gettingstarted-click-preview-title' => '미리 보기 (선택 사항)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => '"{{int:showpreview}}"를 클릭하면 문서가 어떻게 바뀌었는지 확인할 수 있습니다. 저장하는 것을 잊지 마세요.',
+	'guidedtour-tour-gettingstarted-click-save-title' => '거의 끝났습니다!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "'{{int:savearticle}}'을 클릭하여 바뀜을 볼 수 있습니다.",
 	'notification-gettingstarted-link-text-get-started' => '시작하기',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}}(은)는 여러분과 같은 사람들이 작성한 자유 백과사전입니다. 첫 편집을 하는 것을 [[Special:GettingStarted|시작하세요]]!',
 	'notification-gettingstarted-start-editing-email-subject' => '{{SITENAME}} 편집 시작하기',
@@ -1395,10 +1399,6 @@ $3',
 	'gettingstarted-cta-edit-page-sub' => '어떻게 하는지 보여드리겠습니다',
 	'gettingstarted-cta-fix-pages-sub' => '어떻게 편집하는지 보여드리겠습니다',
 	'gettingstarted-cta-leave' => '괜찮습니다. 나중에요.',
-	'guidedtour-tour-gettingstarted-click-preview-title' => '미리 보기 (선택 사항)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => '"{{int:showpreview}}"를 클릭하면 문서가 어떻게 바뀌었는지 확인할 수 있습니다. 저장하는 것을 잊지 마세요.',
-	'guidedtour-tour-gettingstarted-click-save-title' => '거의 끝났습니다!',
-	'guidedtour-tour-gettingstarted-click-save-description' => "'{{int:savearticle}}'을 클릭하여 바뀜을 볼 수 있습니다.",
 );
 
 /** Kyrgyz (Кыргызча)
@@ -1452,6 +1452,10 @@ Sicht eng Optioun hei drënner eraus an Dir kritt en zoufällegen Artikel gewise
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Wann Dir e bestëmmten Abschnitt ännere wëllt, da klickt op de bloen  '{{int:editsection}}' Link uewen op all Abschnitt.",
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Dir kënnt änneren!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "Dir kënnt d'Säit elo änneren. Wann dir fäerdeg sidd, klickt  '{{int:visualeditor-toolbar-savedialog}}' fir nozekucken an Är Ännerungen ze späicheren.",
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Weisen ouni ze späicheren (fakuktativ)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Klickt op "{{int:showpreview}}", fir ze gesinn, wéi d\'Säit mat dengen Ännerungen ausgesäit. Vergiesst net ze späicheren.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Dir sidd bal fäerdeg!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "Klickt op '{{int:savearticle}}' an Är Ännerunge sinn ze gesinn.",
 	'notification-gettingstarted-link-text-get-started' => 'Fir unzefänken',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} ass eng fräi Enzyklopedie geschriwwe vu Leit wéi Iech. [[Special:GettingStarted|Fänkt un]] andeems Dir Är éischt Ännerung maacht!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Ufänke mat Änneren op {{SITENAME}}',
@@ -1477,10 +1481,6 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Säite fannen, déi einfach Verbesserunge brauchen',
 	'gettingstarted-cta-fix-pages-sub' => 'Mir weisen Iech wéi Dir ännere kënnt',
 	'gettingstarted-cta-leave' => 'Nee merci, vläicht méi spéit',
-	'guidedtour-tour-gettingstarted-click-preview-title' => 'Weisen ouni ze späicheren (fakuktativ)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => 'Klickt op "{{int:showpreview}}", fir ze gesinn, wéi d\'Säit mat dengen Ännerungen ausgesäit. Vergiesst net ze späicheren.',
-	'guidedtour-tour-gettingstarted-click-save-title' => 'Dir sidd bal fäerdeg!',
-	'guidedtour-tour-gettingstarted-click-save-description' => "Klickt op '{{int:savearticle}}' an Är Ännerunge sinn ze gesinn.",
 );
 
 /** Lithuanian (lietuvių)
@@ -1601,6 +1601,10 @@ $messages['mk'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Ако сакате да уредите даден поднаслов, стиснете на сината врска „{{int:editsection}}“ до него.',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Можете да уредувате!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Сега можете да ја уредите страницата. Кога ќе завршите, стиснете на „{{int:visualeditor-toolbar-savedialog}}“ за да ги прегледате и зачувате промените.',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Преглед (незадолжително)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Ако стиснете на „{{int:showpreview}}“ ќе видите како ќе изгледа страницата со вашите измени. Само не заборавајте да ги зачувате.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Речиси сте готови!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Стиснете на „{{int:savearticle}}“ и измените ќе бидат видливи.',
 	'notification-gettingstarted-link-text-get-started' => 'Започнете',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} е слободна енциклопедија што ја пишуваат луѓе како вас. [[Special:GettingStarted|Почнете]] со вашето прво уредување!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Започнете со уредување на {{SITENAME}}',
@@ -1626,10 +1630,6 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Пронајдете страници на кои им требаат лесни поправки',
 	'gettingstarted-cta-fix-pages-sub' => 'Ќе ви покажеме како да уредувате',
 	'gettingstarted-cta-leave' => 'Не благодарам. Можеби подоцна.',
-	'guidedtour-tour-gettingstarted-click-preview-title' => 'Преглед (незадолжително)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => 'Ако стиснете на „{{int:showpreview}}“ ќе видите како ќе изгледа страницата со вашите измени. Само не заборавајте да ги зачувате.',
-	'guidedtour-tour-gettingstarted-click-save-title' => 'Речиси сте готови!',
-	'guidedtour-tour-gettingstarted-click-save-description' => 'Стиснете на „{{int:savearticle}}“ и измените ќе бидат видливи.',
 );
 
 /** Marathi (मराठी)
@@ -1684,6 +1684,10 @@ Pilih satu pilihan di bawah, dan anda akan melihat sebuah rencana pilihan rawak 
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Jika anda ingin menyunting suatu bahagian tertentu, anda boleh klik pada pautan biru '{{int:editsection}}' di atas setiap bahagian.",
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Anda boleh menyunting!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "Anda kini boleh menyunting halaman ini. Selepas siap, klik '{{int:visualeditor-toolbar-savedialog}}' untuk menyemak dan menyimpan suntingan anda.",
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Pralihat (tidak wajib)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => "Mengklik '{{int:showpreview}}' membolehkan anda untuk menyemak rupa halaman dengan suntingan anda. Jangan lupa untuk simpan.",
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Anda hampir siap!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "Klik '{{int:savearticle}}' untuk memperlihatkan suntingan anda.",
 	'notification-gettingstarted-link-text-get-started' => 'Mulakan',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} merupakan sebuah ensiklopedia bebas yang dikarang oleh orang ramai seperti anda. [[Special:GettingStarted|Mulakan]] dengan membuat suntingan pertama anda!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Bermula dengan menyunting {{SITENAME}}',
@@ -1701,10 +1705,6 @@ Jika anda ingin mencari kerja lain, terdapat pelbagai cara yang mudah untuk memb
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Ingin mencari kerja lain? Layari $2 untuk pelbagai cara yang mudah untuk membantu.',
-	'guidedtour-tour-gettingstarted-click-preview-title' => 'Pralihat (tidak wajib)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => "Mengklik '{{int:showpreview}}' membolehkan anda untuk menyemak rupa halaman dengan suntingan anda. Jangan lupa untuk simpan.",
-	'guidedtour-tour-gettingstarted-click-save-title' => 'Anda hampir siap!',
-	'guidedtour-tour-gettingstarted-click-save-description' => "Klik '{{int:savearticle}}' untuk memperlihatkan suntingan anda.",
 );
 
 /** Maltese (Malti)
@@ -1833,6 +1833,11 @@ Kies een van de onderstaande mogelijkheden voor een willekeurige pagina die uw h
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Een paragraaf bewerken',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Als u een bepaalde paragraaf wilt bewerken, kunt u klikken op de blauwe koppeling "{{int:editsection}}" bovenaan iedere paragraaf.',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'U kunt bewerken!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'U kunt de pagina nu bewerken. Klik op "{{int:visualeditor-toolbar-savedialog}}" als u klaar bent, om uw wijzigingen te controleren enze op te slaan.',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Voorvertoning (optioneel)������',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Door te klikken op "{{int:showpreview}}" kunt u controleren hoe de pagina wordt weergegeven met uw wijzigingen. Vergeet uw wijzigingen niet op te slaan.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'U bent bijna klaar!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Klik "{{int:savearticle}}" zodat uw wijzigingen zichtbaar worden.',
 	'notification-gettingstarted-link-text-get-started' => 'Aan de slag',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} is een vrije encyclopedie geschreven door mensen zoals u. [[Special:GettingStarted|Ga aan de slag]] door uw eerste bewerking te maken!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Aan de slag met het bewerken van {{SITENAME}}',
@@ -1858,10 +1863,6 @@ $3',
 	'gettingstarted-cta-fix-pages' => "Pagina's vinden die eenvoudig te verbeteren zijn",
 	'gettingstarted-cta-fix-pages-sub' => 'We laten u zien hoe u kunt bewerken',
 	'gettingstarted-cta-leave' => 'Nee bedankt, misschien een volgende keer',
-	'guidedtour-tour-gettingstarted-click-preview-title' => 'Voorvertoning (optioneel)������',
-	'guidedtour-tour-gettingstarted-click-preview-description' => 'Door te klikken op "{{int:showpreview}}" kunt u controleren hoe de pagina wordt weergegeven met uw wijzigingen. Vergeet uw wijzigingen niet op te slaan.',
-	'guidedtour-tour-gettingstarted-click-save-title' => 'U bent bijna klaar!',
-	'guidedtour-tour-gettingstarted-click-save-description' => 'Klik "{{int:savearticle}}" zodat uw wijzigingen zichtbaar worden.',
 );
 
 /** Polish (polski)
@@ -1944,6 +1945,10 @@ Escolha uma opção abaixo, e veja um artigo aleatório que precisa de ajdua',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Você pode editar o artigo inteiro ao clicar aqui.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Edite uma seção',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Se você quiser editar uma seção específica, pode cliclar no link azul '{{int:editsection}}' no topo de cada seção.",
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Previsualização(opcional)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => "Clicar em '{{int:showpreview}}' permite que você verifique como a página vai ficar depois das suas alterações. Só não esqueça de salvar.",
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Você está quase terminando!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "Clique em '{{int:savearticle}}' e suas alterações serão visíveis.",
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} é uma enciclopédia livre escrita por pessoas como você. [[Special:GettingStarted|Inicie]] fazendo sua primeira edição!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Comece com a edição de {{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} é uma enciclopédia livre escrita por pessoas como você. Começe fazendo sua primeira edição!
@@ -1960,10 +1965,6 @@ Se procura por mais coisas a fazer,aqui está uma lista de jeitos fáceis de aju
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Procurando por mais por fazer? Visite $2 para uma lista de jeitos fáceis de ajudar.',
-	'guidedtour-tour-gettingstarted-click-preview-title' => 'Previsualização(opcional)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => "Clicar em '{{int:showpreview}}' permite que você verifique como a página vai ficar depois das suas alterações. Só não esqueça de salvar.",
-	'guidedtour-tour-gettingstarted-click-save-title' => 'Você está quase terminando!',
-	'guidedtour-tour-gettingstarted-click-save-description' => "Clique em '{{int:savearticle}}' e suas alterações serão visíveis.",
 );
 
 /** Romanian (română)
@@ -1998,6 +1999,10 @@ $messages['roa-tara'] = array(
 	'gettingstarted-task-toolbar-editing-help-title' => "Fà vedè 'a guide su cumme se fanne le cangiaminde",
 	'gettingstarted-task-toolbar-try-another-text' => "Pruève 'n'otra vôsce ►",
 	'gettingstarted-task-toolbar-close-title' => 'Achiude sta barre de le struminde',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Andeprime (opzionale)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => "Cazzanne '{{int:showpreview}}' te permette de verificà ca 'a pàgene iesse cu le cangiaminde tune. No te demendicà de reggistrà.",
+	'guidedtour-tour-gettingstarted-click-save-title' => "E' quase spicciate!",
+	'guidedtour-tour-gettingstarted-click-save-description' => "Cazze '{{int:savearticle}}' e le cangiaminde tune devendane visibbile.",
 	'notification-gettingstarted-start-editing-email-subject' => 'Accuminze a cangià {{SITENAME}}',
 	'notification-gettingstarted-continue-editing-email-subject' => 'Mode facile pe migliorà {{SITENAME}}',
 );
@@ -2049,6 +2054,10 @@ $messages['ru'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Если вы хотите отредактировать конкретный раздел, то можете нажать на синюю ссылку '{{int:editsection}}', которая имеется сверху каждого раздела.",
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Вы можете отредактировать!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "Сейчас вы можете редактировать страницу. Когда вы закончите, нажмите кнопку '{{int:visualeditor-toolbar-savedialog}}' для просмотра и сохранения изменений.",
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Предварительный просмотр (не обязательно)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Нажатие «{{int:showpreview}}» позволяет проверить, как будет выглядеть страница с вашими изменениями. Только не забудьте её потом сохранить.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Вы почти закончили!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Нажмите «{{int:savearticle}}» и ваши изменения станут видны.',
 	'notification-gettingstarted-link-text-get-started' => 'Приступить к работе',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} является свободной энциклопедией, написанные такими же людьми, как вы. [[Special:GettingStarted|Приступите к работе]] и совершите свои первые правки!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Начните работу по редактированию {{SITENAME}}',
@@ -2074,10 +2083,6 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Найдите страницы, которые нуждаются в простых исправлениях',
 	'gettingstarted-cta-fix-pages-sub' => 'Мы покажем вам, как редактировать',
 	'gettingstarted-cta-leave' => 'Нет, спасибо, может быть, позже',
-	'guidedtour-tour-gettingstarted-click-preview-title' => 'Предварительный просмотр (не обязательно)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => 'Нажатие «{{int:showpreview}}» позволяет проверить, как будет выглядеть страница с вашими изменениями. Только не забудьте её потом сохранить.',
-	'guidedtour-tour-gettingstarted-click-save-title' => 'Вы почти закончили!',
-	'guidedtour-tour-gettingstarted-click-save-description' => 'Нажмите «{{int:savearticle}}» и ваши изменения станут видны.',
 );
 
 /** Sinhala (සිංහල)
@@ -2150,6 +2155,10 @@ Välj ett alternativ nedan och du kommer att se en slumpmässig artikel som beh�
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Om du vill redigera ett särskilt avsnitt, kan du klicka på den blå länken '{{int:editsection}}', högst upp i varje avsnitt.",
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Du kan redigera!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "Du kan nu redigera sidan. När du är färdig, klicka på  '{{int:visualeditor-toolbar-savedialog}}' för att förhandsgranska och spara dina ändringar.",
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Förhandsgranska (valfritt)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => "Genom att klicka på '{{int:showpreview}}' kan du kontrollera hur sidan ser ut med dina ändringar. Glöm bara inte att spara.",
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Du är nästan klar!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "Klicka på '{{int:savearticle}}' och dina ändringar kommer att vara synliga.",
 	'notification-gettingstarted-link-text-get-started' => 'Kom igång',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} är en fri encyklopedi skriven av människor som dig. [[Special:GettingStarted|Kom igång]] genom att göra din första redigering!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Komma igång genom att redigera {{SITENAME}}',
@@ -2175,10 +2184,6 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Hitta sidor som behöver enkla förbättringar',
 	'gettingstarted-cta-fix-pages-sub' => 'Vi visar dig hur du redigerar',
 	'gettingstarted-cta-leave' => 'Nej tack, kanske en annan gång',
-	'guidedtour-tour-gettingstarted-click-preview-title' => 'Förhandsgranska (valfritt)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => "Genom att klicka på '{{int:showpreview}}' kan du kontrollera hur sidan ser ut med dina ändringar. Glöm bara inte att spara.",
-	'guidedtour-tour-gettingstarted-click-save-title' => 'Du är nästan klar!',
-	'guidedtour-tour-gettingstarted-click-save-description' => "Klicka på '{{int:savearticle}}' och dina ändringar kommer att vara synliga.",
 );
 
 /** Tamil (தமிழ்)
@@ -2252,6 +2257,10 @@ $messages['uk'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Якщо ви хочете редагувати окремий розділ, можна натиснути на блакитне посилання '{{int:editsection}}' вгорі кожного розділу.",
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Ви можете редагувати!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "Ви тепер можете редагувати сторінку. Коли закінчите, натисніть '{{int:visualeditor-toolbar-savedialog}}', щоб переглянути і зберегти свої зміни.",
+	'guidedtour-tour-gettingstarted-click-preview-title' => "Попередній перегляд (необов'язково)",
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Клацання "{{int:showpreview}}" дає змогу перевіряти вигляд сторінки із внесеними змінами. Тільки не забудьте зберегти.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Ви майже закінчили!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "Натисніть '{{int:savearticle}}' і зміни буде видно.",
 	'notification-gettingstarted-link-text-get-started' => 'Почати роботу',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} — це вільна енциклопедія, написана такими ж людьми, як і Ви. [[Special:GettingStarted|Почніть роботу]], зробивши своє перше редагування!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Почніть роботу з редагування {{grammar:genitive|{{SITENAME}}}}',
@@ -2277,10 +2286,6 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Знайти сторінки, які просто необхідно виправити',
 	'gettingstarted-cta-fix-pages-sub' => 'Ми покажемо вам, як редагувати',
 	'gettingstarted-cta-leave' => 'Ні, дякую, можливо, пізніше',
-	'guidedtour-tour-gettingstarted-click-preview-title' => "Попередній перегляд (необов'язково)",
-	'guidedtour-tour-gettingstarted-click-preview-description' => 'Клацання "{{int:showpreview}}" дає змогу перевіряти вигляд сторінки із внесеними змінами. Тільки не забудьте зберегти.',
-	'guidedtour-tour-gettingstarted-click-save-title' => 'Ви майже закінчили!',
-	'guidedtour-tour-gettingstarted-click-save-description' => "Натисніть '{{int:savearticle}}' і зміни буде видно.",
 );
 
 /** Urdu (اردو)
@@ -2337,6 +2342,10 @@ $messages['vi'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Để chỉ sửa đổi một phần, bạn có thể nhấn chuột vào liên kết “{{int:editsection}}” màu xanh bên cạnh đề mục của phần đó.',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Bạn có thể sửa đổi!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Bạn hiện có thể sửa đổi trang này. Sau khi hoàn tất, hãy bấm “{{int:visualeditor-toolbar-savedialog}}” để xem lại và lưu các thay đổi của bạn.',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Xem trước (tùy chọn)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Bấm “{{int:showpreview}}” để kiểm tra các thay đổi của bạn có phải hiển thị đúng hay không. Hãy nhớ lưu trang.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Gần xong!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Bấm “{{int:savearticle}}” là các thay đổi của bạn sẽ được áp dụng vào trang.',
 	'notification-gettingstarted-link-text-get-started' => 'Bắt đầu',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} là bách khoa toàn thư mở do công sức của nhiều người như bạn. Hãy [[Special:GettingStarted|bắt đầu đóng góp]] với thay đổi đầu tiên của bạn!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Bắt đầu sửa đổi {{SITENAME}}',
@@ -2362,19 +2371,16 @@ $3',
 	'gettingstarted-cta-fix-pages' => 'Tìm các trang cần sữa chữa dễ dàng',
 	'gettingstarted-cta-fix-pages-sub' => 'Chúng tôi sẽ chỉ dẫn bạn cách sửa đổi',
 	'gettingstarted-cta-leave' => 'Thôi, có lẽ lần sau',
-	'guidedtour-tour-gettingstarted-click-preview-title' => 'Xem trước (tùy chọn)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => 'Bấm “{{int:showpreview}}” để kiểm tra các thay đổi của bạn có phải hiển thị đúng hay không. Hãy nhớ lưu trang.',
-	'guidedtour-tour-gettingstarted-click-save-title' => 'Gần xong!',
-	'guidedtour-tour-gettingstarted-click-save-description' => 'Bấm “{{int:savearticle}}” là các thay đổi của bạn sẽ được áp dụng vào trang.',
 );
 
 /** Wu (吴语)
  * @author Benojan
+ * @author 十弌
  */
 $messages['wuu'] = array(
-	'gettingstarted-cta-close' => '關',
 	'guidedtour-tour-gettingstarted-click-preview-description' => '點 "{{int:showpreview}}" 讓爾望得著改爻之後頁面個變化，休要忘記爻保存起。',
 	'guidedtour-tour-gettingstarted-click-save-description' => '點 "{{int:savearticle}}" 爾個改動便保存爻。',
+	'gettingstarted-cta-close' => '關',
 );
 
 /** Yiddish (ייִדיש)
