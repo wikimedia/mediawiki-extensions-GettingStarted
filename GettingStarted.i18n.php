@@ -753,6 +753,7 @@ $messages['et'] = array(
 /** Persian (فارسی)
  * @author Ebraminio
  * @author Mjbmr
+ * @author Omidh
  * @author Taha
  */
 $messages['fa'] = array(
@@ -760,7 +761,35 @@ $messages['fa'] = array(
 	'gettingstarted-welcomesiteuser' => '$2، به $1 خوش‌آمدید!',
 	'gettingstarted-welcomesiteuseranon' => 'شروع‌کردن',
 	'gettingstarted-welcome-back-site-user' => 'خوش بازگشتید، $2',
+	'gettingstarted-task-header' => 'با تشکر برای پیوستن به {{SITENAME}}!‌ اینجا برخی راه‌ها هست که می‌توانید درگیر شوید.
+
+یک گزینه در زیر را انتخاب کنید، و به صورت تصادفی مقاله‌ای را می‌بینید که نیاز به کمک دارد.',
 	'gettingstarted-return' => 'نه متشکرم، من را برگردان',
+	'gettingstarted-project-link' => '{{ns:Project}}:شروع',
+	'tag-gettingstarted_edit' => 'ویرایشگر جدید [[{{MediaWiki:gettingstarted-project-link}}|شروع کنید]]',
+	'gettingstarted-task-copyedit-main-description' => 'تصحیح املا و دستور‌ زبان',
+	'gettingstarted-task-copyedit-secondary-description' => 'ساده‌ترین راه ‌برای شروع کردن!',
+	'gettingstarted-task-clarify-main-description' => 'بهبود وضوح',
+	'gettingstarted-task-clarify-secondary-description' => 'ساده‌کردن یا تغییر کلمات جمله‌ها',
+	'gettingstarted-task-addlinks-main-description' => 'افزودن پیوند',
+	'gettingstarted-task-addlinks-secondary-description' => 'اتصال مقاله‌های {{SITENAME}} به یکدیگر',
+	'gettingstarted-task-toolbar-return-to-list-text' => 'انتخاب یک کار دیگر ◄',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'بازگشت به صفحه انتخاب کار',
+	'gettingstarted-task-toolbar-editing-help-text' => 'به‌ من نشان بده چگونه',
+	'gettingstarted-task-toolbar-editing-help-title' => 'نشان‌ دادن یک راهنما در مورد چگونگی ویرایش',
+	'gettingstarted-task-toolbar-try-another-text' => '► مقاله دیگری را امتحان کنید',
+	'gettingstarted-task-toolbar-close-title' => 'این نوار ابزار را ببندید',
+	'gettingstarted-task-copyedit-toolbar-description' => 'این مقاله ممکن است غلط‌های املایی یا دستور زبان داشته باشد که می‌توانید تصحیح کنید.',
+	'gettingstarted-task-clarify-toolbar-description' => 'این مقاله ممکن است گیج‌کننده یا مبهم باشد. دنبال راه‌هایی برای افزایش واضح‌تر کردن آن بگردید.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'برو به یک مقاله تصادفی برای افزایش وضوح',
+	'gettingstarted-cta-close' => 'بستن',
+	'gettingstarted-cta-heading' => 'کمک به {{SITENAME}}',
+	'gettingstarted-cta-text' => 'شما می‌توانید از راه‌های مختلف به {{SITENAME}} کمک کنید',
+	'gettingstarted-cta-edit-page' => 'ویرایش این صفحهٔ',
+	'gettingstarted-cta-edit-page-sub' => 'ما به شما نشان می‌دهیم چگونه',
+	'gettingstarted-cta-fix-pages' => 'پیداکردن صفحاتی که به اصلاحات آسان نیاز دارند',
+	'gettingstarted-cta-fix-pages-sub' => 'ما به شما نشان می‌دهیم که چگونه ویرایش کنید',
+	'gettingstarted-cta-leave' => 'نه متشکرم، شاید بعداً',
 );
 
 /** Finnish (suomi)
@@ -1416,6 +1445,7 @@ $messages['ky'] = array(
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
 	'gettingstarted' => 'Fir unzefänken',
@@ -1434,7 +1464,7 @@ Sicht eng Optioun hei drënner eraus an Dir kritt en zoufällegen Artikel gewise
 	'gettingstarted-task-copyedit-secondary-description' => 'Den einfachste Wee fir unzefänken!',
 	'gettingstarted-task-clarify-main-description' => 'Kloerheet verbesseren',
 	'gettingstarted-task-clarify-secondary-description' => 'Sätz vereinfachen oder ëmformuléieren.',
-	'gettingstarted-task-addlinks-main-description' => 'Linken derbäisetzen',
+	'gettingstarted-task-addlinks-main-description' => 'Linken dobäisetzen',
 	'gettingstarted-task-addlinks-secondary-description' => '{{SITENAME}}-Artikel matenee verbannen.',
 	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Eng aner Aufgab eraussichen',
 	'gettingstarted-task-toolbar-return-to-list-title' => "Zréck op d'Säit vum Eraussiche vun den Aufgaben",
@@ -1447,7 +1477,7 @@ Sicht eng Optioun hei drënner eraus an Dir kritt en zoufällegen Artikel gewise
 	'gettingstarted-task-clarify-toolbar-description' => 'Dësen Artikel ass méiglecherweis konfus oder vague. Kuckt no Weeër wéi Dir e méi kloer maache kënnt.',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Gitt op een zoufällegen Artikel deen Dir präziséiere kënnt',
 	'gettingstarted-task-addlinks-toolbar-description' => 'Dësen Artikel brauch méi Linken. Kuckt no Begrëffer déi een {{SITENAME}}-Artikel hunn.',
-	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Gitt op een zoufällegen Artikel wou Dir Linken derbäisetze kënnt',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Gitt op een zoufällegen Artikel wou Dir Linken dobäisetze kënnt',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Wéi een ufänkt',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Iddie wat Dir maache kënnt',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Klickt op {{int:vector-view-edit}}',
