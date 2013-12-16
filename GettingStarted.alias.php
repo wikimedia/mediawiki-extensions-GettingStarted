@@ -14,6 +14,11 @@ $specialPageAliases['en'] = array(
 	'GettingStarted' => array( 'GettingStarted', 'Getting Started' ),
 );
 
+/** Arabic (العربية) */
+$specialPageAliases['ar'] = array(
+	'GettingStarted' => array( 'البدء' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'GettingStarted' => array( 'Anfangen' ),
