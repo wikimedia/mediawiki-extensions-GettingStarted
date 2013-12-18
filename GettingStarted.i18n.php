@@ -432,15 +432,80 @@ $messages['br'] = array(
 );
 
 /** Catalan (català)
+ * @author Papapep
  * @author Paucabot
  * @author QuimGil
  */
 $messages['ca'] = array(
-	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Edita una secció',
-	'guidedtour-tour-gettingstarted-click-preview-title' => 'Mostra previsualització (opcional)',
+	'gettingstarted' => 'Primers passos',
+	'gettingstarted-desc' => 'Afegeix una [[Special:GettingStarted|pàgina de benvinguda]] per als nous usuaris (un cop creat el compte)',
+	'gettingstarted-welcomesiteuser' => 'Benvingut a $1, $2!',
+	'gettingstarted-welcomesiteuseranon' => 'Primers passos',
+	'gettingstarted-welcome-back-site-user' => 'Benvingut de nou, $2',
+	'gettingstarted-task-header' => 'Gràcies per unir-vos a {{SITENAME}}! Aquí trobareu algunes formes per involucrar-vos.
+
+Trieu una de les opcions següents i veureu un article aletori que necessita ajuda.',
+	'gettingstarted-return' => '← No gràcies, torna a la pàgina que estava llegint',
+	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
+	'tag-gettingstarted_edit' => 'nou editor [[{{MediaWiki:gettingstarted-project-link}}|primers passos]]',
+	'tag-gettingstarted_edit-description' => "Edició d'una pàgina que l'editor ha triat de la llista de tasques a [[Special:GettingStarted|Getting started]]",
+	'gettingstarted-task-copyedit-main-description' => "Correcció d'ortografia i gramàtica",
+	'gettingstarted-task-copyedit-secondary-description' => 'La forma més simple de començar!',
+	'gettingstarted-task-clarify-main-description' => 'Millora de la claredat',
+	'gettingstarted-task-clarify-secondary-description' => 'Simplificació o reformulació de frases',
+	'gettingstarted-task-addlinks-main-description' => 'Afegir enllaços',
+	'gettingstarted-task-addlinks-secondary-description' => 'Connectar entre ells articles de {{SITENAME}}.',
+	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Trieu una altra tasca',
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Torna a la pàgina de selecció de tasques',
+	'gettingstarted-task-toolbar-editing-help-text' => "Mostra'm com",
+	'gettingstarted-task-toolbar-editing-help-title' => "Mostra'm una guia d'edició",
+	'gettingstarted-task-toolbar-try-another-text' => 'Vull provar un altre article ►',
+	'gettingstarted-task-toolbar-close-title' => "Tanca aquesta barra d'eines",
+	'gettingstarted-task-copyedit-toolbar-description' => "Aquest article pot tenir errors d'ortografia o gramàtica que podeu corregir.",
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Aneu a un article aleatori que podeu millorar',
+	'gettingstarted-task-clarify-toolbar-description' => 'Aquest article pot ser confús o imprecís. Mireu de fer-lo més clar.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Aneu a un article aleatori que pogueu aclarir',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Aquest article pot necessitar més enllaços. Cerqueu termes que tinguin un article a {{SITENAME}}.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Aneu a un article aleatori al que pogueu afegir enllaços',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Primers passos',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => "Comenceu a repassar l'article cercant possibles millores a fer. Si us sentiu aclaparats no patiu, no heu de ser un expert en aquest tema! Si necessiteu ajuda o voleu provar amb un altre article, empreu els enllaços de la barra superior.",
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Idees sobre què fer',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => "Aquests rètols identifiquen problemes de l'article. No els heu d'arreglar tots, feu només el que us faci sentir còmode.",
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Feu clic {{int:vector-view-edit}}',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => "Podeu editar tot l'article fent clic aquí.",
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Editeu una secció',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Si voleu editar una secció específica, feu clic a l'enllaç blau '{{int:editsection}}' al capdamunt de cada secció.",
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Saps editar!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "Ara ja podeu editar la pàgina. Quan estigueu feu clic a '{{int:visualeditor-toolbar-savedialog}}' per revisar i desar els canvis.",
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Mostra la previsualització (opcional)',
 	'guidedtour-tour-gettingstarted-click-preview-description' => "Si feu clic a '{{int:showpreview}}' podreu comprovar com es es veurà la pàgina amb els seus canvis. No us oblideu de desar.",
 	'guidedtour-tour-gettingstarted-click-save-title' => 'Gairebé heu acabat!',
 	'guidedtour-tour-gettingstarted-click-save-description' => "Feu clic a '{{int:savearticle}}' i els seus canvis seran visibles.",
+	'notification-gettingstarted-link-text-get-started' => 'Comenceu',
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} és una enciclopèdia lliure escrita per persones com vosaltres. [[Special:GettingStarted|Comenceu]] fent la vostra primera edició!',
+	'notification-gettingstarted-start-editing-email-subject' => 'Comenceu a editar {{SITENAME}}',
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} és una enciclopèdia lliure escrita per persones com vosaltres. Comenceu fent la vostra primera edició!
+
+Aneu a $2 per obtenir una llista de formes fàcils de millorar les pàgines.
+
+$3',
+	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Comenceu a editar {{SITENAME}} visitant $2',
+	'notification-gettingstarted-continue-editing' => "Bona feina! Ja heu fet les vostres primeres edicions a {{SITENAME}}. Si cerqueu més coses per fer, aquí trobareu algunes [[Special:GettingStarted|maneres simples d'ajudar]].",
+	'notification-gettingstarted-continue-editing-email-subject' => 'Formes fàcils de millorar {{SITENAME}}',
+	'notification-gettingstarted-continue-editing-text-email-body' => "Bona feina! Ja heu fet les vostres primeres edicions a {{SITENAME}}.
+
+Si cerqueu més coses a fer, trobareu una llista de maneres fàcils d'ajudar a $2
+
+$3",
+	'notification-gettingstarted-continue-editing-text-email-batch-body' => "Voleu fer més coses? Aneu a $2 i hi trobareu una llista de maneres fàcils d'ajudar.",
+	'gettingstarted-cta-close' => 'Tanca',
+	'gettingstarted-cta-heading' => 'Ajudeu a {{SITENAME}}',
+	'gettingstarted-cta-text' => 'Podeu contribuir a {{SITENAME}} de diferents formes',
+	'gettingstarted-cta-edit-page' => 'Modifica aquesta pàgina',
+	'gettingstarted-cta-edit-page-sub' => 'Us mostrarem com',
+	'gettingstarted-cta-fix-pages' => 'Trobeu pàgines que necessiten correccions fàcils.',
+	'gettingstarted-cta-fix-pages-sub' => "Us mostrarem com s'edita",
+	'gettingstarted-cta-leave' => 'Potser després',
 );
 
 /** Czech (čeština)
