@@ -73,7 +73,8 @@ class ApiGettingStartedGetPages extends ApiBase {
 			}
 			try {
 				$randomArticleID = $redis->sRandMember( $key );
-				if ( !array_key_exists( $randomArticleID, $titles ) ) {
+				// If it's not numeric, it's most likely false, meaning empty set or Redis failure.
+				if ( is_numeric( $randomArticleID ) && !array_key_exists( $randomArticleID, $titles ) ) {
 					$title = Title::newFromID( $randomArticleID );
 					// Null means the title no longer exists, possibly due to bug 56044
 					if ( $title !== null && $pageFilter->isAllowedPage( $title ) ) {
