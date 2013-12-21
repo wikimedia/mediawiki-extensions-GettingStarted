@@ -9,15 +9,23 @@
 			'wgSiteName', 'wgUserName', 'wgAction'
 		] ),
 		imagePath = cfg.wgExtensionAssetsPath + '/GettingStarted/resources/images/',
-		editablePageButtons, taskOnlyPageButtons,
 		self,
 		MAIN_NAMESPACE = 0,
-		SPECIAL_NAMESPACE = -1;
+		SPECIAL_NAMESPACE = -1,
+		// TODO (mattflaschen, 2013-12-19): This will need to be configurable later.
+		TASK_TYPE = 'copyedit',
+		fullTaskType = 'gettingstarted-' + TASK_TYPE;
 
-	function doEditThisPage( api ) {
+	function logMissingSuggestedArticle() {
+		mw.eventLog.logEvent( 'GettingStartedNavbarNoArticle', {
+			version: 1,
+			funnel: fullTaskType
+		} );
+	}
+
+	function doEditThisPage() {
 		var funnel = 'redirect', tourName;
 
-		api.close();
 		logging.setTaskForCurrentPage( funnel );
 
 		if ( $( '#ca-ve-edit' ).length > 0 ) {
@@ -31,31 +39,18 @@
 		logging.logEvent( {
 			action: 'redirect-invite-click',
 			funnel: funnel,
-			pageId:	cfg.wgArticleId,
+			pageId: cfg.wgArticleId,
 			revId: cfg.wgRevisionId,
 			isEditable: cfg.wgIsProbablyEditable
 		} );
 	}
 
-	function doFixPages( api ) {
-		var funnel = 'gettingstarted-copyedit';
-
-		api.close();
-		logging.logUnlessTimeout( {
-			action: 'redirect-invite-click',
-			funnel: funnel
-		}, 500 ).always( function () {
-			var urlWithoutQuery, uri;
-			urlWithoutQuery = mw.util.wikiGetlink( 'Special:GettingStarted/task/copyedit' );
-			uri = new mw.Uri( urlWithoutQuery ).extend( { source: 'redirect-invite-click' } );
-			window.location.href = uri.toString();
-		} );
-	}
-
 	/**
-	 * Gets a jQuery-wrapped button, from a specification
+	 * Creates a jQuery-wrapped button, from a specification.
 	 *
-	 * @param {Object} api API for dialog; passed to button's click handler
+	 * When clicked, it will close the dialog then call spec.click
+	 *
+	 * @param {Function} closeDialog function to call to close dialog
 	 * @param {Object} spec button specification
 	 * @param {Object} spec.id HTML id
 	 * @param {string} spec.icon file name of icon, relative to the GettingStarted
@@ -64,15 +59,14 @@
 	 * @param {string} spec.mainText main button text
 	 * @param {string} [spec.subText] lower button text
 	 * @param {Function} spec.click function to call on button click
-	 * @param {Object} spec.click.api trivial API for dialog; probably only need api.close()
 	 * @return {jQuery} created button
 	 *
 	 * @private
 	 */
-	function getButton( $dialog, spec ) {
+	function createButton( closeDialog, spec ) {
 		var klass, $btn, $icon, $mainText, $subText, $btnContents;
 
-		klass =	'mw-ui-button';
+		klass = 'mw-ui-button';
 		if ( spec.isPrimary ) {
 			klass += ' mw-ui-primary';
 		} else {
@@ -91,7 +85,8 @@
 			'class': klass
 		} ).click( function ( evt ) {
 			evt.stopPropagation();
-			spec.click( $dialog );
+			closeDialog();
+			spec.click();
 		} );
 
 
@@ -117,39 +112,6 @@
 
 		return $btn.append( $btnContents );
 	}
-
-	// The two CTA dialogs have similar but different buttons.
-	//
-	// TODO (mattflaschen, 2013-08-22): The fixpages text should be different depending on
-	// which CTA is shown.
-	//
-	// TODO: implement two-line buttons with icon per mockup.
-	editablePageButtons = [
-		{
-			id: 'mw-gettingstarted-editable-main-edit-page',
-			icon: 'pencil.png',
-			isPrimary: true,
-			mainText: mw.message( 'gettingstarted-cta-edit-page' ).text(),
-			subText: mw.message( 'gettingstarted-cta-edit-page-sub' ).text(),
-			click: doEditThisPage
-		},
-		{
-			id: 'mw-gettingstarted-editable-main-fix-pages',
-			icon: 'lightbulb_dark.png',
-			mainText: mw.message( 'gettingstarted-cta-fix-pages' ).text(),
-			click: doFixPages
-		}
-	];
-	taskOnlyPageButtons = [
-		{
-			id: 'mw-gettingstarted-other-fix-pages',
-			icon: 'lightbulb.png',
-			isPrimary: true,
-			mainText: mw.msg( 'gettingstarted-cta-fix-pages' ),
-			subText: mw.message( 'gettingstarted-cta-fix-pages-sub' ).text(),
-			click: doFixPages
-		}
-	];
 
 	self = {
 		// We should probably take into account diffs, etc. and other query strings.
@@ -220,65 +182,124 @@
 		/**
 		 * Behave according to the kind of page: show messages, start a task
 		 * launch a tour, etc.
+		 *
+		 * @param {string} pageKind kind of page, from getPageKind
+		 * @param {mw.Title} suggestedTitle title of a suggested article to edit, or null
+		 *   if none is available
 		 */
-		handlePage: function ( pageKind ) {
-			switch ( pageKind ) {
-				case 'alreadyediting':
-				case 'special':
-					// If they were already editing, or on a special page, do nothing.
-					// No welcome message, no tour, no start a funnel.
-					// Note: you can tell the user returned to a non-article page
-					// by looking at the pageNS for the
-					// redirect-page-impression event in the log.
-					break;
+		handlePage: function ( pageKind, suggestedTitle) {
+			var dialogSpec, editCurrentPrimaryButton, suggestionSecondaryButton, suggestionPrimaryButton;
 
-				case 'editablemain':
-				case 'other': /* falls through */
-					self.showCTA( pageKind );
-					break;
-
-				default:
-					mw.log.warn( 'bad GettingStarted pageKind ' + pageKind );
-
+			function doFixPages() {
+				logging.setTask( suggestedTitle.getPrefixedText(), fullTaskType );
+				logging.logUnlessTimeout( {
+					action: 'redirect-invite-click',
+					funnel: fullTaskType
+				}, 500 ).always( function () {
+					window.location.href = suggestedTitle.getUrl();
+				} );
 			}
+
+			// The possible CTA dialogs have similar but different buttons.
+			editCurrentPrimaryButton = {
+				id: 'mw-gettingstarted-editable-main-edit-page',
+				icon: 'pencil.png',
+				isPrimary: true,
+				mainText: mw.message( 'gettingstarted-cta-edit-page' ).text(),
+				subText: mw.message( 'gettingstarted-cta-edit-page-sub' ).text(),
+				click: doEditThisPage
+			};
+
+			suggestionSecondaryButton = {
+				id: 'mw-gettingstarted-editable-main-fix-pages',
+				icon: 'lightbulb_dark.png',
+				mainText: mw.message( 'gettingstarted-cta-fix-pages' ).text(),
+				click: doFixPages
+			};
+
+			suggestionPrimaryButton = {
+				id: 'mw-gettingstarted-other-fix-pages',
+				icon: 'lightbulb.png',
+				isPrimary: true,
+				mainText: mw.msg( 'gettingstarted-cta-fix-pages' ),
+				subText: mw.message( 'gettingstarted-cta-fix-pages-sub' ).text(),
+				click: doFixPages
+			};
+
+			if ( pageKind === 'editablemain' ) {
+				dialogSpec = {
+					id: 'mw-gettingstarted-cta-editable-main-page'
+				};
+
+				if ( suggestedTitle ) {
+					dialogSpec.buttons = [
+						editCurrentPrimaryButton,
+						suggestionSecondaryButton
+					];
+				} else {
+					logMissingSuggestedArticle();
+					dialogSpec.buttons = [ editCurrentPrimaryButton ];
+				}
+			} else if ( pageKind === 'other' ) {
+				if ( !suggestedTitle) {
+					logMissingSuggestedArticle();
+					// Nothing to show in dialog
+					return;
+				}
+
+				dialogSpec = {
+					id: 'mw-gettingstarted-cta-other-page',
+					buttons: [ suggestionPrimaryButton ]
+				};
+			} else {
+				if ( pageKind !== 'alreadyediting' && pageKind !== 'special' ) {
+					mw.log.warn( 'bad GettingStarted pageKind ' + pageKind );
+				}
+
+				// If they were already editing, or on a special page, do nothing.
+				// No welcome message, no tour, no start a funnel.
+				// Note: you can tell the user returned to a non-article page
+				// by looking at the pageNS for the
+				// redirect-page-impression event in the log.
+				//
+				// Invalid/unhandled kinds also make it here, but warn above.
+				return;
+			}
+
+			$( document ).ready( function () {
+				self.showCTA( dialogSpec );
+			} );
 		},
 
 
 
 		// TODO (mattflaschen, 2013-09-27): Cleanup and move to mediawiki.ui
 		/**
-		 * Generates a CTA (Call To Action) dialog.
-		 *
-		 * Returns an object with show and close methods.  show shows the CTA that has been
-		 * built, close destroys it.  To display it again, buildCTA must be called again.
+		 * Shows a CTA (Call To Action) dialog
 		 *
 		 * Only one CTA at a time is supported.
 		 *
-		 * @param {string} kind kind of page
-		 * @return {jQuery} dialog, wrapped by jQuery
+		 * @param {Object} spec specification of components of dialog
+		 * @param {string} spec.id HTML ID of dialog
+		 * @param {Array} spec.buttons array of button specifications
 		 */
-		buildCTA: function ( kind ) {
+		showCTA: function ( spec ) {
 			var $dialog, $close, closeText, $heading, $dialogText, $leaveLink,
-				buttonSpecs, dialogId, width, i, $overlay, api;
+				i, $overlay;
 
 			// Background overlay like GuidedTour
 
-			function showCTA() {
+			function showDialog() {
 				var $body = $( document.body );
 				$body.append( $overlay );
 				$dialog.show();
 				$body.append( $dialog );
 			}
 
-			function removeCTA() {
+			function removeDialog() {
 				$dialog.remove();
 				$overlay.remove();
 			}
-
-			api = {
-				show: showCTA,
-				close: removeCTA
-			};
 
 			// TODO: Click outside or ESC to close
 			function closeDialogByClick( evt ) {
@@ -291,23 +312,13 @@
 					action: 'redirect-invite-click'
 				} );
 
-				api.close();
+				removeDialog();
 			}
 
 			$overlay = $( '<div>' ).attr( 'class', 'mw-gettingstarted-cta-overlay' );
 
-			if ( kind === 'editablemain' ) {
-				dialogId = 'mw-gettingstarted-cta-editable-main-page';
-				buttonSpecs = editablePageButtons;
-				width = 35;
-			} else {
-				dialogId = 'mw-gettingstarted-cta-other-page';
-				buttonSpecs = taskOnlyPageButtons;
-				width = 30;
-			}
-
 			$dialog = $( '<div>' ).attr( {
-				id: dialogId,
+				id: spec.id,
 				'class': 'mw-gettingstarted-cta'
 			} );
 
@@ -344,8 +355,8 @@
 			// and vertical centering does not seem to quite work.
 			//
 			// Not vertically centered, but should look alright
-			for ( i = 0; i < buttonSpecs.length; i++ ) {
-				$dialog.append(	getButton( api, buttonSpecs[i] ) );
+			for ( i = 0; i < spec.buttons.length; i++ ) {
+				$dialog.append( createButton( removeDialog, spec.buttons[i] ) );
 			}
 
 			$leaveLink = $( '<a>' )
@@ -357,34 +368,31 @@
 				.click( closeDialogByClick );
 
 			$dialog.append( $leaveLink );
-			return api;
-		},
 
-		showCTA: function ( kind ) {
-			var cta = self.buildCTA( kind );
-			cta.show();
-
+			showDialog();
 			logging.logImpression( null, 'redirect-invite-impression' );
-			return  cta;
 		},
 
-		init: function() {
-			var pageKind = self.getPageKind();
+		init: function () {
+			var api = new mw.gettingStarted.Api(),
+				suggestedPagePromise = api.getSinglePage( {
+					taskName: TASK_TYPE,
+					excludedTitle: mw.config.get( 'wgPageName' )
+				} ),
+				pageKind = self.getPageKind();
 
 			// Seeing this page is a page impression, though the user hasn't
 			// chosen an adventure yet.
 			// XXX (spage, 2013-08-16) I really think we should log the pageKind
 			// here so the event clearly records what happened, but StevenW resists.
 			logging.logImpression( null, 'redirect-page-impression' );
-			self.handlePage( pageKind );
-
+			suggestedPagePromise.done( function ( title ) {
+				self.handlePage( pageKind, new mw.Title( title ) );
+			} ).fail( function () {
+				self.handlePage( pageKind, null );
+			} );
 		}
 	};
 
-
-
-	$( document ).ready( function () {
-		self.init();
-	} );
-
+	self.init();
 } )( jQuery, mediaWiki, mediaWiki.guidedTour );

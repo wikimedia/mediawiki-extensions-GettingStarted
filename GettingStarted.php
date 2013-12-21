@@ -122,6 +122,12 @@ $wgResourceModules[ $gettingStartedSchemaModuleName ] = array(
 	'revision' => GettingStarted\Hooks::SCHEMA_REV_ID,
 );
 
+$wgResourceModules[ 'schema.GettingStartedNavbarNoArticle' ] = array(
+	'class'    => 'ResourceLoaderSchemaModule',
+	'schema'   => 'GettingStartedNavbarNoArticle',
+	'revision' => 5483117
+);
+
 $wgResourceModules['ext.guidedTour.tour.gettingstartedtasktoolbarintro'] = array(
 	'scripts' => 'tours/gettingstartedtasktoolbarintro.js',
 	'dependencies' => 'ext.guidedTour',
@@ -292,9 +298,12 @@ $wgResourceModules[ 'ext.gettingstarted.return' ] = array(
 		'gettingstarted-cta-leave',
 	),
 	'dependencies' => array(
+		'ext.gettingstarted.api',
 		'ext.gettingstarted.logging',
+		'schema.GettingStartedNavbarNoArticle',
 		// Needed for isEditing() and tour launching.
 		'ext.guidedTour.lib',
+		'mediawiki.Title',
 		// Rest are only used by the Call To Action
 		'mediawiki.Uri',
 		'mediawiki.util',
