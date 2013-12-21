@@ -1420,7 +1420,7 @@ $messages['ja'] = array(
 $messages['ka'] = array(
 	'gettingstarted-welcomesiteuser' => 'მოგესალმებით $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'მუშაობის დაწყება',
-	'gettingstarted-return' => '← არა გმადლობთ, დამაბრუნეთ უკან სადაც ვიყავი', # Fuzzy
+	'gettingstarted-return' => '← არა გმადლობთ, დამაბრუნეთ იმ გვერდზე რომელსაც ვკითხულობდი',
 );
 
 /** Korean (한국어)
