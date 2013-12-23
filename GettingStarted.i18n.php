@@ -507,6 +507,13 @@ $3",
 	'gettingstarted-cta-leave' => 'Potser després',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'gettingstarted-task-addlinks-main-description' => 'ТӀетоха хьажорагаш',
+);
+
 /** Czech (čeština)
  * @author Mormegil
  * @author Vks
@@ -703,11 +710,11 @@ $messages['dsb'] = array(
 	'gettingstarted-welcomesiteuser' => 'Witaj do $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Prědne kšace',
 	'gettingstarted-welcome-back-site-user' => 'Witaj slědk, $2',
-	'gettingstarted-return' => 'Ně, źěkujom se, źi slědk', # Fuzzy
+	'gettingstarted-return' => 'Ně, źěkujom se, źi slědk k pśecytanemu bokoju',
 	'gettingstarted-project-link' => '{{ns:Project}}:Prědne kšace',
-	'tag-gettingstarted_edit' => '[[{{MediaWiki:gettingstarted-project-link}}|Prědne kšace]] nowego wobźěłarja', # Fuzzy
-	'gettingstarted-task-copyedit-main-description' => 'Gramatiku a pšawopis korigěrowaś', # Fuzzy
-	'gettingstarted-task-clarify-main-description' => 'Jasnosć pólěpšyś', # Fuzzy
+	'tag-gettingstarted_edit' => '[[{{MediaWiki:gettingstarted-project-link}}|Prědne kšace]] nowego wobźěłarja',
+	'gettingstarted-task-copyedit-main-description' => 'Pšawopis a gramatiku korigěrowaś',
+	'gettingstarted-task-clarify-main-description' => 'Jasnosć pólěpšyś',
 );
 
 /** Greek (Ελληνικά)
