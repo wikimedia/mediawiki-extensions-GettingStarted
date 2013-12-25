@@ -18,7 +18,7 @@ $messages['en'] = array(
 	'gettingstarted-welcome-back-site-user' => "Welcome back, $2",
 	'gettingstarted-task-header' => 'Thanks for joining {{SITENAME}}! Here are some ways you can get involved.
 
-Choose an option below, and you will see a random article that needs help.',
+Choose an option below, and you will see a random page that needs help.',
 	'gettingstarted-return' => "← No thanks, return to the page I was reading",
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	// Change tags
@@ -31,46 +31,46 @@ Choose an option below, and you will see a random article that needs help.',
 	'gettingstarted-task-clarify-main-description' => 'Improve Clarity',
 	'gettingstarted-task-clarify-secondary-description' => 'Simplify or reword sentences.',
 	'gettingstarted-task-addlinks-main-description' => 'Add Links',
-	'gettingstarted-task-addlinks-secondary-description' => 'Connect {{SITENAME}} articles together.',
+	'gettingstarted-task-addlinks-secondary-description' => 'Connect {{SITENAME}} pages together.',
 
-	// Toolbar above article, when they have chosen a task and been redirected
+	// Toolbar above page, when they have chosen a task and been redirected
 
 	/// Shared among all tasks
 	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Choose another task',
 	'gettingstarted-task-toolbar-return-to-list-title' => 'Return to the task choice page',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Show me how',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Show a guide on how to edit',
-	'gettingstarted-task-toolbar-try-another-text' => 'Try another article ►',
+	'gettingstarted-task-toolbar-try-another-text' => 'Try another page ►',
 	'gettingstarted-task-toolbar-close-title' => 'Close this toolbar',
 
 	/// Specific to each task
-	'gettingstarted-task-copyedit-toolbar-description' => 'This article may have spelling or grammar errors you can fix.',
-	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Go to a random article you can improve by copyediting',
+	'gettingstarted-task-copyedit-toolbar-description' => 'This page may have spelling or grammar errors you can fix.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Go to a random page you can improve by copyediting',
 
-	'gettingstarted-task-clarify-toolbar-description' => 'This article may be confusing or vague. Look for ways you can make it clearer.',
-	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Go to a random article you can clarify',
+	'gettingstarted-task-clarify-toolbar-description' => 'This page may be confusing or vague. Look for ways you can make it clearer.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Go to a random page you can clarify',
 
-	'gettingstarted-task-addlinks-toolbar-description' => 'This article may need more links. Look for terms that have a {{SITENAME}} article.',
-	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Go to a random article you can add links to',
+	'gettingstarted-task-addlinks-toolbar-description' => 'This page may need more links. Look for terms that have a {{SITENAME}} page.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Go to a random page you can add links to',
 
 	// Tours
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'How to get started',
-	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Just start scanning through the article looking for improvements. If you feel overwhelmed, don\'t worry. You don\'t have to be an expert on this topic! If you need help or want to try another article, use the links in the top bar.',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Just start scanning through the page looking for improvements. If you feel overwhelmed, do not worry. You do not have to be an expert on this topic! If you need help or want to try another page, use the links in the top bar.',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Ideas on what to do',
-	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'These banners identify problems with this article. You don\'t need to address them all, just stick with what you\'re comfortable doing.',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'These banners identify problems with this page. You do not need to address them all, just stick with what you are comfortable doing.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Click {{int:vector-view-edit}}',
-	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'You can edit the entire article by clicking here.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'You can edit the entire page by clicking here.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Edit a section',
 	// TODO (mattflaschen, 2013-04-25): Use <nowiki>[edit]</nowiki> after bug 45173 is fixed.
-	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'If you want to edit a specific section, you can click on the blue \'{{int:editsection}}\' link at the top of each section.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'If you want to edit a specific section, you can click on the blue "{{int:editsection}}" link at the top of each section.',
 
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'You can edit!',
-	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'You can now edit the page. When you\'re done, click \'{{int:visualeditor-toolbar-savedialog}}\' to review and save your changes.',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'You can now edit the page. When you are done, click "{{int:visualeditor-toolbar-savedialog}}" to review and save your changes.',
 
 	// General gettingstarted
 	'guidedtour-tour-gettingstarted-click-preview-title' => 'Preview (optional)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => 'Clicking "{{int:showpreview}}" allows you to check what the page will look like with your changes. Just don\'t forget to save.',
-	'guidedtour-tour-gettingstarted-click-save-title' => 'You\'re almost finished!',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Clicking "{{int:showpreview}}" allows you to check what the page will look like with your changes. Just do not forget to save.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'You are almost finished!',
 	'guidedtour-tour-gettingstarted-click-save-description' => 'Click "{{int:savearticle}}" and your changes will be visible.',
 
 	// Notifications
@@ -83,11 +83,11 @@ Visit $2 for a list of easy ways to improve pages.
 
 $3',
 	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Get started with {{SITENAME}} editing by visiting $2',
-	'notification-gettingstarted-continue-editing' => 'Nice work! You\'ve already made your first edits to {{SITENAME}}. If you\'re looking for more to do, here are some [[Special:GettingStarted|easy ways to help]].',
+	'notification-gettingstarted-continue-editing' => 'Nice work! You have already made your first edits to {{SITENAME}}. If you are looking for more to do, here are some [[Special:GettingStarted|easy ways to help]].',
 	'notification-gettingstarted-continue-editing-email-subject' => 'Easy ways to improve {{SITENAME}}',
-	'notification-gettingstarted-continue-editing-text-email-body' => 'Nice work! You\'ve already made your first edits to {{SITENAME}}.
+	'notification-gettingstarted-continue-editing-text-email-body' => 'Nice work! You have already made your first edits to {{SITENAME}}.
 
-If you\'re looking for more to do, there\'s a list of easy ways to help at $2
+If you are looking for more to do, there is a list of easy ways to help at $2
 
 $3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Looking for more to do? Visit $2 for a list of easy ways to help.',
@@ -96,9 +96,9 @@ $3',
 	'gettingstarted-cta-heading' => 'Help {{SITENAME}}',
 	'gettingstarted-cta-text' => 'You can contribute to {{SITENAME}} in different ways',
 	'gettingstarted-cta-edit-page' => 'Edit this page',
-	'gettingstarted-cta-edit-page-sub' => 'We\'ll show you how',
+	'gettingstarted-cta-edit-page-sub' => 'We will show you how',
 	'gettingstarted-cta-fix-pages' => 'Find pages that need easy fixes',
-	'gettingstarted-cta-fix-pages-sub' => 'We\'ll show you how to edit',
+	'gettingstarted-cta-fix-pages-sub' => 'We will show you how to edit',
 	'gettingstarted-cta-leave' => 'No thanks, maybe later',
 );
 
