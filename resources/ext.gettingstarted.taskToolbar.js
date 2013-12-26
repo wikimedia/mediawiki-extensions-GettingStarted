@@ -1,33 +1,35 @@
 ( function ( $, mw ) {
 	'use strict';
 
-	$( document ).ready( function () {
-		var $toolbar, $left, $center, $centerMessage, $right, $tryAnother, $close,
-		toolbarInfo, $relativeElements, $marginElements, logging,
-		cfg, $returnToList, returnToListUri, tryAnotherUri, $showGuide,
-		fullTask;
-
-		logging = mw.gettingStarted.logging;
-
+	var logging = mw.gettingStarted.logging,
 		cfg = mw.config.get( [
 			'wgGettingStarted', 'wgPageName', 'wgArticleId', 'wgRevisionId',
 			'wgPostEdit'
-		] );
+		] ),
+		api = new mw.gettingStarted.Api(),
+		toolbarInfo = cfg.wgGettingStarted.toolbar,
+		suggestedPagePromise = api.getSinglePage( {
+			taskName: toolbarInfo.taskName,
+			excludedTitle: cfg.wgPageName
+		} );
 
-		toolbarInfo = cfg.wgGettingStarted.toolbar;
+	/**
+	 * Builds and displays the toolbar
+	 *
+	 * @param {Object} toolbarInfo information for building the toolbar
+	 * @param {string} toolbarInfo.taskName name of task type, such as 'copyedit'
+	 * @param {string} toolbarInfo.description UI description of task type
+	 * @param {string} toolbarInfo.tryAnotherTitle title text of 'Try Another' link
+	 * @param {boolean} toolbarInfo.showIntro whether to show the intro tour
+	 * @param {mw.Title} suggestedTitle title of a suggested article (for 'Try Another')
+	 *   or null if none is available
+	 */
+	function displayToolbar( toolbarInfo, suggestedTitle ) {
+		var $toolbar, $center, $centerMessage, $right, $tryAnother, $close,
+		$relativeElements, $marginElements, tryAnotherUrl, $showGuide,
+		fullTask;
+
 		fullTask = 'gettingstarted-' + toolbarInfo.taskName;
-
-		returnToListUri = mw.util.wikiGetlink( 'Special:GettingStarted' );
-
-		$returnToList = $( '<a>' ).attr( {
-			href: returnToListUri.toString(),
-			title: mw.message( 'gettingstarted-task-toolbar-return-to-list-title' ).text()
-		} ).text( mw.message( 'gettingstarted-task-toolbar-return-to-list-text' ).text() )
-			.addClass( 'mw-gettingstarted-toolbar-link' );
-
-		$left = $( '<div>' ).attr( {
-			'class': 'mw-gettingstarted-toolbar-left'
-		} ).append( $returnToList );
 
 		$center = $( '<div>' ).attr( {
 			'class': 'mw-gettingstarted-toolbar-center'
@@ -57,18 +59,47 @@
 
 		$center.append( $centerMessage, $showGuide );
 
-
-		tryAnotherUri = new mw.Uri(
-			mw.util.wikiGetlink( 'Special:GettingStarted/task/' + toolbarInfo.taskName )
-		).extend( {
-			exclude: cfg.wgPageName
+		$right = $( '<div>' ).attr( {
+			'class': 'mw-gettingstarted-toolbar-right'
 		} );
 
+		if ( suggestedTitle !== null ) {
+			tryAnotherUrl = suggestedTitle.getUrl().toString();
+		} else {
+			tryAnotherUrl = '';
+		}
+
 		$tryAnother = $( '<a>' ).attr( {
-			href: tryAnotherUri.toString(),
+			href: tryAnotherUrl,
 			title: mw.message( toolbarInfo.tryAnotherTitle ).text()
 		} ).text( mw.message( 'gettingstarted-task-toolbar-try-another-text' ).text() )
+			.click( function ( evt ) {
+				var link = this;
+				if ( $( link ).attr( 'href' ) !== '' ) {
+					logging.setTask( suggestedTitle.getPrefixedText(), fullTask );
+					// Let browser navigate to URL as normal
+				} else {
+					// Preloading the suggested URL earlier failed; try loading
+					// it now
+					evt.preventDefault();
+					api.getSinglePage( {
+						taskName: toolbarInfo.taskName,
+						excludedTitle: cfg.wgPageName
+					} ).done( function ( suggestedPage ) {
+						suggestedTitle = new mw.Title( suggestedPage );
+
+						// For double-clicks or similar
+						link.href = suggestedTitle.getUrl().toString();
+						logging.setTask( suggestedTitle.getPrefixedText(), fullTask );
+						window.location = link.href;
+					} ).fail( function () {
+						mw.notify( mw.message( 'gettingstarted-task-toolbar-no-suggested-page' ).text() );
+					} );
+				}
+			} )
 			.addClass( 'mw-gettingstarted-toolbar-link' );
+
+		$right.append( $tryAnother );
 
 		$close = $( '<a>' ).attr( {
 			'class': 'mw-gettingstarted-toolbar-dismiss',
@@ -86,11 +117,9 @@
 			hideToolbar();
 		} );
 
-		$right = $( '<div>' ).attr( {
-			'class': 'mw-gettingstarted-toolbar-right'
-		} ).append( $tryAnother, $close );
+		$right.append( $close );
 
-		$toolbar= $( '<div>' ).attr( {
+		$toolbar = $( '<div>' ).attr( {
 			id: 'mw-gettingstarted-toolbar'
 		} );
 
@@ -99,7 +128,7 @@
 		}
 
 
-		$toolbar.append( $left, $center, $right ).hide();
+		$toolbar.append( $right, $center ).hide();
 
 		$( document.body ).prepend( $toolbar );
 
@@ -151,5 +180,13 @@
 
 		mw.hook( 've.activationComplete' ).add( hideToolbar );
 		mw.hook( 've.deactivationComplete' ).add( showToolbarInternal );
+	}
+
+	$( document ).ready( function () {
+		suggestedPagePromise.done( function ( title ) {
+			displayToolbar( toolbarInfo, new mw.Title( title ) );
+		} ).fail( function () {
+			displayToolbar( toolbarInfo, null );
+		} );
 	} );
 } ( jQuery, mediaWiki ) );
