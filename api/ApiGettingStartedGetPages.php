@@ -16,7 +16,7 @@ class ApiGettingStartedGetPages extends ApiBase {
 		$user = $this->getUser();
 
 		$taskName = $this->getParameter( 'taskname' );
-		$excludedTitle = Title::newFromText( $this->getParameter( 'excludedTitle' ) );
+		$excludedTitle = Title::newFromText( $this->getParameter( 'excludedtitle' ) );
 		$count = $this->getParameter( 'count' );
 
 		if ( !isset( $wgGettingStartedTasks[$taskName] ) ) {
@@ -99,7 +99,7 @@ class ApiGettingStartedGetPages extends ApiBase {
 	public function getParamDescription() {
 		return array(
 			'taskname' => 'Task name, for example, "copyedit"',
-			'excludedTitle' => 'Full title of a page to exclude from the list',
+			'excludedtitle' => 'Full title of a page to exclude from the list',
 			'count' => 'Requested count; will attempt to fetch this exact number, but may fetch fewer if no more are found after multiple attempts'
 		);
 	}
@@ -110,7 +110,7 @@ class ApiGettingStartedGetPages extends ApiBase {
 				ApiBase::PARAM_TYPE => 'string',
 				ApiBase::PARAM_REQUIRED => true,
 			),
-			'excludedTitle' => array(
+			'excludedtitle' => array(
 				ApiBase::PARAM_TYPE => 'string',
 				ApiBase::PARAM_REQUIRED => false,
 			),
@@ -123,7 +123,7 @@ class ApiGettingStartedGetPages extends ApiBase {
 
 	public function getExamples() {
 		return array(
-			'api.php?action=gettingstartedgetpages&taskname=copyedit&excludedTitle=Earth&count=1',
+			'api.php?action=gettingstartedgetpages&taskname=copyedit&excludedtitle=Earth&count=1',
 		);
 	}
 }
