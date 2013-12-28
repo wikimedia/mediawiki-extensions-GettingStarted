@@ -1940,7 +1940,7 @@ Kies een van de onderstaande mogelijkheden voor een willekeurige pagina die uw h
 	'gettingstarted-task-toolbar-try-another-text' => 'Andere pagina proberen ►',
 	'gettingstarted-task-toolbar-close-title' => 'Werkbalk sluiten',
 	'gettingstarted-task-copyedit-toolbar-description' => 'Deze pagina heeft mogelijk spel- of grammaticafouten die u kunt corrigeren.',
-	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Ga naar een willekeurige pagina die u kunt verbeteren door redactie uit te voere',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Ga naar een willekeurige pagina die u kunt verbeteren door redactie uit te voeren',
 	'gettingstarted-task-clarify-toolbar-description' => 'Deze pagina is mogelijk verwarrend of vaag. Probeer de tekst duidelijker te maken.',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Ga naar een willekeurig pagina die u kunt verduidelijken',
 	'gettingstarted-task-addlinks-toolbar-description' => 'Op deze pagina zijn mogelijk meer koppelingen nodig. Zoek naar termen die een pagina hebben op {{SITENAME}}.',
