@@ -243,6 +243,21 @@ The button text is {{msg-mw|Gettingstarted-cta-fix-pages}}.',
 	'gettingstarted-cta-leave' => 'Text to leave the Call To Action displayed on articles after creating an account',
 );
 
+/** Afrikaans (Afrikaans)
+ * @author Winstonza
+ */
+$messages['af'] = array(
+	'gettingstarted-task-toolbar-try-another-text' => "Gaan na nog 'n bladsy ►",
+	'gettingstarted-task-copyedit-toolbar-description' => 'Hierdie bladsy kan spel- of taalfoute bevat wat jy kan redigeer.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => "Gaan na 'n lukrake bladsy wat jy kan redigeer",
+	'gettingstarted-task-addlinks-toolbar-description' => "Hierdie bladsy benodig dalk nog skakels. Soek terme wat 'n {{SITENAME}}-bladsy het.",
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => "Gaan na 'n lukrake bladsy waarop jy skakels kan byvoeg",
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Jy kan die hele bladsy redigeer deur hier te klik.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Jy is amper klaar!',
+	'gettingstarted-cta-edit-page-sub' => 'Ons sal jou wys hoe',
+	'gettingstarted-cta-fix-pages-sub' => 'Ons sal jou wys hoe om te redigeer',
+);
+
 /** Arabic (العربية)
  * @author Ciphers
  */
