@@ -724,10 +724,11 @@ $3',
 
 /** Zazaki (Zazaki)
  * @author Gorizon
+ * @author Mirzali
  */
 $messages['diq'] = array(
 	'gettingstarted-cta-close' => 'Racın',
-	'gettingstarted-cta-heading' => '{{SITENAME}} Desteg',
+	'gettingstarted-cta-heading' => 'Peşti bıde {{SITENAME}}',
 );
 
 /** Lower Sorbian (dolnoserbski)
@@ -854,6 +855,7 @@ $messages['et'] = array(
  * @author Ebraminio
  * @author Mjbmr
  * @author Omidh
+ * @author Reza1615
  * @author Taha
  */
 $messages['fa'] = array(
@@ -863,7 +865,7 @@ $messages['fa'] = array(
 	'gettingstarted-welcome-back-site-user' => 'خوش بازگشتید، $2',
 	'gettingstarted-task-header' => 'با تشکر برای پیوستن به {{SITENAME}}!‌ اینجا برخی راه‌ها هست که می‌توانید درگیر شوید.
 
-یک گزینه در زیر را انتخاب کنید، و به صورت تصادفی مقاله‌ای را می‌بینید که نیاز به کمک دارد.',
+یک گزینه در زیر را انتخاب کنید، و به صورت تصادفی صفحه‌ای را می‌بینید که نیاز به کمک دارد.',
 	'gettingstarted-return' => 'نه متشکرم، من را برگردان',
 	'gettingstarted-project-link' => '{{ns:Project}}:شروع',
 	'tag-gettingstarted_edit' => 'ویرایشگر جدید [[{{MediaWiki:gettingstarted-project-link}}|شروع کنید]]',
@@ -872,16 +874,16 @@ $messages['fa'] = array(
 	'gettingstarted-task-clarify-main-description' => 'بهبود وضوح',
 	'gettingstarted-task-clarify-secondary-description' => 'ساده‌کردن یا تغییر کلمات جمله‌ها',
 	'gettingstarted-task-addlinks-main-description' => 'افزودن پیوند',
-	'gettingstarted-task-addlinks-secondary-description' => 'اتصال مقاله‌های {{SITENAME}} به یکدیگر',
+	'gettingstarted-task-addlinks-secondary-description' => 'اتصال صفحه‌های {{SITENAME}} به یکدیگر',
 	'gettingstarted-task-toolbar-return-to-list-text' => 'انتخاب یک کار دیگر ◄',
 	'gettingstarted-task-toolbar-return-to-list-title' => 'بازگشت به صفحه انتخاب کار',
 	'gettingstarted-task-toolbar-editing-help-text' => 'به‌ من نشان بده چگونه',
 	'gettingstarted-task-toolbar-editing-help-title' => 'نشان‌ دادن یک راهنما در مورد چگونگی ویرایش',
-	'gettingstarted-task-toolbar-try-another-text' => '► مقاله دیگری را امتحان کنید',
+	'gettingstarted-task-toolbar-try-another-text' => '► صفحه دیگری را امتحان کنید',
 	'gettingstarted-task-toolbar-close-title' => 'این نوار ابزار را ببندید',
-	'gettingstarted-task-copyedit-toolbar-description' => 'این مقاله ممکن است غلط‌های املایی یا دستور زبان داشته باشد که می‌توانید تصحیح کنید.',
-	'gettingstarted-task-clarify-toolbar-description' => 'این مقاله ممکن است گیج‌کننده یا مبهم باشد. دنبال راه‌هایی برای افزایش واضح‌تر کردن آن بگردید.',
-	'gettingstarted-task-clarify-toolbar-try-another-title' => 'برو به یک مقاله تصادفی برای افزایش وضوح',
+	'gettingstarted-task-copyedit-toolbar-description' => 'این صفحه ممکن است غلط‌های املایی یا دستور زبان داشته باشد که می‌توانید تصحیح کنید.',
+	'gettingstarted-task-clarify-toolbar-description' => 'این صفحه ممکن است گیج‌کننده یا مبهم باشد. دنبال راه‌هایی برای واضح‌تر کردن آن بگردید.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'برو به یک صفحه تصادفی برای افزایش وضوح',
 	'gettingstarted-cta-close' => 'بستن',
 	'gettingstarted-cta-heading' => 'کمک به {{SITENAME}}',
 	'gettingstarted-cta-text' => 'شما می‌توانید از راه‌های مختلف به {{SITENAME}} کمک کنید',
