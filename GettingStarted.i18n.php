@@ -765,12 +765,13 @@ $messages['en-gb'] = array(
 );
 
 /** Esperanto (Esperanto)
+ * @author KuboF
  * @author Yekrats
  */
 $messages['eo'] = array(
 	'gettingstarted' => 'Unuaj paŝoj',
 	'gettingstarted-welcomesiteuser' => 'Bonvenon al $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Bonvenon al $1!', # Fuzzy
+	'gettingstarted-welcomesiteuseranon' => 'Kiel komenci',
 );
 
 /** Spanish (español)
@@ -935,7 +936,7 @@ $messages['fi'] = array(
 	'gettingstarted-welcome-back-site-user' => 'Tervetuloa takaisin, $2',
 	'gettingstarted-task-header' => 'Kiitos, että liityit {{GRAMMAR:illative|{{SITENAME}}}}! Tässä muutamia tapoja päästä alkuun.
 
-Valitse vaihtoehto alta, niin näet satunnaisen artikkelin, joka tarvitsee huomiota.',
+Valitse vaihtoehto alta, niin näet satunnaisen sivun, joka tarvitsee huomiota.',
 	'gettingstarted-return' => 'Ei kiitos, vie minut takaisin sivulle, jota luin',
 	'gettingstarted-task-copyedit-main-description' => 'Korjaa kirjoitus- ja kielioppivirheitä',
 	'gettingstarted-task-copyedit-secondary-description' => 'Helpoin tapa päästä alkuun!',
@@ -945,13 +946,13 @@ Valitse vaihtoehto alta, niin näet satunnaisen artikkelin, joka tarvitsee huomi
 	'gettingstarted-task-toolbar-return-to-list-title' => 'Palaa takaisin listaan artikkeleista', # Fuzzy
 	'gettingstarted-task-toolbar-editing-help-text' => 'Näytä kuinka',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Näytä muokkausopas',
-	'gettingstarted-task-toolbar-try-another-text' => 'Kokeile toista artikkelia ►',
+	'gettingstarted-task-toolbar-try-another-text' => 'Kokeile toista sivua ►',
 	'gettingstarted-task-toolbar-close-title' => 'Sulje työkalurivi',
-	'gettingstarted-task-copyedit-toolbar-description' => 'Tässä artikkelissa voi olla kirjoitus- ja kielioppivirheitä, jotka voit korjata.',
-	'gettingstarted-task-clarify-toolbar-description' => 'Tämä artikkeli saattaa olla sekava tai epämääräinen. Keksi, miten voit tehdä siitä selkeämmän.',
-	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Mene satunnaiseen artikkeliin, jota voit selkeyttää',
-	'gettingstarted-task-addlinks-toolbar-description' => 'Tämä artikkeli tarvii lisää linkkejä. Etsi käsitteitä, joilla on {{SITENAME}}-artikkeli.', # Fuzzy
-	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Etsii satunnaisen artikkelin, johon voit lisätä linkkejä',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Tässä sivussa voi olla kirjoitus- ja kielioppivirheitä, jotka voit korjata.',
+	'gettingstarted-task-clarify-toolbar-description' => 'Tämä sivu saattaa olla sekava tai epämääräinen. Keksi, miten voit tehdä siitä selkeämmän.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Mene satunnaiseen sivuun, jota voit selkeyttää',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Tämä sivu saattaa tarvita lisää linkkejä. Etsi käsitteitä, joilla on {{SITENAME}}-sivu.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Etsii satunnaisen sivun, johon voit lisätä linkkejä',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Napsauta {{int:vector-view-edit}}',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Voit muokata artikkelia napsauttamalla tästä.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Muokkaa osiota',
@@ -2371,7 +2372,7 @@ $messages['ta'] = array(
 $messages['te'] = array(
 	'gettingstarted' => 'మొదలుపెట్టడం',
 	'gettingstarted-welcomesiteuser' => '$1కి స్వాగతం, $2!',
-	'gettingstarted-welcomesiteuseranon' => '$1కి స్వాగతం!', # Fuzzy
+	'gettingstarted-welcomesiteuseranon' => 'మొదలుపెట్టడం',
 	'gettingstarted-return' => 'వద్దు, నన్ను వెనక్కు తీసుకువెళ్ళు', # Fuzzy
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'మీరు  మార్పులు చేయవచ్చు!',
 );
