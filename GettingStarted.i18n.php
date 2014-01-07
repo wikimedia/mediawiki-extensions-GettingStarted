@@ -855,6 +855,7 @@ $messages['et'] = array(
 /** Persian (فارسی)
  * @author Armin1392
  * @author Ebraminio
+ * @author Mcuteangel
  * @author Mjbmr
  * @author Omidh
  * @author Reza1615
@@ -906,7 +907,7 @@ $messages['fa'] = array(
 	'guidedtour-tour-gettingstarted-click-save-description' => '"{{int:savearticle}}" را کلیک کنید و تغییرات شما قابل‌ مشاهده خواهد بود.',
 	'notification-gettingstarted-link-text-get-started' => 'شروع شدن',
 	'notification-gettingstarted-start-editing' => '{{SITENAME}} یک دانشنامهٔ آزاد نوشته شده توسط مردمی چون شما است.
-با ایجاد اولین ویرایش شما [[Special:شروع می‌شود|شروع شده]]!', # Fuzzy
+با ایجاد اولین ویرایش شما [[Special:GettingStarted|شروع شده]]!',
 	'notification-gettingstarted-start-editing-email-subject' => 'شروع با ویرایش {{SITENAME}}',
 	'notification-gettingstarted-start-editing-text-email-batch-body' => 'شروع با ویرایش {{SITENAME}} توسط بازدید $2',
 	'notification-gettingstarted-continue-editing-email-subject' => 'راه‌های آسان برای اصلاح {{SITENAME}}',
@@ -2175,6 +2176,7 @@ $messages['roa-tara'] = array(
 
 /** Russian (русский)
  * @author DCamer
+ * @author Ignatus
  * @author Iluvatar
  * @author Lvova
  * @author Okras
@@ -2186,8 +2188,9 @@ $messages['ru'] = array(
 	'gettingstarted-welcomesiteuser' => 'Добро пожаловать в $1, $2!',
 	'gettingstarted-welcomesiteuseranon' => 'Начало работы',
 	'gettingstarted-welcome-back-site-user' => 'Приятного начала работы, $2',
-	'gettingstarted-task-header' => 'Спасибо за то, что присоединились к {{SITENAME}}! Вот несколько способов быстро включиться в работу.
-Выберите внизу соответствующий вариант, и вы увидите случайные статьи, которые нуждаются в вашей помощи.',
+	'gettingstarted-task-header' => 'Спасибо за то, что присоединились к {{grammar:genitive|{{SITENAME}}}}! Вот некоторые дела, в которых Вы можете поучаствовать.
+
+Выберите внизу соответствующий вариант, и увидите случайные статьи, в которых нужна помощь.',
 	'gettingstarted-return' => 'Нет, спасибо, верните на страницу, которую я читал',
 	'gettingstarted-project-link' => '{{ns:Project}}:Начало работы',
 	'tag-gettingstarted_edit' => 'Новый редактор [[{{MediaWiki:gettingstarted-project-link}}|приступил к работе]]',
@@ -2197,23 +2200,23 @@ $messages['ru'] = array(
 	'gettingstarted-task-clarify-main-description' => 'Повысить точность',
 	'gettingstarted-task-clarify-secondary-description' => 'Упростите или измените формулировки предложений.',
 	'gettingstarted-task-addlinks-main-description' => 'Добавить ссылки',
-	'gettingstarted-task-addlinks-secondary-description' => 'Соединение статей {{SITENAME}}.',
+	'gettingstarted-task-addlinks-secondary-description' => 'Связывание статей {{grammar:genitive|{{SITENAME}}}}.',
 	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Выбрать другую задачу',
 	'gettingstarted-task-toolbar-return-to-list-title' => 'Вернуться к странице выбора задачи',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Показать мне, как',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Показать руководство по редактированию',
-	'gettingstarted-task-toolbar-try-another-text' => 'Попробовать в другой статье ►',
+	'gettingstarted-task-toolbar-try-another-text' => 'Заглянуть на другую страницу ►',
 	'gettingstarted-task-toolbar-close-title' => 'Закрыть эту панель',
-	'gettingstarted-task-copyedit-toolbar-description' => 'Эта статья может содержать орфографические и грамматические ошибки, которые Вы могли бы исправить.',
-	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Перейти к случайной статье, которую вы можете улучшить',
-	'gettingstarted-task-clarify-toolbar-description' => 'Эта статья может быть слишком запутанной или неопределённой. Найдите способ сделать её более понятной.',
-	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Перейти к случайной статье, точность стиля изложения которой вы можете повысить',
-	'gettingstarted-task-addlinks-toolbar-description' => 'Эта статья, возможно, нуждается в большем количестве ссылок. Найдите термины, статьи о которых есть в {{SITENAME}}.',
-	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Перейти к случайной статье, в которой вы можете добавить ссылки',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Эта страница может содержать орфографические и грамматические ошибки, которые Вы могли бы исправить.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Перейти к случайной странице, которую вы можете улучшить',
+	'gettingstarted-task-clarify-toolbar-description' => 'Эта страница может сбивать с толку или быть неопределённой. Поищите способ сделать её яснее.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Перейти к случайной странице, которую Вы могли бы уточнить',
+	'gettingstarted-task-addlinks-toolbar-description' => 'На этой странице, возможно, должно быть больше ссылок. Поищите термины, для которых существуют страницы {{grammar:genitive|{{SITENAME}}}}.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Перейти к случайной странице, на которой вы можете добавить ссылки',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Как начать работу',
-	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Просто читайте статью и ищите способ её улучшить. Если вы чувствуете себя некомфортно, не волнуйтесь. Вам вовсе не нужно быть экспертом в этой теме. Если же вам нужна помощь или вы хотите попробовать в другой статье, используйте ссылки на верхней панели.',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Просто просматривайте страницу и ищите, где её можно улучшить. Если Вы почувствуете, что не справляетесь, не переживайте. Вам вовсе не нужно быть экспертом в этой теме! Если же Вам нужна помощь, или Вы хотите попробовать другую страницу, воспользуйтесь ссылками на верхней панели.',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Идеи о том, что делать',
-	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Эти баннеры перечисляют проблемы статьи. Вам не нужно решать их все, просто сделайте то, что вам по силам.',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Эти сообщения сообщают о проблемах страницы. Вам не нужно разбираться со всеми ими, просто займитесь тем, что Вам сподручнее делать.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Нажмите {{int:vector-view-edit}}',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Вы можете приступить к редактированию всей статьи целиком, нажав здесь.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Редактировать раздел',
