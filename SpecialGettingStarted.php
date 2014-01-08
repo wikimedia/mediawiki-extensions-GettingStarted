@@ -43,7 +43,7 @@ class SpecialGettingStarted extends SpecialPage {
 			array(
 				'action' => 'gettingstartedgetpages',
 				'taskname' => $taskName,
-				'excludedTitle' => $this->getRequest()->getVal( 'exclude' ),
+				'excludedtitle' => $this->getRequest()->getVal( 'exclude' ),
 				'count' => 1,
 			),
 			false // GET request
