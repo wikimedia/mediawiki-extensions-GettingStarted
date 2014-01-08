@@ -5,7 +5,7 @@ namespace GettingStarted;
 use FormatJson, Title, WebRequest, OutputPage, User;
 
 /**
- * Hooks for GettingStarted extension (for stuff beyond being a special page)
+ * Hooks for GettingStarted extension
  *
  * @file
  * @ingroup Extensions
@@ -59,7 +59,6 @@ class Hooks {
 		efLogServerSideEvent( self::SCHEMA_NAME, self::SCHEMA_REV_ID, $event );
 	}
 
-	// Must keep in sync with ext.gettingstarted.logging.js's isInTestGroup
 	protected static function isInTestGroup( User $user ) {
 		global $wgGettingStartedRunTest;
 
@@ -167,7 +166,6 @@ class Hooks {
 	 *
 	 * It will load if it's a view of an existing page, and the user's browser
 	 * has a gettingstarted-* task.
-	 * (In OB6 this doesn't vary with test vs. control.)
 	 *
 	 * @param OutputPage $out
 	 * @param User $user
@@ -200,11 +198,6 @@ class Hooks {
 	 * one or two buttons.
 	 */
 	protected static function addReturnToModules( &$out, &$skin ) {
-		// OB6: 4 kinds of pages to test, different outcomes for each.
-		// put up popup
-		// load messages
-		// which invites to offer in popup
-		// lots of logging
 		$out->addModuleStyles( 'mediawiki.ui' );
 
 		$out->addModules( 'ext.gettingstarted.return' );
@@ -379,51 +372,6 @@ class Hooks {
 		return true;
 	}
 
-	public static function onBeforeCreateEchoEvent( &$notifications, &$categories, &$icons ) {
-		// Currently not used, but most notifications seem to include agent as a param.
-		// It will allow username to be included later with just a message change.
-
-		$icons['gettingstarted-contribute'] = array(
-			'path' => 'GettingStarted/resources/images/echo-gettingstarted-icon.png',
-		);
-
-		$defaults = array(
-			'primary-link' => array( 'message' => 'notification-gettingstarted-link-text-get-started', 'destination' => 'title' ),
-			'category' => 'system',
-			'group' => 'neutral',
-			'title-params' => array( 'agent' ),
-			'email-subject-params' => array( 'agent' ),
-			'email-body-params' => array( 'agent', 'titlelink', 'email-footer' ),
-			'email-body-batch-params' => array( 'agent', 'titlelink' ),
-			'icon' => 'gettingstarted-contribute',
-		);
-
-		$notifications['gettingstarted-start-editing'] = array(
-			'title-message' => 'notification-gettingstarted-start-editing',
-			'email-subject-message' => 'notification-gettingstarted-start-editing-email-subject',
-			'email-body-message' => 'notification-gettingstarted-start-editing-text-email-body',
-			'email-body-batch-message' => 'notification-gettingstarted-start-editing-text-email-batch-body',
-		) + $defaults;
-
-		$notifications['gettingstarted-continue-editing'] = array(
-			'title-message' => 'notification-gettingstarted-continue-editing',
-			'email-subject-message' => 'notification-gettingstarted-continue-editing-email-subject',
-			'email-body-message' => 'notification-gettingstarted-continue-editing-text-email-body',
-			'email-body-batch-message' => 'notification-gettingstarted-continue-editing-text-email-batch-body',
-		) + $defaults;
-
-		return true;
-	}
-
-	public static function onEchoGetDefaultNotifiedUsers( $event, &$users ) {
-		$type = $event->getType();
-		if ( $type === 'gettingstarted-start-editing' || $type === 'gettingstarted-continue-editing' ) {
-			$users[$event->getAgent()->getId()] = $event->getAgent();
-		}
-
-		return true;
-	}
-
 	/**
 	 * Checks if they have edited the main namespace
 	 *
@@ -471,29 +419,6 @@ class Hooks {
 		return $secondsSinceSignup < $wgGettingStartedRecentPeriodInSeconds;
 	}
 
-	public static function onConfirmEmailComplete( User $user ) {
-		global $wgGettingStartedRunTest;
-
-		// Notifications are disabled entirely if the A/B test is in progress.
-		if ( class_exists( 'EchoEvent' ) && !$wgGettingStartedRunTest ) {
-			// The goal is to only do this notification once per-user.
-			// Absent a clean way to do that, this notifies them if they signed up with a given time duration.
-			if ( self::isRecentSignup( $user ) ) {
-				$type = self::hasEditedMainNamespace( $user ) ? 'gettingstarted-continue-editing' : 'gettingstarted-start-editing';
-				\EchoEvent::create( array(
-					'type' => $type,
-					'title' => \SpecialPage::getTitleFor( 'GettingStarted' ),
-					'agent' => $user,
-					'extra' => array(
-						'notifyAgent' => true,
-					),
-				) );
-			}
-		}
-
-		return true;
-	}
-
 	public static function onGetPreferences( User $user, array &$preferences ) {
 		// Show tour and fade in navbar and help button
 		$preferences[self::INTRO_OPTION] = array(
@@ -529,41 +454,11 @@ class Hooks {
 			if ( array_key_exists( 'showGettingStarted', $qsParams )
 				&& $qsParams['showGettingStarted'] === 'false'
 			) {
-			return true;
+				return true;
 			}
 		}
 
-
-		if ( self::isInTestGroup( $wgUser ) ) {
-			// OB6: if user is in test group, allow CentralAuth/SUL2 redirect
-			// to the page they were on; append something to returnToQuery so
-			// GettingStarted::onBeforePageDisplay will take action.
-			$returnToQuery = $returnToQuery . '&gettingStartedReturn=true';
-			return true;
-		} else {
-
-			// Send user to GettingStarted
-
-			$newQueryParams = array();
-
-			// Tell GettingStarted we arrived from creation
-			$newQueryParams['postCreateAccount'] = 'true';
-
-			// Provide GettingStarted the originating page so it can display a
-			// [← No thanks, return to the page I was reading] link, by
-			// turning the passed-in parameters back into query string parameters.
-			if ( $returnTo !== '' && $returnTo !== null ) {
-				$newQueryParams['returnto'] =  $returnTo;
-			}
-			if ( $returnToQuery ) {
-				$newQueryParams['returntoquery'] =  $returnToQuery;
-			}
-
-			// Redirect to Special:GettingStarted
-			$returnTo = \SpecialPage::getTitleFor( 'GettingStarted' )->getPrefixedText();
-			$returnToQuery = wfArrayToCgi( $newQueryParams );
-
-			return true;
-		}
+		$returnToQuery = $returnToQuery . '&gettingStartedReturn=true';
+		return true;
 	}
 }

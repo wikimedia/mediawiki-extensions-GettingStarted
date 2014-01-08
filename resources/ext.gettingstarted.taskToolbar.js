@@ -123,11 +123,6 @@
 			id: 'mw-gettingstarted-toolbar'
 		} );
 
-		if ( cfg.wgGettingStarted.bucket === 'test' ) {
-			$toolbar.attr( 'class', 'mw-gettingstarted-bucket-test' );
-		}
-
-
 		$toolbar.append( $right, $center ).hide();
 
 		$( document.body ).prepend( $toolbar );

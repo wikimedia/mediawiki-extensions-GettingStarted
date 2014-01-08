@@ -1,7 +1,7 @@
 <?php
 if ( !defined( 'MEDIAWIKI' ) ) die( 'Invalid entry point.' );
 
-$wgExtensionCredits[ 'specialpage' ][] = array(
+$wgExtensionCredits[ 'api' ][] = array(
 	'path' => __FILE__,
 	'name' => 'GettingStarted',
 	'author' => array(
@@ -26,8 +26,6 @@ $wgExtensionCredits[ 'specialpage' ][] = array(
  * @var array Associative array of arrays.  The key is an internal non-displayed name, such as 'copyedit'
  *
  *  Each value array has:
- *  'mainDescription' - message key for main description on Special:GettingStarted
- *  'secondaryDescription' - message key for secondary description on Special:GettingStarted
  *  'toolbarDescription' - message key for primary description on toolbar
  *  'toolbarTryAnotherTitle' - message key for title text of 'Try Another' link
  *  'category' Category articles are from, e.g. 'All_articles_needing_copy_edit'
@@ -35,24 +33,18 @@ $wgExtensionCredits[ 'specialpage' ][] = array(
  */
 $wgGettingStartedTasks = array(
 	'copyedit' => array(
-		'mainDescription' => 'gettingstarted-task-copyedit-main-description',
-		'secondaryDescription' => 'gettingstarted-task-copyedit-secondary-description',
 		'toolbarDescription' => 'gettingstarted-task-copyedit-toolbar-description',
 		'toolbarTryAnotherTitle' => 'gettingstarted-task-copyedit-toolbar-try-another-title',
 		'category' => 'All_articles_needing_copy_edit',
 		'image' => 'Icon-pencil.png'
 	),
 	'clarify' => array(
-		'mainDescription' => 'gettingstarted-task-clarify-main-description',
-		'secondaryDescription' => 'gettingstarted-task-clarify-secondary-description',
 		'toolbarDescription' => 'gettingstarted-task-clarify-toolbar-description',
 		'toolbarTryAnotherTitle' => 'gettingstarted-task-clarify-toolbar-try-another-title',
 		'category' => 'All_Wikipedia_articles_needing_clarification',
 		'image' => 'Icon-wrench.png'
 	),
 	'addlinks' => array(
-		'mainDescription' => 'gettingstarted-task-addlinks-main-description',
-		'secondaryDescription' => 'gettingstarted-task-addlinks-secondary-description',
 		'toolbarDescription' => 'gettingstarted-task-addlinks-toolbar-description',
 		'toolbarTryAnotherTitle' => 'gettingstarted-task-addlinks-toolbar-try-another-title',
 		'category' => 'All_articles_with_too_few_wikilinks',
@@ -90,7 +82,6 @@ $wgGettingStartedRedisOptions = array(
 $wgGettingStartedRunTest = false;
 
 $wgAutoloadClasses += array(
-	'GettingStarted\SpecialGettingStarted' => __DIR__ . '/SpecialGettingStarted.php',
 	'GettingStarted\Hooks' => __DIR__ . '/Hooks.php',
 	'GettingStarted\RedisCategorySync' => __DIR__ . '/RedisCategorySync.php',
 	'GettingStarted\PageFilter' => __DIR__ . '/PageFilter.php',
@@ -98,11 +89,6 @@ $wgAutoloadClasses += array(
 );
 
 $wgExtensionMessagesFiles[ 'GettingStarted' ] = __DIR__ . '/GettingStarted.i18n.php';
-$wgExtensionMessagesFiles[ 'GettingStartedAlias' ] = __DIR__ . '/GettingStarted.alias.php';
-
-// Special pages
-$wgSpecialPages[ 'GettingStarted' ] = 'GettingStarted\SpecialGettingStarted';
-$wgSpecialPageGroups[ 'GettingStarted' ] = 'users';
 
 // APIs
 $wgAPIModules['gettingstartedgetpages'] = 'GettingStarted\ApiGettingStartedGetPages';
@@ -213,11 +199,6 @@ $wgResourceModules[ 'ext.gettingstarted.openTask' ] = array(
 	),
 ) + $gettingStartedModuleInfo;
 
-// This loads on both account creation and the special page, even if JS is off
-$wgResourceModules[ 'ext.gettingstarted.styles' ] = array(
-	'styles' => 'ext.gettingstarted.css',
-) + $gettingStartedModuleInfo;
-
 // Added if this page is one of their GettingStarted tasks
 $wgResourceModules[ 'ext.gettingstarted.taskToolbar' ] = array(
 	'scripts' => 'ext.gettingstarted.taskToolbar.js',
@@ -258,34 +239,12 @@ $wgResourceModules[ 'ext.gettingstarted.taskToolbar' ] = array(
 	),
 ) + $gettingStartedModuleInfo;
 
-// This runs on both account creation and the user simply visiting the special page
-$wgResourceModules[ 'ext.gettingstarted' ] = array(
-	'scripts' => 'ext.gettingstarted.js',
-	'dependencies' => array(
-		'ext.gettingstarted.logging',
-	),
-) + $gettingStartedModuleInfo;
-
-// This runs on account creation for the behavior of
-// showing the user Special:GettingStarted as the welcome new user page.
-// (As of OB6 that is the default (control) behavior.
-$wgResourceModules[ 'ext.gettingstarted.showSeparatePage.accountCreation' ] = array(
-	'scripts' => 'ext.gettingstarted.showSeparatePage.accountCreation.js',
-	'dependencies' => array(
-		'mediawiki.util',
-		'ext.gettingstarted',
-		'ext.gettingstarted.logging',
-	),
-	'position' => 'top',
-) + $gettingStartedModuleInfo;
-
 // This runs on account creation for the OB6 test behavior (returnTo page with
 // special behavior), possibly displaying a Call To Action.
 $wgResourceModules[ 'ext.gettingstarted.return' ] = array(
 	'scripts' => 'ext.gettingstarted.return.js',
 	'styles' => 'ext.gettingstarted.return.css',
 	'messages' => array(
-		'gettingstarted-welcomesiteuser', // XXX (mattflaschen, 2012-12-12): This is a workaround until we move this into core, at which point it can be done server-side.
 		'gettingstarted-cta-close',
 		'gettingstarted-cta-heading',
 		'gettingstarted-cta-text',
@@ -309,15 +268,6 @@ $wgResourceModules[ 'ext.gettingstarted.return' ] = array(
 	'position' => 'top',
 ) + $gettingStartedModuleInfo;
 
-$wgResourceModules[ 'ext.gettingstarted.specialPage' ] = array(
-	'scripts' => 'ext.gettingstarted.specialPage.js',
-	'dependencies' => array(
-		'mediawiki.util',
-		'ext.gettingstarted.logging',
-		'ext.gettingstarted',
-	),
-) + $gettingStartedModuleInfo;
-
 $wgDefaultUserOptions[ GettingStarted\Hooks::INTRO_OPTION ] = true;
 
 $wgHooks[ 'BeforePageDisplay' ][] = 'GettingStarted\Hooks::onBeforePageDisplay';
@@ -328,9 +278,6 @@ $wgHooks[ 'CategoryAfterPageRemoved' ][] = 'GettingStarted\RedisCategorySync::on
 $wgHooks[ 'ListDefinedTags' ][] = 'GettingStarted\Hooks::onListDefinedTags';
 $wgHooks[ 'ResourceLoaderGetConfigVars' ][] = 'GettingStarted\Hooks::onResourceLoaderGetConfigVars';
 $wgHooks[ 'MakeGlobalVariablesScript' ][] = 'GettingStarted\Hooks::onMakeGlobalVariablesScript';
-$wgHooks[ 'BeforeCreateEchoEvent' ][] = 'GettingStarted\Hooks::onBeforeCreateEchoEvent';
-$wgHooks[ 'EchoGetDefaultNotifiedUsers' ][] = 'GettingStarted\Hooks::onEchoGetDefaultNotifiedUsers';
-$wgHooks[ 'ConfirmEmailComplete' ][] = 'GettingStarted\Hooks::onConfirmEmailComplete';
 $wgHooks[ 'GetPreferences' ][] = 'GettingStarted\Hooks::onGetPreferences';
 // Extension:CentralAuth's hook
 $wgHooks[ 'CentralAuthPostLoginRedirect' ][] = 'GettingStarted\Hooks::onCentralAuthPostLoginRedirect';
