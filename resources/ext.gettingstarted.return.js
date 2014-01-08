@@ -157,7 +157,7 @@
 		// We should probably take into account diffs, etc. and other query strings.
 		/**
 		 * Whether page is a regular view of an editable main namespace article
-		 * If it's not main namespace or has a query string, say no.
+		 * If it's not main namespace or has an unusual query string, say no.
 		 *
 		 * @private
 		 *
@@ -172,6 +172,8 @@
 			// If other params are used, it's no longer considered a standard view.
 			ALLOWED_PARAMS = [
 				'title',
+				'uselang',
+				'useskin',
 				'gettingStartedReturn',
 				'postCreateAccount',
 				'debug'
@@ -185,7 +187,7 @@
 				for ( i = 0; i < ALLOWED_PARAMS.length; i++) {
 					delete currentUri.query[ALLOWED_PARAMS[i]];
 				}
-				// Any remaing parameters are not allowed
+				// Any remaining parameters are not allowed
 				for ( key in currentUri.query ) {
 					return false;
 				}
