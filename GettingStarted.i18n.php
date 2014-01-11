@@ -778,6 +778,7 @@ $messages['eo'] = array(
  * @author Almupg
  * @author Armando-Martin
  * @author Benfutbol10
+ * @author Ciencia Al Poder
  * @author Fitoschido
  * @author McDutchie
  * @author QuimGil
@@ -787,40 +788,45 @@ $messages['es'] = array(
 	'gettingstarted-desc' => 'Agrega una [[Special:GettingStarted|página de bienvenida]] a los nuevos usuarios (se muestra después de la creación de la cuenta)',
 	'gettingstarted-welcomesiteuser' => 'Hola $2 ¡{{GENDER:$2|Bienvenido|Bienvenida}} a $1!',
 	'gettingstarted-welcomesiteuseranon' => 'Primeros pasos',
-	'gettingstarted-welcome-back-site-user' => '{{GENDER:$1|Bienvenido|Bienvenida}} de nuevo, $2', # Fuzzy
+	'gettingstarted-welcome-back-site-user' => '{{GENDER:$2|Bienvenido|Bienvenida}} de nuevo, $2',
 	'gettingstarted-task-header' => '¡Gracias por unirte a {{SITENAME}}! He aquí algunas maneras en que puedes involucrarte.
 
-Elige una opción a continuación y verás un artículo aleatorio que necesita de tu ayuda.',
+Elige una opción a continuación y verás una página aleatoria que necesita de tu ayuda.',
 	'gettingstarted-return' => '← No, gracias; volver a la página que estaba leyendo',
 	'gettingstarted-project-link' => '{{ns:Project}}:PrimerosPasos',
-	'gettingstarted-task-copyedit-main-description' => 'Corregir ortografía y gramática', # Fuzzy
+	'gettingstarted-task-copyedit-main-description' => 'Corregir ortografía y gramática',
 	'gettingstarted-task-copyedit-secondary-description' => '¡La forma más fácil de comenzar!',
 	'gettingstarted-task-clarify-main-description' => 'Mejorar la claridad',
 	'gettingstarted-task-clarify-secondary-description' => 'Simplificar o reescribir oraciones.',
 	'gettingstarted-task-addlinks-main-description' => 'Añadir enlaces',
 	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Elegir otra tarea',
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Volver a la lista de artículos', # Fuzzy
+	'gettingstarted-task-toolbar-return-to-list-title' => 'Volver a la página de selección de tareas',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Mostrarme cómo',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Mostrar una guía de edición',
-	'gettingstarted-task-toolbar-try-another-text' => 'Probar otro artículo ►',
+	'gettingstarted-task-toolbar-try-another-text' => 'Probar otra página ►',
 	'gettingstarted-task-toolbar-close-title' => 'Cerrar esta barra de herramientas',
-	'gettingstarted-task-copyedit-toolbar-description' => 'Este artículo tiene errores ortográficos y gramaticales que puedes corregir.', # Fuzzy
-	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Ir a un artículo aleatorio cuyo estilo puedes mejorar',
-	'gettingstarted-task-clarify-toolbar-description' => 'Este artículo es confuso o ambiguo. Busca maneras de hacerlo más claro.', # Fuzzy
-	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Ir a un artículo aleatorio que puedes clarificar',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Esta página puede tener errores ortográficos y gramaticales que puedes corregir.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Ir a una página aleatoria cuyo estilo puedes mejorar',
+	'gettingstarted-task-clarify-toolbar-description' => 'Esta página es confusa o ambigua. Busca maneras de hacerla más clara.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Ir a una página aleatoria que puedes clarificar',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Pulsa en {{int:vector-view-edit}}',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Editar una sección',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => '¡Puedes editar!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Ahora puedes editar la página. Cuando estés listo, haz clic en "{{int:visualeditor-toolbar-savedialog}}" para revisar y guardar tus cambios.',
 	'guidedtour-tour-gettingstarted-click-preview-title' => 'Previsualización (opcional)',
 	'guidedtour-tour-gettingstarted-click-preview-description' => "Clicando en '{{int:showpreview}}' puede comprobar cómo se verá la página con sus cambios. No se olvide de guardar.",
 	'guidedtour-tour-gettingstarted-click-save-title' => '¡Ya casi ha terminado!',
 	'guidedtour-tour-gettingstarted-click-save-description' => "Haga clic en '{{int:savearticle}}' y sus cambios serán visibles.",
 	'notification-gettingstarted-link-text-get-started' => 'Primeros pasos',
-	'notification-gettingstarted-start-editing' => '{{SITENAME}} es una enciclopedia libre que está realizada por personas como tú. [[Especial:Cómo empezar|Empieza haciendo tu primera contribución]]', # Fuzzy
+	'notification-gettingstarted-start-editing' => '{{SITENAME}} es una enciclopedia libre que está realizada por personas como tú. ¡[[Special:GettingStarted|Empieza]] haciendo tu primera contribución!',
 	'notification-gettingstarted-start-editing-email-subject' => 'Empieza a editar {{SITENAME}}',
-	'notification-gettingstarted-start-editing-text-email-body' => 'Visita $2 para obtener una lista de maneras fáciles de mejorar páginas.', # Fuzzy
+	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} es una enciclopedia libre que está realizada por personas como tú. ¡Empieza haciendo tu primera contribución!
+
+Visita $2 para obtener una lista de maneras fáciles de mejorar páginas.
+
+$3',
 	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Visita $2 y empieza a editar {{SITENAME}}',
-	'notification-gettingstarted-continue-editing' => '¡Buen trabajo! Has realizado tu primeras ediciones en {{SITENAME}}. Si quieres hacer alguna otra tarea, aquí hay algunas [[Special:Primeros pasos|formas de colaboración fáciles]].', # Fuzzy
+	'notification-gettingstarted-continue-editing' => '¡Buen trabajo! Has realizado tus primeras ediciones en {{SITENAME}}. Si quieres hacer alguna otra tarea, aquí hay algunas [[Special:GettingStarted|formas de colaboración fáciles]].',
 	'notification-gettingstarted-continue-editing-email-subject' => 'Maneras fáciles de mejorar {{SITENAME}}',
 	'notification-gettingstarted-continue-editing-text-email-body' => '¡Buen trabajo! Has realizado tus primeras ediciones de  {{SITENAME}}.
 
