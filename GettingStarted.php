@@ -120,15 +120,6 @@ $wgResourceModules[ 'schema.GettingStartedRedirectImpression' ] = array(
 	'revision' => 7257235,
 );
 
-$wgResourceModules['ext.guidedTour.tour.gettingstartedtasktoolbarintro'] = array(
-	'scripts' => 'tours/gettingstartedtasktoolbarintro.js',
-	'dependencies' => 'ext.guidedTour',
-	'messages' => array(
-		'guidedtour-tour-gettingstartedtasktoolbarintro-title',
-		'guidedtour-tour-gettingstartedtasktoolbarintro-description',
-	),
-) + $gettingStartedModuleInfo;
-
 $wgResourceModules['ext.guidedTour.tour.gettingstartedtasktoolbar'] = array(
 	'scripts' => 'tours/gettingstartedtasktoolbar.js',
 	'dependencies' => array(
@@ -140,6 +131,8 @@ $wgResourceModules['ext.guidedTour.tour.gettingstartedtasktoolbar'] = array(
 		'savearticle',
 		'showpreview',
 		'vector-view-edit',
+		'guidedtour-tour-gettingstartedtasktoolbarintro-title',
+		'guidedtour-tour-gettingstartedtasktoolbarintro-description',
 		'guidedtour-tour-gettingstartedtasktoolbar-ambox-title',
 		'guidedtour-tour-gettingstartedtasktoolbar-ambox-description',
 		'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title',
@@ -163,6 +156,8 @@ $wgResourceModules['ext.guidedTour.tour.gettingstartedtasktoolbarve'] = array(
 		'editsection',
 		'vector-view-edit',
 		'visualeditor-toolbar-savedialog',
+		'guidedtour-tour-gettingstartedtasktoolbarintro-title',
+		'guidedtour-tour-gettingstartedtasktoolbarintro-description',
 		'guidedtour-tour-gettingstartedtasktoolbar-ambox-title',
 		'guidedtour-tour-gettingstartedtasktoolbar-ambox-description',
 		'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title',
@@ -226,7 +221,6 @@ $wgResourceModules[ 'ext.gettingstarted.taskToolbar' ] = array(
 		'mediawiki.Title',
 		'mediawiki.libs.guiders',
 		'ext.guidedTour.lib',
-		'ext.guidedTour.tour.gettingstartedtasktoolbarintro',
 		'ext.gettingstarted.api',
 		'ext.gettingstarted.logging',
 	),
