@@ -20,9 +20,7 @@
 		api.close();
 		logging.setTaskForCurrentPage( funnel );
 
-		// TODO (mattflaschen, 2013-08-22): Check if VE is available (see taskToolbar), then
-		// fork between firstedit and firsteditve.
-		if ( mw.libs.ve && mw.libs.ve.isAvailable ) {
+		if ( $( '#ca-ve-edit' ).length > 0 ) {
 			tourName = 'firsteditve';
 		} else {
 			tourName = 'firstedit';

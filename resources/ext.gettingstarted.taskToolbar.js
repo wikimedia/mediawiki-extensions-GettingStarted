@@ -44,7 +44,7 @@
 			.click( function ( evt ) {
 				var tourName;
 
-				if ( mw.libs.ve && mw.libs.ve.isAvailable ) {
+				if ( $( '#ca-ve-edit' ).length > 0 ) {
 					tourName = 'gettingstartedtasktoolbarve';
 				} else {
 					tourName = 'gettingstartedtasktoolbar';
