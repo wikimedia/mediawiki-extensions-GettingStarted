@@ -1516,7 +1516,7 @@ $messages['ko'] = array(
 	'gettingstarted-welcome-back-site-user' => '$2님, 다시 오신 것을 환영합니다',
 	'gettingstarted-task-header' => '{{SITENAME}}에 가입해주셔서 감사합니다! 여기에 참여할 수 있는 몇 가지 방법이 있습니다.
 
-아래에 옵션을 선택하고 나서 도움을 필요로 하는 임의 문서를 볼 수 있습니다.', # Fuzzy
+아래의 옵션을 선택하고 나서 도움이 필요한 임의 문서를 볼 수 있습니다.',
 	'gettingstarted-return' => '← 괜찮습니다, 읽던 문서로 돌아갑니다',
 	'gettingstarted-project-link' => '{{ns:Project}}:시작하기',
 	'tag-gettingstarted_edit' => '새 편집자 [[{{MediaWiki:gettingstarted-project-link}}|시작하기]]',
@@ -1533,16 +1533,16 @@ $messages['ko'] = array(
 	'gettingstarted-task-toolbar-editing-help-title' => '편집하는 방법에 대한 가이드 보기',
 	'gettingstarted-task-toolbar-try-another-text' => '다른 페이지를 시도 ►',
 	'gettingstarted-task-toolbar-close-title' => '이 툴바 닫기',
-	'gettingstarted-task-copyedit-toolbar-description' => '이 문서는 고칠 수 있는 맞춤법이나 문법 오류가 있을 수 있습니다.', # Fuzzy
-	'gettingstarted-task-copyedit-toolbar-try-another-title' => '교정에 의해 향상할 수 있는 임의 문서로 갑니다', # Fuzzy
-	'gettingstarted-task-clarify-toolbar-description' => '이 문서는 혼동스럽거나 막연할 수 있습니다. 명확하게 할 수 있는 방법을 찾아보세요.', # Fuzzy
-	'gettingstarted-task-clarify-toolbar-try-another-title' => '명확하게 할 수 있는 임의 문서로 갑니다', # Fuzzy
-	'gettingstarted-task-addlinks-toolbar-description' => '이 문서에는 더 많은 링크가 필요할 수 있습니다. {{SITENAME}} 문서로 용어를 찾아보세요.', # Fuzzy
-	'gettingstarted-task-addlinks-toolbar-try-another-title' => '링크를 추가할 수 있는 임의 문서로 갑니다', # Fuzzy
+	'gettingstarted-task-copyedit-toolbar-description' => '이 문서는 고칠 수 있는 맞춤법이나 문법 오류가 있을 수 있습니다.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => '교정에 의해 향상할 수 있는 임의 문서로 갑니다',
+	'gettingstarted-task-clarify-toolbar-description' => '이 문서는 혼동스럽거나 막연할 수 있습니다. 명확하게 할 수 있는 방법을 찾아보세요.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => '명확하게 할 수 있는 임의 문서로 갑니다',
+	'gettingstarted-task-addlinks-toolbar-description' => '이 문서에는 더 많은 링크가 필요할 수 있습니다. {{SITENAME}} 문서로 용어를 찾아보세요.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => '링크를 추가할 수 있는 임의 문서로 갑니다',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => '시작하는 방법',
-	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => '문서를 검사하고 개선에 대해 찾기를 시작하세요. 압도당한다고 느껴지면 걱정하지 마세요. 이 주제에 대해 전문가가 될 필요가 없습니다! 도움이 필요하거나 다른 문서를 시도하려면 위 줄의 링크를 사용하세요.', # Fuzzy
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => '문서를 검사하고 개선할 점을 찾기를 시작하세요. 어렵다고 느껴져도 걱정하지 마세요. 이 주제에 대해 전문가가 될 필요가 없습니다! 도움이 필요하거나 다른 문서를 시도하려면 위 줄의 링크를 사용하세요.',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => '무엇을 해야할 지에 대한 아이디어',
-	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => '이러한 배너는 이 문서로 문제를 식별합니다. 그들 모두를 해결할 필요가 없고, 익숙하게 하고 있는 것에 충실하세요.', # Fuzzy
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => '이 배너들은 이 문서로 문제를 식별합니다. 그들 모두를 해결할 필요가 없고, 익숙하게 한 것들에 충실하세요.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => '{{int:vector-view-edit}} 클릭',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => '여기를 클릭해 전체 문서를 편집할 수 있습니다.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => '문단 편집',
@@ -1575,6 +1575,7 @@ $3',
 	'gettingstarted-cta-text' => '당신은 {{SITENAME}}에 다양한 방법으로 기여할 수 있습니다.',
 	'gettingstarted-cta-edit-page' => '이 문서 편집',
 	'gettingstarted-cta-edit-page-sub' => '어떻게 하는지 보여드리겠습니다',
+	'gettingstarted-cta-fix-pages' => '쉽게 고칠 수 있는 문서 찾기',
 	'gettingstarted-cta-fix-pages-sub' => '어떻게 편집하는지 보여드리겠습니다',
 	'gettingstarted-cta-leave' => '괜찮습니다. 나중에요.',
 );
