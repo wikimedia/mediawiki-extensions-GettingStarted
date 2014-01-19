@@ -190,6 +190,15 @@ $wgResourceModules[ 'ext.gettingstarted.logging' ] = array(
 	)
 ) + $gettingStartedModuleInfo;
 
+// Subclasses of mediawiki.api
+$wgResourceModules[ 'ext.gettingstarted.api' ] = array(
+	'scripts' => 'ext.gettingstarted.api.js',
+	'dependencies' => array(
+		'mediawiki.api',
+		'mediawiki.Title',
+	),
+) + $gettingStartedModuleInfo;
+
 $wgResourceModules[ 'ext.gettingstarted.openTask' ] = array(
 	'scripts' => 'ext.gettingstarted.openTask.js',
 	'dependencies' => array(
