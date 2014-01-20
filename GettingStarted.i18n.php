@@ -919,10 +919,11 @@ $messages['fa'] = array(
 برای فهرست راه‌های آسان برای بهبود صفحات $2 را مشاهده کنید.
 $3',
 	'notification-gettingstarted-start-editing-text-email-batch-body' => 'شروع با ویرایش {{SITENAME}} توسط بازدید $2',
-	'notification-gettingstarted-continue-editing' => 'خیلی خوب است! شما در حال حاضر اولین ویرایش‌های خود را برای {{SITENAME}} ایجاد کرده‌اید. اگر به به دنبال ویرایش کردن بیشتر هستید، اینجا برخی  [[ویژه:شروع شده|راه‌های آسان برای کمک]].', # Fuzzy
+	'notification-gettingstarted-continue-editing' => 'خیلی خوب است! شما در حال حاضر اولین ویرایش‌های خود را برای {{SITENAME}} ایجاد کرده‌اید. اگر به به دنبال ویرایش کردن بیشتر هستید، اینجا برخی  [[Special:شروع شده|راه‌های آسان برای کمک]].', # Fuzzy
 	'notification-gettingstarted-continue-editing-email-subject' => 'راه‌های آسان برای اصلاح {{SITENAME}}',
 	'notification-gettingstarted-continue-editing-text-email-body' => 'خیلی خوب است! شما در حال حاضر اولین ویرایش‌های خود را برای  {{SITENAME}} انجام داده‌اید.
-اگر به به دنبال ویرایش کردن بیشتر هستید،‌ فهرست راه‌های آسان برای کمک در $2 است.', # Fuzzy
+اگر به به دنبال ویرایش کردن بیشتر هستید،‌ فهرست راه‌های آسان برای کمک در $2 است.
+$3',
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'به دنبال انجام دادن بیشتر هستید؟ از $2 برای فهرستی از راه‌های آسان برای کمک دیدن کنید.',
 	'gettingstarted-cta-close' => 'بستن',
 	'gettingstarted-cta-heading' => 'کمک به {{SITENAME}}',
