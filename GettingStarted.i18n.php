@@ -440,8 +440,15 @@ $messages['bn'] = array(
 $messages['br'] = array(
 	'gettingstarted' => 'Kregiñ ganti',
 	'gettingstarted-welcomesiteuser' => 'Degemer mat en $1, $2 !',
+	'gettingstarted-welcome-back-site-user' => "Deuet-mat oc'h en-dro, $2",
+	'gettingstarted-task-addlinks-main-description' => 'Ouzhpennañ Liammoù',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Diskouez din penaos ober',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Penaos kregiñ ganti',
+	'guidedtour-tour-gettingstarted-click-save-title' => "Tost echu eo ganeoc'h !",
 	'gettingstarted-cta-close' => 'Serriñ',
+	'gettingstarted-cta-heading' => 'Skoazell {{SITENAME}}',
 	'gettingstarted-cta-edit-page' => 'Degas kemmoù war ar bajenn-mañ',
+	'gettingstarted-cta-edit-page-sub' => "Diskouez a raimp deoc'h penaos ober",
 	'gettingstarted-cta-leave' => "Ket, diwezhatoc'h marteze",
 );
 
