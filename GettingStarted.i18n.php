@@ -452,6 +452,7 @@ $messages['br'] = array(
 	'gettingstarted-task-toolbar-editing-help-text' => 'Diskouez din penaos ober',
 	'gettingstarted-task-toolbar-try-another-text' => 'Esaeañ ur bajenn all ►',
 	'gettingstarted-task-toolbar-close-title' => 'Serriñ ar varrenn ostilhoù-mañ',
+	'gettingstarted-task-addlinks-toolbar-description' => "Maretze he deus ezhoùù ar bajenn-mañ eus muioc'h a liammoù. Klaskit tremenoù hag o deus ur bajenn {{SITENAME}}.",
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Penaos kregiñ ganti',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Soñjoù diwar-benn petra ober',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Klikit war {{int:vector-view-edit}}',
@@ -949,7 +950,7 @@ $messages['fa'] = array(
 برای فهرست راه‌های آسان برای بهبود صفحات $2 را مشاهده کنید.
 $3',
 	'notification-gettingstarted-start-editing-text-email-batch-body' => 'شروع با ویرایش {{SITENAME}} توسط بازدید $2',
-	'notification-gettingstarted-continue-editing' => 'خیلی خوب است! شما در حال حاضر اولین ویرایش‌های خود را برای {{SITENAME}} ایجاد کرده‌اید. اگر به به دنبال ویرایش کردن بیشتر هستید، اینجا برخی  [[Special:شروع شده|راه‌های آسان برای کمک]].', # Fuzzy
+	'notification-gettingstarted-continue-editing' => 'خیلی‌خوب است! شما در حال حاضر اولین ویرایش‌های خود را برای {{SITENAME}} ایجاد کرده‌اید. اگر به به دنبال ویرایش کردن بیشتر هستید، اینجا برخی  [[Special:شروع شده|راه‌های آسان برای کمک]].', # Fuzzy
 	'notification-gettingstarted-continue-editing-email-subject' => 'راه‌های آسان برای اصلاح {{SITENAME}}',
 	'notification-gettingstarted-continue-editing-text-email-body' => 'خیلی خوب است! شما در حال حاضر اولین ویرایش‌های خود را برای  {{SITENAME}} انجام داده‌اید.
 اگر به به دنبال ویرایش کردن بیشتر هستید،‌ فهرست راه‌های آسان برای کمک در $2 است.
