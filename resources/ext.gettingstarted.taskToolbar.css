@@ -18,6 +18,7 @@
 	-webkit-box-sizing: border-box;
 	font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
 	position: fixed;
+	overflow: hidden;
 	z-index: 100000006; /* I'm looking at you, Guiders */
 	top: 0;
 	width: 100%;
@@ -45,28 +46,17 @@
 	
 }
 
-/* left region... displays "back" link */
-.mw-gettingstarted-toolbar-left {
-	display: inline-block;
-	width: 19%;
-	padding-left: 10px;
-}
-
-.mw-gettingstarted-bucket-test .mw-gettingstarted-toolbar-left {
-	visibility: hidden;
-}
-
 /* center region */
 .mw-gettingstarted-toolbar-center {
-	display: inline-block;
-	width: 60%;
+	width: 50%;
+	margin: 0 auto;
 	text-align: center;
 }
 
 /* right region... displays X, and "Try another article" link */
 .mw-gettingstarted-toolbar-right {
-	display: inline-block;
 	width: 19%;
+	float: right;
 }
 
 /* help button that displays guiders */

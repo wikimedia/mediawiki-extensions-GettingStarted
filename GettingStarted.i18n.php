@@ -36,12 +36,11 @@ Choose an option below, and you will see a random page that needs help.',
 	// Toolbar above page, when they have chosen a task and been redirected
 
 	/// Shared among all tasks
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Choose another task',
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Return to the task choice page',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Show me how',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Show a guide on how to edit',
 	'gettingstarted-task-toolbar-try-another-text' => 'Try another page ►',
 	'gettingstarted-task-toolbar-close-title' => 'Close this toolbar',
+	'gettingstarted-task-toolbar-no-suggested-page' => 'Sorry. We could not find more pages to be improved at the moment. Try again in a moment or search for your own topics of interest.',
 
 	/// Specific to each task
 	'gettingstarted-task-copyedit-toolbar-description' => 'This page may have spelling or grammar errors you can fix.',
@@ -173,6 +172,7 @@ The tooltip for the link is any one of the following:
 	'gettingstarted-task-toolbar-close-title' => 'Tooltip for toolbar close button.
 
 The label for the button is "×".',
+	'gettingstarted-task-toolbar-no-suggested-page' => 'Used when an API call fails to retrieve another suggested page for the user to work on',
 	'gettingstarted-task-copyedit-toolbar-description' => 'Main text shown on toolbar, explaining the copy-editing task',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Used as tooltip for the link to try another article for the copy-editing task.
 
