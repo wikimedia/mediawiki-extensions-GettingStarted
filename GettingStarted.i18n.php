@@ -77,32 +77,6 @@ $messages['qqq'] = array(
 	'gettingstarted' => '{{doc-special|GettingStarted}}
 {{Identical|Getting started}}',
 	'gettingstarted-desc' => '{{desc|name=Getting Started|url=http://www.mediawiki.org/wiki/Extension:GettingStarted}}',
-	'gettingstarted-msg' => 'Blank message used to replace welcomecreation-msg.  Additional dynamically generated task HTML is injected',
-	'gettingstarted-welcomesiteuser' => 'The title of the Getting Started page shown automatically to users after they create an account.
-
-Parameters:
-* $1 - sitename
-* $2 - username; GENDER is supported',
-	'gettingstarted-welcomesiteuseranon' => 'The title of the Getting Started page for anonymous users who manually visit it.
-
-Parameters:
-* $1 - (Unused) sitename
-See also:
-* {{msg-mw|Gettingstarted-welcome-back-site-user}}
-{{Identical|Getting started}}',
-	'gettingstarted-welcome-back-site-user' => 'The title of the Getting Started page for logged in users who manually visit it.
-
-These may or may not have seen it when they created their account, depending on account age.
-
-Only $2 is currently used in the default message, but the order is the same as {{msg-mw|gettingstarted-welcomesiteuser}} for consistency.
-
-Parameters:
-* $1 - (Unused) sitename
-* $2 - username; GENDER is supported
-See also:
-* {{msg-mw|Gettingstarted-welcomesiteuseranon}}',
-	'gettingstarted-task-header' => 'Header above task information',
-	'gettingstarted-return' => 'Text of navigation button for returning to previous page',
 	'gettingstarted-project-link' => 'Name of page that describes how GettingStarted is used on the wiki.
 
 Used in {{msg-mw|Tag-gettingstarted edit}}.',
@@ -113,18 +87,6 @@ Refers to {{msg-mw|Gettingstarted-project-link}}.
 See also:
 * {{msg-mw|tag-gettingstarted_edit-description}}',
 	'tag-gettingstarted_edit-description' => 'Description of tag that appears e.g. in [[Special:Tags]]',
-	'gettingstarted-task-copyedit-main-description' => 'Main description for copy-editing task; shown on Special:GettingStarted',
-	'gettingstarted-task-copyedit-secondary-description' => 'Secondary description for copy-editing task; shown on Special:GettingStarted',
-	'gettingstarted-task-clarify-main-description' => 'Main description for clarification task; shown on Special:GettingStarted',
-	'gettingstarted-task-clarify-secondary-description' => 'Secondary description for clarification task; shown on Special:GettingStarted',
-	'gettingstarted-task-addlinks-main-description' => 'Main description for link-adding task; shown on Special:GettingStarted',
-	'gettingstarted-task-addlinks-secondary-description' => 'Secondary description for link-adding task; shown on Special:GettingStarted',
-	'gettingstarted-task-toolbar-return-to-list-text' => 'Used as label for the link in [[Special:GettingStarted]].
-
-The tooltip for the link is {{msg-mw|Gettingstarted-task-toolbar-return-to-list-title}}.',
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Used as tooltip for the link in [[Special:GettingStarted]].
-
-The label for the link is {{msg-mw|Gettingstarted-task-toolbar-return-to-list-text}}.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Used as label for the Help button.
 
 The tooltip for the button is {{msg-mw|Gettingstarted-task-toolbar-editing-help-title}}.',
@@ -171,30 +133,6 @@ Refers to the {{msg-mw|Visualeditor-toolbar-savedialog}} button.',
 	'guidedtour-tour-gettingstarted-click-preview-description' => 'Description of step showing user where to click {{msg-mw|showpreview}}',
 	'guidedtour-tour-gettingstarted-click-save-title' => 'Title of step showing user where to click {{msg-mw|savearticle}}',
 	'guidedtour-tour-gettingstarted-click-save-description' => 'Description of step showing user where to click {{msg-mw|savearticle}}',
-	'notification-gettingstarted-link-text-get-started' => 'Label for button that links to the page to get started for editing.
-{{Identical|Get started}}',
-	'notification-gettingstarted-start-editing' => 'Text shown on web when someone confirms their email but has not yet edited the main namespace:
-* $1 - username (unused); GENDER is supported',
-	'notification-gettingstarted-start-editing-email-subject' => 'Subject of email sent when someone confirms their email but has not yet edited the main namespace:
-* $1 - username (unused); GENDER is supported',
-	'notification-gettingstarted-start-editing-text-email-body' => 'Body of text email sent when someone confirms their email but has not yet edited the main namespace:
-* $1 - username (unused); GENDER is supported
-* $2 - URL of Special:GettingStarted
-* $3 - email footer',
-	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Body of batch version of text email sent when someone confirms their email but has not yet edited the main namespace:
-* $1 - username (unused); GENDER is supported
-* $2 - URL of Special:GettingStarted',
-	'notification-gettingstarted-continue-editing' => 'Text shown on web when someone confirms their email, and has already edited the main namespace:
-* $1 - username (unused); GENDER is supported',
-	'notification-gettingstarted-continue-editing-email-subject' => 'Subject of email sent when someone confirms their email, and has already edited the main namespace:
-* $1 - username (unused); GENDER is supported',
-	'notification-gettingstarted-continue-editing-text-email-body' => 'Body of text email sent when someone confirms their email, and has already edited the main namespace:
-* $1 - username (unused); GENDER is supported
-* $2 - URL of Special:GettingStarted
-* $3 - email footer',
-	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Body of batch version of text email sent when someone confirms their email, and has already edited the main namespace:
-* $1 - username (unused); GENDER is supported
-* $2 - URL of Special:GettingStarted',
 	'gettingstarted-cta-close' => 'Title and aria label text for text close button on Call To Action modal.
 {{Identical|Close}}',
 	'gettingstarted-cta-heading' => 'Heading on Call To Action displayed on articles after creating an account',
@@ -407,16 +345,8 @@ $messages['bn'] = array(
  */
 $messages['br'] = array(
 	'gettingstarted' => 'Kregiñ ganti',
-	'gettingstarted-welcomesiteuser' => 'Degemer mat en $1, $2 !',
-	'gettingstarted-welcomesiteuseranon' => 'Kregiñ ganti',
-	'gettingstarted-welcome-back-site-user' => "Deuet-mat oc'h en-dro, $2",
 	'gettingstarted-project-link' => '{{ns:Project}} : Kregiñ ganti', # Fuzzy
 	'tag-gettingstarted_edit' => 'aozer nevez [[{{MediaWiki:gettingstarted-project-link}}|kregiñ ganti]]',
-	'gettingstarted-task-copyedit-secondary-description' => 'An doare aesañ da gregiñ ganti !',
-	'gettingstarted-task-clarify-main-description' => 'Gwellaat ar sklaerded',
-	'gettingstarted-task-addlinks-main-description' => 'Ouzhpennañ Liammoù',
-	'gettingstarted-task-addlinks-secondary-description' => 'Liammañ pajennoù {{SITENAME}} kenetrezo.',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Dibab un trevell all',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Diskouez din penaos ober',
 	'gettingstarted-task-toolbar-try-another-text' => 'Esaeañ ur bajenn all ►',
 	'gettingstarted-task-toolbar-close-title' => 'Serriñ ar varrenn ostilhoù-mañ',
@@ -430,10 +360,6 @@ $messages['br'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Bremañ e c\'hallit aozañ ar bajenn. P\'ho po fin, klikit war "{{int:visualeditor-toolbar-savedialog}}" evit adwelet hag enrollañ ho kemmoù.',
 	'guidedtour-tour-gettingstarted-click-preview-title' => 'Rakwel (diret)',
 	'guidedtour-tour-gettingstarted-click-save-title' => "Tost echu eo ganeoc'h !",
-	'notification-gettingstarted-link-text-get-started' => 'Kregiñ ganti',
-	'notification-gettingstarted-start-editing-email-subject' => 'Krogit da aozañ {{SITENAME}}',
-	'notification-gettingstarted-continue-editing-email-subject' => 'Doareoù aes da wellaat {{SITENAME}}',
-	'notification-gettingstarted-continue-editing-text-email-batch-body' => "O klask traoù all d'ober ? Gweladennit $2 evit kaout ul listenn eus doareoù aes da sikour.",
 	'gettingstarted-cta-close' => 'Serriñ',
 	'gettingstarted-cta-heading' => 'Skoazell {{SITENAME}}',
 	'gettingstarted-cta-text' => 'Gallout a rit kemer perzh e {{SITENAME}} e meur a zoare',
@@ -651,29 +577,15 @@ $3',
  */
 $messages['de'] = array(
 	'gettingstarted' => 'Erste Schritte',
-	'gettingstarted-desc' => 'Ergänzt eine [[Special:GettingStarted|Willkommensseite]] für neue Benutzer, die nach deren Registrierung angezeigt wird',
-	'gettingstarted-welcomesiteuser' => 'Willkommen bei $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Erste Schritte',
-	'gettingstarted-welcome-back-site-user' => 'Willkommen zurück, $2',
-	'gettingstarted-task-header' => 'Danke für deine Registrierung auf {{SITENAME}}! Hier sind einige Wege für dich.
-
-Wähle unten eine Option aus und du wirst sehen, dass eine zufällige Seite Hilfe benötigt.',
-	'gettingstarted-return' => '← Nein danke, zurück zur gelesenen Seite.',
+	'gettingstarted-desc' => 'Hilft neuen Benutzern, Autoren zu werden.',
 	'gettingstarted-project-link' => '{{ns:Project}}:Erste Schritte',
 	'tag-gettingstarted_edit' => '[[{{MediaWiki:gettingstarted-project-link}}|Erste Schritte]] eines neuen Autors',
-	'tag-gettingstarted_edit-description' => 'Bearbeitung einer Seite, die der Benutzer aus der Aufgabenliste der Spezialseite „[[Special:GettingStarted|Anfangen]]“ ausgewählt hat',
-	'gettingstarted-task-copyedit-main-description' => 'Rechtschreibung und Grammatik korrigieren',
-	'gettingstarted-task-copyedit-secondary-description' => 'Der einfachste Weg, um anzufangen!',
-	'gettingstarted-task-clarify-main-description' => 'Klarheit verbessern',
-	'gettingstarted-task-clarify-secondary-description' => 'Sätze vereinfachen oder umformulieren',
-	'gettingstarted-task-addlinks-main-description' => 'Links hinzufügen',
-	'gettingstarted-task-addlinks-secondary-description' => '{{SITENAME}}-Seiten miteinander verbinden.',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Eine andere Aufgabe auswählen',
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Zurück zur Aufgabenauswahlseite',
+	'tag-gettingstarted_edit-description' => 'Bearbeitung durchgeführt mit dem System „[[{{MediaWiki:gettingstarted-project-link}}|Anfangen]]“, das Bearbeitern einfache Aufgaben vorschlägt und ihnen zeigt, wie man sie abschließt.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Zeig mir, wie',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Einen Guide zum Bearbeiten anzeigen',
 	'gettingstarted-task-toolbar-try-another-text' => 'Eine andere Seite versuchen ►',
 	'gettingstarted-task-toolbar-close-title' => 'Diese Werkzeugleiste schließen',
+	'gettingstarted-task-toolbar-no-suggested-page' => 'Leider können derzeit keine weiteren Seiten zur Verbesserung vorgeschlagen werden. Versuche es gleich erneut oder suche nach deinen eigenen interessanten Themen.',
 	'gettingstarted-task-copyedit-toolbar-description' => 'Diese Seite könnte Rechtschreibe- oder Grammatikfehler haben, die du korrigieren kannst.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Gehe zu einer zufälligen Seite, die du durch redigieren verbessern kannst.',
 	'gettingstarted-task-clarify-toolbar-description' => 'Diese Seite könnte verwirrend oder unklar sein. Suche nach Wegen, um sie klarer zu machen.',
@@ -694,23 +606,6 @@ Wähle unten eine Option aus und du wirst sehen, dass eine zufällige Seite Hilf
 	'guidedtour-tour-gettingstarted-click-preview-description' => 'Klicke auf „{{int:showpreview}}“, um zu sehen, wie die Seite mit deinen Änderungen aussieht. Vergiss nicht zu speichern.',
 	'guidedtour-tour-gettingstarted-click-save-title' => 'Du bist fast fertig!',
 	'guidedtour-tour-gettingstarted-click-save-description' => 'Klicke auf „{{int:savearticle}}“ und deine Änderungen werden sichtbar.',
-	'notification-gettingstarted-link-text-get-started' => 'Erste Schritte',
-	'notification-gettingstarted-start-editing' => '{{SITENAME}} ist eine freie Enzyklopädie, verfasst von Leuten wie dir. [[Special:GettingStarted|Fang an]], indem du deine erste Bearbeitung machst!',
-	'notification-gettingstarted-start-editing-email-subject' => 'Fang an, {{SITENAME}} zu bearbeiten',
-	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} ist eine freie Enzyklopädie, verfasst von Leuten wie dir. Fang an, indem du deine erste Bearbeitung machst!
-
-Besuche $2 für eine Liste mit einfachen Wegen, um Seiten zu verbessern.
-
-$3',
-	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Fang an, {{SITENAME}} zu bearbeiten, indem du $2 besuchst.',
-	'notification-gettingstarted-continue-editing' => 'Gute Arbeit! Du hast bereits deine ersten Bearbeitungen auf {{SITENAME}} gemacht. Falls du nach mehr suchst, hier sind einige [[Special:GettingStarted|einfache Wege zum helfen]].',
-	'notification-gettingstarted-continue-editing-email-subject' => 'Einfache Wege, um {{SITENAME}} zu verbessern',
-	'notification-gettingstarted-continue-editing-text-email-body' => 'Gute Arbeit! Du hast bereits deine ersten Bearbeitungen auf {{SITENAME}} gemacht.
-
-Falls du nach mehr suchst, gibt es auf $2 eine Liste mit einfachen Wegen, um zu helfen.
-
-$3',
-	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Suchst du nach mehr? Besuche $2 für eine Liste mit einfachen Wegen, wie man helfen kann.',
 	'gettingstarted-cta-close' => 'Schließen',
 	'gettingstarted-cta-heading' => 'Hilf {{SITENAME}}',
 	'gettingstarted-cta-text' => 'Du kannst auf verschiedene Wege zur Verbesserung von {{SITENAME}} beitragen',
@@ -1742,29 +1637,15 @@ $messages['min'] = array(
  */
 $messages['mk'] = array(
 	'gettingstarted' => 'Како да почнете',
-	'gettingstarted-desc' => 'Става [[Special:GettingStarted|страница за добре дојде]] за новите корисници (се прикажува откако ќе ја направат сметката)',
-	'gettingstarted-welcomesiteuser' => 'Добре дојдовте на $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Како да почнете',
-	'gettingstarted-welcome-back-site-user' => 'Добре дојдвте повторно, $2',
-	'gettingstarted-task-header' => 'Ви благодариме што се зачленивте на {{SITENAME}}! Еве некои совети како да почнете.
-
-Одберете една од можностите подолу и ќе ви се појави случајна страница на која ѝ треба помош.',
-	'gettingstarted-return' => '← Не, благодарам. Врати ме на страницата што си ја читав',
+	'gettingstarted-desc' => 'Помогнете им на новодојдените да станат уредници',
 	'gettingstarted-project-link' => '{{ns:Project}}:ПрвиЧекори',
 	'tag-gettingstarted_edit' => 'нов уредник [[{{MediaWiki:gettingstarted-project-link}}|почнува со работа]]',
-	'tag-gettingstarted_edit-description' => 'Уредување на страница што корисникот ја одбрал од списокот на задачи на [[Special:GettingStarted|Први чекори]]',
-	'gettingstarted-task-copyedit-main-description' => 'Исправка на граматика и правопис',
-	'gettingstarted-task-copyedit-secondary-description' => 'Најлесен начин да почнете!',
-	'gettingstarted-task-clarify-main-description' => 'Направете го текстот појасен',
-	'gettingstarted-task-clarify-secondary-description' => 'Упростете ги речениците или срочете ги поинаку',
-	'gettingstarted-task-addlinks-main-description' => 'Додај врски',
-	'gettingstarted-task-addlinks-secondary-description' => 'Поврзете ги страниците на {{SITENAME}}.',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Изберете друга задача',
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Назад кон изборот на задачи',
+	'tag-gettingstarted_edit-description' => 'Уредување преку системот [[{{MediaWiki:gettingstarted-project-link}}|GettingStarted]], кој предлага лесни задачи за уредниците и им покажува како да ги извршат.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Покажи ми како',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Прикажи водич за уредување',
 	'gettingstarted-task-toolbar-try-another-text' => 'Пробајте друга страница ►',
 	'gettingstarted-task-toolbar-close-title' => 'Затвори го алатников',
+	'gettingstarted-task-toolbar-no-suggested-page' => 'Нажалост, не можев да најдам уште страни за подобрување. Обидете се малку подоцна или пребарајте теми што ве интересираат.',
 	'gettingstarted-task-copyedit-toolbar-description' => 'Страница може да има правописни или граматички грешки што можете да ги поправите.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Оди на случајна страница што бара коректура',
 	'gettingstarted-task-clarify-toolbar-description' => 'Страницава може да е збунителна или недоречена. Размислете како можете да ја направите појасна.',
@@ -1785,23 +1666,6 @@ $messages['mk'] = array(
 	'guidedtour-tour-gettingstarted-click-preview-description' => 'Ако стиснете на „{{int:showpreview}}“ ќе видите како ќе изгледа страницата со вашите измени. Само не заборавајте да ги зачувате.',
 	'guidedtour-tour-gettingstarted-click-save-title' => 'Речиси сте готови!',
 	'guidedtour-tour-gettingstarted-click-save-description' => 'Стиснете на „{{int:savearticle}}“ и измените ќе бидат видливи.',
-	'notification-gettingstarted-link-text-get-started' => 'Започнете',
-	'notification-gettingstarted-start-editing' => '{{SITENAME}} е слободна енциклопедија што ја пишуваат луѓе како вас. [[Special:GettingStarted|Почнете]] со вашето прво уредување!',
-	'notification-gettingstarted-start-editing-email-subject' => 'Започнете со уредување на {{SITENAME}}',
-	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} е слободна енциклопедија што ја пишуваат луѓе како вас. Почнете со вашето прво уредување!
-
-Список на лесни начини да ги подобрите страниците ќе најдете на $2.
-
-$3',
-	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Почнете да уредувате на {{SITENAME}}, посетувајќи ја страницата $2',
-	'notification-gettingstarted-continue-editing' => 'Одлично! Веќе ги направивте првите уредувања на {{SITENAME}}. Ако барате уште работа, еве некои [[Special:GettingStarted|лесни начини да помогнете]].',
-	'notification-gettingstarted-continue-editing-email-subject' => 'Лесни начини да ја подобрите {{SITENAME}}',
-	'notification-gettingstarted-continue-editing-text-email-body' => 'Одлично! Веќе ги направивте привите уредувања на {{SITENAME}}.
-
-Ако сакате уште работа, еве список на лесни начини да помагате: $2
-
-$3',
-	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Сакате уште работа? Лесни начини да помогнете ќе најдете на $2.',
 	'gettingstarted-cta-close' => 'Затвори',
 	'gettingstarted-cta-heading' => 'Помогнете на {{SITENAME}}',
 	'gettingstarted-cta-text' => 'Можете да придонесувате на {{SITENAME}} на различни начини',
@@ -2571,25 +2435,10 @@ $messages['wuu'] = array(
  */
 $messages['yi'] = array(
 	'gettingstarted' => 'וויאזוי אנצוהייבן',
-	'gettingstarted-desc' => 'לייגט צו א [[Special:GettingStarted|"ברוך הבא" בלאט]] פאר נײַע באניצער (געוויזן נאכן שאפן קאנטע)',
-	'gettingstarted-welcomesiteuser' => 'ברוך הבא צו $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'וויאזוי אנצוהייבן',
-	'gettingstarted-welcome-back-site-user' => 'ברוך הבא נאכאמאל, $2',
-	'gettingstarted-task-header' => 'א דאנק פאר אייער איינשליסן זיך ביי {{SITENAME}}! אט עטלעכע וועגן צו ווערן אריינגעצויגן.
-
-קלויבט אן אפציע אונטן, וועט איר זען א צופעליקן בלאט וואס פאדערט הילף.',
-	'gettingstarted-return' => 'ניין א דאנק, צוריק צום בלאט וואס איך האב געלייענט',
+	'gettingstarted-desc' => 'העלפט נײַע באניצער ווערן רעדאקטארן',
 	'gettingstarted-project-link' => '{{ns:Project}}:ערשטע שריט',
 	'tag-gettingstarted_edit' => 'נייער רעדאקטירער [[{{MediaWiki:gettingstarted-project-link}}|ערשטע שריט]]',
-	'tag-gettingstarted_edit-description' => 'רעדאקטירונג פון א בלאט וואס דער באניצער האט אויסגעקליבן פון דער אויפגאבן ליסטע אינעם [[Special:GettingStarted|וויאזוי אנצוהייבן]] בלאט',
-	'gettingstarted-task-copyedit-main-description' => 'פאררעכטן אויסלייג און גראמאטיק',
-	'gettingstarted-task-copyedit-secondary-description' => 'דער גרינגסטער וועג אנצוהייבן!',
-	'gettingstarted-task-clarify-main-description' => 'פארבעסערן קלארקייט',
-	'gettingstarted-task-clarify-secondary-description' => 'פאראיינפאכן אדער פארמולירן זאצן.',
-	'gettingstarted-task-addlinks-main-description' => 'צולייגן לינקען',
-	'gettingstarted-task-addlinks-secondary-description' => 'פארבינדן {{SITENAME}} בלעטער מיט אנאנד.',
-	'gettingstarted-task-toolbar-return-to-list-text' => 'קלויבט אן אנדער אויפגאב.',
-	'gettingstarted-task-toolbar-return-to-list-title' => 'צוריק צום אויפגאבן־אויסווייל בלאט',
+	'tag-gettingstarted_edit-description' => 'רעדאקטירונג געמאכט דורך דער [[{{MediaWiki:gettingstarted-project-link}}|אנפאנגען]] סיסטעם, וואס לייגט פאר איינפאכע אויפגאבעס צו רעדאקטארן און ווײַזט וויאזוי דערפארטיקן זיי.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'ווײַז מיך וויאזוי',
 	'gettingstarted-task-toolbar-try-another-text' => 'פרובירן אן אנדער בלאט',
 	'gettingstarted-task-toolbar-close-title' => 'פארמאכן דעם געצייגפאס',
@@ -2603,15 +2452,6 @@ $messages['yi'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'איר קענט רעדאקטירן דעם גאנצן ארטיקל דורך קליקן דא.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'רעדאקטירן אן אפטייל',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'איר קענט רעדאקטירן!',
-	'notification-gettingstarted-link-text-get-started' => 'ערשטע שריט',
-	'notification-gettingstarted-start-editing-email-subject' => 'פאנגט אן רעדאקטירן {{SITENAME}}',
-	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} איז א פרייע ענציקלאפעדיע געשריבן דורך מענטן ווי איר. פאנגט אן מאכן אייער ערשטע רעדאקטירונג!
-
-באזוכט $2 פאר א רשימה פון גרינגע וועגן צו פארבעסערן בלעטער.
-
-$3',
-	'notification-gettingstarted-start-editing-text-email-batch-body' => 'פאנגט אן מיט רעדאקטירן {{SITENAME}} דורכן באזוכן $2',
-	'notification-gettingstarted-continue-editing-email-subject' => 'גרינגע וועגן צו פארבעסערן {{SITENAME}}',
 );
 
 /** Simplified Chinese (中文（简体）‎)
@@ -2629,25 +2469,10 @@ $3',
  */
 $messages['zh-hans'] = array(
 	'gettingstarted' => '入门',
-	'gettingstarted-desc' => '为新用户添加一个[[Special:GettingStarted|欢迎页面]]（在帐户创建后显示）',
-	'gettingstarted-welcomesiteuser' => '欢迎来到$1，$2！',
-	'gettingstarted-welcomesiteuseranon' => '入门指南',
-	'gettingstarted-welcome-back-site-user' => '欢迎回来，$2',
-	'gettingstarted-task-header' => '欢迎您加入{{SITENAME}}！这里有一些您可以参与的方式。
-
-选择下列任一选项，之后您将看到随机的需要帮助的页面。',
-	'gettingstarted-return' => '← 不必了，回到我原来阅读的地方',
+	'gettingstarted-desc' => '为新用户添加一个[[Special:GettingStarted|欢迎页面]]（在帐户创建后显示）', # Fuzzy
 	'gettingstarted-project-link' => '{{ns:Project}}:入门指南',
 	'tag-gettingstarted_edit' => '新编辑者[[{{MediaWiki:gettingstarted-project-link}}|入门]]',
-	'tag-gettingstarted_edit-description' => '用户从[[Special:GettingStarted|入门指南]]任务列表上选择而作的编辑。',
-	'gettingstarted-task-copyedit-main-description' => '纠正拼写和语法',
-	'gettingstarted-task-copyedit-secondary-description' => '让您入门的最简单的方法！',
-	'gettingstarted-task-clarify-main-description' => '提高清晰度',
-	'gettingstarted-task-clarify-secondary-description' => '简化或重写句子。',
-	'gettingstarted-task-addlinks-main-description' => '添加链接',
-	'gettingstarted-task-addlinks-secondary-description' => '将{{SITENAME}}的页面连接起来。',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ 选择另一个任务',
-	'gettingstarted-task-toolbar-return-to-list-title' => '返回到任务选择页面',
+	'tag-gettingstarted_edit-description' => '用户从[[Special:GettingStarted|入门指南]]任务列表上选择而作的编辑。', # Fuzzy
 	'gettingstarted-task-toolbar-editing-help-text' => '告知我如何',
 	'gettingstarted-task-toolbar-editing-help-title' => '显示编辑指南',
 	'gettingstarted-task-toolbar-try-another-text' => '试试另一个页面 ►',
@@ -2657,6 +2482,7 @@ $messages['zh-hans'] = array(
 	'gettingstarted-task-clarify-toolbar-description' => '此页面可能存在混淆或含糊不清。你可以尝试让它更清楚。',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => '随机转到一个你可以清晰化的页面',
 	'gettingstarted-task-addlinks-toolbar-description' => '此页面可能需要更多链接。寻找在{{SITENAME}}上有此词的页面。',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => '前往一个您可以加链接的随机页面',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => '如何开始',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => '需要做什么',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => '猛戳{{int:vector-view-edit}}',
@@ -2667,23 +2493,6 @@ $messages['zh-hans'] = array(
 	'guidedtour-tour-gettingstarted-click-preview-description' => '点击“{{int:showpreview}}”，您将看到您在该页面作出了哪些更改。请不要忘记保存。',
 	'guidedtour-tour-gettingstarted-click-save-title' => '您马上就完成了！',
 	'guidedtour-tour-gettingstarted-click-save-description' => '点击“{{int:savearticle}}”，您将保存您所作出的更改。',
-	'notification-gettingstarted-link-text-get-started' => '入门',
-	'notification-gettingstarted-start-editing' => '{{SITENAME}} 是由像你一样的人们撰写的一部自由的百科全书。[[Special:GettingStarted|开始]]尝试做你的第一次编辑吧！',
-	'notification-gettingstarted-start-editing-email-subject' => '开始初次编辑{{SITENAME}}',
-	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} 是像你一样的人们撰写的一部自由的百科全书。尝试做你的第一次编辑吧！
-
-访问 $2 轻松获得待改善页面的名单。
-
-$3',
-	'notification-gettingstarted-start-editing-text-email-batch-body' => '开始编辑 {{SITENAME}}，通过访问 $2',
-	'notification-gettingstarted-continue-editing' => '干得好！你已经作出了你在{{SITENAME}}的第一次编辑。如果你还想寻找更多待完成的任务，前往[[Special:GettingStarted|这里]]获得帮助。',
-	'notification-gettingstarted-continue-editing-email-subject' => '方便地改善{{SITENAME}}',
-	'notification-gettingstarted-continue-editing-text-email-body' => '干得好！你已经作出了你在{{SITENAME}}的第一次编辑
-
-如果你还想寻找更多待完成的任务，前往 $2。
-
-$3',
-	'notification-gettingstarted-continue-editing-text-email-batch-body' => '想找更多事来做？访问 $2 获得需要帮助的名单。',
 	'gettingstarted-cta-close' => '关闭',
 	'gettingstarted-cta-heading' => '帮助{{SITENAME}}',
 	'gettingstarted-cta-text' => '您可以以各种方式为{{SITENAME}}做贡献',
