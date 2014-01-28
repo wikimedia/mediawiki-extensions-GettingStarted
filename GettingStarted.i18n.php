@@ -12,26 +12,12 @@ $messages = array();
  */
 $messages['en'] = array(
 	'gettingstarted' => "Getting started",
-	'gettingstarted-desc' => 'Adds a [[Special:GettingStarted|welcome page]] for new users (shown after account creation)',
-	'gettingstarted-welcomesiteuser' => "Welcome to $1, $2!",
-	'gettingstarted-welcomesiteuseranon' => "Getting started",
-	'gettingstarted-welcome-back-site-user' => "Welcome back, $2",
-	'gettingstarted-task-header' => 'Thanks for joining {{SITENAME}}! Here are some ways you can get involved.
-
-Choose an option below, and you will see a random page that needs help.',
-	'gettingstarted-return' => "← No thanks, return to the page I was reading",
+	// TODO (mattflaschen, 2013-01-08): Placeholder
+	'gettingstarted-desc' => 'Helps new users become editors',
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	// Change tags
 	'tag-gettingstarted_edit' => 'new editor [[{{MediaWiki:gettingstarted-project-link}}|getting started]]',
-	'tag-gettingstarted_edit-description' => 'Edit of a page that the user chose from the task list in [[Special:GettingStarted|Getting started]]',
-
-	// Main text of the special page
-	'gettingstarted-task-copyedit-main-description' => 'Fix Spelling & Grammar',
-	'gettingstarted-task-copyedit-secondary-description' => 'The easiest way to get started!',
-	'gettingstarted-task-clarify-main-description' => 'Improve Clarity',
-	'gettingstarted-task-clarify-secondary-description' => 'Simplify or reword sentences.',
-	'gettingstarted-task-addlinks-main-description' => 'Add Links',
-	'gettingstarted-task-addlinks-secondary-description' => 'Connect {{SITENAME}} pages together.',
+	'tag-gettingstarted_edit-description' => 'Edit made via the [[{{MediaWiki:gettingstarted-project-link}}|GettingStarted]] system, which suggests easy tasks to editors and shows them how to complete them.',
 
 	// Toolbar above page, when they have chosen a task and been redirected
 
@@ -72,24 +58,6 @@ Choose an option below, and you will see a random page that needs help.',
 	'guidedtour-tour-gettingstarted-click-save-title' => 'You are almost finished!',
 	'guidedtour-tour-gettingstarted-click-save-description' => 'Click "{{int:savearticle}}" and your changes will be visible.',
 
-	// Notifications
-	'notification-gettingstarted-link-text-get-started' => 'Get started',
-	'notification-gettingstarted-start-editing' => '{{SITENAME}} is a free encyclopedia written by people like you. [[Special:GettingStarted|Get started]] by making your first edit!',
-	'notification-gettingstarted-start-editing-email-subject' => 'Get started with editing {{SITENAME}}',
-	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} is a free encyclopedia written by people like you. Get started by making your first edit!
-
-Visit $2 for a list of easy ways to improve pages.
-
-$3',
-	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Get started with {{SITENAME}} editing by visiting $2',
-	'notification-gettingstarted-continue-editing' => 'Nice work! You have already made your first edits to {{SITENAME}}. If you are looking for more to do, here are some [[Special:GettingStarted|easy ways to help]].',
-	'notification-gettingstarted-continue-editing-email-subject' => 'Easy ways to improve {{SITENAME}}',
-	'notification-gettingstarted-continue-editing-text-email-body' => 'Nice work! You have already made your first edits to {{SITENAME}}.
-
-If you are looking for more to do, there is a list of easy ways to help at $2
-
-$3',
-	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Looking for more to do? Visit $2 for a list of easy ways to help.',
 	// Post-signup Call To Action, see https://commons.wikimedia.org/wiki/File:Direct-to-page_onboarding_workflow_overview.pdf
 	'gettingstarted-cta-close' => 'Close',
 	'gettingstarted-cta-heading' => 'Help {{SITENAME}}',
