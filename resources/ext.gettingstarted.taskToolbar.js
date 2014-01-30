@@ -140,9 +140,6 @@
 			$marginElements.addClass( 'mw-gettingstarted-margin-vshift' );
 
 			$toolbar.slideDown( 200, function () {
-				var schemaAction = logging.getPageSchemaAction();
-
-				logging.logImpression( fullTask, schemaAction );
 				mw.libs.guiders.reposition();
 			} );
 		}

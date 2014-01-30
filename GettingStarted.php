@@ -100,14 +100,6 @@ $gettingStartedModuleInfo = array(
 	'remoteExtPath' => 'GettingStarted/resources',
 );
 
-$gettingStartedSchemaModuleName = 'schema.' . GettingStarted\Hooks::SCHEMA_NAME;
-
-$wgResourceModules[ $gettingStartedSchemaModuleName ] = array(
-	'class'    => 'ResourceLoaderSchemaModule',
-	'schema'   => GettingStarted\Hooks::SCHEMA_NAME,
-	'revision' => GettingStarted\Hooks::SCHEMA_REV_ID,
-);
-
 $wgResourceModules[ 'schema.GettingStartedNavbarNoArticle' ] = array(
 	'class'    => 'ResourceLoaderSchemaModule',
 	'schema'   => 'GettingStartedNavbarNoArticle',
@@ -169,8 +161,6 @@ $wgResourceModules['ext.guidedTour.tour.gettingstartedtasktoolbarve'] = array(
 	),
 ) + $gettingStartedModuleInfo;
 
-// ext.gettingstarted.logging and ext.gettingstarted.openTask are on every page site-wide
-// regardless of bucket.
 $wgResourceModules[ 'ext.gettingstarted.logging' ] = array(
 	'scripts' => 'ext.gettingstarted.logging.js',
 	'dependencies' => array(
@@ -179,8 +169,7 @@ $wgResourceModules[ 'ext.gettingstarted.logging' ] = array(
 		'jquery.json',
 		'mediawiki.Title',
 		'mediawiki.user',
-		$gettingStartedSchemaModuleName,
-	)
+	),
 ) + $gettingStartedModuleInfo;
 
 // Subclasses of mediawiki.api
@@ -189,14 +178,6 @@ $wgResourceModules[ 'ext.gettingstarted.api' ] = array(
 	'dependencies' => array(
 		'mediawiki.api',
 		'mediawiki.Title',
-	),
-) + $gettingStartedModuleInfo;
-
-$wgResourceModules[ 'ext.gettingstarted.openTask' ] = array(
-	'scripts' => 'ext.gettingstarted.openTask.js',
-	'dependencies' => array(
-		'mediawiki.util',
-		'ext.gettingstarted.logging',
 	),
 ) + $gettingStartedModuleInfo;
 
@@ -278,7 +259,6 @@ $wgHooks[ 'RecentChange_save' ][] = 'GettingStarted\Hooks::onRecentChange_save';
 $wgHooks[ 'CategoryAfterPageAdded' ][] = 'GettingStarted\RedisCategorySync::onCategoryAfterPageAdded';
 $wgHooks[ 'CategoryAfterPageRemoved' ][] = 'GettingStarted\RedisCategorySync::onCategoryAfterPageRemoved';
 $wgHooks[ 'ListDefinedTags' ][] = 'GettingStarted\Hooks::onListDefinedTags';
-$wgHooks[ 'ResourceLoaderGetConfigVars' ][] = 'GettingStarted\Hooks::onResourceLoaderGetConfigVars';
 $wgHooks[ 'MakeGlobalVariablesScript' ][] = 'GettingStarted\Hooks::onMakeGlobalVariablesScript';
 $wgHooks[ 'GetPreferences' ][] = 'GettingStarted\Hooks::onGetPreferences';
 // Extension:CentralAuth's hook

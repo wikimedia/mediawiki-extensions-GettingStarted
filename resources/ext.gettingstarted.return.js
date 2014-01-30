@@ -67,14 +67,6 @@
 		}
 
 		gt.launchTour( tourName );
-
-		logging.logEvent( {
-			action: 'redirect-invite-click',
-			funnel: funnel,
-			pageId: cfg.wgArticleId,
-			revId: cfg.wgRevisionId,
-			isEditable: cfg.wgIsProbablyEditable
-		} );
 	}
 
 	/**
@@ -224,12 +216,7 @@
 
 			function doFixPages() {
 				logging.setTask( suggestedTitle.getPrefixedText(), fullTaskType );
-				logging.logUnlessTimeout( {
-					action: 'redirect-invite-click',
-					funnel: fullTaskType
-				}, 500 ).always( function () {
-					window.location.href = suggestedTitle.getUrl();
-				} );
+				window.location.href = suggestedTitle.getUrl();
 			}
 
 			// The possible CTA dialogs have similar but different buttons.
@@ -346,9 +333,6 @@
 				// Note: Some users might dismiss the CTA by this click or
 				// other techniques, yet go ahead and edit this page anyway; we
 				// _don't_ set up a funnel for this.
-				logging.logEvent( {
-					action: 'redirect-invite-click'
-				} );
 
 				removeDialog();
 			}
@@ -408,7 +392,6 @@
 			$dialog.append( $leaveLink );
 
 			showDialog();
-			logging.logImpression( null, 'redirect-invite-impression' );
 		},
 
 		init: function () {
@@ -419,11 +402,6 @@
 				} ),
 				pageKind = self.getPageKind();
 
-			// Seeing this page is a page impression, though the user hasn't
-			// chosen an adventure yet.
-			// XXX (spage, 2013-08-16) I really think we should log the pageKind
-			// here so the event clearly records what happened, but StevenW resists.
-			logging.logImpression( null, 'redirect-page-impression' );
 			suggestedPagePromise.done( function ( title ) {
 				self.handlePage( pageKind, new mw.Title( title ) );
 			} ).fail( function () {

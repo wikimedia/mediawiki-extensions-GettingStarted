@@ -29,35 +29,7 @@ class Hooks {
 	// There is used unprefixed for legacy reasons.
 	const COOKIE_NAME = 'openTask';
 
-	const SCHEMA_REV_ID = 5944134;
-
-	// Keep following two lines in sync with ext.gettingstarted.logging.js
-	// These are for the primary schema.  There is a secondary schema,
-	// GettingStartedNavbarNoArticle, for a particular error case.
-	//
-	const LOGGING_VERSION = 1;
-	const SCHEMA_NAME = 'GettingStartedOnRedirect';
-
 	const INTRO_OPTION = 'gettingstarted-task-toolbar-show-intro';
-
-	/**
-	 * Logs a server-side event for the main schema, with default properties, if the user is logged in
-	 */
-	protected static function logEvent( $event ) {
-		global $wgUser;
-
-		if ( $wgUser->isAnon() ) {
-			return;
-		}
-
-		$defaults = array(
-			'version' => self::LOGGING_VERSION,
-			'userId' => $wgUser->getID(),
-		);
-
-		$event += $defaults;
-		efLogServerSideEvent( self::SCHEMA_NAME, self::SCHEMA_REV_ID, $event );
-	}
 
 	protected static function isInTestGroup( User $user ) {
 		global $wgGettingStartedRunTest;
@@ -204,18 +176,6 @@ class Hooks {
 	}
 
 	/**
-	 * Export static configuration variables to JavaScript.
-	 */
-	public static function onResourceLoaderGetConfigVars( &$vars ) {
-		$vars['wgGettingStartedConfig'] = array(
-			'loggingVersion' => self::LOGGING_VERSION,
-			'schemaName' => self::SCHEMA_NAME,
-		);
-
-		return true;
-	}
-
-	/**
 	 * MakeGlobalVariablesScript hook.
 	 *
 	 * This is used to add request-specific config vars to mw.config.
@@ -286,17 +246,6 @@ class Hooks {
 	 */
 	public static function onBeforePageDisplay( OutputPage $out, \Skin $skin ) {
 		$user = $out->getUser();
-
-		// For logged-in users, we add the Getting Started logging and task
-		// tracking modules on every page.
-		//
-		// There is no logging for anonymous users.
-		if ( $user->isLoggedIn() ) {
-			$out->addModules( array(
-				'ext.gettingstarted.logging',
-				'ext.gettingstarted.openTask'
-			) );
-		}
 
 		if ( self::shouldLoadToolbar( $out, $user ) ) {
 			// Uses addModuleStyles since no-JS code must load it this way

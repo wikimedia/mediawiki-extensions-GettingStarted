@@ -11,90 +11,7 @@
 ( function ( window, document, mw, $ ) {
 	'use strict';
 
-	var gettingStartedStatic = mw.config.get( 'wgGettingStartedConfig' ),
-		requestData = mw.config.get( 'wgGettingStarted' ),
-		schemaName = gettingStartedStatic.schemaName,
-		cookieOptions = { path: '/' };
-
-	/**
-	 * Log an event with the GettingStarted schema
-	 *
-	 * @param {object} eventInstance event object
-	 *
-	 * @return {jQuery.Deferred} Promise object from EventLogging logEvent
-	 */
-	function logEvent( eventInstance ) {
-		var noopDeferred;
-
-		if ( mw.user.isAnon() ) {
-			// Do no logging for anonymous users, but resolve successfully as no-op
-			noopDeferred = $.Deferred();
-			noopDeferred.resolve();
-			return noopDeferred;
-		}
-
-		return mw.eventLog.logEvent( schemaName, eventInstance );
-	}
-
-	/**
-	 * Gets the applicable client-side page action (for logging purposes), or null if there is
-	 * none.  Actions that were logged before October 2013 are no longer, so the only possible
-	 * log action is 'page-impression'.
-	 *
-	 * @return {string} 'page-impression' or null
-	 */
-	function getPageSchemaAction() {
-		var wgAction, loggedActions, schemaAction;
-
-		wgAction = mw.config.get( 'wgAction' );
-		loggedActions = {
-			view: 'page-impression'
-		};
-
-		schemaAction = loggedActions[wgAction];
-
-		// We ignore edit, history, submit, etc.
-		if ( !schemaAction ) {
-			schemaAction = null;
-		}
-
-		return schemaAction;
-	}
-
-	// Wrapper around logEvent that returns a promise that resolves
-	// when either the logging attempt concludes or `timeout` miliseconds have
-	// elapsed, whichever is sooner.
-	function logUnlessTimeout( event, timeout ) {
-		var dfd = $.Deferred();
-		window.setTimeout( dfd.reject, timeout );
-		logEvent( event ).then( dfd.resolve, dfd.reject );
-		return dfd.promise();
-	}
-
-	function setDefaults( defaults ) {
-		mw.eventLog.setDefaults( schemaName, defaults );
-	}
-
-	// Set some fields common to both clicks and fixing articles.
-	function setCommonDefaults() {
-		var defaults, cfg;
-
-		if ( mw.user.isAnon() ) {
-			// No logging, so no defaults needed for anons
-			return;
-		}
-
-		cfg = mw.config.get( [ 'wgUserId', 'wgNamespaceNumber' ] );
-
-		defaults = {
-			version: gettingStartedStatic.loggingVersion,
-			userId: cfg.wgUserId,
-			pageNS: cfg.wgNamespaceNumber,
-			bucket: requestData.bucket
-		};
-
-		setDefaults( defaults );
-	}
+	var cookieOptions = { path: '/' };
 
 	/**
 	 * @return {Object} User's list of openTasks, if any, from the cookie.
@@ -163,62 +80,12 @@
 		return setTask( title.getPrefixedText(), task );
 	}
 
-	/**
-	 * Logs a page impression.
-	 *
-	 * This is called when the user is shown a page for fixing.  But with OB6, it
-	 * is also called from the initial redirect-page-impression (before the user
-	 * has responded to the CTA).
-	 *
-	 * @param {string|null} fullTask full task name (redirect or gettingstarted-*),
-	 *   or null
-	 * @param {string} schemaAction action field of schema
-	 *
-	 * @return {jQuery.Deferred} Promise object from EventLogging logEvent,
-	 *   or null for invalid schema
-	 */
-	function logImpression( fullTask, schemaAction) {
-		var event, source,
-			cfg = mw.config.get( [ 'wgArticleId', 'wgRevisionId', 'wgIsProbablyEditable' ] );
-
-		event = {
-			action: schemaAction,
-			pageId: cfg.wgArticleId,
-			revId: cfg.wgRevisionId,
-			isEditable: cfg.wgIsProbablyEditable
-		};
-		if ( fullTask !== null ) {
-			event.funnel = fullTask;
-		}
-
-		if ( schemaAction === 'page-impression' ) {
-			// EventLogging will still log it, but mark the event clientValidated false
-			// if the source is invalid.  However, we don't want events with missing
-			// source to be invalid.
-			source = mw.util.getParamValue( 'source' );
-			if ( source !== null ) {
-				event.source = source;
-			}
-		}
-
-		return logEvent( event );
-	}
-
-	// Execution logic
-
-	setCommonDefaults();
-
 	mw.gettingStarted = mw.gettingStarted || {};
 	mw.gettingStarted.logging = mw.gettingStarted.logging || {};
 
-	mw.gettingStarted.logging.logUnlessTimeout = logUnlessTimeout;
-	mw.gettingStarted.logging.setDefaults = setDefaults;
 	mw.gettingStarted.logging.setTask = setTask;
 	mw.gettingStarted.logging.setTaskForCurrentPage = setTaskForCurrentPage;
 	mw.gettingStarted.logging.getTasks = getTasks;
 	mw.gettingStarted.logging.getTask = getTask;
 	mw.gettingStarted.logging.getTaskForCurrentPage = getTaskForCurrentPage;
-	mw.gettingStarted.logging.logEvent = logEvent;
-	mw.gettingStarted.logging.getPageSchemaAction = getPageSchemaAction;
-	mw.gettingStarted.logging.logImpression = logImpression;
 }( window, document, mediaWiki, jQuery ) );
