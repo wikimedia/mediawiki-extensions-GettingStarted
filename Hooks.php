@@ -339,16 +339,14 @@ class Hooks {
 			return true;
 		}
 
-		$performer = $recentChange->getPerformer();
-
-		if ( $performer->isAllowed( 'autoconfirmed' ) ) {
-			return true;
-		}
-
 		$titleObj = $recentChange->getTitle();
 		$task = self::getPageTask( $wgRequest, $titleObj );
 
-		if ( strpos( $task, 'gettingstarted' ) === 0 ) {
+		// When they are assisted by GettingStarted, a cookie with that title
+		// is set.  All edits to the page are then tagged, until the cookie
+		// expires at the end of the browser session.
+		if ( strpos( $task, 'gettingstarted' ) === 0 ||
+			strpos( $task, 'redirect' ) === 0 ) {
 			\ChangeTags::addTags(
 				'gettingstarted edit',
 				$recentChange->getAttribute( 'rc_id' ),
