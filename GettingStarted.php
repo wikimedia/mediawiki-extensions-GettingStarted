@@ -114,6 +114,12 @@ $wgResourceModules[ 'schema.GettingStartedNavbarNoArticle' ] = array(
 	'revision' => 5483117
 );
 
+$wgResourceModules[ 'schema.GettingStartedRedirectImpression' ] = array(
+	'class'    => 'ResourceLoaderSchemaModule',
+	'schema'   => 'GettingStartedRedirectImpression',
+	'revision' => 7257235,
+);
+
 $wgResourceModules['ext.guidedTour.tour.gettingstartedtasktoolbarintro'] = array(
 	'scripts' => 'tours/gettingstartedtasktoolbarintro.js',
 	'dependencies' => 'ext.guidedTour',
@@ -258,12 +264,14 @@ $wgResourceModules[ 'ext.gettingstarted.return' ] = array(
 		'ext.gettingstarted.api',
 		'ext.gettingstarted.logging',
 		'schema.GettingStartedNavbarNoArticle',
+		'schema.GettingStartedRedirectImpression',
 		// Needed for isEditing() and tour launching.
 		'ext.guidedTour.lib',
 		'mediawiki.Title',
 		// Rest are only used by the Call To Action
 		'mediawiki.Uri',
 		'mediawiki.util',
+		'mediawiki.user',
 	),
 	'position' => 'top',
 ) + $gettingStartedModuleInfo;

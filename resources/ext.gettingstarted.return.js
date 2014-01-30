@@ -6,7 +6,7 @@
 		cfg = mw.config.get( [
 			'wgIsProbablyEditable', 'wgArticleId', 'wgRevisionId',
 			'wgNamespaceNumber', 'wgExtensionAssetsPath',
-			'wgSiteName', 'wgUserName', 'wgAction'
+			'wgSiteName', 'wgUserName', 'wgAction', 'wgUserId'
 		] ),
 		imagePath = cfg.wgExtensionAssetsPath + '/GettingStarted/resources/images/',
 		self,
@@ -14,13 +14,45 @@
 		SPECIAL_NAMESPACE = -1,
 		// TODO (mattflaschen, 2013-12-19): This will need to be configurable later.
 		TASK_TYPE = 'copyedit',
-		fullTaskType = 'gettingstarted-' + TASK_TYPE;
+		fullTaskType = 'gettingstarted-' + TASK_TYPE,
+		CTA_TYPE_NONE = null,
+		CTA_TYPE_SUGGESTED = 'suggested',
+		CTA_TYPE_EDIT_CURRENT_OR_SUGGESTED = 'edit_current_or_suggested';
 
 	function logMissingSuggestedArticle() {
 		mw.eventLog.logEvent( 'GettingStartedNavbarNoArticle', {
 			version: 1,
 			funnel: fullTaskType
 		} );
+	}
+
+	function logRedirectImpression( ctaType ) {
+		var event;
+
+		if ( mw.user.isAnon() ) {
+		    return;
+		}
+
+		event = {
+			userId: cfg.wgUserId,
+			isEditable: cfg.wgIsProbablyEditable
+		};
+
+		if ( cfg.wgArticleId > 0 ) {
+			event.pageId = cfg.wgArticleId;
+		}
+
+		// TODO (phuedx 2014-01-29) We don't get a revision ID for edit pages
+		// (see https://bugzilla.wikimedia.org/60548).
+		if ( cfg.wgRevisionId > 0 ) {
+			event.currentRevId = cfg.wgRevisionId;
+		}
+
+		if ( ctaType !== CTA_TYPE_NONE ) {
+			event.ctaType = ctaType;
+		}
+
+		mw.eventLog.logEvent( 'GettingStartedRedirectImpression', event );
 	}
 
 	function doEditThisPage() {
@@ -188,7 +220,7 @@
 		 *   if none is available
 		 */
 		handlePage: function ( pageKind, suggestedTitle) {
-			var dialogSpec, editCurrentPrimaryButton, suggestionSecondaryButton, suggestionPrimaryButton;
+			var dialogSpec, editCurrentPrimaryButton, suggestionSecondaryButton, suggestionPrimaryButton, ctaType;
 
 			function doFixPages() {
 				logging.setTask( suggestedTitle.getPrefixedText(), fullTaskType );
@@ -236,6 +268,7 @@
 						editCurrentPrimaryButton,
 						suggestionSecondaryButton
 					];
+					ctaType = CTA_TYPE_EDIT_CURRENT_OR_SUGGESTED;
 				} else {
 					logMissingSuggestedArticle();
 					dialogSpec.buttons = [ editCurrentPrimaryButton ];
@@ -243,6 +276,7 @@
 			} else if ( pageKind === 'other' ) {
 				if ( !suggestedTitle) {
 					logMissingSuggestedArticle();
+					logRedirectImpression( CTA_TYPE_NONE );
 					// Nothing to show in dialog
 					return;
 				}
@@ -251,10 +285,13 @@
 					id: 'mw-gettingstarted-cta-other-page',
 					buttons: [ suggestionPrimaryButton ]
 				};
+				ctaType = CTA_TYPE_SUGGESTED;
 			} else {
 				if ( pageKind !== 'alreadyediting' && pageKind !== 'special' ) {
 					mw.log.warn( 'bad GettingStarted pageKind ' + pageKind );
 				}
+
+				logRedirectImpression( CTA_TYPE_NONE );
 
 				// If they were already editing, or on a special page, do nothing.
 				// No welcome message, no tour, no start a funnel.
@@ -268,6 +305,7 @@
 
 			$( document ).ready( function () {
 				self.showCTA( dialogSpec );
+				logRedirectImpression( ctaType );
 			} );
 		},
 
