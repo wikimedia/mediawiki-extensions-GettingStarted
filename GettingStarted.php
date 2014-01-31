@@ -105,7 +105,7 @@ $wgResourceModules[ 'schema.GettingStartedNavbarNoArticle' ] = array(
 $wgResourceModules[ 'schema.GettingStartedRedirectImpression' ] = array(
 	'class'    => 'ResourceLoaderSchemaModule',
 	'schema'   => 'GettingStartedRedirectImpression',
-	'revision' => 7257235,
+	'revision' => 7355552,
 );
 
 $wgResourceModules['ext.guidedTour.tour.gettingstartedtasktoolbar'] = array(

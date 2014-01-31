@@ -17,7 +17,8 @@
 		fullTaskType = 'gettingstarted-' + TASK_TYPE,
 		CTA_TYPE_NONE = null,
 		CTA_TYPE_SUGGESTED = 'suggested',
-		CTA_TYPE_EDIT_CURRENT_OR_SUGGESTED = 'edit_current_or_suggested';
+		CTA_TYPE_EDIT_CURRENT = 'edit current',
+		CTA_TYPE_EDIT_CURRENT_OR_SUGGESTED = 'edit current or suggested';
 
 	function logMissingSuggestedArticle() {
 		mw.eventLog.logEvent( 'GettingStartedNavbarNoArticle', {
@@ -35,6 +36,8 @@
 
 		event = {
 			userId: cfg.wgUserId,
+			pageNS: cfg.wgNamespaceNumber,
+			action: cfg.wgAction,
 			isEditable: cfg.wgIsProbablyEditable
 		};
 
@@ -259,6 +262,7 @@
 				} else {
 					logMissingSuggestedArticle();
 					dialogSpec.buttons = [ editCurrentPrimaryButton ];
+					ctaType = CTA_TYPE_EDIT_CURRENT;
 				}
 			} else if ( pageKind === 'other' ) {
 				if ( !suggestedTitle) {
