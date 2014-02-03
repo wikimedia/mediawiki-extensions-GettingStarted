@@ -1,10 +1,10 @@
 /* Specific elements */
 #mw-gettingstarted-cta-editable-main-page {
-	width: 600px;
+	width: 510px;
 }
 
 #mw-gettingstarted-cta-other-page {
-	width: 450px;
+	width: 365px;
 }
 
 /*
@@ -26,7 +26,7 @@
 	   Have to use width here since min-width will not wrap in
 	   this context
 	*/
-	width: 250px;
+	width: 210px;
 }
 
 /* Remove right margin on right-most buttons */
@@ -113,7 +113,6 @@
     background-image: linear-gradient(top, #fbfbfb, #f8f8f8);
 }
 .mw-ui-button.mw-gettingstarted-cta-secondary {
-    text-shadow: 0 1px 1px rgba(20,20,20,0.15);
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f8f8), color-stop(100%, #f0f0f0));
     background-image: -webkit-linear-gradient(top, #f8f8f8, #f0f0f0);
     background-image: -moz-linear-gradient(top, #f8f8f8, #f0f0f0);
@@ -149,4 +148,5 @@
 	float: left;
 	clear: both;
 	margin-top: 20px;
+	font-size: 0.8em;
 }
