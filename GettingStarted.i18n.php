@@ -245,49 +245,48 @@ $messages['be'] = array(
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
+ * @author Red Winged Duck
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
-	'gettingstarted' => 'Пачатак працы',
-	'gettingstarted-desc' => 'Дадае [[Special:GettingStarted|вітальную старонку]] для новых удзельнікаў (паказваецца па стварэньні рахунку)',
-	'gettingstarted-welcomesiteuser' => 'Вітаем у {{GRAMMAR:месны|$1}}, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Пачатак працы',
-	'gettingstarted-welcome-back-site-user' => 'Вітаем зноў, $2',
-	'gettingstarted-task-header' => 'Дзякуй за тое, што далучыліся да {{GRAMMAR:родны|{{SITENAME}}}}! Вось вам некалькі спосабаў хутка ўключыцца ў працу.
-
-Выберыце варыянт ніжэй, і вы пабачыце адвольны артыкул, які патрабуе дагляду.',
-	'gettingstarted-return' => '← Не, дзякую, вярніце мяне назад',
-	'gettingstarted-project-link' => '{{ns:Project}}:Пачатак працы',
+	'gettingstarted' => 'Першыя крокі',
+	'gettingstarted-desc' => 'Дапамагае новым удзельнікам стаць рэдактарамі',
+	'gettingstarted-project-link' => '{{ns:Project}}:Першыя крокі',
 	'tag-gettingstarted_edit' => 'новы рэдактар [[{{MediaWiki:gettingstarted-project-link}}|пачаў працу]]',
-	'tag-gettingstarted_edit-description' => 'Рэдагаваньне старонкі зь сьпісу задачаў на старонцы «[[Special:GettingStarted|З чаго пачаць]]», якую абраў удзельнік',
-	'gettingstarted-task-copyedit-main-description' => 'Артаграфія і граматыка',
-	'gettingstarted-task-copyedit-secondary-description' => 'Найлягчэйшы спосаб для пачаткоўцы!',
-	'gettingstarted-task-clarify-main-description' => 'Удакладненьне',
-	'gettingstarted-task-clarify-secondary-description' => 'Спрашчэньне або перафармуляваньне сьцверджаньняў.',
-	'gettingstarted-task-addlinks-main-description' => 'Спасылкі',
-	'gettingstarted-task-addlinks-secondary-description' => 'Злучэньне артыкулаў {{GRAMMAR:родны|{{SITENAME}}}}.',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Назад да сьпісу', # Fuzzy
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Вярнуцца да сьпісу артыкулаў', # Fuzzy
-	'gettingstarted-task-toolbar-editing-help-text' => 'Паказаць даведку', # Fuzzy
+	'tag-gettingstarted_edit-description' => 'Рэдагаваньне зробленае праз сыстэму [[{{MediaWiki:gettingstarted-project-link}}|першых крокаў]], якая прапануе простыя задачы для ўдзельнікаў і паказвае, як іх выканаць.',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Паказаць мне, як',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Паказаць дапамогу па рэдагаваньні',
-	'gettingstarted-task-toolbar-try-another-text' => 'Паспрабуйце іншы артыкул  ►',
+	'gettingstarted-task-toolbar-try-another-text' => 'Паспрабуйце іншую старонку ►',
 	'gettingstarted-task-toolbar-close-title' => 'Зачыніць гэтую панэль',
-	'gettingstarted-task-copyedit-toolbar-description' => 'У гэтым артыкуле маюцца артаграфічныя й граматычныя памылкі, якія вы можаце выправіць.', # Fuzzy
-	'gettingstarted-task-addlinks-toolbar-description' => 'Гэтаму артыкулу бракуе спасылак. Пашукайце тэрміны, артыкулы пра якія маюцца ў {{GRAMMAR:месны|{{SITENAME}}}}.', # Fuzzy
+	'gettingstarted-task-toolbar-no-suggested-page' => 'Выбачайце. Мы не змаглі знайсьці яшчэ старонкі, якія патрабуць паляпшэньня ў цяперашні момант. Паспрабуйце яшчэ раз або пашукайце іншыя цікавыя вам тэмы.',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Гэтая старонка магчыма ўтрымлівае артаграфічныя і граматычныя памылкі, якія вы можаце выправіць.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Перайсьці да выпадковай старонкі, якую вы можаце палепшыць',
+	'gettingstarted-task-clarify-toolbar-description' => 'Гэтая старонка можа быць заблытанай ці расплывістай. Пашукайце спосаб зрабіць яе больш зразумелай.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Перайсьці да выпадковай старонкі, якую вы можаце ўдакладніць',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Гэтай старонцы бракуе спасылак. Пашукайце тэрміны, старонкі пра якія маюцца ў {{GRAMMAR:месны|{{SITENAME}}}}.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Перайсьці да выпадковай старонкі, на якой вы можаце дадаць спасылкі',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Як пачаць',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Проста праглядайце старонку і шукайце, дзе яе можна палепшыць. Калі адчуеце, што ў вас не атрымліваецца, не хвалюйцеся. Вам не абавязкова быць экспэртам у гэтай тэме! Калі вам трэба дапамога або жадаеце праглядзець іншую старонку, скарыстайцеся спасылкамі ў верхняй панэлі.',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Што рабіць',
-	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Пстрыкніце «{{int:vector-view-edit}}»',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Гэтыя банэры паведамляюць пра праблемы старонкі. Вам не абавязкова разьбірацца з усімі, проста рабіце тое, што ў вас атрымліваецца.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Націсьніце «{{int:vector-view-edit}}»',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Вы можаце рэдагаваць усю старонку, калі націсьніце тут.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Рэдагаваньне разьдзелаў',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Калі вы хочаце адрэдагаваць пэўную сэкцыю, вы можаце націснуць сінюю спасылку «{{int:editsection}}», якая ёсьць уверсе кожнай сэкцыі.',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Вы можаце рэдагаваць!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Цяпер вы можаце рэдагаваць старонку. Калі вы скончыце, націсьніце «{{int:visualeditor-toolbar-savedialog}}», каб праглядзець і захаваць вашыя зьмены.',
 	'guidedtour-tour-gettingstarted-click-preview-title' => 'Папярэдні прагляд (па жаданьні)',
 	'guidedtour-tour-gettingstarted-click-preview-description' => 'Націсьніце «{{int:showpreview}}», каб пабачыць, як будзе выглядаць старонка з унесенымі вамі зьменамі. Па праглядзе не забудзьце захаваць!',
 	'guidedtour-tour-gettingstarted-click-save-title' => 'Ужо амаль усё!',
 	'guidedtour-tour-gettingstarted-click-save-description' => 'Націсьніце «{{int:savearticle}}» і вашыя зьмены будуць бачныя ўсім.',
-	'notification-gettingstarted-continue-editing-email-subject' => 'Лёгкі спосаб палепшыць {{GRAMMAR:вінавальны|{{SITENAME}}}}',
-	'notification-gettingstarted-continue-editing-text-email-body' => 'Выдатна! Вы ўжо зрабілі першыя праўкі ў {{GRAMMAR:месны|{{SITENAME}}}}.
-
-Калі вы ахвотныя заняцца нечым яшчэ, вось сьпіс лёгкіх спосабаў дапамагчы — $2.
-
-$3',
+	'gettingstarted-cta-close' => 'Закрыць',
+	'gettingstarted-cta-heading' => 'Дапамагчы {{GRAMMAR:давальны|{{SITENAME}}}}',
+	'gettingstarted-cta-text' => 'Вы можаце дапамагчы {{GRAMMAR:давальны|{{SITENAME}}}} рознымі шляхамі',
+	'gettingstarted-cta-edit-page' => 'Рэдагаваць гэтую старонку',
+	'gettingstarted-cta-edit-page-sub' => 'Мы пакажам вам, як',
+	'gettingstarted-cta-fix-pages' => 'Знайсьці старонкі, якія патрабуюць невялікіх выпраўленьняў',
+	'gettingstarted-cta-fix-pages-sub' => 'Мы пакажам вам, як рэдагаваць',
+	'gettingstarted-cta-leave' => 'Не, дзякуй, можа быць, пазьней',
 );
 
 /** Bulgarian (български)
@@ -455,10 +454,11 @@ $3',
 /** Czech (čeština)
  * @author Mormegil
  * @author Paxt
+ * @author Utar
  * @author Vks
  */
 $messages['cs'] = array(
-	'gettingstarted-desc' => 'Pomáhá novým uživatelům začít s editacemi.',
+	'gettingstarted-desc' => 'Pomáhá novým uživatelům začít s editacemi',
 	'gettingstarted-project-link' => '{{ns:Project}}:Jak začít',
 	'tag-gettingstarted_edit' => 'nový uživatel [[{{MediaWiki:gettingstarted-project-link}}|začíná]]',
 	'tag-gettingstarted_edit-description' => 'Editace stránky, kterou si uživatel zvolil ze seznamu úkolů na stránce [[Special:GettingStarted|Jak začít]]', # Fuzzy
@@ -552,6 +552,7 @@ $3',
 );
 
 /** German (Deutsch)
+ * @author Church of emacs
  * @author Kghbln
  * @author Metalhead64
  */
@@ -560,30 +561,30 @@ $messages['de'] = array(
 	'gettingstarted-desc' => 'Hilft neuen Benutzern, Autoren zu werden.',
 	'gettingstarted-project-link' => '{{ns:Project}}:Erste Schritte',
 	'tag-gettingstarted_edit' => '[[{{MediaWiki:gettingstarted-project-link}}|Erste Schritte]] eines neuen Autors',
-	'tag-gettingstarted_edit-description' => 'Bearbeitung durchgeführt mit dem System „[[{{MediaWiki:gettingstarted-project-link}}|Anfangen]]“, das Bearbeitern einfache Aufgaben vorschlägt und ihnen zeigt, wie man sie abschließt.',
+	'tag-gettingstarted_edit-description' => 'Bearbeitung durchgeführt mit dem System „[[{{MediaWiki:gettingstarted-project-link}}|Erste Schritte]]“, das Bearbeitern einfache Aufgaben vorschlägt und ihnen zeigt, wie man sie abschließt.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Zeig mir, wie',
-	'gettingstarted-task-toolbar-editing-help-title' => 'Einen Guide zum Bearbeiten anzeigen',
+	'gettingstarted-task-toolbar-editing-help-title' => 'Bearbeitungshilfe anzeigen',
 	'gettingstarted-task-toolbar-try-another-text' => 'Eine andere Seite versuchen ►',
 	'gettingstarted-task-toolbar-close-title' => 'Diese Werkzeugleiste schließen',
-	'gettingstarted-task-toolbar-no-suggested-page' => 'Leider können derzeit keine weiteren Seiten zur Verbesserung vorgeschlagen werden. Versuche es gleich erneut oder suche nach deinen eigenen interessanten Themen.',
+	'gettingstarted-task-toolbar-no-suggested-page' => 'Leider können derzeit keine weiteren Seiten zur Verbesserung vorgeschlagen werden. Versuche es gleich erneut oder suche Themen, für die du dich interessierst.',
 	'gettingstarted-task-copyedit-toolbar-description' => 'Diese Seite könnte Rechtschreibe- oder Grammatikfehler haben, die du korrigieren kannst.',
-	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Gehe zu einer zufälligen Seite, die du durch redigieren verbessern kannst.',
-	'gettingstarted-task-clarify-toolbar-description' => 'Diese Seite könnte verwirrend oder unklar sein. Suche nach Wegen, um sie klarer zu machen.',
-	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Gehe zu einer zufälligen Seite, die du verdeutlichen kannst.',
-	'gettingstarted-task-addlinks-toolbar-description' => 'Diese Seite könnte mehr Links brauchen. Suche nach Begriffen, die eine {{SITENAME}}-Seite hat.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Gehe zu einer zufälligen Seite, um sie durch Korrekturlesen zu verbessern.',
+	'gettingstarted-task-clarify-toolbar-description' => 'Diese Seite könnte verwirrend oder unklar sein. Versuche sie verständlicher zu machen.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Gehe zu einer zufälligen Seite, deren Text du verständlicher machen kannst.',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Diese Seite könnte mehr Links brauchen. Suche nach Begriffen, die eine {{SITENAME}}-Seite haben.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Gehe zu einer zufälligen Seite, bei der du Links hinzufügen kannst.',
-	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Wie man anfängt',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Erste Schritte',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Überfliege die Seite und suche nach Verbesserungen. Falls du dich überfordert fühlst, mach dir keine Sorgen. Du musst kein Experte in diesem Thema sein. Falls du Hilfe benötigst oder eine andere Seite ausprobieren möchtest, benutze die Links in der obigen Leiste.',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Ideen, was zu tun ist.',
-	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Diese Banner kennzeichnen Seitenprobleme. Du musst sie nicht alle angehen. Lege dich auf das fest, was du kannst.',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Diese Banner kennzeichnen Probleme mit der Seite. Du musst sie nicht alle angehen. Konzentriere dich auf ein Problem, das du beheben kannst.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Klicke auf „{{int:vector-view-edit}}“',
-	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Du kannst den ganzen Artikel bearbeiten, indem du hier klickst.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Du kannst den gesamten Artikel bearbeiten, indem du hier klickst.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Einen Abschnitt bearbeiten',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Falls du einen bestimmten Abschnitt bearbeiten möchtest, kannst du auf den blauen „{{int:editsection}}“-Link zu Beginn jeden Abschnitts klicken.',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Du kannst bearbeiten!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Du kannst jetzt die Seite bearbeiten. Wenn du fertig bist, klicke auf „{{int:visualeditor-toolbar-savedialog}}“, um deine Änderungen zu überprüfen und zu speichern.',
 	'guidedtour-tour-gettingstarted-click-preview-title' => 'Vorschau (optional)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => 'Klicke auf „{{int:showpreview}}“, um zu sehen, wie die Seite mit deinen Änderungen aussieht. Vergiss nicht zu speichern.',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Klicke auf „{{int:showpreview}}“, um zu sehen, wie die Seite mit deinen Änderungen aussieht. Vergiss nur nicht, sie später abzuspeichern.',
 	'guidedtour-tour-gettingstarted-click-save-title' => 'Du bist fast fertig!',
 	'guidedtour-tour-gettingstarted-click-save-description' => 'Klicke auf „{{int:savearticle}}“ und deine Änderungen werden sichtbar.',
 	'gettingstarted-cta-close' => 'Schließen',
@@ -623,6 +624,7 @@ $messages['dsb'] = array(
 
 /** Greek (Ελληνικά)
  * @author Geraki
+ * @author Nikosguard
  * @author ZaDiak
  */
 $messages['el'] = array(
@@ -653,7 +655,7 @@ $messages['el'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Μπορείτε να επεξεργαστείτε!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Τώρα μπορείτε να επεξεργαστείτε τη σελίδα. Όταν τελειώσετε, κάντε κλικ στο "{{int:visualeditor-toolbar-savedialog}}" για να επιθεωρήσετε και να αποθηκεύσετε τις αλλαγές σας.',
 	'guidedtour-tour-gettingstarted-click-preview-title' => 'Προεπισκόπηση (προαιρετικό)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => 'Κάνοντας κλικ στο "{{int:showpreview}}" σας επιτρέπει να ελέγχετε πως θα μοιάζει η σελίδα με τις αλλαγές σας. Απλά μην ξεχάσετε να αποθηκεύσετε!',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Κάνοντας κλικ στο "{{int:showpreview}}" σας επιτρέπει να δείτε πως θα είναι η σελίδα μετά τις αλλαγές που κάνατε. Απλά μην ξεχάσετε να αποθηκεύσετε!',
 	'guidedtour-tour-gettingstarted-click-save-title' => 'Σχεδόν τελειώσατε!',
 	'guidedtour-tour-gettingstarted-click-save-description' => 'Κάντε κλικ στο κουμπί "{{int:savearticle}}" και οι αλλαγές σας θα είναι ορατές.',
 	'gettingstarted-cta-close' => 'Κλείσιμο',
@@ -732,9 +734,9 @@ $messages['es'] = array(
  * @author RM87
  */
 $messages['et'] = array(
-	'gettingstarted' => 'Alustamine',
-	'gettingstarted-welcomesiteuser' => 'Tere tulemast võrgukohta $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Alustamine',
+	'gettingstarted' => 'Esimesed sammud',
+	'gettingstarted-desc' => 'Aitab uuel kasutajal toimetajaks saada.',
+	'gettingstarted-project-link' => '{{ns:Project}}:Esimesed sammud',
 	'guidedtour-tour-gettingstarted-click-preview-title' => 'Eelvaade (valikuline)',
 	'guidedtour-tour-gettingstarted-click-save-title' => 'Sa oled peaaegu lõpetanud!',
 	'guidedtour-tour-gettingstarted-click-save-description' => "Vajuta '{{int:savearticle}}' ja sinu muudatused on nähtavad.",
@@ -754,11 +756,12 @@ $messages['fa'] = array(
 	'gettingstarted-desc' => 'به کاربران جدید کمک می‌کند که ویرایشگر شوند',
 	'gettingstarted-project-link' => '{{ns:Project}}:شروع',
 	'tag-gettingstarted_edit' => 'ویرایشگر جدید [[{{MediaWiki:gettingstarted-project-link}}|شروع کنید]]',
-	'tag-gettingstarted_edit-description' => 'ویرایش صفحه‌ای که کاریر از فهرست وظایف در [[Special:GettingStarted|شروع شده]] استفاده می‌کند', # Fuzzy
+	'tag-gettingstarted_edit-description' => 'ویرایش ایجاد شده از طریق سیستم [[{{MediaWiki:gettingstarted-project-link}}|GettingStarted]]، که وظایف آسانی را به ویراستاران پیشنهاد می‌کند و به آنها نشان می‌دهد که چه‌طور آنها را کامل کنند.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'به‌ من نشان بده چگونه',
 	'gettingstarted-task-toolbar-editing-help-title' => 'نشان‌ دادن یک راهنما در مورد چگونگی ویرایش',
 	'gettingstarted-task-toolbar-try-another-text' => '► صفحه دیگری را امتحان کنید',
 	'gettingstarted-task-toolbar-close-title' => 'این نوار ابزار را ببندید',
+	'gettingstarted-task-toolbar-no-suggested-page' => 'متأسفم. ما در حال حاضر نتوانستیم صفحات بیشتری برای بهبود یافتن پیدا کنیم. وقت دیگری دوباره امتحان کنید یا برای عناوین مورد علاقهٔ خود جستجو کنید.',
 	'gettingstarted-task-copyedit-toolbar-description' => 'این صفحه ممکن است غلط‌های املایی یا دستور زبان داشته باشد که می‌توانید تصحیح کنید.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'رفتن به صفحهٔ اتفاقی که شما توسط ویرایش کپی می‌توانید اصلاح کنید',
 	'gettingstarted-task-clarify-toolbar-description' => 'این صفحه ممکن است گیج‌کننده یا مبهم باشد. دنبال راه‌هایی برای واضح‌تر کردن آن بگردید.',
@@ -766,6 +769,7 @@ $messages['fa'] = array(
 	'gettingstarted-task-addlinks-toolbar-description' => 'این صفحه ممکن است به لینک‌های بیشتری نیاز داشته‌باشد. به دنبال شرایطی باشید که یک {{SITENAME}} صفحه دارد.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'رفتن به صفحهٔ اتفاقی که شما می‌توانید لینک‌ها را به آن اضافه کنید',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'چگونگی شروع شدن',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'فقط شروع به اسکن کردن از طریق صفحه‌ای کنید که به دنبال بهبود است. اگر احساس نگرانی کردید، نگران نباشید. شما نباید یک کارشناس در این موضوع باشید! اگر نیاز به کمک دارید یا می‌خواهید صفحهٔ دیگری را امتحان کنید، از لینک های بالای نوار استفاده کنید.',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'ایده‌هایی برای چه انجام دادن',
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'این علامت‌ها مشکلات این صفحه را شناسایی می‌کند. لازم نیست شما به همهٔ آنها بپردازید، فقط آنهایی را قرار دهید که با انجام  دادن آن راحت هستید.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => '{{int:vector-view-edit}} را کلیک کنید',
@@ -797,34 +801,39 @@ $messages['fa'] = array(
  */
 $messages['fi'] = array(
 	'gettingstarted' => 'Alkuaskeleet',
-	'gettingstarted-desc' => 'Lisää [[Special:GettingStarted|tervetulosivun]] uusille käyttäjille (näytetään tunnuksen luonnin jälkeen)',
-	'gettingstarted-welcomesiteuser' => 'Tervetuloa sivustolle $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Aloittaminen',
-	'gettingstarted-welcome-back-site-user' => 'Tervetuloa takaisin, $2',
-	'gettingstarted-task-header' => 'Kiitos, että liityit {{GRAMMAR:illative|{{SITENAME}}}}! Tässä muutamia tapoja päästä alkuun.
-
-Valitse vaihtoehto alta, niin näet satunnaisen sivun, joka tarvitsee huomiota.',
-	'gettingstarted-return' => 'Ei kiitos, vie minut takaisin sivulle, jota luin',
-	'gettingstarted-task-copyedit-main-description' => 'Korjaa kirjoitus- ja kielioppivirheitä',
-	'gettingstarted-task-copyedit-secondary-description' => 'Helpoin tapa päästä alkuun!',
-	'gettingstarted-task-clarify-secondary-description' => 'Yksinkertaista tai kirjoita virkkeitä uudelleen.',
-	'gettingstarted-task-addlinks-main-description' => 'Lisää linkkejä',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Takaisin listaan', # Fuzzy
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Palaa takaisin listaan artikkeleista', # Fuzzy
+	'gettingstarted-desc' => 'Auttaa uusista käyttäjistä tulemaan muokkaajia',
+	'gettingstarted-project-link' => '{{ns:Project}}:Alkuaskeleet',
+	'tag-gettingstarted_edit' => 'uusi käyttäjä [[{{MediaWiki:gettingstarted-project-link}}|aloittamassa]]',
+	'tag-gettingstarted_edit-description' => 'Muokkaus tehty [[{{MediaWiki:gettingstarted-project-link}}|Alkuaskeleet]]-järjestelmän kautta, joka ehdottaa helppoja tehtäviä muokkaajille, ja näyttää heille kuinka suorittaa ne.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Näytä kuinka',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Näytä muokkausopas',
 	'gettingstarted-task-toolbar-try-another-text' => 'Kokeile toista sivua ►',
 	'gettingstarted-task-toolbar-close-title' => 'Sulje työkalurivi',
+	'gettingstarted-task-toolbar-no-suggested-page' => 'Pahoittelut. Emme löytäneet enempää sivuja, joita voisi parantaa tällä hetkellä. Yritä uudelleen piakkoin tai etsi kiinnostuksen kohteitasi.',
 	'gettingstarted-task-copyedit-toolbar-description' => 'Tässä sivussa voi olla kirjoitus- ja kielioppivirheitä, jotka voit korjata.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Mene satunnaiselle sivulle, jota voit parantaa tekemällä kielenhuoltoa',
 	'gettingstarted-task-clarify-toolbar-description' => 'Tämä sivu saattaa olla sekava tai epämääräinen. Keksi, miten voit tehdä siitä selkeämmän.',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Mene satunnaiseen sivuun, jota voit selkeyttää',
 	'gettingstarted-task-addlinks-toolbar-description' => 'Tämä sivu saattaa tarvita lisää linkkejä. Etsi käsitteitä, joilla on {{SITENAME}}-sivu.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Etsii satunnaisen sivun, johon voit lisätä linkkejä',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Miten päästä alkuun',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Ideoita mitä tehdä',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Napsauta {{int:vector-view-edit}}',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Voit muokata artikkelia napsauttamalla tästä.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Muokkaa osiota',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Jos haluat muokata tiettyä osiota, voit napsauttaa sinistä »{{int:editsection}}»-linkkiä jokaisen osion yläpuolella.',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Voit muokata!',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Esikatselu (valinnainen)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Napsauttamalla "{{int:showpreview}}" näet miltä sivu näyttää muutostesi jälkeen. Älä unohda tallentaa.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Olet melkein valmis!',
 	'guidedtour-tour-gettingstarted-click-save-description' => 'Napsauta »{{int:savearticle}}» ja muutoksesi tulevat näkyviin.',
+	'gettingstarted-cta-close' => 'Sulje',
+	'gettingstarted-cta-text' => 'Voit osallistua sivustolla {{SITENAME}} eri tavoin',
+	'gettingstarted-cta-edit-page' => 'Muokkaa tätä sivua',
+	'gettingstarted-cta-edit-page-sub' => 'Näytämme miten',
+	'gettingstarted-cta-fix-pages' => 'Hae sivuja, jotka tarvitsevat helppoja korjauksia',
+	'gettingstarted-cta-fix-pages-sub' => 'Näytämme, miten voit muokata',
+	'gettingstarted-cta-leave' => 'Ei kiitos, ehkä myöhemmin',
 );
 
 /** French (français)
@@ -837,46 +846,47 @@ Valitse vaihtoehto alta, niin näet satunnaisen sivun, joka tarvitsee huomiota.'
  * @author Metroitendo
  * @author Trizek
  * @author Valystant
+ * @author Verdy p
  * @author Wyz
  */
 $messages['fr'] = array(
-	'gettingstarted' => 'Pour commencer',
-	'gettingstarted-desc' => 'Aide les nouveaux utilisateurs à devenir des éditeurs',
-	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
-	'tag-gettingstarted_edit' => '[[{{MediaWiki:gettingstarted-project-link}}|guide de démarrage]] du nouvel éditeur',
-	'tag-gettingstarted_edit-description' => 'Modification faite au moyen du système [[{{MediaWiki:gettingstarted-project-link}}|GettingStarted]], qui suggère des tâches faciles aux éditeurs et leur montre comment les accomplir.',
+	'gettingstarted' => 'Premiers pas',
+	'gettingstarted-desc' => 'Aide les nouveaux utilisateurs à devenir des rédacteurs',
+	'gettingstarted-project-link' => '{{ns:Project}}:Premiers pas',
+	'tag-gettingstarted_edit' => '[[{{MediaWiki:gettingstarted-project-link}}|premiers pas]] du nouveau rédacteur',
+	'tag-gettingstarted_edit-description' => 'Modification faite au moyen du système [[{{MediaWiki:gettingstarted-project-link}}|Premiers pas]], qui suggère des tâches faciles aux rédacteurs et leur montre comment les accomplir.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Me montrer comment faire',
-	'gettingstarted-task-toolbar-editing-help-title' => 'Voir un guide sur la façon de modifier',
+	'gettingstarted-task-toolbar-editing-help-title' => 'Voir un guide sur la façon de modifier une page',
 	'gettingstarted-task-toolbar-try-another-text' => 'Essayer une autre page ►',
-	'gettingstarted-task-toolbar-close-title' => 'Fermer cette barre d’outils',
+	'gettingstarted-task-toolbar-close-title' => 'Fermer cette barre d’outils.',
 	'gettingstarted-task-toolbar-no-suggested-page' => 'Désolé. Nous ne trouvons plus de page à améliorer pour l’instant. Réessayez dans un moment ou recherchez vos propres centres d’intérêt.',
 	'gettingstarted-task-copyedit-toolbar-description' => 'Cette page peut comporter des erreurs d’orthographe ou de grammaire que vous pouvez corriger.',
-	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Aller à une page au hasard que vous pouvez améliorer en modifiant par copie',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Aller à une page au hasard que vous pouvez améliorer en modifiant par copie.',
 	'gettingstarted-task-clarify-toolbar-description' => 'Cette page peut être source de confusion ou vague. Cherchez des façons de la rendre plus claire.',
-	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Aller à une page au hasard que vous pourrez préciser',
-	'gettingstarted-task-addlinks-toolbar-description' => 'Cette page peut avoir besoin de plus de liens. Cherchez les termes qui ont une page sur {{SITENAME}}.',
-	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Aller à une page au hasard à laquelle vous pourrez ajouter des liens',
-	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Comment débuter',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Aller vers une page au hasard que vous pourrez rendre plus claire.',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Cette page pourrait nécessiter davantage de liens. Cherchez des termes qui ont une page sur {{SITENAME}}.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Aller vers une page au hasard dans laquelle vous pourrez ajouter des liens.',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Comment bien démarrer',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Commencez simplement à analyser la page et à chercher des améliorations. Si vous vous sentez dépassé, ne vous inquiétez pas. Vous n’avez pas besoin d’être un expert de ce sujet ! Si vous avez besoin d’aide ou voulez essayer une autre page, utilisez les liens de la barre du haut.',
-	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Idées sur ce qui peut être fait',
-	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Ces bannières identifient des problèmes avec cette page. Vous n’avez pas besoin de les traiter, occupez-vous seulement de ce dont vous vous sentez capable.',
-	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Cliquez sur {{int:vector-view-edit}}',
-	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => "Vous pouvez modifier l'article en entier en cliquant ici.",
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Quelques idées sur ce qui peut être fait.',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Ces bannières identifient des problèmes avec cette page. Vous n’avez pas besoin de les traiter tous, occupez-vous seulement de ce dont vous vous sentez capable.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Cliquez sur {{int:vector-view-edit}}.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Vous pouvez modifier la page entière en cliquant ici.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Modifier une section',
-	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Si vous souhaitez modifier une section spécifique, vous pouvez cliquer sur le lien '{{int:editsection}}' bleu en haut de chaque section.",
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Si vous souhaitez modifier une section spécifique, vous pouvez cliquer sur le lien bleu « {{int:editsection}} » en haut de chaque section.',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Vous pouvez modifier !',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Vous pouvez maintenant modifier la page. Quand vous avez terminé, cliquez sur « {{int:visualeditor-toolbar-savedialog}} » pour vérifier et enregistrer vos modifications.',
 	'guidedtour-tour-gettingstarted-click-preview-title' => 'Aperçu (facultatif)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => "Cliquer sur « {{int:showpreview}} » vous permet de vérifier à quoi ressemblera la page avec vos modifications. Ensuite, n'oubliez pas de publier pour enregistrer.",
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Cliquer sur « {{int:showpreview}} » vous permet de vérifier à quoi ressemblera la page avec vos modifications. N’oubliez pas ensuite de publier pour les conserver.',
 	'guidedtour-tour-gettingstarted-click-save-title' => 'Vous avez presque fini !',
-	'guidedtour-tour-gettingstarted-click-save-description' => 'Cliquez sur «”{{int:savearticle}} » et vos modifications seront visibles.',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Cliquez sur « {{int:savearticle}} » et vos modifications seront visibles.',
 	'gettingstarted-cta-close' => 'Fermer',
-	'gettingstarted-cta-heading' => 'Aide {{SITENAME}}',
+	'gettingstarted-cta-heading' => 'Aidez {{SITENAME}}',
 	'gettingstarted-cta-text' => 'Vous pouvez contribuer à {{SITENAME}} de différentes façons',
 	'gettingstarted-cta-edit-page' => 'Modifier cette page',
 	'gettingstarted-cta-edit-page-sub' => 'Nous allons vous montrer comment',
 	'gettingstarted-cta-fix-pages' => 'Trouver des pages qui ont besoin de corrections faciles',
-	'gettingstarted-cta-fix-pages-sub' => 'Nous allons vous montrer comment modifier',
+	'gettingstarted-cta-fix-pages-sub' => 'Nous allons vous montrer comment les modifier',
 	'gettingstarted-cta-leave' => 'Non merci, peut-être plus tard',
 );
 
@@ -1230,36 +1240,23 @@ $messages['ka'] = array(
 );
 
 /** Korean (한국어)
+ * @author Freebiekr
  * @author Hym411
  * @author Priviet
  * @author 아라
  */
 $messages['ko'] = array(
 	'gettingstarted' => '시작하기',
-	'gettingstarted-desc' => '새 사용자를 위한 [[Special:GettingStarted|환영 문서]]를 추가합니다 (계정을 만들고 나서 나타납니다)',
-	'gettingstarted-welcomesiteuser' => '$2님, $1에 오신 것을 환영합니다!',
-	'gettingstarted-welcomesiteuseranon' => '시작하기',
-	'gettingstarted-welcome-back-site-user' => '$2님, 다시 오신 것을 환영합니다',
-	'gettingstarted-task-header' => '{{SITENAME}}에 가입해주셔서 감사합니다! 여기에 참여할 수 있는 몇 가지 방법이 있습니다.
-
-아래의 옵션을 선택하고 나서 도움이 필요한 임의 문서를 볼 수 있습니다.',
-	'gettingstarted-return' => '← 괜찮습니다, 읽던 문서로 돌아갑니다',
+	'gettingstarted-desc' => '새 사용자가 편집자가 되도록 돕습니다.',
 	'gettingstarted-project-link' => '{{ns:Project}}:시작하기',
 	'tag-gettingstarted_edit' => '새 편집자 [[{{MediaWiki:gettingstarted-project-link}}|시작하기]]',
-	'tag-gettingstarted_edit-description' => '사용자가 [[Special:GettingStarted|시작하기]]에 작업 목록에서 선택한 문서의 편집',
-	'gettingstarted-task-copyedit-main-description' => '맞춤법과 문법 고치기',
-	'gettingstarted-task-copyedit-secondary-description' => '시작하는 가장 쉬운 방법!',
-	'gettingstarted-task-clarify-main-description' => '명확성 향상',
-	'gettingstarted-task-clarify-secondary-description' => '문장을 간단하게 하거나 바꾸어 적으세요.',
-	'gettingstarted-task-addlinks-main-description' => '링크 추가',
-	'gettingstarted-task-addlinks-secondary-description' => '{{SITENAME}} 페이지끼리 연결합니다.',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ 다른 작업 선택',
-	'gettingstarted-task-toolbar-return-to-list-title' => '작업 선택 문서로 돌아갑니다',
+	'tag-gettingstarted_edit-description' => '편집자에게 쉬운 작업을 제시하여 그 작업을 어떻게 완료하는지 보여주는 [[{{MediaWiki:gettingstarted-project-link}}|시작하기]] 시스템에서 작성한 편집.',
 	'gettingstarted-task-toolbar-editing-help-text' => '방법 보기',
-	'gettingstarted-task-toolbar-editing-help-title' => '편집하는 방법에 대한 가이드 보기',
-	'gettingstarted-task-toolbar-try-another-text' => '다른 페이지를 시도 ►',
-	'gettingstarted-task-toolbar-close-title' => '이 툴바 닫기',
-	'gettingstarted-task-copyedit-toolbar-description' => '이 문서는 고칠 수 있는 맞춤법이나 문법 오류가 있을 수 있습니다.',
+	'gettingstarted-task-toolbar-editing-help-title' => '편집하는 방법 안내 보기',
+	'gettingstarted-task-toolbar-try-another-text' => '다른 문서 시험 ►',
+	'gettingstarted-task-toolbar-close-title' => '이 도구줄 닫기',
+	'gettingstarted-task-toolbar-no-suggested-page' => '죄송하지만 지금은 개선할 더 많은 문서를 찾을 수 없습니다. 잠시 후에 다시 시도하거나 자신이 관심있는 주제를 찾아보십시오.',
+	'gettingstarted-task-copyedit-toolbar-description' => '이 문서에는 철자나 문법 오류가 있을 수 있으며 정정할 수 있습니다.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => '교정에 의해 향상할 수 있는 임의 문서로 갑니다',
 	'gettingstarted-task-clarify-toolbar-description' => '이 문서는 혼동스럽거나 막연할 수 있습니다. 명확하게 할 수 있는 방법을 찾아보세요.',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => '명확하게 할 수 있는 임의 문서로 갑니다',
@@ -1279,23 +1276,6 @@ $messages['ko'] = array(
 	'guidedtour-tour-gettingstarted-click-preview-description' => '"{{int:showpreview}}"를 클릭하면 문서가 어떻게 바뀌었는지 확인할 수 있습니다. 저장하는 것을 잊지 마세요.',
 	'guidedtour-tour-gettingstarted-click-save-title' => '거의 끝났습니다!',
 	'guidedtour-tour-gettingstarted-click-save-description' => "'{{int:savearticle}}'을 클릭하여 바뀜을 볼 수 있습니다.",
-	'notification-gettingstarted-link-text-get-started' => '시작하기',
-	'notification-gettingstarted-start-editing' => '{{SITENAME}}(은)는 여러분과 같은 사람들이 작성한 자유 백과사전입니다. 첫 편집을 하는 것을 [[Special:GettingStarted|시작하세요]]!',
-	'notification-gettingstarted-start-editing-email-subject' => '{{SITENAME}} 편집 시작하기',
-	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}}(은)는 여러분과 같은 사람들이 작성한 자유 백과사전입니다. 첫 편집을 하는 것을 시작하세요!
-
-문서를 개선하는 쉬운 방법의 목록에 대해서는 $2(을)를 방문하세요.
-
-$3',
-	'notification-gettingstarted-start-editing-text-email-batch-body' => '$2(을)를 방문하여 {{SITENAME}} 편집 시작하기',
-	'notification-gettingstarted-continue-editing' => '잘했습니다! 이미 {{SITENAME}}에 첫 편집을 했습니다. 할 일을 더 찾고 있다면, 여기에 [[Special:GettingStarted|도움이 되는 쉬운 방법]]이 있습니다.',
-	'notification-gettingstarted-continue-editing-email-subject' => '{{SITENAME}}(을)를 개선하는 쉬운 방법',
-	'notification-gettingstarted-continue-editing-text-email-body' => '잘했습니다! 이미 {{SITENAME}}에 첫 편집을 했습니다.
-
-할 일을 더 찾고 있다면 $2에 도움이 되는 쉬운 방법의 목록이 있습니다
-
-$3',
-	'notification-gettingstarted-continue-editing-text-email-batch-body' => '할 일을 더 찾고 있습니까? 도움이 되는 쉬운 방법의 목록에 대해서는 $2(을)를 방문하세요.',
 	'gettingstarted-cta-close' => '닫기',
 	'gettingstarted-cta-heading' => '{{SITENAME}} 도움말',
 	'gettingstarted-cta-text' => '당신은 {{SITENAME}}에 다양한 방법으로 기여할 수 있습니다.',
@@ -1678,34 +1658,21 @@ $3',
 );
 
 /** Dutch (Nederlands)
+ * @author Arent
  * @author Konovalov
  * @author Siebrand
  */
 $messages['nl'] = array(
 	'gettingstarted' => 'Aan de slag',
-	'gettingstarted-desc' => 'Voegt een [[Special:GettingStarted|welkomstpagina]] voor nieuwe gebruikers toe na registereren',
-	'gettingstarted-welcomesiteuser' => 'Welkom bij $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Aan de slag',
-	'gettingstarted-welcome-back-site-user' => 'Welkom terug, $2',
-	'gettingstarted-task-header' => 'Bedankt voor het registreren bij {{SITENAME}}! Hier zijn een aantal manieren waarop u mee kunt doen.
-
-Kies een van de onderstaande mogelijkheden voor een willekeurige pagina die uw hulp nodig heeft.',
-	'gettingstarted-return' => '← Nee bedankt. Ik wil graag terug naar waar ik vandaan kom',
+	'gettingstarted-desc' => 'Helpt nieuwe gebruikers redacteur te laten worden',
 	'gettingstarted-project-link' => '{{ns:Project}}:Aan de slag',
 	'tag-gettingstarted_edit' => 'nieuwe bewerker [[{{MediaWiki:gettingstarted-project-link}}|aan de slag]]',
-	'tag-gettingstarted_edit-description' => 'Bewerking aan een pagina die de gebruiker heeft gekozen uit de takenlijst op [[Special:GettingStarted|aan de slag]]',
-	'gettingstarted-task-copyedit-main-description' => 'Grammatica en spelling corrigeren',
-	'gettingstarted-task-copyedit-secondary-description' => 'De eenvoudigste manier om aan de slag te gaan!',
-	'gettingstarted-task-clarify-main-description' => 'Duidelijkheid verbeteren',
-	'gettingstarted-task-clarify-secondary-description' => 'Zinnen vereenvoudigen of anders verwoorden.',
-	'gettingstarted-task-addlinks-main-description' => 'Koppelingen toevoegen',
-	'gettingstarted-task-addlinks-secondary-description' => "Koppel pagina's van {{SITENAME}} aan elkaar.",
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Andere taak kiezen',
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Terug naar de pagina met taken',
+	'tag-gettingstarted_edit-description' => 'Bewerking aan een pagina die de gebruiker heeft gekozen uit de takenlijst op [[{{MediaWiki:gettingstarted-project-link}}|aan de slag]] waar eenvoudige taken gesuggereerd worden met aanwijzingen hoe deze te voltooien zijn voor nieuwe redacteuren.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Laten zien hoe',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Gids weergeven over hoe u kunt bewerken',
 	'gettingstarted-task-toolbar-try-another-text' => 'Andere pagina proberen ►',
 	'gettingstarted-task-toolbar-close-title' => 'Werkbalk sluiten',
+	'gettingstarted-task-toolbar-no-suggested-page' => "Sorry. Meer pagina's om te worden verbeterd op dit moment konden we niet vinden. Probeer het over enige tijd opnieuw of zoek naar onderwerpen die u van belang vindt.",
 	'gettingstarted-task-copyedit-toolbar-description' => 'Deze pagina heeft mogelijk spel- of grammaticafouten die u kunt corrigeren.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Ga naar een willekeurige pagina die u kunt verbeteren door redactie uit te voeren',
 	'gettingstarted-task-clarify-toolbar-description' => 'Deze pagina is mogelijk verwarrend of vaag. Probeer de tekst duidelijker te maken.',
@@ -1726,23 +1693,6 @@ Kies een van de onderstaande mogelijkheden voor een willekeurige pagina die uw h
 	'guidedtour-tour-gettingstarted-click-preview-description' => 'Door te klikken op "{{int:showpreview}}" kunt u controleren hoe de pagina wordt weergegeven met uw wijzigingen. Vergeet uw wijzigingen niet op te slaan.',
 	'guidedtour-tour-gettingstarted-click-save-title' => 'U bent bijna klaar!',
 	'guidedtour-tour-gettingstarted-click-save-description' => 'Klik "{{int:savearticle}}" zodat uw wijzigingen zichtbaar worden.',
-	'notification-gettingstarted-link-text-get-started' => 'Aan de slag',
-	'notification-gettingstarted-start-editing' => '{{SITENAME}} is een vrije encyclopedie geschreven door mensen zoals u. [[Special:GettingStarted|Ga aan de slag]] door uw eerste bewerking te maken!',
-	'notification-gettingstarted-start-editing-email-subject' => 'Aan de slag met het bewerken van {{SITENAME}}',
-	'notification-gettingstarted-start-editing-text-email-body' => "{{SITENAME}} is een vrije encyclopedie geschreven door mensen zoals u. Ga aan de slag door uw eerste bewerking te maken!
-
-Ga naar $2 voor een lijst van eenvoudige manieren om pagina's te verbeteren.
-
-$3",
-	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Ga naar de volgende pagina om aan de slag te gaan met het bewerken van {{SITENAME}}: $2',
-	'notification-gettingstarted-continue-editing' => 'Mooi werk! U hebt nu al uw eerste bijdragen gemaakt aan {{SITENAME}}. Als u meer zoekt om te doen, dan zijn er nog [[Special:GettingStarted|meer eenvoudige manieren om te helpen]].',
-	'notification-gettingstarted-continue-editing-email-subject' => 'Eenvoudige manieren om {{SITENAME}} te verbeteren',
-	'notification-gettingstarted-continue-editing-text-email-body' => 'Mooi werk! U hebt nu al uw eerste bijdragen gemaakt aan {{SITENAME}}.
-
-Als u meer zoekt om te doen, dan vindt u hier nog meer eenvoudige manieren om bij te dragen: $2
-
-$3',
-	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Zoekt u nog meer te doen? Volg deze koppeling voor een lijst met eenvoudige manieren om te helpen: $2',
 	'gettingstarted-cta-close' => 'Sluiten',
 	'gettingstarted-cta-heading' => 'Help {{SITENAME}}',
 	'gettingstarted-cta-text' => 'U kunt op meerdere manieren bijdragen aan {{SITENAME}}',
@@ -1756,10 +1706,47 @@ $3',
 /** Polish (polski)
  * @author Chrumps
  * @author Rzuwig
+ * @author Tar Lócesilion
  */
 $messages['pl'] = array(
-	'gettingstarted-welcome-back-site-user' => 'Witaj ponownie, $2',
+	'gettingstarted' => 'Pierwsze kroki',
+	'gettingstarted-desc' => 'Pomaga nowym użytkownikom stać się edytorami',
+	'gettingstarted-project-link' => '{{ns:Project}}:Pierwsze kroki',
+	'tag-gettingstarted_edit' => 'nowy użytkownik stawiający [[{{MediaWiki:gettingstarted-project-link}}|pierwsze kroki]]',
+	'tag-gettingstarted_edit-description' => 'Edycja wykonana za pomocą systemu [[{{MediaWiki:gettingstarted-project-link}}|pierwszych kroków]], który podsuwa łatwe zadania użytkownikom i pokazuje, jak je wykonać.',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Pokaż, jak',
+	'gettingstarted-task-toolbar-editing-help-title' => 'Pokaż przewodnik po edytowaniu',
+	'gettingstarted-task-toolbar-try-another-text' => 'Spróbuj na innej stronie ►',
+	'gettingstarted-task-toolbar-close-title' => 'Zamknij ten pasek narzędzi',
+	'gettingstarted-task-toolbar-no-suggested-page' => 'Przepraszamy, nie mogliśmy znaleźć więcej stron wymagających dopracowania. Spróbuj ponownie za kilka chwil albo poszukaj interesujących cię tematów.',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Na tej stronie mogą być błędy w pisowni lub błędy gramatyczne, które możesz poprawić.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Idź do losowej strony, na której możesz przeredagować tekst',
+	'gettingstarted-task-clarify-toolbar-description' => 'Ta strona może być napisana w sposób niejasny lub wprowadzający w błąd. Przeredaguj ją na bardziej precyzyjną.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Idź do losowej strony, na której możesz poprawić błędy językowe',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Ta strona może wymagać zamieszczenia większej liczby linków. Odszukaj pojęcia, które mają swoje strony w {{GRAMMAR:MS.lp|{{SITENAME}}}}.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Idź do losowej strony, na której możesz dodać linki',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Jak zacząć',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Po prostu zacznij szukać na stronie rzeczy, które wymagają dopracowania. Jeżeli czujesz się przytłoczony, nie martw się. Nie musisz być ekspertem w tym temacie! Jeżeli potrzebujesz pomocy albo chcesz spróbować na innej stronie, użyj linków na górnym pasku.',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Propozycje dotyczące tego, co trzeba zrobić',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Takie ramki wyliczają problemy. Nie musisz rozwiązać ich wszystkich, po prostu zrób to, co jest dla ciebie wygodne.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Kliknij {{int:vector-view-edit}}',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Możesz edytować całą stronę klikając tutaj.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Edytuj sekcję',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Jeżeli chcesz edytować konkretną sekcję, możesz kliknąć na niebieski link ''{{int:editsection}}'' znajdujący się na górze każdej sekcji.",
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Możesz edytować!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "Teraz możesz edytować stronę. Kiedy skończysz, kliknij ''{{int:visualeditor-toolbar-savedialog}}'', aby przejrzeć i zapisać zmiany.",
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Podgląd (opcjonalnie)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => "Kliknięcie ''{{int:showpreview}}'' pozwala ci sprawdzić, jak strona będzie wyglądała po twoich zmianach. Nie zapomnij ich zapisać.",
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Prawie gotowe!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Kliknij "{{int:savearticle}}", a twoje zmiany będą widoczne.',
+	'gettingstarted-cta-close' => 'Zamknij',
+	'gettingstarted-cta-heading' => 'Pomóż {{GRAMMAR:C.lp|{{SITENAME}}}}',
+	'gettingstarted-cta-text' => 'Możesz w różny sposób wnieść wkład w {{GRAMMAR:B.lp|{{SITENAME}}}}',
+	'gettingstarted-cta-edit-page' => 'Edytuj stronę',
+	'gettingstarted-cta-edit-page-sub' => 'Pokażemy ci, jak',
+	'gettingstarted-cta-fix-pages' => 'Znajdź strony wymagające drobnych poprawek',
+	'gettingstarted-cta-fix-pages-sub' => 'Pokażemy ci, jak edytować',
+	'gettingstarted-cta-leave' => 'Nie, dziękuję, może później',
 );
 
 /** Piedmontese (Piemontèis)
@@ -2055,29 +2042,15 @@ $messages['tl'] = array(
  */
 $messages['uk'] = array(
 	'gettingstarted' => 'Початок роботи',
-	'gettingstarted-desc' => 'Додає [[Special:GettingStarted|вітальну сторінку]] для нових користувачів (показується після створення облікового запису)',
-	'gettingstarted-welcomesiteuser' => 'Вітаємо у проекті $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Початок роботи',
-	'gettingstarted-welcome-back-site-user' => 'Вітаємо знову, $2',
-	'gettingstarted-task-header' => 'Дякуємо, що приєднались до {{grammar:genitive|{{SITENAME}}}}! Ось кілька способів включитись в роботу.
-
-Оберіть варіант внизу, і Ви побачите випадкову сторінку, яка потребує допомоги.',
-	'gettingstarted-return' => '← Ні, дякую, поверніть на сторінку, яку я читав',
+	'gettingstarted-desc' => 'Допомагає новим користувачам стати редакторами',
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	'tag-gettingstarted_edit' => 'новий дописувач [[{{MediaWiki:gettingstarted-project-link}}|почав працювати]]',
-	'tag-gettingstarted_edit-description' => 'Редагування сторінки, яку користувач обрав зі списку завдань на сторінці [[Special:GettingStarted|Початок роботи]]',
-	'gettingstarted-task-copyedit-main-description' => 'Виправити орфографію і граматику',
-	'gettingstarted-task-copyedit-secondary-description' => 'Найпростіший спосіб почати роботу!',
-	'gettingstarted-task-clarify-main-description' => 'Покращити точність',
-	'gettingstarted-task-clarify-secondary-description' => 'Спростити або перефразувати речення.',
-	'gettingstarted-task-addlinks-main-description' => 'Додати посилання',
-	'gettingstarted-task-addlinks-secondary-description' => "Об'єднати сторінки {{SITENAME}}.",
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Вибрати інше завдання',
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Повернутися на сторінку вибору завдання',
+	'tag-gettingstarted_edit-description' => 'Редагування зроблено через систему [[{{MediaWiki:gettingstarted-project-link}}|Перші кроки]], яка пропонує легкі завдання для редакторів і показує, як завершити їх.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Показати мені, як',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Показати посібник з редагування',
 	'gettingstarted-task-toolbar-try-another-text' => 'Спробувати іншу сторінку ►',
 	'gettingstarted-task-toolbar-close-title' => 'Закрити цю панель',
+	'gettingstarted-task-toolbar-no-suggested-page' => 'Вибачте. Ми не змогли знайти ще сторінки, що вимагають у даний момент поліпшень. Спробуйте ще раз або пошукайте інші цікаві для вас теми.',
 	'gettingstarted-task-copyedit-toolbar-description' => 'Ця сторінка, можливо, має орфографічні або граматичні помилки, які Ви можете виправити.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Перейти до випадкової сторінки, яку ви можете покращити технічним редагуванням',
 	'gettingstarted-task-clarify-toolbar-description' => 'Ця сторінка може бути заплутаною чи розпливчастою. Знайдіть спосіб зробити її зрозумілішою.',
@@ -2098,23 +2071,6 @@ $messages['uk'] = array(
 	'guidedtour-tour-gettingstarted-click-preview-description' => 'Клацання "{{int:showpreview}}" дає змогу перевіряти вигляд сторінки із внесеними змінами. Тільки не забудьте зберегти.',
 	'guidedtour-tour-gettingstarted-click-save-title' => 'Ви майже закінчили!',
 	'guidedtour-tour-gettingstarted-click-save-description' => "Натисніть '{{int:savearticle}}' і зміни буде видно.",
-	'notification-gettingstarted-link-text-get-started' => 'Почати роботу',
-	'notification-gettingstarted-start-editing' => '{{SITENAME}} — це вільна енциклопедія, написана такими ж людьми, як і Ви. [[Special:GettingStarted|Почніть роботу]], зробивши своє перше редагування!',
-	'notification-gettingstarted-start-editing-email-subject' => 'Почніть роботу з редагування {{grammar:genitive|{{SITENAME}}}}',
-	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} — це вільна енциклопедія, написана такими ж людьми, як і Ви. Почніть роботу, зробивши своє перше редагування!
-
-Відвідайте $2, щоб отримати список простих способів покращення сторінок.
-
-$3',
-	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Почніть редагування {{SITENAME}} з відвідання $2',
-	'notification-gettingstarted-continue-editing' => 'Чудова робота! Ви уже зробили свої перші редагування {{SITENAME}}. Якщо шукаєте, що б іще можна було зробити, ось кілька [[Special:GettingStarted|простих способів допомогти]].',
-	'notification-gettingstarted-continue-editing-email-subject' => 'Прості способи покращити {{SITENAME}}',
-	'notification-gettingstarted-continue-editing-text-email-body' => 'Чудова робота! Ви уже зробили свої перші редагування {{SITENAME}}. 
-
-Якщо шукаєте, що б іще можна було зробити, є кілька простих способів допомогти на $2
-
-$3',
-	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Хочете продовжити? Відвідайте $2, де є список простих способів допомогти.',
 	'gettingstarted-cta-close' => 'Закрити',
 	'gettingstarted-cta-heading' => 'Довідка {{SITENAME}}',
 	'gettingstarted-cta-text' => 'Ви можете внести свій внесок {{SITENAME}} по-різному',
@@ -2270,29 +2226,47 @@ $messages['zh-hans'] = array(
 );
 
 /** Traditional Chinese (中文（繁體）‎)
+ * @author Byfserag
  * @author Simon Shek
  * @author StephDC
  */
 $messages['zh-hant'] = array(
 	'gettingstarted' => '入門',
-	'gettingstarted-welcomesiteuser' => '歡迎來到$1，$2!',
-	'gettingstarted-welcomesiteuseranon' => '入門',
-	'gettingstarted-welcome-back-site-user' => '歡迎回來，$2',
-	'gettingstarted-return' => '← 不，謝謝，返回到我剛剛在閱讀的頁面',
+	'gettingstarted-desc' => '幫助新用戶成為編者',
 	'gettingstarted-project-link' => '{{ns:Project}}:入門',
-	'gettingstarted-task-addlinks-main-description' => '添加連結',
+	'tag-gettingstarted_edit' => '新編者[[{{MediaWiki:gettingstarted-project-link}}|入門]]',
+	'tag-gettingstarted_edit-description' => '通過[[{{MediaWiki:gettingstarted-project-link}}|入門指南]]系統向編者建議一些簡單的編輯任務，並展示如何完成。',
 	'gettingstarted-task-toolbar-editing-help-text' => '顯示説明',
-	'gettingstarted-task-toolbar-try-another-text' => '換篇文章試試 ►',
+	'gettingstarted-task-toolbar-editing-help-title' => '顯示編輯指南',
+	'gettingstarted-task-toolbar-try-another-text' => '嘗試另一個頁面 ►',
 	'gettingstarted-task-toolbar-close-title' => '關閉此工具列',
+	'gettingstarted-task-toolbar-no-suggested-page' => '很抱歉，我們此時找不到更多有待改進的頁面。請過會再試，或者自行搜索您感興趣的話題。',
 	'gettingstarted-task-copyedit-toolbar-description' => '這篇文章可能有拼寫或語法錯誤，你可以修復它們。',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => '隨機轉到一個你可以編輯改善的頁面',
+	'gettingstarted-task-clarify-toolbar-description' => '此頁面可能存在混淆或含糊不清。你可以嘗試讓它更清楚。',
 	'gettingstarted-task-clarify-toolbar-try-another-title' => '隨機轉到一篇您可以澄清的文章',
+	'gettingstarted-task-addlinks-toolbar-description' => '此頁面可能需要更多鏈接。尋找在{{SITENAME}}上有此詞的頁面。',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => '隨機轉到一個你可以增加鏈接的頁面',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => '如何開始',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => '來簡單看看整篇亟待改進的文章。如果你感到不知所措，不要擔心。你不必是本主題的專家！如果您需要幫助或想要嘗試另一篇文章，請使用在在頂欄中的連結。',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => '需要做什麼',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => '這些橫幅標明了該頁面存在的問題。你不需要一次解決掉所有的問題，怎麼舒服怎麼來。',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => '點擊{{int:vector-view-edit}}',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => '點擊此處，您就可以編輯整篇文章',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => '編輯一個章節',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => '如果您希望編輯一個特定的章節，您可以點擊位於該章節頂部的藍色“{{int:editsection}}”連結。',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => '您可以編輯！',
-	'notification-gettingstarted-link-text-get-started' => '入門',
-	'notification-gettingstarted-continue-editing-email-subject' => '提高{{SITENAME}}的簡便方法',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => '您現在可以編輯此頁面。當您完成了編輯的時候，點擊“{{int:visualeditor-toolbar-savedialog}}”審視和保存您的更改。',
+	'guidedtour-tour-gettingstarted-click-preview-title' => '預覽 (可選)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => '點擊“{{int:showpreview}}”，您將看到您在該頁面作出了哪些更改。別忘了保存。',
+	'guidedtour-tour-gettingstarted-click-save-title' => '馬上就完成了！',
+	'guidedtour-tour-gettingstarted-click-save-description' => '按一下"{{int:savearticle}}"，您的更改將是可見的。',
+	'gettingstarted-cta-close' => '關閉',
+	'gettingstarted-cta-heading' => '幫助{{SITENAME}}',
+	'gettingstarted-cta-text' => '您可以以各種方式為{{SITENAME}}做貢獻',
+	'gettingstarted-cta-edit-page' => '編輯本頁',
+	'gettingstarted-cta-edit-page-sub' => '我們將向您展示該怎麼做',
+	'gettingstarted-cta-fix-pages' => '查找需要簡單修復的頁面',
+	'gettingstarted-cta-fix-pages-sub' => '我們將向您展示如何編輯',
+	'gettingstarted-cta-leave' => '不用了，以後再說吧',
 );
