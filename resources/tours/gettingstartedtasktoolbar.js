@@ -21,6 +21,15 @@
 		shouldLog: true,
 		showConditionally: 'wikitext',
 		steps: [ {
+			titlemsg: 'guidedtour-tour-gettingstartedtasktoolbarintro-title',
+			descriptionmsg: 'guidedtour-tour-gettingstartedtasktoolbarintro-description',
+			autoFocus: true,
+			overlay: true,
+			width: 450,
+			buttons: [ {
+				action: 'next'
+			} ]
+		}, {
 			titlemsg: 'guidedtour-tour-gettingstartedtasktoolbar-ambox-title',
 			descriptionmsg: 'guidedtour-tour-gettingstartedtasktoolbar-ambox-description',
 			attachTo: '.ambox',

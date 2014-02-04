@@ -14,6 +14,17 @@
 		} );
 
 	/**
+	 * Launches the appropriate tour, based on whether the VE edit tab is present
+	 */
+	function launchTour() {
+		var tourName = $( '#ca-ve-edit' ).length > 0 ?
+			'gettingstartedtasktoolbarve' :
+			'gettingstartedtasktoolbar';
+		// TODO (mattflaschen, 2013-05-07): Should launchTour automatically hide existing tours?
+		mw.guidedTour.launchTour( tourName );
+	}
+
+	/**
 	 * Builds and displays the toolbar
 	 *
 	 * @param {Object} toolbarInfo information for building the toolbar
@@ -44,16 +55,7 @@
 			title: mw.message( 'gettingstarted-task-toolbar-editing-help-title' ).text()
 		} ).text( mw.message( 'gettingstarted-task-toolbar-editing-help-text' ).text() )
 			.click( function ( evt ) {
-				var tourName;
-
-				if ( $( '#ca-ve-edit' ).length > 0 ) {
-					tourName = 'gettingstartedtasktoolbarve';
-				} else {
-					tourName = 'gettingstartedtasktoolbar';
-				}
-
-				mw.guidedTour.launchTour( tourName );
-
+				launchTour();
 				evt.stopPropagation();
 			} );
 
@@ -165,8 +167,7 @@
 			mw.libs.guiders.hideAll();
 			window.setTimeout( function () {
 				showToolbar();
-				// TODO (mattflaschen, 2013-05-07): Should launchTour automatically hide existing tours?
-				mw.guidedTour.launchTour( 'gettingstartedtasktoolbarintro' );
+				launchTour();
 			} , 800 );
 		} else {
 			$showGuide.css( 'opacity', 1 );
