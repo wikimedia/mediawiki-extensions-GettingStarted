@@ -15,7 +15,7 @@
 #mw-gettingstarted-editable-main-edit-page {
 	/*
 	   Can use min-width here to avoid bad wrapping (e.g. text
-	   different on line from icon), since it is not intended
+	   is on a different line from icon), since it is not intended
 	   to wrap.
 	*/
 	min-width: 210px;
@@ -100,28 +100,14 @@
 }
 
 .mw-ui-button.mw-gettingstarted-cta-secondary:hover {
-    /*
-      TODO (mattflaschen, 2013-10-03): This is inconsistent with
-      normal mw.ui secondary buttons.  We should make them match.
-    */
-    background-color: #fbfbfb;
-    border-color: #cccccc;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbfbfb), color-stop(100%, #f8f8f8));
-    background-image: -webkit-linear-gradient(top, #fbfbfb, #f8f8f8);
-    background-image: -moz-linear-gradient(top, #fbfbfb, #f8f8f8);
-    background-image: -o-linear-gradient(top, #fbfbfb, #f8f8f8);
-    background-image: linear-gradient(top, #fbfbfb, #f8f8f8);
+	/*
+	  TODO (mattflaschen, 2013-10-03): This is inconsistent with
+	  normal mw.ui secondary buttons.  We should make them match.
+	*/
+	background-color: #fbfbfb;
+	border-color: #cccccc;
 }
 .mw-ui-button.mw-gettingstarted-cta-secondary {
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f8f8), color-stop(100%, #f0f0f0));
-    background-image: -webkit-linear-gradient(top, #f8f8f8, #f0f0f0);
-    background-image: -moz-linear-gradient(top, #f8f8f8, #f0f0f0);
-    background-image: -o-linear-gradient(top, #f8f8f8, #f0f0f0);
-    background-image: linear-gradient(top, #f8f8f8, #f0f0f0);
- }
-
-.mw-ui-button.mw-gettingstarted-cta-secondary {
-	background-image: none;
 	background-color: #F5F5F5;
 	border: 1px solid #D3D3D3;
 	color: #444444;
