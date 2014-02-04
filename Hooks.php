@@ -198,7 +198,7 @@ class Hooks {
 	 * one or two buttons.
 	 */
 	protected static function addReturnToModules( &$out, &$skin ) {
-		$out->addModuleStyles( 'mediawiki.ui' );
+		$out->addModuleStyles( 'mediawiki.ui.button' );
 
 		$out->addModules( 'ext.gettingstarted.return' );
 	}
@@ -299,9 +299,10 @@ class Hooks {
 		}
 
 		if ( self::shouldLoadToolbar( $out, $user ) ) {
-			// Styles are added separately so they load without needing JS
+			// Uses addModuleStyles since no-JS code must load it this way
+			// and this avoids double-loading.
 			$out->addModuleStyles( array(
-				'mediawiki.ui',
+				'mediawiki.ui.button',
 			) );
 			$out->addModules( array(
 					'ext.guidedTour.tour.gettingstartedtasktoolbarintro',
