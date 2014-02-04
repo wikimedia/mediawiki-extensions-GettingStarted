@@ -16,7 +16,7 @@ $messages['en'] = array(
 	'gettingstarted-desc' => 'Helps new users become editors',
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	// Change tags
-	'tag-gettingstarted_edit' => 'new editor [[{{MediaWiki:gettingstarted-project-link}}|getting started]]',
+	'tag-gettingstarted_edit' => 'via [[{{MediaWiki:gettingstarted-project-link}}|Getting Started]] edit suggestions',
 	'tag-gettingstarted_edit-description' => 'Edit made via the [[{{MediaWiki:gettingstarted-project-link}}|GettingStarted]] system, which suggests easy tasks to editors and shows them how to complete them.',
 
 	// Toolbar above page, when they have chosen a task and been redirected
