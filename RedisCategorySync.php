@@ -59,12 +59,17 @@ class RedisCategorySync {
 	 * @return array relevant categories
 	 */
 	public static function getCategories() {
-		global $wgGettingStartedTasks;
+		global $wgGettingStartedCategoriesForTaskTypes;
 
 		if ( self::$categories === null ) {
 			self::$categories = array();
-			foreach ( $wgGettingStartedTasks as $task ) {
-				self::$categories[] = $task['category'];
+			foreach ($wgGettingStartedCategoriesForTaskTypes as $categoryName) {
+				$category = Category::newFromName( $categoryName );
+				if ( !$category) {
+					continue;
+				}
+				// Canonicalize the category name.
+				self::$categories[] = $category->getName();
 			}
 		}
 

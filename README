@@ -17,7 +17,7 @@ To use:
 * Add the following line to your LocalSettings.php
 require_once( "$IP/extensions/GettingStarted/GettingStarted.php" );
 * Categorize some wiki articles in the main namespace with the categories in
-  $wgGettingStartedTasks.
+  $wgGettingStartedCategoriesForTaskTypes.
 * Create a new user to test.
 
 Dependencies
