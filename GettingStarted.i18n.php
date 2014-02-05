@@ -874,7 +874,7 @@ $messages['fr'] = array(
 	'gettingstarted' => 'Premiers pas',
 	'gettingstarted-desc' => 'Aide les nouveaux utilisateurs à devenir des rédacteurs',
 	'gettingstarted-project-link' => '{{ns:Project}}:Premiers pas',
-	'tag-gettingstarted_edit' => '[[{{MediaWiki:gettingstarted-project-link}}|premiers pas]] du nouveau rédacteur', # Fuzzy
+	'tag-gettingstarted_edit' => 'via les suggestions de modification de [[{{MediaWiki:gettingstarted-project-link}}|Premiers pas]]',
 	'tag-gettingstarted_edit-description' => 'Modification faite au moyen du système [[{{MediaWiki:gettingstarted-project-link}}|Premiers pas]], qui suggère des tâches faciles aux rédacteurs et leur montre comment les accomplir.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Me montrer comment faire',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Voir un guide sur la façon de modifier une page',
@@ -991,7 +991,7 @@ $messages['he'] = array(
 	'gettingstarted' => 'איך להתחיל',
 	'gettingstarted-desc' => 'עזרה למשתמשים חדשים להפוך לעורכים',
 	'gettingstarted-project-link' => '{{ns:Project}}:איך להתחיל',
-	'tag-gettingstarted_edit' => 'עורך חדש [[{{MediaWiki:gettingstarted-project-link}}|התחיל לעבוד]]', # Fuzzy
+	'tag-gettingstarted_edit' => 'דרך הצעות עריכה של [[{{MediaWiki:gettingstarted-project-link}}|איך להתחיל]]',
 	'tag-gettingstarted_edit-description' => 'עריכה שנעשתה דרך מערכת [[{{MediaWiki:gettingstarted-project-link}}|איך להתחיל]], שמציעה משימות פשוטות לעורכים ומראה להם איך להשלים אותן.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'תראו לי איך',
 	'gettingstarted-task-toolbar-editing-help-title' => 'הצגת מדריך על איך לערוך',
@@ -1170,7 +1170,7 @@ $messages['is'] = array(
 	'gettingstarted' => 'Hafist handa',
 	'gettingstarted-desc' => 'Hjálpar nýjum notendum að verða höfundar',
 	'gettingstarted-project-link' => '{{ns:Project}}:Hafist handa',
-	'tag-gettingstarted_edit' => 'nýr notandi [[{{MediaWiki:gettingstarted-project-link}}|hefst handa]]', # Fuzzy
+	'tag-gettingstarted_edit' => 'Gerð með breytingartillögum frá [[{{MediaWiki:gettingstarted-project-link}}|Hafist handa]]',
 	'tag-gettingstarted_edit-description' => 'Breyting gerð með [[{{MediaWiki:gettingstarted-project-link}}|GettingStarted]] kerfinu, sem gefur tillögur yfir einföld verkefni fyrir notendur og sýnir þeim hvernig á að ljúka þeim.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Sýndu mér hvernig',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Sýna leiðarvísi um hvernig á að breyta',
@@ -1368,7 +1368,7 @@ $messages['lb'] = array(
 	'gettingstarted' => 'Fir unzefänken',
 	'gettingstarted-desc' => 'Hëlleft neie Benotzer derbäi Auteur ze ginn',
 	'gettingstarted-project-link' => '{{ns:Project}}:Fir unzefänken',
-	'tag-gettingstarted_edit' => 'Neien Auteur [[{{MediaWiki:gettingstarted-project-link}}|wéi ufänken]]', # Fuzzy
+	'tag-gettingstarted_edit' => 'iwwer [[{{MediaWiki:gettingstarted-project-link}}|wéi ufänken]] Virschléi änneren',
 	'tag-gettingstarted_edit-description' => 'Ännerung déi mat Hëllef vu [[{{MediaWiki:gettingstarted-project-link}}|Fir unzefänken]], wou Auteuren einfach Aufgabe proposéiert ginn a wou gewise gëtt wéi déi erleedegt kënne ginn, gemaach gouf.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Weist mir wéi',
 	'gettingstarted-task-toolbar-editing-help-title' => 'E Guide weise wéi een ännere kann',
@@ -1458,6 +1458,13 @@ $messages['lv'] = array(
 	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Meklējiet, ko vēl padarīt? Apmeklējiet $2, lai atrastu sarakstu ar vienkāršiem veidiem, kā palīdzēt.',
 );
 
+/** Malagasy (Malagasy)
+ * @author Jagwar
+ */
+$messages['mg'] = array(
+	'tag-gettingstarted_edit' => "amin'ny alalan'ny sosokevi-panovan'i [[{{MediaWiki:gettingstarted-project-link}}|Handeha Hanomboka]]",
+);
+
 /** Minangkabau (Baso Minangkabau)
  * @author Iwan Novirion
  */
@@ -1483,7 +1490,7 @@ $messages['mk'] = array(
 	'gettingstarted' => 'Како да почнете',
 	'gettingstarted-desc' => 'Помогнете им на новодојдените да станат уредници',
 	'gettingstarted-project-link' => '{{ns:Project}}:ПрвиЧекори',
-	'tag-gettingstarted_edit' => 'нов уредник [[{{MediaWiki:gettingstarted-project-link}}|почнува со работа]]', # Fuzzy
+	'tag-gettingstarted_edit' => 'преку предлозите за уредување од „[[{{MediaWiki:gettingstarted-project-link}}|Први чекори]]“',
 	'tag-gettingstarted_edit-description' => 'Уредување преку системот [[{{MediaWiki:gettingstarted-project-link}}|GettingStarted]], кој предлага лесни задачи за уредниците и им покажува како да ги извршат.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Покажи ми како',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Прикажи водич за уредување',
@@ -1831,14 +1838,49 @@ $messages['pms'] = array(
 
 /** Portuguese (português)
  * @author Alchimista
+ * @author Fúlvio
  * @author Hamilton Abreu
  * @author Raylton P. Sousa
  */
 $messages['pt'] = array(
+	'gettingstarted' => 'Primeiros passos',
+	'gettingstarted-desc' => 'Ajuda os novos utilizadores a se tornarem editores',
+	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
+	'tag-gettingstarted_edit' => 'através das sugestões de edição do [[{{MediaWiki:gettingstarted-project-link}}|Getting Started]]',
+	'tag-gettingstarted_edit-description' => 'Edição feita através do sistema [[{{MediaWiki:gettingstarted-project-link}}|GettingStarted]], que sugere tarefas fáceis para os editores e mostra-lhes como completá-las.',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Mostre-me como',
+	'gettingstarted-task-toolbar-editing-help-title' => 'Mostrar um guia de edição',
+	'gettingstarted-task-toolbar-try-another-text' => 'Tente outra página ►',
+	'gettingstarted-task-toolbar-close-title' => 'Fechar esta barra de ferramentas',
+	'gettingstarted-task-toolbar-no-suggested-page' => 'Desculpe. Não foi possível páginas a serem melhoradas neste momento. Tente novamente em um outro momento ou procure por seus próprios temas de interesse.',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Esta página pode ter erros ortográficos ou gramaticais que você pode corrigir.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Ir para uma página aleatória cujo estilo possas melhorar',
+	'gettingstarted-task-clarify-toolbar-description' => 'Esta página pode estar confusa ou vaga. Procure maneiras de torná-la mais clara.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Ir para uma página aleatória que você possa deixá-la clara',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Esta página pode precisar de mais ligações. Procure por termos que possuam uma página em {{SITENAME}}.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Ir para uma página aleatória em que você possa adicionar ligações para',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Como começar',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Basta iniciar uma varredura pela página à busca de melhorias. Se você se sentir sobrecarregado, não se preocupe. Você não precisa ser um especialista sobre este tema! Se precisares de ajuda ou desejar tentar outra página, utilize as ligações da barra de ferramentas acima.',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Ideias sobre o que fazer',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => "Estes ''banners'' identificam problemas com esta página. Você não precisa resolver todos, fique com aqueles que possas corrigir confortavelmente.",
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Clique em {{int:vector-view-edit}}',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Você pode editar a página inteira clicando aqui.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Editar uma secção',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Se você desejar editar uma secção específica, podes clicar na ligação "{{int:editsection}}" (em azul) na parte superior de cada secção.',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Já podes editar!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Agora, você pode editar a página. Ao terminar, clique em "{{int:visualeditor-toolbar-savedialog}}" para rever e guardar as alterações.',
 	'guidedtour-tour-gettingstarted-click-preview-title' => 'Antevisão (opcional)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => "Clicar '{{int:showpreview}}' permite verificar como a página ficará após as alterações. Mas não se esqueça de gravá-las.",
+	'guidedtour-tour-gettingstarted-click-preview-description' => "Clicar ''{{int:showpreview}}'' permite verificar como a página ficará após as alterações. Mas não se esqueça de gravá-las.",
 	'guidedtour-tour-gettingstarted-click-save-title' => 'Está quase a terminar!',
-	'guidedtour-tour-gettingstarted-click-save-description' => "Clique em '{{int:savearticle}}' e as suas alterações serão visíveis.",
+	'guidedtour-tour-gettingstarted-click-save-description' => "Clique em ''{{int:savearticle}}'' e as suas alterações serão visíveis.",
+	'gettingstarted-cta-close' => 'Fechar',
+	'gettingstarted-cta-heading' => 'Ajuda para {{SITENAME}}',
+	'gettingstarted-cta-text' => 'Você pode contribuir para {{SITENAME}} de diferentes maneiras',
+	'gettingstarted-cta-edit-page' => 'Editar esta página',
+	'gettingstarted-cta-edit-page-sub' => 'Nós vamos mostrar-lhe como',
+	'gettingstarted-cta-fix-pages' => 'Encontre páginas que necessitam de correções fáceis',
+	'gettingstarted-cta-fix-pages-sub' => 'Nós vamos mostrar-lhe como editar',
+	'gettingstarted-cta-leave' => 'Não, obrigado, talvez mais tarde',
 );
 
 /** Brazilian Portuguese (português do Brasil)
