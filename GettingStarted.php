@@ -29,26 +29,22 @@ $wgExtensionCredits[ 'api' ][] = array(
  *  'toolbarDescription' - message key for primary description on toolbar
  *  'toolbarTryAnotherTitle' - message key for title text of 'Try Another' link
  *  'category' Category articles are from, e.g. 'All_articles_needing_copy_edit'
- *  'image' (on-wiki or Commons filename without the File:)
  */
 $wgGettingStartedTasks = array(
 	'copyedit' => array(
 		'toolbarDescription' => 'gettingstarted-task-copyedit-toolbar-description',
 		'toolbarTryAnotherTitle' => 'gettingstarted-task-copyedit-toolbar-try-another-title',
 		'category' => 'All_articles_needing_copy_edit',
-		'image' => 'Icon-pencil.png'
 	),
 	'clarify' => array(
 		'toolbarDescription' => 'gettingstarted-task-clarify-toolbar-description',
 		'toolbarTryAnotherTitle' => 'gettingstarted-task-clarify-toolbar-try-another-title',
 		'category' => 'All_Wikipedia_articles_needing_clarification',
-		'image' => 'Icon-wrench.png'
 	),
 	'addlinks' => array(
 		'toolbarDescription' => 'gettingstarted-task-addlinks-toolbar-description',
 		'toolbarTryAnotherTitle' => 'gettingstarted-task-addlinks-toolbar-try-another-title',
 		'category' => 'All_articles_with_too_few_wikilinks',
-		'image' => 'Icon-addlinks.png'
 	)
 );
 
