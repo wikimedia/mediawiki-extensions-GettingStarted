@@ -1040,20 +1040,20 @@ $messages['hi'] = array(
  */
 $messages['hsb'] = array(
 	'gettingstarted' => 'Prěnje kroki',
-	'gettingstarted-desc' => 'Přidawa [[Special:GettingStarted|witansku stronu]] za nowych wužiwarjow, kotraž so po załoženju konta pokazuje',
-	'gettingstarted-welcomesiteuser' => 'Witaj do $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Prěnje kroki',
-	'gettingstarted-welcome-back-site-user' => 'Witaj wróćo, $2',
-	'gettingstarted-return' => 'Ně, dźakuju so, dźi wróćo k přečitanej stronje',
+	'gettingstarted-desc' => 'Pomha nowym wužiwarjam, so z awtorami stać',
 	'gettingstarted-project-link' => '{{ns:Project}}:Prěnje kroki',
-	'tag-gettingstarted_edit' => '[[{{MediaWiki:gettingstarted-project-link}}|Prěnje kroki]] noweho wobdźěłarja', # Fuzzy
-	'tag-gettingstarted_edit-description' => 'Změna strony, kotruž wužiwar je z lisćiny nadawkow ze strony [[Special:GettingStarted|Prěnje kroki]] wubrał',
-	'gettingstarted-task-copyedit-main-description' => 'Prawopis a gramatiku korigować',
-	'gettingstarted-task-clarify-main-description' => 'Jasnosć polěpšić',
+	'tag-gettingstarted_edit' => 'wobdźěłowanske namjety přez [[{{MediaWiki:gettingstarted-project-link}}|Prěnje kroki]]',
+	'tag-gettingstarted_edit-description' => 'Změna přewjedźena přez system [[{{MediaWiki:gettingstarted-project-link}}|Prěnje kroki]], kotryž wužiwarjam lochke nadawki namjetuje a jim pokazuje, kak móža je wuwjesć.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Klikń na {{int:vector-view-edit}}',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Wotrězk wobdźěłać',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Móžeš wobdźěłać!',
 	'guidedtour-tour-gettingstarted-click-preview-title' => 'Přehlad (opcionalny)',
 	'guidedtour-tour-gettingstarted-click-preview-description' => "Kliknjenje an '{{int:showpreview}}' ći zmóžnja kontrolować, kak strona z twojimi změnami wupada. Njezabudź na składowanje.",
 	'guidedtour-tour-gettingstarted-click-save-title' => 'Sy nimale hotowy!',
 	'guidedtour-tour-gettingstarted-click-save-description' => "Klikń na '{{int:savearticle}}' a twoje změny budu widźomne.",
+	'gettingstarted-cta-close' => 'Začinić',
+	'gettingstarted-cta-heading' => 'Pomoc {{GRAMMAR:genitiw|{{SITENAME}}}}',
+	'gettingstarted-cta-edit-page' => 'Tutu stronu wobdźěłać',
 );
 
 /** Hungarian (magyar)
@@ -1584,39 +1584,25 @@ $messages['mr'] = array(
  */
 $messages['ms'] = array(
 	'gettingstarted' => 'Permulaan',
-	'gettingstarted-desc' => 'Meletakkan [[Special:GettingStarted|halaman selamat datang]] untuk pengguna baru (dipaparkan selepas pembukaan akaun)',
-	'gettingstarted-welcomesiteuser' => 'Selamat datang ke $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Permulaan',
-	'gettingstarted-welcome-back-site-user' => 'Selamat kembali, $2',
-	'gettingstarted-task-header' => 'Terima kasih kerana menyertai {{SITENAME}}! Berikut adalah cara-cara untuk melibatkan diri.
-
-Pilih satu pilihan di bawah, dan anda akan melihat sebuah rencana pilihan rawak yang memerlukan pertolongan.',
-	'gettingstarted-return' => '← Tak apalah, bawa saya kembali ke halaman yang saya baca tadi',
+	'gettingstarted-desc' => 'Membantu pengguna baru menjadi penyunting',
 	'gettingstarted-project-link' => '{{ns:Project}}:Permulaan',
-	'tag-gettingstarted_edit' => 'penyunting baru [[{{MediaWiki:gettingstarted-project-link}}|hendak bermula]]',
-	'tag-gettingstarted_edit-description' => 'Suntingan halaman yang dipilih oleh pengguna dari senarai tugas dalam [[Special:GettingStarted|Permulaan]]',
-	'gettingstarted-task-copyedit-main-description' => 'Membetulkan Ejaan & Tatabahsa',
-	'gettingstarted-task-copyedit-secondary-description' => 'Cara yang paling senang untuk bermula!',
-	'gettingstarted-task-clarify-main-description' => 'Perbaiki Keterangan',
-	'gettingstarted-task-clarify-secondary-description' => 'Ringkaskan atau susun semula ayat.',
-	'gettingstarted-task-addlinks-main-description' => 'Bubuh Pautan',
-	'gettingstarted-task-addlinks-secondary-description' => 'Jalinkan hubungan antara rencana {{SITENAME}}.',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ Pilih tugas lain',
-	'gettingstarted-task-toolbar-return-to-list-title' => 'Kembali ke halaman pilihan tugas',
+	'tag-gettingstarted_edit' => 'melalui cadangan-cadangan suntingan [[{{MediaWiki:gettingstarted-project-link}}|Permulaan]]',
+	'tag-gettingstarted_edit-description' => 'Suntingan yang dilakukan melalui sistem [[{{MediaWiki:gettingstarted-project-link}}|Permulaan]] yang mencadangkan tugas yang serba senang kepada penyunting serta menunjukkan cara untuk melengkapkan tugas tersebut.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Tunjukkan caranya',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Paparkan panduan menyunting',
-	'gettingstarted-task-toolbar-try-another-text' => 'Cuba rencana lain ►',
+	'gettingstarted-task-toolbar-try-another-text' => 'Cuba rencana lain ►', # Fuzzy
 	'gettingstarted-task-toolbar-close-title' => 'Tutup palang alat ini',
-	'gettingstarted-task-copyedit-toolbar-description' => 'Rencana ini mungkin mengandungi kesalahan ejaan dan tatabahasa yang boleh anda betulkan.',
-	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Pergi ke satu rencana pilihan rawak yang anda boleh perbaiki dengan menyunting',
-	'gettingstarted-task-clarify-toolbar-description' => 'Rencana ini mungkin kabur atau mengelirukan. Fikirkan cara untuk memperjelasnya.',
-	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Pergi ke satu rencana pilihan rawak yang boleh anda perjelas',
-	'gettingstarted-task-addlinks-toolbar-description' => 'Rencana ini mumgkin memerlukan lebih banyak pautan. Cari istilah-istilah yang mempunyai rencana di {{SITENAME}}.',
-	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Pergi ke satu rencana pilihan rawak yang boleh anda menambah pautannya',
+	'gettingstarted-task-toolbar-no-suggested-page' => 'Maaf, kami tidak dapat menemui banyak lagi halaman yang hendak ditambah baik buat masa ini. Sila cuba lagi sebentar nanti atau carilah topik-topik yang anda minati.',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Rencana ini mungkin mengandungi kesalahan ejaan dan tatabahasa yang boleh anda betulkan.', # Fuzzy
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Pergi ke satu rencana pilihan rawak yang anda boleh perbaiki dengan menyunting', # Fuzzy
+	'gettingstarted-task-clarify-toolbar-description' => 'Rencana ini mungkin kabur atau mengelirukan. Fikirkan cara untuk memperjelasnya.', # Fuzzy
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Pergi ke satu rencana pilihan rawak yang boleh anda perjelas', # Fuzzy
+	'gettingstarted-task-addlinks-toolbar-description' => 'Rencana ini mumgkin memerlukan lebih banyak pautan. Cari istilah-istilah yang mempunyai rencana di {{SITENAME}}.', # Fuzzy
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Pergi ke satu rencana pilihan rawak yang boleh anda menambah pautannya', # Fuzzy
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Bagaimana untuk bermula',
-	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Mulakan dengan menyemak imbas rencana terbabit untuk mencari di mana perlu diperbaiki. Jika anda berasa susah hati, jangan risau. Anda tidak semestinya perlu menjadi pakar dalam topik ini! Jika anda memerlukan bantuan atau ingin mencuba rencana lain, gunakan pautan pada palang di atas.',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Mulakan dengan menyemak imbas rencana terbabit untuk mencari di mana perlu diperbaiki. Jika anda berasa susah hati, jangan risau. Anda tidak semestinya perlu menjadi pakar dalam topik ini! Jika anda memerlukan bantuan atau ingin mencuba rencana lain, gunakan pautan pada palang di atas.', # Fuzzy
 	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Cadangan kerja',
-	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Sepanduk-sepanduk ini mengenal pasti masalah pada rencana ini. Anda tidak semestinya perlu menyelesaikan kesemuanya, betulkan sahaja yang mana anda rasa senang.',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Sepanduk-sepanduk ini mengenal pasti masalah pada rencana ini. Anda tidak semestinya perlu menyelesaikan kesemuanya, betulkan sahaja yang mana anda rasa senang.', # Fuzzy
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Klik {{int:vector-view-edit}}',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Anda boleh menyunting keseluruhan rencana dengan mengklik di sini.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Sunting satu bahagian',
@@ -1627,23 +1613,6 @@ Pilih satu pilihan di bawah, dan anda akan melihat sebuah rencana pilihan rawak 
 	'guidedtour-tour-gettingstarted-click-preview-description' => "Mengklik '{{int:showpreview}}' membolehkan anda untuk menyemak rupa halaman dengan suntingan anda. Jangan lupa untuk simpan.",
 	'guidedtour-tour-gettingstarted-click-save-title' => 'Anda hampir siap!',
 	'guidedtour-tour-gettingstarted-click-save-description' => "Klik '{{int:savearticle}}' untuk memperlihatkan suntingan anda.",
-	'notification-gettingstarted-link-text-get-started' => 'Mulakan',
-	'notification-gettingstarted-start-editing' => '{{SITENAME}} merupakan sebuah ensiklopedia bebas yang dikarang oleh orang ramai seperti anda. [[Special:GettingStarted|Mulakan]] dengan membuat suntingan pertama anda!',
-	'notification-gettingstarted-start-editing-email-subject' => 'Bermula dengan menyunting {{SITENAME}}',
-	'notification-gettingstarted-start-editing-text-email-body' => '{{SITENAME}} adalah sebuah ensiklopedia yang diusahakan oleh orang keramaian seperti anda. Bermulalah dengan membuat suntingan pertama anda!
-
-Layari $2 untuk senarai cara mudah untuk memperbaiki halaman-halaman di sini.
-
-$3',
-	'notification-gettingstarted-start-editing-text-email-batch-body' => 'Belajar menyunting di {{SITENAME}} dengan melayari $2',
-	'notification-gettingstarted-continue-editing' => 'Cantik! Anda sudah pun membuat suntingan sulung anda di {{SITENAME}}. Jika anda ingin mencari kerja lain, yang berikut adalah beberapa [[Special:GettingStarted|cara yang mudah untuk menolong]].',
-	'notification-gettingstarted-continue-editing-email-subject' => 'Cara mudah untuk menambah baik {{SITENAME}}',
-	'notification-gettingstarted-continue-editing-text-email-body' => 'Cantik! Anda sudah pun membuat suntingan sulung anda di {{SITENAME}}.
-
-Jika anda ingin mencari kerja lain, terdapat pelbagai cara yang mudah untuk membantu di $2
-
-$3',
-	'notification-gettingstarted-continue-editing-text-email-batch-body' => 'Ingin mencari kerja lain? Layari $2 untuk pelbagai cara yang mudah untuk membantu.',
 );
 
 /** Maltese (Malti)
@@ -2001,7 +1970,7 @@ $messages['ru'] = array(
 	'gettingstarted' => 'Начало работы',
 	'gettingstarted-desc' => 'Помогает новым участникам стать редакторами',
 	'gettingstarted-project-link' => '{{ns:Project}}:Начало работы',
-	'tag-gettingstarted_edit' => 'Новый редактор [[{{MediaWiki:gettingstarted-project-link}}|приступил к работе]]', # Fuzzy
+	'tag-gettingstarted_edit' => 'через предложение правок [[{{MediaWiki:gettingstarted-project-link}}|Начала работы]]',
 	'tag-gettingstarted_edit-description' => 'Правка сделана через систему [[{{MediaWiki:gettingstarted-project-link}}|Начала работы]], которая предлагает простые задачи для участников и показывает им, как их выполнить.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Показать мне, как',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Показать руководство по редактированию',
