@@ -28,24 +28,31 @@ $wgExtensionCredits[ 'api' ][] = array(
  *  Each value array has:
  *  'toolbarDescription' - message key for primary description on toolbar
  *  'toolbarTryAnotherTitle' - message key for title text of 'Try Another' link
- *  'category' Category articles are from, e.g. 'All_articles_needing_copy_edit'
  */
 $wgGettingStartedTasks = array(
 	'copyedit' => array(
 		'toolbarDescription' => 'gettingstarted-task-copyedit-toolbar-description',
 		'toolbarTryAnotherTitle' => 'gettingstarted-task-copyedit-toolbar-try-another-title',
-		'category' => 'All_articles_needing_copy_edit',
 	),
 	'clarify' => array(
 		'toolbarDescription' => 'gettingstarted-task-clarify-toolbar-description',
 		'toolbarTryAnotherTitle' => 'gettingstarted-task-clarify-toolbar-try-another-title',
-		'category' => 'All_Wikipedia_articles_needing_clarification',
 	),
 	'addlinks' => array(
 		'toolbarDescription' => 'gettingstarted-task-addlinks-toolbar-description',
 		'toolbarTryAnotherTitle' => 'gettingstarted-task-addlinks-toolbar-try-another-title',
-		'category' => 'All_articles_with_too_few_wikilinks',
 	)
+);
+
+/**
+ * @var array An associative array.  The key is the task type, i.e. the key
+ * from $wgGettingStartedTasks (see above).  The value is the category that the
+ * articles, which the task targets, are from.
+ */
+$wgGettingStartedCategoriesForTaskTypes = array(
+	'copyedit' => 'All_articles_needing_copy_edit',
+	'clarify' => 'All_Wikipedia_articles_needing_clarification',
+	'addlinks' => 'All_articles_with_too_few_wikilinks',
 );
 
 /**

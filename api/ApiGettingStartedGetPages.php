@@ -8,7 +8,7 @@ class ApiGettingStartedGetPages extends ApiBase {
 	const MAX_ATTEMPTS = 100;
 
 	public function execute() {
-		global $wgGettingStartedTasks;
+		global $wgGettingStartedCategoriesForTaskTypes;
 
 		$result = $this->getResult();
 
@@ -18,21 +18,22 @@ class ApiGettingStartedGetPages extends ApiBase {
 		$taskName = $this->getParameter( 'taskname' );
 		$excludedTitle = Title::newFromText( $this->getParameter( 'excludedtitle' ) );
 		$count = $this->getParameter( 'count' );
-
-		if ( !isset( $wgGettingStartedTasks[$taskName] ) ) {
-			$this->dieUsage( 'Invalid value for "taskname"', 'gettingstarted-invalidtaskname' );
-		}
-
-		$category = Category::newFromName( $wgGettingStartedTasks[$taskName]['category'] );
-		$pageFilter = new PageFilter( $user, $excludedTitle );
-
-		$titles = self::getRandomArticles( $count, $category, $pageFilter );
 		$data = array(
 			'titles' => array()
 		);
-		foreach ( $titles as $title ) {
-			$data['titles'][] = $title->getPrefixedText();
+
+		if ( isset( $wgGettingStartedCategoriesForTaskTypes[ $taskName ] ) ) {
+			$category = Category::newFromName( $wgGettingStartedCategoriesForTaskTypes[ $taskName ] );
+			$pageFilter = new PageFilter( $user, $excludedTitle );
+			$titles = self::getRandomArticles( $count, $category, $pageFilter );
+			foreach ( $titles as $title ) {
+				$data['titles'][] = $title->getPrefixedText();
+			}
+		} else {
+			// TODO (phuedx 2014-02-05): This is technically a
+			// failure and should be logged.
 		}
+
 		$result->setIndexedTagName( $data['titles'], 'title' );
 		$result->addValue( null, $this->getModuleName(), $data );
 	}
