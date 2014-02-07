@@ -247,6 +247,7 @@ $messages['be'] = array(
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Red Winged Duck
  * @author Wizardist
+ * @author Zedlik
  */
 $messages['be-tarask'] = array(
 	'gettingstarted' => 'Першыя крокі',
@@ -257,7 +258,7 @@ $messages['be-tarask'] = array(
 	'gettingstarted-task-toolbar-editing-help-text' => 'Паказаць мне, як',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Паказаць дапамогу па рэдагаваньні',
 	'gettingstarted-task-toolbar-try-another-text' => 'Паспрабуйце іншую старонку ►',
-	'gettingstarted-task-toolbar-close-title' => 'Зачыніць гэтую панэль',
+	'gettingstarted-task-toolbar-close-title' => 'Закрыць гэтую панэль',
 	'gettingstarted-task-toolbar-no-suggested-page' => 'Выбачайце. Мы не змаглі знайсьці яшчэ старонкі, якія патрабуць паляпшэньня ў цяперашні момант. Паспрабуйце яшчэ раз або пашукайце іншыя цікавыя вам тэмы.',
 	'gettingstarted-task-copyedit-toolbar-description' => 'Гэтая старонка магчыма ўтрымлівае артаграфічныя і граматычныя памылкі, якія вы можаце выправіць.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Перайсьці да выпадковай старонкі, якую вы можаце палепшыць',
@@ -613,15 +614,26 @@ $messages['diq'] = array(
  */
 $messages['dsb'] = array(
 	'gettingstarted' => 'Prědne kšace',
-	'gettingstarted-desc' => 'Pśidawa [[Special:GettingStarted|pówitański bok]] za nowych wužywarjow, kótaryž pokazujo se pó załoženju konta',
-	'gettingstarted-welcomesiteuser' => 'Witaj do $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Prědne kšace',
-	'gettingstarted-welcome-back-site-user' => 'Witaj slědk, $2',
-	'gettingstarted-return' => 'Ně, źěkujom se, źi slědk k pśecytanemu bokoju',
+	'gettingstarted-desc' => 'Pomaga nowym wužywarjam awtory byś',
 	'gettingstarted-project-link' => '{{ns:Project}}:Prědne kšace',
-	'tag-gettingstarted_edit' => '[[{{MediaWiki:gettingstarted-project-link}}|Prědne kšace]] nowego wobźěłarja',
-	'gettingstarted-task-copyedit-main-description' => 'Pšawopis a gramatiku korigěrowaś',
-	'gettingstarted-task-clarify-main-description' => 'Jasnosć pólěpšyś',
+	'tag-gettingstarted_edit' => 'wobźěłowańske naraźenja pśez [[{{MediaWiki:gettingstarted-project-link}}|Prědne kšace]]',
+	'tag-gettingstarted_edit-description' => 'Změna pśewjeźona pśez system [[{{MediaWiki:gettingstarted-project-link}}|Prědne kšace]], kótaryž naraźujo wužywarjam lažke nadawki a jim pokazujo, kak mógu je wuwjasć.',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Pokaž mě kak',
+	'gettingstarted-task-toolbar-try-another-text' => 'Drugi bok wopytaś ►',
+	'gettingstarted-task-toolbar-close-title' => 'Toś tu symbolowu rědku zacyniś',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Prědne kšace',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Klikni na {{int:vector-view-edit}}',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Móžoš ceły bok wobźěłać, z tym až kliknjoš how.l',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Wótrězk wobźěłaś',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Móžoš wobźěłaś!',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Pśeglěd (opcionalny)',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Sy skóro gótowy!',
+	'guidedtour-tour-gettingstarted-click-save-description' => "Klikni na '{{int:savearticle}}' a twóje změny budu widobne.",
+	'gettingstarted-cta-close' => 'Zacyniś',
+	'gettingstarted-cta-heading' => 'Pomoc {{GRAMMAR:genitiw|{{SITENAME}}}}',
+	'gettingstarted-cta-edit-page' => 'Toś ten bok wobźěłaś',
+	'gettingstarted-cta-edit-page-sub' => 'Pokažomy śi kak',
+	'gettingstarted-cta-fix-pages-sub' => 'Pokažomy śi, kak se wobźěłujo',
 );
 
 /** Greek (Ελληνικά)
@@ -632,8 +644,8 @@ $messages['dsb'] = array(
 $messages['el'] = array(
 	'gettingstarted' => 'Ξεκινώντας',
 	'gettingstarted-desc' => 'Βοηθά τους νέους χρήστες να γίνουν συντάκτες',
-	'gettingstarted-project-link' => '{{ns:Project}}:Ξεκινώντας',
-	'tag-gettingstarted_edit' => 'νέος συντάκτης [[{{MediaWiki:gettingstarted-project-link}}|ξεκινά]]', # Fuzzy
+	'gettingstarted-project-link' => '{{ns:Project}}:Ξεκίνημα',
+	'tag-gettingstarted_edit' => 'μέσω προτάσεων επεξεργασίας για [[{{MediaWiki:gettingstarted-project-link}}|ξεκίνημα]]',
 	'tag-gettingstarted_edit-description' => 'Επεξεργασία που έγινε μέσω του συστήματος [[{{MediaWiki:gettingstarted-project-link}}|Ξεκινήματος]], το οποίο προτείνει εύκολες εργασίες στους συντάκτες και τους δείχνει πώς να τις συμπληρώσουν.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Δείξτε μου πώς',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Παρουσιάζει έναν οδηγό για το πώς να επεξεργαστείτε',
@@ -1044,6 +1056,9 @@ $messages['hsb'] = array(
 	'gettingstarted-project-link' => '{{ns:Project}}:Prěnje kroki',
 	'tag-gettingstarted_edit' => 'wobdźěłowanske namjety přez [[{{MediaWiki:gettingstarted-project-link}}|Prěnje kroki]]',
 	'tag-gettingstarted_edit-description' => 'Změna přewjedźena přez system [[{{MediaWiki:gettingstarted-project-link}}|Prěnje kroki]], kotryž wužiwarjam lochke nadawki namjetuje a jim pokazuje, kak móža je wuwjesć.',
+	'gettingstarted-task-toolbar-try-another-text' => 'Druhu stronu spytać ►',
+	'gettingstarted-task-toolbar-close-title' => 'Tutu symbolowu lajstu začinić',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Prěnje kroki',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Klikń na {{int:vector-view-edit}}',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Wotrězk wobdźěłać',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Móžeš wobdźěłać!',
@@ -1064,16 +1079,31 @@ $messages['hu'] = array(
 	'gettingstarted' => 'Első lépések',
 	'gettingstarted-desc' => 'Segít az új felhasználóknak a szerkesztővé válásban',
 	'gettingstarted-project-link' => '{{ns:Project}}:Első lépések',
-	'tag-gettingstarted_edit' => 'új szerkesztő [[{{MediaWiki:gettingstarted-project-link}}|első lépései]]', # Fuzzy
+	'tag-gettingstarted_edit' => 'az [[{{MediaWiki:gettingstarted-project-link}}|Első Lépések]] javaslata alapján',
 	'tag-gettingstarted_edit-description' => 'Az [[{{MediaWiki:gettingstarted-project-link}}|Első lépések]] rendszerrel végzett szerkesztés. A rendszer könnyű feladatokat ajánl a szerkesztőknek, és megmutatja, hogyan tudják elvégezni őket.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Mutasd meg, hogyan',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Mutasd a szerkesztési útmutatót',
 	'gettingstarted-task-toolbar-try-another-text' => 'Másik oldalt próbálok ►',
 	'gettingstarted-task-toolbar-close-title' => 'Eszközsáv bezárása',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Az első lépések',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Kattints a „{{int:vector-view-edit}}” gombra',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Ide kattintva szerkesztheted a teljes oldalt',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Szakasz szerkesztése',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Ha csak egy bizonyos szakaszt akarsz szerkeszteni, kattints a kék „{{int:editsection}}” linkre a szakasz tetején',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Máris szerkeszthetsz!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Ezután módosíthatod a szócikket. Ha készen vagy, kattints az „{{int:visualeditor-toolbar-savedialog}}” gombra, ezután áttekintheted a változtatásaidat, és rögzítheted őket.',
 	'guidedtour-tour-gettingstarted-click-preview-title' => 'Előnézet (opcionális)',
 	'guidedtour-tour-gettingstarted-click-preview-description' => 'Az „{{int:showpreview}}” gombra kattintva megnézheted, hogyan néz majd ki az oldal a módosításaid után. Csak ne felejtsd el elmenteni a végén.',
 	'guidedtour-tour-gettingstarted-click-save-title' => 'Mindjárt végzünk!',
 	'guidedtour-tour-gettingstarted-click-save-description' => 'Kattints a „{{int:savearticle}}” gombra, és a változtatásaid megjelennek.',
+	'gettingstarted-cta-close' => 'Bezárás',
+	'gettingstarted-cta-heading' => 'Segíts a {{SITENAME}} írásában',
+	'gettingstarted-cta-text' => 'Többféleképpen is segíthetsz a {{SITENAME}} írásában',
+	'gettingstarted-cta-edit-page' => 'Szerkesztés',
+	'gettingstarted-cta-edit-page-sub' => 'Megmutatjuk, hogyan kell',
+	'gettingstarted-cta-fix-pages' => 'Keress olyan oldalakat, amiken egyszerű javítanivaló van',
+	'gettingstarted-cta-fix-pages-sub' => 'Megmutatjuk, hogyan kell szerkeszteni',
+	'gettingstarted-cta-leave' => 'Talán majd máskor',
 );
 
 /** Armenian (Հայերեն)
@@ -1809,19 +1839,20 @@ $messages['pms'] = array(
  * @author Alchimista
  * @author Fúlvio
  * @author Hamilton Abreu
+ * @author Imperadeiro98
  * @author Raylton P. Sousa
  */
 $messages['pt'] = array(
 	'gettingstarted' => 'Primeiros passos',
 	'gettingstarted-desc' => 'Ajuda os novos utilizadores a se tornarem editores',
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
-	'tag-gettingstarted_edit' => 'através das sugestões de edição do [[{{MediaWiki:gettingstarted-project-link}}|Getting Started]]',
+	'tag-gettingstarted_edit' => 'através das sugestões de edição do [[{{MediaWiki:gettingstarted-project-link}}|Primeiros Passos]]',
 	'tag-gettingstarted_edit-description' => 'Edição feita através do sistema [[{{MediaWiki:gettingstarted-project-link}}|GettingStarted]], que sugere tarefas fáceis para os editores e mostra-lhes como completá-las.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Mostre-me como',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Mostrar um guia de edição',
 	'gettingstarted-task-toolbar-try-another-text' => 'Tente outra página ►',
 	'gettingstarted-task-toolbar-close-title' => 'Fechar esta barra de ferramentas',
-	'gettingstarted-task-toolbar-no-suggested-page' => 'Desculpe. Não foi possível páginas a serem melhoradas neste momento. Tente novamente em um outro momento ou procure por seus próprios temas de interesse.',
+	'gettingstarted-task-toolbar-no-suggested-page' => 'Desculpe. De momento não foi possível encontrar mais páginas para serem melhoradas. Tente novamente mais tarde ou procure pelos seus próprios temas de interesse.',
 	'gettingstarted-task-copyedit-toolbar-description' => 'Esta página pode ter erros ortográficos ou gramaticais que você pode corrigir.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Ir para uma página aleatória cujo estilo possas melhorar',
 	'gettingstarted-task-clarify-toolbar-description' => 'Esta página pode estar confusa ou vaga. Procure maneiras de torná-la mais clara.',
@@ -1835,11 +1866,11 @@ $messages['pt'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Clique em {{int:vector-view-edit}}',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Você pode editar a página inteira clicando aqui.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Editar uma secção',
-	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Se você desejar editar uma secção específica, podes clicar na ligação "{{int:editsection}}" (em azul) na parte superior de cada secção.',
-	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Já podes editar!',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Se você desejar editar uma secção específica, pode clicar na ligação azul "{{int:editsection}}", na parte superior de cada secção.',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Você pode editar!',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Agora, você pode editar a página. Ao terminar, clique em "{{int:visualeditor-toolbar-savedialog}}" para rever e guardar as alterações.',
 	'guidedtour-tour-gettingstarted-click-preview-title' => 'Antevisão (opcional)',
-	'guidedtour-tour-gettingstarted-click-preview-description' => "Clicar ''{{int:showpreview}}'' permite verificar como a página ficará após as alterações. Mas não se esqueça de gravá-las.",
+	'guidedtour-tour-gettingstarted-click-preview-description' => "Clicar em ''{{int:showpreview}}'' permite verificar como a página ficará após as suas alterações. Mas não se esqueça de gravá-las.",
 	'guidedtour-tour-gettingstarted-click-save-title' => 'Está quase a terminar!',
 	'guidedtour-tour-gettingstarted-click-save-description' => "Clique em ''{{int:savearticle}}'' e as suas alterações serão visíveis.",
 	'gettingstarted-cta-close' => 'Fechar',
