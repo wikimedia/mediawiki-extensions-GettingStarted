@@ -165,9 +165,11 @@ $messages['af'] = array(
 );
 
 /** Arabic (العربية)
+ * @author Asaifm
  * @author Ciphers
  */
 $messages['ar'] = array(
+	'gettingstarted' => 'كيفية البدء',
 	'guidedtour-tour-gettingstarted-click-preview-title' => 'عرض (اختياري)',
 	'guidedtour-tour-gettingstarted-click-preview-description' => "إن الضغط على '{{int:showpreview}}' يساعدك على فحص ما ستظهر عليه الصفحة بعد قيامك بالتغييرات. لكن لا تنس حفظ تلك التغييرات.",
 	'guidedtour-tour-gettingstarted-click-save-title' => 'لقد انتهيت تقريبا!',
@@ -437,19 +439,11 @@ $messages['ca'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
-	'gettingstarted-task-addlinks-main-description' => 'ТӀетоха хьажорагаш',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Хьан йиш ю ерриг агӀо тая тӀетаӀича кхузахь.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Хьайна билгала дакъа тадан лууш делахь тӀетаӀае сийначу '{{int:editsection}}', хьажораган иза ю хӀора декъан тӀехула.",
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "ХӀинца хьа йиш ю агӀо тая. Хьай болх баьлча, тӀетаӀе кнопка '{{int:visualeditor-toolbar-savedialog}}' хийцамашка хьажа а Ӏалашъян а.",
 	'guidedtour-tour-gettingstarted-click-save-title' => 'Хьа болх бала гергга бу!',
-	'notification-gettingstarted-continue-editing' => 'Дика болх бу! Ахьа {{SITENAME}} чохь цхьалгӀа нисдар дина.
-Хьона кхин дӀа болх бан лууш делахь атта дан дезаш долучу [[Special:GettingStarted|могӀа бу]]. 
-
-$3', # Fuzzy
-	'notification-gettingstarted-continue-editing-text-email-body' => 'Дика болх бу! Ахьа {{SITENAME}} чохь цхьалгӀа нисдар дина.
-Хьона кхин дӀа болх бан лууш делахь атта дан дезаш долучу могӀа бу: $2 
-
-$3',
+	'gettingstarted-cta-edit-page' => 'Нисйé хӀара агӀо',
 	'gettingstarted-cta-edit-page-sub' => 'Оха гойтур ду муха',
 	'gettingstarted-cta-fix-pages-sub' => 'Оха гойтур ду муха тайо',
 );
@@ -751,7 +745,7 @@ $messages['et'] = array(
 	'gettingstarted' => 'Esimesed sammud',
 	'gettingstarted-desc' => 'Aitab uuel kasutajal toimetajaks saada.',
 	'gettingstarted-project-link' => '{{ns:Project}}:Esimesed sammud',
-	'tag-gettingstarted_edit' => 'uue toimetaja [[{{MediaWiki:gettingstarted-project-link}}|esimesed sammud]]', # Fuzzy
+	'tag-gettingstarted_edit' => 'uue toimetaja [[{{MediaWiki:gettingstarted-project-link}}|esimesed sammud]]',
 	'tag-gettingstarted_edit-description' => 'Muudatus tehtud [[{{MediaWiki:gettingstarted-project-link}}|esimeste sammude]] süsteemis, mis soovitab toimetajatele lihtsaid ülesandeid ja näitab, kuidas neid täita.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Näita, kuidas',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Näita juhiseid redigeerimise kohta',
@@ -867,6 +861,50 @@ $messages['fi'] = array(
 	'gettingstarted-cta-fix-pages' => 'Hae sivuja, jotka tarvitsevat helppoja korjauksia',
 	'gettingstarted-cta-fix-pages-sub' => 'Näytämme, miten voit muokata',
 	'gettingstarted-cta-leave' => 'Ei kiitos, ehkä myöhemmin',
+);
+
+/** Faroese (føroyskt)
+ * @author EileenSanda
+ */
+$messages['fo'] = array(
+	'gettingstarted' => 'Kom í gongd',
+	'gettingstarted-desc' => 'Hjálpir nýggjum brúkarum at gerast høvundar',
+	'gettingstarted-project-link' => '{{ns:Project}}:Komígongd',
+	'tag-gettingstarted_edit' => 'við [[{{MediaWiki:gettingstarted-project-link}}|Kom í gongd]] uppskotum til rættingar',
+	'tag-gettingstarted_edit-description' => 'Rættingar sum eru gjørdar við [[{{MediaWiki:gettingstarted-project-link}}|Komígongd]] skipanini, sum veitir uppskot um lættar uppgávur til høvundar og vísir teimum hvussu tær skulu fullførast.',
+	'gettingstarted-task-toolbar-editing-help-text' => 'Vís mær hvussu',
+	'gettingstarted-task-toolbar-editing-help-title' => 'Vís eina leiðbeining um hvussu ein rættar',
+	'gettingstarted-task-toolbar-try-another-text' => 'Royn eina aðra síðu ►',
+	'gettingstarted-task-toolbar-close-title' => 'Lat hesa tóllinjuna aftur',
+	'gettingstarted-task-toolbar-no-suggested-page' => 'Tíverri ber tað í løtuni ikki til at finna fram fleiri síður, ið hava tørv á betran. Royn aftur um eina løtu ella leita eftir evnum ið hava tín áhuga.',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Henda síðan hevur møguliga stavi- ella bendingarvillur, ið tú kanst rætta.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Far til eina tilvildarliga síðu, ið tú kanst betra við at rættlesa',
+	'gettingstarted-task-clarify-toolbar-description' => 'Henda síðan er møguliga forvirrandi ella ótýðulig. Royn og finn fram til hvussu tú kanst gera hana týðuligari.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Far til eina tilvildarliga síðu, ið tú kanst gera klára',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Henda síðan tørvar møguliga fleiri leinkjur. Leita eftir orðum, ið kanska hava eina síðu á {{SITENAME}}.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Far til eina tilvildarliga síðu, har tú kanst innseta leinkjur',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Soleiðis kemur tú í gongd',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Far bara í gongd við at hyggja ígjøgnum greinina og vita um tú finnur okkurt ið tú kanst rætta ella betra. Um tú følir at tað er ov mikið, nýtist tær ikki at leggja í tað. Tær nýtist ikki at vera ekspertur í hesum evninum! Um tær tørvar hjálp ella um tú hevur hug at royna eina aðra síðu, nýt so leinkjurnar í bjálkanum ovast.',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Hugskot til hvat tú kanst gera',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Hesir teigar vísa trupulleikar við hesi síðuni. Tær nýtist ikki at loysa allir trupulleikar her, far bara í holt við tað ið tær dámar at gera.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Trýst á {{int:vector-view-edit}}',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Tú kanst rætta alla síðuna við at trýsta her.',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Rætta eitt brot',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => 'Um tú ynskir at rætta eitt serstakt brot, so kanst tú klikkja á tað bláu "{{int:editsection}}" leinkjuna, sum er ovast í hvørjum broti.',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Tú kanst rætta!',
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => 'Nú kanst tú rætta síðuna. Tá tú ert liðug/ur, trýst so á "{{int:visualeditor-toolbar-savedialog}}" fyri at endurskoða og goyma tínar rættingar.',
+	'guidedtour-tour-gettingstarted-click-preview-title' => 'Forskoðan (valfrítt)',
+	'guidedtour-tour-gettingstarted-click-preview-description' => 'Eitt klikk á "{{int:showpreview}}" loyvir tær at síggja, hvussu síðan fer at síggja út við tínum broytingum. Tú mást bara ikki gloyma at goyma.',
+	'guidedtour-tour-gettingstarted-click-save-title' => 'Tú ert næstan liðug/ur!',
+	'guidedtour-tour-gettingstarted-click-save-description' => 'Trýst á "{{int:savearticle}}" og tínar broytingar gerast sjónligar.',
+	'gettingstarted-cta-close' => 'Lat aftur',
+	'gettingstarted-cta-heading' => 'Hjálp {{SITENAME}}',
+	'gettingstarted-cta-text' => 'Tú kanst geva títt íkast til {{SITENAME}} á ymiskar mátar',
+	'gettingstarted-cta-edit-page' => 'Rætta hesa síðuna',
+	'gettingstarted-cta-edit-page-sub' => 'Vit fara at vísa tær hvussu',
+	'gettingstarted-cta-fix-pages' => 'Finn síður ið tørva lættar rættingar',
+	'gettingstarted-cta-fix-pages-sub' => 'Vit fara at vísa tær, hvussu tú rættar',
+	'gettingstarted-cta-leave' => 'Nei takk, kanska seinni',
 );
 
 /** French (français)
@@ -1085,7 +1123,17 @@ $messages['hu'] = array(
 	'gettingstarted-task-toolbar-editing-help-title' => 'Mutasd a szerkesztési útmutatót',
 	'gettingstarted-task-toolbar-try-another-text' => 'Másik oldalt próbálok ►',
 	'gettingstarted-task-toolbar-close-title' => 'Eszközsáv bezárása',
+	'gettingstarted-task-toolbar-no-suggested-page' => 'Sajnos most éppen nem találunk javításra váró oldalakat. Próbálkozz később, vagy bővítsd ki a meglévő szócikkeket valamilyen téged érdeklő témában.',
+	'gettingstarted-task-copyedit-toolbar-description' => 'Ezen az oldalon javításra váró helyesírási vagy nyelvtani hibák vannak.',
+	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Ugrás egy találomra választott oldalra, ahol korrektúrázandó szöveg van.',
+	'gettingstarted-task-clarify-toolbar-description' => 'Ez az oldal zavarosan vagy homályosan van megfogalmazva. Próbáld meg érthetőbbé tenni.',
+	'gettingstarted-task-clarify-toolbar-try-another-title' => 'Ugrás egy találomra választott oldalra, ahol átfogalmazandó szöveg van.',
+	'gettingstarted-task-addlinks-toolbar-description' => 'Ezen az oldalon több linkre lenne szükség. Keress olyan kifejezéseket, amiknek van saját {{SITENAME}} cikjük.',
+	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Ugrás egy találomra választott oldalra, amin linkesítendő szöveg van.',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Az első lépések',
+	'guidedtour-tour-gettingstartedtasktoolbarintro-description' => 'Csak fusd át az oldalt, és keresd, mit lehetne javítani. Ha elveszettnek érzed magad, ne aggódj, nem kell a téma szakértőjének lenned. Ha segítségre van szükséged, vagy inkább másik lapot néznél, használd a legfelül lévő hivatkozásokat.',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Javasolt feladatok',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-description' => 'Ezek a dobozok jelzik, hogy milyen problémák vannak a szöveggel. Nem kell minddel foglalkoznod, csak csináld azt, amihez kedved van.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Kattints a „{{int:vector-view-edit}}” gombra',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Ide kattintva szerkesztheted a teljes oldalt',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Szakasz szerkesztése',
@@ -1776,6 +1824,7 @@ $messages['nl'] = array(
 
 /** Polish (polski)
  * @author Chrumps
+ * @author Cotidianis
  * @author Rzuwig
  * @author Tar Lócesilion
  */
@@ -1788,7 +1837,7 @@ $messages['pl'] = array(
 	'gettingstarted-task-toolbar-editing-help-text' => 'Pokaż, jak',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Pokaż przewodnik po edytowaniu',
 	'gettingstarted-task-toolbar-try-another-text' => 'Spróbuj na innej stronie ►',
-	'gettingstarted-task-toolbar-close-title' => 'Zamknij ten pasek narzędzi',
+	'gettingstarted-task-toolbar-close-title' => 'Zamknij pasek narzędzi',
 	'gettingstarted-task-toolbar-no-suggested-page' => 'Przepraszamy, nie mogliśmy znaleźć więcej stron wymagających dopracowania. Spróbuj ponownie za kilka chwil albo poszukaj interesujących cię tematów.',
 	'gettingstarted-task-copyedit-toolbar-description' => 'Na tej stronie mogą być błędy w pisowni lub błędy gramatyczne, które możesz poprawić.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Idź do losowej strony, na której możesz przeredagować tekst',
@@ -1847,7 +1896,7 @@ $messages['pt'] = array(
 	'gettingstarted-desc' => 'Ajuda os novos utilizadores a se tornarem editores',
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
 	'tag-gettingstarted_edit' => 'através das sugestões de edição do [[{{MediaWiki:gettingstarted-project-link}}|Primeiros Passos]]',
-	'tag-gettingstarted_edit-description' => 'Edição feita através do sistema [[{{MediaWiki:gettingstarted-project-link}}|GettingStarted]], que sugere tarefas fáceis para os editores e mostra-lhes como completá-las.',
+	'tag-gettingstarted_edit-description' => 'Edição feita através do sistema [[{{MediaWiki:gettingstarted-project-link}}|Primeiros Passos]], que sugere tarefas fáceis para os editores e mostra-lhes como completá-las.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Mostre-me como',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Mostrar um guia de edição',
 	'gettingstarted-task-toolbar-try-another-text' => 'Tente outra página ►',
@@ -2151,7 +2200,7 @@ $messages['uk'] = array(
 	'gettingstarted' => 'Початок роботи',
 	'gettingstarted-desc' => 'Допомагає новим користувачам стати редакторами',
 	'gettingstarted-project-link' => '{{ns:Project}}:GettingStarted',
-	'tag-gettingstarted_edit' => 'новий дописувач [[{{MediaWiki:gettingstarted-project-link}}|почав працювати]]', # Fuzzy
+	'tag-gettingstarted_edit' => 'через підказки редагувань [[{{MediaWiki:gettingstarted-project-link}}|Getting Started]]',
 	'tag-gettingstarted_edit-description' => 'Редагування зроблено через систему [[{{MediaWiki:gettingstarted-project-link}}|Перші кроки]], яка пропонує легкі завдання для редакторів і показує, як завершити їх.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Показати мені, як',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Показати посібник з редагування',
