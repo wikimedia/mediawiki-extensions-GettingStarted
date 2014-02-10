@@ -2,7 +2,7 @@
 
 namespace GettingStarted;
 
-use Category, WikiPage;
+use Category, WikiPage, Title;
 
 /**
  * Maintains sets in redis representing page IDs of NS_MAIN pages in
@@ -63,13 +63,14 @@ class RedisCategorySync {
 
 		if ( self::$categories === null ) {
 			self::$categories = array();
-			foreach ($wgGettingStartedCategoriesForTaskTypes as $categoryName) {
-				$category = Category::newFromName( $categoryName );
-				if ( !$category) {
+			foreach ( $wgGettingStartedCategoriesForTaskTypes as $rawCategory ) {
+				// Canonicalize the category name.
+				$title = Title::makeTitleSafe( NS_CATEGORY, $rawCategory );
+				if ( !$title ) {
 					continue;
 				}
-				// Canonicalize the category name.
-				self::$categories[] = $category->getName();
+				$category = $title->getDBkey();
+				self::$categories[] = $category;
 			}
 		}
 

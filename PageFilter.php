@@ -16,6 +16,9 @@ class PageFilter {
 	/** @var Title */
 	protected $excludedTitle;
 
+	/** @var array: array of excluded categories */
+	protected static $excludedCategories;
+
 	/**
 	 * Constructor.
 	 *
@@ -28,12 +31,10 @@ class PageFilter {
 	}
 
 	protected function inExcludedCategories( Title $title ) {
-		global $wgGettingStartedExcludedCategories;
-
 		$articleID = $title->getArticleID();
-
+		$excludedCategories = self::getExcludedCategories();
 		$dbr = wfGetDB( DB_SLAVE );
-		foreach( $wgGettingStartedExcludedCategories as $cat ) {
+		foreach( $excludedCategories as $cat ) {
 			$res = $dbr->selectRow( 'categorylinks', '1', array(
 				'cl_from' => $articleID,
 				'cl_to' => $cat,
@@ -45,6 +46,28 @@ class PageFilter {
 		}
 
 		return false;
+	}
+
+	protected static function getExcludedCategories() {
+		global $wgGettingStartedExcludedCategories;
+
+		if ( self::$excludedCategories === null ) {
+			// TODO (phuedx 2014-02-010) Create a collection class
+			// for categories, which could be generalised in the
+			// future, i.e. CategoryCollection.
+			self::$excludedCategories = array();
+			foreach( $wgGettingStartedExcludedCategories as $rawCategory ) {
+				// Canonicalize the category name.
+				$title = Title::makeTitleSafe( NS_CATEGORY, $rawCategory );
+				if ( !$title ) {
+					continue;
+				}
+				$category = $title->getDBkey();
+				self::$excludedCategories[] = $category;
+			}
+		}
+
+		return self::$excludedCategories;
 	}
 
 	public function isAllowedPage( Title $title ) {
