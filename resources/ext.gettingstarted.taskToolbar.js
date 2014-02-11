@@ -51,7 +51,7 @@
 		} ).text( mw.message( toolbarInfo.description ).text() );
 
 		$showGuide = $( '<a>' ).attr( {
-			'class': 'mw-ui-button mw-ui-primary mw-gettingstarted-toolbar-show-guiders',
+			'class': 'mw-ui-button mw-ui-progressive mw-gettingstarted-toolbar-show-guiders',
 			title: mw.message( 'gettingstarted-task-toolbar-editing-help-title' ).text()
 		} ).text( mw.message( 'gettingstarted-task-toolbar-editing-help-text' ).text() )
 			.click( function ( evt ) {
