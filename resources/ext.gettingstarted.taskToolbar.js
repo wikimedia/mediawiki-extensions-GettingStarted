@@ -38,7 +38,7 @@
 	function displayToolbar( toolbarInfo, suggestedTitle ) {
 		var $toolbar, $center, $centerMessage, $right, $tryAnother, $close,
 		$relativeElements, $marginElements, tryAnotherUrl, $showGuide,
-		fullTask;
+		fullTask, afterRemovalHookInstalled;
 
 		fullTask = 'gettingstarted-' + toolbarInfo.taskName;
 
@@ -152,9 +152,25 @@
 			} );
 		}
 
-		function showToolbar() {
-			if ( cfg.wgPostEdit ) {
+		/**
+		 * @param {boolean} [isPostEdit] Used to handle VisualEditor
+		 *   signalling that the user successfully edited the page when
+		 *   it deactivates. If given, then it overrides the wgPostEdit
+		 *   configuration variable.
+		 */
+		function showToolbar( isPostEdit ) {
+			isPostEdit = isPostEdit || cfg.wgPostEdit;
+			if ( isPostEdit ) {
+				// If VisualEditor deactivates more than once
+				// before the page is refreshed, e.g. the user
+				// edits the page with VisualEditor twice, then
+				// the hook will be fired as it's added.
+				if ( afterRemovalHookInstalled ) {
+					return;
+				}
+
 				mw.hook( 'postEdit.afterRemoval' ).add( showToolbarInternal );
+				afterRemovalHookInstalled = true;
 			} else {
 				showToolbarInternal();
 			}
@@ -172,7 +188,7 @@
 		}
 
 		mw.hook( 've.activationComplete' ).add( hideToolbar );
-		mw.hook( 've.deactivationComplete' ).add( showToolbarInternal );
+		mw.hook( 've.deactivationComplete' ).add( showToolbar );
 	}
 
 	$( document ).ready( function () {
