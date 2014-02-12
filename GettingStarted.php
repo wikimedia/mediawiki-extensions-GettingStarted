@@ -5,9 +5,13 @@ $wgExtensionCredits[ 'api' ][] = array(
 	'path' => __FILE__,
 	'name' => 'GettingStarted',
 	'author' => array(
+		// Alphabetical
 		'Munaf Assaf',
 		'Matt Flaschen',
+		'Pau Giner',
+		'Ori Livneh',
 		'S Page',
+		'Sam Smith',
 	),
 	'url' => 'https://www.mediawiki.org/wiki/Extension:GettingStarted',
 	'descriptionmsg' => 'gettingstarted-desc',
