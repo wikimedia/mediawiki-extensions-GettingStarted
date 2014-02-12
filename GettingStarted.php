@@ -14,14 +14,6 @@ $wgExtensionCredits[ 'api' ][] = array(
 	'version' => '1',
 );
 
-// TODO (mattflaschen, 2013-04-24):
-//
-// There are no longer any task types embedded in the tour, so we may be able to pull this
-// config out of the extension.
-//
-// The images are on-wiki (or Commons) which should make this generalization a
-// little easier.
-
 /**
  * @var array Associative array of arrays.  The key is an internal non-displayed name, such as 'copyedit'
  *
@@ -49,11 +41,7 @@ $wgGettingStartedTasks = array(
  * from $wgGettingStartedTasks (see above).  The value is the category that the
  * articles, which the task targets, are from.
  */
-$wgGettingStartedCategoriesForTaskTypes = array(
-	'copyedit' => 'All_articles_needing_copy_edit',
-	'clarify' => 'All_Wikipedia_articles_needing_clarification',
-	'addlinks' => 'All_articles_with_too_few_wikilinks',
-);
+$wgGettingStartedCategoriesForTaskTypes = array();
 
 /**
  * @var array: Array of category names. Articles that are members of
