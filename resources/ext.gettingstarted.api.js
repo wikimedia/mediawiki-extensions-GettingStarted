@@ -28,26 +28,31 @@
 		getPages: function ( options ) {
 			var params, dfd = $.Deferred();
 
-			params = {
-				action: 'gettingstartedgetpages',
-				taskname: options.taskName,
-				count: options.count
-			};
+			if ( mw.config.get( 'wgGettingStartedConfig' ).hasCategories ) {
+				params = {
+					action: 'gettingstartedgetpages',
+					taskname: options.taskName,
+					count: options.count
+				};
 
-			if ( options.excludedTitle ) {
-				params.excludedtitle = options.excludedTitle;
-			}
-
-			this.get( params ).done( function ( resp ) {
-				var root = resp.gettingstartedgetpages;
-				if ( root && root.titles ) {
-					dfd.resolve( root.titles );
-				} else {
-					dfd.reject( 'gettingstarted-unexpected-api-response' );
+				if ( options.excludedTitle ) {
+					params.excludedtitle = options.excludedTitle;
 				}
-			} ).fail( function ( errCode ) {
-				dfd.reject( errCode );
-			} );
+
+				this.get( params ).done( function ( resp ) {
+					var root = resp.gettingstartedgetpages;
+					if ( root && root.titles ) {
+						dfd.resolve( root.titles );
+					} else {
+						dfd.reject( 'gettingstarted-unexpected-api-response' );
+					}
+				} ).fail( function ( errCode ) {
+					dfd.reject( errCode );
+				} );
+			} else {
+				// Skip the network request if we know up front there are no categories.
+				dfd.reject( 'gettingstarted-client-no-categories' );
+			}
 
 			return dfd.promise();
 		},

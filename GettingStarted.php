@@ -255,6 +255,7 @@ $wgHooks[ 'CategoryAfterPageAdded' ][] = 'GettingStarted\RedisCategorySync::onCa
 $wgHooks[ 'CategoryAfterPageRemoved' ][] = 'GettingStarted\RedisCategorySync::onCategoryAfterPageRemoved';
 $wgHooks[ 'ListDefinedTags' ][] = 'GettingStarted\Hooks::onListDefinedTags';
 $wgHooks[ 'MakeGlobalVariablesScript' ][] = 'GettingStarted\Hooks::onMakeGlobalVariablesScript';
+$wgHooks[ 'ResourceLoaderGetConfigVars' ][] = 'GettingStarted\Hooks::onResourceLoaderGetConfigVars';
 $wgHooks[ 'GetPreferences' ][] = 'GettingStarted\Hooks::onGetPreferences';
 // Extension:CentralAuth's hook
 $wgHooks[ 'CentralAuthPostLoginRedirect' ][] = 'GettingStarted\Hooks::onCentralAuthPostLoginRedirect';

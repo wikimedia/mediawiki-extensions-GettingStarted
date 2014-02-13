@@ -238,6 +238,27 @@ class Hooks {
 	}
 
 	/**
+	 * Add static configuration data, currently just whether there are any task
+	 * categories.
+	 *
+	 * Used to optimize the client-side API by avoiding an unnecessary API call.
+	 *
+	 * @param array &$vars array used to set config
+	 * @return bool
+	 */
+	public static function onResourceLoaderGetConfigVars( array &$vars ) {
+		global $wgGettingStartedCategoriesForTaskTypes;
+
+		$categoryCount = count( $wgGettingStartedCategoriesForTaskTypes );
+
+		$vars['wgGettingStartedConfig'] = array(
+			'hasCategories' => ( $categoryCount > 0 ),
+		);
+
+		return true;
+	}
+
+	/**
 	 * Adds applicable modules to the page
 	 *
 	 * @param OutputPage $out output page
