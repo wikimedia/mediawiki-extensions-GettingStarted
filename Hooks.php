@@ -26,8 +26,13 @@ class Hooks {
 	 */
 	protected static $openTask = null;
 
-	// There is used unprefixed for legacy reasons.
+	// There is used unprefixed and with a custom path for legacy reasons.
 	const COOKIE_NAME = 'openTask';
+
+	protected static $COOKIE_OPTIONS = array(
+		'prefix' => '',
+		'path' => '/',
+	);
 
 	const INTRO_OPTION = 'gettingstarted-task-toolbar-show-intro';
 
@@ -113,24 +118,6 @@ class Hooks {
 		}
 
 		return null;
-	}
-
-	/**
-	 * Sets a task for the title in the openTask structure, then sets the cookie.
-	 * If applicable, this should already be prefixed (e.g. 'gettingstarted-addlinks', not 'addlinks').
-	 *
-	 * @param WebRequest $request current request
-	 * @param Title $title title to set
-	 * @param string $task task to set
-	 */
-	public static function setPageTask( WebRequest $request, Title $title, $task ) {
-		self::initializeOpenTask( $request );
-
-		self::$openTask[$title->getPrefixedText()] = $task;
-
-		// WebResponse->setcookie cannot set session cookies
-		// This encoding will be decoded properly by jQuery.cookie (it uses decodeURIComponent).
-		setrawcookie( self::COOKIE_NAME, rawurlencode( FormatJson::encode( self::$openTask ) ), 0, '/' );
 	}
 
 	/**
@@ -393,6 +380,24 @@ class Hooks {
 		$preferences[self::INTRO_OPTION] = array(
 			'type' => 'api',
 		);
+
+		return true;
+	}
+
+	/**
+	 * Delete the user's openTask cookie.
+	 *
+	 * Called when user is on the 'You are now logged out.' page
+	 *
+	 * @param User $user user object of the now-anonymous user
+	 * @param string $inject_html reference that can be used to inject HTML into logout page.
+	 * @param string $old_name name of user that just logged out
+	 */
+	public static function onUserLogoutComplete( &$user, &$inject_html, $old_name ) {
+		global $wgRequest;
+
+		// Set expiration time in the past to expire.  Uses -1 day like User.php.
+		$wgRequest->response()->setcookie( self::COOKIE_NAME, '', time() - 86400, self::$COOKIE_OPTIONS );
 
 		return true;
 	}
