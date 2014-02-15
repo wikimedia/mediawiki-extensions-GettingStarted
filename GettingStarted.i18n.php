@@ -2086,6 +2086,7 @@ $messages['roa-tara'] = array(
  * @author DCamer
  * @author Ignatus
  * @author Iluvatar
+ * @author Incnis Mrsi
  * @author Lvova
  * @author Okras
  * @author Ole Yves
@@ -2094,7 +2095,7 @@ $messages['ru'] = array(
 	'gettingstarted' => 'Начало работы',
 	'gettingstarted-desc' => 'Помогает новым участникам стать редакторами',
 	'gettingstarted-project-link' => '{{ns:Project}}:Начало работы',
-	'tag-gettingstarted_edit' => 'через предложение правок [[{{MediaWiki:gettingstarted-project-link}}|Начала работы]]',
+	'tag-gettingstarted_edit' => 'Новый редактор [[{{MediaWiki:gettingstarted-project-link}}|приступил к работе]]',
 	'tag-gettingstarted_edit-description' => 'Правка сделана через систему [[{{MediaWiki:gettingstarted-project-link}}|Начала работы]], которая предлагает простые задачи для участников и показывает им, как их выполнить.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Показать мне, как',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Показать руководство по редактированию',
