@@ -1793,6 +1793,7 @@ $3',
 
 /** Dutch (Nederlands)
  * @author Arent
+ * @author Kippenvlees1
  * @author Konovalov
  * @author Siebrand
  */
@@ -1800,7 +1801,7 @@ $messages['nl'] = array(
 	'gettingstarted' => 'Aan de slag',
 	'gettingstarted-desc' => 'Helpt nieuwe gebruikers redacteur te laten worden',
 	'gettingstarted-project-link' => '{{ns:Project}}:Aan de slag',
-	'tag-gettingstarted_edit' => 'nieuwe bewerker [[{{MediaWiki:gettingstarted-project-link}}|aan de slag]]', # Fuzzy
+	'tag-gettingstarted_edit' => 'via de [[{{MediaWiki:gettingstarted-project-link}}|"aan de slag"]]-bewerkingssuggesties',
 	'tag-gettingstarted_edit-description' => 'Bewerking aan een pagina die de gebruiker heeft gekozen uit de takenlijst op [[{{MediaWiki:gettingstarted-project-link}}|aan de slag]] waar eenvoudige taken gesuggereerd worden met aanwijzingen hoe deze te voltooien zijn voor nieuwe redacteuren.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'Laten zien hoe',
 	'gettingstarted-task-toolbar-editing-help-title' => 'Gids weergeven over hoe u kunt bewerken',
