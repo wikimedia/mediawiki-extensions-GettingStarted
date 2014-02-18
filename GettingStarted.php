@@ -180,15 +180,15 @@ $wgResourceModules[ 'ext.gettingstarted.api' ] = array(
 $wgResourceModules[ 'ext.gettingstarted.taskToolbar' ] = array(
 	'scripts' => 'ext.gettingstarted.taskToolbar.js',
 	'styles' => array(
-		'ext.gettingstarted.taskToolbar.css' => array( 'media' => 'screen ' ),
-		'ext.gettingstarted.taskToolbar.lowWidth.css' =>
+		'ext.gettingstarted.taskToolbar.less' => array( 'media' => 'screen ' ),
+		'ext.gettingstarted.taskToolbar.lowWidth.less' =>
 			array( 'media' => 'only screen and (min-width: 851px) and (max-width: 1150px)' ),
 
 		// Requires fix for https://bugzilla.wikimedia.org/show_bug.cgi?id=49722 and
 		// https://bugzilla.wikimedia.org/show_bug.cgi?id=49851 to work on printable=yes view.
 		//
 		// But works for small screens and actual printouts now.  Keep print before screen.
-		'ext.gettingstarted.taskToolbar.hidden.css' =>
+		'ext.gettingstarted.taskToolbar.hidden.less' =>
 			array( 'media' =>'print, only screen and (max-width: 850px)' ),
 	),
 	'dependencies' => array(
@@ -219,7 +219,7 @@ $wgResourceModules[ 'ext.gettingstarted.taskToolbar' ] = array(
 // special behavior), possibly displaying a Call To Action.
 $wgResourceModules[ 'ext.gettingstarted.return' ] = array(
 	'scripts' => 'ext.gettingstarted.return.js',
-	'styles' => 'ext.gettingstarted.return.css',
+	'styles' => 'ext.gettingstarted.return.less',
 	'messages' => array(
 		'gettingstarted-cta-close',
 		'gettingstarted-cta-heading',
