@@ -2133,6 +2133,16 @@ $messages['ru'] = array(
 	'gettingstarted-cta-leave' => 'Нет, спасибо, может быть, позже',
 );
 
+/** Scots (Scots)
+ * @author John Reid
+ */
+$messages['sco'] = array(
+	'gettingstarted-desc' => 'Heelps new uisers become editers',
+	'tag-gettingstarted_edit' => 'via [[{{MediaWiki:gettingstarted-project-link}}|Getting Started]] edit suggestions',
+	'tag-gettingstarted_edit-description' => 'Edit made via the [[{{MediaWiki:gettingstarted-project-link}}|GettingStarted]] system, that suggests easy tasks til editors an shows them hou tae compleat them.',
+	'gettingstarted-task-toolbar-no-suggested-page' => 'Sorry. We coudna find mair pages tae be impruived the nou. Try again in a moment or rake fer yer ain topics o interest.',
+);
+
 /** Sinhala (සිංහල)
  * @author පසිඳු කාවින්ද
  */
@@ -2219,13 +2229,12 @@ $messages['ta'] = array(
 
 /** Telugu (తెలుగు)
  * @author Arjunaraoc
+ * @author Ravichandra
  * @author Veeven
  */
 $messages['te'] = array(
 	'gettingstarted' => 'మొదలుపెట్టడం',
-	'gettingstarted-welcomesiteuser' => '$1కి స్వాగతం, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'మొదలుపెట్టడం',
-	'gettingstarted-return' => 'వద్దు, నన్ను వెనక్కు తీసుకువెళ్ళు', # Fuzzy
+	'gettingstarted-desc' => 'కొత్తవాడుకరులు సంపాదకులు కావడానికి దోహదం చేస్తుంది',
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'మీరు  మార్పులు చేయవచ్చు!',
 );
 
