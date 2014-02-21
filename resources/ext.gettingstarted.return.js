@@ -314,19 +314,16 @@
 		 */
 		showCTA: function ( spec ) {
 			var $dialog, $close, closeText, $heading, $dialogText, $leaveLink,
-				i, $overlay;
+				i, $overlay, $dialogContainer, $dialogBackground;
 
 			// Background overlay like GuidedTour
 
 			function showDialog() {
 				var $body = $( document.body );
 				$body.append( $overlay );
-				$dialog.show();
-				$body.append( $dialog );
 			}
 
 			function removeDialog() {
-				$dialog.remove();
 				$overlay.remove();
 			}
 
@@ -340,8 +337,6 @@
 
 				removeDialog();
 			}
-
-			$overlay = $( '<div>' ).attr( 'class', 'mw-gettingstarted-cta-overlay' );
 
 			$dialog = $( '<div>' ).attr( {
 				id: spec.id,
@@ -394,6 +389,14 @@
 				.click( closeDialogByClick );
 
 			$dialog.append( $leaveLink );
+
+			$dialogBackground = $( '<div>' ).attr( 'class', 'mw-gettingstarted-cta-background' );
+
+			$dialogContainer = $( '<div>' ).attr( 'class', 'mw-gettingstarted-cta-container' );
+			$dialogContainer.append( $dialog );
+
+			$overlay = $( '<div>' ).attr( 'class', 'mw-gettingstarted-cta-overlay' );
+			$overlay.append( [ $dialogBackground, $dialogContainer ] );
 
 			showDialog();
 		},
