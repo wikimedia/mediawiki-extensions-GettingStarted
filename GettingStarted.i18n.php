@@ -830,6 +830,7 @@ $messages['fa'] = array(
 );
 
 /** Finnish (suomi)
+ * @author Elseweyr
  * @author Nike
  * @author Samoasambia
  * @author Silvonen
@@ -838,7 +839,7 @@ $messages['fa'] = array(
  */
 $messages['fi'] = array(
 	'gettingstarted' => 'Alkuaskeleet',
-	'gettingstarted-desc' => 'Auttaa uusista käyttäjistä tulemaan muokkaajia',
+	'gettingstarted-desc' => 'Auttaa uusia käyttäjiä tulemaan muokkaajiksi',
 	'gettingstarted-project-link' => '{{ns:Project}}:Alkuaskeleet',
 	'tag-gettingstarted_edit' => 'käyttäen [[{{MediaWiki:gettingstarted-project-link}}|Alkuaskeleiden]] muokkausehdotuksia',
 	'tag-gettingstarted_edit-description' => 'Muokkaus tehty [[{{MediaWiki:gettingstarted-project-link}}|Alkuaskeleet]]-järjestelmän kautta, joka ehdottaa helppoja tehtäviä muokkaajille, ja näyttää heille kuinka suorittaa ne.',
@@ -846,7 +847,7 @@ $messages['fi'] = array(
 	'gettingstarted-task-toolbar-editing-help-title' => 'Näytä muokkausopas',
 	'gettingstarted-task-toolbar-try-another-text' => 'Kokeile toista sivua ►',
 	'gettingstarted-task-toolbar-close-title' => 'Sulje työkalurivi',
-	'gettingstarted-task-toolbar-no-suggested-page' => 'Pahoittelut. Emme löytäneet enempää sivuja, joita voisi parantaa tällä hetkellä. Yritä uudelleen piakkoin tai etsi kiinnostuksen kohteitasi.',
+	'gettingstarted-task-toolbar-no-suggested-page' => 'Pahoittelut. Emme löytäneet enempää sivuja, joita voisit tällä hetkellä parantaa. Yritä uudelleen piakkoin tai etsi muita kiinnostuksesi kohteita.',
 	'gettingstarted-task-copyedit-toolbar-description' => 'Tässä sivussa voi olla kirjoitus- ja kielioppivirheitä, jotka voit korjata.',
 	'gettingstarted-task-copyedit-toolbar-try-another-title' => 'Mene satunnaiselle sivulle, jota voit parantaa tekemällä kielenhuoltoa',
 	'gettingstarted-task-clarify-toolbar-description' => 'Tämä sivu saattaa olla sekava tai epämääräinen. Keksi, miten voit tehdä siitä selkeämmän.',
@@ -854,7 +855,7 @@ $messages['fi'] = array(
 	'gettingstarted-task-addlinks-toolbar-description' => 'Tämä sivu saattaa tarvita lisää linkkejä. Etsi käsitteitä, joilla on {{SITENAME}}-sivu.',
 	'gettingstarted-task-addlinks-toolbar-try-another-title' => 'Etsii satunnaisen sivun, johon voit lisätä linkkejä',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'Miten päästä alkuun',
-	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Ideoita mitä tehdä',
+	'guidedtour-tour-gettingstartedtasktoolbar-ambox-title' => 'Mitä voisit tehdä',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title' => 'Napsauta {{int:vector-view-edit}}',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description' => 'Voit muokata artikkelia napsauttamalla tästä.',
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => 'Muokkaa osiota',
@@ -865,7 +866,7 @@ $messages['fi'] = array(
 	'guidedtour-tour-gettingstarted-click-save-title' => 'Olet melkein valmis!',
 	'guidedtour-tour-gettingstarted-click-save-description' => 'Napsauta »{{int:savearticle}}» ja muutoksesi tulevat näkyviin.',
 	'gettingstarted-cta-close' => 'Sulje',
-	'gettingstarted-cta-text' => 'Voit osallistua sivustolla {{SITENAME}} eri tavoin',
+	'gettingstarted-cta-text' => 'Voit osallistua sivuston {{SITENAME}} muokkaamiseen eri tavoin',
 	'gettingstarted-cta-edit-page' => 'Muokkaa tätä sivua',
 	'gettingstarted-cta-edit-page-sub' => 'Näytämme miten',
 	'gettingstarted-cta-fix-pages' => 'Hae sivuja, jotka tarvitsevat helppoja korjauksia',
