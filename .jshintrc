@@ -4,7 +4,7 @@
 		"jQuery",
 		"QUnit"
 	],
-
+	"es3": true,
 	"bitwise": true,
 	"camelcase": true,
 	"curly": true,
