@@ -91,7 +91,7 @@
 	 * @private
 	 */
 	function createButton( closeDialog, spec ) {
-		var klass, $btn, $icon, $mainText, $subText, $btnContents;
+		var klass, $btn, $icon, $mainText, $subText;
 
 		klass = 'mw-ui-button';
 		if ( spec.isPrimary ) {
@@ -107,10 +107,14 @@
 			klass += ' mw-gettingstarted-cta-button-no-sub';
 		}
 
-		$btn = $( '<div> ').attr( {
+		$btn = $( '<a> ').attr( {
 			id: spec.id,
-			'class': klass
+			'class': klass,
+			'aria-role': 'button',
+			tabIndex: 0,
+			href: '#'
 		} ).click( function ( evt ) {
+			evt.preventDefault();
 			evt.stopPropagation();
 			closeDialog();
 			spec.click();
@@ -125,19 +129,16 @@
 		$mainText = $( '<span>' )
 			.attr( 'class', 'mw-gettingstarted-cta-button-main' )
 			.text( spec.mainText );
-
-		$btnContents = $( '<div>' )
-			.attr( 'class', 'mw-gettingstarted-cta-button-contents' )
-			.append( $icon, $mainText );
+		$btn.append( $icon, $mainText );
 
 		if ( spec.subText ) {
 			$subText = $( '<span>' )
 				.attr( 'class', 'mw-gettingstarted-cta-button-sub' )
 				.text( spec.subText );
-			$btnContents.append( $subText );
+			$btn.append( $subText );
 		}
 
-		return $btn.append( $btnContents );
+		return $btn;
 	}
 
 	self = {
@@ -321,6 +322,7 @@
 			function showDialog() {
 				var $body = $( document.body );
 				$body.append( $overlay );
+				$dialog.find( '.mw-ui-button.mw-ui-primary' ).focus();
 			}
 
 			function removeDialog() {
