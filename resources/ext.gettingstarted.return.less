@@ -1,3 +1,5 @@
+@import 'mediawiki.mixins';
+
 /* Specific elements */
 #mw-gettingstarted-cta-editable-main-page {
 	width: 510px;
@@ -115,7 +117,9 @@
 
 .mw-gettingstarted-cta-close {
 	float: right;
-	color: #aaa;
+	width: 13px;
+	height: 13px;
+	.background-image-svg('images/x.svg', 'images/x.png');
 }
 
 .mw-gettingstarted-cta-heading {
@@ -134,10 +138,29 @@
 	font-size: 0.8em;
 }
 
+/* Button icons */
 .mw-gettingstarted-cta-button-icon {
 	float: left;
 	margin: 10px 10px 10px 0;
 	width: 28px;
+	height: 28px;
+}
+
+.mw-gettingstarted-cta-button-icon-edit {
+	.background-image-svg('images/pencil_white.svg', 'images/pencil_white.png');
+}
+
+.mw-gettingstarted-cta-button-icon-copyedit {
+	.background-image-svg('images/light_bulb_dark_gray.svg', 'images/light_bulb_dark_gray.png');
+	margin: 2px 0 2px -10px;
+	height: 43px;
+	width: 43px;
+}
+
+.mw-ui-primary {
+	.mw-gettingstarted-cta-button-icon-copyedit {
+		.background-image-svg('images/light_bulb_white.svg', 'images/light_bulb_white.png');
+	}
 }
 
 .mw-gettingstarted-cta-leave-link {

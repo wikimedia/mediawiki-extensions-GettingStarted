@@ -5,10 +5,9 @@
 	var logging = mw.gettingStarted.logging,
 		cfg = mw.config.get( [
 			'wgIsProbablyEditable', 'wgArticleId', 'wgRevisionId',
-			'wgNamespaceNumber', 'wgExtensionAssetsPath',
-			'wgSiteName', 'wgUserName', 'wgAction', 'wgUserId'
+			'wgNamespaceNumber', 'wgSiteName', 'wgUserName',
+			'wgAction', 'wgUserId'
 		] ),
-		imagePath = cfg.wgExtensionAssetsPath + '/GettingStarted/resources/images/',
 		self,
 		MAIN_NAMESPACE = 0,
 		SPECIAL_NAMESPACE = -1,
@@ -80,8 +79,8 @@
 	 * @param {Function} closeDialog function to call to close dialog
 	 * @param {Object} spec button specification
 	 * @param {Object} spec.id HTML id
-	 * @param {string} spec.icon file name of icon, relative to the GettingStarted
-	 *   extension's images directory
+	 * @param {string} spec.action the action associated with the button,
+	 *     which can be one of 'edit' or 'copyedit'
 	 * @param {boolean} spec.isPrimary true for a primary button
 	 * @param {string} spec.mainText main button text
 	 * @param {string} [spec.subText] lower button text
@@ -117,10 +116,9 @@
 		} );
 
 
-		$icon = $( '<img>' ).attr( {
-			src: imagePath + spec.icon,
-			'class': 'mw-gettingstarted-cta-button-icon'
-		} );
+		$icon = $( '<div>' )
+			.addClass( 'mw-gettingstarted-cta-button-icon' )
+			.addClass( 'mw-gettingstarted-cta-button-icon-' + spec.action );
 
 		$mainText = $( '<span>' )
 			.attr( 'class', 'mw-gettingstarted-cta-button-main' )
@@ -225,27 +223,27 @@
 			// The possible CTA dialogs have similar but different buttons.
 			editCurrentPrimaryButton = {
 				id: 'mw-gettingstarted-editable-main-edit-page',
-				icon: 'pencil.png',
 				isPrimary: true,
 				mainText: mw.message( 'gettingstarted-cta-edit-page' ).text(),
 				subText: mw.message( 'gettingstarted-cta-edit-page-sub' ).text(),
-				click: doEditThisPage
+				click: doEditThisPage,
+				action: 'edit'
 			};
 
 			suggestionSecondaryButton = {
 				id: 'mw-gettingstarted-editable-main-fix-pages',
-				icon: 'lightbulb_dark.png',
 				mainText: mw.message( 'gettingstarted-cta-fix-pages' ).text(),
-				click: doFixPages
+				click: doFixPages,
+				action: 'copyedit'
 			};
 
 			suggestionPrimaryButton = {
 				id: 'mw-gettingstarted-other-fix-pages',
-				icon: 'lightbulb.png',
 				isPrimary: true,
 				mainText: mw.msg( 'gettingstarted-cta-fix-pages' ),
 				subText: mw.message( 'gettingstarted-cta-fix-pages-sub' ).text(),
-				click: doFixPages
+				click: doFixPages,
+				action: 'copyedit'
 			};
 
 			if ( pageKind === 'editablemain' ) {
@@ -344,7 +342,6 @@
 			} );
 
 			closeText = mw.message( 'gettingstarted-cta-close' ).text();
-			// TODO: Use some kind of X visual here while preserving accessibility
 			$close = $( '<a>' )
 				.attr( {
 					'class': 'mw-gettingstarted-cta-close',
@@ -352,7 +349,6 @@
 					title: closeText,
 					'aria-label': closeText
 				} )
-				.text( '×' )
 				.click( closeDialogByClick );
 
 			$heading = $( '<div>' )
