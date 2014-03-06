@@ -443,7 +443,7 @@ $messages['ce'] = array(
 	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description' => "Хьайна билгала дакъа тадан лууш делахь тӀетаӀае сийначу '{{int:editsection}}', хьажораган иза ю хӀора декъан тӀехула.",
 	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description' => "ХӀинца хьа йиш ю агӀо тая. Хьай болх баьлча, тӀетаӀе кнопка '{{int:visualeditor-toolbar-savedialog}}' хийцамашка хьажа а Ӏалашъян а.",
 	'guidedtour-tour-gettingstarted-click-save-title' => 'Хьа болх бала гергга бу!',
-	'gettingstarted-cta-edit-page' => 'Нисйé хӀара агӀо',
+	'gettingstarted-cta-edit-page' => 'Нисъе хӀара агӀо',
 	'gettingstarted-cta-edit-page-sub' => 'Оха гойтур ду муха',
 	'gettingstarted-cta-fix-pages-sub' => 'Оха гойтур ду муха тайо',
 );
