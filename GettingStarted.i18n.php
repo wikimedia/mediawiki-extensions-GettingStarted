@@ -793,7 +793,7 @@ $messages['fa'] = array(
 	'gettingstarted-desc' => 'به کاربران جدید کمک می‌کند که ویرایشگر شوند',
 	'gettingstarted-project-link' => '{{ns:Project}}:شروع',
 	'tag-gettingstarted_edit' => 'از طریق [[{{MediaWiki:gettingstarted-project-link}}|شروع شده]] پیشنهادات ویرایش',
-	'tag-gettingstarted_edit-description' => 'ویرایش ایجاد شده از طریق سیستم [[{{MediaWiki:gettingstarted-project-link}}|GettingStarted]]، که وظایف آسانی را به ویراستاران پیشنهاد می‌کند و به آنها نشان می‌دهد که چه‌طور آنها را کامل کنند.',
+	'tag-gettingstarted_edit-description' => 'ویرایش ایجاد شده از طریق سامانه [[{{MediaWiki:gettingstarted-project-link}}|GettingStarted]]، که وظایف آسانی را به ویراستاران پیشنهاد می‌کند و به آن‌ها نشان می‌دهد که چطور آن‌ها را کامل کنند.',
 	'gettingstarted-task-toolbar-editing-help-text' => 'به‌ من نشان بده چگونه',
 	'gettingstarted-task-toolbar-editing-help-title' => 'نشان‌ دادن یک راهنما در مورد چگونگی ویرایش',
 	'gettingstarted-task-toolbar-try-another-text' => '► صفحه دیگری را امتحان کنید',
@@ -1029,12 +1029,11 @@ $messages['gl'] = array(
 
 /** Gujarati (ગુજરાતી)
  * @author Ashok modhvadia
+ * @author KartikMistry
  */
 $messages['gu'] = array(
-	'gettingstarted-task-addlinks-main-description' => 'કડીઓ ઉમેરો',
-	'gettingstarted-task-toolbar-return-to-list-text' => '◄ અન્ય કાર્ય પસંદ કરો',
 	'gettingstarted-task-toolbar-editing-help-text' => 'જુઓ કેવી રીતે',
-	'gettingstarted-task-toolbar-try-another-text' => 'અન્ય લેખ માટે પ્રયત્ન કરો ►',
+	'gettingstarted-task-toolbar-try-another-text' => 'અન્ય પાનાં માટે પ્રયત્ન કરો ►',
 	'gettingstarted-task-toolbar-close-title' => 'આ સાધનપેટી બંધ કરો',
 	'guidedtour-tour-gettingstartedtasktoolbarintro-title' => 'કેવી રીતે શરૂઆત કરશો',
 );
@@ -2062,29 +2061,19 @@ $messages['ro'] = array(
  */
 $messages['roa-tara'] = array(
 	'gettingstarted' => 'Pe accumenzà',
-	'gettingstarted-welcomesiteuser' => 'Bovègne sus a, $1, $2!',
-	'gettingstarted-welcomesiteuseranon' => 'Pe accumenzà',
-	'gettingstarted-welcome-back-site-user' => 'Bovègne arrete, $2',
-	'gettingstarted-return' => "← No grazie, tuèrne rrete 'a pàgene ca ste liggeve",
 	'gettingstarted-project-link' => '{{ns:Project}}:Pe accumenzà',
-	'gettingstarted-task-copyedit-main-description' => 'Corregge Pronunge & Grammateche',
-	'gettingstarted-task-copyedit-secondary-description' => "'U mode cchiù 'mderra-'nderre pe accumenzà!",
-	'gettingstarted-task-clarify-main-description' => "Migliore 'a Chiarezze",
-	'gettingstarted-task-clarify-secondary-description' => 'Semblifiche o rescrive le frase.',
-	'gettingstarted-task-addlinks-main-description' => 'Aggiunge le Collegaminde',
-	'gettingstarted-task-addlinks-secondary-description' => 'Colleghe le vôsce de {{SITENAME}} inzieme.',
-	'gettingstarted-task-toolbar-return-to-list-text' => "◄ Tuèrne a l'elenghe", # Fuzzy
-	'gettingstarted-task-toolbar-return-to-list-title' => "Tuèrne a l'elenghe de le vôsce", # Fuzzy
-	'gettingstarted-task-toolbar-editing-help-text' => "Fà vedè l'aijute", # Fuzzy
+	'gettingstarted-task-toolbar-editing-help-text' => 'Fà vedè accumme',
 	'gettingstarted-task-toolbar-editing-help-title' => "Fà vedè 'a guide su cumme se fanne le cangiaminde",
 	'gettingstarted-task-toolbar-try-another-text' => "Pruève 'n'otra vôsce ►",
 	'gettingstarted-task-toolbar-close-title' => 'Achiude sta barre de le struminde',
+	'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title' => "Cange 'na sezione",
+	'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title' => 'Tu puè cangià!',
 	'guidedtour-tour-gettingstarted-click-preview-title' => 'Andeprime (opzionale)',
 	'guidedtour-tour-gettingstarted-click-preview-description' => "Cazzanne '{{int:showpreview}}' te permette de verificà ca 'a pàgene iesse cu le cangiaminde tune. No te demendicà de reggistrà.",
 	'guidedtour-tour-gettingstarted-click-save-title' => "E' quase spicciate!",
 	'guidedtour-tour-gettingstarted-click-save-description' => "Cazze '{{int:savearticle}}' e le cangiaminde tune devendane visibbile.",
-	'notification-gettingstarted-start-editing-email-subject' => 'Accuminze a cangià {{SITENAME}}',
-	'notification-gettingstarted-continue-editing-email-subject' => 'Mode facile pe migliorà {{SITENAME}}',
+	'gettingstarted-cta-close' => 'Achiude',
+	'gettingstarted-cta-heading' => 'Aijute {{SITENAME}}',
 );
 
 /** Russian (русский)
@@ -2142,7 +2131,7 @@ $messages['ru'] = array(
  */
 $messages['sco'] = array(
 	'gettingstarted-desc' => 'Heelps new uisers become editers',
-	'tag-gettingstarted_edit' => 'via [[{{MediaWiki:gettingstarted-project-link}}|Getting Started]] edit suggestions',
+	'tag-gettingstarted_edit' => 'bi wa o [[{{MediaWiki:gettingstarted-project-link}}|Gettin Stairted]] eidit suggestions',
 	'tag-gettingstarted_edit-description' => 'Eidit makit bi waa o the [[{{MediaWiki:gettingstarted-project-link}}|GettinStairted]] system, that suggests easy tasks til editers aen shaws thaim hou tae compleat them.',
 	'gettingstarted-task-toolbar-no-suggested-page' => 'Sorry. We coudna find mair pages tae be impruived the nou. Try again in a moment or rake fer yer ain topics o interest.',
 );
