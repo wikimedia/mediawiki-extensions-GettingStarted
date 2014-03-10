@@ -47,8 +47,11 @@
 
 /* right region... displays X, and "Try another article" link */
 .mw-gettingstarted-toolbar-right {
-	width: 19%;
 	float: right;
+	margin-top: -4px;
+	margin-left: 15px;
+	position: relative !ie;
+	left: -24px !ie;
 }
 
 /* help button that displays guiders */
@@ -63,16 +66,13 @@
 a.mw-gettingstarted-toolbar-link {
 	color: white;
 	font-weight: bold;
-	margin-left: 10px;
 }
 
 /* X button in top toolbar */
-a.mw-gettingstarted-toolbar-dismiss {
-	float: right;
+#mw-gettingstarted-toolbar a.mw-gettingstarted-toolbar-dismiss {
 	font-size: 1.5em;
 	color: #aaa;
-	margin-top: -5px;
-	margin-right: 5px;
+	margin-left: 15px;
 
 	&:hover {
 		color: white;
