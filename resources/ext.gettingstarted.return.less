@@ -2,7 +2,7 @@
 
 /* Specific elements */
 #mw-gettingstarted-cta-editable-main-page {
-	width: 510px;
+	width: 510px !ie;
 }
 
 #mw-gettingstarted-cta-other-page {
@@ -64,9 +64,11 @@
 .mw-gettingstarted-cta-container {
 	display: table-cell;
 	vertical-align: middle;
+	text-align: center;
 	display: block !ie;
 	position: absolute !ie;
 	top: 50% !ie;
+	left: 50% !ie;
 }
 
 /*
@@ -82,13 +84,17 @@
 	overflow: auto;
 	/* One z-index above overlay above */
 	z-index: 100000007;
+	display: inline-block;
+	text-align: left;
+	display: block !ie;
 	position: relative !ie;
 	top: -50% !ie;
+	left: -50% !ie;
 
 	.mw-ui-button {
-		display: table;
-		float: left;
-		text-align: left;
+		display: inline-block;
+		vertical-align: top;
+		text-align: inherit;
 		margin-right: 20px;
 		margin-bottom: 0px;
 		margin-top: 15px;
@@ -159,8 +165,7 @@
 }
 
 .mw-gettingstarted-cta-leave-link {
-	float: left;
-	clear: both;
 	margin-top: 20px;
 	font-size: 0.8em;
+	display: block;
 }
