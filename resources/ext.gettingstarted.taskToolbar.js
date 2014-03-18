@@ -38,7 +38,9 @@
 	function displayToolbar( toolbarInfo, suggestedTitle ) {
 		var $toolbar, $center, $centerMessage, $right, $tryAnother, $close,
 		$relativeElements, $marginElements, tryAnotherUrl, $showGuide,
-		fullTask, afterRemovalHookInstalled;
+		fullTask, afterRemovalHookInstalled, $centerMessageClone,
+		centerMessageWidth, centerMinWidth, isToolbarExpanded,
+		RESIZE_THROTTLE_DELAY = 100; // (ms)
 
 		fullTask = 'gettingstarted-' + toolbarInfo.taskName;
 
@@ -130,25 +132,41 @@
 		$( document.body ).prepend( $toolbar );
 
 		$relativeElements = $( '#mw-page-base, #mw-head-base, #content, #footer' );
+		$relativeElements.addClass( 'mw-gettingstarted-relative-vshift' );
 		$marginElements = $( '#mw-head, #mw-panel' );
+		$marginElements.addClass( 'mw-gettingstarted-margin-vshift' );
 
+		function pushPageDown() {
+			var offset = $toolbar.outerHeight() + 1;
+
+			$relativeElements.css( {
+				position: 'relative',
+				top: offset + 'px'
+			} );
+			$marginElements.css( 'margin-top', offset + 'px' );
+			mw.libs.guiders.reposition();
+		}
+
+		function pullPageUp() {
+			$relativeElements.css( {
+				position: '',
+				top: ''
+			} );
+			$marginElements.css( 'margin-top', '' );
+			mw.libs.guiders.reposition();
+		}
 
 		// This intentionally logs again if the toolbar redisplays after VE is hidden,
 		// either due to a save or simply returning to Read.
 		function showToolbarInternal() {
-			$relativeElements.addClass( 'mw-gettingstarted-relative-vshift' );
-			$marginElements.addClass( 'mw-gettingstarted-margin-vshift' );
-
 			$toolbar.slideDown( 200, function () {
-				mw.libs.guiders.reposition();
+				pushPageDown();
 			} );
 		}
 
 		function hideToolbar() {
 			$toolbar.slideUp( 200, function () {
-				$relativeElements.removeClass( 'mw-gettingstarted-relative-vshift' );
-				$marginElements.removeClass( 'mw-gettingstarted-margin-vshift' );
-				mw.libs.guiders.reposition();
+				pullPageUp();
 			} );
 		}
 
@@ -189,6 +207,40 @@
 
 		mw.hook( 've.activationComplete' ).add( hideToolbar );
 		mw.hook( 've.deactivationComplete' ).add( showToolbar );
+
+		// Calculate the width of the task description.
+		$centerMessageClone = $centerMessage.clone();
+		$centerMessageClone.css( 'visibility', 'hidden' );
+		$( document.body ).append( $centerMessageClone );
+		centerMessageWidth = $centerMessageClone.width();
+		$centerMessageClone.remove();
+		centerMinWidth = centerMessageWidth + $showGuide.outerWidth( true );
+
+		isToolbarExpanded = $center.width() < centerMinWidth;
+		if ( isToolbarExpanded ) {
+			$toolbar.addClass( 'mw-gettingstarted-toolbar-expanded' );
+		}
+
+		$( window ).on( 'resize', $.throttle( RESIZE_THROTTLE_DELAY, function () {
+			if ( $center.width() >= centerMinWidth  ) {
+				// The contents of the toolbar can be displayed
+				// inline.
+
+				if ( isToolbarExpanded ) {
+					$toolbar.removeClass( 'mw-gettingstarted-toolbar-expanded' );
+					pushPageDown();
+					isToolbarExpanded = false;
+				}
+
+				return;
+			}
+
+			if ( !isToolbarExpanded ) {
+				$toolbar.addClass( 'mw-gettingstarted-toolbar-expanded' );
+				pushPageDown();
+				isToolbarExpanded = true;
+			}
+		} ) );
 	}
 
 	$( document ).ready( function () {

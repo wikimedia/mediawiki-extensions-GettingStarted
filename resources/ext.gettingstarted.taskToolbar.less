@@ -6,17 +6,14 @@
 	box-shadow: @arguments;
 }
 
-/* These are hack/helper classes to shift the content down
-   below the onboarding toolbar.
-   TODO (mattflaschen, 2013-04-18): This can probably be done in a better way. */
+#mw-gettingstarted-toolbar.mw-gettingstarted-toolbar-expanded {
+	.mw-gettingstarted-toolbar-center-message {
+		display: block;
+	}
 
-.mw-gettingstarted-relative-vshift {
-	position: relative;
-	top: 40px;
-}
-
-.mw-gettingstarted-margin-vshift {
-	margin-top: 40px;
+	.mw-gettingstarted-toolbar-show-guiders {
+		margin-top: 10px;
+	}
 }
 
 /* css for entire top toolbar */
@@ -30,14 +27,12 @@
 	z-index: 100000006; /* I'm looking at you, Guiders */
 	top: 0;
 	width: 100%;
-	height: 39px;
-	max-height: 39px;
 
 	.vertical-gradient( #7d7e7d, #333333 );
 
 	.box-shadow( inset 0px 1px #999, 0px 3px 3px #bbb );
 
-	padding-top: 12px;
+	padding: 12px;
 	font-size: 0.8em;
 	color: white;
 	text-shadow: 0 -1px #444;
@@ -60,7 +55,7 @@
 .mw-gettingstarted-toolbar-show-guiders {
 	opacity: 0; /* NOT display:none because it should appear without shifting around other elements */
 	margin: 0 1em;
-	margin-top: -4px;
+	margin-top: -1px;
 	padding: 3px 1em 2px 1em;
 }
 
