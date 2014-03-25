@@ -94,7 +94,7 @@
 
 		klass = 'mw-ui-button';
 		if ( spec.isPrimary ) {
-			klass += ' mw-ui-primary';
+			klass += ' mw-ui-progressive';
 		} else {
 			// Due to lack of cross-browser :not support, and the fact that we are
 			// currently overriding the regular mw.ui secondary button styling.
@@ -320,7 +320,7 @@
 			function showDialog() {
 				var $body = $( document.body );
 				$body.append( $overlay );
-				$dialog.find( '.mw-ui-button.mw-ui-primary' ).focus();
+				$dialog.find( '.mw-ui-button.mw-ui-progressive' ).focus();
 			}
 
 			function removeDialog() {
