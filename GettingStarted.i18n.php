@@ -2132,7 +2132,7 @@ $messages['ru'] = array(
 $messages['sco'] = array(
 	'gettingstarted-desc' => 'Heelps new uisers become editers',
 	'tag-gettingstarted_edit' => 'bi wa o [[{{MediaWiki:gettingstarted-project-link}}|Gettin Stairted]] eidit suggestions',
-	'tag-gettingstarted_edit-description' => 'Eidit makit bi waa o the [[{{MediaWiki:gettingstarted-project-link}}|GettinStairted]] system, that suggests easy tasks til editers aen shaws thaim hou tae compleat them.',
+	'tag-gettingstarted_edit-description' => 'Eedit dun bi waa o the [[{{MediaWiki:gettingstarted-project-link}}|GettinStairted]] system, that suggests easie tasks til eediters aen shaws thaim hou tae compleat thaim.',
 	'gettingstarted-task-toolbar-no-suggested-page' => 'Sorry. We coudna find mair pages tae be impruived the nou. Try again in a moment or rake fer yer ain topics o interest.',
 );
 
