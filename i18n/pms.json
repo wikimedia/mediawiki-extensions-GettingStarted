@@ -1,0 +1,16 @@
+{
+    "@metadata": {
+        "authors": [
+            "Borichèt",
+            "Dragonòt"
+        ]
+    },
+    "gettingstarted": "Për ancaminé",
+    "gettingstarted-desc": "A gionta na [[Special:GettingStarted|pàgina ëd bin-ëvnù]] për j'utent neuv (smonùa apress la creassion dël cont)",
+    "gettingstarted-welcomesiteuser": "Bin-ëvnù su $1, $2!",
+    "gettingstarted-welcomesiteuseranon": "Bin ëvnù a $1!",
+    "gettingstarted-return": "Nò mersì, pòrtme andré",
+    "gettingstarted-project-link": "{{ns:Project}}:GettingStarted",
+    "tag-gettingstarted_edit": "n'editor neuv [[{{MediaWiki:gettingstarted-project-link}}|a l'ha ancaminà]]",
+    "tag-gettingstarted_edit-description": "Modìfica ëd na pàgina che l'utent a sern da la lista dij travaj an [[Special:GettingStarted|Për ancaminé]]"
+}

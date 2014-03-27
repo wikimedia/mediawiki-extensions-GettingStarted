@@ -1,0 +1,16 @@
+{
+    "@metadata": {
+        "authors": [
+            "Eitvys200",
+            "Mantak111"
+        ]
+    },
+    "gettingstarted-welcomesiteuser": "Sveiki atvykę į $1, $2!",
+    "gettingstarted-welcomesiteuseranon": "Sveiki atvykę į $1!",
+    "gettingstarted-task-addlinks-main-description": "Pridėti nuorodas",
+    "gettingstarted-task-toolbar-return-to-list-text": "◄ Grįžti į sąrašą",
+    "gettingstarted-task-toolbar-return-to-list-title": "Grįžti į straipsnių sąrašą",
+    "gettingstarted-task-toolbar-try-another-text": "Pabandykite kitą straipsnį ►",
+    "gettingstarted-task-toolbar-close-title": "Uždaryti šią įrankių juostą",
+    "guidedtour-tour-gettingstartedtasktoolbarintro-title": "Kaip pradėti"
+}

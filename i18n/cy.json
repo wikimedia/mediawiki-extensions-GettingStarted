@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "Lloffiwr"
+        ]
+    },
+    "gettingstarted": "Camau cyntaf",
+    "gettingstarted-welcomesiteuser": "Croeso i $1, $2!",
+    "gettingstarted-welcomesiteuseranon": "Camau cyntaf",
+    "gettingstarted-welcome-back-site-user": "Croeso nôl, $2",
+    "gettingstarted-project-link": "{{ns:Project}}:GettingStarted"
+}

@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "Joetaras"
+        ]
+    },
+    "gettingstarted": "Pe accumenzà",
+    "gettingstarted-project-link": "{{ns:Project}}:Pe accumenzà",
+    "gettingstarted-task-toolbar-editing-help-text": "Fà vedè accumme",
+    "gettingstarted-task-toolbar-editing-help-title": "Fà vedè 'a guide su cumme se fanne le cangiaminde",
+    "gettingstarted-task-toolbar-try-another-text": "Pruève 'n'otra vôsce ►",
+    "gettingstarted-task-toolbar-close-title": "Achiude sta barre de le struminde",
+    "guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Cange 'na sezione",
+    "guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Tu puè cangià!",
+    "guidedtour-tour-gettingstarted-click-preview-title": "Andeprime (opzionale)",
+    "guidedtour-tour-gettingstarted-click-preview-description": "Cazzanne '{{int:showpreview}}' te permette de verificà ca 'a pàgene iesse cu le cangiaminde tune. No te demendicà de reggistrà.",
+    "guidedtour-tour-gettingstarted-click-save-title": "E' quase spicciate!",
+    "guidedtour-tour-gettingstarted-click-save-description": "Cazze '{{int:savearticle}}' e le cangiaminde tune devendane visibbile.",
+    "gettingstarted-cta-close": "Achiude",
+    "gettingstarted-cta-heading": "Aijute {{SITENAME}}"
+}

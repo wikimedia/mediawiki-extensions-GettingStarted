@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Wizardist"
+        ]
+    },
+    "guidedtour-tour-gettingstarted-click-preview-title": "Папярэдні прагляд (па жаданні)",
+    "guidedtour-tour-gettingstarted-click-preview-description": "Націсніце «{{int:showpreview}}», каб пабачыць, як будзе выглядаць старонка з унесенымі вамі зменамі. Па праглядзе не забудзьце захаваць!",
+    "guidedtour-tour-gettingstarted-click-save-title": "Ужо амаль усё!",
+    "guidedtour-tour-gettingstarted-click-save-description": "Націсніце «{{int:savearticle}}» і вашыя змены будуць бачныя ўсім."
+}

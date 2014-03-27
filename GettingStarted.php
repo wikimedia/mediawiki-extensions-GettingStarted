@@ -15,7 +15,7 @@ $wgExtensionCredits[ 'api' ][] = array(
 	),
 	'url' => 'https://www.mediawiki.org/wiki/Extension:GettingStarted',
 	'descriptionmsg' => 'gettingstarted-desc',
-	'version' => '1',
+	'version' => '1.1.0',
 );
 
 /**
@@ -83,6 +83,7 @@ $wgAutoloadClasses += array(
 	'GettingStarted\ApiGettingStartedGetPages' => __DIR__ . '/api/ApiGettingStartedGetPages.php',
 );
 
+$wgMessagesDirs['GettingStarted'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles[ 'GettingStarted' ] = __DIR__ . '/GettingStarted.i18n.php';
 
 // APIs

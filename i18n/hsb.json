@@ -1,0 +1,25 @@
+{
+    "@metadata": {
+        "authors": [
+            "Michawiki"
+        ]
+    },
+    "gettingstarted": "Prěnje kroki",
+    "gettingstarted-desc": "Pomha nowym wužiwarjam, so z awtorami stać",
+    "gettingstarted-project-link": "{{ns:Project}}:Prěnje kroki",
+    "tag-gettingstarted_edit": "wobdźěłowanske namjety přez [[{{MediaWiki:gettingstarted-project-link}}|Prěnje kroki]]",
+    "tag-gettingstarted_edit-description": "Změna přewjedźena přez system [[{{MediaWiki:gettingstarted-project-link}}|Prěnje kroki]], kotryž wužiwarjam lochke nadawki namjetuje a jim pokazuje, kak móža je wuwjesć.",
+    "gettingstarted-task-toolbar-try-another-text": "Druhu stronu spytać ►",
+    "gettingstarted-task-toolbar-close-title": "Tutu symbolowu lajstu začinić",
+    "guidedtour-tour-gettingstartedtasktoolbarintro-title": "Prěnje kroki",
+    "guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Klikń na {{int:vector-view-edit}}",
+    "guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Wotrězk wobdźěłać",
+    "guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Móžeš wobdźěłać!",
+    "guidedtour-tour-gettingstarted-click-preview-title": "Přehlad (opcionalny)",
+    "guidedtour-tour-gettingstarted-click-preview-description": "Kliknjenje an '{{int:showpreview}}' ći zmóžnja kontrolować, kak strona z twojimi změnami wupada. Njezabudź na składowanje.",
+    "guidedtour-tour-gettingstarted-click-save-title": "Sy nimale hotowy!",
+    "guidedtour-tour-gettingstarted-click-save-description": "Klikń na '{{int:savearticle}}' a twoje změny budu widźomne.",
+    "gettingstarted-cta-close": "Začinić",
+    "gettingstarted-cta-heading": "Pomoc {{GRAMMAR:genitiw|{{SITENAME}}}}",
+    "gettingstarted-cta-edit-page": "Tutu stronu wobdźěłać"
+}

@@ -1,0 +1,37 @@
+{
+    "@metadata": {
+        "authors": [
+            "Anakmalaysia"
+        ]
+    },
+    "gettingstarted": "Permulaan",
+    "gettingstarted-desc": "Membantu pengguna baru menjadi penyunting",
+    "gettingstarted-project-link": "{{ns:Project}}:Permulaan",
+    "tag-gettingstarted_edit": "melalui cadangan-cadangan suntingan [[{{MediaWiki:gettingstarted-project-link}}|Permulaan]]",
+    "tag-gettingstarted_edit-description": "Suntingan yang dilakukan melalui sistem [[{{MediaWiki:gettingstarted-project-link}}|Permulaan]] yang mencadangkan tugas yang serba senang kepada penyunting serta menunjukkan cara untuk melengkapkan tugas tersebut.",
+    "gettingstarted-task-toolbar-editing-help-text": "Tunjukkan caranya",
+    "gettingstarted-task-toolbar-editing-help-title": "Paparkan panduan menyunting",
+    "gettingstarted-task-toolbar-try-another-text": "Cuba rencana lain ►",
+    "gettingstarted-task-toolbar-close-title": "Tutup palang alat ini",
+    "gettingstarted-task-toolbar-no-suggested-page": "Maaf, kami tidak dapat menemui banyak lagi halaman yang hendak ditambah baik buat masa ini. Sila cuba lagi sebentar nanti atau carilah topik-topik yang anda minati.",
+    "gettingstarted-task-copyedit-toolbar-description": "Rencana ini mungkin mengandungi kesalahan ejaan dan tatabahasa yang boleh anda betulkan.",
+    "gettingstarted-task-copyedit-toolbar-try-another-title": "Pergi ke satu rencana pilihan rawak yang anda boleh perbaiki dengan menyunting",
+    "gettingstarted-task-clarify-toolbar-description": "Rencana ini mungkin kabur atau mengelirukan. Fikirkan cara untuk memperjelasnya.",
+    "gettingstarted-task-clarify-toolbar-try-another-title": "Pergi ke satu rencana pilihan rawak yang boleh anda perjelas",
+    "gettingstarted-task-addlinks-toolbar-description": "Rencana ini mumgkin memerlukan lebih banyak pautan. Cari istilah-istilah yang mempunyai rencana di {{SITENAME}}.",
+    "gettingstarted-task-addlinks-toolbar-try-another-title": "Pergi ke satu rencana pilihan rawak yang boleh anda menambah pautannya",
+    "guidedtour-tour-gettingstartedtasktoolbarintro-title": "Bagaimana untuk bermula",
+    "guidedtour-tour-gettingstartedtasktoolbarintro-description": "Mulakan dengan menyemak imbas rencana terbabit untuk mencari di mana perlu diperbaiki. Jika anda berasa susah hati, jangan risau. Anda tidak semestinya perlu menjadi pakar dalam topik ini! Jika anda memerlukan bantuan atau ingin mencuba rencana lain, gunakan pautan pada palang di atas.",
+    "guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Cadangan kerja",
+    "guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Sepanduk-sepanduk ini mengenal pasti masalah pada rencana ini. Anda tidak semestinya perlu menyelesaikan kesemuanya, betulkan sahaja yang mana anda rasa senang.",
+    "guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Klik {{int:vector-view-edit}}",
+    "guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Anda boleh menyunting keseluruhan rencana dengan mengklik di sini.",
+    "guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Sunting satu bahagian",
+    "guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Jika anda ingin menyunting suatu bahagian tertentu, anda boleh klik pada pautan biru '{{int:editsection}}' di atas setiap bahagian.",
+    "guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Anda boleh menyunting!",
+    "guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Anda kini boleh menyunting halaman ini. Selepas siap, klik '{{int:visualeditor-toolbar-savedialog}}' untuk menyemak dan menyimpan suntingan anda.",
+    "guidedtour-tour-gettingstarted-click-preview-title": "Pralihat (tidak wajib)",
+    "guidedtour-tour-gettingstarted-click-preview-description": "Mengklik '{{int:showpreview}}' membolehkan anda untuk menyemak rupa halaman dengan suntingan anda. Jangan lupa untuk simpan.",
+    "guidedtour-tour-gettingstarted-click-save-title": "Anda hampir siap!",
+    "guidedtour-tour-gettingstarted-click-save-description": "Klik '{{int:savearticle}}' untuk memperlihatkan suntingan anda."
+}

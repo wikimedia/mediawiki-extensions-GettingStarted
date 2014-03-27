@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Asaifm",
+            "Ciphers"
+        ]
+    },
+    "gettingstarted": "كيفية البدء",
+    "guidedtour-tour-gettingstarted-click-preview-title": "عرض (اختياري)",
+    "guidedtour-tour-gettingstarted-click-preview-description": "إن الضغط على '{{int:showpreview}}' يساعدك على فحص ما ستظهر عليه الصفحة بعد قيامك بالتغييرات. لكن لا تنس حفظ تلك التغييرات.",
+    "guidedtour-tour-gettingstarted-click-save-title": "لقد انتهيت تقريبا!",
+    "guidedtour-tour-gettingstarted-click-save-description": "اضغط على '{{int:savearticle}}' وسيتم حفظ تغييراتك."
+}
