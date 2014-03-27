@@ -7,7 +7,7 @@
     "gettingstarted": "Bắt đầu",
     "gettingstarted-desc": "Giúp người mới đến trở sửa đổi bài viết",
     "gettingstarted-project-link": "{{ns:Project}}:Bắt đầu",
-    "tag-gettingstarted_edit": "Người dùng mới đang [[{{MediaWiki:gettingstarted-project-link}}|bắt đầu]]",
+    "tag-gettingstarted_edit": "do tính năng [[{{MediaWiki:gettingstarted-project-link}}|Bắt đầu]] gợi ý sửa đổi",
     "tag-gettingstarted_edit-description": "Sửa đổi được thực hiện qua tính năng [[{{MediaWiki:gettingstarted-project-link}}|Bắt đầu]]. Tính năng này gợi ý và chỉ dẫn những công việc dễ dàng cho người dùng.",
     "gettingstarted-task-toolbar-editing-help-text": "Chỉ tôi làm thế nào",
     "gettingstarted-task-toolbar-editing-help-title": "Xem hướng dẫn sửa đổi",
