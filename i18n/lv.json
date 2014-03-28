@@ -6,18 +6,6 @@
         ]
     },
     "gettingstarted-desc": "Pievieno [[Special:GettingStarted|sagaidīšanas lapu]] jauniem lietotājiem (tiek rādīta pēc lietotāja konta izveides)",
-    "gettingstarted-welcomesiteuser": "Laipni {{GENDER:$2|lūgts|lūgta}} $1, $2",
-    "gettingstarted-welcomesiteuseranon": "Darba sākšana",
-    "gettingstarted-welcome-back-site-user": "Laipni {{GENDER:$2|lūgts|lūgta}} atpakaļ, $2",
-    "gettingstarted-return": "← Nē, paldies, atgriezties uz lapu, ko es lasīju",
-    "gettingstarted-task-copyedit-main-description": "Labot pareizrakstību un gramatiku",
-    "gettingstarted-task-copyedit-secondary-description": "Vieglākais veids, lai sāktu!",
-    "gettingstarted-task-clarify-main-description": "Uzlabot skaidrību",
-    "gettingstarted-task-clarify-secondary-description": "Vienkāršojiet vai pārformulējiet teikumus.",
-    "gettingstarted-task-addlinks-main-description": "Pievienot saites",
-    "gettingstarted-task-addlinks-secondary-description": "Savienojiet {{SITENAME}} lapas.",
-    "gettingstarted-task-toolbar-return-to-list-text": "◄ Izvēlieties citu uzdevumu",
-    "gettingstarted-task-toolbar-return-to-list-title": "Atgriezties uzdevumu izvēles lapā",
     "gettingstarted-task-toolbar-editing-help-text": "Parādiet man, kā",
     "gettingstarted-task-toolbar-editing-help-title": "Rādīt labošanas pamācību",
     "gettingstarted-task-toolbar-try-another-text": "Izmēģināt citu lapu ►",
@@ -33,10 +21,5 @@
     "guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Jūs varat labot visu rakstu, klikšķinot šeit.",
     "guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Labot sadaļu",
     "guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Jūs varat labot!",
-    "guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Tagad jūs varat labot lapu. Kad darbs pabeigts, klikšķiniet uz '{{int:visualeditor-toolbar-savedialog}}', lai pārskatītu un saglabātu savas izmaiņas.",
-    "notification-gettingstarted-link-text-get-started": "Sāciet",
-    "notification-gettingstarted-start-editing-email-subject": "Iepazīsties ar {{SITENAME}} rediģēšanas",
-    "notification-gettingstarted-start-editing-text-email-batch-body": "Iepazīsties ar {{SITENAME}} rediģēšanu apmeklējot $2",
-    "notification-gettingstarted-continue-editing-email-subject": "Vienkārši veidi, kā uzlabot {{SITENAME}}",
-    "notification-gettingstarted-continue-editing-text-email-batch-body": "Meklējiet, ko vēl padarīt? Apmeklējiet $2, lai atrastu sarakstu ar vienkāršiem veidiem, kā palīdzēt."
+    "guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Tagad jūs varat labot lapu. Kad darbs pabeigts, klikšķiniet uz '{{int:visualeditor-toolbar-savedialog}}', lai pārskatītu un saglabātu savas izmaiņas."
 }
