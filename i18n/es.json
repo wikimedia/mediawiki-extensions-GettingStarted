@@ -9,7 +9,8 @@
             "McDutchie",
             "Pginer",
             "QuimGil",
-            "Sethladan"
+            "Sethladan",
+            "Vivaelcelta"
         ]
     },
     "gettingstarted": "Primeros pasos",
@@ -35,7 +36,7 @@
     "guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Pulsa en {{int:vector-view-edit}}",
     "guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Puedes modificar la página haciendo click aquí.",
     "guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Editar una sección",
-    "guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Para modificar una sección, haz click en el enlace azul  \"{{int:editsection}}\" de la zona superior de dicha sección.",
+    "guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Si quieres modificar una sección específica, haz clic en el enlace azul  \"{{int:editsection}}\" que hay al comienzo de cada sección.",
     "guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "¡Puedes editar!",
     "guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Ahora puedes editar la página. Cuando estés listo, haz clic en \"{{int:visualeditor-toolbar-savedialog}}\" para revisar y guardar tus cambios.",
     "guidedtour-tour-gettingstarted-click-preview-title": "Previsualización (opcional)",
