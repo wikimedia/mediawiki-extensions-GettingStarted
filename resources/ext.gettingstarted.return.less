@@ -9,28 +9,6 @@
 	width: 365px;
 }
 
-/*
-   TODO (mattflaschen, 2013-10-03): Our approach to widths and wrapping
-   needs further thought when we try to generalize this CSS.
-*/
-
-#mw-gettingstarted-editable-main-edit-page {
-	/*
-	   Can use min-width here to avoid bad wrapping (e.g. text
-	   is on a different line from icon), since it is not intended
-	   to wrap.
-	*/
-	min-width: 210px;
-}
-
-#mw-gettingstarted-editable-main-fix-pages {
-	/*
-	   Have to use width here since min-width will not wrap in
-	   this context
-	*/
-	width: 210px;
-}
-
 /* Remove right margin on right-most buttons */
 #mw-gettingstarted-editable-main-fix-pages, #mw-gettingstarted-other-fix-pages {
 	margin-right: 0;
@@ -46,6 +24,14 @@
 	display: table;
 	/* One z-index above guiders */
 	z-index: 100000006;
+
+	/*
+	   TODO (mattflaschen, 2013-10-03): Our approach to widths and wrapping
+	   needs further thought when we try to generalize this CSS.
+	*/
+	.mw-ui-button {
+		min-width: 210px;
+	}
 }
 
 .mw-gettingstarted-cta-background {

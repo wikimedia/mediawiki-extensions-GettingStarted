@@ -234,6 +234,7 @@
 			suggestionSecondaryButton = {
 				id: 'mw-gettingstarted-editable-main-fix-pages',
 				mainText: mw.message( 'gettingstarted-cta-fix-pages' ).text(),
+				subText: mw.message( 'gettingstarted-cta-fix-pages-sub' ).text(),
 				click: doFixPages,
 				action: 'copyedit'
 			};
@@ -312,7 +313,7 @@
 		 * @param {Array} spec.buttons array of button specifications
 		 */
 		showCTA: function ( spec ) {
-			var $dialog, $close, closeText, $heading, $dialogText, $leaveLink,
+			var $dialog, $close, closeText, $heading, $leaveLink,
 				i, $overlay, $dialogContainer, $dialogBackground;
 
 			// Background overlay like GuidedTour
@@ -357,11 +358,7 @@
 				.attr( 'class', 'mw-gettingstarted-cta-heading' )
 				.text( mw.message( 'gettingstarted-cta-heading' ).text() );
 
-			$dialogText = $( '<div>' )
-				.attr( 'class',	'mw-gettingstarted-cta-body' )
-				.text( mw.message( 'gettingstarted-cta-text' ).text() );
-
-			$dialog.append( $close, $heading, $dialogText );
+			$dialog.append( $close, $heading );
 
 			// TODO (mattflaschen, 2013-09-27): Look at other modal techniques
 			// when we consider generalizing some of this code to mediawiki.ui.
