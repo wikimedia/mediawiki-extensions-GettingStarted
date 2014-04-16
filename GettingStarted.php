@@ -350,3 +350,11 @@ $wgHooks[ 'UserLogoutComplete'][] = 'GettingStarted\Hooks::onUserLogoutComplete'
 $wgHooks[ 'CentralAuthPostLoginRedirect' ][] = 'GettingStarted\Hooks::onCentralAuthPostLoginRedirect';
 $wgHooks[ 'ResourceLoaderTestModules' ][] = 'GettingStarted\Hooks::onResourceLoaderTestModules';
 $wgHooks[ 'PageContentSaveComplete' ][] = 'GettingStarted\Hooks::onPageContentSaveComplete';
+
+list( $site, $lang ) = $wgConf->siteFromDB( $wgDBname );
+
+// Known Issue: Wikimedia Commons is considered Wikipedia, which may need to be fixed
+// if GettingStarted is ever deployed there.
+if ( $site === 'wikipedia' ) {
+	$wgHooks[ 'MessageCache::get' ][] = 'GettingStarted\Hooks::onMessageCacheGet';
+}

@@ -461,4 +461,40 @@ class Hooks {
 		\EventLogging::logEvent( 'TrackedPageContentSaveComplete', 7872558, $event );
 		return true;
 	}
+
+	/**
+	 * If the site is a Wikipedia, this is called to specify that Wikipedia-specific
+	 * versions will be used for certain keys.
+	 *
+	 * It modifies the passed-in i18n key if it is one of those listed.
+	 *
+	 * @param string &$lckey Lower-case i18n key, before substitution
+	 *
+	 * @return bool Always true
+	 */
+	public static function onMessageCacheGet( &$lckey ) {
+
+		if ( in_array( $lckey, array(
+			"gettingstarted-task-toolbar-try-another-text",
+			"gettingstarted-task-toolbar-no-suggested-page",
+			"gettingstarted-task-copyedit-toolbar-description",
+			"gettingstarted-task-copyedit-toolbar-try-another-title",
+			"gettingstarted-task-clarify-toolbar-description",
+			"gettingstarted-task-clarify-toolbar-try-another-title",
+			"gettingstarted-task-addlinks-toolbar-description",
+			"gettingstarted-task-addlinks-toolbar-try-another-title",
+			"guidedtour-tour-gettingstartedtasktoolbarintro-description",
+			"guidedtour-tour-gettingstartedtasktoolbar-ambox-description",
+			"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title",
+			"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description",
+			"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description",
+			"guidedtour-tour-gettingstarted-click-preview-description",
+			"gettingstarted-cta-edit-page",
+			"gettingstarted-cta-fix-pages",
+		) ) ) {
+			$lckey = "{$lckey}-wikipedia";
+		}
+
+		return true;
+	}
 }
