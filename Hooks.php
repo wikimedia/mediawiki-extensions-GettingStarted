@@ -26,8 +26,10 @@ class Hooks {
 	 */
 	protected static $openTask = null;
 
-	// There is used unprefixed and with a custom path for legacy reasons.
-	const COOKIE_NAME = 'openTask';
+	// This is used unprefixed and with a custom path for legacy reasons.
+	const OPENTASK_COOKIE_NAME = 'openTask';
+
+	const USER_TOKEN_COOKIE_NAME = 'gettingStartedUserToken';
 
 	protected static $COOKIE_OPTIONS = array(
 		'prefix' => '',
@@ -72,7 +74,7 @@ class Hooks {
 			return;
 		}
 
-		$cookie = $request->getCookie( self::COOKIE_NAME, '' );
+		$cookie = $request->getCookie( self::OPENTASK_COOKIE_NAME, '' );
 		$tasks = FormatJson::decode( $cookie, true );
 		if ( !is_array( $tasks ) ) {
 			$tasks = array();
@@ -255,6 +257,9 @@ class Hooks {
 	public static function onBeforePageDisplay( OutputPage $out, \Skin $skin ) {
 		$user = $out->getUser();
 
+		// Assign token; will support anonymous signup invite experiment
+		$out->addModules( 'ext.gettingstarted.assignToken' );
+
 		if ( self::shouldLoadToolbar( $out, $user ) ) {
 			// Uses addModuleStyles since no-JS code must load it this way
 			// and this avoids double-loading.
@@ -397,7 +402,7 @@ class Hooks {
 		global $wgRequest;
 
 		// Set expiration time in the past to expire.  Uses -1 day like User.php.
-		$wgRequest->response()->setcookie( self::COOKIE_NAME, '', time() - 86400, self::$COOKIE_OPTIONS );
+		$wgRequest->response()->setcookie( self::OPENTASK_COOKIE_NAME, '', time() - 86400, self::$COOKIE_OPTIONS );
 
 		return true;
 	}
@@ -443,5 +448,29 @@ class Hooks {
 			'localBasePath' => __DIR__,
 			'remoteExtPath' => 'GettingStarted',
 		);
+	}
+
+	/**
+	 * Log server-side event on successful page edit.
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/PageContentSaveComplete
+	 * @see https://meta.wikimedia.org/wiki/Schema:PageContentSaveComplete
+	 */
+	public static function onPageContentSaveComplete( $article, $user, $content, $summary,
+		$isMinor, $isWatch, $section, $flags, $revision, $status, $baseRevId ) {
+
+		global $wgRequest;
+
+		$revId = $revision->getId();
+		$event = array(
+			'revId' => $revId,
+		);
+
+		$token = $wgRequest->getCookie( self::USER_TOKEN_COOKIE_NAME );
+		if ( $token !== null ) {
+			$event['token'] = $token;
+		}
+
+		\EventLogging::logEvent( 'TrackedPageContentSaveComplete', 7872558, $event );
+		return true;
 	}
 }
