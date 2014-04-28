@@ -58,8 +58,8 @@ class PageFilter {
 			self::$excludedCategories = array();
 			foreach( $wgGettingStartedExcludedCategories as $rawCategory ) {
 				// Canonicalize the category name.
-				$title = Title::makeTitleSafe( NS_CATEGORY, $rawCategory );
-				if ( !$title ) {
+				$title = Title::newFromText( $rawCategory );
+				if ( !$title || !$title->inNamespace( NS_CATEGORY ) ) {
 					continue;
 				}
 				$category = $title->getDBkey();

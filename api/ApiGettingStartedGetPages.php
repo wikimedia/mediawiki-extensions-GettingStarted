@@ -23,11 +23,16 @@ class ApiGettingStartedGetPages extends ApiBase {
 		);
 
 		if ( isset( $wgGettingStartedCategoriesForTaskTypes[ $taskName ] ) ) {
-			$category = Category::newFromName( $wgGettingStartedCategoriesForTaskTypes[ $taskName ] );
-			$pageFilter = new PageFilter( $user, $excludedTitle );
-			$titles = self::getRandomArticles( $count, $category, $pageFilter );
-			foreach ( $titles as $title ) {
-				$data['titles'][] = $title->getPrefixedText();
+			$sanitizedTitle = Title::newFromText( $wgGettingStartedCategoriesForTaskTypes[ $taskName ] );
+
+			if ( $sanitizedTitle && $sanitizedTitle->inNamespace( NS_CATEGORY ) ) {
+				$category = Category::newFromTitle( $sanitizedTitle );
+				$pageFilter = new PageFilter( $user, $excludedTitle );
+				$titles = self::getRandomArticles( $count, $category, $pageFilter );
+
+				foreach ( $titles as $title ) {
+					$data['titles'][] = $title->getPrefixedText();
+				}
 			}
 		} else {
 			// TODO (phuedx 2014-02-05): This is technically a
