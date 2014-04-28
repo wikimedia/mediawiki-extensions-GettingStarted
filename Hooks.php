@@ -453,12 +453,16 @@ class Hooks {
 	/**
 	 * Log server-side event on successful page edit.
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/PageContentSaveComplete
-	 * @see https://meta.wikimedia.org/wiki/Schema:PageContentSaveComplete
+	 * @see https://meta.wikimedia.org/wiki/Schema:TrackedPageContentSaveComplete
 	 */
 	public static function onPageContentSaveComplete( $article, $user, $content, $summary,
 		$isMinor, $isWatch, $section, $flags, $revision, $status, $baseRevId ) {
 
 		global $wgRequest;
+
+		if ( $revision === null ) {
+			return true;
+		}
 
 		$revId = $revision->getId();
 		$event = array(
