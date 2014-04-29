@@ -245,21 +245,6 @@ $wgResourceModules[ 'ext.gettingstarted.return' ] = array(
 	'position' => 'top',
 ) + $gettingStartedModuleInfo;
 
-$wgResourceModules[ 'ext.gettingstarted.user' ] = array(
-	'scripts' => 'ext.gettingstarted.user.js',
-	'dependencies' => array(
-		'mediawiki.user',
-		'jquery.cookie',
-	),
-) + $gettingStartedModuleInfo;
-
-$wgResourceModules[ 'ext.gettingstarted.assignToken' ] = array(
-	'scripts' => 'ext.gettingstarted.assignToken.js',
-	'dependencies' => array(
-		'ext.gettingstarted.user'
-	),
-) + $gettingStartedModuleInfo;
-
 $wgDefaultUserOptions[ GettingStarted\Hooks::INTRO_OPTION ] = true;
 
 $wgHooks[ 'BeforePageDisplay' ][] = 'GettingStarted\Hooks::onBeforePageDisplay';
@@ -274,5 +259,3 @@ $wgHooks[ 'GetPreferences' ][] = 'GettingStarted\Hooks::onGetPreferences';
 $wgHooks[ 'UserLogoutComplete'][] = 'GettingStarted\Hooks::onUserLogoutComplete';
 // Extension:CentralAuth's hook
 $wgHooks[ 'CentralAuthPostLoginRedirect' ][] = 'GettingStarted\Hooks::onCentralAuthPostLoginRedirect';
-$wgHooks[ 'ResourceLoaderTestModules' ][] = 'GettingStarted\Hooks::onResourceLoaderTestModules';
-$wgHooks[ 'PageContentSaveComplete' ][] = 'GettingStarted\Hooks::onPageContentSaveComplete';
