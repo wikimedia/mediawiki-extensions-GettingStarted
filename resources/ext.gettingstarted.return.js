@@ -190,7 +190,12 @@
 		 * @return {string} kind of page.
 		 */
 		getPageKind: function () {
-			if ( cfg.wgAction === 'edit' || cfg.wgAction === 'submit' ) {
+			var currentUri = new mw.Uri();
+
+			if ( cfg.wgAction === 'edit' ||
+			    cfg.wgAction === 'submit' ||
+			    currentUri.query.veaction === 'edit'
+			) {
 				return 'alreadyediting';
 			}
 
