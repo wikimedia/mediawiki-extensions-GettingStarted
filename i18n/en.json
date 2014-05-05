@@ -41,5 +41,12 @@
     "gettingstarted-cta-edit-page-sub": "We'll show you how",
     "gettingstarted-cta-fix-pages": "Edit a suggested article",
     "gettingstarted-cta-fix-pages-sub": "We'll pick something easy",
-    "gettingstarted-cta-leave": "No thanks, maybe later"
+    "gettingstarted-cta-leave": "No thanks, maybe later",
+    "guidedtour-tour-anonymouseditoracquisitionpreedit-title": "Sign up to edit {{SITENAME}}",
+    "guidedtour-tour-anonymouseditoracquisitionpreedit-description": "We recommend you create an account to edit {{SITENAME}}. It's free, easy, and requires no personal information.",
+    "guidedtour-tour-anonymouseditoracquisitionpreedit-sign-up": "Sign up and edit",
+    "guidedtour-tour-anonymouseditoracquisitionpreedit-continue": "No thanks",
+    "guidedtour-tour-anonymouseditoracquisitionpostedit-title": "Join {{SITENAME}}",
+    "guidedtour-tour-anonymouseditoracquisitionpostedit-description": "Create an account to edit and you can: <ul><li>Track your contributions</li><li>Follow updates to your favorite pages</li><li>Connect with other Wikipedia editors</li><li>Get early access to new features</li></ul>",
+    "guidedtour-tour-anonymouseditoracquisitionpostedit-continue": "Create my account"
 }

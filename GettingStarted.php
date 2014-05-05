@@ -72,7 +72,7 @@ $wgGettingStartedRedisOptions = array(
 );
 
 /**
- * Is the A/B test enabled?
+ * Is the controlled experiment enabled?
  */
 $wgGettingStartedRunTest = false;
 
@@ -252,6 +252,72 @@ $wgResourceModules[ 'ext.gettingstarted.user' ] = array(
 		'jquery.cookie',
 	),
 ) + $gettingStartedModuleInfo;
+
+// Tours for the Anonymous Editor Acquisition project (see
+// https://www.mediawiki.org/wiki/Anonymous_editor_acquisition).
+
+$anonymousEditorAcquisitionPreEditTourInfo = array(
+	'messages' => array(
+		'guidedtour-tour-anonymouseditoracquisitionpreedit-title',
+		'guidedtour-tour-anonymouseditoracquisitionpreedit-description',
+		'guidedtour-tour-anonymouseditoracquisitionpreedit-sign-up',
+		'guidedtour-tour-anonymouseditoracquisitionpreedit-continue',
+	),
+	'dependencies' => array(
+		'ext.gettingstarted.anonymousEditorAcquisition',
+		'ext.guidedTour',
+		'schema.SignupExpCTAImpression',
+	),
+) + $gettingStartedModuleInfo;
+
+$wgResourceModules[ 'ext.guidedTour.tour.anonymouseditoracquisitionpreedit' ] = array(
+	'scripts' => 'tours/anonymouseditoracquisitionpreedit.js',
+) + $anonymousEditorAcquisitionPreEditTourInfo;
+
+$wgResourceModules[ 'ext.guidedTour.tour.anonymouseditoracquisitionpreeditve' ] = array(
+	'scripts' => 'tours/anonymouseditoracquisitionpreeditve.js',
+) + $anonymousEditorAcquisitionPreEditTourInfo;
+
+$wgResourceModules[ 'ext.guidedTour.tour.anonymouseditoracquisitionpostedit' ] = array(
+	'scripts' => 'tours/anonymouseditoracquisitionpostedit.js',
+	'styles' => 'tours/anonymouseditoracquisitionpostedit.less',
+	'dependencies' => array(
+		'ext.guidedTour',
+		'schema.SignupExpCTAImpression',
+	),
+) + $gettingStartedModuleInfo;
+
+$wgResourceModules[ 'ext.gettingstarted.anonymousEditorAcquisition' ] = array(
+	'scripts' => 'ext.gettingstarted.anonymousEditorAcquisition.js',
+	'dependencies' => array(
+		'mediawiki.Title',
+		'mediawiki.Uri',
+		'ext.gettingstarted.user',
+		'schema.SignupExpPageLinkClick',
+		'ext.guidedTour.lib',
+	),
+	'messages' => array(
+		'guidedtour-tour-anonymouseditoracquisitionpostedit-title',
+		'guidedtour-tour-anonymouseditoracquisitionpostedit-description',
+		'guidedtour-tour-anonymouseditoracquisitionpostedit-continue',
+	),
+) + $gettingStartedModuleInfo;
+
+
+
+// Events for the Anonymous Edit Acquisition project.
+
+$wgResourceModules[ 'schema.SignupExpPageLinkClick' ] = array(
+	'class'    => 'ResourceLoaderSchemaModule',
+	'schema'   => 'SignupExpPageLinkClick',
+	'revision' => 8101692
+);
+
+$wgResourceModules[ 'schema.SignupExpCTAImpression' ] = array(
+	'class'    => 'ResourceLoaderSchemaModule',
+	'schema'   => 'SignupExpCTAImpression',
+	'revision' => 8101716
+);
 
 $wgResourceModules[ 'ext.gettingstarted.assignToken' ] = array(
 	'scripts' => 'ext.gettingstarted.assignToken.js',

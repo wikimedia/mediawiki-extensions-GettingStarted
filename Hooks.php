@@ -38,20 +38,6 @@ class Hooks {
 
 	const INTRO_OPTION = 'gettingstarted-task-toolbar-show-intro';
 
-	protected static function isInTestGroup( User $user ) {
-		global $wgGettingStartedRunTest;
-
-		if ( !$wgGettingStartedRunTest ) {
-			return false;
-		}
-		// OB6: back to split on odd/even user ID.
-		return $user->isLoggedIn() && ( ( $user->getId() % 2 ) === 0 );
-	}
-
-	protected static function getBucket( User $user ) {
-		return self::isInTestGroup( $user ) ? 'test' : 'control';
-	}
-
 	/**
 	 * Detects if on the mobile version of the site
 	 *
@@ -182,18 +168,10 @@ class Hooks {
 	public static function onMakeGlobalVariablesScript( &$vars, OutputPage $out ) {
 		global $wgGettingStartedTasks;
 
-		$request = $out->getRequest();
 		$user = $out->getUser();
 
-		if ( $user->isLoggedIn() ) {
-			$requestData = array(
-				'bucket' => self::getBucket( $user ),
-				'isInTestGroup' => self::isInTestGroup( $user ),
-			);
-		} else {
-			$requestData = array();
-		}
 		if ( self::shouldLoadToolbar( $out, $user ) ) {
+			$request = $out->getRequest();
 			$taskName = self::getUnprefixedGettingStartedTask( $request, $out->getTitle() );
 			$task = $wgGettingStartedTasks[ $taskName ];
 
@@ -211,16 +189,14 @@ class Hooks {
 				}
 			}
 
-			$requestData['toolbar'] = array(
-				'taskName' => $taskName,
-				'description' => $task[ 'toolbarDescription' ],
-				'tryAnotherTitle' => $task[ 'toolbarTryAnotherTitle' ],
-				'showIntro' => $showIntro,
+			$vars['wgGettingStarted'] = array(
+				'toolbar' => array(
+					'taskName' => $taskName,
+					'description' => $task[ 'toolbarDescription' ],
+					'tryAnotherTitle' => $task[ 'toolbarTryAnotherTitle' ],
+					'showIntro' => $showIntro,
+				),
 			);
-		}
-
-		if ( count( $requestData ) > 0 ) {
-			$vars['wgGettingStarted'] = $requestData;
 		}
 
 		return true;
@@ -255,6 +231,8 @@ class Hooks {
 	 * @return bool
 	 */
 	public static function onBeforePageDisplay( OutputPage $out, \Skin $skin ) {
+		global $wgGettingStartedRunTest;
+
 		$user = $out->getUser();
 
 		// Assign token; will support anonymous signup invite experiment
@@ -283,6 +261,12 @@ class Hooks {
 			// suitable name), then decide what to do about
 			// redirect-page-impression (maybe log on the server, or get rid of it?)
 			self::addReturnToModules( $out, $skin );
+		}
+
+		if ( $wgGettingStartedRunTest && $user->isAnon() ) {
+			$out->addModules( array(
+				'ext.gettingstarted.anonymousEditorAcquisition',
+			) );
 		}
 
 		return true;

@@ -42,5 +42,12 @@
     "gettingstarted-cta-edit-page-sub": "Additional text of button inviting user to edit the current page, shown on Call To Action displayed on editable articles after creating an account.\n\nThe button text is {{msg-mw|Gettingstarted-cta-edit-page}}.",
     "gettingstarted-cta-fix-pages": "Main text of button inviting user to fix other pages, shown in Call To Action displayed on articles after creating an account",
     "gettingstarted-cta-fix-pages-sub": "Additional text of button inviting user to fix other pages, shown in Call To Action displayed on articles after creating an account.\n\nThe button text is {{msg-mw|Gettingstarted-cta-fix-pages}}.",
-    "gettingstarted-cta-leave": "Text to leave the Call To Action displayed on articles after creating an account"
+    "gettingstarted-cta-leave": "Text to leave the Call To Action displayed on articles after creating an account",
+    "guidedtour-tour-anonymouseditoracquisitionpreedit-title": "Title of the step inviting the user to sign up before editing the page",
+    "guidedtour-tour-anonymouseditoracquisitionpreedit-description": "Description of the step inviting the user to sign up before editing the page",
+    "guidedtour-tour-anonymouseditoracquisitionpreedit-sign-up": "Main text of the button inviting the user to sign up before editing the page",
+    "guidedtour-tour-anonymouseditoracquisitionpreedit-continue": "Main text of the button inviting the user to remain anonymous and continue editing the page",
+    "guidedtour-tour-anonymouseditoracquisitionpostedit-title": "Title of the step inviting the user to create an account after editing the page",
+    "guidedtour-tour-anonymouseditoracquisitionpostedit-description": "Description of the step inviting the user to create an account after editing the page",
+    "guidedtour-tour-anonymouseditoracquisitionpostedit-continue": "Main text of the button inviting the user to create an account after editing the page"
 }
