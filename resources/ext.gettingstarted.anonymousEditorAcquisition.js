@@ -170,7 +170,6 @@
 
 	$( function () {
 		var isPreEdit = bucket === 'pre-edit';
-
 		// In the pre-edit variant, clicking "edit" or "edit source"
 		// shows a guider so don't follow the link after the
 		// SignupExpPageLinkClick event has been logged.
@@ -178,6 +177,12 @@
 		logLinkClick( '.mw-editsection a', 'edit section', !isPreEdit );
 
 		logLinkClick( '#pt-createaccount', 'create account' );
+
+		// Only init if user has not seen CTA.
+		if ( $.jStorage.get( 'hasShownAnonymousEditorAcquisitionCTA' ) ) {
+			return;
+		}
+		$.jStorage.set( 'hasShownAnonymousEditorAcquisitionCTA', true );
 
 		if ( isPreEdit ) {
 			initPreEditVariant();

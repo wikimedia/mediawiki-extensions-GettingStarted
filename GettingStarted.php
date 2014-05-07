@@ -295,6 +295,7 @@ $wgResourceModules[ 'ext.gettingstarted.anonymousEditorAcquisition' ] = array(
 		'ext.gettingstarted.user',
 		'schema.SignupExpPageLinkClick',
 		'ext.guidedTour.lib',
+		'jquery.jStorage',
 	),
 	'messages' => array(
 		'guidedtour-tour-anonymouseditoracquisitionpostedit-title',
