@@ -6,7 +6,7 @@
 		user = mw.gettingStarted.user,
 		token = user.getToken(),
 		bucket = user.getBucket(),
-		LOG_LINK_CLICK_DELAY = 500, // (ms)
+		LOG_EVENT_TIMEOUT = 500, // (ms)
 		tourToSelectorMapping = {
 			'anonymouseditoracquisitionpreedit': [ '#ca-edit', '.mw-editsection a:not( .mw-editsection-visualeditor )' ],
 			'anonymouseditoracquisitionpreeditve': [ '#ca-ve-edit', '.mw-editsection-visualeditor ' ]
@@ -17,7 +17,22 @@
 		isViewPage = (
 			mw.config.get( 'wgIsArticle' ) &&
 			!( 'diff' in currentUri.query )
-		);
+		),
+		namespace = mw.config.get( 'wgNamespaceNumber' ),
+		self,
+		isLinkClickLoggingDisabled = false;
+
+	// NOTE (phuedx, 2014/05/07): This function provides a consistent, internal API for logging
+	// events.
+	//
+	// Ideally the EventLogging API should provide an equivalent of `logEventOrTimeout`.
+	// However, there are currently concerns about the approach [0].
+	//
+	// [0] https://bugzilla.wikimedia.org/show_bug.cgi?id=52287
+	function logEvent( schemaName, eventInstance ) {
+		return mw.eventLog.logEvent( schemaName, eventInstance );
+	}
+
 
 	/**
 	 * Registers a click listener on links corresponding to one or more selectors.
@@ -26,8 +41,7 @@
 	 * If `shouldDelay` is false, it will allow the normal link navigation to work.
 	 *
 	 * If `shouldDelay` is true, it will prevent normal navigation and wait for logging.  When
-	 * logging completes, or after a LOG_LINK_CLICK_DELAY-millisecond timeout, it will navigate
-	 * then.
+	 * logging completes, or after a 500 millisecond timeout, it will navigate then.
 	 *
 	 * @private
 	 *
@@ -45,27 +59,57 @@
 		}
 
 		$( selectors ).click( function ( event ) {
-			var logEventPromise, dfd;
+			var schemaName, eventInstance;
 
-			logEventPromise = mw.eventLog.logEvent( 'SignupExpPageLinkClick', {
+			if ( isLinkClickLoggingDisabled ) {
+				return;
+			}
+
+			schemaName = 'SignupExpPageLinkClick';
+			eventInstance = {
 				token: token,
 				bucket: bucket,
 				link: link,
-				namespace: mw.config.get( 'wgNamespaceNumber' )
-			} );
+				namespace: namespace
+			};
 
 			if ( shouldDelay ) {
 				event.preventDefault();
 
-				dfd = $.Deferred();
-				dfd.always( function () {
+				logEventOrTimeout( schemaName, eventInstance ).always( function () {
 					window.location.href = getHrefFromTarget( $( event.currentTarget ) );
 				} );
-
-				window.setTimeout( dfd.reject, LOG_LINK_CLICK_DELAY );
-				logEventPromise.then( dfd.resolve, dfd.reject );
+			} else {
+				logEvent( schemaName, eventInstance );
 			}
 		} );
+	}
+
+	/**
+	 * Attempts to log an event in less than 500 milliseconds.
+	 *
+	 * Returns a promise that will be resolved or rejected when either the HTTP request to log
+	 * the event resolves or after 500 milliseconds. Note that in the former case the promise
+	 * will be resolved or rejected depending on the outcome of the HTTP request, whereas in the
+	 * latter case the promise will always be rejected.
+	 *
+	 * See `mw.eventLog.logEvent`.
+	 *
+	 * @private
+	 *
+	 * @param {string} schemaName The canonical name of the schema
+	 * @param {Object} eventInstance The event instance
+	 * @return {jQuery.Promise}
+	 */
+	function logEventOrTimeout( schemaName, eventInstance ) {
+		var dfd;
+
+		dfd = $.Deferred();
+
+		window.setTimeout( dfd.reject, LOG_EVENT_TIMEOUT );
+		logEvent( schemaName, eventInstance ).then( dfd.resolve, dfd.reject );
+
+		return dfd.promise();
 	}
 
 	function unregisterPreEditVariant() {
@@ -128,7 +172,7 @@
 	 * @class mw.gettingStarted.anonymousEditorAcquisition
 	 * @singleton
 	 */
-	mw.gettingStarted.anonymousEditorAcquisition = {
+	mw.gettingStarted.anonymousEditorAcquisition = self = {
 		/**
 		 * Handles the 'no thanks' selection when the target
 		 * is a VisualEditor edit link.
@@ -136,8 +180,23 @@
 		handleNoThanksForVisualEditor: function () {
 			gt.hideAll();
 			if ( isViewPage ) {
+				logEvent( 'SignupExpCTAButtonClick', {
+					token: token,
+					cta: 'pre-edit',
+					button: 'edit',
+					namespace: namespace
+				} );
+
 				// Load VE without full page load
+
+				// NOTE (phuedx, 2014-05-14) Because we're
+				// triggering the click event of the
+				// Edit[ source] link, we have to temporarily
+				// disable logging the SignupExpPageLinkClick
+				// event.
+				isLinkClickLoggingDisabled = true;
 				$currentGuiderTarget.click();
+				isLinkClickLoggingDisabled = false;
 			} else {
 				// Load VE with full page load
 				this.handleNoThanksWithPageLoad();
@@ -148,23 +207,68 @@
 		 * Handle no thanks by following a link with a full page load
 		 */
 		handleNoThanksWithPageLoad: function () {
-			window.location.href = getHrefFromTarget( $currentGuiderTarget );
+			logEventOrTimeout( 'SignupExpCTAButtonClick', {
+				token: token,
+				cta: 'pre-edit',
+				button: 'edit',
+				namespace: namespace
+			} ).always( function () {
+				window.location.href = getHrefFromTarget( $currentGuiderTarget );
+			} );
 		},
 
 		/**
-		 * Handles then 'signup and edit' selection.  Goes to the signup page, using the
+		 * Handles the 'Sign up and edit' selection.  Goes to the signup page, using the
 		 * current page as the returnto and the query string from the edit tab/link as the
 		 * returntoquery.
 		 */
 		handleSignupAndEdit: function () {
-			var uri = new mw.Uri( getHrefFromTarget( $currentGuiderTarget ) );
-			delete uri.query.title;
-			window.location.href = new mw.Title( 'Special:UserLogin' ).getUrl( {
-				type: 'signup',
-				returnto: mw.config.get( 'wgPageName' ),
-				returntoquery: uri.getQueryString()
-			} );
+			self.handleSignup( 'pre-edit', new mw.Uri( getHrefFromTarget( $currentGuiderTarget ) ) );
+		},
 
+		/**
+		 * Handles the both the 'Sign up and edit' and 'Create my account' selections.
+		 *
+		 * @param {string=post-edit} cta The 'cta' parameter of the SignupExpCTAButtonClick
+		 *   schema. Either 'pre-edit' or 'post-edit'
+		 * @param {mw.Uri} uri The URI to extract the returntoquery parameter from.
+		 *   Defaults to the current URI
+		 */
+		handleSignup: function ( cta, uri ) {
+			if ( cta === undefined ) {
+				cta = 'post-edit';
+			}
+
+			if ( uri === undefined ) {
+				uri = new mw.Uri();
+			}
+
+			delete uri.query.title;
+
+			logEventOrTimeout( 'SignupExpCTAButtonClick', {
+				token: token,
+				cta: cta,
+				button: 'signup',
+				namespace: namespace
+			} ).always( function () {
+				window.location.href = new mw.Title( 'Special:UserLogin' ).getUrl( {
+					type: 'signup',
+					returnto: mw.config.get( 'wgPageName' ),
+					returntoquery: uri.getQueryString()
+				} );
+			} );
+		},
+
+		/**
+		 * Handles dismissal of the pre- and post-edit CTAs.
+		 */
+		handleClose: function ( cta ) {
+			logEvent( 'SignupExpCTAButtonClick', {
+				token: token,
+				cta: cta,
+				button: 'dismiss',
+				namespace: namespace
+			} );
 		}
 	};
 

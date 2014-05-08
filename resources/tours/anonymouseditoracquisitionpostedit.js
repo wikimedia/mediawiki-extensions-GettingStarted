@@ -2,8 +2,7 @@
 
 	'use strict';
 
-	var ptCreateaccountSelector = '#pt-createaccount',
-		$ptCreateaccount = $( ptCreateaccountSelector );
+	var ptCreateaccountSelector = '#pt-createaccount';
 
 	gt.defineTour( {
 		name: 'anonymouseditoracquisitionpostedit',
@@ -25,10 +24,15 @@
 					namespace: mw.config.get( 'wgNamespaceNumber' )
 				} );
 			},
+			onClose: function () {
+				mw.gettingStarted.anonymousEditorAcquisition.handleClose( 'post-edit' );
+			},
 			buttons: [ {
 				namemsg: 'guidedtour-tour-anonymouseditoracquisitionpostedit-continue',
 				action: 'externalLink',
-				url: $ptCreateaccount.find( 'a' ).attr( 'href' )
+				onclick: function () {
+					mw.gettingStarted.anonymousEditorAcquisition.handleSignup() ;
+				}
 			} ]
 		} ]
 	} );
