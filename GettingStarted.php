@@ -294,6 +294,7 @@ $wgResourceModules[ 'ext.gettingstarted.anonymousEditorAcquisition' ] = array(
 		'mediawiki.Uri',
 		'ext.gettingstarted.user',
 		'schema.SignupExpPageLinkClick',
+		'schema.SignupExpCTAButtonClick',
 		'ext.guidedTour.lib',
 		'jquery.jStorage',
 	),
@@ -318,6 +319,12 @@ $wgResourceModules[ 'schema.SignupExpCTAImpression' ] = array(
 	'class'    => 'ResourceLoaderSchemaModule',
 	'schema'   => 'SignupExpCTAImpression',
 	'revision' => 8101716
+);
+
+$wgResourceModules[ 'schema.SignupExpCTAButtonClick' ] = array(
+	'class'    => 'ResourceLoaderSchemaModule',
+	'schema'   => 'SignupExpCTAButtonClick',
+	'revision' => 8102619
 );
 
 $wgResourceModules[ 'ext.gettingstarted.assignToken' ] = array(

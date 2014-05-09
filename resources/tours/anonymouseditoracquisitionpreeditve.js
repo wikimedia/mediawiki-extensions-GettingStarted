@@ -19,6 +19,9 @@
 					namespace: mw.config.get( 'wgNamespaceNumber' )
 				} );
 			},
+			onClose: function () {
+				mw.gettingStarted.anonymousEditorAcquisition.handleClose( 'pre-edit' );
+			},
 			buttons: [
 
 				// "No thanks"
