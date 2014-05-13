@@ -7,6 +7,7 @@
 		token = user.getToken(),
 		bucket = user.getBucket(),
 		LOG_EVENT_TIMEOUT = 500, // (ms)
+		CTA_FLAG_KEY = 'hasShownAnonymousEditorAcquisitionCTA',
 		tourToSelectorMapping = {
 			'anonymouseditoracquisitionpreedit': [ '#ca-edit', '.mw-editsection a:not( .mw-editsection-visualeditor )' ],
 			'anonymouseditoracquisitionpreeditve': [ '#ca-ve-edit', '.mw-editsection-visualeditor ' ]
@@ -140,15 +141,25 @@
 				unregisterPreEditVariant();
 
 				mw.libs.guiders.reposition();
-				gt.launchTour( tour );
+				launchTour( tour );
 			} );
 		} );
 	}
 
 	function initPostEditVariant() {
 		mw.hook( 'postEdit' ).add( function () {
-			gt.launchTour( 'anonymouseditoracquisitionpostedit' );
+			launchTour( 'anonymouseditoracquisitionpostedit' );
 		} );
+	}
+
+	// Wrapper for launching the experiment tour
+	function launchTour( tourName ) {
+		// Abort if flag is set
+		if ( $.jStorage.get( CTA_FLAG_KEY ) ) {
+			return;
+		}
+		$.jStorage.set( CTA_FLAG_KEY, true );
+		gt.launchTour( tourName );
 	}
 
 	mw.gettingStarted = mw.gettingStarted || {};
@@ -279,19 +290,15 @@
 		// SignupExpPageLinkClick event has been logged.
 		logLinkClick( [ '#ca-edit', '#ca-ve-edit' ], 'edit page', !isPreEdit );
 		logLinkClick( '.mw-editsection a', 'edit section', !isPreEdit );
-
 		logLinkClick( '#pt-createaccount', 'create account' );
 
-		// Only init if user has not seen CTA.
-		if ( $.jStorage.get( 'hasShownAnonymousEditorAcquisitionCTA' ) ) {
-			return;
-		}
-		$.jStorage.set( 'hasShownAnonymousEditorAcquisitionCTA', true );
-
-		if ( isPreEdit ) {
-			initPreEditVariant();
-		} else if ( bucket === 'post-edit' ) {
-			initPostEditVariant();
+		// Init if flag is not set
+		if ( $.jStorage.get( CTA_FLAG_KEY ) === null ) {
+			if ( isPreEdit ) {
+				initPreEditVariant();
+			} else if ( bucket === 'post-edit' ) {
+				initPostEditVariant();
+			}
 		}
 	} );
 
