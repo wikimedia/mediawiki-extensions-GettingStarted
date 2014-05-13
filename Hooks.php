@@ -109,6 +109,15 @@ class Hooks {
 	}
 
 	/**
+	 * Gets the getting started user token
+	 * @return string or null
+	 */
+	protected static function getGettingStartedToken() {
+		global $wgRequest;
+		return $wgRequest->getCookie( self::USER_TOKEN_COOKIE_NAME );
+	}
+
+	/**
 	 * Checks if the task toolbar should be loaded.
 	 *
 	 * It will load if it's a view of an existing page, and the user's browser
@@ -134,9 +143,16 @@ class Hooks {
 	 * intent to show some onboarding flow.
 	 */
 	protected static function isPostCreateReturn( OutputPage $out ) {
-		return $out->getRequest()->getFuzzyBool( 'gettingStartedReturn');
+		return $out->getRequest()->getFuzzyBool( 'gettingStartedReturn' );
 	}
 
+	/**
+	 * Checks if the current page is user signup page.
+	 */
+	protected static function isSignupPage( OutputPage $out ) {
+		$isSignup = $out->getRequest()->getText( 'type' ) == 'signup';
+		return $out->getTitle()->isSpecial( 'Userlogin' ) && $isSignup;
+	}
 
 	/**
 	 * Adds the returnTo module to the  page the user returned to upon signup.
@@ -234,6 +250,7 @@ class Hooks {
 		global $wgGettingStartedRunTest;
 
 		$user = $out->getUser();
+		$gettingStartedToken = self::getGettingStartedToken();
 
 		// Assign token; will support anonymous signup invite experiment
 		$out->addModules( 'ext.gettingstarted.assignToken' );
@@ -253,6 +270,15 @@ class Hooks {
 		}
 
 		if ( self::isPostCreateReturn( $out ) ) {
+			// Log server side event if we acquired the user through
+			// pre or post edit call to action.
+			if ( $gettingStartedToken !== null ) {
+				$event = array(
+					'token'  => $gettingStartedToken,
+					'userId' => $user->getId()
+				);
+				\EventLogging::logEvent( 'SignupExpAccountCreationComplete', 8102589, $event );
+			}
 			// TODO (mattflaschen, 2013-10-05): If we're not going to show
 			// anything, we probably shouldn't add this module for performance
 			// reasons.
@@ -261,6 +287,13 @@ class Hooks {
 			// suitable name), then decide what to do about
 			// redirect-page-impression (maybe log on the server, or get rid of it?)
 			self::addReturnToModules( $out, $skin );
+		}
+
+		// Log server side event if user entered signup page through pre
+		// or post edit call to action
+		if( $gettingStartedToken !== null && self::isSignupPage( $out ) ) {
+			$event = array( 'token' => $gettingStartedToken );
+			\EventLogging::logEvent( 'SignupExpAccountCreationImpression', 8102591, $event );
 		}
 
 		if ( $wgGettingStartedRunTest && $user->isAnon() ) {
@@ -453,9 +486,9 @@ class Hooks {
 			'revId' => $revId,
 		);
 
-		$token = $wgRequest->getCookie( self::USER_TOKEN_COOKIE_NAME );
-		if ( $token !== null ) {
-			$event['token'] = $token;
+		$gettingStartedToken = self::getGettingStartedToken();
+		if ( $gettingStartedToken !== null ) {
+			$event['token'] = $gettingStartedToken;
 		}
 
 		\EventLogging::logEvent( 'TrackedPageContentSaveComplete', 7872558, $event );
