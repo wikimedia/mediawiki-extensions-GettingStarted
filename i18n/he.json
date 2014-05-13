@@ -7,7 +7,8 @@
 			"Guycn2",
 			"NLIGuy",
 			"YaronSh",
-			"אור שפירא"
+			"אור שפירא",
+			"Rotemliss"
 		]
 	},
 	"gettingstarted": "איך להתחיל",
@@ -53,6 +54,7 @@
 	"guidedtour-tour-anonymouseditoracquisitionpreedit-sign-up": "להירשם ולערוך",
 	"guidedtour-tour-anonymouseditoracquisitionpreedit-continue": "לא תודה",
 	"guidedtour-tour-anonymouseditoracquisitionpostedit-title": "הצטרפות ל{{GRAMMAR:תחילית|{{SITENAME}}}}",
+	"guidedtour-tour-anonymouseditoracquisitionpostedit-description": "יצירת חשבון לעריכה תאפשר לך:\n<ul>\n<li>לעקוב אחרי התרומות שלך</li>\n<li>לעקוב אחרי עדכונים לדפים שמעניינים אותך</li>\n<li>להתחבר לעורכי ויקיפדיה אחרים</li>\n<li>לקבל גישה מוקדמת לאפשרויות חדשות</li>\n</ul>",
 	"guidedtour-tour-anonymouseditoracquisitionpostedit-continue": "יצירת החשבון שלי",
 	"gettingstarted-task-toolbar-try-another-text-wikipedia": "לנסות ערך אחר ◄",
 	"gettingstarted-task-toolbar-no-suggested-page-wikipedia": "סליחה. לא מצאנו עוד ערכים שאפשר לשפר עכשיו. אפשר לנסות שום בעוד רגע או לחפש נושאים שמעניינים אותך.",
