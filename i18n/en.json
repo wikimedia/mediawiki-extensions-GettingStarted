@@ -47,7 +47,7 @@
     "guidedtour-tour-anonymouseditoracquisitionpreedit-sign-up": "Sign up and edit",
     "guidedtour-tour-anonymouseditoracquisitionpreedit-continue": "No thanks",
     "guidedtour-tour-anonymouseditoracquisitionpostedit-title": "Join {{SITENAME}}",
-    "guidedtour-tour-anonymouseditoracquisitionpostedit-description": "Create an account to edit and you can: <ul><li>Track your contributions</li><li>Follow updates to your favorite pages</li><li>Connect with other Wikipedia editors</li><li>Get early access to new features</li></ul>",
+    "guidedtour-tour-anonymouseditoracquisitionpostedit-description": "Create an account to edit and you can:\n<ul>\n<li>Track your contributions</li>\n<li>Follow updates to your favorite pages</li>\n<li>Connect with other Wikipedia editors</li>\n<li>Get early access to new features</li>\n</ul>",
     "guidedtour-tour-anonymouseditoracquisitionpostedit-continue": "Create my account",
     "gettingstarted-task-toolbar-try-another-text-wikipedia": "Try another article ►",
     "gettingstarted-task-toolbar-no-suggested-page-wikipedia": "Sorry. We couldn't find more articles to be improved at the moment. Try again in a moment or search for your own topics of interest.",
