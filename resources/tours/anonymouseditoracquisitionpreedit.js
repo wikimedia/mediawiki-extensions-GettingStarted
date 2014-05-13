@@ -40,7 +40,8 @@
 						mw.gettingStarted.anonymousEditorAcquisition.handleSignupAndEdit();
 					}
 				}
-			]
+			],
+			closeOnClickOutside: false
 		} ]
 	} );
 

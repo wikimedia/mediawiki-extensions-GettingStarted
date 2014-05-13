@@ -33,7 +33,8 @@
 				onclick: function () {
 					mw.gettingStarted.anonymousEditorAcquisition.handleSignup() ;
 				}
-			} ]
+			} ],
+			closeOnClickOutside: false
 		} ]
 	} );
 
