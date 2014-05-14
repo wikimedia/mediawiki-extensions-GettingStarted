@@ -29,7 +29,6 @@
 			},
 			buttons: [ {
 				namemsg: 'guidedtour-tour-anonymouseditoracquisitionpostedit-continue',
-				action: 'externalLink',
 				onclick: function () {
 					mw.gettingStarted.anonymousEditorAcquisition.handleSignup() ;
 				}
