@@ -7,7 +7,7 @@
 		token = user.getToken(),
 		bucket = user.getBucket(),
 		LOG_EVENT_TIMEOUT = 500, // (ms)
-		CTA_FLAG_KEY = 'hasShownAnonymousEditorAcquisitionCTA',
+		ctaFlagKey = mw.config.get( 'wgCookiePrefix' ) + '-gettingStartedHasShownAnonymousEditorAcquisitionCTA',
 		tourToSelectorMapping = {
 			'anonymouseditoracquisitionpreedit': [ '#ca-edit', '.mw-editsection a:not( .mw-editsection-visualeditor )' ],
 			'anonymouseditoracquisitionpreeditve': [ '#ca-ve-edit', '.mw-editsection-visualeditor ' ]
@@ -155,10 +155,10 @@
 	// Wrapper for launching the experiment tour
 	function launchTour( tourName ) {
 		// Abort if flag is set
-		if ( $.jStorage.get( CTA_FLAG_KEY ) ) {
+		if ( $.jStorage.get( ctaFlagKey ) ) {
 			return;
 		}
-		$.jStorage.set( CTA_FLAG_KEY, true );
+		$.jStorage.set( ctaFlagKey, true );
 		gt.launchTour( tourName );
 	}
 
@@ -293,7 +293,7 @@
 		logLinkClick( '#pt-createaccount', 'create account' );
 
 		// Init if flag is not set
-		if ( $.jStorage.get( CTA_FLAG_KEY ) === null ) {
+		if ( $.jStorage.get( ctaFlagKey ) === null ) {
 			if ( isPreEdit ) {
 				initPreEditVariant();
 			} else if ( bucket === 'post-edit' ) {
