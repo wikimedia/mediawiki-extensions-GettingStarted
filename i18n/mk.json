@@ -47,7 +47,7 @@
 	"guidedtour-tour-anonymouseditoracquisitionpreedit-sign-up": "Регистрирајте се и уредувајте.",
 	"guidedtour-tour-anonymouseditoracquisitionpreedit-continue": "Не, благодарам",
 	"guidedtour-tour-anonymouseditoracquisitionpostedit-title": "Зачленете се на {{SITENAME}}",
-	"guidedtour-tour-anonymouseditoracquisitionpostedit-description": "Направете сметка за да уредувате, со што ќе можете да: <ul><li>Ги следите вашите придонеси</li><li>Ги следите измените во вашите страници</li><li>Се поврзете со други уредници на Википедија</li><li>Добиете пристап до сè уште невоведени можности и функции</li></ul>",
+	"guidedtour-tour-anonymouseditoracquisitionpostedit-description": "Направете сметка за да уредувате, со што ќе можете да:\n\n<ul> <li>Ги следите вашите придонеси</li> <li>Ги следите измените во вашите омилени страници</li> <li>Се поврзете со други уредници на Википедија</li> <li>Добиете пристап до сè уште невоведени можности и функции</li> </ul>",
 	"guidedtour-tour-anonymouseditoracquisitionpostedit-continue": "Направи ми сметка",
 	"gettingstarted-task-toolbar-try-another-text-wikipedia": "Пробајте друга статија ►",
 	"gettingstarted-task-toolbar-no-suggested-page-wikipedia": "Нажалост, не можев да најдам уште статии за подобрување. Обидете се малку подоцна или пребарајте теми што ве интересираат.",

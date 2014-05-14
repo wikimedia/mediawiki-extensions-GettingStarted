@@ -6,7 +6,8 @@
 			"Hamilton Abreu",
 			"Helder.wiki",
 			"Imperadeiro98",
-			"Raylton P. Sousa"
+			"Raylton P. Sousa",
+			"Vitorvicentevalente"
 		]
 	},
 	"gettingstarted": "Primeiros passos",
@@ -49,6 +50,7 @@
 	"gettingstarted-cta-leave": "Não, obrigado, talvez mais tarde",
 	"guidedtour-tour-anonymouseditoracquisitionpreedit-sign-up": "Registe-se e edite",
 	"guidedtour-tour-anonymouseditoracquisitionpreedit-continue": "Não, obrigado",
+	"guidedtour-tour-anonymouseditoracquisitionpostedit-description": "Ao criar uma conta para ditar, poderá:\n<ul>\n<li>Controlar as suas contribuições</li>\n<li>Seguir as actualizações das suas páginas favoritas</li>\n<li>Comunicar com outros editores da Wikipédia</li>\n<li>Ter acesso antecipado a novas funcionalidades</li>\n</ul>",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title-wikipedia": "Editar o artigo inteiro...",
 	"gettingstarted-cta-fix-pages-wikipedia": "Editar um artigo sugerido"
 }
