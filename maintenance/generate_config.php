@@ -80,7 +80,17 @@ class GenerateConfig extends \Maintenance {
 
 	private function generateWgGettingStartedExcludedCategoriesConfig( $dbnames ) {
 		$sitelinks = $this->getSitelinksByQID( self::QID_CATEGORY_LIVING_PEOPLE, $dbnames );
-		$this->writeConfig( $sitelinks, self::WG_GETTING_STARTED_EXCLUDED_CATEGORIES_FILE );
+
+		// NOTE (phuedx, 2014-05-14): PageFilter::getExcludedCategories
+		// expects wgGettingStartedExcludedCategories to be an array of
+		// strings, not a string.
+		$config = array();
+
+		foreach ( $sitelinks as $dbname => $category ) {
+			$config[ $dbname ] = array( $category );
+		}
+
+		$this->writeConfig( $config, self::WG_GETTING_STARTED_EXCLUDED_CATEGORIES_FILE );
 	}
 
 	private function writeConfig( $config, $filename ) {
