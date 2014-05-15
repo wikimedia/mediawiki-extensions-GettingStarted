@@ -4,7 +4,8 @@
 			"Arent",
 			"Kippenvlees1",
 			"Konovalov",
-			"Siebrand"
+			"Siebrand",
+			"SPQRobin"
 		]
 	},
 	"gettingstarted": "Aan de slag",
@@ -46,6 +47,7 @@
 	"gettingstarted-cta-fix-pages-sub": "We kiezen iets eenvoudigs",
 	"gettingstarted-cta-leave": "Nee bedankt, misschien een volgende keer",
 	"guidedtour-tour-anonymouseditoracquisitionpreedit-title": "Meld u aan om {{SITENAME}} te bewerken",
+	"guidedtour-tour-anonymouseditoracquisitionpreedit-continue": "Nee, bedankt",
 	"gettingstarted-task-toolbar-try-another-text-wikipedia": "Andere pagina proberen ►",
 	"gettingstarted-task-toolbar-no-suggested-page-wikipedia": "We konden helaas niet meer pagina vinden die verbeterd moeten worden. Probeer het over enige tijd opnieuw of zoek naar onderwerpen die u van belang vindt.",
 	"gettingstarted-task-copyedit-toolbar-description-wikipedia": "Deze pagina heeft mogelijk spel- of grammaticafouten die u kunt corrigeren.",
