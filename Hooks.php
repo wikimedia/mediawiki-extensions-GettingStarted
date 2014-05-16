@@ -549,5 +549,7 @@ class Hooks {
 		// Cast so it's not serialized to []; temporary workaround for
 		// https://bugzilla.wikimedia.org/show_bug.cgi?id=65385 .
 		\EventLogging::logEvent( 'SignupExpAccountCreationImpression', 8539445, (object) $event );
+
+		return true;
 	}
 }
