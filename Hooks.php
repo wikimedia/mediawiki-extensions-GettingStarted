@@ -147,14 +147,6 @@ class Hooks {
 	}
 
 	/**
-	 * Checks if the current page is user signup page.
-	 */
-	protected static function isSignupPage( OutputPage $out ) {
-		$isSignup = $out->getRequest()->getText( 'type' ) == 'signup';
-		return $out->getTitle()->isSpecial( 'Userlogin' ) && $isSignup;
-	}
-
-	/**
 	 * Adds the returnTo module to the  page the user returned to upon signup.
 	 *
 	 * Depending on the page, this may do nothing (except log), or add a CTA with
@@ -250,7 +242,6 @@ class Hooks {
 		global $wgGettingStartedRunTest;
 
 		$user = $out->getUser();
-		$gettingStartedToken = self::getGettingStartedToken();
 
 		// Assign token; will support anonymous signup invite experiment
 		$out->addModules( 'ext.gettingstarted.assignToken' );
@@ -270,15 +261,6 @@ class Hooks {
 		}
 
 		if ( self::isPostCreateReturn( $out ) ) {
-			// Log server side event if we acquired the user through
-			// pre or post edit call to action.
-			if ( $gettingStartedToken !== null ) {
-				$event = array(
-					'token'  => $gettingStartedToken,
-					'userId' => $user->getId()
-				);
-				\EventLogging::logEvent( 'SignupExpAccountCreationComplete', 8102589, $event );
-			}
 			// TODO (mattflaschen, 2013-10-05): If we're not going to show
 			// anything, we probably shouldn't add this module for performance
 			// reasons.
@@ -287,13 +269,6 @@ class Hooks {
 			// suitable name), then decide what to do about
 			// redirect-page-impression (maybe log on the server, or get rid of it?)
 			self::addReturnToModules( $out, $skin );
-		}
-
-		// Log server side event if user entered signup page through pre
-		// or post edit call to action
-		if( $gettingStartedToken !== null && self::isSignupPage( $out ) ) {
-			$event = array( 'token' => $gettingStartedToken );
-			\EventLogging::logEvent( 'SignupExpAccountCreationImpression', 8102591, $event );
 		}
 
 		if ( $wgGettingStartedRunTest && $user->isAnon() ) {
@@ -491,7 +466,7 @@ class Hooks {
 			$event['token'] = $gettingStartedToken;
 		}
 
-		\EventLogging::logEvent( 'TrackedPageContentSaveComplete', 7872558, $event );
+		\EventLogging::logEvent( 'TrackedPageContentSaveComplete', 8535426, $event );
 		return true;
 	}
 
@@ -529,5 +504,50 @@ class Hooks {
 		}
 
 		return true;
+	}
+
+	/**
+	 * Logs a successful account creation, including the token
+	 *
+	 * @param User $user Newly created user
+	 * @param boolean $byEmail True if and only if created by email
+	 *
+	 * @return bool Always true
+	 */
+	public static function onAddNewAccount( User $user, $byEmail ) {
+		$gettingStartedToken = self::getGettingStartedToken();
+
+		$event = array(
+			'userId' => $user->getId()
+		);
+
+		if ( $gettingStartedToken !== null ) {
+			$event['token'] = $gettingStartedToken;
+		}
+
+		\EventLogging::logEvent( 'SignupExpAccountCreationComplete', 8539421, $event );
+
+		return true;
+	}
+
+	/**
+	 * Logs an impression on the signup form
+	 *
+	 * @param &$template Template for form (unused)
+	 *
+	 * @return bool Always true
+	 */
+	public static function onUserCreateForm( &$template ) {
+		$gettingStartedToken = self::getGettingStartedToken();
+
+		$event = array();
+
+		if ( $gettingStartedToken !== null ) {
+			$event['token'] = $gettingStartedToken;
+		}
+
+		// Cast so it's not serialized to []; temporary workaround for
+		// https://bugzilla.wikimedia.org/show_bug.cgi?id=65385 .
+		\EventLogging::logEvent( 'SignupExpAccountCreationImpression', 8539445, (object) $event );
 	}
 }

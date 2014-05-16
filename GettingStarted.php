@@ -350,6 +350,8 @@ $wgHooks[ 'UserLogoutComplete'][] = 'GettingStarted\Hooks::onUserLogoutComplete'
 $wgHooks[ 'CentralAuthPostLoginRedirect' ][] = 'GettingStarted\Hooks::onCentralAuthPostLoginRedirect';
 $wgHooks[ 'ResourceLoaderTestModules' ][] = 'GettingStarted\Hooks::onResourceLoaderTestModules';
 $wgHooks[ 'PageContentSaveComplete' ][] = 'GettingStarted\Hooks::onPageContentSaveComplete';
+$wgHooks[ 'AddNewAccount' ][] = 'GettingStarted\Hooks::onAddNewAccount';
+$wgHooks[ 'UserCreateForm' ][] = 'GettingStarted\Hooks::onUserCreateForm';
 
 list( $site, $lang ) = $wgConf->siteFromDB( $wgDBname );
 
