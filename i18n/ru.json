@@ -8,7 +8,8 @@
 			"Lvova",
 			"Okras",
 			"Ole Yves",
-			"Meshkov.a"
+			"Meshkov.a",
+			"Eroha"
 		]
 	},
 	"gettingstarted": "Начало работы",
@@ -32,9 +33,9 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Идеи о том, что делать",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Эти сообщения сообщают о проблемах страницы. Вам не нужно разбираться со всеми ими, просто займитесь тем, что Вам сподручнее делать.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Редактировать всю страницу...",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Вы можете приступить к редактированию всей статьи целиком, нажав здесь.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Нажмите «{{int:vector-view-edit}}», чтобы изменить содержимое в любом месте на странице.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Или отредактировать раздел",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Если вы хотите отредактировать конкретный раздел, то можете нажать на синюю ссылку '{{int:editsection}}', которая имеется сверху каждого раздела.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Если вы хотите отредактировать конкретный раздел, то можете нажать на синюю ссылку «{{int:editsection}}», которая имеется рядом с каждым заголовком раздела.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Внесите необходимые изменения и сохраните",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Сейчас вы можете редактировать страницу. Когда вы закончите, нажмите кнопку '{{int:visualeditor-toolbar-savedialog}}' для просмотра и сохранения изменений.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Предварительный просмотр (не обязательно)",
@@ -46,9 +47,19 @@
 	"gettingstarted-cta-text": "Вы можете помочь сайту {{SITENAME}} по-разному",
 	"gettingstarted-cta-edit-page": "Править эту страницу",
 	"gettingstarted-cta-edit-page-sub": "Мы покажем вам как",
-	"gettingstarted-cta-fix-pages": "Найдите страницы, которые нуждаются в простых исправлениях",
-	"gettingstarted-cta-fix-pages-sub": "Мы покажем вам, как редактировать",
+	"gettingstarted-cta-fix-pages": "Редактировать предложенную страницу",
+	"gettingstarted-cta-fix-pages-sub": "Мы выберем что-нибудь лёгкое",
 	"gettingstarted-cta-leave": "Нет, спасибо, может быть, позже",
+	"guidedtour-tour-anonymouseditoracquisitionpreedit-title": "Зарегистрируйтесь, чтобы редактировать материалы на сайте {{SITENAME}}",
+	"guidedtour-tour-anonymouseditoracquisitionpreedit-sign-up": "Зарегистрируйтесь и редактируйте",
 	"guidedtour-tour-anonymouseditoracquisitionpreedit-continue": "Нет, спасибо",
-	"guidedtour-tour-anonymouseditoracquisitionpostedit-title": "Присоединиться к сайту {{SITENAME}}"
+	"guidedtour-tour-anonymouseditoracquisitionpostedit-title": "Присоединиться к сайту {{SITENAME}}",
+	"guidedtour-tour-anonymouseditoracquisitionpostedit-description": "Создайте аккаунт редактора и вы сможете:\n<ul>\n<li>Отследить ваш вклад</li>\n<li>Обновить ваши любимые страницы</li>\n<li>Связаться с другими редакторами Википедии</li>\n<li>Получить ранний доступ к новым функциям</li>\n</ul>",
+	"guidedtour-tour-anonymouseditoracquisitionpostedit-continue": "Создать учётную запись",
+	"gettingstarted-task-toolbar-try-another-text-wikipedia": "Попробуйте другую статью ►",
+	"gettingstarted-task-clarify-toolbar-try-another-title-wikipedia": "Перейти к случайной статье, которую Вы могли бы уточнить",
+	"gettingstarted-task-addlinks-toolbar-try-another-title-wikipedia": "Перейти к случайной статье, на которой вы можете добавить ссылки",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title-wikipedia": "Редактировать всю статью…",
+	"gettingstarted-cta-edit-page-wikipedia": "Редактировать эту статью",
+	"gettingstarted-cta-fix-pages-wikipedia": "Редактировать предложенную статью"
 }
