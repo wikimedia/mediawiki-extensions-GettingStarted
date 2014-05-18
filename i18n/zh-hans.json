@@ -53,5 +53,7 @@
 	"gettingstarted-cta-fix-pages": "查找需要简单修复的页面",
 	"gettingstarted-cta-fix-pages-sub": "我们将向您展示如何编辑",
 	"gettingstarted-cta-leave": "不用了，以后再说吧",
+	"guidedtour-tour-anonymouseditoracquisitionpreedit-continue": "不，谢谢",
+	"guidedtour-tour-anonymouseditoracquisitionpostedit-title": "加入{{SITENAME}}",
 	"guidedtour-tour-anonymouseditoracquisitionpostedit-description": "创建账户后，您就可以享受编辑和以下乐趣了：\n<ul>\n<li>跟踪您的贡献</li>\n<li>关注您喜爱页面的更新</li>\n<li>与其他维基百科编辑者保持联络</li>\n<li>体验测试中的新功能</li>\n<li>以及更多...</li>\n</ul>"
 }

@@ -46,6 +46,10 @@
 	"guidedtour-tour-anonymouseditoracquisitionpreedit-continue": "Nee, merci",
 	"guidedtour-tour-anonymouseditoracquisitionpostedit-title": "Maacht mat bei {{SITENAME}}",
 	"gettingstarted-task-toolbar-try-another-text-wikipedia": "Probéiert en aneren Artikel ►",
+	"gettingstarted-task-copyedit-toolbar-description-wikipedia": "An dësem Artikel si méiglecherweis Schreif- a grammatesch Feeler déi Dir verbessere kënnt.",
+	"gettingstarted-task-clarify-toolbar-description-wikipedia": "Dësen Artikel ass méiglecherweis konfus oder vague. Kuckt no Weeër wéi Dir e méi kloer maache kënnt.",
+	"gettingstarted-task-addlinks-toolbar-description-wikipedia": "Dësen Artikel kéint méi Linke brauchen. Kuckt no Begrëffer déi e(n) {{SITENAME}}-Artikel hunn.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title-wikipedia": "Ännert de ganzen Artikel...",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description-wikipedia": "Klickt \"{{int:vector-view-edit}}\" fir den Inhalt iergendwou am Artikel z'änneren.",
 	"gettingstarted-cta-edit-page-wikipedia": "Dësen Artikel änneren"
 }

@@ -10,7 +10,8 @@
 			"Pginer",
 			"QuimGil",
 			"Sethladan",
-			"Vivaelcelta"
+			"Vivaelcelta",
+			"Wifidel"
 		]
 	},
 	"gettingstarted": "Primeros pasos",
@@ -29,7 +30,7 @@
 	"gettingstarted-task-clarify-toolbar-try-another-title": "Ir a una página aleatoria que puedes clarificar",
 	"gettingstarted-task-addlinks-toolbar-description": "Esta página puede necesitar más enlaces. Busca términos que tengan una página en {{SITENAME}}.",
 	"gettingstarted-task-addlinks-toolbar-try-another-title": "Ir a una página aleatoria a que agregar enlaces",
-	"guidedtour-tour-gettingstartedtasktoolbarintro-title": "Empecemos",
+	"guidedtour-tour-gettingstartedtasktoolbarintro-title": "Comencemos",
 	"guidedtour-tour-gettingstartedtasktoolbarintro-description": "Empieza a revisar la página buscando posibles mejoras. Si te sientes abrumado no te preocupes, ¡no es necesario ser un experto en este tema! Si necesitas ayuda o prefieres probar con otra página, utiliza los enlaces de la barra superior.",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Ideas sobre qué hacer",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Estos carteles identifican problemas de la página. No es necesario solucionarlos todos. Resuélvelos únicamente hasta donde te sientas cómodo.",
@@ -53,7 +54,10 @@
 	"gettingstarted-cta-leave": "No gracias, tal vez luego",
 	"guidedtour-tour-anonymouseditoracquisitionpreedit-continue": "No, gracias",
 	"guidedtour-tour-anonymouseditoracquisitionpostedit-title": "Únete a {{SITENAME}}",
+	"guidedtour-tour-anonymouseditoracquisitionpostedit-description": "Crea una cuenta para editar y podrás:\n<ul>\n<li>Seguir tus contribuciones</li>\n<li>Seguir las actualizaciones de tus páginas favoritas</li>\n<li>Conectar con otros editores de WIkipedia</li>\n<li>Conseguir antes acceso a nuevas funcionalidades</li>\n</ul>",
 	"guidedtour-tour-anonymouseditoracquisitionpostedit-continue": "Crear mi cuenta",
 	"gettingstarted-task-toolbar-try-another-text-wikipedia": "Prueba con otro artículo ►",
+	"gettingstarted-task-copyedit-toolbar-description-wikipedia": "Este artículo podría tener errores gramaticales o de ortografía que puedes arreglar.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title-wikipedia": "Editar el artículo completo...",
 	"gettingstarted-cta-edit-page-wikipedia": "Editar este artículo"
 }
