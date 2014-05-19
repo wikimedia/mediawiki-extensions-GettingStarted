@@ -285,6 +285,11 @@ $wgResourceModules[ 'ext.guidedTour.tour.anonymouseditoracquisitionpostedit' ] =
 		'ext.guidedTour',
 		'schema.SignupExpCTAImpression',
 	),
+	'messages' => array(
+		'guidedtour-tour-anonymouseditoracquisitionpostedit-title',
+		'guidedtour-tour-anonymouseditoracquisitionpostedit-description',
+		'guidedtour-tour-anonymouseditoracquisitionpostedit-continue',
+	),
 ) + $gettingStartedModuleInfo;
 
 $wgResourceModules[ 'ext.gettingstarted.anonymousEditorAcquisition' ] = array(
@@ -297,11 +302,6 @@ $wgResourceModules[ 'ext.gettingstarted.anonymousEditorAcquisition' ] = array(
 		'schema.SignupExpCTAButtonClick',
 		'ext.guidedTour.lib',
 		'jquery.jStorage',
-	),
-	'messages' => array(
-		'guidedtour-tour-anonymouseditoracquisitionpostedit-title',
-		'guidedtour-tour-anonymouseditoracquisitionpostedit-description',
-		'guidedtour-tour-anonymouseditoracquisitionpostedit-continue',
 	),
 ) + $gettingStartedModuleInfo;
 
