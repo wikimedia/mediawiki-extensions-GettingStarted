@@ -47,5 +47,6 @@
 	"gettingstarted-cta-fix-pages-sub": "我們將挑選一些較為簡單的東西",
 	"gettingstarted-cta-leave": "不用了，以後再說吧",
 	"guidedtour-tour-anonymouseditoracquisitionpreedit-continue": "不，謝謝",
-	"guidedtour-tour-anonymouseditoracquisitionpostedit-title": "加入 {{SITENAME}}"
+	"guidedtour-tour-anonymouseditoracquisitionpostedit-title": "加入 {{SITENAME}}",
+	"guidedtour-tour-anonymouseditoracquisitionpostedit-description": "建立賬戶以編輯並：\n<ul>\n<li>跟蹤您的貢獻</li>\n<li>關注您喜愛頁面更新</li>\n<li>聯絡其他維基百科編者</li>\n<li>較早獲取新功能</li>\n</ul>"
 }

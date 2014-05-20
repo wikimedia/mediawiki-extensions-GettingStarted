@@ -1,34 +1,34 @@
 {
-    "@metadata": {
-        "authors": [
-            "Avjoska",
-            "Pikne",
-            "RM87"
-        ]
-    },
-    "gettingstarted": "Esimesed sammud",
-    "gettingstarted-desc": "Aitab uuel kasutajal toimetajaks saada.",
-    "gettingstarted-project-link": "{{ns:Project}}:Esimesed sammud",
-    "tag-gettingstarted_edit": "uue toimetaja [[{{MediaWiki:gettingstarted-project-link}}|esimesed sammud]]",
-    "tag-gettingstarted_edit-description": "Muudatus tehtud [[{{MediaWiki:gettingstarted-project-link}}|esimeste sammude]] süsteemis, mis soovitab toimetajatele lihtsaid ülesandeid ja näitab, kuidas neid täita.",
-    "gettingstarted-task-toolbar-editing-help-text": "Näita, kuidas",
-    "gettingstarted-task-toolbar-editing-help-title": "Näita juhiseid redigeerimise kohta",
-    "gettingstarted-task-toolbar-try-another-text": "Proovi teist lehekülge ►",
-    "gettingstarted-task-toolbar-close-title": "Sule see tööriistariba",
-    "gettingstarted-task-copyedit-toolbar-description": "Sellel leheküljel võib olla kirja- ja grammatikavigu, mida saad parandada.",
-    "gettingstarted-task-copyedit-toolbar-try-another-title": "Mine juhuslikule leheküljele, mida saad paremaks toimetada.",
-    "gettingstarted-task-clarify-toolbar-description": "See lehekülg võib olla segane või ebamäärane. Ehk oskad teha seda arusaadavamaks.",
-    "gettingstarted-task-clarify-toolbar-try-another-title": "Mine juhuslikule leheküljele, mida saad teha arusaadavamaks.",
-    "gettingstarted-task-addlinks-toolbar-description": "Võimalik, et sellel leheküljel peaks olema rohkem linke. Otsi märksõnu, mille kohta on {{GRAMMAR:inessive|{{SITENAME}}}} lehekülg.",
-    "gettingstarted-task-addlinks-toolbar-try-another-title": "Mine juhuslikule leheküljele, kuhu saad linke lisada.",
-    "guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Ideed selle kohta, mida teha",
-    "guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Neis märkustes on nimetatud selle lehekülje puudused. Sa ei pea tegelema nende kõigiga. Võta ette mõni puudus, mille lahendamises tunned ennast kindlalt.",
-    "guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Klõpsa \"{{int:vector-view-edit}}\"",
-    "guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Saad redigeerida tervet lehekülge, kui siia klõpsad.",
-    "guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Redigeeri alaosa",
-    "guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Kui tahad redigeerida kindlat alaosa, saad iga alaosa ülaosas klõpsata sinisel lingil \"{{int:editsection}}\".",
-    "guidedtour-tour-gettingstarted-click-preview-title": "Eelvaade (valikuline)",
-    "guidedtour-tour-gettingstarted-click-save-title": "Sa oled peaaegu lõpetanud!",
-    "guidedtour-tour-gettingstarted-click-save-description": "Vajuta '{{int:savearticle}}' ja sinu muudatused on nähtavad.",
-    "gettingstarted-cta-close": "Sule"
+	"@metadata": {
+		"authors": [
+			"Avjoska",
+			"Pikne",
+			"RM87"
+		]
+	},
+	"gettingstarted": "Esimesed sammud",
+	"gettingstarted-desc": "Aitab uuel kasutajal toimetajaks saada.",
+	"gettingstarted-project-link": "{{ns:Project}}:Esimesed sammud",
+	"tag-gettingstarted_edit": "uue toimetaja [[{{MediaWiki:gettingstarted-project-link}}|esimesed sammud]]",
+	"tag-gettingstarted_edit-description": "Muudatus tehtud [[{{MediaWiki:gettingstarted-project-link}}|esimeste sammude]] süsteemis, mis soovitab toimetajatele lihtsaid ülesandeid ja näitab, kuidas neid täita.",
+	"gettingstarted-task-toolbar-editing-help-text": "Näita, kuidas",
+	"gettingstarted-task-toolbar-editing-help-title": "Näita juhiseid redigeerimise kohta",
+	"gettingstarted-task-toolbar-try-another-text": "Proovi teist lehekülge ►",
+	"gettingstarted-task-toolbar-close-title": "Sule see tööriistariba",
+	"gettingstarted-task-copyedit-toolbar-description": "Sellel leheküljel võib olla kirja- ja grammatikavigu, mida saad parandada.",
+	"gettingstarted-task-copyedit-toolbar-try-another-title": "Mine juhuslikule leheküljele, mida saad paremaks toimetada.",
+	"gettingstarted-task-clarify-toolbar-description": "See lehekülg võib olla segane või ebamäärane. Ehk oskad teha seda arusaadavamaks.",
+	"gettingstarted-task-clarify-toolbar-try-another-title": "Mine juhuslikule leheküljele, mida saad teha arusaadavamaks.",
+	"gettingstarted-task-addlinks-toolbar-description": "Võimalik, et sellel leheküljel peaks olema rohkem linke. Otsi märksõnu, mille kohta on {{GRAMMAR:inessive|{{SITENAME}}}} lehekülg.",
+	"gettingstarted-task-addlinks-toolbar-try-another-title": "Mine juhuslikule leheküljele, kuhu saad linke lisada.",
+	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Ideed selle kohta, mida teha",
+	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Neis märkustes on nimetatud selle lehekülje puudused. Sa ei pea tegelema nende kõigiga. Võta ette mõni puudus, mille lahendamises tunned ennast kindlalt.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Redigeeri kogu lehekülge...",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Klõpsa \"{{int:vector-view-edit}}\", et muuta sisu kõikjal leheküljel.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Või redigeeri alaosa",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Kui tahad redigeerida kindlat alaosa, saad klõpsata iga alaosa pealkirja lähedal sinisel lingil \"{{int:editsection}}\".",
+	"guidedtour-tour-gettingstarted-click-preview-title": "Eelvaade (valikuline)",
+	"guidedtour-tour-gettingstarted-click-save-title": "Sa oled peaaegu lõpetanud!",
+	"guidedtour-tour-gettingstarted-click-save-description": "Vajuta '{{int:savearticle}}' ja sinu muudatused on nähtavad.",
+	"gettingstarted-cta-close": "Sule"
 }
