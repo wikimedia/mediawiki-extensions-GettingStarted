@@ -355,8 +355,6 @@ $wgHooks[ 'UserCreateForm' ][] = 'GettingStarted\Hooks::onUserCreateForm';
 
 list( $site, $lang ) = $wgConf->siteFromDB( $wgDBname );
 
-// Known Issue: Wikimedia Commons is considered Wikipedia, which may need to be fixed
-// if GettingStarted is ever deployed there.
-if ( $site === 'wikipedia' ) {
+if ( $site === 'wikipedia' && $lang !== 'commons' ) {
 	$wgHooks[ 'MessageCache::get' ][] = 'GettingStarted\Hooks::onMessageCacheGet';
 }
