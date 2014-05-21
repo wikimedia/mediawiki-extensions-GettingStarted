@@ -7,7 +7,7 @@
 		token = user.getToken(),
 		bucket = user.getBucket(),
 		LOG_EVENT_TIMEOUT = 500, // (ms)
-		ctaFlagKey = mw.config.get( 'wgCookiePrefix' ) + '-gettingStartedHasShownAnonymousEditorAcquisitionCTA',
+		ctaFlagKey = '-gettingStartedHasShownAnonymousEditorAcquisitionCTA',
 		tourToSelectorMapping = {
 			'anonymouseditoracquisitionpreedit': [ '#ca-edit', '.mw-editsection a:not( .mw-editsection-visualeditor )' ],
 			'anonymouseditoracquisitionpreeditve': [ '#ca-ve-edit', '.mw-editsection-visualeditor ' ]
@@ -132,6 +132,11 @@
 
 		$.each( tourToSelectorMapping, function ( tour, selectors ) {
 			$( selectors.join( ',' ) ).on( 'click.mw-gettingstarted', function ( event ) {
+				// Unregister and prevent dead click by returning true
+				if( mw.cookie.get( ctaFlagKey ) !== null ) {
+					unregisterPreEditVariant();
+					return true;
+				}
 				event.preventDefault();
 				event.stopPropagation();
 
@@ -151,17 +156,17 @@
 
 	function initPostEditVariant() {
 		mw.hook( 'postEdit' ).add( function () {
+			if ( mw.cookie.get( ctaFlagKey ) !== null ) {
+				return;
+			}
 			launchTour( 'anonymouseditoracquisitionpostedit' );
 		} );
 	}
 
 	// Wrapper for launching the experiment tour
 	function launchTour( tourName ) {
-		// Abort if flag is set
-		if ( $.jStorage.get( ctaFlagKey ) ) {
-			return;
-		}
-		$.jStorage.set( ctaFlagKey, true );
+		// Set cookie so we know when not to show the tour
+		mw.cookie.set( ctaFlagKey, 'true' );
 		gt.launcher.launchTour( tourName );
 	}
 
@@ -296,7 +301,7 @@
 		logLinkClick( '#pt-createaccount', 'create account' );
 
 		// Init if flag is not set
-		if ( $.jStorage.get( ctaFlagKey ) === null ) {
+		if ( mw.cookie.get( ctaFlagKey ) === null ) {
 			if ( isPreEdit ) {
 				initPreEditVariant();
 			} else if ( bucket === 'post-edit' ) {

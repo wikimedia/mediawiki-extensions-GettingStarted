@@ -297,11 +297,11 @@ $wgResourceModules[ 'ext.gettingstarted.anonymousEditorAcquisition' ] = array(
 	'dependencies' => array(
 		'mediawiki.Title',
 		'mediawiki.Uri',
+		'mediawiki.cookie',
 		'ext.gettingstarted.user',
 		'schema.SignupExpPageLinkClick',
 		'schema.SignupExpCTAButtonClick',
 		'ext.guidedTour.launcher',
-		'jquery.jStorage',
 	),
 ) + $gettingStartedModuleInfo;
 
