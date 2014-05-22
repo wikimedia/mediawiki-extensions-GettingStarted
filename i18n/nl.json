@@ -5,7 +5,8 @@
 			"Kippenvlees1",
 			"Konovalov",
 			"Siebrand",
-			"SPQRobin"
+			"SPQRobin",
+			"Mar(c)"
 		]
 	},
 	"gettingstarted": "Aan de slag",
@@ -25,7 +26,7 @@
 	"gettingstarted-task-addlinks-toolbar-description": "Op deze pagina zijn mogelijk meer koppelingen nodig. Zoek naar termen die een pagina hebben op {{SITENAME}}.",
 	"gettingstarted-task-addlinks-toolbar-try-another-title": "Ga naar een willekeurig pagina waar u koppelingen aan kunt toevoegen",
 	"guidedtour-tour-gettingstartedtasktoolbarintro-title": "Hoe u aan de slag kunt gaan",
-	"guidedtour-tour-gettingstartedtasktoolbarintro-description": "Controleer de pagina en ga op zoek naar mogelijkheden om deze te verbeteren. Maak u geen zorgen als u zich overweldigd voelt. U hoeft geen expert te worden over dit onderwerp! Als u hulp nodig hebt of liever aan een andere pagina werkt, gebruik dan de koppelingen in de werkbalk bovenaan.",
+	"guidedtour-tour-gettingstartedtasktoolbarintro-description": "Deze pagina is door andere {{SITENAME}}-gebruikers gemarkeerd als zijnde voor verbetering vatbaar. Om te helpen hoeft u geen expert in het onderwerp te zijn.",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Wat u kunt doen",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Deze banners geven aan dat er problemen zijn met deze pagina. U hoeft niet alle problemen aan te pakken; doe waar u zich prettig bij voelt.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Hele pagina bewerken",
