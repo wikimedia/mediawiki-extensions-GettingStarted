@@ -4,7 +4,8 @@
 			"Beta16",
 			"Elitre",
 			"Gianfranco",
-			"McDutchie"
+			"McDutchie",
+			"Nemo bis"
 		]
 	},
 	"gettingstarted": "Guida introduttiva",
@@ -46,7 +47,7 @@
 	"gettingstarted-cta-fix-pages-sub": "Ti sceglieremo qualcosa di facile",
 	"gettingstarted-cta-leave": "No grazie, forse più tardi",
 	"guidedtour-tour-anonymouseditoracquisitionpreedit-title": "Registrati per modificare {{SITENAME}}",
-	"guidedtour-tour-anonymouseditoracquisitionpreedit-description": "Si consiglia di che creare un'utenza per modificare {{SITENAME}}. È gratuito, facile e non richiede alcuna informazione personale.",
+	"guidedtour-tour-anonymouseditoracquisitionpreedit-description": "Si consiglia di registrarsi per modificare {{SITENAME}}. È gratuito e facile; non richiede alcuna informazione personale.",
 	"guidedtour-tour-anonymouseditoracquisitionpreedit-sign-up": "Registrati e modifica",
 	"guidedtour-tour-anonymouseditoracquisitionpreedit-continue": "No, grazie",
 	"guidedtour-tour-anonymouseditoracquisitionpostedit-title": "Registrati su {{SITENAME}}",
