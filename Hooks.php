@@ -13,6 +13,21 @@ use FormatJson, Title, WebRequest, OutputPage, User;
 
 class Hooks {
 	/**
+	 * Determine which post login hook to register and register it
+	 * This allows GettingStarted to work with or without CentralAuth
+	 * See Bug: 65619
+	 */
+	public static function onSetup() {
+		global $wgHooks;
+		$isCentralAuthAvailable = class_exists( 'SpecialCentralLogin' );
+		if( $isCentralAuthAvailable ) {
+			$wgHooks[ 'CentralAuthPostLoginRedirect' ][] = 'GettingStarted\Hooks::onCentralAuthPostLoginRedirect';
+		} else {
+			$wgHooks[ 'PostLoginRedirect' ][] = 'GettingStarted\Hooks::onPostLoginRedirect';
+		}
+	}
+
+	/**
 	 * Deserialized vesion of the openTask data structure.
 	 * Initialized as needed.
 	 *
@@ -314,14 +329,6 @@ class Hooks {
 		return true;
 	}
 
-	public static function onBeforeWelcomeCreation( &$welcomeCreationMsg, &$injectHtml ) {
-		// If the stated flow is configured, the BeforeWelcomeCreation hook will not be called.
-		// XXX: This isn't working, but I think it's just my log group configuration.
-		wfDebugLog( 'GettingStarted', 'GettingStarted requires CentralAuth to be installed with the silent login flow' );
-
-		return true;
-	}
-
 	/**
 	 * Checks if they have edited the main namespace
 	 *
@@ -401,32 +408,67 @@ class Hooks {
 	 * account form, preventing the BeforeWelcomeCreation hook, it runs this
 	 * hook.  If user is not mobile, tweak the page returned to or its
 	 * parameters.
+	 * @param string $returnTo page name to redirect to
+	 * @param array $returnToQuery key value pairs of url parameters
+	 * @param boolean $stickHTTPS Keep redirect link on HTTPs
+	 * @param string $type login redirect condition
 	 */
 	public static function onCentralAuthPostLoginRedirect( &$returnTo, &$returnToQuery, $stickHTTPS, $type ) {
-		global $wgUser;
+		$returnToQueryArray = wfCgiToArray( $returnToQuery );
+		// Abort if we should not show getting started
+		if ( !self::shouldShowGettingStarted( $returnToQueryArray, $type ) ) {
+			return true;
+		}
+		if ( $returnToQuery === '' ) {
+			$returnToQuery = 'gettingStartedReturn=true';
+		} else {
+			$returnToQuery .= '&gettingStartedReturn=true';
+		}
+		return true;
+	}
 
+	/**
+	 * While being redirected after signup, determine if we should show getting started
+	 * if so set gettingStartedReturn param to true before the redirect
+	 * @param string $returnTo page name to redirect to
+	 * @param array $returnToQuery key value pairs of url parameters
+	 * @param string $type login redirect condition
+	 */
+	public static function onPostLoginRedirect( &$returnTo, &$returnToQuery, &$type ) {
+		// Abort if we should not show getting started
+		if ( !self::shouldShowGettingStarted( $returnToQuery, $type ) ) {
+			return true;
+		}
+		// TODO: rmoen 2014-05-30 determine if we want to mock the current bahavior
+		// if CentralAuth is not enabled. Note: Auto redirecting is out of the normal
+		// login flow for users logging in on wikis not running C.A.
+		// This can be done by setting $type = 'successredirect';
+		$returnToQuery['gettingStartedReturn'] = 'true';
+		return true;
+	}
+
+	/**
+	 * Check to see if we should display getting started tour
+	 * @param array $returnToQuery url query parameters
+	 * @param string $type login redirect condition
+	 * @return boolean true if should display getting started, false otherwise
+	 */
+	public static function shouldShowGettingStarted( $returnToQuery, $type ) {
 		// Do nothing on mobile.
 		if ( self::isOnMobile() ) {
-			return true;
+			return false;
 		}
-
 		// GettingStarted only runs on signup, for now.
 		if ( $type !== 'signup' ) {
-			return true;
+			return false;
 		}
-
-		// Don't do anything if page tells us not to with
-		// &showGettingStarted=false in the returnToQuery.
-		if ( $returnToQuery ) {
-			$qsParams = wfCgiToArray( $returnToQuery );
-			if ( array_key_exists( 'showGettingStarted', $qsParams )
-				&& $qsParams['showGettingStarted'] === 'false'
-			) {
-				return true;
-			}
+		// Abort if showGettingStarted param is set
+		if ( $returnToQuery && array_key_exists( 'showGettingStarted', $returnToQuery )
+			&& $returnToQuery['showGettingStarted'] === 'false'
+		) {
+			return false;
 		}
-
-		$returnToQuery = $returnToQuery . '&gettingStartedReturn=true';
+		// Otherwise return true
 		return true;
 	}
 

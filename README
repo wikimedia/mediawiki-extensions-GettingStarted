@@ -20,10 +20,11 @@ require_once( "$IP/extensions/GettingStarted/GettingStarted.php" );
   $wgGettingStartedCategoriesForTaskTypes.
 * Create a new user to test.
 
+CentralAuth (https://www.mediawiki.org/wiki/Extension:CentralAuth) is supported,
+but not required.
+
 Dependencies
 
-* https://www.mediawiki.org/wiki/Extension:CentralAuth - The CentralAuth
-account creation flow is required
 * https://www.mediawiki.org/wiki/Extension:EventLogging - Used for logging
 * https://www.mediawiki.org/wiki/Extension:GuidedTour - Used for introductory
 tours

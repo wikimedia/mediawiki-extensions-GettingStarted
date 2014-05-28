@@ -337,7 +337,6 @@ $wgResourceModules[ 'ext.gettingstarted.assignToken' ] = array(
 $wgDefaultUserOptions[ GettingStarted\Hooks::INTRO_OPTION ] = true;
 
 $wgHooks[ 'BeforePageDisplay' ][] = 'GettingStarted\Hooks::onBeforePageDisplay';
-$wgHooks[ 'BeforeWelcomeCreation' ][] = 'GettingStarted\Hooks::onBeforeWelcomeCreation';
 $wgHooks[ 'RecentChange_save' ][] = 'GettingStarted\Hooks::onRecentChange_save';
 $wgHooks[ 'CategoryAfterPageAdded' ][] = 'GettingStarted\RedisCategorySync::onCategoryAfterPageAdded';
 $wgHooks[ 'CategoryAfterPageRemoved' ][] = 'GettingStarted\RedisCategorySync::onCategoryAfterPageRemoved';
@@ -346,12 +345,11 @@ $wgHooks[ 'MakeGlobalVariablesScript' ][] = 'GettingStarted\Hooks::onMakeGlobalV
 $wgHooks[ 'ResourceLoaderGetConfigVars' ][] = 'GettingStarted\Hooks::onResourceLoaderGetConfigVars';
 $wgHooks[ 'GetPreferences' ][] = 'GettingStarted\Hooks::onGetPreferences';
 $wgHooks[ 'UserLogoutComplete'][] = 'GettingStarted\Hooks::onUserLogoutComplete';
-// Extension:CentralAuth's hook
-$wgHooks[ 'CentralAuthPostLoginRedirect' ][] = 'GettingStarted\Hooks::onCentralAuthPostLoginRedirect';
 $wgHooks[ 'ResourceLoaderTestModules' ][] = 'GettingStarted\Hooks::onResourceLoaderTestModules';
 $wgHooks[ 'PageContentSaveComplete' ][] = 'GettingStarted\Hooks::onPageContentSaveComplete';
 $wgHooks[ 'AddNewAccount' ][] = 'GettingStarted\Hooks::onAddNewAccount';
 $wgHooks[ 'UserCreateForm' ][] = 'GettingStarted\Hooks::onUserCreateForm';
+$wgExtensionFunctions[] = 'GettingStarted\Hooks::onSetup';
 
 list( $site, $lang ) = $wgConf->siteFromDB( $wgDBname );
 
