@@ -140,7 +140,10 @@
 
 				unregisterPreEditVariant();
 
-				mw.libs.guiders.reposition();
+				if ( mw.libs.guiders ) {
+					mw.libs.guiders.reposition();
+				}
+
 				launchTour( tour );
 			} );
 		} );
@@ -159,7 +162,7 @@
 			return;
 		}
 		$.jStorage.set( ctaFlagKey, true );
-		gt.launchTour( tourName );
+		gt.launcher.launchTour( tourName );
 	}
 
 	mw.gettingStarted = mw.gettingStarted || {};

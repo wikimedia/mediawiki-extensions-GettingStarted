@@ -300,7 +300,7 @@ $wgResourceModules[ 'ext.gettingstarted.anonymousEditorAcquisition' ] = array(
 		'ext.gettingstarted.user',
 		'schema.SignupExpPageLinkClick',
 		'schema.SignupExpCTAButtonClick',
-		'ext.guidedTour.lib',
+		'ext.guidedTour.launcher',
 		'jquery.jStorage',
 	),
 ) + $gettingStartedModuleInfo;
