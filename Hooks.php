@@ -243,9 +243,6 @@ class Hooks {
 
 		$user = $out->getUser();
 
-		// Assign token; will support anonymous signup invite experiment
-		$out->addModules( 'ext.gettingstarted.assignToken' );
-
 		if ( self::shouldLoadToolbar( $out, $user ) ) {
 			// Uses addModuleStyles since no-JS code must load it this way
 			// and this avoids double-loading.
