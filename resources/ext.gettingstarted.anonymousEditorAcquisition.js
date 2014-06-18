@@ -46,20 +46,16 @@
 	 *
 	 * @private
 	 *
-	 * @param {string|Array} selectors Either a single link selector string, or an array of them
+	 * @param {string} selector The link selector
 	 * @param {string} link Identifier for link, for logging
 	 * @param {boolean} shouldDelay True to delay the default link navigation, false otherwise
 	 */
-	function logLinkClick( selectors, link, shouldDelay ) {
+	function logLinkClick( selector, link, shouldDelay ) {
 		if ( shouldDelay === undefined ) {
 			shouldDelay = true;
 		}
 
-		if ( $.isArray( selectors ) ) {
-			selectors = selectors.join( ',' );
-		}
-
-		$( selectors ).click( function ( event ) {
+		$( selector ).click( function ( event ) {
 			var schemaName, eventInstance;
 
 			if ( isLinkClickLoggingDisabled ) {
@@ -292,16 +288,28 @@
 	};
 
 	$( function () {
-		var isPreEdit = bucket === 'pre-edit';
-		// In the pre-edit variant, clicking "edit" or "edit source"
-		// shows a guider so don't follow the link after the
-		// SignupExpPageLinkClick event has been logged.
-		logLinkClick( [ '#ca-edit', '#ca-ve-edit' ], 'edit page', !isPreEdit );
-		logLinkClick( '.mw-editsection a', 'edit section', !isPreEdit );
+		var isPreEdit = bucket === 'pre-edit',
+			shouldShowCta = mw.cookie.get( ctaFlagKey ) === null,
+			shouldShowPreEditCta = isPreEdit && shouldShowCta;
+
+		// In the pre-edit variant, clicking "edit" or edit source"
+		// shows a guider so don't follow the link and allow the
+		// SignupExpPageLinkClick event to be logged asynchronously. No
+		// such guider is shown in the control or post-edit variants, or
+		// when the user has already seen the CTA, so delay following the
+		// link until after the event is logged.
+		logLinkClick( '#ca-edit', 'edit page', !shouldShowPreEditCta );
+		logLinkClick( '.mw-editsection a:not(.mw-editsection-visualeditor)', 'edit section', !shouldShowPreEditCta );
+
+		// That said, if the user is activating the Visual Editor, and
+		// that doesn't require a page reload, then allow the event to be
+		// logged asynchronously.
+		logLinkClick( '#ca-ve-edit', 'edit page', !isViewPage && !shouldShowPreEditCta );
+		logLinkClick( '.mw-editsection-visualeditor', 'edit section', !isViewPage && !shouldShowPreEditCta );
+
 		logLinkClick( '#pt-createaccount', 'create account' );
 
-		// Init if flag is not set
-		if ( mw.cookie.get( ctaFlagKey ) === null ) {
+		if ( shouldShowCta ) {
 			if ( isPreEdit ) {
 				initPreEditVariant();
 			} else if ( bucket === 'post-edit' ) {
