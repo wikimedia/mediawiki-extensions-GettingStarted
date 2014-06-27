@@ -193,6 +193,9 @@ class Hooks {
 
 		$user = $out->getUser();
 
+		// Assign token; will support anonymous signup invite experiment
+		$out->addModules( 'ext.gettingstarted.assignToken' );
+
 		if ( self::shouldLoadToolbar( $out, $user ) ) {
 			$request = $out->getRequest();
 			$taskName = self::getUnprefixedGettingStartedTask( $request, $out->getTitle() );

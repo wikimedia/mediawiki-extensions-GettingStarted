@@ -2,7 +2,8 @@
 
 	'use strict';
 
-	var expectedTokenCookieName = mw.config.get( 'wgCookiePrefix' ) + '-gettingStartedUserId';
+	var expectedTokenCookieName = mw.config.get( 'wgCookiePrefix' ) + '-gettingStartedUserId',
+		Bucket = mw.gettingStarted.Bucket;
 
 	QUnit.module( 'ext.gettingstarted.user.getToken', {
 		setup: function () {
@@ -52,22 +53,22 @@
 	$.each( [
 		{
 			characters: '0123456789ABCDEFGHIJ',
-			expectedBucket: 'pre-edit'
+			expectedBucket: Bucket.PRE_EDIT_V1
 		},
 		{
 			characters: 'KLMNOPQRSTUVWXYZabcd',
-			expectedBucket: 'post-edit'
+			expectedBucket: Bucket.PRE_EDIT_V2
 		},
 		{
 			characters: 'efghijklmnopqrstuvwxyz',
-			expectedBucket: 'control'
+			expectedBucket: Bucket.CONTROL
 		}
 	], function ( i, data ) {
 		QUnit.test( data.characters, data.characters.length, function ( assert ) {
 			var j;
 
 			for ( j = 0; j < data.characters.length; ++j ) {
-				mw.gettingStarted.user.getToken.returns( data.characters[ j ] );
+				mw.gettingStarted.user.getToken.returns( data.characters[ j ] + '0' );
 
 				assert.strictEqual( mw.gettingStarted.user.getBucket(), data.expectedBucket);
 			}
