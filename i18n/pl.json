@@ -24,11 +24,11 @@
 	"gettingstarted-task-clarify-toolbar-try-another-title": "Idź do losowej strony, na której możesz poprawić błędy językowe",
 	"gettingstarted-task-addlinks-toolbar-description": "Ta strona może wymagać zamieszczenia większej liczby linków. Odszukaj pojęcia, które mają swoje strony w {{GRAMMAR:MS.lp|{{SITENAME}}}}.",
 	"gettingstarted-task-addlinks-toolbar-try-another-title": "Idź do losowej strony, na której możesz dodać linki",
-	"guidedtour-tour-gettingstartedtasktoolbarintro-title": "Jak zacząć",
+	"guidedtour-tour-gettingstartedtasktoolbarintro-title": "Zaczynajmy",
 	"guidedtour-tour-gettingstartedtasktoolbarintro-description": "Po prostu zacznij szukać na stronie rzeczy, które wymagają dopracowania. Jeżeli czujesz się przytłoczony, nie martw się. Nie musisz być ekspertem w tym temacie! Jeżeli potrzebujesz pomocy albo chcesz spróbować na innej stronie, użyj linków na górnym pasku.",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Propozycje dotyczące tego, co trzeba zrobić",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Takie ramki wyliczają problemy. Nie musisz rozwiązać ich wszystkich, po prostu zrób to, co jest dla ciebie wygodne.",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Kliknij {{int:vector-view-edit}}",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Edytuj całą stronę...",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Możesz edytować całą stronę klikając tutaj.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Edytuj sekcję",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Jeżeli chcesz edytować konkretną sekcję, możesz kliknąć na niebieski link ''{{int:editsection}}'' znajdujący się na górze każdej sekcji.",
@@ -46,5 +46,7 @@
 	"gettingstarted-cta-fix-pages": "Znajdź strony wymagające drobnych poprawek",
 	"gettingstarted-cta-fix-pages-sub": "Pokażemy ci, jak edytować",
 	"gettingstarted-cta-leave": "Nie, dziękuję, może później",
-	"guidedtour-tour-anonymouseditoracquisitionpostedit-description": "Załóż konto do edytowania, dzięki temu będziesz mógł:\n<ul>\n<li>Śledzić swój wkład</li>\n<li>Przeglądać edycje na twoich ulubionych stronach</li>\n<li>Połączyć się z innymi edytorami Wikipedii</li>\n<li>Uzyskać szybki dostęp do nowych funkcji</li>\n</ul>"
+	"guidedtour-tour-anonymouseditoracquisitionpreedit-continue": "Nie, dziękuję",
+	"guidedtour-tour-anonymouseditoracquisitionpostedit-description": "Załóż konto do edytowania, dzięki temu będziesz mógł:\n<ul>\n<li>Śledzić swój wkład</li>\n<li>Przeglądać edycje na twoich ulubionych stronach</li>\n<li>Połączyć się z innymi edytorami Wikipedii</li>\n<li>Uzyskać szybki dostęp do nowych funkcji</li>\n</ul>",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title-wikipedia": "Edytuj cały artykuł..."
 }
