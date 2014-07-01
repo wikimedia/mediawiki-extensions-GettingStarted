@@ -162,7 +162,7 @@ $wgResourceModules[ 'ext.gettingstarted.logging' ] = array(
 	'dependencies' => array(
 		'mediawiki.action.view.postEdit',
 		'jquery.cookie',
-		'jquery.json',
+		'json',
 		'mediawiki.Title',
 		'mediawiki.user',
 	),

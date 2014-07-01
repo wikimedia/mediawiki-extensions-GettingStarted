@@ -17,7 +17,7 @@
 	 * @return {Object} User's list of openTasks, if any, from the cookie.
 	 */
 	function getTasks() {
-		return $.parseJSON( $.cookie( 'openTask' ) ) || {};
+		return JSON.parse( $.cookie( 'openTask' ) ) || {};
 	}
 
 	/**
@@ -63,7 +63,7 @@
 			// jquery.cookie version 1.2
 			$.cookie( 'openTask', null, cookieOptions );
 		} else {
-			$.cookie( 'openTask', $.toJSON( tasks ), cookieOptions );
+			$.cookie( 'openTask', JSON.stringify( tasks ), cookieOptions );
 		}
 	}
 
