@@ -246,7 +246,10 @@ $wgResourceModules[ 'ext.gettingstarted.return' ] = array(
 ) + $gettingStartedModuleInfo;
 
 $wgResourceModules[ 'ext.gettingstarted.user' ] = array(
-	'scripts' => 'ext.gettingstarted.user.js',
+	'scripts' => array(
+		'ext.gettingstarted.bucket.js',
+		'ext.gettingstarted.user.js',
+	),
 	'dependencies' => array(
 		'mediawiki.user',
 		'jquery.cookie',
@@ -257,12 +260,6 @@ $wgResourceModules[ 'ext.gettingstarted.user' ] = array(
 // https://www.mediawiki.org/wiki/Anonymous_editor_acquisition).
 
 $anonymousEditorAcquisitionPreEditTourInfo = array(
-	'messages' => array(
-		'guidedtour-tour-anonymouseditoracquisitionpreedit-title',
-		'guidedtour-tour-anonymouseditoracquisitionpreedit-description',
-		'guidedtour-tour-anonymouseditoracquisitionpreedit-sign-up',
-		'guidedtour-tour-anonymouseditoracquisitionpreedit-continue',
-	),
 	'dependencies' => array(
 		'ext.gettingstarted.anonymousEditorAcquisition',
 		'ext.guidedTour',
@@ -270,27 +267,25 @@ $anonymousEditorAcquisitionPreEditTourInfo = array(
 	),
 ) + $gettingStartedModuleInfo;
 
-$wgResourceModules[ 'ext.guidedTour.tour.anonymouseditoracquisitionpreedit' ] = array(
-	'scripts' => 'tours/anonymouseditoracquisitionpreedit.js',
-) + $anonymousEditorAcquisitionPreEditTourInfo;
-
-$wgResourceModules[ 'ext.guidedTour.tour.anonymouseditoracquisitionpreeditve' ] = array(
-	'scripts' => 'tours/anonymouseditoracquisitionpreeditve.js',
-) + $anonymousEditorAcquisitionPreEditTourInfo;
-
-$wgResourceModules[ 'ext.guidedTour.tour.anonymouseditoracquisitionpostedit' ] = array(
-	'scripts' => 'tours/anonymouseditoracquisitionpostedit.js',
-	'styles' => 'tours/anonymouseditoracquisitionpostedit.less',
-	'dependencies' => array(
-		'ext.guidedTour',
-		'schema.SignupExpCTAImpression',
-	),
+$wgResourceModules[ 'ext.guidedTour.tour.anonymouseditoracquisitionpreeditv1' ] = array(
+	'scripts' => 'tours/anonymouseditoracquisitionpreeditv1.js',
 	'messages' => array(
-		'guidedtour-tour-anonymouseditoracquisitionpostedit-title',
-		'guidedtour-tour-anonymouseditoracquisitionpostedit-description',
-		'guidedtour-tour-anonymouseditoracquisitionpostedit-continue',
+		'guidedtour-tour-anonymouseditoracquisitionpreeditv1-title',
+		'guidedtour-tour-anonymouseditoracquisitionpreeditv1-description',
+		'guidedtour-tour-anonymouseditoracquisitionpreeditv1-sign-up',
+		'guidedtour-tour-anonymouseditoracquisitionpreeditv1-continue',
 	),
-) + $gettingStartedModuleInfo;
+) + $anonymousEditorAcquisitionPreEditTourInfo;
+
+$wgResourceModules[ 'ext.guidedTour.tour.anonymouseditoracquisitionpreeditv2' ] = array(
+	'scripts' => 'tours/anonymouseditoracquisitionpreeditv2.js',
+	'messages' => array(
+		'guidedtour-tour-anonymouseditoracquisitionpreeditv2-title',
+		'guidedtour-tour-anonymouseditoracquisitionpreeditv2-description',
+		'guidedtour-tour-anonymouseditoracquisitionpreeditv2-sign-up',
+		'guidedtour-tour-anonymouseditoracquisitionpreeditv2-continue',
+	),
+) + $anonymousEditorAcquisitionPreEditTourInfo;
 
 $wgResourceModules[ 'ext.gettingstarted.anonymousEditorAcquisition' ] = array(
 	'scripts' => 'ext.gettingstarted.anonymousEditorAcquisition.js',
@@ -312,19 +307,19 @@ $wgResourceModules[ 'ext.gettingstarted.anonymousEditorAcquisition' ] = array(
 $wgResourceModules[ 'schema.SignupExpPageLinkClick' ] = array(
 	'class'    => 'ResourceLoaderSchemaModule',
 	'schema'   => 'SignupExpPageLinkClick',
-	'revision' => 8101692
+	'revision' => 8965014
 );
 
 $wgResourceModules[ 'schema.SignupExpCTAImpression' ] = array(
 	'class'    => 'ResourceLoaderSchemaModule',
 	'schema'   => 'SignupExpCTAImpression',
-	'revision' => 8101716
+	'revision' => 8965023
 );
 
 $wgResourceModules[ 'schema.SignupExpCTAButtonClick' ] = array(
 	'class'    => 'ResourceLoaderSchemaModule',
 	'schema'   => 'SignupExpCTAButtonClick',
-	'revision' => 8102619
+	'revision' => 8965028
 );
 
 $wgResourceModules[ 'ext.gettingstarted.assignToken' ] = array(

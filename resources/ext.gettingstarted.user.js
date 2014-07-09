@@ -4,9 +4,8 @@
 
 	var user,
 		// Cookie name can not have the word Token, to avoid serious Varnish caching problems.
-		tokenCookieName = mw.config.get( 'wgCookiePrefix' ) + '-gettingStartedUserId';
-
-	mw.gettingStarted = mw.gettingStarted || {};
+		tokenCookieName = mw.config.get( 'wgCookiePrefix' ) + '-gettingStartedUserId',
+		Bucket = mw.gettingStarted.Bucket;
 
 	/**
 	 * The GettingStarted user API.
@@ -53,21 +52,21 @@
 		 * Gets the bucket that the user is in based on their token.
 		 *
 		 * Currently, the bucket corresponds to the variant of the
-		 * Signup CTA experiement that the user will be shown: pre-edit,
-		 * post-edit, or control.
+		 * experiement that the user will be shown: pre-edit v1,
+		 * pre-edit v2, or control.
 		 *
 		 * @return {string}
 		 */
 		getBucket: function () {
 			var token = user.getToken(),
-				lastCharacter = token.slice( -1 );
+				lastCharacter = token.slice( -2, -1 );
 
 			if ( lastCharacter <= 'J' ) {
-				return 'pre-edit';
+				return Bucket.PRE_EDIT_V1;
 			} else if ( lastCharacter > 'J' && lastCharacter <= 'd' ) {
-				return 'post-edit';
+				return Bucket.PRE_EDIT_V2;
 			} else {
-				return 'control';
+				return Bucket.CONTROL;
 			}
 		}
 	};

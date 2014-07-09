@@ -8,10 +8,6 @@
 		bucket = user.getBucket(),
 		LOG_EVENT_TIMEOUT = 500, // (ms)
 		ctaFlagKey = '-gettingStartedHasShownAnonymousEditorAcquisitionCTA',
-		tourToSelectorMapping = {
-			'anonymouseditoracquisitionpreedit': [ '#ca-edit', '.mw-editsection a:not( .mw-editsection-visualeditor )' ],
-			'anonymouseditoracquisitionpreeditve': [ '#ca-ve-edit', '.mw-editsection-visualeditor ' ]
-		},
 		isVeAvailable = mw.libs.ve && mw.libs.ve.isAvailable,
 		currentUri = new mw.Uri(),
 		// isViewPage code is from VE and is used to determine whether VE can be loaded without a full page load
@@ -21,20 +17,14 @@
 		),
 		namespace = mw.config.get( 'wgNamespaceNumber' ),
 		self,
-		isLinkClickLoggingDisabled = false;
+		isLinkClickLoggingDisabled = false,
+		Bucket = mw.gettingStarted.Bucket,
+		targetElementsSelector = '#ca-edit, #ca-ve-edit, .mw-editsection a';
 
-	// NOTE (phuedx, 2014/05/07): This function provides a consistent, internal API for logging
-	// events.
-	//
 	// Ideally the EventLogging API should provide an equivalent of `logEventOrTimeout`.
 	// However, there are currently concerns about the approach [0].
 	//
 	// [0] https://bugzilla.wikimedia.org/show_bug.cgi?id=52287
-	function logEvent( schemaName, eventInstance ) {
-		return mw.eventLog.logEvent( schemaName, eventInstance );
-	}
-
-
 	/**
 	 * Registers a click listener on links corresponding to one or more selectors.
 	 * When event occurs, logs a SignupExpPageLinkClick event.
@@ -77,7 +67,7 @@
 					window.location.href = getHrefFromTarget( $( event.currentTarget ) );
 				} );
 			} else {
-				logEvent( schemaName, eventInstance );
+				mw.eventLog.logEvent( schemaName, eventInstance );
 			}
 		} );
 	}
@@ -104,15 +94,13 @@
 		dfd = $.Deferred();
 
 		window.setTimeout( dfd.reject, LOG_EVENT_TIMEOUT );
-		logEvent( schemaName, eventInstance ).then( dfd.resolve, dfd.reject );
+		mw.eventLog.logEvent( schemaName, eventInstance ).then( dfd.resolve, dfd.reject );
 
 		return dfd.promise();
 	}
 
-	function unregisterPreEditVariant() {
-		$.each( tourToSelectorMapping, function ( tour, selectors ) {
-			$( selectors.join( ',' ) ).off( 'click.mw-gettingstarted' );
-		} );
+	function unregisterVariants() {
+		$( targetElementsSelector ).off( 'click.mw-gettingstarted' );
 
 		if ( isVeAvailable && isViewPage ) {
 			$( '#ca-ve-edit' ).on( 'click', mw.libs.ve.onEditTabClick );
@@ -120,42 +108,40 @@
 		}
 	}
 
-	function initPreEditVariant() {
+	function initVariants() {
+		var baseTourName = 'anonymouseditoracquisitionpreedit',
+			tourName = baseTourName;
+
 		if ( isVeAvailable ) {
 			$( '#ca-ve-edit' ).off( 'click', mw.libs.ve.onEditTabClick );
 			$( '.mw-editsection-visualeditor' ).off( 'click', mw.libs.ve.onEditSectionLinkClick );
 		}
 
-		$.each( tourToSelectorMapping, function ( tour, selectors ) {
-			$( selectors.join( ',' ) ).on( 'click.mw-gettingstarted', function ( event ) {
-				// Unregister and prevent dead click by returning true
-				if( mw.cookie.get( ctaFlagKey ) !== null ) {
-					unregisterPreEditVariant();
-					return true;
-				}
-				event.preventDefault();
-				event.stopPropagation();
+		if ( bucket === Bucket.PRE_EDIT_V1 ) {
+			tourName += 'v1';
+		} else if ( bucket === Bucket.PRE_EDIT_V2 ) {
+			tourName += 'v2';
+		}
 
-				$currentGuiderTarget = $( this );
-				$currentGuiderTarget.addClass( 'mw-gettingstarted-anonymouseditoracquisition-guider-target' );
-
-				unregisterPreEditVariant();
-
-				if ( mw.libs.guiders ) {
-					mw.libs.guiders.reposition();
-				}
-
-				launchTour( tour );
-			} );
-		} );
-	}
-
-	function initPostEditVariant() {
-		mw.hook( 'postEdit' ).add( function () {
-			if ( mw.cookie.get( ctaFlagKey ) !== null ) {
-				return;
+		$( targetElementsSelector ).on( 'click.mw-gettingstarted', function ( event ) {
+			// Unregister and prevent dead click by returning true
+			if( mw.cookie.get( ctaFlagKey ) !== null ) {
+				unregisterVariants();
+				return true;
 			}
-			launchTour( 'anonymouseditoracquisitionpostedit' );
+			event.preventDefault();
+			event.stopPropagation();
+
+			$currentGuiderTarget = $( this );
+			$currentGuiderTarget.addClass( 'mw-gettingstarted-anonymouseditoracquisition-guider-target' );
+
+			unregisterVariants();
+
+			if ( mw.libs.guiders ) {
+				mw.libs.guiders.reposition();
+			}
+
+			launchTour( tourName );
 		} );
 	}
 
@@ -165,8 +151,6 @@
 		mw.cookie.set( ctaFlagKey, 'true' );
 		gt.launcher.launchTour( tourName );
 	}
-
-	mw.gettingStarted = mw.gettingStarted || {};
 
 	/**
 	 * Returns the href of a link, from the given target.  This is either from the target
@@ -181,6 +165,37 @@
 		return $target.attr( 'href' );
 	}
 
+	function logContinueAndClickTarget() {
+		gt.hideAll();
+
+		mw.eventLog.logEvent( 'SignupExpCTAButtonClick', {
+			token: token,
+			cta: bucket,
+			button: 'edit',
+			namespace: namespace
+		} );
+
+		// Load VE without a full page load.
+
+		// NOTE (phuedx, 2014-05-14) Because we're triggering the click event of
+		// the Edit link, we have to temporarily disable logging the
+		// SignupExpPageLinkClick event.
+		isLinkClickLoggingDisabled = true;
+		$currentGuiderTarget.click();
+		isLinkClickLoggingDisabled = false;
+	}
+
+	function logContinueAndFollowTarget() {
+		logEventOrTimeout( 'SignupExpCTAButtonClick', {
+			token: token,
+			cta: bucket,
+			button: 'edit',
+			namespace: namespace
+		} ).always( function () {
+			window.location.href = getHrefFromTarget( $currentGuiderTarget );
+		} );
+	}
+
 	/**
 	 * Public anonymous editor acquisition API
 	 *
@@ -188,81 +203,35 @@
 	 * @singleton
 	 */
 	mw.gettingStarted.anonymousEditorAcquisition = self = {
+
 		/**
-		 * Handles the 'no thanks' selection when the target
-		 * is a VisualEditor edit link.
+		 * Handles the 'No thanks' and 'Continue editing' selection.
 		 */
-		handleNoThanksForVisualEditor: function () {
-			gt.hideAll();
-			if ( isViewPage ) {
-				logEvent( 'SignupExpCTAButtonClick', {
-					token: token,
-					cta: 'pre-edit',
-					button: 'edit',
-					namespace: namespace
-				} );
+		handleContinue: function () {
+			var isTargetVEEditLink =
+				$currentGuiderTarget.is( '#ca-ve-edit' ) || $currentGuiderTarget.is( '.mw-editsection-visualeditor' );
 
-				// Load VE without full page load
-
-				// NOTE (phuedx, 2014-05-14) Because we're
-				// triggering the click event of the
-				// Edit[ source] link, we have to temporarily
-				// disable logging the SignupExpPageLinkClick
-				// event.
-				isLinkClickLoggingDisabled = true;
-				$currentGuiderTarget.click();
-				isLinkClickLoggingDisabled = false;
+			if ( isTargetVEEditLink && isViewPage ) {
+				logContinueAndClickTarget();
 			} else {
-				// Load VE with full page load
-				this.handleNoThanksWithPageLoad();
+				logContinueAndFollowTarget();
 			}
 		},
 
 		/**
-		 * Handle no thanks by following a link with a full page load
+		 * Handles the 'Sign up and edit' and 'Sign up' selections from the
+		 * pre-edit v1 and v2 variants respectively. Goes to the signup page,
+		 * using the current page as the returnto and the query string from the
+		 * edit tab/link as the returntoquery.
 		 */
-		handleNoThanksWithPageLoad: function () {
-			logEventOrTimeout( 'SignupExpCTAButtonClick', {
-				token: token,
-				cta: 'pre-edit',
-				button: 'edit',
-				namespace: namespace
-			} ).always( function () {
-				window.location.href = getHrefFromTarget( $currentGuiderTarget );
-			} );
-		},
-
-		/**
-		 * Handles the 'Sign up and edit' selection.  Goes to the signup page, using the
-		 * current page as the returnto and the query string from the edit tab/link as the
-		 * returntoquery.
-		 */
-		handleSignupAndEdit: function () {
-			self.handleSignup( 'pre-edit', new mw.Uri( getHrefFromTarget( $currentGuiderTarget ) ) );
-		},
-
-		/**
-		 * Handles the both the 'Sign up and edit' and 'Create my account' selections.
-		 *
-		 * @param {string=post-edit} cta The 'cta' parameter of the SignupExpCTAButtonClick
-		 *   schema. Either 'pre-edit' or 'post-edit'
-		 * @param {mw.Uri} uri The URI to extract the returntoquery parameter from.
-		 *   Defaults to the current URI
-		 */
-		handleSignup: function ( cta, uri ) {
-			if ( cta === undefined ) {
-				cta = 'post-edit';
-			}
-
-			if ( uri === undefined ) {
-				uri = new mw.Uri();
-			}
+		handleSignup: function () {
+			var uri =  new mw.Uri( getHrefFromTarget( $currentGuiderTarget ) );
 
 			delete uri.query.title;
 
 			logEventOrTimeout( 'SignupExpCTAButtonClick', {
 				token: token,
-				cta: cta,
+				cta: bucket,
 				button: 'signup',
 				namespace: namespace
 			} ).always( function () {
@@ -275,46 +244,48 @@
 		},
 
 		/**
-		 * Handles dismissal of the pre- and post-edit CTAs.
+		 * Handles dismissal of either version of the pre-edit CTA.
 		 */
-		handleClose: function ( cta ) {
-			logEvent( 'SignupExpCTAButtonClick', {
+		handleClose: function () {
+			mw.eventLog.logEvent( 'SignupExpCTAButtonClick', {
 				token: token,
-				cta: cta,
+				cta: bucket,
 				button: 'dismiss',
 				namespace: namespace
+			} );
+		},
+
+		/**
+		 * Handles the display of the pre-edit CTA.
+		 */
+		handleShow: function () {
+			mw.eventLog.logEvent( 'SignupExpCTAImpression', {
+				token: token,
+				cta: bucket,
+				namespace: mw.config.get( 'wgNamespaceNumber' )
 			} );
 		}
 	};
 
 	$( function () {
-		var isPreEdit = bucket === 'pre-edit',
-			shouldShowCta = mw.cookie.get( ctaFlagKey ) === null,
-			shouldShowPreEditCta = isPreEdit && shouldShowCta;
+		var shouldShowCta = mw.cookie.get( ctaFlagKey ) === null && bucket !== Bucket.CONTROL;
 
-		// In the pre-edit variant, clicking "edit" or edit source"
-		// shows a guider so don't follow the link and allow the
-		// SignupExpPageLinkClick event to be logged asynchronously. No
-		// such guider is shown in the control or post-edit variants, or
-		// when the user has already seen the CTA, so delay following the
-		// link until after the event is logged.
-		logLinkClick( '#ca-edit', 'edit page', !shouldShowPreEditCta );
-		logLinkClick( '.mw-editsection a:not(.mw-editsection-visualeditor)', 'edit section', !shouldShowPreEditCta );
+		// If clicking "edit" or "edit source" shows a guider, then don't follow
+		// the link and allow the SignupExpPageLinkClick event to be logged
+		// asynchronously.
+		logLinkClick( '#ca-edit', 'edit page', !shouldShowCta );
+		logLinkClick( '.mw-editsection a:not(.mw-editsection-visualeditor)', 'edit section', !shouldShowCta );
 
-		// That said, if the user is activating the Visual Editor, and
-		// that doesn't require a page reload, then allow the event to be
-		// logged asynchronously.
-		logLinkClick( '#ca-ve-edit', 'edit page', !isViewPage && !shouldShowPreEditCta );
-		logLinkClick( '.mw-editsection-visualeditor', 'edit section', !isViewPage && !shouldShowPreEditCta );
+		// That said, if the user is activating the Visual Editor, and that
+		// doesn't require a page reload, then allow the event to be logged
+		// asynchronously.
+		logLinkClick( '#ca-ve-edit', 'edit page', !isViewPage && !shouldShowCta );
+		logLinkClick( '.mw-editsection-visualeditor', 'edit section', !isViewPage && !shouldShowCta );
 
 		logLinkClick( '#pt-createaccount', 'create account' );
 
 		if ( shouldShowCta ) {
-			if ( isPreEdit ) {
-				initPreEditVariant();
-			} else if ( bucket === 'post-edit' ) {
-				initPostEditVariant();
-			}
+			initVariants();
 		}
 	} );
 
