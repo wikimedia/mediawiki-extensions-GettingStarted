@@ -25,7 +25,8 @@
 					namemsg: 'guidedtour-tour-anonymouseditoracquisitionpreeditv2-continue',
 					onclick: function () {
 						mw.gettingStarted.anonymousEditorAcquisition.handleContinue();
-					}
+					},
+					action: 'wikiLink'
 				},
 
 				// "Sign up"
