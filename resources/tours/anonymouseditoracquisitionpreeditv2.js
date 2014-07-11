@@ -26,7 +26,7 @@
 					onclick: function () {
 						mw.gettingStarted.anonymousEditorAcquisition.handleContinue();
 					},
-					action: 'wikiLink'
+					type: 'neutral'
 				},
 
 				// "Sign up"
