@@ -50,8 +50,9 @@
 			autoFocus: true,
 			width: 300,
 			shouldSkip: gt.isEditing,
+			allowAutomaticNext: false,
 			buttons: [ {
-				namemsg: hasEditSection ? 'guidedtour-next-button' : 'guidedtour-okay-button',
+				action: hasEditSection ? 'next' : 'okay',
 				onclick: function () {
 					if ( hasEditSection ) {
 						mw.libs.guiders.next();
