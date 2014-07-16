@@ -6,10 +6,9 @@ use Title, User;
 
 /**
   Approve or reject a given page for suitability with GettingStarted.
+  Base filter shared for all task types
 */
-class PageFilter {
-	const MAX_PAGE_LENGTH = 10000;
-
+class BasePageFilter {
 	/** @var User */
 	protected $user;
 
@@ -75,15 +74,15 @@ class PageFilter {
 		$notExcludedTitle = $this->excludedTitle === null ||
 			!$title->equals( $this->excludedTitle );
 		return $length > 0
-			&& $length <= self::MAX_PAGE_LENGTH
 			// RedisCategorySync ignores category changes outside NS_MAIN,
 			// but the API can still access pages outside.
 			&& $title->inNamespace( NS_MAIN )
 			&& $notExcludedTitle
 			&& $title->userCan( 'edit', $this->user )
-			&& !$this->inExcludedCategories( $title );
-
-
+			&& !(
+				$this->user->isNewbie()
+				&& $this->inExcludedCategories( $title )
+			);
 	}
 }
 

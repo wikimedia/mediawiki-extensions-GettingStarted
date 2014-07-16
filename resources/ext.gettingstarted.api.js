@@ -30,13 +30,14 @@
 
 			if ( mw.config.get( 'wgGettingStartedConfig' ).hasCategories ) {
 				params = {
-					action: 'gettingstartedgetpages',
-					taskname: options.taskName,
-					count: options.count
+					action: 'query',
+					list: 'gettingstartedgetpages',
+					gsgptaskname: options.taskName,
+					gsgpcount: options.count
 				};
 
 				if ( options.excludedTitle ) {
-					params.excludedtitle = options.excludedTitle;
+					params.gsgpexcludedtitle = options.excludedTitle;
 				}
 
 				this.get( params ).done( function ( resp ) {

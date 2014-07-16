@@ -31,7 +31,7 @@ class RedisCategorySync {
 
 	/**
 	 * Acquire a Redis connection.
-	 * @return Redis|bool Redis client or false.
+	 * @return RedisConnRef|bool Redis client or false.
 	 */
 	public static function getClient() {
 		global $wgGettingStartedRedis, $wgGettingStartedRedisOptions;
