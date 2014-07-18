@@ -41,12 +41,13 @@
 	"gettingstarted-cta-close": "Zamknij",
 	"gettingstarted-cta-heading": "Pomóż {{GRAMMAR:C.lp|{{SITENAME}}}}",
 	"gettingstarted-cta-text": "Możesz w różny sposób wnieść wkład w {{GRAMMAR:B.lp|{{SITENAME}}}}",
-	"gettingstarted-cta-edit-page": "Edytuj stronę",
+	"gettingstarted-cta-edit-page": "Edytuj tę stronę",
 	"gettingstarted-cta-edit-page-sub": "Pokażemy ci, jak",
 	"gettingstarted-cta-fix-pages": "Znajdź strony wymagające drobnych poprawek",
 	"gettingstarted-cta-fix-pages-sub": "Pokażemy ci, jak edytować",
 	"gettingstarted-cta-leave": "Nie, dziękuję, może później",
-	"guidedtour-tour-anonymouseditoracquisitionpreedit-continue": "Nie, dziękuję",
-	"guidedtour-tour-anonymouseditoracquisitionpostedit-description": "Załóż konto do edytowania, dzięki temu będziesz mógł:\n<ul>\n<li>Śledzić swój wkład</li>\n<li>Przeglądać edycje na twoich ulubionych stronach</li>\n<li>Połączyć się z innymi edytorami Wikipedii</li>\n<li>Uzyskać szybki dostęp do nowych funkcji</li>\n</ul>",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title-wikipedia": "Edytuj cały artykuł..."
+	"guidedtour-tour-anonymouseditoracquisitionpreeditv1-continue": "Nie, dziękuję",
+	"guidedtour-tour-anonymouseditoracquisitionpreeditv2-sign-up": "Zarejestruj się",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title-wikipedia": "Edytuj cały artykuł...",
+	"gettingstarted-cta-edit-page-wikipedia": "Edytuj ten artykuł"
 }
