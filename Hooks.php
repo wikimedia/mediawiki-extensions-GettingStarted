@@ -257,8 +257,6 @@ class Hooks {
 	 * @return bool
 	 */
 	public static function onBeforePageDisplay( OutputPage $out, \Skin $skin ) {
-		global $wgGettingStartedRunTest;
-
 		$user = $out->getUser();
 
 		if ( self::shouldLoadToolbar( $out, $user ) ) {
@@ -284,12 +282,6 @@ class Hooks {
 			// suitable name), then decide what to do about
 			// redirect-page-impression (maybe log on the server, or get rid of it?)
 			self::addReturnToModules( $out, $skin );
-		}
-
-		if ( $wgGettingStartedRunTest && $user->isAnon() ) {
-			$out->addModules( array(
-				'ext.gettingstarted.anonymousEditorAcquisition',
-			) );
 		}
 
 		return true;
