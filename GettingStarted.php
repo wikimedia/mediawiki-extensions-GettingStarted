@@ -79,15 +79,22 @@ $wgGettingStartedRunTest = false;
 $wgAutoloadClasses += array(
 	'GettingStarted\Hooks' => __DIR__ . '/Hooks.php',
 	'GettingStarted\RedisCategorySync' => __DIR__ . '/RedisCategorySync.php',
-	'GettingStarted\PageFilter' => __DIR__ . '/PageFilter.php',
+	'GettingStarted\PageFilterFactory' => __DIR__ . '/PageFilterFactory.php',
+	'GettingStarted\BasePageFilter' => __DIR__ . '/BasePageFilter.php',
+	'GettingStarted\CategoryPageFilter' => __DIR__ . '/CategoryPageFilter.php',
 	'GettingStarted\ApiGettingStartedGetPages' => __DIR__ . '/api/ApiGettingStartedGetPages.php',
+	'GettingStarted\PageSuggesterFactory' => __DIR__ . '/PageSuggesterFactory.php',
+	'GettingStarted\PageSuggester' => __DIR__ . '/PageSuggester.php',
+	'GettingStarted\CategoryPageSuggester' => __DIR__ . '/CategoryPageSuggester.php',
+	'GettingStarted\MoreLikePageSuggester' => __DIR__ . '/MoreLikePageSuggester.php',
 );
 
 $wgMessagesDirs['GettingStarted'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles[ 'GettingStarted' ] = __DIR__ . '/GettingStarted.i18n.php';
 
 // APIs
-$wgAPIModules['gettingstartedgetpages'] = 'GettingStarted\ApiGettingStartedGetPages';
+$wgAPIListModules['gettingstartedgetpages'] = 'GettingStarted\ApiGettingStartedGetPages';
+
 
 // Modules
 

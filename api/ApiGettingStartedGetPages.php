@@ -4,96 +4,93 @@ namespace GettingStarted;
 
 use ApiBase, Category, Title;
 
-class ApiGettingStartedGetPages extends ApiBase {
-	const MAX_ATTEMPTS = 100;
+class ApiGettingStartedGetPages extends \ApiQueryGeneratorBase {
+	const MAX_SUGGESTER_CALLS = 10;
+
+	public function __construct( \ApiQuery $queryModule, $moduleName ) {
+		parent::__construct( $queryModule, $moduleName, 'gsgp' );
+	}
 
 	public function execute() {
-		global $wgGettingStartedCategoriesForTaskTypes;
-
 		$result = $this->getResult();
 
-		// For PageFilter and specifically userCan( 'edit' )
-		$user = $this->getUser();
-
-		$taskName = $this->getParameter( 'taskname' );
-		$excludedTitle = Title::newFromText( $this->getParameter( 'excludedtitle' ) );
-		$count = $this->getParameter( 'count' );
 		$data = array(
 			'titles' => array()
 		);
 
-		if ( isset( $wgGettingStartedCategoriesForTaskTypes[ $taskName ] ) ) {
-			$sanitizedTitle = Title::newFromText( $wgGettingStartedCategoriesForTaskTypes[ $taskName ] );
+		$titles = $this->getArticles();
 
-			if ( $sanitizedTitle && $sanitizedTitle->inNamespace( NS_CATEGORY ) ) {
-				$category = Category::newFromTitle( $sanitizedTitle );
-				$pageFilter = new PageFilter( $user, $excludedTitle );
-				$titles = self::getRandomArticles( $count, $category, $pageFilter );
-
-				foreach ( $titles as $title ) {
-					$data['titles'][] = $title->getPrefixedText();
-				}
-			}
-		} else {
-			// TODO (phuedx 2014-02-05): This is technically a
-			// failure and should be logged.
+		foreach ( $titles as $title ) {
+			$data['titles'][] = $title->getPrefixedText();
 		}
 
 		$result->setIndexedTagName( $data['titles'], 'title' );
 		$result->addValue( null, $this->getModuleName(), $data );
 	}
 
+	public function executeGenerator( $resultPageSet ) {
+		$resultPageSet->populateFromTitles( $this->getArticles() );
+	}
+
 	/**
-	 * Get a random set of $numWanted unique pages in the
-	 * category. If fewer than $numWanted pages exist in category,
-	 * return as many as are available. It is up to the caller to decide
-	 * how to handle the deficit.
+	 * Get a set of 'count' unique pages, choosing the correct PageSuggester and
+	 * PageFilter based on 'taskname', and using a given base/excluded title (if
+	 * specified by 'excludedtitle').
 	 *
-	 * @param int $numWanted Number of unique pages to get.
-	 * @param Category $category category to choose from
-	 * @param PageFilter $pageFilter filter than can approve or reject a page
-	 * @return array Set of $numWanted unique Title objects (or however many
-	 *   were available, if the desired count was not satisfiable).
+	 * If fewer than 'count' pages acceptable suggestions are available, raturn as
+	 * many as are available. It is up to the caller to decide how to handle the deficit.
+	 *
+	 * @return array Array of 'count' unique Title objects (or however many were
+	 *  available, if the desired count was not satisfiable).
 	 */
-	protected function getRandomArticles( $numWanted, Category $category, PageFilter $pageFilter ) {
-		$key = RedisCategorySync::makeCategoryKey( $category );
+	protected function getArticles() {
+		$user = $this->getUser();
+		$taskName = $this->getParameter( 'taskname' );
+		$excludedTitle = Title::newFromText( $this->getParameter( 'excludedtitle' ) );
+		$numWanted = $this->getParameter( 'count' );
 
-		$redis = RedisCategorySync::getClient();
-		if ( !$redis ) {
-			wfDebugLog( 'GettingStarted', "Unable to acquire redis connection.\n" );
-			return array();
+		$suggester = PageSuggesterFactory::getPageSuggester( $taskName, $this->getRequest(), $excludedTitle );
+		if ( $suggester === null ) {
+			$this->dieUsage( "Invalid 'taskname' parameter, missing dependency (CirrusSearch is required for 'morelike'), or excludedtitle not provided when task requires it" );
 		}
+		$pageFilter = PageFilterFactory::getPageFilter( $taskName, $user, $excludedTitle );
 
-		// Map article ID to Title.  At the end, we simply return a non-associative array of Titles.
-		// However, sRandMember can return the same ID more than once.  This allows us to easily
-		// avoid these duplicates with array_key_exists.
-		$titles = array();
-
+		// We either retry or push the offset, depending on whether the suggester is randomized
+		$totalResultCount = 0;
 		$attempts = 0;
-		while ( count( $titles ) < $numWanted ) {
-			$attempts++;
-			// Sanity check to prevent calling srand or filter too many times
-			if ( $attempts >= self::MAX_ATTEMPTS ) {
-				wfDebugLog( 'GettingStarted', 'Returning early after ' . self::MAX_ATTEMPTS . ".\n" );
-				return array_values( $titles );
-			}
-			try {
-				$randomArticleID = $redis->sRandMember( $key );
-				// If it's not numeric, it's most likely false, meaning empty set or Redis failure.
-				if ( is_numeric( $randomArticleID ) && !array_key_exists( $randomArticleID, $titles ) ) {
-					$title = Title::newFromID( $randomArticleID );
-					// Null means the title no longer exists, possibly due to bug 56044
-					if ( $title !== null && $pageFilter->isAllowedPage( $title ) ) {
-						$titles[$randomArticleID] = $title;
-					}
-				}
-			} catch ( RedisException $e ) {
-				wfDebugLog( 'GettingStarted', 'Redis exception: ' . $e->getMessage() . ".  Returning early.\n" );
-				return array_values( $titles );
-			}
-		}
+		$offset = 0;
+		$isRandomized = $suggester->isRandomized();
+		$filteredTitles = array();
 
-		return array_values( $titles );
+		do {
+			$unfilteredTitles = $suggester->getArticles( $numWanted - $totalResultCount, $offset );
+
+			$newFilteredTitles = array_filter( $unfilteredTitles, array( $pageFilter, 'isAllowedPage' ) );
+			$newFilteredTitles = array_udiff( $newFilteredTitles, $filteredTitles, function ( $t1, $t2 ) {
+				return $t1->getArticleID() - $t2->getArticleID();
+			} );
+			$filteredTitles = array_merge( $filteredTitles, $newFilteredTitles );
+
+			$totalResultCount = count( $filteredTitles );
+
+			if ( !$isRandomized ) {
+				$numUnfilteredTitles = count( $unfilteredTitles );
+				$prevOffset = $offset;
+				$offset += $numUnfilteredTitles;
+			}
+			$attempts++;
+		} while (
+			$totalResultCount < $numWanted &&
+			$attempts < self::MAX_SUGGESTER_CALLS &&
+			(
+				$isRandomized ||
+
+				// If it's not randomized, only continue if some progress is being made
+				$offset !== $prevOffset
+			)
+		);
+
+		return $filteredTitles;
 	}
 
 	public function getDescription() {
@@ -105,8 +102,8 @@ class ApiGettingStartedGetPages extends ApiBase {
 	public function getParamDescription() {
 		return array(
 			'taskname' => 'Task name, for example, "copyedit"',
-			'excludedtitle' => 'Full title of a page to exclude from the list',
-			'count' => 'Requested count; will attempt to fetch this exact number, but may fetch fewer if no more are found after multiple attempts'
+			'excludedtitle' => 'Full title of a page to exclude from the list; also used as the base title for recommendations based on a given page',
+			'count' => 'Requested count; will attempt to fetch this exact number, but may fetch fewer if no more are found after multiple attempts',
 		);
 	}
 
@@ -129,7 +126,7 @@ class ApiGettingStartedGetPages extends ApiBase {
 
 	public function getExamples() {
 		return array(
-			'api.php?action=gettingstartedgetpages&taskname=copyedit&excludedtitle=Earth&count=1',
+			'api.php?action=query&list=gettingstartedgetpages&gsgptaskname=copyedit&gsgpexcludedtitle=Earth&gsgpcount=1',
 		);
 	}
 }
