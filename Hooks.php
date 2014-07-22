@@ -288,6 +288,9 @@ class Hooks {
 
 		if ( $wgGettingStartedRunTest && $user->isLoggedIn() ) {
 			$out->addModules( 'ext.gettingstarted.lightbulb.postEdit' );
+			if ( $user->getEditCount() > 0 ) {
+				$out->addModules( 'ext.gettingstarted.lightbulb.flyout' );
+			}
 		}
 
 		return true;

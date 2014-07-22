@@ -171,12 +171,44 @@ $wgResourceModules[ 'ext.gettingstarted.lightbulb.postEdit' ] = array(
 	'styles' => 'lightbulb/lightbulb.postEdit.less',
 	'dependencies' => array(
 		'ext.gettingstarted.api',
-		'mediawiki.util',
-		'moment',
+		'ext.gettingstarted.lightbulb.common',
 	),
 	'messages' => array(
 		'gettingstarted-lightbulb-notification-body',
 		'gettingstarted-lightbulb-notification-body-lastedited',
+	),
+) + $gettingStartedModuleInfo;
+
+$wgResourceModules[ 'ext.gettingstarted.lightbulb.flyout' ] = array(
+	'scripts' => 'lightbulb/lightbulb.flyout.js',
+	'styles' => 'lightbulb/lightbulb.flyout.less',
+	'dependencies' => array(
+		'ext.gettingstarted.api',
+		'ext.gettingstarted.lightbulb.common',
+
+		// TODO (phuedx, 2014/07/30): This /looks/ like it's a
+		// heavyweight dependency. Ideally, the flyout-like behaviour
+		// should be extracted from the GuidedTour library, but, for
+		// now, it's enough to emulate it.
+		'ext.guidedTour.styles',
+		'mediawiki.user',
+	),
+	'messages' => array(
+		'gettingstarted-lightbulb-recommendations-personal-tool',
+		'gettingstarted-lightbulb-heading',
+		'gettingstarted-lightbulb-text',
+	)
+) + $gettingStartedModuleInfo;
+
+$wgResourceModules[ 'ext.gettingstarted.lightbulb.common' ] = array(
+	'styles' => 'lightbulb/lightbulb.common.less',
+	'scripts' => array(
+		'lightbulb/lightbulb.parser.js',
+		'lightbulb/lightbulb.suggestionView.js',
+	),
+	'dependencies' => array(
+		'mediawiki.util',
+		'moment',
 	),
 ) + $gettingStartedModuleInfo;
 
