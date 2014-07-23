@@ -60,6 +60,8 @@
 	"guidedtour-tour-anonymouseditoracquisitionpreeditv1-description": "我们建议您创建账户编辑{{SITENAME}}。这是免费的、自由的且不需要任何个人信息。",
 	"guidedtour-tour-anonymouseditoracquisitionpreeditv1-sign-up": "注册并编辑",
 	"guidedtour-tour-anonymouseditoracquisitionpreeditv1-continue": "不，谢谢",
+	"guidedtour-tour-anonymouseditoracquisitionpreeditv2-title": "注册或继续编辑",
+	"guidedtour-tour-anonymouseditoracquisitionpreeditv2-description": "编辑{{SITENAME}}不需要注册，但它很容易并不需要个人信息。",
 	"guidedtour-tour-anonymouseditoracquisitionpreeditv2-sign-up": "注册",
 	"guidedtour-tour-anonymouseditoracquisitionpreeditv2-continue": "继续编辑",
 	"gettingstarted-task-toolbar-try-another-text-wikipedia": "尝试另一条目 ►",

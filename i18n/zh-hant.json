@@ -5,7 +5,8 @@
 			"Liuxinyu970226",
 			"Simon Shek",
 			"StephDC",
-			"Justincheng12345"
+			"Justincheng12345",
+			"LNDDYL"
 		]
 	},
 	"gettingstarted": "入門",
@@ -22,8 +23,8 @@
 	"gettingstarted-task-copyedit-toolbar-try-another-title": "隨機轉到一個你可以編輯改善的頁面",
 	"gettingstarted-task-clarify-toolbar-description": "此頁面可能存在混淆或含糊不清。你可以嘗試讓它更清楚。",
 	"gettingstarted-task-clarify-toolbar-try-another-title": "隨機轉到一篇您可以澄清的文章",
-	"gettingstarted-task-addlinks-toolbar-description": "此頁面可能需要更多鏈接。尋找在{{SITENAME}}上有此詞的頁面。",
-	"gettingstarted-task-addlinks-toolbar-try-another-title": "隨機轉到一個你可以增加鏈接的頁面",
+	"gettingstarted-task-addlinks-toolbar-description": "此頁面可能需要更多連結。尋找在{{SITENAME}}上有此詞的頁面。",
+	"gettingstarted-task-addlinks-toolbar-try-another-title": "隨機轉到一個你可以增加連結的頁面",
 	"guidedtour-tour-gettingstartedtasktoolbarintro-title": "如何開始",
 	"guidedtour-tour-gettingstartedtasktoolbarintro-description": "來簡單看看整篇亟待改進的文章。如果你感到不知所措，不要擔心。你不必是本主題的專家！如果您需要幫助或想要嘗試另一篇文章，請使用在在頂欄中的連結。",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "需要做什麼",
@@ -46,7 +47,5 @@
 	"gettingstarted-cta-fix-pages": "編輯建議頁面",
 	"gettingstarted-cta-fix-pages-sub": "我們將挑選一些較為簡單的東西",
 	"gettingstarted-cta-leave": "不用了，以後再說吧",
-	"guidedtour-tour-anonymouseditoracquisitionpreedit-continue": "不，謝謝",
-	"guidedtour-tour-anonymouseditoracquisitionpostedit-title": "加入 {{SITENAME}}",
-	"guidedtour-tour-anonymouseditoracquisitionpostedit-description": "建立賬戶以編輯並：\n<ul>\n<li>跟蹤您的貢獻</li>\n<li>關注您喜愛頁面更新</li>\n<li>聯絡其他維基百科編者</li>\n<li>較早獲取新功能</li>\n</ul>"
+	"guidedtour-tour-anonymouseditoracquisitionpreeditv1-continue": "不，謝謝"
 }
