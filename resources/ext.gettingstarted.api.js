@@ -59,6 +59,50 @@
 		},
 
 		/**
+		 * Requests one or more page suggestions like the excluded page from
+		 *   the server.
+		 *
+		 * @param {Object} options API parameters
+		 * @param {string} options.excludedTitle title to get more pages like which
+		 *    is excluded from the array of page objects returned.
+		 * @param {number} options.count amount of pages to request
+		 * @param {number} options.thumbSize size of thumbnail for each page
+		 * @return {jQuery.Promise} promise for API response
+		 * @return {Array} return.done On success, promise's done callback is called with
+		 *   an array of indexed page objects.
+		 * @return {string} return.fail On failure, promise's fail callback is called with
+		 *   the error code
+		 */
+		getSuggestions: function ( options ) {
+			var dfd = $.Deferred(),
+				params = {
+					action: 'query',
+					generator: 'gettingstartedgetpages',
+					indexpageids: true,
+					ggsgpexcludedtitle: options.excludedTitle,
+					ggsgptaskname: 'morelike',
+					ggsgpcount: options.count,
+					pilimit: options.count, // Same as ggspcount
+					// During testing we found doubling to be appropriate
+					pithumbsize: options.thumbSize * 2,
+					prop: 'pageimages|revisions'
+				};
+
+				this.get( params ).done( function ( resp ) {
+					// NOTE: Redundancy for Bug: 10887
+					if ( resp.query && resp.query.pageids && resp.query.pageids.length ) {
+						dfd.resolve( resp.query );
+					} else {
+						dfd.reject( 'gettingstarted-unexpected-api-response' );
+					}
+				} ).fail( function ( errCode ) {
+					dfd.reject( errCode );
+				} );
+
+			return dfd.promise();
+		},
+
+		/**
 		 * Convenience method to request a single page for a given task type (e.g. 'copyedit')
 		 *
 		 * @param {Object} options API parameters

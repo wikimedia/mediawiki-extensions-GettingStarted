@@ -164,6 +164,22 @@ $wgResourceModules['ext.guidedTour.tour.gettingstartedtasktoolbarve'] = array(
 	),
 ) + $gettingStartedModuleInfo;
 
+$wgResourceModules[ 'ext.gettingstarted.lightbulb.postEdit' ] = array(
+	'scripts' => array(
+		'lightbulb/lightbulb.postEdit.js',
+	),
+	'styles' => 'lightbulb/lightbulb.postEdit.less',
+	'dependencies' => array(
+		'ext.gettingstarted.api',
+		'mediawiki.util',
+		'moment',
+	),
+	'messages' => array(
+		'gettingstarted-lightbulb-notification-body',
+		'gettingstarted-lightbulb-notification-body-lastedited',
+	),
+) + $gettingStartedModuleInfo;
+
 $wgResourceModules[ 'ext.gettingstarted.logging' ] = array(
 	'scripts' => 'ext.gettingstarted.logging.js',
 	'dependencies' => array(
