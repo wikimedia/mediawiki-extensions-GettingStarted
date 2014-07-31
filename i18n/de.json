@@ -68,5 +68,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description-wikipedia": "Jetzt kannst du die Artikelinhalte bearbeiten. Wenn du fertig bist, klicke auf „{{int:visualeditor-toolbar-savedialog}}“, um deine Änderungen zu überprüfen und zu speichern.",
 	"guidedtour-tour-gettingstarted-click-preview-description-wikipedia": "Mit dem Klicken auf „{{int:showpreview}}“ kannst du sehen, wie der Artikel mit deinen Änderungen aussehen wird. Vergiss nicht zu speichern.",
 	"gettingstarted-cta-edit-page-wikipedia": "Diesen Artikel bearbeiten",
-	"gettingstarted-cta-fix-pages-wikipedia": "Einen vorgeschlagenen Artikel bearbeiten"
+	"gettingstarted-cta-fix-pages-wikipedia": "Einen vorgeschlagenen Artikel bearbeiten",
+	"gettingstarted-lightbulb-notification-body": "Einen ähnlichen Artikel bearbeiten.",
+	"gettingstarted-lightbulb-notification-body-lastedited": "Bearbeitet $1"
 }

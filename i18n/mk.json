@@ -65,5 +65,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description-wikipedia": "Сега можете да ја уредите содржината на страницата. Кога ќе завршите, стиснете на „{{int:visualeditor-toolbar-savedialog}}“ за да ги прегледате и зачувате промените.",
 	"guidedtour-tour-gettingstarted-click-preview-description-wikipedia": "Ако стиснете на „{{int:showpreview}}“ ќе видите како ќе изгледа статијата со вашите измени. Само не заборавајте да ги зачувате.",
 	"gettingstarted-cta-edit-page-wikipedia": "Уреди ја статијава",
-	"gettingstarted-cta-fix-pages-wikipedia": "Уредете предложена статија"
+	"gettingstarted-cta-fix-pages-wikipedia": "Уредете предложена статија",
+	"gettingstarted-lightbulb-notification-body": "Уредете слична статија.",
+	"gettingstarted-lightbulb-notification-body-lastedited": "Изменета $1"
 }

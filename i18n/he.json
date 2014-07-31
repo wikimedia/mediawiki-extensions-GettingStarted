@@ -72,5 +72,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description-wikipedia": "כעת באפשרותך לערוך את התוכן של הערך. בסיום יש ללחוץ על \"{{int:visualeditor-toolbar-savedialog}}\" כדי לסקור ולשמור את השינויים שלך.",
 	"guidedtour-tour-gettingstarted-click-preview-description-wikipedia": "לחיצה על \"{{int:showpreview}}\" מאפשרת לך לראות איך ייראה הערך עם השינויים שלך. רק לא לשכוח לשמור.",
 	"gettingstarted-cta-edit-page-wikipedia": "עריכת הערך הזה",
-	"gettingstarted-cta-fix-pages-wikipedia": "עריכת ערך מוצע"
+	"gettingstarted-cta-fix-pages-wikipedia": "עריכת ערך מוצע",
+	"gettingstarted-lightbulb-notification-body": "לערוך ערך דומה.",
+	"gettingstarted-lightbulb-notification-body-lastedited": "נערך $1"
 }
