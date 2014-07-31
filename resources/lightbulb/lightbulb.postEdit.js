@@ -20,9 +20,11 @@
 		$notification.find( 'h1' ).text( headerMsg );
 		$notificationBody.find( 'p' ).text( notificationBodyMsg );
 
-		$.each( suggestions, function ( i, suggestion ) {
-			$notificationBody.append( suggestionRenderer.render( suggestion ) );
-		} );
+		if ( suggestions.length > 0 ) {
+			$notificationBody.append( suggestionRenderer.render( suggestions[0] ) );
+		} else {
+			$notificationBody.hide();
+		}
 
 		$notification.find( '.lightbulb-notification-hide' )
 			.on( 'click', function ( event ) {
@@ -42,11 +44,14 @@
 			thumbSize: 70
 		} );
 
-		suggestionsPromise.done( function ( response ) {
-			var suggestions,
+		suggestionsPromise.always( function ( response ) {
+			var suggestions = [],
 				$notification;
 
-			suggestions = parser.parse( response );
+			if ( suggestionsPromise.state() === 'resolved' ) {
+				suggestions = parser.parse( response );
+			}
+
 			$notification = createNotification( suggestions, data.message );
 
 			// Show the notification.
