@@ -79,6 +79,10 @@
 
 			event.preventDefault();
 
+			mw.eventLog.logEvent( 'TaskRecommendationLightbulbClick', {
+				userId: mw.config.get( 'wgUserId' )
+			} );
+
 			if ( $flyout.data( 'has-suggestions' ) ) {
 				$flyout.toggle();
 

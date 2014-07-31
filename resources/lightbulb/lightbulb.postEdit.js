@@ -9,7 +9,8 @@
 									</div>\
 								</div>',
 		notificationBodyMsg = mw.msg( 'gettingstarted-lightbulb-notification-body' ),
-		parser = new mw.gettingStarted.lightbulb.Parser();
+		parser = new mw.gettingStarted.lightbulb.Parser(),
+		mwConfig = mw.config.get( [ 'wgArticleId', 'wgUserId' ] );
 
 	function createNotification( suggestions, headerMsg ) {
 		var $notification = $( notificationTemplate ),
@@ -50,6 +51,15 @@
 
 			// Show the notification.
 			$( document.body ).append( $notification );
+
+			// Log Impression
+			mw.eventLog.logEvent( 'TaskRecommendationImpression', {
+				setId: suggestions[0].setId,
+				userId: mwConfig.wgUserId,
+				pageId: mwConfig.wgArticleId,
+				'interface': 'post-edit',
+				offset: 0
+			} );
 		} );
 	} );
 

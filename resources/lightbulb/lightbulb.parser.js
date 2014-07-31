@@ -17,15 +17,27 @@
 	 * @return {Object[]} Zero or more suggestions
 	 */
 	Parser.prototype.parse = function ( response ) {
-		return $.map( response.pageids, function( pageID ) {
-			var page = response.pages[pageID];
+		var setId = mw.user.generateRandomSessionId();
+
+		return $.map( response.pageids, function( rawPageId, index ) {
+			var page = response.pages[ rawPageId ],
+				pageId = parseInt( rawPageId, 10 );
+
+			// Log Task Recommendation
+			mw.eventLog.logEvent( 'TaskRecommendation', {
+				setId: setId,
+				pageId: pageId,
+				offset: index
+			} );
 
 			// NOTE (phuedx, 2014/07/30): Should title be an instance of
 			// mw.Title? Should lastEdited be an instance of Date?
 			return {
 				title: page.title,
 				thumbnail: page.thumbnail ? page.thumbnail.source : null,
-				lastEdited: page.revisions[0].timestamp
+				lastEdited: page.revisions[0].timestamp,
+				pageId: pageId,
+				setId: setId
 			};
 		} );
 	};

@@ -11,7 +11,8 @@
 ( function ( window, document, mw, $ ) {
 	'use strict';
 
-	var cookieOptions = { path: '/' };
+	var cookieOptions = { path: '/' },
+		LOG_EVENT_TIMEOUT = 500; // (ms)
 
 	/**
 	 * @return {Object} User's list of openTasks, if any, from the cookie.
@@ -80,6 +81,35 @@
 		return setTask( title.getPrefixedText(), task );
 	}
 
+	// Ideally the EventLogging API should provide an equivalent of `logEventOrTimeout`.
+	// However, there are currently concerns about the approach [0].
+	//
+	// [0] https://bugzilla.wikimedia.org/show_bug.cgi?id=52287
+	/**
+	 * Attempts to log an event in less than 500 milliseconds.
+	 *
+	 * Returns a promise that will be resolved or rejected when either the HTTP request to log
+	 * the event resolves or after 500 milliseconds. Note that in the former case the promise
+	 * will be resolved or rejected depending on the outcome of the HTTP request, whereas in the
+	 * latter case the promise will always be rejected.
+	 *
+	 * See `mw.eventLog.logEvent`.
+	 *
+	 * @param {string} schemaName The canonical name of the schema
+	 * @param {Object} eventInstance The event instance
+	 * @return {jQuery.Promise}
+	 */
+	function logEventOrTimeout( schemaName, eventInstance ) {
+		var dfd;
+
+		dfd = $.Deferred();
+
+		window.setTimeout( dfd.reject, LOG_EVENT_TIMEOUT );
+		mw.eventLog.logEvent( schemaName, eventInstance ).then( dfd.resolve, dfd.reject );
+
+		return dfd.promise();
+	}
+
 	mw.gettingStarted = mw.gettingStarted || {};
 	mw.gettingStarted.logging = mw.gettingStarted.logging || {};
 
@@ -88,4 +118,5 @@
 	mw.gettingStarted.logging.getTasks = getTasks;
 	mw.gettingStarted.logging.getTask = getTask;
 	mw.gettingStarted.logging.getTaskForCurrentPage = getTaskForCurrentPage;
+	mw.gettingStarted.logging.logEventOrTimeout = logEventOrTimeout;
 }( window, document, mediaWiki, jQuery ) );

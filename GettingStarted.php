@@ -172,6 +172,7 @@ $wgResourceModules[ 'ext.gettingstarted.lightbulb.postEdit' ] = array(
 	'dependencies' => array(
 		'ext.gettingstarted.api',
 		'ext.gettingstarted.lightbulb.common',
+		'schema.TaskRecommendationImpression'
 	),
 	'messages' => array(
 		'gettingstarted-lightbulb-notification-body',
@@ -192,6 +193,7 @@ $wgResourceModules[ 'ext.gettingstarted.lightbulb.flyout' ] = array(
 		// now, it's enough to emulate it.
 		'ext.guidedTour.styles',
 		'mediawiki.user',
+		'schema.TaskRecommendationLightbulbClick',
 	),
 	'messages' => array(
 		'gettingstarted-lightbulb-recommendations-personal-tool',
@@ -208,7 +210,11 @@ $wgResourceModules[ 'ext.gettingstarted.lightbulb.common' ] = array(
 	),
 	'dependencies' => array(
 		'mediawiki.util',
+		'mediawiki.user',
 		'moment',
+		'ext.gettingstarted.logging',
+		'schema.TaskRecommendation',
+		'schema.TaskRecommendationClick',
 	),
 ) + $gettingStartedModuleInfo;
 
@@ -349,6 +355,7 @@ $wgResourceModules[ 'ext.gettingstarted.anonymousEditorAcquisition' ] = array(
 		'mediawiki.Uri',
 		'mediawiki.cookie',
 		'ext.gettingstarted.user',
+		'ext.gettingstarted.logging',
 		'schema.SignupExpPageLinkClick',
 		'schema.SignupExpCTAButtonClick',
 		'ext.guidedTour.launcher',
@@ -375,6 +382,32 @@ $wgResourceModules[ 'schema.SignupExpCTAButtonClick' ] = array(
 	'class'    => 'ResourceLoaderSchemaModule',
 	'schema'   => 'SignupExpCTAButtonClick',
 	'revision' => 8965028
+);
+
+/* Events for Task Suggestions */
+
+$wgResourceModules[ 'schema.TaskRecommendationLightbulbClick' ] = array(
+	'class'    => 'ResourceLoaderSchemaModule',
+	'schema'   => 'TaskRecommendationLightbulbClick',
+	'revision' => 9433256
+);
+
+$wgResourceModules[ 'schema.TaskRecommendationImpression' ] = array(
+	'class'    => 'ResourceLoaderSchemaModule',
+	'schema'   => 'TaskRecommendationImpression',
+	'revision' => 9266226
+);
+
+$wgResourceModules[ 'schema.TaskRecommendation' ] = array(
+	'class'    => 'ResourceLoaderSchemaModule',
+	'schema'   => 'TaskRecommendation',
+	'revision' => 9266319
+);
+
+$wgResourceModules[ 'schema.TaskRecommendationClick' ] = array(
+	'class'    => 'ResourceLoaderSchemaModule',
+	'schema'   => 'TaskRecommendationClick',
+	'revision' => 9266317
 );
 
 $wgResourceModules[ 'ext.gettingstarted.assignToken' ] = array(
