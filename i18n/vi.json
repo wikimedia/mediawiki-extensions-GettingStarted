@@ -65,5 +65,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description-wikipedia": "Bạn hiện có thể sửa đổi nội dung bài này. Sau khi hoàn tất, hãy bấm “{{int:visualeditor-toolbar-savedialog}}” để xem lại và lưu các thay đổi của bạn.",
 	"guidedtour-tour-gettingstarted-click-preview-description-wikipedia": "Bấm “{{int:showpreview}}” để xem trước bài với các thay đổi của bạn. Hãy nhớ lưu bài.",
 	"gettingstarted-cta-edit-page-wikipedia": "Sửa đổi bài này",
-	"gettingstarted-cta-fix-pages-wikipedia": "Sửa đổi một trang được gợi ý"
+	"gettingstarted-cta-fix-pages-wikipedia": "Sửa đổi một trang được gợi ý",
+	"gettingstarted-lightbulb-notification-body": "Sửa đổi một bài tương tự.",
+	"gettingstarted-lightbulb-notification-body-lastedited": "Được sửa đổi $1"
 }

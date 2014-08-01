@@ -69,5 +69,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description-wikipedia": "Ora puoi modificare il contenuto della voce. Quando hai finito, clicca \"{{int:visualeditor-toolbar-savedialog}}\" per rivedere e salvare le tue modifiche.",
 	"guidedtour-tour-gettingstarted-click-preview-description-wikipedia": "Facendo clic su \"{{int:showpreview}}\" ti permette di vedere quello che sarà l'aspetto della voce con le tue modifiche. Non ti dimenticare di salvare.",
 	"gettingstarted-cta-edit-page-wikipedia": "Modifica questa voce",
-	"gettingstarted-cta-fix-pages-wikipedia": "Modifica una voce suggerita"
+	"gettingstarted-cta-fix-pages-wikipedia": "Modifica una voce suggerita",
+	"gettingstarted-lightbulb-notification-body": "Modifica una voce simile.",
+	"gettingstarted-lightbulb-notification-body-lastedited": "Modificata $1"
 }
