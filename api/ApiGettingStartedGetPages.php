@@ -51,7 +51,10 @@ class ApiGettingStartedGetPages extends \ApiQueryGeneratorBase {
 
 		$suggester = PageSuggesterFactory::getPageSuggester( $taskName, $this->getRequest(), $excludedTitle );
 		if ( $suggester === null ) {
-			$this->dieUsage( "Invalid 'taskname' parameter, missing dependency (CirrusSearch is required for 'morelike'), or excludedtitle not provided when task requires it" );
+			$this->dieUsage(
+				'Could not build suggester.  Use a valid "taskname" parameter, provide necessary dependencies (CirrusSearch is required for "morelike"), and include "excludedtitle" when the task requires it',
+				'gettingstarted_no_suggester'
+			);
 		}
 		$pageFilter = PageFilterFactory::getPageFilter( $taskName, $user, $excludedTitle );
 
