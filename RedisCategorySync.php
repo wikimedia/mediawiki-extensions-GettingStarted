@@ -2,7 +2,7 @@
 
 namespace GettingStarted;
 
-use Category, WikiPage, Title;
+use Category, WikiPage, Title, User;
 
 /**
  * Maintains sets in redis representing page IDs of NS_MAIN pages in
@@ -16,13 +16,17 @@ use Category, WikiPage, Title;
  * </code>
  */
 class RedisCategorySync {
+
+	// TODO (phuedx, 2014/07/10): Why are the categories, additions, and
+	// removals properties public?
+
 	/** @var array: array of relevant categories */
 	public static $categories;
 
-	/** @var array: arrays of [Category, WikiPage] additions to process. **/
+	/** @var array: arrays of [Category, int] additions to process. **/
 	public static $additions = array();
 
-	/** @var array: arrays of [Category, WikiPage] removals to process. **/
+	/** @var array: arrays of [Category, int] removals to process. **/
 	public static $removals = array();
 
 	/** @var bool: whether or not an update callback has been registered. **/
@@ -78,9 +82,13 @@ class RedisCategorySync {
 	}
 
 	/**
+	 * Tests whether or not the addition/removal of the category to/from the
+	 * page is relevant, i.e. whether or not the page should be added/removed
+	 * to/from the appropriate set in Redis.
+	 *
 	 * @param Category $category
 	 * @param WikiPage $page
-	 * @return bool If category / page pair should be tracked in redis.
+	 * @return bool
 	 */
 	public static function isUpdateRelevant( Category $category, WikiPage $page ) {
 		$categories = self::getCategories();
@@ -94,7 +102,7 @@ class RedisCategorySync {
 	 */
 	public static function onCategoryAfterPageAdded( Category $category, WikiPage $page ) {
 		if ( self::isUpdateRelevant( $category, $page ) ) {
-			self::$additions[] = array( $category, $page );
+			self::$additions[] = array( $category, $page->getId() );
 			self::setCallback();
 		}
 		return true;
@@ -106,9 +114,35 @@ class RedisCategorySync {
 	 */
 	public static function onCategoryAfterPageRemoved( Category $category, WikiPage $page ) {
 		if ( self::isUpdateRelevant( $category, $page ) ) {
-			self::$removals[] = array( $category, $page );
+			self::$removals[] = array( $category, $page->getId() );
 			self::setCallback();
 		}
+		return true;
+	}
+
+	/**
+	 * Removes page from all categories in redis store on delete
+	 *
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ArticleDeleteComplete
+	 * @param WikiPage $article The article that was deleted
+	 * @param User $user The user that deleted the article
+	 * @param string $reason The reason that the article was deleted
+	 * @param integer $id The ID of the article that was deleted
+	 */
+	public static function onArticleDeleteComplete( WikiPage $article, User $user, $reason, $id ) {
+		// Currently only storing pages in main namespace
+		if ( $article->getTitle()->getNamespace() !== NS_MAIN ) {
+			return true;
+		}
+		$categories = self::getCategories();
+
+		foreach ( $categories as $rawCategory ) {
+			self::$removals[] = array(
+				Category::newFromName( $rawCategory ),
+				$id
+			);
+		}
+		self::setCallback();
 		return true;
 	}
 
@@ -138,12 +172,12 @@ class RedisCategorySync {
 			try {
 				$redis = $conn->multi( \Redis::PIPELINE );
 				while ( RedisCategorySync::$additions ) {
-					list( $category, $page ) = array_pop( RedisCategorySync::$additions );
-					$redis->sAdd( RedisCategorySync::makeCategoryKey( $category ), $page->getId() );
+					list( $category, $pageID ) = array_pop( RedisCategorySync::$additions );
+					$redis->sAdd( RedisCategorySync::makeCategoryKey( $category ), $pageID );
 				}
 				while ( RedisCategorySync::$removals ) {
-					list( $category, $page ) = array_pop( RedisCategorySync::$removals );
-					$redis->sRem( RedisCategorySync::makeCategoryKey( $category ), $page->getId() );
+					list( $category, $pageID ) = array_pop( RedisCategorySync::$removals );
+					$redis->sRem( RedisCategorySync::makeCategoryKey( $category ), $pageID );
 				}
 				$redis->exec();
 			} catch ( \RedisException $e ) {
