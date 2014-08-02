@@ -192,6 +192,7 @@ $wgResourceModules[ 'ext.gettingstarted.lightbulb.flyout' ] = array(
 		// should be extracted from the GuidedTour library, but, for
 		// now, it's enough to emulate it.
 		'ext.guidedTour.styles',
+		'jquery.client',
 		'mediawiki.user',
 		'schema.TaskRecommendationLightbulbClick',
 	),
@@ -199,6 +200,8 @@ $wgResourceModules[ 'ext.gettingstarted.lightbulb.flyout' ] = array(
 		'gettingstarted-lightbulb-recommendations-personal-tool',
 		'gettingstarted-lightbulb-heading',
 		'gettingstarted-lightbulb-text',
+		'gettingstarted-lightbulb-flyout-back',
+		'gettingstarted-lightbulb-flyout-next',
 	)
 ) + $gettingStartedModuleInfo;
 
@@ -206,7 +209,7 @@ $wgResourceModules[ 'ext.gettingstarted.lightbulb.common' ] = array(
 	'styles' => 'lightbulb/lightbulb.common.less',
 	'scripts' => array(
 		'lightbulb/lightbulb.parser.js',
-		'lightbulb/lightbulb.suggestionView.js',
+		'lightbulb/lightbulb.suggestionRenderer.js',
 	),
 	'dependencies' => array(
 		'mediawiki.util',

@@ -11,9 +11,9 @@
 			</div>\
 		</div>';
 
-	function SuggestionView() {}
+	function SuggestionRenderer() {}
 
-	SuggestionView.prototype.render = function( suggestion ) {
+	SuggestionRenderer.prototype.render = function( suggestion ) {
 		var $result = $( template ),
 			lastEdited,
 			url = mw.util.getUrl( suggestion.title );
@@ -57,6 +57,6 @@
 	mw.gettingStarted = mw.gettingStarted || {};
 	mw.gettingStarted.lightbulb = mw.gettingStarted.lightbulb || {};
 
-	mw.gettingStarted.lightbulb.SuggestionView = SuggestionView;
+	mw.gettingStarted.lightbulb.SuggestionRenderer = SuggestionRenderer;
 
 } ( mediaWiki, jQuery ) );

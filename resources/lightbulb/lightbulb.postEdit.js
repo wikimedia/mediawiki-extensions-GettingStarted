@@ -15,13 +15,13 @@
 	function createNotification( suggestions, headerMsg ) {
 		var $notification = $( notificationTemplate ),
 			$notificationBody = $notification.find( '.lightbulb-notification-body' ),
-			suggestionView = new mw.gettingStarted.lightbulb.SuggestionView();
+			suggestionRenderer = new mw.gettingStarted.lightbulb.SuggestionRenderer();
 
 		$notification.find( 'h1' ).text( headerMsg );
 		$notificationBody.find( 'p' ).text( notificationBodyMsg );
 
 		$.each( suggestions, function ( i, suggestion ) {
-			$notificationBody.append( suggestionView.render( suggestion ) );
+			$notificationBody.append( suggestionRenderer.render( suggestion ) );
 		} );
 
 		$notification.find( '.lightbulb-notification-hide' )
