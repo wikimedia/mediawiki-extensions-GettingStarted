@@ -15,7 +15,8 @@
 			"Zjzengdongyang",
 			"Mywood",
 			"Impersonator 1",
-			"Fengchao"
+			"Fengchao",
+			"NigelSoft"
 		]
 	},
 	"gettingstarted": "入门",
@@ -78,5 +79,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description-wikipedia": "您现在可以编辑条目内容。当您完成时，点击“{{int:visualeditor-toolbar-savedialog}}”复核并保存您的更改。",
 	"guidedtour-tour-gettingstarted-click-preview-description-wikipedia": "点击“{{int:showpreview}}”允许您查看您的更改像哪个条目。不要忘记保存。",
 	"gettingstarted-cta-edit-page-wikipedia": "编辑此条目",
-	"gettingstarted-cta-fix-pages-wikipedia": "编辑建议条目"
+	"gettingstarted-cta-fix-pages-wikipedia": "编辑建议条目",
+	"gettingstarted-lightbulb-notification-body": "编辑一篇类似的条目。",
+	"gettingstarted-lightbulb-notification-body-lastedited": "编辑于$1"
 }
