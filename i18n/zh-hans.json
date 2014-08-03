@@ -74,6 +74,7 @@
 	"gettingstarted-task-addlinks-toolbar-description-wikipedia": "此他们可能需要更多链接。寻找{{SITENAME}}上对应条目并连过去吧。",
 	"gettingstarted-task-addlinks-toolbar-try-another-title-wikipedia": "前往您可以添加链接的随机条目",
 	"guidedtour-tour-gettingstartedtasktoolbarintro-description-wikipedia": "此条目被{{SITENAME}}其他用户标记为需要改进。您不需要成为此领域的专家就可帮助。",
+	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description-wikipedia": "这些横幅表明此条目存在问题。您不需要全部修复它们，您感觉如何编辑更舒服就行。",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title-wikipedia": "编辑整段条目…",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description-wikipedia": "点击“{{int:vector-view-edit}}”以更改此条目任何内容。",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description-wikipedia": "您现在可以编辑条目内容。当您完成时，点击“{{int:visualeditor-toolbar-savedialog}}”复核并保存您的更改。",
