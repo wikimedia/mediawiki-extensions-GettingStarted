@@ -1,8 +1,9 @@
 @import "mediawiki.mixins";
+@import "lightbulb.common";
 
 @notificationWidth: 360px;
-@notificationHeaderHeight: 50px;
-@notificationGutterWidth: 46px;
+@gutterWidth: 46px;
+@headerHeight: 50px;
 
 .postedit {
 	display: none !important;
@@ -26,21 +27,13 @@
 
 	.lightbulb-notification-header {
 		position: relative;
-		height: @notificationHeaderHeight;
-		padding: 0 @notificationGutterWidth;
+		height: @headerHeight;
+		padding: 0 @gutterWidth;
 	}
 
 	h1 {
-		position: relative;
-		color: #333;
-		font-size: 1.1em;
-		font-weight: bold;
-		height: @notificationHeaderHeight;
-		line-height: @notificationHeaderHeight;
-		padding: 0;
-		margin: 0;
-		border: none;
-		overflow: visible;
+		height: @headerHeight;
+		line-height: @headerHeight;
 
 		&:before {
 			position: absolute;
@@ -52,7 +45,7 @@
 			background-repeat: no-repeat;
 			background-size: 100%;
 			top: 17px;
-			left: (-@notificationGutterWidth / 2px) - 8px;
+			left: (-@gutterWidth / 2px) - 8px;
 		}
 	}
 
@@ -66,47 +59,12 @@
 	}
 
 	.lightbulb-notification-body {
-		background-color: #f4f4f4;
+		background-color: @colorGray15;
 		padding: 10px 50px;
 
 		p {
 			padding: 0;
 			margin: 0 0 6px 0;
 		}
-
-		.lightbulb-notification-body-lastedited {
-			font-size: 0.875em;
-		}
 	}
-
-	.lightbulb-notification-suggestion {
-		max-height: 70px;
-
-		.lightbulb-notification-suggestion-image {
-			display: inline-block;
-			width: 70px;
-			height: 70px;
-			background-size: cover;
-			background-position: center;
-
-			&.no-image {
-				background: no-repeat center;
-				.background-image-svg('../images/lightbulb/page.svg', '../images/lightbulb/page.png');
-				background-size: 30px;
-				background-color: #ededed;
-			}
-		}
-
-		.lightbulb-notification-suggestion-info {
-			display: inline-block;
-			vertical-align: top;
-			padding: 10px;
-
-			a {
-				font-weight: bold;
-			}
-		}
-
-	}
-
 }

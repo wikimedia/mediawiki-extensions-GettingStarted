@@ -1,0 +1,67 @@
+@import "mediawiki.ui/variables";
+@import "mediawiki.mixins";
+
+@flyoutWidth: 390px;
+
+.personal-tool-recommendations {
+	position: relative;
+	padding-left: 15px;
+
+	&:before {
+		content: "";
+		display: block;
+		width: 13px;
+		height: 13px;
+		position: absolute;
+		.background-image-svg('images/lightbulb.svg', 'images/lightbulb.png');
+		top: -1px;
+		left: 0;
+	}
+}
+
+.lightbulb-flyout {
+	position: absolute;
+	width: @flyoutWidth;
+
+	font-size: 0.875em;
+
+	box-sizing: border-box;
+	padding: 23px;
+
+	h1 {
+		margin-bottom: 0;
+		font-size: 1.5em;
+	}
+
+	p {
+		margin-bottom: 1.5em;
+	}
+}
+
+.lightbulb-suggestions {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	.lightbulb-suggestion {
+		background-color: @colorGray15;
+	}
+
+	li {
+		margin-bottom: 0.6em;
+	}
+
+	li:last-child {
+		margin-bottom: 0;
+	}
+}
+
+// TODO (phuedx, 2014/07/30): Classes like this would simplify the
+// GuidedTour library. Create the entire set of classes upstream.
+
+@halfGuiderArrowWidth: 21px;
+
+.guider_arrow_up.guider_arrow_center {
+	left: 50%;
+	margin-left: -@halfGuiderArrowWidth;
+}

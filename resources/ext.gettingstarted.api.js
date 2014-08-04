@@ -103,6 +103,40 @@
 		},
 
 		/**
+		 * Gets the user's last edit in the main namespace.
+		 * @param {string} userName name of user to get last edit for
+		 * @return {string} last edited article name
+		 */
+		getLastArticleUserEdited: function ( userName ) {
+			var dfd = $.Deferred(),
+				params = {
+					action: 'query',
+					list: 'usercontribs',
+					ucuser: userName,
+					ucnamespace: 0,
+					uclimit: 1,
+					ucprop: 'title'
+			};
+
+			this.get( params ).done( function ( resp ) {
+				// NOTE: Redundancy for Bug: 10887
+				if (
+					resp.query &&
+					resp.query.usercontribs &&
+					resp.query.usercontribs.length
+				) {
+					dfd.resolve( resp.query.usercontribs[0].title );
+				} else {
+					dfd.reject( 'gettingstarted-unexpected-api-response' );
+				}
+			} ).fail( function ( errCode ) {
+				dfd.reject( errCode );
+			} );
+
+			return dfd.promise();
+		},
+
+		/**
 		 * Convenience method to request a single page for a given task type (e.g. 'copyedit')
 		 *
 		 * @param {Object} options API parameters

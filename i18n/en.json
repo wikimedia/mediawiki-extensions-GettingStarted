@@ -67,5 +67,8 @@
     "gettingstarted-cta-edit-page-wikipedia": "Edit this article",
     "gettingstarted-cta-fix-pages-wikipedia": "Edit a suggested article",
     "gettingstarted-lightbulb-notification-body": "Edit a similar article.",
-    "gettingstarted-lightbulb-notification-body-lastedited": "Edited $1"
+    "gettingstarted-lightbulb-notification-body-lastedited": "Edited $1",
+    "gettingstarted-lightbulb-recommendations-personal-tool": "Recommendations",
+    "gettingstarted-lightbulb-heading": "Pages to improve",
+    "gettingstarted-lightbulb-text": "Recommended based on your last edit."
 }
