@@ -67,5 +67,8 @@
 	"gettingstarted-cta-edit-page-wikipedia": "Уреди ја статијава",
 	"gettingstarted-cta-fix-pages-wikipedia": "Уредете предложена статија",
 	"gettingstarted-lightbulb-notification-body": "Уредете слична статија.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "Изменета $1"
+	"gettingstarted-lightbulb-notification-body-lastedited": "Изменета $1",
+	"gettingstarted-lightbulb-recommendations-personal-tool": "Препораки",
+	"gettingstarted-lightbulb-heading": "Страници за подобрување",
+	"gettingstarted-lightbulb-text": "Препораки врз основа на вашето последно уредување."
 }

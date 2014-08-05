@@ -82,5 +82,8 @@
 	"gettingstarted-cta-edit-page-wikipedia": "编辑此条目",
 	"gettingstarted-cta-fix-pages-wikipedia": "编辑建议条目",
 	"gettingstarted-lightbulb-notification-body": "编辑一篇类似的条目。",
-	"gettingstarted-lightbulb-notification-body-lastedited": "编辑于$1"
+	"gettingstarted-lightbulb-notification-body-lastedited": "编辑于$1",
+	"gettingstarted-lightbulb-recommendations-personal-tool": "推荐",
+	"gettingstarted-lightbulb-heading": "要改进的页面",
+	"gettingstarted-lightbulb-text": "基于您最近编辑的推荐。"
 }

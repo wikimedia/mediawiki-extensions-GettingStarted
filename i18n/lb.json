@@ -56,5 +56,8 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description-wikipedia": "Klickt \"{{int:vector-view-edit}}\" fir den Inhalt iergendwou am Artikel z'änneren.",
 	"gettingstarted-cta-edit-page-wikipedia": "Dësen Artikel änneren",
 	"gettingstarted-lightbulb-notification-body": "En ähnlechen Artikel änneren.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "Geännert $1"
+	"gettingstarted-lightbulb-notification-body-lastedited": "Geännert $1",
+	"gettingstarted-lightbulb-recommendations-personal-tool": "Recommandatiounen",
+	"gettingstarted-lightbulb-heading": "Säiten déi kënne besser gemaach ginn",
+	"gettingstarted-lightbulb-text": "Recommandéiert op der Basis vun Ärer leschter Ännerung."
 }

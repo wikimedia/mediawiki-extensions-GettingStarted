@@ -74,5 +74,8 @@
 	"gettingstarted-cta-edit-page-wikipedia": "עריכת הערך הזה",
 	"gettingstarted-cta-fix-pages-wikipedia": "עריכת ערך מוצע",
 	"gettingstarted-lightbulb-notification-body": "לערוך ערך דומה.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "נערך $1"
+	"gettingstarted-lightbulb-notification-body-lastedited": "נערך $1",
+	"gettingstarted-lightbulb-recommendations-personal-tool": "המלצות",
+	"gettingstarted-lightbulb-heading": "דפים שאפשר לשפר",
+	"gettingstarted-lightbulb-text": "מומלץ לפי העריכה שלך."
 }

@@ -70,5 +70,8 @@
 	"gettingstarted-cta-edit-page-wikipedia": "Redigera denna artikel",
 	"gettingstarted-cta-fix-pages-wikipedia": "Redigera en föreslagen artikel",
 	"gettingstarted-lightbulb-notification-body": "Redigera en liknande artikel.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "Redigerad $1"
+	"gettingstarted-lightbulb-notification-body-lastedited": "Redigerad $1",
+	"gettingstarted-lightbulb-recommendations-personal-tool": "Rekommendationer",
+	"gettingstarted-lightbulb-heading": "Sidor att förbättra",
+	"gettingstarted-lightbulb-text": "Rekommenderad baserad på din senaste redigering."
 }
