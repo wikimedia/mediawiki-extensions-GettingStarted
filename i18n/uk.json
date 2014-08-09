@@ -68,5 +68,10 @@
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description-wikipedia": "Ви тепер можете редагувати вміст статті. Коли закінчите, натисніть «{{int:visualeditor-toolbar-savedialog}}», щоб переглянути і зберегти свої зміни.",
 	"guidedtour-tour-gettingstarted-click-preview-description-wikipedia": "Клацання «{{int:showpreview}}» дає змогу перевіряти вигляд статті із внесеними змінами. Тільки не забудьте зберегти.",
 	"gettingstarted-cta-edit-page-wikipedia": "Редагувати цю статтю",
-	"gettingstarted-cta-fix-pages-wikipedia": "Редагувати запропоновану статтю"
+	"gettingstarted-cta-fix-pages-wikipedia": "Редагувати запропоновану статтю",
+	"gettingstarted-lightbulb-notification-body": "Редагувати подібну статтю.",
+	"gettingstarted-lightbulb-notification-body-lastedited": "Редагована $1",
+	"gettingstarted-lightbulb-recommendations-personal-tool": "Рекомендації",
+	"gettingstarted-lightbulb-heading": "Сторінки для поліпшення",
+	"gettingstarted-lightbulb-text": "Рекомендується на основі Вашого попереднього редагування."
 }

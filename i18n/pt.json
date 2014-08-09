@@ -65,5 +65,8 @@
 	"guidedtour-tour-gettingstarted-click-preview-description-wikipedia": "Clicar em \"{{int:showpreview}}\" permite-lhe verificar como ficará a página após as suas alterações. Não se esqueça de as gravar.",
 	"gettingstarted-cta-edit-page-wikipedia": "Editar este artigo",
 	"gettingstarted-cta-fix-pages-wikipedia": "Editar um artigo sugerido",
-	"gettingstarted-lightbulb-notification-body-lastedited": "Editado há $1"
+	"gettingstarted-lightbulb-notification-body-lastedited": "Editado há $1",
+	"gettingstarted-lightbulb-recommendations-personal-tool": "Recomendações",
+	"gettingstarted-lightbulb-heading": "Páginas para melhorar",
+	"gettingstarted-lightbulb-text": "Recomendado com base na sua última edição."
 }
