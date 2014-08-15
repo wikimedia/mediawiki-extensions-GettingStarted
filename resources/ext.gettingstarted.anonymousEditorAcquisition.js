@@ -6,7 +6,6 @@
 		user = mw.gettingStarted.user,
 		token = user.getToken(),
 		bucket = user.getBucket(),
-		LOG_EVENT_TIMEOUT = 500, // (ms)
 		ctaFlagKey = '-gettingStartedHasShownAnonymousEditorAcquisitionCTA',
 		isVeAvailable = mw.libs.ve && mw.libs.ve.isAvailable,
 		currentUri = new mw.Uri(),
@@ -19,12 +18,9 @@
 		self,
 		isLinkClickLoggingDisabled = false,
 		Bucket = mw.gettingStarted.Bucket,
-		targetElementsSelector = '#ca-edit, #ca-ve-edit, .mw-editsection a';
+		targetElementsSelector = '#ca-edit, #ca-ve-edit, .mw-editsection a',
+		logEventOrTimeout = mw.gettingStarted.logging.logEventOrTimeout;
 
-	// Ideally the EventLogging API should provide an equivalent of `logEventOrTimeout`.
-	// However, there are currently concerns about the approach [0].
-	//
-	// [0] https://bugzilla.wikimedia.org/show_bug.cgi?id=52287
 	/**
 	 * Registers a click listener on links corresponding to one or more selectors.
 	 * When event occurs, logs a SignupExpPageLinkClick event.
@@ -70,33 +66,6 @@
 				mw.eventLog.logEvent( schemaName, eventInstance );
 			}
 		} );
-	}
-
-	/**
-	 * Attempts to log an event in less than 500 milliseconds.
-	 *
-	 * Returns a promise that will be resolved or rejected when either the HTTP request to log
-	 * the event resolves or after 500 milliseconds. Note that in the former case the promise
-	 * will be resolved or rejected depending on the outcome of the HTTP request, whereas in the
-	 * latter case the promise will always be rejected.
-	 *
-	 * See `mw.eventLog.logEvent`.
-	 *
-	 * @private
-	 *
-	 * @param {string} schemaName The canonical name of the schema
-	 * @param {Object} eventInstance The event instance
-	 * @return {jQuery.Promise}
-	 */
-	function logEventOrTimeout( schemaName, eventInstance ) {
-		var dfd;
-
-		dfd = $.Deferred();
-
-		window.setTimeout( dfd.reject, LOG_EVENT_TIMEOUT );
-		mw.eventLog.logEvent( schemaName, eventInstance ).then( dfd.resolve, dfd.reject );
-
-		return dfd.promise();
 	}
 
 	function unregisterVariants() {
