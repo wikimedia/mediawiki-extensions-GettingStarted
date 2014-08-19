@@ -26,7 +26,8 @@
 		FLYOUT_WIDTH = 390, // (px)
 		parser = new mw.gettingStarted.lightbulb.Parser(),
 		suggestionRenderer = new mw.gettingStarted.lightbulb.SuggestionRenderer(),
-		currentFlyoutPageIndex; // 0-based
+		currentFlyoutPageIndex, // 0-based
+		mwConfig = mw.config.get( [ 'wgArticleId', 'wgUserId' ] );
 
 	function renderFlyout() {
 
@@ -122,6 +123,15 @@
 			.prop( 'disabled', pageIndex === ( pageCount - 1 ) );
 
 		$suggestions.replaceWith( $newSuggestions );
+
+		// Log Impression
+		mw.eventLog.logEvent( 'TaskRecommendationImpression', {
+			setId: suggestions[0].setId,
+			userId: mwConfig.wgUserId,
+			pageId: mwConfig.wgArticleId,
+			'interface': 'flyout',
+			offset: pageIndex
+		} );
 	}
 
 
@@ -169,7 +179,7 @@
 			event.preventDefault();
 
 			mw.eventLog.logEvent( 'TaskRecommendationLightbulbClick', {
-				userId: mw.config.get( 'wgUserId' )
+				userId: mwConfig.wgUserId
 			} );
 
 			if ( $flyout.data( 'has-suggestions' ) ) {
