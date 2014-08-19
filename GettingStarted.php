@@ -197,7 +197,6 @@ $wgResourceModules[ 'ext.gettingstarted.lightbulb.flyout' ] = array(
 		'schema.TaskRecommendationLightbulbClick',
 	),
 	'messages' => array(
-		'gettingstarted-lightbulb-recommendations-personal-tool',
 		'gettingstarted-lightbulb-heading',
 		'gettingstarted-lightbulb-text',
 		'gettingstarted-lightbulb-flyout-back',
@@ -436,6 +435,7 @@ $wgHooks[ 'ResourceLoaderTestModules' ][] = 'GettingStarted\Hooks::onResourceLoa
 $wgHooks[ 'PageContentSaveComplete' ][] = 'GettingStarted\Hooks::onPageContentSaveComplete';
 $wgHooks[ 'AddNewAccount' ][] = 'GettingStarted\Hooks::onAddNewAccount';
 $wgHooks[ 'UserCreateForm' ][] = 'GettingStarted\Hooks::onUserCreateForm';
+$wgHooks[ 'PersonalUrls' ][] = 'GettingStarted\Hooks::onPersonalUrls';
 $wgExtensionFunctions[] = 'GettingStarted\Hooks::onSetup';
 
 list( $site, $lang ) = $wgConf->siteFromDB( $wgDBname );
