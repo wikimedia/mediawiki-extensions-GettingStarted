@@ -613,7 +613,7 @@ class Hooks {
 				'recommendations' => array(
 					'text' => wfMessage( 'gettingstarted-lightbulb-recommendations-personal-tool' )->text(),
 					'href' => '#recommendations',
-					'class' => 'personal-tool-recommendations',
+					'class' => 'mw-gettingstarted-personal-tool-recommendations',
 					'active' => true
 				)
 			);
