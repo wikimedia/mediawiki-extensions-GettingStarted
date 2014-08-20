@@ -18,10 +18,6 @@
 					</div>\
 				</div>\
 			</div>',
-		lightbulbTemplate =
-			'<li class="personal-tool personal-tool-recommendations">\
-				<a href="#recommendations"></a>\
-			</li>',
 		POKEY_HEIGHT = 42, // (px) (See mediawiki.libs.guiders.js, L183)
 		FLYOUT_WIDTH = 390, // (px)
 		parser = new mw.gettingStarted.lightbulb.Parser(),
@@ -134,15 +130,6 @@
 		} );
 	}
 
-
-	function renderLightbulb() {
-		var $lightbulb = $( lightbulbTemplate );
-
-		$lightbulb.find( 'a' ).text( mw.msg( 'gettingstarted-lightbulb-recommendations-personal-tool' ) );
-
-		return $lightbulb;
-	}
-
 	function positionFlyout( $flyout, $target ) {
 		var targetOffset,
 			top,
@@ -170,10 +157,10 @@
 	 * Adds	lightbulb icon (for flyout) and renders flyout except suggestions
 	 */
 	function addFlyout() {
-		var $lightbulb = renderLightbulb(),
+		var $lightbulb = $( '.personal-tool-recommendations' ),
 			$flyout = renderFlyout();
 
-		$lightbulb.on( 'click', 'a', function ( event ) {
+		$lightbulb.on( 'click', function ( event ) {
 			var api;
 
 			event.preventDefault();
@@ -208,7 +195,6 @@
 				} );
 		} );
 
-		$( '#p-personal ul' ).prepend( $lightbulb );
 		$( document.body ).append( $flyout );
 	}
 

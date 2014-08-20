@@ -595,4 +595,29 @@ class Hooks {
 
 		return true;
 	}
+
+	/**
+	 * While experiement is running add Task suggestions link
+	 *  for logged in users who have made an edit
+	 * @param array $personal_urls array of user toolbar links
+	 */
+	public static function onPersonalUrls( &$personal_urls ) {
+		global $wgGettingStartedRunTest, $wgUser;
+
+		if (
+			$wgGettingStartedRunTest &&
+			$wgUser->isLoggedIn() &&
+			$wgUser->getEditCount() > 0
+		) {
+			$recommendations = array(
+				'recommendations' => array(
+					'text' => wfMessage( 'gettingstarted-lightbulb-recommendations-personal-tool' )->text(),
+					'href' => '#recommendations',
+					'class' => 'personal-tool-recommendations',
+					'active' => true
+				)
+			);
+			$personal_urls = $recommendations + $personal_urls;
+		}
+	}
 }
