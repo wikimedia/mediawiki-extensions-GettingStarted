@@ -70,5 +70,7 @@
 	"gettingstarted-lightbulb-notification-body-lastedited": "Изменета $1",
 	"gettingstarted-lightbulb-recommendations-personal-tool": "Препораки",
 	"gettingstarted-lightbulb-heading": "Страници за подобрување",
-	"gettingstarted-lightbulb-text": "Препораки врз основа на вашето последно уредување."
+	"gettingstarted-lightbulb-text": "Препораки врз основа на вашето последно уредување.",
+	"gettingstarted-lightbulb-flyout-back": "Назад",
+	"gettingstarted-lightbulb-flyout-next": "Следно"
 }

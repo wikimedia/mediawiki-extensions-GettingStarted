@@ -68,5 +68,7 @@
 	"gettingstarted-lightbulb-notification-body-lastedited": "Editado há $1",
 	"gettingstarted-lightbulb-recommendations-personal-tool": "Recomendações",
 	"gettingstarted-lightbulb-heading": "Páginas para melhorar",
-	"gettingstarted-lightbulb-text": "Recomendado com base na sua última edição."
+	"gettingstarted-lightbulb-text": "Recomendado com base na sua última edição.",
+	"gettingstarted-lightbulb-flyout-back": "Voltar",
+	"gettingstarted-lightbulb-flyout-next": "Seguinte"
 }

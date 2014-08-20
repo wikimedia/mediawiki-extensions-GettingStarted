@@ -73,5 +73,7 @@
 	"gettingstarted-lightbulb-notification-body-lastedited": "Redigerad $1",
 	"gettingstarted-lightbulb-recommendations-personal-tool": "Rekommendationer",
 	"gettingstarted-lightbulb-heading": "Sidor att förbättra",
-	"gettingstarted-lightbulb-text": "Rekommenderad baserad på din senaste redigering."
+	"gettingstarted-lightbulb-text": "Rekommenderad baserad på din senaste redigering.",
+	"gettingstarted-lightbulb-flyout-back": "Tillbaka",
+	"gettingstarted-lightbulb-flyout-next": "Nästa"
 }

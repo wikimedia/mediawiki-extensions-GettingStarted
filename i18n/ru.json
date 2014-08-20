@@ -78,5 +78,7 @@
 	"gettingstarted-lightbulb-notification-body-lastedited": "Отредактировано $1",
 	"gettingstarted-lightbulb-recommendations-personal-tool": "Рекомендации",
 	"gettingstarted-lightbulb-heading": "Страницы для улучшения",
-	"gettingstarted-lightbulb-text": "Рекомендации на основе вашей последней правки."
+	"gettingstarted-lightbulb-text": "Рекомендации на основе вашей последней правки.",
+	"gettingstarted-lightbulb-flyout-back": "Назад",
+	"gettingstarted-lightbulb-flyout-next": "Далее"
 }

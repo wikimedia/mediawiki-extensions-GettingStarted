@@ -85,5 +85,7 @@
 	"gettingstarted-lightbulb-notification-body-lastedited": "编辑于$1",
 	"gettingstarted-lightbulb-recommendations-personal-tool": "推荐",
 	"gettingstarted-lightbulb-heading": "要改进的页面",
-	"gettingstarted-lightbulb-text": "基于您最近编辑的推荐。"
+	"gettingstarted-lightbulb-text": "基于您最近编辑的推荐。",
+	"gettingstarted-lightbulb-flyout-back": "后退",
+	"gettingstarted-lightbulb-flyout-next": "下一步"
 }
