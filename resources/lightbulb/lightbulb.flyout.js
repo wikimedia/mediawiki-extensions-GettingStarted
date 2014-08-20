@@ -24,7 +24,8 @@
 		suggestionRenderer = new mw.gettingStarted.lightbulb.SuggestionRenderer(),
 		currentFlyoutPageIndex, // 0-based
 		mwConfig = mw.config.get( [ 'wgArticleId', 'wgUserId' ] ),
-		$lightbulb = $( '.mw-gettingstarted-personal-tool-recommendations' );
+		$lightbulb = $( '.mw-gettingstarted-personal-tool-recommendations' ),
+		requestingSuggestions = false;
 
 	function renderFlyout() {
 
@@ -214,6 +215,11 @@
 				userId: mwConfig.wgUserId
 			} );
 
+			// Prevent multiple api requests from firing
+			if ( requestingSuggestions ) {
+				return;
+			}
+
 			if ( $flyout.data( 'has-suggestions' ) ) {
 				if ( $flyout.is( ':visible' ) ) {
 					hideFlyout( $flyout );
@@ -224,6 +230,7 @@
 				return;
 			}
 
+			requestingSuggestions = true;
 			api = new mw.gettingStarted.Api();
 			api.getLastArticleUserEdited( mw.user.getName() )
 				.done( function ( title ) {
@@ -238,6 +245,7 @@
 						positionFlyout( $flyout, $lightbulb );
 
 						$flyout.data( 'has-suggestions', true );
+						requestingSuggestions = false;
 
 						showFlyout( $flyout );
 					} );
