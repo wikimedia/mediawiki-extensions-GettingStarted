@@ -3,10 +3,10 @@
 	var MAX_SUGGESTION_PER_PAGE_COUNT = 3,
 		MAX_PAGE_COUNT = 3,
 		flyoutTemplate =
-			'<div class="lightbulb-flyout guider">\
+			'<div class="mw-gettingstarted-lightbulb-flyout guider">\
 				<h1></h1>\
 				<p></p>\
-				<ol class="lightbulb-suggestions">\
+				<ol class="mw-gettingstarted-lightbulb-suggestions">\
 				</ol>\
 				<div class="mw-gettingstarted-lightbulb-flyout-pagination">\
 					<button class="mw-ui-button mw-gettingstarted-lightbulb-flyout-pagination-button-icon mw-gettingstarted-lightbulb-flyout-back"></button>\
@@ -88,8 +88,8 @@
 	 * @param {Number} pageCount Number of pages
 	 */
 	function renderFlyoutPage( $flyout, suggestions, pageIndex, pageCount ) {
-		var $suggestions = $flyout.find( '.lightbulb-suggestions' ),
-			$newSuggestions = $( '<ol>' ).attr( 'class', 'lightbulb-suggestions' ),
+		var $suggestions = $flyout.find( '.mw-gettingstarted-lightbulb-suggestions' ),
+			$newSuggestions = $( '<ol>' ).attr( 'class', 'mw-gettingstarted-lightbulb-suggestions' ),
 			suggestion,
 			$suggestion,
 			$prevButton,
@@ -157,7 +157,7 @@
 	 * Adds	lightbulb icon (for flyout) and renders flyout except suggestions
 	 */
 	function addFlyout() {
-		var $lightbulb = $( '.personal-tool-recommendations' ),
+		var $lightbulb = $( '.mw-gettingstarted-personal-tool-recommendations' ),
 			$flyout = renderFlyout();
 
 		$lightbulb.on( 'click', function ( event ) {

@@ -2,12 +2,12 @@
 ( function ( mw, $ ) {
 
 	var template =
-		'<div class="lightbulb-suggestion clearfix">\
-			<div class="lightbulb-suggestion-image no-image"></div>\
-			<a class="lightbulb-suggestion-overlay"></a>\
-			<div class="lightbulb-suggestion-info">\
+		'<div class="mw-gettingstarted-lightbulb-suggestion mw-gettingstarted-clearfix">\
+			<div class="mw-gettingstarted-lightbulb-suggestion-image mw-gettingstarted-lightbulb-suggestion-image-no-image"></div>\
+			<a class="mw-gettingstarted-lightbulb-suggestion-overlay"></a>\
+			<div class="mw-gettingstarted-lightbulb-suggestion-info">\
 				<a></a><br />\
-				<span class="lightbulb-suggestion-info-lastedited"></span>\
+				<span class="mw-gettingstarted-lightbulb-suggestion-info-lastedited"></span>\
 			</div>\
 		</div>';
 
@@ -32,15 +32,15 @@
 				} );
 			} );
 
-		$result.find( '.lightbulb-suggestion-overlay' )
+		$result.find( '.mw-gettingstarted-lightbulb-suggestion-overlay' )
 			.attr( 'title', suggestion.title );
 
-		$result.find( '.lightbulb-suggestion-info a' )
+		$result.find( '.mw-gettingstarted-lightbulb-suggestion-info a' )
 			.text( suggestion.title );
 
 		if ( suggestion.thumbnail ) {
-			$result.find( '.lightbulb-suggestion-image' )
-				.removeClass( 'no-image' )
+			$result.find( '.mw-gettingstarted-lightbulb-suggestion-image' )
+				.removeClass( 'mw-gettingstarted-lightbulb-suggestion-image-no-image' )
 				.css( 'background-image', 'url(' + suggestion.thumbnail + ')' );
 		}
 
@@ -48,7 +48,7 @@
 			'gettingstarted-lightbulb-notification-body-lastedited',
 			moment( suggestion.lastEdited ).fromNow()
 		);
-		$result.find( '.lightbulb-suggestion-info-lastedited' )
+		$result.find( '.mw-gettingstarted-lightbulb-suggestion-info-lastedited' )
 			.text( lastEdited );
 
 		return $result;

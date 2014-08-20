@@ -1,10 +1,10 @@
 ( function ( mw, $ ) {
-	var notificationTemplate = '<div class="lightbulb-notification">\
-									<div class="lightbulb-notification-header">\
+	var notificationTemplate = '<div class="mw-gettingstarted-lightbulb-notification">\
+									<div class="mw-gettingstarted-lightbulb-notification-header">\
 										<h1></h1>\
-										<a href="#hide" class="lightbulb-notification-hide"></a>\
+										<a href="#hide" class="mw-gettingstarted-lightbulb-notification-hide"></a>\
 									</div>\
-									<div class="lightbulb-notification-body">\
+									<div class="mw-gettingstarted-lightbulb-notification-body">\
 										<p></p>\
 									</div>\
 								</div>',
@@ -14,7 +14,7 @@
 
 	function createNotification( suggestions, headerMsg ) {
 		var $notification = $( notificationTemplate ),
-			$notificationBody = $notification.find( '.lightbulb-notification-body' ),
+			$notificationBody = $notification.find( '.mw-gettingstarted-lightbulb-notification-body' ),
 			suggestionRenderer = new mw.gettingStarted.lightbulb.SuggestionRenderer();
 
 		$notification.find( 'h1' ).text( headerMsg );
@@ -24,7 +24,7 @@
 			$notificationBody.append( suggestionRenderer.render( suggestion ) );
 		} );
 
-		$notification.find( '.lightbulb-notification-hide' )
+		$notification.find( '.mw-gettingstarted-lightbulb-notification-hide' )
 			.on( 'click', function ( event ) {
 				event.preventDefault();
 				$notification.remove();
