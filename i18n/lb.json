@@ -59,5 +59,7 @@
 	"gettingstarted-lightbulb-notification-body-lastedited": "Geännert $1",
 	"gettingstarted-lightbulb-recommendations-personal-tool": "Recommandatiounen",
 	"gettingstarted-lightbulb-heading": "Säiten déi kënne besser gemaach ginn",
-	"gettingstarted-lightbulb-text": "Recommandéiert op der Basis vun Ärer leschter Ännerung."
+	"gettingstarted-lightbulb-text": "Recommandéiert op der Basis vun Ärer leschter Ännerung.",
+	"gettingstarted-lightbulb-flyout-back": "Zréck",
+	"gettingstarted-lightbulb-flyout-next": "Nächst"
 }

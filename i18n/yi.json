@@ -22,5 +22,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "קליקט אויף \"{{int:vector-view-edit}}\" כדי צו ענדערן אינהאלט נאר וואו אינעם בלאט.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "אדער רעדאקטירן אן אפטייל",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "פירט אויס אײַערע ענדערונגען און היט אויף",
-	"gettingstarted-lightbulb-notification-body-lastedited": "רעדאקטירט $1"
+	"gettingstarted-lightbulb-notification-body-lastedited": "רעדאקטירט $1",
+	"gettingstarted-lightbulb-flyout-back": "צוריק",
+	"gettingstarted-lightbulb-flyout-next": "נעקסטע"
 }

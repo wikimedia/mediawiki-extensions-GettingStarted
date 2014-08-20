@@ -1,15 +1,18 @@
 {
-    "@metadata": {
-        "authors": [
-            "Mormegil",
-            "Paxt",
-            "Utar",
-            "Vks"
-        ]
-    },
-    "gettingstarted-desc": "Pomáhá novým uživatelům začít s editacemi",
-    "gettingstarted-project-link": "{{ns:Project}}:Jak začít",
-    "tag-gettingstarted_edit": "nový uživatel [[{{MediaWiki:gettingstarted-project-link}}|začíná]]",
-    "tag-gettingstarted_edit-description": "Editace stránky, kterou si uživatel zvolil ze seznamu úkolů na stránce [[Special:GettingStarted|Jak začít]]",
-    "gettingstarted-task-toolbar-no-suggested-page": "Omlouváme se. Nemohli jsme najít další stránky, které by se právě daly zlepšit. Zkuste to znovu později nebo hledejte vlastní zajímavá témata."
+	"@metadata": {
+		"authors": [
+			"Mormegil",
+			"Paxt",
+			"Utar",
+			"Vks",
+			"Randomna"
+		]
+	},
+	"gettingstarted-desc": "Pomáhá novým uživatelům začít s editacemi",
+	"gettingstarted-project-link": "{{ns:Project}}:Jak začít",
+	"tag-gettingstarted_edit": "nový uživatel [[{{MediaWiki:gettingstarted-project-link}}|začíná]]",
+	"tag-gettingstarted_edit-description": "Editace stránky, kterou si uživatel zvolil ze seznamu úkolů na stránce [[Special:GettingStarted|Jak začít]]",
+	"gettingstarted-task-toolbar-no-suggested-page": "Omlouváme se. Nemohli jsme najít další stránky, které by se právě daly zlepšit. Zkuste to znovu později nebo hledejte vlastní zajímavá témata.",
+	"gettingstarted-lightbulb-flyout-back": "Zpět",
+	"gettingstarted-lightbulb-flyout-next": "Další"
 }

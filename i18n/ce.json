@@ -18,5 +18,7 @@
 	"gettingstarted-lightbulb-notification-body-lastedited": "Тайина $1",
 	"gettingstarted-lightbulb-recommendations-personal-tool": "Рекомендацеш",
 	"gettingstarted-lightbulb-heading": "Кечъян агӀо",
-	"gettingstarted-lightbulb-text": "Хьан тӀехьара нисдарца рекомендаци"
+	"gettingstarted-lightbulb-text": "Хьан тӀехьара нисдарца рекомендаци",
+	"gettingstarted-lightbulb-flyout-back": "Юха",
+	"gettingstarted-lightbulb-flyout-next": "Кхин дӀа"
 }
