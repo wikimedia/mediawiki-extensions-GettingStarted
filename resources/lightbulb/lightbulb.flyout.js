@@ -196,10 +196,6 @@
 		$( document ).off( 'click', checkForClickOutside );
 	}
 
-	// TODO (mattflaschen, 2014-08-11): Generate this server-side
-	// hide it for no JS, and by default, and show it if it's a supported browser
-	// (or hide it for blacklisted ones)
-
 	/**
 	 * Adds	lightbulb icon (for flyout) and renders flyout except suggestions
 	 */

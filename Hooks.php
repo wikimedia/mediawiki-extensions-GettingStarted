@@ -518,8 +518,10 @@ class Hooks {
 	 * While experiement is running add Task suggestions link
 	 *  for logged in users who have made an edit
 	 * @param array $personal_urls array of user toolbar links
+	 * @param Title $title Title object for the current page
+	 * @param SkinTemplate $skinTemplate skin template object
 	 */
-	public static function onPersonalUrls( &$personal_urls ) {
+	public static function onPersonalUrls( &$personal_urls, &$title, $skinTemplate ) {
 		global $wgGettingStartedRunTest, $wgUser;
 
 		if (
@@ -535,6 +537,9 @@ class Hooks {
 				)
 			);
 			$personal_urls = $recommendations + $personal_urls;
+			$skinTemplate->getOutput()->addModuleStyles( 'ext.gettingstarted.lightbulb.personalTools' );
 		}
+
+		return true;
 	}
 }

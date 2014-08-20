@@ -180,6 +180,10 @@ $wgResourceModules[ 'ext.gettingstarted.lightbulb.postEdit' ] = array(
 	),
 ) + $gettingStartedModuleInfo;
 
+$wgResourceModules[ 'ext.gettingstarted.lightbulb.personalTools' ] = array(
+	'styles' => 'lightbulb/lightbulb.personalTools.less',
+) + $gettingStartedModuleInfo;
+
 $wgResourceModules[ 'ext.gettingstarted.lightbulb.flyout' ] = array(
 	'scripts' => 'lightbulb/lightbulb.flyout.js',
 	'styles' => 'lightbulb/lightbulb.flyout.less',
