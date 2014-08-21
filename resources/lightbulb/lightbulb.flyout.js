@@ -23,7 +23,8 @@
 		parser = new mw.gettingStarted.lightbulb.Parser(),
 		suggestionRenderer = new mw.gettingStarted.lightbulb.SuggestionRenderer(),
 		currentFlyoutPageIndex, // 0-based
-		mwConfig = mw.config.get( [ 'wgArticleId', 'wgUserId' ] );
+		mwConfig = mw.config.get( [ 'wgArticleId', 'wgUserId' ] ),
+		$lightbulb = $( '.mw-gettingstarted-personal-tool-recommendations' );
 
 	function renderFlyout() {
 
@@ -149,6 +150,51 @@
 		} );
 	}
 
+	/**
+	 * Handles a document click.  If the user clicked outside the flyout, close
+	 * it, unless they clicked on the recommendations link
+	 *
+	 * @param {jQuery.Event} evt Click event
+	 */
+	function checkForClickOutside( evt ) {
+		var $flyout, $target;
+
+		$target = $( evt.target );
+		if ( $target.is( $lightbulb ) ) {
+			// Don't want a click on the lightbulb/Recommendations text to show than
+			// immediately hide the flyout.  Can't use stopPropagation because it would
+			// block other such handlers (e.g. the Echo flyout would not hide
+			// when you click Recommendations).
+
+			return;
+		}
+
+		if ( $target.closest( '.mw-gettingstarted-lightbulb-flyout' ).length === 0 ) {
+			$flyout = $( '.mw-gettingstarted-lightbulb-flyout' );
+			hideFlyout( $flyout );
+		}
+	}
+
+	/**
+	 * Shows the flyout and unregisters the document event listener
+	 *
+	 * @param {jQuery} $flyout Flyout
+	 */
+	function showFlyout( $flyout ) {
+		$( document ).on( 'click', checkForClickOutside );
+		$flyout.show();
+	}
+
+	/**
+	 * Hides the flyout and unregisters the document event listener
+	 *
+	 * @param {jQuery} $flyout Flyout
+	 */
+	function hideFlyout( $flyout ) {
+		$flyout.hide();
+		$( document ).off( 'click', checkForClickOutside );
+	}
+
 	// TODO (mattflaschen, 2014-08-11): Generate this server-side
 	// hide it for no JS, and by default, and show it if it's a supported browser
 	// (or hide it for blacklisted ones)
@@ -157,8 +203,7 @@
 	 * Adds	lightbulb icon (for flyout) and renders flyout except suggestions
 	 */
 	function addFlyout() {
-		var $lightbulb = $( '.mw-gettingstarted-personal-tool-recommendations' ),
-			$flyout = renderFlyout();
+		var $flyout = renderFlyout();
 
 		$lightbulb.on( 'click', function ( event ) {
 			var api;
@@ -170,7 +215,11 @@
 			} );
 
 			if ( $flyout.data( 'has-suggestions' ) ) {
-				$flyout.toggle();
+				if ( $flyout.is( ':visible' ) ) {
+					hideFlyout( $flyout );
+				} else {
+					showFlyout( $flyout );
+				}
 
 				return;
 			}
@@ -190,7 +239,7 @@
 
 						$flyout.data( 'has-suggestions', true );
 
-						$flyout.show();
+						showFlyout( $flyout );
 					} );
 				} );
 		} );
