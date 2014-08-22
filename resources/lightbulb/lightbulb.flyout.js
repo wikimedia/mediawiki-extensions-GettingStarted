@@ -39,6 +39,25 @@
 	}
 
 	/**
+	 * Returns a click handler for a pagination disc
+	 *
+	 * @param {jQuery} $flyout jQuery set for flyout
+	 * @param {Array} suggestions Full list of suggestions
+	 * @param {Number} index Index of page this disc refers to
+	 * @param {Number} pageCount Number of pages
+	 *
+	 * @return {Function} Click handler
+	 */
+	function getPaginationDiscHandler( $flyout, suggestions, index, pageCount ) {
+		return function () {
+			if ( index !== currentFlyoutPageIndex ) {
+				currentFlyoutPageIndex = index;
+				renderFlyoutPage( $flyout, suggestions, currentFlyoutPageIndex, pageCount );
+			}
+		};
+	}
+
+	/**
 	 * Adds the suggestions to the flyout.  This sets up pagination and shows the
 	 * first page of suggestions.
 	 *
@@ -49,7 +68,8 @@
 		var $nextButton,
 			$pagination = $flyout.find( '.mw-gettingstarted-lightbulb-flyout-pagination' ),
 			pageCount = Math.ceil( suggestions.length / MAX_SUGGESTION_PER_PAGE_COUNT ),
-			i;
+			i,
+			discHandler;
 
 		$pagination.find( '.mw-gettingstarted-lightbulb-flyout-back' )
 			.attr( 'title', mw.msg( 'gettingstarted-lightbulb-flyout-back' ) )
@@ -68,10 +88,13 @@
 			} );
 		if ( pageCount > 1 ) {
 			for ( i = 0; i < pageCount; i++ ) {
+				discHandler = getPaginationDiscHandler( $flyout, suggestions, i, pageCount );
 				$( '<span> ' )
 					.attr( 'class', 'mw-gettingstarted-lightbulb-flyout-pagination-disc' )
 					.text( '●' )
-					.insertBefore( $nextButton );
+					.insertBefore( $nextButton )
+					.on( 'click', discHandler );
+
 			}
 		} else {
 			$pagination.hide();
