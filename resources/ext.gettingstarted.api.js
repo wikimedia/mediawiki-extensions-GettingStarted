@@ -85,7 +85,9 @@
 					pilimit: options.count, // Same as ggspcount
 					// During testing we found doubling to be appropriate
 					pithumbsize: options.thumbSize * 2,
-					prop: 'pageimages|revisions'
+					prop: 'pageimages|revisions',
+					piprop: 'thumbnail',
+					rvprop: 'timestamp'
 				};
 
 				this.get( params ).done( function ( resp ) {
