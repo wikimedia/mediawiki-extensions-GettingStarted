@@ -25,6 +25,7 @@
 		currentFlyoutPageIndex, // 0-based
 		mwConfig = mw.config.get( [ 'wgArticleId', 'wgUserId' ] ),
 		$lightbulb = $( '.mw-gettingstarted-personal-tool-recommendations' ),
+		$flyout = null,
 		requestingSuggestions = false;
 
 	function renderFlyout() {
@@ -61,10 +62,9 @@
 	 * Adds the suggestions to the flyout.  This sets up pagination and shows the
 	 * first page of suggestions.
 	 *
-	 * @param {jQuery} $flyout Flyout jQuery set
 	 * @param {Array} suggestions Array of suggestions from the parser
 	 */
-	function addSuggestionsToFlyout( $flyout, suggestions ) {
+	function addSuggestionsToFlyout( suggestions ) {
 		var $nextButton,
 			$pagination = $flyout.find( '.mw-gettingstarted-lightbulb-flyout-pagination' ),
 			pageCount = Math.ceil( suggestions.length / MAX_SUGGESTION_PER_PAGE_COUNT ),
@@ -75,7 +75,7 @@
 			.attr( 'title', mw.msg( 'gettingstarted-lightbulb-flyout-back' ) )
 			.click( function () {
 				currentFlyoutPageIndex--;
-				renderFlyoutPage( $flyout, suggestions, currentFlyoutPageIndex, pageCount );
+				renderFlyoutPage( suggestions, currentFlyoutPageIndex, pageCount );
 			} );
 
 
@@ -84,7 +84,7 @@
 			.attr( 'title', mw.msg( 'gettingstarted-lightbulb-flyout-next' ) )
 			.click( function () {
 				currentFlyoutPageIndex++;
-				renderFlyoutPage( $flyout, suggestions, currentFlyoutPageIndex, pageCount );
+				renderFlyoutPage( suggestions, currentFlyoutPageIndex, pageCount );
 			} );
 		if ( pageCount > 1 ) {
 			for ( i = 0; i < pageCount; i++ ) {
@@ -101,18 +101,17 @@
 		}
 
 		currentFlyoutPageIndex = 0;
-		renderFlyoutPage( $flyout, suggestions, currentFlyoutPageIndex, pageCount );
+		renderFlyoutPage( suggestions, currentFlyoutPageIndex, pageCount );
 	}
 
 	/**
 	 * Updates the flyout to render a particular page
 	 *
-	 * @param {jQuery} $flyout jQuery set for flyout
 	 * @param {Array} suggestions Full list of suggestions
 	 * @param {Number} pageIndex Page index to show, 0-based
 	 * @param {Number} pageCount Number of pages
 	 */
-	function renderFlyoutPage( $flyout, suggestions, pageIndex, pageCount ) {
+	function renderFlyoutPage( suggestions, pageIndex, pageCount ) {
 		var $suggestions = $flyout.find( '.mw-gettingstarted-lightbulb-suggestions' ),
 			$newSuggestions = $( '<ol>' ).attr( 'class', 'mw-gettingstarted-lightbulb-suggestions' ),
 			suggestion,
@@ -155,18 +154,18 @@
 		} );
 	}
 
-	function positionFlyout( $flyout, $target ) {
-		var targetOffset,
+	function positionFlyout() {
+		var	lightbulbOffset,
 			top,
 			left;
 
-		targetOffset = $target.offset();
-		top = targetOffset.top + $target.innerHeight() + ( POKEY_HEIGHT / 2 ) - 5;
+		lightbulbOffset = $lightbulb.offset();
+		top = lightbulbOffset.top + $lightbulb.innerHeight() + ( POKEY_HEIGHT / 2 ) - 5;
 
 		// XXX (phuedx, 2014/07/30): $flyout.width and
 		// innerWidth( {false,true} ) don't work here, even with
 		// visibility: hidden in place of display: none. Why?
-		left = targetOffset.left + ( $target.innerWidth() / 2 ) - ( FLYOUT_WIDTH / 2 );
+		left = lightbulbOffset.left + ( $lightbulb.innerWidth() / 2 ) - ( FLYOUT_WIDTH / 2 );
 
 		$flyout.css( {
 			top: parseInt( top, 10 ) + 'px',
@@ -181,7 +180,7 @@
 	 * @param {jQuery.Event} evt Click event
 	 */
 	function checkForClickOutside( evt ) {
-		var $flyout, $target;
+		var $target;
 
 		$target = $( evt.target );
 		if ( $target.is( $lightbulb ) ) {
@@ -193,37 +192,36 @@
 			return;
 		}
 
-		if ( $target.closest( '.mw-gettingstarted-lightbulb-flyout' ).length === 0 ) {
-			$flyout = $( '.mw-gettingstarted-lightbulb-flyout' );
-			hideFlyout( $flyout );
+		if ( $target.closest( $flyout ).length === 0 ) {
+			hideFlyout();
 		}
 	}
 
 	/**
 	 * Shows the flyout and unregisters the document event listener
 	 *
-	 * @param {jQuery} $flyout Flyout
 	 */
-	function showFlyout( $flyout ) {
+	function showFlyout() {
 		$( document ).on( 'click', checkForClickOutside );
+		$( window ).on( 'resize', positionFlyout );
 		$flyout.show();
 	}
 
 	/**
 	 * Hides the flyout and unregisters the document event listener
 	 *
-	 * @param {jQuery} $flyout Flyout
 	 */
-	function hideFlyout( $flyout ) {
+	function hideFlyout() {
 		$flyout.hide();
 		$( document ).off( 'click', checkForClickOutside );
+		$( window ).off( 'resize', positionFlyout );
 	}
 
 	/**
 	 * Adds	lightbulb icon (for flyout) and renders flyout except suggestions
 	 */
 	function addFlyout() {
-		var $flyout = renderFlyout();
+		$flyout = renderFlyout();
 
 		$lightbulb.on( 'click', function ( event ) {
 			var api;
@@ -241,9 +239,9 @@
 
 			if ( $flyout.data( 'has-suggestions' ) ) {
 				if ( $flyout.is( ':visible' ) ) {
-					hideFlyout( $flyout );
+					hideFlyout();
 				} else {
-					showFlyout( $flyout );
+					showFlyout();
 				}
 
 				return;
@@ -260,13 +258,13 @@
 					} ).done( function ( response ) {
 						var suggestions = parser.parse( response );
 
-						addSuggestionsToFlyout( $flyout, suggestions );
-						positionFlyout( $flyout, $lightbulb );
+						addSuggestionsToFlyout( suggestions );
+						positionFlyout();
 
 						$flyout.data( 'has-suggestions', true );
 						requestingSuggestions = false;
 
-						showFlyout( $flyout );
+						showFlyout();
 					} );
 				} );
 		} );
