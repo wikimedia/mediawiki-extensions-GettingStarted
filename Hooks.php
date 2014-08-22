@@ -532,7 +532,6 @@ class Hooks {
 					'text' => wfMessage( 'gettingstarted-lightbulb-recommendations-personal-tool' )->text(),
 					'href' => '#recommendations',
 					'class' => 'mw-gettingstarted-personal-tool-recommendations',
-					'active' => true
 				)
 			);
 			$personal_urls = $recommendations + $personal_urls;
