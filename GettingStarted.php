@@ -432,9 +432,6 @@ $wgHooks[ 'ResourceLoaderGetConfigVars' ][] = 'GettingStarted\Hooks::onResourceL
 $wgHooks[ 'GetPreferences' ][] = 'GettingStarted\Hooks::onGetPreferences';
 $wgHooks[ 'UserLogoutComplete'][] = 'GettingStarted\Hooks::onUserLogoutComplete';
 $wgHooks[ 'ResourceLoaderTestModules' ][] = 'GettingStarted\Hooks::onResourceLoaderTestModules';
-$wgHooks[ 'PageContentSaveComplete' ][] = 'GettingStarted\Hooks::onPageContentSaveComplete';
-$wgHooks[ 'AddNewAccount' ][] = 'GettingStarted\Hooks::onAddNewAccount';
-$wgHooks[ 'UserCreateForm' ][] = 'GettingStarted\Hooks::onUserCreateForm';
 $wgHooks[ 'PersonalUrls' ][] = 'GettingStarted\Hooks::onPersonalUrls';
 $wgExtensionFunctions[] = 'GettingStarted\Hooks::onSetup';
 

@@ -124,15 +124,6 @@ class Hooks {
 	}
 
 	/**
-	 * Gets the getting started user token
-	 * @return string or null
-	 */
-	protected static function getGettingStartedToken() {
-		global $wgRequest;
-		return $wgRequest->getCookie( self::USER_TOKEN_COOKIE_NAME );
-	}
-
-	/**
 	 * Checks if the task toolbar should be loaded.
 	 *
 	 * It will load if it's a view of an existing page, and the user's browser
@@ -488,34 +479,6 @@ class Hooks {
 	}
 
 	/**
-	 * Log server-side event on successful page edit.
-	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/PageContentSaveComplete
-	 * @see https://meta.wikimedia.org/wiki/Schema:TrackedPageContentSaveComplete
-	 */
-	public static function onPageContentSaveComplete( $article, $user, $content, $summary,
-		$isMinor, $isWatch, $section, $flags, $revision, $status, $baseRevId ) {
-
-		global $wgRequest;
-
-		if ( $revision === null ) {
-			return true;
-		}
-
-		$revId = $revision->getId();
-		$event = array(
-			'revId' => $revId,
-		);
-
-		$gettingStartedToken = self::getGettingStartedToken();
-		if ( $gettingStartedToken !== null ) {
-			$event['token'] = $gettingStartedToken;
-		}
-
-		\EventLogging::logEvent( 'TrackedPageContentSaveComplete', 8535426, $event );
-		return true;
-	}
-
-	/**
 	 * If the site is a Wikipedia, this is called to specify that Wikipedia-specific
 	 * versions will be used for certain keys.
 	 *
@@ -547,53 +510,6 @@ class Hooks {
 		) ) ) {
 			$lckey = "{$lckey}-wikipedia";
 		}
-
-		return true;
-	}
-
-	/**
-	 * Logs a successful account creation, including the token
-	 *
-	 * @param User $user Newly created user
-	 * @param boolean $byEmail True if and only if created by email
-	 *
-	 * @return bool Always true
-	 */
-	public static function onAddNewAccount( User $user, $byEmail ) {
-		$gettingStartedToken = self::getGettingStartedToken();
-
-		$event = array(
-			'userId' => $user->getId()
-		);
-
-		if ( $gettingStartedToken !== null ) {
-			$event['token'] = $gettingStartedToken;
-		}
-
-		\EventLogging::logEvent( 'SignupExpAccountCreationComplete', 8539421, $event );
-
-		return true;
-	}
-
-	/**
-	 * Logs an impression on the signup form
-	 *
-	 * @param &$template Template for form (unused)
-	 *
-	 * @return bool Always true
-	 */
-	public static function onUserCreateForm( &$template ) {
-		$gettingStartedToken = self::getGettingStartedToken();
-
-		$event = array();
-
-		if ( $gettingStartedToken !== null ) {
-			$event['token'] = $gettingStartedToken;
-		}
-
-		// Cast so it's not serialized to []; temporary workaround for
-		// https://bugzilla.wikimedia.org/show_bug.cgi?id=65385 .
-		\EventLogging::logEvent( 'SignupExpAccountCreationImpression', 8539445, (object) $event );
 
 		return true;
 	}
