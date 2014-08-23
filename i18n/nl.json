@@ -7,7 +7,8 @@
 			"Siebrand",
 			"SPQRobin",
 			"Mar(c)",
-			"Southparkfan"
+			"Southparkfan",
+			"Sjoerddebruin"
 		]
 	},
 	"gettingstarted": "Aan de slag",
@@ -48,12 +49,9 @@
 	"gettingstarted-cta-fix-pages": "Bewerk een geselecteerde pagina",
 	"gettingstarted-cta-fix-pages-sub": "We kiezen iets eenvoudigs",
 	"gettingstarted-cta-leave": "Nee bedankt, misschien een volgende keer",
-	"guidedtour-tour-anonymouseditoracquisitionpreedit-title": "Meld u aan om {{SITENAME}} te bewerken",
-	"guidedtour-tour-anonymouseditoracquisitionpreedit-sign-up": "Registreer u en bewerk",
-	"guidedtour-tour-anonymouseditoracquisitionpreedit-continue": "Nee, bedankt",
-	"guidedtour-tour-anonymouseditoracquisitionpostedit-title": "Word lid van {{SITENAME}}",
-	"guidedtour-tour-anonymouseditoracquisitionpostedit-description": "Maak een account om te bewerken, daarnaast kunt u ook:\n<ul>\n<li>Uw bijdragen bijhouden</li>\n<li>Updates van uw favoriete pagina's te ontvangen</li>\n<li>In contact komen met andere Wikipedianen</li>\n<li>Vervroegd toegang krijgen tot nieuwe functies</li>\n</ul>",
-	"guidedtour-tour-anonymouseditoracquisitionpostedit-continue": "Registreren",
+	"guidedtour-tour-anonymouseditoracquisitionpreeditv1-title": "Meld u aan om {{SITENAME}} te bewerken",
+	"guidedtour-tour-anonymouseditoracquisitionpreeditv1-sign-up": "Registreer u en bewerk",
+	"guidedtour-tour-anonymouseditoracquisitionpreeditv1-continue": "Nee, bedankt",
 	"gettingstarted-task-toolbar-try-another-text-wikipedia": "Andere pagina proberen ►",
 	"gettingstarted-task-toolbar-no-suggested-page-wikipedia": "We konden helaas niet meer pagina vinden die verbeterd moeten worden. Probeer het over enige tijd opnieuw of zoek naar onderwerpen die u van belang vindt.",
 	"gettingstarted-task-copyedit-toolbar-description-wikipedia": "Deze pagina heeft mogelijk spel- of grammaticafouten die u kunt corrigeren.",
@@ -69,5 +67,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description-wikipedia": "U kunt de pagina nu bewerken. Klik op \"{{int:visualeditor-toolbar-savedialog}}\" als u klaar bent, om uw wijzigingen te controleren en ze op te slaan.",
 	"guidedtour-tour-gettingstarted-click-preview-description-wikipedia": "Door te klikken op \"{{int:showpreview}}\" kunt u zien hoe de pagina wordt weergegeven met uw wijzigingen. Vergeet uw wijzigingen niet op te slaan.",
 	"gettingstarted-cta-edit-page-wikipedia": "Bewerk deze pagina",
-	"gettingstarted-cta-fix-pages-wikipedia": "Bewerk een geselecteerde pagina"
+	"gettingstarted-cta-fix-pages-wikipedia": "Bewerk een geselecteerde pagina",
+	"gettingstarted-lightbulb-flyout-back": "Terug",
+	"gettingstarted-lightbulb-flyout-next": "Volgende"
 }
