@@ -8,7 +8,8 @@
 			"Omidh",
 			"Reza1615",
 			"Taha",
-			"Calak"
+			"Calak",
+			"Alirezaaa"
 		]
 	},
 	"gettingstarted": "شروع",
@@ -77,5 +78,7 @@
 	"gettingstarted-lightbulb-notification-body-lastedited": "ویرایش‌شده $1",
 	"gettingstarted-lightbulb-recommendations-personal-tool": "توصیه‌ها",
 	"gettingstarted-lightbulb-heading": "صفحه‌ها برای بهبود",
-	"gettingstarted-lightbulb-text": "پیشنهادشده بر پایهٔ آخرین ویرایشتان."
+	"gettingstarted-lightbulb-text": "پیشنهادشده بر پایهٔ آخرین ویرایشتان.",
+	"gettingstarted-lightbulb-flyout-back": "بازگشت",
+	"gettingstarted-lightbulb-flyout-next": "بعدی"
 }
