@@ -240,6 +240,18 @@ class Hooks {
 		return true;
 	}
 
+	protected static function getTaskRecommendationExperimentV1Bucket( User $user ) {
+		global $wgGettingStartedTaskRecsExperimentBuckets;
+
+		if ( !$user->isLoggedIn() || !self::isRecentSignup( $user ) ) {
+			return 'control';
+		}
+
+		$numBuckets = count( $wgGettingStartedTaskRecsExperimentBuckets );
+
+		return $wgGettingStartedTaskRecsExperimentBuckets[ $user->getId() % $numBuckets ];
+	}
+
 	/**
 	 * Adds applicable modules to the page
 	 *
@@ -277,11 +289,21 @@ class Hooks {
 			self::addReturnToModules( $out, $skin );
 		}
 
-		if ( $wgGettingStartedRunTest && $user->isLoggedIn() ) {
-			if( $out->getTitle()->inNamespace( NS_MAIN ) ) {
+		// Task Recommendations experiment v1.
+		if ( $wgGettingStartedRunTest ) {
+			$bucket = self::getTaskRecommendationExperimentV1Bucket( $user );
+
+			if (
+				( $bucket === 'post-edit' || $bucket === 'post-edit-flyout' )
+				&& $out->getTitle()->inNamespace( NS_MAIN )
+			) {
 				$out->addModules( 'ext.gettingstarted.lightbulb.postEdit' );
 			}
-			if ( $user->getEditCount() > 0 ) {
+
+			if (
+				( $bucket === 'flyout' || $bucket === 'post-edit-flyout' )
+				&& $user->getEditCount() > 0
+			) {
 				$out->addModules( 'ext.gettingstarted.lightbulb.flyout' );
 			}
 		}
@@ -524,9 +546,11 @@ class Hooks {
 	public static function onPersonalUrls( &$personal_urls, &$title, $skinTemplate ) {
 		global $wgGettingStartedRunTest, $wgUser;
 
+		$bucket = self::getTaskRecommendationExperimentV1Bucket( $wgUser );
+
 		if (
 			$wgGettingStartedRunTest &&
-			$wgUser->isLoggedIn() &&
+			( $bucket === 'flyout' || $bucket === 'post-edit-flyout' ) &&
 			$wgUser->getEditCount() > 0
 		) {
 			$recommendations = array(

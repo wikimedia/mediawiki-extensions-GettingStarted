@@ -76,6 +76,17 @@ $wgGettingStartedRedisOptions = array(
  */
 $wgGettingStartedRunTest = false;
 
+/**
+ * @var array The buckets available in v1 of the Task Recommendations
+ *     experiment.
+ */
+$wgGettingStartedTaskRecsExperimentBuckets = array(
+	'control',
+	'post-edit',
+	'flyout',
+	'post-edit-flyout'
+);
+
 $wgAutoloadClasses += array(
 	'GettingStarted\Hooks' => __DIR__ . '/Hooks.php',
 	'GettingStarted\RedisCategorySync' => __DIR__ . '/RedisCategorySync.php',
