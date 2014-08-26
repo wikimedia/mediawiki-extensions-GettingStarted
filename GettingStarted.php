@@ -76,17 +76,6 @@ $wgGettingStartedRedisOptions = array(
  */
 $wgGettingStartedRunTest = false;
 
-/**
- * @var array The buckets available in v1 of the Task Recommendations
- *     experiment.
- */
-$wgGettingStartedTaskRecsExperimentBuckets = array(
-	'control',
-	'post-edit',
-	'flyout',
-	'post-edit-flyout'
-);
-
 $wgAutoloadClasses += array(
 	'GettingStarted\Hooks' => __DIR__ . '/Hooks.php',
 	'GettingStarted\RedisCategorySync' => __DIR__ . '/RedisCategorySync.php',
@@ -98,6 +87,7 @@ $wgAutoloadClasses += array(
 	'GettingStarted\PageSuggester' => __DIR__ . '/PageSuggester.php',
 	'GettingStarted\CategoryPageSuggester' => __DIR__ . '/CategoryPageSuggester.php',
 	'GettingStarted\MoreLikePageSuggester' => __DIR__ . '/MoreLikePageSuggester.php',
+	'GettingStarted\TaskRecommendationsExperimentV1' => __DIR__ . '/TaskRecommendationsExperimentV1.php',
 );
 
 $wgMessagesDirs['GettingStarted'] = __DIR__ . '/i18n';

@@ -240,18 +240,6 @@ class Hooks {
 		return true;
 	}
 
-	protected static function getTaskRecommendationExperimentV1Bucket( User $user ) {
-		global $wgGettingStartedTaskRecsExperimentBuckets;
-
-		if ( !$user->isLoggedIn() || !self::isRecentSignup( $user ) ) {
-			return 'control';
-		}
-
-		$numBuckets = count( $wgGettingStartedTaskRecsExperimentBuckets );
-
-		return $wgGettingStartedTaskRecsExperimentBuckets[ $user->getId() % $numBuckets ];
-	}
-
 	/**
 	 * Adds applicable modules to the page
 	 *
@@ -291,17 +279,17 @@ class Hooks {
 
 		// Task Recommendations experiment v1.
 		if ( $wgGettingStartedRunTest ) {
-			$bucket = self::getTaskRecommendationExperimentV1Bucket( $user );
+			$experiment = new TaskRecommendationsExperimentV1( $user );
 
 			if (
-				( $bucket === 'post-edit' || $bucket === 'post-edit-flyout' )
+				$experiment->isPostEditEnabled()
 				&& $out->getTitle()->inNamespace( NS_MAIN )
 			) {
 				$out->addModules( 'ext.gettingstarted.lightbulb.postEdit' );
 			}
 
 			if (
-				( $bucket === 'flyout' || $bucket === 'post-edit-flyout' )
+				$experiment->isFlyoutEnabled()
 				&& $user->getEditCount() > 0
 			) {
 				$out->addModules( 'ext.gettingstarted.lightbulb.flyout' );
@@ -375,24 +363,6 @@ class Hooks {
 		$api->execute();
 		$result = $api->getResultData();
 		return isset( $result['query']['usercontribs'] ) && count( $result['query']['usercontribs'] ) >= 1;
-	}
-
-	/**
-	 * Checks if they signed up within wgGettingStartedRecentPeriodInSeconds period.
-	 *
-	 * @param User $user user to check
-	 * @return boolean true if recent, false otherwise
-	 */
-	protected static function isRecentSignup( User $user ) {
-		global $wgGettingStartedRecentPeriodInSeconds;
-
-		$registration = $user->getRegistration();
-		if ( $registration === null ) {
-			return false;
-		}
-
-		$secondsSinceSignup = wfTimestamp( TS_UNIX ) - wfTimestamp( TS_UNIX, $registration );
-		return $secondsSinceSignup < $wgGettingStartedRecentPeriodInSeconds;
 	}
 
 	public static function onGetPreferences( User $user, array &$preferences ) {
@@ -546,11 +516,11 @@ class Hooks {
 	public static function onPersonalUrls( &$personal_urls, &$title, $skinTemplate ) {
 		global $wgGettingStartedRunTest, $wgUser;
 
-		$bucket = self::getTaskRecommendationExperimentV1Bucket( $wgUser );
+		$experiment = new TaskRecommendationsExperimentV1( $wgUser );
 
 		if (
 			$wgGettingStartedRunTest &&
-			( $bucket === 'flyout' || $bucket === 'post-edit-flyout' ) &&
+			$experiment->isFlyoutEnabled() &&
 			$wgUser->getEditCount() > 0
 		) {
 			$recommendations = array(
