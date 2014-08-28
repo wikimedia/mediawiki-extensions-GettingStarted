@@ -205,6 +205,10 @@ $wgResourceModules[ 'ext.gettingstarted.lightbulb.flyout' ] = array(
 		'gettingstarted-lightbulb-text',
 		'gettingstarted-lightbulb-flyout-back',
 		'gettingstarted-lightbulb-flyout-next',
+		'gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits',
+		'gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits',
+		'gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations',
+		'gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations',
 	)
 ) + $gettingStartedModuleInfo;
 

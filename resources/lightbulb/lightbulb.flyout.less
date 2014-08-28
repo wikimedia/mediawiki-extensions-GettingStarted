@@ -13,14 +13,15 @@
 	box-sizing: border-box;
 	padding: 23px;
 
-	h1 {
+	.mw-gettingstarted-lightbulb-flyout-heading {
 		margin-bottom: 0;
 		font-size: 1.5em;
 	}
 
-	p {
-		margin-bottom: 1.5em;
-	}
+}
+
+.mw-gettingstarted-lightbulb-flyout-text {
+	margin-bottom: 1.5em;
 }
 
 .mw-gettingstarted-lightbulb-flyout-pagination {
@@ -101,6 +102,33 @@
 	li:last-child {
 		margin-bottom: 0;
 	}
+}
+
+.mw-gettingstarted-lightbulb-flyout-error-state {
+	padding: 3em 2em 2em 2em;
+	text-align: center;
+}
+
+.mw-gettingstarted-lightbulb-flyout-error-state-image {
+	width: 90px;
+	height: 142px;
+	margin: 0 auto;
+	background-position: center top;
+	background-size: 90px 142px;
+	margin-bottom: 1em;
+}
+
+.mw-gettingstarted-lightbulb-flyout-error-state-image.no-recommendations {
+	.background-image-svg('images/lightbulb-sad.svg', 'images/lightbulb-sad.png');
+}
+
+.mw-gettingstarted-lightbulb-flyout-error-state-image.no-edits {
+	.background-image-svg('images/lightbulb-no.svg', 'images/lightbulb-no.png');
+}
+
+.mw-gettingstarted-lightbulb-flyout-error-state-primary-text {
+	font-weight: bold;
+	font-size: 1.25em;
 }
 
 // TODO (phuedx, 2014/07/30): Classes like this would simplify the

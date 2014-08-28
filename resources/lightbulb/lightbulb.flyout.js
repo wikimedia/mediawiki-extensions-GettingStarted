@@ -4,13 +4,18 @@
 		MAX_PAGE_COUNT = 3,
 		flyoutTemplate =
 			'<div class="mw-gettingstarted-lightbulb-flyout guider">\
-				<h1></h1>\
-				<p></p>\
+				<h1 class="mw-gettingstarted-lightbulb-flyout-heading"></h1>\
+				<p class="mw-gettingstarted-lightbulb-flyout-text"></p>\
 				<ol class="mw-gettingstarted-lightbulb-suggestions">\
 				</ol>\
 				<div class="mw-gettingstarted-lightbulb-flyout-pagination">\
 					<button class="mw-ui-button mw-gettingstarted-lightbulb-flyout-pagination-button-icon mw-gettingstarted-lightbulb-flyout-back"></button>\
 					<button class="mw-ui-button mw-gettingstarted-lightbulb-flyout-pagination-button-icon mw-gettingstarted-lightbulb-flyout-next"></button>\
+				</div>\
+				<div class="mw-gettingstarted-lightbulb-flyout-error-state">\
+					<div class="mw-gettingstarted-lightbulb-flyout-error-state-image"></div>\
+					<p class="mw-gettingstarted-lightbulb-flyout-error-state-primary-text"></p>\
+					<p class="mw-gettingstarted-lightbulb-flyout-error-state-secondary-text"></p>\
 				</div>\
 				<div class="guider_arrow guider_arrow_up guider_arrow_center">\
 					<div class="guider_arrow_inner_container">\
@@ -30,11 +35,20 @@
 
 	function renderFlyout() {
 
-		// By default, the flyout is hidden.
+		// By default, everything in the flyout is hidden.
 		var $flyout = $( flyoutTemplate ).hide();
 
-		$flyout.find( 'h1' ).text( mw.msg( 'gettingstarted-lightbulb-heading' ) );
-		$flyout.find( 'p' ).text( mw.msg( 'gettingstarted-lightbulb-text' ) );
+		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-heading' )
+			.text( mw.msg( 'gettingstarted-lightbulb-heading' ) )
+			.hide();
+		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-text' )
+			.text( mw.msg( 'gettingstarted-lightbulb-text' ) )
+			.hide();
+
+		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-pagination' )
+			.hide();
+
+		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-error-state' ).hide();
 
 		return $flyout;
 	}
@@ -105,6 +119,30 @@
 	}
 
 	/**
+	 * Adds error state to the flyout
+	 * @param {string} error string either no-recommendations, or no-article-edits
+	 */
+	function addErrorStateToFlyout( error ) {
+		var $errorState = $flyout.find( '.mw-gettingstarted-lightbulb-flyout-error-state' ),
+			$errorStateImage = $errorState.find( '.mw-gettingstarted-lightbulb-flyout-error-state-image' ),
+			$errorStatePrimaryText = $errorState.find( '.mw-gettingstarted-lightbulb-flyout-error-state-primary-text' ),
+			$errorStateSecondaryText = $errorState.find( '.mw-gettingstarted-lightbulb-flyout-error-state-secondary-text' );
+
+		$errorStateImage.addClass( error );
+
+		$errorStatePrimaryText.text(
+			mw.msg( 'gettingstarted-lightbulb-flyout-error-state-primary-text-' + error )
+		);
+		$errorStateSecondaryText.text(
+			mw.msg( 'gettingstarted-lightbulb-flyout-error-state-secondary-text-' + error )
+		);
+
+		$flyout.data( 'error-state', true );
+
+		$errorState.show();
+	}
+
+	/**
 	 * Updates the flyout to render a particular page
 	 *
 	 * @param {Array} suggestions Full list of suggestions
@@ -129,6 +167,14 @@
 
 			$newSuggestions.append( $li );
 		}
+
+		// Show key elements in flyout
+		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-heading' )
+			.show();
+		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-text' )
+			.show();
+		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-pagination' )
+			.show();
 
 		// There can be 0 discs, in which case this is a noop.
 		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-pagination-disc' )
@@ -202,6 +248,7 @@
 	 *
 	 */
 	function showFlyout() {
+		positionFlyout( $flyout, $lightbulb );
 		$( document ).on( 'click', checkForClickOutside );
 		$( window ).on( 'resize', positionFlyout );
 		$flyout.show();
@@ -237,7 +284,7 @@
 				return;
 			}
 
-			if ( $flyout.data( 'has-suggestions' ) ) {
+			if ( $flyout.data( 'has-suggestions' ) || $flyout.data( 'error-state' ) ) {
 				if ( $flyout.is( ':visible' ) ) {
 					hideFlyout();
 				} else {
@@ -255,17 +302,26 @@
 						excludedTitle: title,
 						count: MAX_SUGGESTION_PER_PAGE_COUNT * MAX_PAGE_COUNT,
 						thumbSize: 70
-					} ).done( function ( response ) {
+					} )
+					.done( function ( response ) {
 						var suggestions = parser.parse( response );
-
 						addSuggestionsToFlyout( suggestions );
-						positionFlyout();
-
 						$flyout.data( 'has-suggestions', true );
-						requestingSuggestions = false;
-
+					} )
+					.fail( function () {
+						// no recommendations state
+						addErrorStateToFlyout( 'no-recommendations' );
+					} )
+					.always( function () {
 						showFlyout();
+						requestingSuggestions = false;
 					} );
+				} )
+				.fail( function () {
+					// no article edit state
+					addErrorStateToFlyout( 'no-article-edits' );
+					requestingSuggestions = false;
+					showFlyout();
 				} );
 		} );
 
