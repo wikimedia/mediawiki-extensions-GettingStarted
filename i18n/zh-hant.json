@@ -6,7 +6,8 @@
 			"Simon Shek",
 			"StephDC",
 			"Justincheng12345",
-			"LNDDYL"
+			"LNDDYL",
+			"Cwlin0416"
 		]
 	},
 	"gettingstarted": "入門",
@@ -47,5 +48,10 @@
 	"gettingstarted-cta-fix-pages": "編輯建議頁面",
 	"gettingstarted-cta-fix-pages-sub": "我們將挑選一些較為簡單的東西",
 	"gettingstarted-cta-leave": "不用了，以後再說吧",
-	"guidedtour-tour-anonymouseditoracquisitionpreeditv1-continue": "不，謝謝"
+	"guidedtour-tour-anonymouseditoracquisitionpreeditv1-continue": "不，謝謝",
+	"guidedtour-tour-anonymouseditoracquisitionpreeditv2-sign-up": "註冊",
+	"guidedtour-tour-anonymouseditoracquisitionpreeditv2-continue": "繼續編輯",
+	"gettingstarted-lightbulb-notification-body-lastedited": "已編輯於 $1",
+	"gettingstarted-lightbulb-flyout-back": "上一頁",
+	"gettingstarted-lightbulb-flyout-next": "下一頁"
 }
