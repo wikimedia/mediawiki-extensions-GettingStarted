@@ -68,6 +68,10 @@
 	"guidedtour-tour-gettingstarted-click-preview-description-wikipedia": "Door te klikken op \"{{int:showpreview}}\" kunt u zien hoe de pagina wordt weergegeven met uw wijzigingen. Vergeet uw wijzigingen niet op te slaan.",
 	"gettingstarted-cta-edit-page-wikipedia": "Bewerk deze pagina",
 	"gettingstarted-cta-fix-pages-wikipedia": "Bewerk een geselecteerde pagina",
+	"gettingstarted-lightbulb-notification-body": "Een vergelijkbaar artikel bewerken.",
+	"gettingstarted-lightbulb-recommendations-personal-tool": "Aanbevelingen",
+	"gettingstarted-lightbulb-heading": "Pagina's om te verbeteren",
+	"gettingstarted-lightbulb-text": "Aanbeveling gebaseerd op uw laatste bewerking.",
 	"gettingstarted-lightbulb-flyout-back": "Terug",
 	"gettingstarted-lightbulb-flyout-next": "Volgende"
 }
