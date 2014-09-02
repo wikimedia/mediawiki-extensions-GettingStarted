@@ -18,7 +18,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Aozañ ar bajenn a-bezh...",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Gallout a rit aozañ ar bajenn a-bezh o klikañ amañ.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Pe aozañ ur rann",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Gallout a rit aozañ !",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Grit ho kemmoù hag enrollit",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Bremañ e c'hallit aozañ ar bajenn. P'ho po fin, klikit war \"{{int:visualeditor-toolbar-savedialog}}\" evit adwelet hag enrollañ ho kemmoù.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Rakwel (diret)",
 	"guidedtour-tour-gettingstarted-click-save-title": "Tost echu eo ganeoc'h !",
@@ -32,7 +32,9 @@
 	"gettingstarted-cta-leave": "Ket, diwezhatoc'h marteze",
 	"gettingstarted-task-toolbar-try-another-text-wikipedia": "Esaeañ ur pennad all ►",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title-wikipedia": "Aozañ ar pennad a-bezh...",
+	"gettingstarted-cta-edit-page-wikipedia": "Aozañ ar pennad-mañ",
 	"gettingstarted-lightbulb-notification-body": "Aozañ ur pennad damheñvel.",
+	"gettingstarted-lightbulb-recommendations-personal-tool": "Erbedoù",
 	"gettingstarted-lightbulb-heading": "Pajennoù da welaat",
 	"gettingstarted-lightbulb-flyout-back": "Distreiñ",
 	"gettingstarted-lightbulb-flyout-next": "War-lerc'h"
