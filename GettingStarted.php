@@ -177,7 +177,6 @@ $wgResourceModules[ 'ext.gettingstarted.lightbulb.postEdit' ] = array(
 	),
 	'messages' => array(
 		'gettingstarted-lightbulb-notification-body',
-		'gettingstarted-lightbulb-notification-body-lastedited',
 	),
 ) + $gettingStartedModuleInfo;
 
@@ -222,6 +221,9 @@ $wgResourceModules[ 'ext.gettingstarted.lightbulb.common' ] = array(
 		'ext.gettingstarted.logging',
 		'schema.TaskRecommendation',
 		'schema.TaskRecommendationClick',
+	),
+	'messages' => array(
+		'gettingstarted-lightbulb-notification-body-lastedited',
 	),
 ) + $gettingStartedModuleInfo;
 
