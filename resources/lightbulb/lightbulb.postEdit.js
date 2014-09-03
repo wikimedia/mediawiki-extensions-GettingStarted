@@ -57,14 +57,16 @@
 			// Show the notification.
 			$( document.body ).append( $notification );
 
-			// Log Impression
-			mw.eventLog.logEvent( 'TaskRecommendationImpression', {
-				setId: suggestions[0].setId,
-				userId: mwConfig.wgUserId,
-				pageId: mwConfig.wgArticleId,
-				'interface': 'post-edit',
-				offset: 0
-			} );
+			// If there's a task recommendation, then log its impression.
+			if ( suggestions.length > 0 ) {
+				mw.eventLog.logEvent( 'TaskRecommendationImpression', {
+					setId: suggestions[0].setId,
+					userId: mwConfig.wgUserId,
+					pageId: mwConfig.wgArticleId,
+					'interface': 'post-edit',
+					offset: 0
+				} );
+			}
 		} );
 	} );
 
