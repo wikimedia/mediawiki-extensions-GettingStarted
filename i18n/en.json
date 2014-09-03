@@ -76,5 +76,7 @@
     "gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "No recommendations yet!",
     "gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Try editing a few pages. It will help us recommend what you should edit next.",
     "gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Uh oh, we're unable to show recommendations right now.",
-    "gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Please try again."
+    "gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Please try again.",
+    "gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Random page",
+    "gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Refresh"
 }

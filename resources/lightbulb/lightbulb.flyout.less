@@ -105,8 +105,10 @@
 }
 
 .mw-gettingstarted-lightbulb-flyout-error-state {
-	padding: 3em 2em 2em 2em;
 	text-align: center;
+}
+.mw-gettingstarted-lightbulb-flyout-error-state-body {
+	padding: 3em 2em 2em 2em;
 }
 
 .mw-gettingstarted-lightbulb-flyout-error-state-image {
@@ -118,17 +120,39 @@
 	margin-bottom: 1em;
 }
 
-.mw-gettingstarted-lightbulb-flyout-error-state-image.no-recommendations {
-	.background-image-svg('images/lightbulb-sad.svg', 'images/lightbulb-sad.png');
-}
-
-.mw-gettingstarted-lightbulb-flyout-error-state-image.no-edits {
-	.background-image-svg('images/lightbulb-no.svg', 'images/lightbulb-no.png');
-}
-
 .mw-gettingstarted-lightbulb-flyout-error-state-primary-text {
 	font-weight: bold;
 	font-size: 1.25em;
+}
+
+.mw-gettingstarted-lightbulb-flyout-error-state-button-icon {
+	height: 20px;
+	width: 20px;
+	float: left;
+	display: block;
+	margin-right: 0.5em
+}
+
+.mw-gettingstarted-lightbulb-flyout-error-state-button-text {
+	line-height: 20px;
+}
+
+.mw-gettingstarted-lightbulb-flyout-error-state-no-recommendations {
+	.mw-gettingstarted-lightbulb-flyout-error-state-image {
+		.background-image-svg('images/lightbulb-sad.svg', 'images/lightbulb-sad.png');
+	}
+	.mw-gettingstarted-lightbulb-flyout-error-state-button-icon {
+		.background-image-svg('images/refresh.svg', 'images/refresh.png');
+	}
+}
+
+.mw-gettingstarted-lightbulb-flyout-error-state-no-article-edits {
+	.mw-gettingstarted-lightbulb-flyout-error-state-image {
+		.background-image-svg('images/lightbulb-no.svg', 'images/lightbulb-no.png');
+	}
+	.mw-gettingstarted-lightbulb-flyout-error-state-button-icon {
+		.background-image-svg('images/random.svg', 'images/random.png');
+	}
 }
 
 // TODO (phuedx, 2014/07/30): Classes like this would simplify the
