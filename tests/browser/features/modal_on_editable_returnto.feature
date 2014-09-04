@@ -1,4 +1,4 @@
-@en.wikipedia.beta.wmflabs.org @firefox
+@en.wikipedia.beta.wmflabs.org @firefox @login
 Feature: Modal on editable returnto page
 
 	Scenario: User sees modal call to action after registration
