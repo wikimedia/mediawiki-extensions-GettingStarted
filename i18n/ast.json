@@ -65,5 +65,12 @@
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description-wikipedia": "Agora pues editar el conteníu del artículu. En acabando, fai clic en «{{int:visualeditor-toolbar-savedialog}}» pa revisar y guardar los cambios.",
 	"guidedtour-tour-gettingstarted-click-preview-description-wikipedia": "Si calques «{{int:showpreview}}» podrás ver l'aspeutu que tendrá la páxina colos cambios. Pero nun escaezas guardala.",
 	"gettingstarted-cta-edit-page-wikipedia": "Editar esti artículu",
-	"gettingstarted-cta-fix-pages-wikipedia": "Editar un artículu suxeríu"
+	"gettingstarted-cta-fix-pages-wikipedia": "Editar un artículu suxeríu",
+	"gettingstarted-lightbulb-notification-body": "Editar un artículu asemeyáu.",
+	"gettingstarted-lightbulb-notification-body-lastedited": "Editáu $1",
+	"gettingstarted-lightbulb-recommendations-personal-tool": "Recomendaciones",
+	"gettingstarted-lightbulb-heading": "Páxines p'ameyorar",
+	"gettingstarted-lightbulb-text": "Recomendaes basándose na to última edición.",
+	"gettingstarted-lightbulb-flyout-back": "Anterior",
+	"gettingstarted-lightbulb-flyout-next": "Siguiente"
 }
