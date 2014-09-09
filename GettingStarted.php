@@ -54,10 +54,6 @@ $wgGettingStartedCategoriesForTaskTypes = array();
  */
 $wgGettingStartedExcludedCategories = array();
 
-// If they signed up with this number of seconds, it's considered recent
-// Below default is 30 days.
-$wgGettingStartedRecentPeriodInSeconds = 2592000;
-
 /**
  * @var string|bool: redis host to use; false if unset.
  * @example string: '127.0.0.1'
@@ -75,6 +71,18 @@ $wgGettingStartedRedisOptions = array(
  * Is the controlled experiment enabled?
  */
 $wgGettingStartedRunTest = false;
+
+// Range of registration dates for users affected by Task Recommendation Experiment v1
+
+/**
+ * Beginning of registration date range, in UNIX time (seconds), inclusive
+ */
+$wgTaskRecommendationsExperimentV1StartDate = 0;
+
+/**
+ * End of registration date range, in UNIX time (seconds), exclusive
+ */
+$wgTaskRecommendationsExperimentV1EndDate = 0;
 
 $wgAutoloadClasses += array(
 	'GettingStarted\Hooks' => __DIR__ . '/Hooks.php',
