@@ -11,7 +11,7 @@
 	font-size: 0.875em;
 
 	box-sizing: border-box;
-	padding: 23px;
+
 
 	.mw-gettingstarted-lightbulb-flyout-heading {
 		margin-bottom: 0;
@@ -24,8 +24,13 @@
 	margin-bottom: 1.5em;
 }
 
+.mw-gettingstarted-lightbulb-flyout-head {
+	padding: 1em 1em 0 1em;
+}
+
 .mw-gettingstarted-lightbulb-flyout-pagination {
 	margin-top: 35px;
+	padding-bottom: 1em;
 	text-align: center;
 }
 
@@ -86,10 +91,23 @@
 	cursor: default;
 }
 
+.mw-gettingstarted-lightbulb-suggestions-wrapper {
+	overflow: hidden;
+}
+
+.mw-gettingstarted-lightbulb-suggestions-container {
+	position: relative;
+	.transition(all .3s ease-in-out);
+	white-space: nowrap;
+}
+
 .mw-gettingstarted-lightbulb-suggestions {
+	width: 100%;
+	display: inline-block;
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding: 0 1em;
+	box-sizing: border-box;
 
 	.mw-gettingstarted-lightbulb-suggestion {
 		background-color: @colorGray15;

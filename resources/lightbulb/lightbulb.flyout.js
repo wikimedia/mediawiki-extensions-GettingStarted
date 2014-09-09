@@ -4,10 +4,13 @@
 		MAX_PAGE_COUNT = 3,
 		flyoutTemplate =
 			'<div class="mw-gettingstarted-lightbulb-flyout guider">\
-				<h1 class="mw-gettingstarted-lightbulb-flyout-heading"></h1>\
-				<p class="mw-gettingstarted-lightbulb-flyout-text"></p>\
-				<ol class="mw-gettingstarted-lightbulb-suggestions">\
-				</ol>\
+				<div class="mw-gettingstarted-lightbulb-flyout-head">\
+					<h1 class="mw-gettingstarted-lightbulb-flyout-heading"></h1>\
+					<p class="mw-gettingstarted-lightbulb-flyout-text"></p>\
+				</div>\
+				<div class="mw-gettingstarted-lightbulb-suggestions-wrapper">\
+					<div class="mw-gettingstarted-lightbulb-suggestions-container"></div>\
+				</div>\
 				<div class="mw-gettingstarted-lightbulb-flyout-pagination">\
 					<button class="mw-ui-button mw-gettingstarted-lightbulb-flyout-pagination-button-icon mw-gettingstarted-lightbulb-flyout-back"></button>\
 					<button class="mw-ui-button mw-gettingstarted-lightbulb-flyout-pagination-button-icon mw-gettingstarted-lightbulb-flyout-next"></button>\
@@ -76,18 +79,17 @@
 	/**
 	 * Returns a click handler for a pagination disc
 	 *
-	 * @param {jQuery} $flyout jQuery set for flyout
 	 * @param {Array} suggestions Full list of suggestions
 	 * @param {Number} index Index of page this disc refers to
 	 * @param {Number} pageCount Number of pages
 	 *
 	 * @return {Function} Click handler
 	 */
-	function getPaginationDiscHandler( $flyout, suggestions, index, pageCount ) {
+	function getPaginationDiscHandler( suggestions, index, pageCount ) {
 		return function () {
 			if ( index !== currentFlyoutPageIndex ) {
 				currentFlyoutPageIndex = index;
-				renderFlyoutPage( $flyout, suggestions, currentFlyoutPageIndex, pageCount );
+				showFlyoutPage( suggestions, currentFlyoutPageIndex, pageCount );
 			}
 		};
 	}
@@ -109,7 +111,7 @@
 			.attr( 'title', mw.msg( 'gettingstarted-lightbulb-flyout-back' ) )
 			.click( function () {
 				currentFlyoutPageIndex--;
-				renderFlyoutPage( suggestions, currentFlyoutPageIndex, pageCount );
+				showFlyoutPage( suggestions, currentFlyoutPageIndex, pageCount );
 			} );
 
 
@@ -118,24 +120,35 @@
 			.attr( 'title', mw.msg( 'gettingstarted-lightbulb-flyout-next' ) )
 			.click( function () {
 				currentFlyoutPageIndex++;
-				renderFlyoutPage( suggestions, currentFlyoutPageIndex, pageCount );
+				showFlyoutPage( suggestions, currentFlyoutPageIndex, pageCount );
 			} );
-		if ( pageCount > 1 ) {
-			for ( i = 0; i < pageCount; i++ ) {
-				discHandler = getPaginationDiscHandler( $flyout, suggestions, i, pageCount );
+
+		for ( i = 0; i < pageCount; i++ ) {
+			if ( pageCount > 1 ) {
+				discHandler = getPaginationDiscHandler( suggestions, i, pageCount );
 				$( '<span> ' )
 					.attr( 'class', 'mw-gettingstarted-lightbulb-flyout-pagination-disc' )
 					.text( '●' )
 					.insertBefore( $nextButton )
 					.on( 'click', discHandler );
-
 			}
+			addFlyoutPage( suggestions, i );
+		}
+
+		// Show key elements in flyout
+		if ( pageCount > 1 ) {
+			$pagination.show();
 		} else {
 			$pagination.hide();
 		}
 
+		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-heading' )
+			.show();
+		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-text' )
+			.show();
+
 		currentFlyoutPageIndex = 0;
-		renderFlyoutPage( suggestions, currentFlyoutPageIndex, pageCount );
+		showFlyoutPage( suggestions, currentFlyoutPageIndex, pageCount );
 	}
 
 	/**
@@ -165,19 +178,17 @@
 	}
 
 	/**
-	 * Updates the flyout to render a particular page
+	 * Adds a page of new suggestions to the flyout
 	 *
 	 * @param {Array} suggestions Full list of suggestions
 	 * @param {Number} pageIndex Page index to show, 0-based
 	 * @param {Number} pageCount Number of pages
 	 */
-	function renderFlyoutPage( suggestions, pageIndex, pageCount ) {
-		var $suggestions = $flyout.find( '.mw-gettingstarted-lightbulb-suggestions' ),
+	function addFlyoutPage( suggestions, pageIndex ) {
+		var $suggestions = $flyout.find( '.mw-gettingstarted-lightbulb-suggestions-container' ),
 			$newSuggestions = $( '<ol>' ).attr( 'class', 'mw-gettingstarted-lightbulb-suggestions' ),
 			suggestion,
 			$suggestion,
-			$prevButton,
-			$nextButton,
 			suggestionStartIndex = pageIndex * MAX_SUGGESTION_PER_PAGE_COUNT,
 			$li,
 			i;
@@ -190,13 +201,19 @@
 			$newSuggestions.append( $li );
 		}
 
-		// Show key elements in flyout
-		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-heading' )
-			.show();
-		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-text' )
-			.show();
-		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-pagination' )
-			.show();
+		$suggestions.append( $newSuggestions );
+	}
+
+	/**
+	 * Puts a particular page in the flyout into view
+	 *
+	 * @param {Array} suggestions Full list of suggestions
+	 * @param {Number} pageIndex Page index to show, 0-based
+	 * @param {Number} pageCount Number of pages
+	 */
+	function showFlyoutPage( suggestions, pageIndex, pageCount ) {
+		var suggestionWidth = $flyout.find( '.mw-gettingstarted-lightbulb-suggestions' ).outerWidth(),
+			leftOffset = - ( pageIndex * suggestionWidth );
 
 		// There can be 0 discs, in which case this is a noop.
 		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-pagination-disc' )
@@ -204,13 +221,16 @@
 			.eq( pageIndex )
 			.addClass( 'mw-gettingstarted-lightbulb-flyout-selected-page' );
 
-		$prevButton = $flyout.find( '.mw-gettingstarted-lightbulb-flyout-back' )
+		// Setup back and next buttons
+		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-back' )
 			.prop( 'disabled', pageIndex === 0 );
 
-		$nextButton = $flyout.find( '.mw-gettingstarted-lightbulb-flyout-next' )
+		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-next' )
 			.prop( 'disabled', pageIndex === ( pageCount - 1 ) );
 
-		$suggestions.replaceWith( $newSuggestions );
+		// Slide into view
+		$flyout.find( '.mw-gettingstarted-lightbulb-suggestions-container' )
+			.css( 'left', leftOffset );
 
 		// Log Impression
 		mw.eventLog.logEvent( 'TaskRecommendationImpression', {
