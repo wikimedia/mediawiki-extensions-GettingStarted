@@ -150,7 +150,7 @@
 			userId: mwConfig.wgUserId,
 			pageId: mwConfig.wgArticleId,
 			'interface': 'flyout',
-			offset: pageIndex
+			offset: pageIndex * MAX_SUGGESTION_PER_PAGE_COUNT
 		} );
 	}
 
