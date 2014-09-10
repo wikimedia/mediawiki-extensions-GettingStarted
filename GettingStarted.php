@@ -198,6 +198,7 @@ $wgResourceModules[ 'ext.gettingstarted.lightbulb.flyout' ] = array(
 		'ext.guidedTour.styles',
 		'jquery.client',
 		'mediawiki.user',
+		'schema.TaskRecommendationImpression',
 		'schema.TaskRecommendationLightbulbClick',
 	),
 	'messages' => array(
