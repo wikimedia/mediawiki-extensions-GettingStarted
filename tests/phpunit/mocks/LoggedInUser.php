@@ -6,19 +6,19 @@ use User, WSTimestamp;
 
 class LoggedInUser extends User {
 
-    private $registration;
+	private $registration;
 
-    public function __construct( $registration ) {
-        parent::__construct();
+	public function __construct( $registration ) {
+		parent::__construct();
 
-        $this->registration = $registration;
-    }
+		$this->registration = $registration;
+	}
 
-    public function isLoggedIn() {
-        return true;
-    }
+	public function isLoggedIn() {
+		return true;
+	}
 
-    public function getRegistration() {
-        return $this->registration;
-    }
+	public function getRegistration() {
+		return $this->registration;
+	}
 }
