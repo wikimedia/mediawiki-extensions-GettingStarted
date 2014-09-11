@@ -70,5 +70,10 @@
 	"gettingstarted-lightbulb-heading": "Páginas para melhorar",
 	"gettingstarted-lightbulb-text": "Recomendado com base na sua última edição.",
 	"gettingstarted-lightbulb-flyout-back": "Voltar",
-	"gettingstarted-lightbulb-flyout-next": "Seguinte"
+	"gettingstarted-lightbulb-flyout-next": "Seguinte",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Nenhuma recomendação ainda!",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Experimente editar algumas páginas. Isso vai ajudar-nos a recomendar-lhe o que deve editar a seguir.",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Por favor, tente novamente.",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Página aleatória",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Atualizar"
 }
