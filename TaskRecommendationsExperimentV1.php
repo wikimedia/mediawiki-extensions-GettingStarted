@@ -24,26 +24,25 @@ class TaskRecommendationsExperimentV1 {
 	}
 
 	private function getBucket( User $user ) {
-		if ( !$user->isLoggedIn() || !$this->isRecentSignup( $user ) ) {
+		if ( !$user->isLoggedIn() || !$this->isRegistrationDateInRange( $user ) ) {
 			return 'control';
 		}
-
-		// TODO (phuedx, 2014/08/26): Hooks::isRecentSignup belongs here too.
 
 		$numBuckets = count( self::$buckets );
 
 		return self::$buckets[ $user->getId() % $numBuckets ];
 	}
 
-	private function isRecentSignup( User $user ) {
+	private function isRegistrationDateInRange( User $user ) {
 		// TODO (phuedx, 2014/08/27): This is part of the experiment
 		// configuration and should be passed in at construction.
-		global $wgGettingStartedRecentPeriodInSeconds;
+		global $wgTaskRecommendationsExperimentV1StartDate,
+			$wgTaskRecommendationsExperimentV1EndDate;
 
-		$registration = $user->getRegistration();
-		$secondsSinceRegistration = wfTimestamp( TS_UNIX ) - wfTimestamp( TS_UNIX, $registration );
+		$registrationDateInUnixTime = wfTimestamp( TS_UNIX, $user->getRegistration() );
 
-		return $secondsSinceRegistration < $wgGettingStartedRecentPeriodInSeconds;
+		return $registrationDateInUnixTime >= $wgTaskRecommendationsExperimentV1StartDate &&
+			$registrationDateInUnixTime < $wgTaskRecommendationsExperimentV1EndDate;
 	}
 
 	public function isPostEditEnabled() {

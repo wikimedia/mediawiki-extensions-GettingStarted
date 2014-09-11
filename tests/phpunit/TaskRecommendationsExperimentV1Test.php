@@ -10,7 +10,13 @@ use User;
 use GettingStarted\TaskRecommendationsExperimentV1;
 use Tests\GettingStarted\Mocks\LoggedInUser;
 
-class TaskRecommendationsExperimentV1Test extends \PHPUnit_Framework_TestCase {
+class TaskRecommendationsExperimentV1Test extends \MediaWikiTestCase {
+	public function setUp() {
+		parent::setUp();
+
+		$this->setMwGlobals( 'wgTaskRecommendationsExperimentV1StartDate', 1000 );
+		$this->setMwGlobals( 'wgTaskRecommendationsExperimentV1EndDate', 2000 );
+	}
 
 	public function testAnAnonymousUserShouldntSeeThePostEditNotification() {
 		$experiment = new TaskRecommendationsExperimentV1( new User() );
@@ -23,12 +29,20 @@ class TaskRecommendationsExperimentV1Test extends \PHPUnit_Framework_TestCase {
 	}
 
 	public function testLoggedInOldUserShouldntSeeThePostEditNotification() {
-		$experiment = new TaskRecommendationsExperimentV1( $this->getLoggedInOldUser() );
+		$user = $this->getLoggedInOldUser();
+		// 3 => 'both' bucket, so the registration date is the only reason
+		// they don't get it.
+		$user->setId( 3 );
+
+		$experiment = new TaskRecommendationsExperimentV1( $user );
 		$this->assertFalse( $experiment->isPostEditEnabled() );
 	}
 
 	public function testLoggedInOldUserShouldntSeeTheFlyout() {
-		$experiment = new TaskRecommendationsExperimentV1( $this->getLoggedInOldUser() );
+		$user = $this->getLoggedInOldUser();
+		$user->setId( 3 );
+
+		$experiment = new TaskRecommendationsExperimentV1( $user );
 		$this->assertFalse( $experiment->isFlyoutEnabled() );
 	}
 
@@ -57,16 +71,10 @@ class TaskRecommendationsExperimentV1Test extends \PHPUnit_Framework_TestCase {
 	}
 
 	private function getLoggedInOldUser() {
-		global $wgGettingStartedRecentPeriodInSeconds;
-
-		$registration = wfTimestamp(
-			TS_UNIX, time() + $wgGettingStartedRecentPeriodInSeconds + 86400 // 31 days old.
-		);
-
-		return new LoggedInUser( $registration );
+		return new LoggedInUser( 800 );
 	}
 
 	private function getLoggedInNewUser() {
-		return new LoggedInUser( wfTimestamp( TS_UNIX ) );
+		return new LoggedInUser( 1700 );
 	}
 }
