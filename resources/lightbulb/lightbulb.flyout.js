@@ -13,9 +13,15 @@
 					<button class="mw-ui-button mw-gettingstarted-lightbulb-flyout-pagination-button-icon mw-gettingstarted-lightbulb-flyout-next"></button>\
 				</div>\
 				<div class="mw-gettingstarted-lightbulb-flyout-error-state">\
-					<div class="mw-gettingstarted-lightbulb-flyout-error-state-image"></div>\
-					<p class="mw-gettingstarted-lightbulb-flyout-error-state-primary-text"></p>\
-					<p class="mw-gettingstarted-lightbulb-flyout-error-state-secondary-text"></p>\
+					<div class="mw-gettingstarted-lightbulb-flyout-error-state-body">\
+						<div class="mw-gettingstarted-lightbulb-flyout-error-state-image"></div>\
+						<p class="mw-gettingstarted-lightbulb-flyout-error-state-primary-text"></p>\
+						<p class="mw-gettingstarted-lightbulb-flyout-error-state-secondary-text"></p>\
+					</div>\
+					<a class="mw-gettingstarted-lightbulb-flyout-error-state-button mw-ui-button mw-gettingstarted-lightbulb-flyout-error-state  mw-ui-progressive" href="javascript:void(0);">\
+						<span class="mw-gettingstarted-lightbulb-flyout-error-state-button-icon"></span>\
+						<span class="mw-gettingstarted-lightbulb-flyout-error-state-button-text"></span>\
+					</a>\
 				</div>\
 				<div class="guider_arrow guider_arrow_up guider_arrow_center">\
 					<div class="guider_arrow_inner_container">\
@@ -36,7 +42,8 @@
 	function renderFlyout() {
 
 		// By default, everything in the flyout is hidden.
-		var $flyout = $( flyoutTemplate ).hide();
+		var $flyout = $( flyoutTemplate ).hide(),
+			$errorState =$flyout.find( '.mw-gettingstarted-lightbulb-flyout-error-state' );
 
 		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-heading' )
 			.text( mw.msg( 'gettingstarted-lightbulb-heading' ) )
@@ -48,7 +55,20 @@
 		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-pagination' )
 			.hide();
 
-		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-error-state' ).hide();
+		$errorState.hide();
+
+		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-error-state-button' )
+			.on( 'click', function () {
+				/* TODO: rmoen 9-3-14 add loading state for when flyout opens
+						 and when additional api requests are made */
+				if ( $errorState.hasClass( 'mw-gettingstarted-lightbulb-flyout-error-state-no-article-edits' ) ) {
+					window.location.href = mw.util.getUrl( 'Special:Random/' );
+				} else {
+					// Hide error state and request suggestions
+					$flyout.find( '.mw-gettingstarted-lightbulb-flyout-error-state' ).hide();
+					requestSuggestions();
+				}
+			} );
 
 		return $flyout;
 	}
@@ -124,11 +144,13 @@
 	 */
 	function addErrorStateToFlyout( error ) {
 		var $errorState = $flyout.find( '.mw-gettingstarted-lightbulb-flyout-error-state' ),
-			$errorStateImage = $errorState.find( '.mw-gettingstarted-lightbulb-flyout-error-state-image' ),
+			$errorStateButton = $errorState.find( '.mw-gettingstarted-lightbulb-flyout-error-state-button' ),
 			$errorStatePrimaryText = $errorState.find( '.mw-gettingstarted-lightbulb-flyout-error-state-primary-text' ),
 			$errorStateSecondaryText = $errorState.find( '.mw-gettingstarted-lightbulb-flyout-error-state-secondary-text' );
 
-		$errorStateImage.addClass( error );
+		$errorState.addClass( 'mw-gettingstarted-lightbulb-flyout-error-state-' + error );
+		$errorStateButton.find( '.mw-gettingstarted-lightbulb-flyout-error-state-button-text' )
+			.text( mw.msg( 'gettingstarted-lightbulb-flyout-error-state-button-text-' + error ) );
 
 		$errorStatePrimaryText.text(
 			mw.msg( 'gettingstarted-lightbulb-flyout-error-state-primary-text-' + error )
@@ -271,8 +293,6 @@
 		$flyout = renderFlyout();
 
 		$lightbulb.on( 'click', function ( event ) {
-			var api;
-
 			event.preventDefault();
 
 			mw.eventLog.logEvent( 'TaskRecommendationLightbulbClick', {
@@ -294,38 +314,43 @@
 				return;
 			}
 
-			requestingSuggestions = true;
-			api = new mw.gettingStarted.Api();
-			api.getLastArticleUserEdited( mw.user.getName() )
-				.done( function ( title ) {
-					api.getSuggestions( {
-						excludedTitle: title,
-						count: MAX_SUGGESTION_PER_PAGE_COUNT * MAX_PAGE_COUNT,
-						thumbSize: 70
-					} )
-					.done( function ( response ) {
-						var suggestions = parser.parse( response );
-						addSuggestionsToFlyout( suggestions );
-						$flyout.data( 'has-suggestions', true );
-					} )
-					.fail( function () {
-						// no recommendations state
-						addErrorStateToFlyout( 'no-recommendations' );
-					} )
-					.always( function () {
-						showFlyout();
-						requestingSuggestions = false;
-					} );
-				} )
-				.fail( function () {
-					// no article edit state
-					addErrorStateToFlyout( 'no-article-edits' );
-					requestingSuggestions = false;
-					showFlyout();
-				} );
+			requestSuggestions();
 		} );
 
 		$( document.body ).append( $flyout );
+	}
+
+	function requestSuggestions() {
+		var api = new mw.gettingStarted.Api();
+
+		requestingSuggestions = true;
+		api.getLastArticleUserEdited( mw.user.getName() )
+			.done( function ( title ) {
+				api.getSuggestions( {
+					excludedTitle: title,
+					count: MAX_SUGGESTION_PER_PAGE_COUNT * MAX_PAGE_COUNT,
+					thumbSize: 70
+				} )
+				.done( function ( response ) {
+					var suggestions = parser.parse( response );
+					addSuggestionsToFlyout( suggestions );
+					$flyout.data( 'has-suggestions', true );
+				} )
+				.fail( function () {
+					// show no recommendations state
+					addErrorStateToFlyout( 'no-recommendations' );
+				} )
+				.always( function () {
+					showFlyout();
+					requestingSuggestions = false;
+				} );
+			} )
+			.fail( function () {
+				// no article edits state
+				addErrorStateToFlyout( 'no-article-edits' );
+				requestingSuggestions = false;
+				showFlyout();
+			} );
 	}
 
 	$( function () {
