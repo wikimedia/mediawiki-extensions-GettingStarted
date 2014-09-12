@@ -1,4 +1,4 @@
-.svn
 *~
 *.kate-swp
 .*.swp
+tests/browser/.gem
