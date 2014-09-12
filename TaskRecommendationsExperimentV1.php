@@ -39,9 +39,11 @@ class TaskRecommendationsExperimentV1 {
 		global $wgTaskRecommendationsExperimentV1StartDate,
 			$wgTaskRecommendationsExperimentV1EndDate;
 
-		$registrationDateInUnixTime = wfTimestamp( TS_UNIX, $user->getRegistration() );
+		$registrationDateInUnixTime = wfTimestampOrNull( TS_UNIX, $user->getRegistration() );
 
-		return $registrationDateInUnixTime >= $wgTaskRecommendationsExperimentV1StartDate &&
+		// null user_registration is treated as a very old user, always excluded
+		return $registrationDateInUnixTime !== null &&
+			$registrationDateInUnixTime >= $wgTaskRecommendationsExperimentV1StartDate &&
 			$registrationDateInUnixTime < $wgTaskRecommendationsExperimentV1EndDate;
 	}
 

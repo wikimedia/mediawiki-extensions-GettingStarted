@@ -14,8 +14,11 @@ class TaskRecommendationsExperimentV1Test extends \MediaWikiTestCase {
 	public function setUp() {
 		parent::setUp();
 
-		$this->setMwGlobals( 'wgTaskRecommendationsExperimentV1StartDate', 1000 );
-		$this->setMwGlobals( 'wgTaskRecommendationsExperimentV1EndDate', 2000 );
+		$now = time();
+		$startDateOffset = -500;
+		$endDateOffset = 500;
+		$this->setMwGlobals( 'wgTaskRecommendationsExperimentV1StartDate', $startDateOffset + $now );
+		$this->setMwGlobals( 'wgTaskRecommendationsExperimentV1EndDate', $endDateOffset + $now );
 	}
 
 	public function testAnAnonymousUserShouldntSeeThePostEditNotification() {
@@ -46,6 +49,15 @@ class TaskRecommendationsExperimentV1Test extends \MediaWikiTestCase {
 		$this->assertFalse( $experiment->isFlyoutEnabled() );
 	}
 
+	public function testLoggedInOldUserWithNullRegistrationDateShouldntSeeAnything() {
+		$user = $this->getLoggedInOldUserWithNullRegistrationDate();
+		$user->setId( 3 );
+		$experiment = new TaskRecommendationsExperimentV1( $user );
+
+		$this->assertFalse( $experiment->isFlyoutEnabled() );
+		$this->assertFalse( $experiment->isPostEditEnabled() );
+	}
+
 	public static function bucketingDataProvider() {
 		return array(
 			array(
@@ -71,10 +83,14 @@ class TaskRecommendationsExperimentV1Test extends \MediaWikiTestCase {
 	}
 
 	private function getLoggedInOldUser() {
-		return new LoggedInUser( 800 );
+		return new LoggedInUser( -700 + time() );
 	}
 
 	private function getLoggedInNewUser() {
-		return new LoggedInUser( 1700 );
+		return new LoggedInUser( 200 + time() );
+	}
+
+	private function getLoggedInOldUserWithNullRegistrationDate() {
+		return new LoggedInUser( null );
 	}
 }
