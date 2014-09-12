@@ -45,21 +45,14 @@
 
 	function renderFlyout() {
 
-		// By default, everything in the flyout is hidden.
 		var $flyout = $( flyoutTemplate ).hide(),
-			$errorState =$flyout.find( '.mw-gettingstarted-lightbulb-flyout-error-state' );
+			$errorState = $flyout.find( '.mw-gettingstarted-lightbulb-flyout-error-state' );
 
 		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-heading' )
-			.text( mw.msg( 'gettingstarted-lightbulb-heading' ) )
-			.hide();
+			.text( mw.msg( 'gettingstarted-lightbulb-heading' ) );
+
 		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-text' )
-			.text( mw.msg( 'gettingstarted-lightbulb-text' ) )
-			.hide();
-
-		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-pagination' )
-			.hide();
-
-		$errorState.hide();
+			.text( mw.msg( 'gettingstarted-lightbulb-text' ) );
 
 		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-error-state-button' )
 			.on( 'click', function () {
@@ -68,8 +61,6 @@
 				if ( $errorState.hasClass( 'mw-gettingstarted-lightbulb-flyout-error-state-no-article-edits' ) ) {
 					window.location.href = mw.util.getUrl( 'Special:Random/' );
 				} else {
-					// Hide error state and request suggestions
-					$flyout.find( '.mw-gettingstarted-lightbulb-flyout-error-state' ).hide();
 					requestSuggestions();
 				}
 			} );
@@ -140,10 +131,9 @@
 			$pagination.hide();
 		}
 
-		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-heading' )
-			.show();
-		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-text' )
-			.show();
+
+		$flyout.addClass( 'mw-gettingstarted-lightbulb-flyout-recommendations' );
+		$flyout.removeClass( 'mw-gettingstarted-lightbulb-flyout-error' );
 
 		currentFlyoutPageIndex = 0;
 		showFlyoutPage( currentFlyoutPageIndex, pageCount );
@@ -159,6 +149,8 @@
 			$errorStatePrimaryText = $errorState.find( '.mw-gettingstarted-lightbulb-flyout-error-state-primary-text' ),
 			$errorStateSecondaryText = $errorState.find( '.mw-gettingstarted-lightbulb-flyout-error-state-secondary-text' );
 
+		$flyout.removeClass( 'mw-gettingstarted-lightbulb-flyout-recommendations' );
+		$flyout.addClass( 'mw-gettingstarted-lightbulb-flyout-error' );
 		$errorState.addClass( 'mw-gettingstarted-lightbulb-flyout-error-state-' + error );
 		$errorStateButton.find( '.mw-gettingstarted-lightbulb-flyout-error-state-button-text' )
 			.text( mw.msg( 'gettingstarted-lightbulb-flyout-error-state-button-text-' + error ) );
@@ -169,10 +161,6 @@
 		$errorStateSecondaryText.text(
 			mw.msg( 'gettingstarted-lightbulb-flyout-error-state-secondary-text-' + error )
 		);
-
-		$flyout.data( 'error-state', true );
-
-		$errorState.show();
 	}
 
 	/**
@@ -235,13 +223,15 @@
 	 * Logs TaskRecommendationImpression schema
 	 */
 	function logTaskRecommendationImpression () {
-		mw.eventLog.logEvent( 'TaskRecommendationImpression', {
-			setId: suggestions[0].setId,
-			userId: mwConfig.wgUserId,
-			pageId: mwConfig.wgArticleId,
-			'interface': 'flyout',
-			offset: currentFlyoutPageIndex * MAX_SUGGESTION_PER_PAGE_COUNT
-		} );
+		if ( suggestions ) {
+			mw.eventLog.logEvent( 'TaskRecommendationImpression', {
+				setId: suggestions[0].setId,
+				userId: mwConfig.wgUserId,
+				pageId: mwConfig.wgArticleId,
+				'interface': 'flyout',
+				offset: currentFlyoutPageIndex * MAX_SUGGESTION_PER_PAGE_COUNT
+			} );
+		}
 	}
 
 	function positionFlyout() {
@@ -326,7 +316,7 @@
 				return;
 			}
 
-			if ( suggestions || $flyout.data( 'error-state' ) ) {
+			if ( suggestions || $flyout.hasClass( 'mw-gettingstarted-lightbulb-flyout-error' ) ) {
 				if ( $flyout.is( ':visible' ) ) {
 					hideFlyout();
 				} else {
