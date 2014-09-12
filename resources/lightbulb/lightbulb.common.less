@@ -21,6 +21,8 @@
 .mw-gettingstarted-lightbulb-flyout {
 	color: @colorGray5;
 
+	white-space: nowrap;
+
 	h1 {
 		position: relative;
 		color: @colorGray3;
@@ -72,6 +74,9 @@
 
 			a {
 				font-weight: bold;
+				overflow: hidden;
+				display: block;
+				text-overflow: ellipsis;
 			}
 
 			.mw-gettingstarted-lightbulb-suggestion-info-lastedited {
