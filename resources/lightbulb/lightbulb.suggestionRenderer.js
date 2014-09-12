@@ -6,7 +6,7 @@
 			<div class="mw-gettingstarted-lightbulb-suggestion-image mw-gettingstarted-lightbulb-suggestion-image-no-image"></div>\
 			<a class="mw-gettingstarted-lightbulb-suggestion-overlay"></a>\
 			<div class="mw-gettingstarted-lightbulb-suggestion-info">\
-				<a></a><br />\
+				<a></a>\
 				<span class="mw-gettingstarted-lightbulb-suggestion-info-lastedited"></span>\
 			</div>\
 		</div>';
