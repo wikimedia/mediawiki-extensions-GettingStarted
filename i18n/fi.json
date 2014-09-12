@@ -25,7 +25,7 @@
 	"gettingstarted-task-clarify-toolbar-try-another-title": "Mene satunnaiseen sivuun, jota voit selkeyttää",
 	"gettingstarted-task-addlinks-toolbar-description": "Tämä sivu saattaa tarvita lisää linkkejä. Etsi käsitteitä, joilla on {{SITENAME}}-sivu.",
 	"gettingstarted-task-addlinks-toolbar-try-another-title": "Etsii satunnaisen sivun, johon voit lisätä linkkejä",
-	"guidedtour-tour-gettingstartedtasktoolbarintro-title": "Miten päästä alkuun",
+	"guidedtour-tour-gettingstartedtasktoolbarintro-title": "Aloitetaan",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Mitä voisit tehdä",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Muokkaa koko sivua…",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Voit muokata artikkelia napsauttamalla tästä.",
@@ -42,5 +42,11 @@
 	"gettingstarted-cta-edit-page-sub": "Näytämme miten",
 	"gettingstarted-cta-fix-pages": "Muokkaa ehdotettua sivua",
 	"gettingstarted-cta-fix-pages-sub": "Valitsemme jotain helppoa",
-	"gettingstarted-cta-leave": "Ei kiitos, ehkä myöhemmin"
+	"gettingstarted-cta-leave": "Ei kiitos, ehkä myöhemmin",
+	"guidedtour-tour-anonymouseditoracquisitionpreeditv1-continue": "Ei kiitos",
+	"gettingstarted-lightbulb-flyout-back": "Takaisin",
+	"gettingstarted-lightbulb-flyout-next": "Seuraava",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Yritä uudelleen.",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Satunnainen sivu",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Päivitä"
 }

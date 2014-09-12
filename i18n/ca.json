@@ -76,5 +76,9 @@
 	"gettingstarted-lightbulb-heading": "Pàgines per millorar",
 	"gettingstarted-lightbulb-text": "Recomanacions basades en la vostra darrera modificació.",
 	"gettingstarted-lightbulb-flyout-back": "Enrere",
-	"gettingstarted-lightbulb-flyout-next": "Següent"
+	"gettingstarted-lightbulb-flyout-next": "Següent",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Ups, no podem mostrar recomanacions ara mateix.",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Intenteu-ho novament.",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Pàgina aleatòria",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Refresca"
 }

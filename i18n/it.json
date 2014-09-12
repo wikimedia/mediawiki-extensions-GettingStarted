@@ -74,7 +74,13 @@
 	"gettingstarted-lightbulb-notification-body-lastedited": "Modificata $1",
 	"gettingstarted-lightbulb-recommendations-personal-tool": "Consigli",
 	"gettingstarted-lightbulb-heading": "Pagine da migliorare",
-	"gettingstarted-lightbulb-text": "Consigliato in base alla tua ultima modifica.",
+	"gettingstarted-lightbulb-text": "Consigliate in base alla tua ultima modifica.",
 	"gettingstarted-lightbulb-flyout-back": "Indietro",
-	"gettingstarted-lightbulb-flyout-next": "Successivo"
+	"gettingstarted-lightbulb-flyout-next": "Successivo",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Nessun suggerimento ancora!",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Prova a modificare alcune pagine. Ci aiuterà a consigliarti cosa potresti modificare dopo.",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Oops, non siamo in grado di mostrarti suggerimenti in questo momento.",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Per favore, riprova.",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Una pagina a caso",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Aggiorna"
 }

@@ -12,7 +12,8 @@
 			"Sethladan",
 			"Vivaelcelta",
 			"Wifidel",
-			"Macofe"
+			"Macofe",
+			"Ralgis"
 		]
 	},
 	"gettingstarted": "Primeros pasos",
@@ -83,5 +84,11 @@
 	"gettingstarted-lightbulb-heading": "Páginas que mejorar",
 	"gettingstarted-lightbulb-text": "Recomendados a partir de tu última edición.",
 	"gettingstarted-lightbulb-flyout-back": "Anterior",
-	"gettingstarted-lightbulb-flyout-next": "Siguiente"
+	"gettingstarted-lightbulb-flyout-next": "Siguiente",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "¡No hay recomendaciones todavía!",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Intente editar unas pocas páginas. Nos ayudará a recomendar lo que debería editar después.",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "No podemos mostrar las recomendaciones ahora.",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Por favor, inténtelo de nuevo.",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Página al azar",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Actualizar"
 }

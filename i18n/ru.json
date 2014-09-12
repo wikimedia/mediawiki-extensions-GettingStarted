@@ -80,5 +80,8 @@
 	"gettingstarted-lightbulb-heading": "Страницы для улучшения",
 	"gettingstarted-lightbulb-text": "Рекомендации на основе вашей последней правки.",
 	"gettingstarted-lightbulb-flyout-back": "Назад",
-	"gettingstarted-lightbulb-flyout-next": "Далее"
+	"gettingstarted-lightbulb-flyout-next": "Далее",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Пожалуйста, попробуйте ещё раз.",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Случайная страница",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Обновить"
 }

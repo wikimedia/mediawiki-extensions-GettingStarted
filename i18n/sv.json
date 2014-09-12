@@ -4,7 +4,8 @@
 			"Ainali",
 			"Jopparn",
 			"Lokal Profil",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Jrobell"
 		]
 	},
 	"gettingstarted": "Komma igång",
@@ -24,9 +25,9 @@
 	"gettingstarted-task-addlinks-toolbar-description": "Den här sidan kan behöva fler länkar. Leta efter termer som har en sida på {{SITENAME}}.",
 	"gettingstarted-task-addlinks-toolbar-try-another-title": "Gå till en slumpmässig sida där du kan lägga till länkar",
 	"guidedtour-tour-gettingstartedtasktoolbarintro-title": "Låt oss komma igång",
-	"guidedtour-tour-gettingstartedtasktoolbarintro-description": "Denna sida har identifierats av en annan {{SITENAME}}-användare som i behov av förbättring. Du behöver inte vara expert på detta ämnet för att kunna hjälpa.",
+	"guidedtour-tour-gettingstartedtasktoolbarintro-description": "Denna sida har identifierats av en annan {{SITENAME}}-användare som i behov av förbättring. Du behöver inte vara expert på detta ämne för att kunna hjälpa.",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Idéer på vad du kan göra",
-	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Dessa banners identifiera problem med denna sidan. Du behöver inte fixa dem alla, fokusera bara på de som du känner dig bekväm med att åtgärda.",
+	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Dessa banners identifierar problem med denna sida. Du behöver inte åtgärda dem alla, fokusera bara på de som du känner dig bekväm med att åtgärda.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Redigera hela sidan...",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Klicka \"{{int:vector-view-edit}}\" för att ändra innehåll var som helst på sidan.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Eller redigera ett avsnitt",
@@ -75,5 +76,11 @@
 	"gettingstarted-lightbulb-heading": "Sidor att förbättra",
 	"gettingstarted-lightbulb-text": "Rekommenderad baserad på din senaste redigering.",
 	"gettingstarted-lightbulb-flyout-back": "Tillbaka",
-	"gettingstarted-lightbulb-flyout-next": "Nästa"
+	"gettingstarted-lightbulb-flyout-next": "Nästa",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Inga rekommendationer än!",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Försök att redigera några sidor. Det kommer att hjälpa oss att rekommendera vad du ska redigera härnäst.",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Ojdå, vi kan tyvärr inte visa rekommendationer just nu.",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Var god försök igen.",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Slumpsida",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Uppdatera"
 }

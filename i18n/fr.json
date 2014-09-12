@@ -84,5 +84,6 @@
 	"gettingstarted-lightbulb-heading": "Pages à améliorer",
 	"gettingstarted-lightbulb-text": "Recommandé d’après votre dernière modification.",
 	"gettingstarted-lightbulb-flyout-back": "Retour",
-	"gettingstarted-lightbulb-flyout-next": "Suivant"
+	"gettingstarted-lightbulb-flyout-next": "Suivant",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Actualiser"
 }
