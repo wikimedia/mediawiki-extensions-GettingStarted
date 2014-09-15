@@ -373,11 +373,39 @@
 			} );
 	}
 
+	// NOTE (phuedx, 2014-09-15): Copied verbatim from
+	// GuidedTours/modules/ext.guidedTour.lib/ext.guidedTour.lib.main.js.
+
+	// TODO (phuedx, 2014-05-27): Use conditional comments to add these classes
+	// to the html element /in the HTML/.
+	/**
+	* If the browser is IE, then CSS classes are added to the html element
+	* conveying which version of IE it is.
+	*
+	* @private
+	*
+	* @return {void}
+	*/
+	function setupIECssClasses() {
+		var clientProfile = $.client.profile(),
+			classes = [];
+
+		if (clientProfile.name !== 'msie') {
+			return;
+		}
+
+		classes.push( 'ie' );
+		classes.push( 'ie' + clientProfile.versionNumber );
+
+		$( 'html' ).addClass( classes.join( ' ' ) );
+	}
+
 	$( function () {
 		// This will return true for IE >= 8 and non-IE browsers
 		if ( $.client.test( {
 			msie: [ [ '>=', 8 ] ]
 		} ) ) {
+			setupIECssClasses();
 			addFlyout();
 		}
 	} );
