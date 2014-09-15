@@ -73,5 +73,6 @@
 	"gettingstarted-lightbulb-heading": "Pagina's om te verbeteren",
 	"gettingstarted-lightbulb-text": "Aanbeveling gebaseerd op uw laatste bewerking.",
 	"gettingstarted-lightbulb-flyout-back": "Terug",
-	"gettingstarted-lightbulb-flyout-next": "Volgende"
+	"gettingstarted-lightbulb-flyout-next": "Volgende",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Probeer het opnieuw."
 }

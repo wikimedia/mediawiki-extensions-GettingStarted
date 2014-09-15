@@ -11,5 +11,8 @@
 	"guidedtour-tour-gettingstarted-click-save-title": "আপনি প্রায় সম্পন্ন করেছেন!",
 	"guidedtour-tour-gettingstarted-click-save-description": "'{{int:savearticle}}' ক্লিক করুন এবং আপনার পরিবর্তনগুলো দৃশ্যমান হবে।",
 	"gettingstarted-lightbulb-flyout-back": "পিছনে",
-	"gettingstarted-lightbulb-flyout-next": "পরবর্তী"
+	"gettingstarted-lightbulb-flyout-next": "পরবর্তী",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "আবার চেষ্টা করুন।",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "অজানা পাতা",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "পুনঃসতেজ"
 }

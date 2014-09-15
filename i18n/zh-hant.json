@@ -78,5 +78,7 @@
 	"gettingstarted-lightbulb-heading": "有待改善的頁面",
 	"gettingstarted-lightbulb-text": "根據您最近的編輯所提出的建議。",
 	"gettingstarted-lightbulb-flyout-back": "上一頁",
-	"gettingstarted-lightbulb-flyout-next": "下一頁"
+	"gettingstarted-lightbulb-flyout-next": "下一頁",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "隨機頁面",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "重新整理"
 }

@@ -20,5 +20,8 @@
 	"gettingstarted-lightbulb-heading": "Кечъян агӀо",
 	"gettingstarted-lightbulb-text": "Хьан тӀехьара нисдарца рекомендаци",
 	"gettingstarted-lightbulb-flyout-back": "Юха",
-	"gettingstarted-lightbulb-flyout-next": "Кхин дӀа"
+	"gettingstarted-lightbulb-flyout-next": "Кхин дӀа",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Дехар до, юху гӀорта.",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Цахууш нисъелла агӀо",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Карлаяккха"
 }

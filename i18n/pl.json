@@ -54,5 +54,8 @@
 	"gettingstarted-lightbulb-recommendations-personal-tool": "Zalecenia",
 	"gettingstarted-lightbulb-heading": "Strony do poprawy",
 	"gettingstarted-lightbulb-flyout-back": "Wstecz",
-	"gettingstarted-lightbulb-flyout-next": "Następne"
+	"gettingstarted-lightbulb-flyout-next": "Następne",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Proszę spróbować ponownie.",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Losowa strona",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Odśwież"
 }
