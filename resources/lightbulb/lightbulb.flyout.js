@@ -286,7 +286,7 @@
 	}
 
 	/**
-	 * Shows the flyout and unregisters the document event listener
+	 * Shows the flyout and registers the document event listener
 	 *
 	 */
 	function showFlyout() {
