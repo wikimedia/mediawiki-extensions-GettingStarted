@@ -81,6 +81,9 @@
 	"gettingstarted-lightbulb-text": "Рекомендации на основе вашей последней правки.",
 	"gettingstarted-lightbulb-flyout-back": "Назад",
 	"gettingstarted-lightbulb-flyout-next": "Далее",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Ещё нет рекомендаций!",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Попробуйте отредактировать несколько страниц. Это поможет нам дать рекомендации, что вы можете поредактировать дальше.",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Ох и ох… Похоже, мы пока не можем дать вам никаких рекомендаций.",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Пожалуйста, попробуйте ещё раз.",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Случайная страница",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Обновить"
