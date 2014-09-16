@@ -455,6 +455,7 @@ $wgHooks[ 'GetPreferences' ][] = 'GettingStarted\Hooks::onGetPreferences';
 $wgHooks[ 'UserLogoutComplete'][] = 'GettingStarted\Hooks::onUserLogoutComplete';
 $wgHooks[ 'ResourceLoaderTestModules' ][] = 'GettingStarted\Hooks::onResourceLoaderTestModules';
 $wgHooks[ 'PersonalUrls' ][] = 'GettingStarted\Hooks::onPersonalUrls';
+$wgHooks[ 'UnitTestsList' ][] = 'GettingStarted\Hooks::onUnitTestsList';
 $wgExtensionFunctions[] = 'GettingStarted\Hooks::onSetup';
 
 list( $site, $lang ) = $wgConf->siteFromDB( $wgDBname );

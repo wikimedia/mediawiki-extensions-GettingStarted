@@ -536,4 +536,15 @@ class Hooks {
 
 		return true;
 	}
+
+	/**
+	 * Register PHPUnit tests
+	 *
+	 * @param array $files Files with PHPUnit tests
+	 */
+	public static function onUnitTestsList( array &$files ) {
+		$files = array_merge( $files, glob( __DIR__ . '/tests/phpunit/*Test.php' ) );
+
+		return true;
+	}
 }
