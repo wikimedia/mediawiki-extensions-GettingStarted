@@ -23,8 +23,9 @@ require_once( "$IP/extensions/GettingStarted/GettingStarted.php" );
 CentralAuth (https://www.mediawiki.org/wiki/Extension:CentralAuth) is supported,
 but not required.
 
-CirrusSearch is optional, but required if you use the 'morelike' suggestion type
-(pages similar to a given page based on text).
+CirrusSearch and PageImages are required if you use the 'morelike'
+suggestion type (pages similar to a given page based on text).  This
+is used by the flyout and post-edit recommendations (currently an experiment).
 
 Dependencies
 
