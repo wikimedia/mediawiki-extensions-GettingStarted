@@ -228,6 +228,7 @@ $wgResourceModules[ 'ext.gettingstarted.lightbulb.common' ] = array(
 	'scripts' => array(
 		'lightbulb/lightbulb.parser.js',
 		'lightbulb/lightbulb.suggestionRenderer.js',
+		'lightbulb/lightbulb.logging.js',
 	),
 	'dependencies' => array(
 		'mediawiki.util',

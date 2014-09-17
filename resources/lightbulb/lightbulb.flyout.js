@@ -285,6 +285,7 @@
 	 */
 	function showFlyout() {
 		positionFlyout( $flyout, $lightbulb );
+		mw.gettingStarted.lightbulb.logging.register();
 		$( document ).on( 'click', checkForClickOutside );
 		$( window ).on( 'resize', positionFlyout );
 		$flyout.show();
@@ -298,6 +299,7 @@
 		$flyout.hide();
 		$( document ).off( 'click', checkForClickOutside );
 		$( window ).off( 'resize', positionFlyout );
+		mw.gettingStarted.lightbulb.logging.unregister();
 	}
 
 	/**
