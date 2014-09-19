@@ -37,6 +37,7 @@
 		parser = new mw.gettingStarted.lightbulb.Parser(),
 		suggestionRenderer = new mw.gettingStarted.lightbulb.SuggestionRenderer(),
 		currentFlyoutPageIndex, // 0-based
+		suggestions = null,
 		mwConfig = mw.config.get( [ 'wgArticleId', 'wgUserId' ] ),
 		$lightbulb = $( '.mw-gettingstarted-personal-tool-recommendations' ),
 		$flyout = null,
@@ -79,17 +80,16 @@
 	/**
 	 * Returns a click handler for a pagination disc
 	 *
-	 * @param {Array} suggestions Full list of suggestions
 	 * @param {Number} index Index of page this disc refers to
 	 * @param {Number} pageCount Number of pages
 	 *
 	 * @return {Function} Click handler
 	 */
-	function getPaginationDiscHandler( suggestions, index, pageCount ) {
+	function getPaginationDiscHandler( index, pageCount ) {
 		return function () {
 			if ( index !== currentFlyoutPageIndex ) {
 				currentFlyoutPageIndex = index;
-				showFlyoutPage( suggestions, currentFlyoutPageIndex, pageCount );
+				showFlyoutPage( currentFlyoutPageIndex, pageCount );
 			}
 		};
 	}
@@ -97,10 +97,8 @@
 	/**
 	 * Adds the suggestions to the flyout.  This sets up pagination and shows the
 	 * first page of suggestions.
-	 *
-	 * @param {Array} suggestions Array of suggestions from the parser
 	 */
-	function addSuggestionsToFlyout( suggestions ) {
+	function addSuggestionsToFlyout() {
 		var $nextButton,
 			$pagination = $flyout.find( '.mw-gettingstarted-lightbulb-flyout-pagination' ),
 			pageCount = Math.ceil( suggestions.length / MAX_SUGGESTION_PER_PAGE_COUNT ),
@@ -111,7 +109,7 @@
 			.attr( 'title', mw.msg( 'gettingstarted-lightbulb-flyout-back' ) )
 			.click( function () {
 				currentFlyoutPageIndex--;
-				showFlyoutPage( suggestions, currentFlyoutPageIndex, pageCount );
+				showFlyoutPage( currentFlyoutPageIndex, pageCount );
 			} );
 
 
@@ -120,19 +118,19 @@
 			.attr( 'title', mw.msg( 'gettingstarted-lightbulb-flyout-next' ) )
 			.click( function () {
 				currentFlyoutPageIndex++;
-				showFlyoutPage( suggestions, currentFlyoutPageIndex, pageCount );
+				showFlyoutPage( currentFlyoutPageIndex, pageCount );
 			} );
 
 		for ( i = 0; i < pageCount; i++ ) {
 			if ( pageCount > 1 ) {
-				discHandler = getPaginationDiscHandler( suggestions, i, pageCount );
+				discHandler = getPaginationDiscHandler( i, pageCount );
 				$( '<span> ' )
 					.attr( 'class', 'mw-gettingstarted-lightbulb-flyout-pagination-disc' )
 					.text( '●' )
 					.insertBefore( $nextButton )
 					.on( 'click', discHandler );
 			}
-			addFlyoutPage( suggestions, i );
+			addFlyoutPage( i );
 		}
 
 		// Show key elements in flyout
@@ -148,7 +146,7 @@
 			.show();
 
 		currentFlyoutPageIndex = 0;
-		showFlyoutPage( suggestions, currentFlyoutPageIndex, pageCount );
+		showFlyoutPage( currentFlyoutPageIndex, pageCount );
 	}
 
 	/**
@@ -180,11 +178,10 @@
 	/**
 	 * Adds a page of new suggestions to the flyout
 	 *
-	 * @param {Array} suggestions Full list of suggestions
 	 * @param {Number} pageIndex Page index to show, 0-based
 	 * @param {Number} pageCount Number of pages
 	 */
-	function addFlyoutPage( suggestions, pageIndex ) {
+	function addFlyoutPage( pageIndex ) {
 		var $suggestions = $flyout.find( '.mw-gettingstarted-lightbulb-suggestions-container' ),
 			$newSuggestions = $( '<ol>' ).attr( 'class', 'mw-gettingstarted-lightbulb-suggestions' ),
 			suggestion,
@@ -207,11 +204,10 @@
 	/**
 	 * Puts a particular page in the flyout into view
 	 *
-	 * @param {Array} suggestions Full list of suggestions
 	 * @param {Number} pageIndex Page index to show, 0-based
 	 * @param {Number} pageCount Number of pages
 	 */
-	function showFlyoutPage( suggestions, pageIndex, pageCount ) {
+	function showFlyoutPage( pageIndex, pageCount ) {
 		var suggestionWidth = $flyout.find( '.mw-gettingstarted-lightbulb-suggestions' ).outerWidth(),
 			leftOffset = - ( pageIndex * suggestionWidth );
 
@@ -232,13 +228,19 @@
 		$flyout.find( '.mw-gettingstarted-lightbulb-suggestions-container' )
 			.css( 'left', leftOffset );
 
-		// Log Impression
+		logTaskRecommendationImpression();
+	}
+
+	/**
+	 * Logs TaskRecommendationImpression schema
+	 */
+	function logTaskRecommendationImpression () {
 		mw.eventLog.logEvent( 'TaskRecommendationImpression', {
 			setId: suggestions[0].setId,
 			userId: mwConfig.wgUserId,
 			pageId: mwConfig.wgArticleId,
 			'interface': 'flyout',
-			offset: pageIndex * MAX_SUGGESTION_PER_PAGE_COUNT
+			offset: currentFlyoutPageIndex * MAX_SUGGESTION_PER_PAGE_COUNT
 		} );
 	}
 
@@ -324,11 +326,12 @@
 				return;
 			}
 
-			if ( $flyout.data( 'has-suggestions' ) || $flyout.data( 'error-state' ) ) {
+			if ( suggestions || $flyout.data( 'error-state' ) ) {
 				if ( $flyout.is( ':visible' ) ) {
 					hideFlyout();
 				} else {
 					showFlyout();
+					logTaskRecommendationImpression();
 				}
 
 				return;
@@ -352,9 +355,9 @@
 					thumbSize: 70
 				} )
 				.done( function ( response ) {
-					var suggestions = parser.parse( response );
-					addSuggestionsToFlyout( suggestions );
-					$flyout.data( 'has-suggestions', true );
+					// Store suggestions for later reference
+					suggestions = parser.parse( response );
+					addSuggestionsToFlyout();
 				} )
 				.fail( function () {
 					// show no recommendations state
