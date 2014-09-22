@@ -311,17 +311,6 @@ $wgResourceModules[ 'ext.gettingstarted.return' ] = array(
 	'position' => 'top',
 ) + $gettingStartedModuleInfo;
 
-$wgResourceModules[ 'ext.gettingstarted.user' ] = array(
-	'scripts' => array(
-		'ext.gettingstarted.bucket.js',
-		'ext.gettingstarted.user.js',
-	),
-	'dependencies' => array(
-		'mediawiki.user',
-		'jquery.cookie',
-	),
-) + $gettingStartedModuleInfo;
-
 // Events for the Anonymous Edit Acquisition project.
 
 $wgResourceModules[ 'schema.SignupExpPageLinkClick' ] = array(
@@ -368,13 +357,6 @@ $wgResourceModules[ 'schema.TaskRecommendationClick' ] = array(
 	'revision' => 9266317
 );
 
-$wgResourceModules[ 'ext.gettingstarted.assignToken' ] = array(
-	'scripts' => 'ext.gettingstarted.assignToken.js',
-	'dependencies' => array(
-		'ext.gettingstarted.user'
-	),
-) + $gettingStartedModuleInfo;
-
 $wgDefaultUserOptions[ GettingStarted\Hooks::INTRO_OPTION ] = true;
 
 $wgHooks[ 'BeforePageDisplay' ][] = 'GettingStarted\Hooks::onBeforePageDisplay';
@@ -385,7 +367,6 @@ $wgHooks[ 'MakeGlobalVariablesScript' ][] = 'GettingStarted\Hooks::onMakeGlobalV
 $wgHooks[ 'ResourceLoaderGetConfigVars' ][] = 'GettingStarted\Hooks::onResourceLoaderGetConfigVars';
 $wgHooks[ 'GetPreferences' ][] = 'GettingStarted\Hooks::onGetPreferences';
 $wgHooks[ 'UserLogoutComplete'][] = 'GettingStarted\Hooks::onUserLogoutComplete';
-$wgHooks[ 'ResourceLoaderTestModules' ][] = 'GettingStarted\Hooks::onResourceLoaderTestModules';
 $wgHooks[ 'PersonalUrls' ][] = 'GettingStarted\Hooks::onPersonalUrls';
 $wgHooks[ 'UnitTestsList' ][] = 'GettingStarted\Hooks::onUnitTestsList';
 $wgExtensionFunctions[] = 'GettingStarted\Hooks::onSetup';
