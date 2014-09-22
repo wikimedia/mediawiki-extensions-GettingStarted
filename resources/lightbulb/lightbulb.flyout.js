@@ -27,7 +27,6 @@
 					</a>\
 				</div>\
 				<div class="mw-gettingstarted-lightbulb-flyout-loader">\
-					<div class="mw-gettingstarted-lightbulb-flyout-loader-spinner"></div>\
 				</div>\
 				<div class="guider_arrow guider_arrow_up guider_arrow_center">\
 					<div class="guider_arrow_inner_container">\
