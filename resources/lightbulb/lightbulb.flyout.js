@@ -26,6 +26,9 @@
 						<span class="mw-gettingstarted-lightbulb-flyout-error-state-button-text"></span>\
 					</a>\
 				</div>\
+				<div class="mw-gettingstarted-lightbulb-flyout-loader">\
+					<div class="mw-gettingstarted-lightbulb-flyout-loader-spinner"></div>\
+				</div>\
 				<div class="guider_arrow guider_arrow_up guider_arrow_center">\
 					<div class="guider_arrow_inner_container">\
 						<div class="guider_arrow_inner"></div>\
@@ -336,6 +339,9 @@
 	function requestSuggestions() {
 		var api = new mw.gettingStarted.Api();
 
+		$flyout.addClass( 'mw-gettingstarted-lightbulb-flyout-loading' );
+		showFlyout();
+
 		requestingSuggestions = true;
 		api.getLastArticleUserEdited( mw.user.getName() )
 			.done( function ( title ) {
@@ -354,15 +360,15 @@
 					addErrorStateToFlyout( 'no-recommendations' );
 				} )
 				.always( function () {
-					showFlyout();
+					$flyout.removeClass( 'mw-gettingstarted-lightbulb-flyout-loading' );
 					requestingSuggestions = false;
 				} );
 			} )
 			.fail( function () {
 				// no article edits state
+				$flyout.removeClass( 'mw-gettingstarted-lightbulb-flyout-loading' );
 				addErrorStateToFlyout( 'no-article-edits' );
 				requestingSuggestions = false;
-				showFlyout();
 			} );
 	}
 
