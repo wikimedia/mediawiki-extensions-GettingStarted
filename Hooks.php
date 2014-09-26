@@ -428,10 +428,8 @@ class Hooks {
 		if ( !self::shouldShowGettingStarted( $returnToQuery, $type ) ) {
 			return true;
 		}
-		// TODO: rmoen 2014-05-30 determine if we want to mock the current bahavior
-		// if CentralAuth is not enabled. Note: Auto redirecting is out of the normal
-		// login flow for users logging in on wikis not running C.A.
-		// This can be done by setting $type = 'successredirect';
+		// Behave like centralAuth and auto redirect to previous page
+		$type = 'successredirect';
 		$returnToQuery['gettingStartedReturn'] = 'true';
 		return true;
 	}
