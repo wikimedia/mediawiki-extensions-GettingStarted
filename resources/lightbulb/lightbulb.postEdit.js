@@ -30,6 +30,7 @@
 			.on( 'click', function ( event ) {
 				event.preventDefault();
 				$notification.remove();
+				mw.gettingStarted.lightbulb.logging.unregister();
 			} );
 		return $notification;
 	}
@@ -53,6 +54,8 @@
 			}
 
 			$notification = createNotification( suggestions, data.message );
+
+			mw.gettingStarted.lightbulb.logging.register();
 
 			// Show the notification.
 			$( document.body ).append( $notification );

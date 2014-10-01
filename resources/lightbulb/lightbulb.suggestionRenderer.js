@@ -18,18 +18,11 @@
 			lastEdited,
 			url = mw.util.getUrl( suggestion.title );
 
-		// Set href attribute of the overlay and info links.
 		$result.find( 'a' )
-			.attr( 'href', url )
-			.on( 'click', function ( event ) {
-				event.preventDefault();
-				// Log Task click and then go to the article
-				mw.gettingStarted.logging.logEventOrTimeout( 'TaskRecommendationClick', {
-					setId: suggestion.setId,
-					pageId: suggestion.pageId
-				} ).always( function () {
-					window.location.href = url;
-				} );
+			.attr( {
+				href: url,
+				'data-set-id': suggestion.setId,
+				'data-page-id': suggestion.pageId
 			} );
 
 		$result.find( '.mw-gettingstarted-lightbulb-suggestion-overlay' )
