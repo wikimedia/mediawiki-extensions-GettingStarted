@@ -34,8 +34,6 @@ class GenerateConfig extends \Maintenance {
 	 */
 	private $qidsForTaskTypes = array(
 		'copyedit' => 'Q9125773', // Category:Wikipedia articles needing copy edit
-		'clarify' => 'Q8235653', // Category:All Wikipedia articles needing clarification
-		'addlinks' => 'Q8235714', // Category:All articles with too few wikilinks
 	);
 
 	public function __construct() {

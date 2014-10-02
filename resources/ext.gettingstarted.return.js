@@ -19,13 +19,6 @@
 		CTA_TYPE_EDIT_CURRENT = 'edit current',
 		CTA_TYPE_EDIT_CURRENT_OR_SUGGESTED = 'edit current or suggested';
 
-	function logMissingSuggestedArticle() {
-		mw.eventLog.logEvent( 'GettingStartedNavbarNoArticle', {
-			version: 1,
-			funnel: fullTaskType
-		} );
-	}
-
 	function logRedirectImpression( ctaType ) {
 		var event;
 
@@ -265,13 +258,11 @@
 					];
 					ctaType = CTA_TYPE_EDIT_CURRENT_OR_SUGGESTED;
 				} else {
-					logMissingSuggestedArticle();
 					dialogSpec.buttons = [ editCurrentPrimaryButton ];
 					ctaType = CTA_TYPE_EDIT_CURRENT;
 				}
 			} else if ( pageKind === 'other' ) {
 				if ( !suggestedTitle) {
-					logMissingSuggestedArticle();
 					logRedirectImpression( CTA_TYPE_NONE );
 					// Nothing to show in dialog
 					return;

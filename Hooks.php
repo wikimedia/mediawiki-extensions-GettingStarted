@@ -103,7 +103,7 @@ class Hooks {
 
 	/**
 	 * Gets the unprefixed GettingStarted task, if any.  E.g. if the full task in the
-	 * cookie is 'gettingstarted-addlinks', this will return 'addlinks'.
+	 * cookie is 'gettingstarted-copyedit', this will return 'copyedit'.
 	 *
 	 * @param WebRequest $request current request
 	 * @param Title $title title to check
@@ -299,72 +299,6 @@ class Hooks {
 		return true;
 	}
 
-	/**
-	 * Look for page edits where there's an item in the user's openTask cookie
-	 * matching the title whose task is 'gettingstarted'
-	 * Approach comes from AbuseFilter and MobileFrontend extensions.
-	 * @param RecentChange $recentChange RecentChanges entry
-	 * @return bool
-	 */
-	public static function onRecentChange_save( \RecentChange $recentChange ) {
-		global $wgRequest;
-
-		if ( $recentChange->getAttribute( 'rc_type' ) !== RC_EDIT ) {
-			return true;
-		}
-
-		$titleObj = $recentChange->getTitle();
-		$task = self::getPageTask( $wgRequest, $titleObj );
-
-		// When they are assisted by GettingStarted, a cookie with that title
-		// is set.  All edits to the page are then tagged, until the cookie
-		// expires at the end of the browser session.
-		if ( strpos( $task, 'gettingstarted' ) === 0 ||
-			strpos( $task, 'redirect' ) === 0 ) {
-			\ChangeTags::addTags(
-				'gettingstarted edit',
-				$recentChange->getAttribute( 'rc_id' ),
-				$recentChange->getAttribute( 'rc_this_oldid' ),
-				$recentChange->getAttribute( 'rc_logid' )
-			);
-		}
-		return true;
-	}
-
-	public static function onListDefinedTags( &$tags ) {
-		$tags[] = 'gettingstarted edit';
-		return true;
-	}
-
-	/**
-	 * Checks if they have edited the main namespace
-	 *
-	 * @param User $user user to check
-	 * @return true if they have, false otherwise
-	 */
-	protected static function hasEditedMainNamespace( User $user ) {
-		global $wgRequest;
-
-		$api = new \ApiMain(
-			new \DerivativeRequest(
-				$wgRequest,
-				array(
-					'action' => 'query',
-					'list' => 'usercontribs',
-					'ucuser' => $user->getName(),
-					'uclimit' => 1,
-					'ucnamespace' => NS_MAIN,
-				),
-				false // not posted
-			),
-			false // disable write
-		);
-
-		$api->execute();
-		$result = $api->getResultData();
-		return isset( $result['query']['usercontribs'] ) && count( $result['query']['usercontribs'] ) >= 1;
-	}
-
 	public static function onGetPreferences( User $user, array &$preferences ) {
 		// Show tour and fade in navbar and help button
 		$preferences[self::INTRO_OPTION] = array(
@@ -485,10 +419,6 @@ class Hooks {
 			"gettingstarted-task-toolbar-no-suggested-page",
 			"gettingstarted-task-copyedit-toolbar-description",
 			"gettingstarted-task-copyedit-toolbar-try-another-title",
-			"gettingstarted-task-clarify-toolbar-description",
-			"gettingstarted-task-clarify-toolbar-try-another-title",
-			"gettingstarted-task-addlinks-toolbar-description",
-			"gettingstarted-task-addlinks-toolbar-try-another-title",
 			"guidedtour-tour-gettingstartedtasktoolbarintro-description",
 			"guidedtour-tour-gettingstartedtasktoolbar-ambox-description",
 			"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title",

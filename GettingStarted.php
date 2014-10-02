@@ -29,14 +29,6 @@ $wgGettingStartedTasks = array(
 	'copyedit' => array(
 		'toolbarDescription' => 'gettingstarted-task-copyedit-toolbar-description',
 		'toolbarTryAnotherTitle' => 'gettingstarted-task-copyedit-toolbar-try-another-title',
-	),
-	'clarify' => array(
-		'toolbarDescription' => 'gettingstarted-task-clarify-toolbar-description',
-		'toolbarTryAnotherTitle' => 'gettingstarted-task-clarify-toolbar-try-another-title',
-	),
-	'addlinks' => array(
-		'toolbarDescription' => 'gettingstarted-task-addlinks-toolbar-description',
-		'toolbarTryAnotherTitle' => 'gettingstarted-task-addlinks-toolbar-try-another-title',
 	)
 );
 
@@ -99,7 +91,6 @@ $wgAutoloadClasses += array(
 );
 
 $wgMessagesDirs['GettingStarted'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles[ 'GettingStarted' ] = __DIR__ . '/GettingStarted.i18n.php';
 
 // APIs
 $wgAPIListModules['gettingstartedgetpages'] = 'GettingStarted\ApiGettingStartedGetPages';
@@ -110,12 +101,6 @@ $wgAPIListModules['gettingstartedgetpages'] = 'GettingStarted\ApiGettingStartedG
 $gettingStartedModuleInfo = array(
 	'localBasePath' => __DIR__ . '/resources',
 	'remoteExtPath' => 'GettingStarted/resources',
-);
-
-$wgResourceModules[ 'schema.GettingStartedNavbarNoArticle' ] = array(
-	'class'    => 'ResourceLoaderSchemaModule',
-	'schema'   => 'GettingStartedNavbarNoArticle',
-	'revision' => 5483117
 );
 
 $wgResourceModules[ 'schema.GettingStartedRedirectImpression' ] = array(
@@ -293,10 +278,6 @@ $wgResourceModules[ 'ext.gettingstarted.taskToolbar' ] = array(
 		'gettingstarted-task-toolbar-no-suggested-page',
 		'gettingstarted-task-copyedit-toolbar-description',
 		'gettingstarted-task-copyedit-toolbar-try-another-title',
-		'gettingstarted-task-clarify-toolbar-description',
-		'gettingstarted-task-clarify-toolbar-try-another-title',
-		'gettingstarted-task-addlinks-toolbar-description',
-		'gettingstarted-task-addlinks-toolbar-try-another-title',
 	),
 ) + $gettingStartedModuleInfo;
 
@@ -318,7 +299,6 @@ $wgResourceModules[ 'ext.gettingstarted.return' ] = array(
 	'dependencies' => array(
 		'ext.gettingstarted.api',
 		'ext.gettingstarted.logging',
-		'schema.GettingStartedNavbarNoArticle',
 		'schema.GettingStartedRedirectImpression',
 		// Needed for isEditing() and tour launching.
 		'ext.guidedTour.lib',
@@ -341,53 +321,6 @@ $wgResourceModules[ 'ext.gettingstarted.user' ] = array(
 		'jquery.cookie',
 	),
 ) + $gettingStartedModuleInfo;
-
-// Tours for the Anonymous Editor Acquisition project (see
-// https://www.mediawiki.org/wiki/Anonymous_editor_acquisition).
-
-$anonymousEditorAcquisitionPreEditTourInfo = array(
-	'dependencies' => array(
-		'ext.gettingstarted.anonymousEditorAcquisition',
-		'ext.guidedTour',
-		'schema.SignupExpCTAImpression',
-	),
-) + $gettingStartedModuleInfo;
-
-$wgResourceModules[ 'ext.guidedTour.tour.anonymouseditoracquisitionpreeditv1' ] = array(
-	'scripts' => 'tours/anonymouseditoracquisitionpreeditv1.js',
-	'messages' => array(
-		'guidedtour-tour-anonymouseditoracquisitionpreeditv1-title',
-		'guidedtour-tour-anonymouseditoracquisitionpreeditv1-description',
-		'guidedtour-tour-anonymouseditoracquisitionpreeditv1-sign-up',
-		'guidedtour-tour-anonymouseditoracquisitionpreeditv1-continue',
-	),
-) + $anonymousEditorAcquisitionPreEditTourInfo;
-
-$wgResourceModules[ 'ext.guidedTour.tour.anonymouseditoracquisitionpreeditv2' ] = array(
-	'scripts' => 'tours/anonymouseditoracquisitionpreeditv2.js',
-	'messages' => array(
-		'guidedtour-tour-anonymouseditoracquisitionpreeditv2-title',
-		'guidedtour-tour-anonymouseditoracquisitionpreeditv2-description',
-		'guidedtour-tour-anonymouseditoracquisitionpreeditv2-sign-up',
-		'guidedtour-tour-anonymouseditoracquisitionpreeditv2-continue',
-	),
-) + $anonymousEditorAcquisitionPreEditTourInfo;
-
-$wgResourceModules[ 'ext.gettingstarted.anonymousEditorAcquisition' ] = array(
-	'scripts' => 'ext.gettingstarted.anonymousEditorAcquisition.js',
-	'dependencies' => array(
-		'mediawiki.Title',
-		'mediawiki.Uri',
-		'mediawiki.cookie',
-		'ext.gettingstarted.user',
-		'ext.gettingstarted.logging',
-		'schema.SignupExpPageLinkClick',
-		'schema.SignupExpCTAButtonClick',
-		'ext.guidedTour.launcher',
-	),
-) + $gettingStartedModuleInfo;
-
-
 
 // Events for the Anonymous Edit Acquisition project.
 
@@ -445,11 +378,9 @@ $wgResourceModules[ 'ext.gettingstarted.assignToken' ] = array(
 $wgDefaultUserOptions[ GettingStarted\Hooks::INTRO_OPTION ] = true;
 
 $wgHooks[ 'BeforePageDisplay' ][] = 'GettingStarted\Hooks::onBeforePageDisplay';
-$wgHooks[ 'RecentChange_save' ][] = 'GettingStarted\Hooks::onRecentChange_save';
 $wgHooks[ 'CategoryAfterPageAdded' ][] = 'GettingStarted\RedisCategorySync::onCategoryAfterPageAdded';
 $wgHooks[ 'CategoryAfterPageRemoved' ][] = 'GettingStarted\RedisCategorySync::onCategoryAfterPageRemoved';
 $wgHooks[ 'ArticleDeleteComplete' ][] = 'GettingStarted\RedisCategorySync::onArticleDeleteComplete';
-$wgHooks[ 'ListDefinedTags' ][] = 'GettingStarted\Hooks::onListDefinedTags';
 $wgHooks[ 'MakeGlobalVariablesScript' ][] = 'GettingStarted\Hooks::onMakeGlobalVariablesScript';
 $wgHooks[ 'ResourceLoaderGetConfigVars' ][] = 'GettingStarted\Hooks::onResourceLoaderGetConfigVars';
 $wgHooks[ 'GetPreferences' ][] = 'GettingStarted\Hooks::onGetPreferences';
