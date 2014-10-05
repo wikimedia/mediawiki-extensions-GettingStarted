@@ -1,9 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sayginer"
+			"Sayginer",
+			"Violetanka"
 		]
 	},
 	"gettingstarted-lightbulb-flyout-back": "Geri",
-	"gettingstarted-lightbulb-flyout-next": "İleri"
+	"gettingstarted-lightbulb-flyout-next": "İleri",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Şimdilik herhangi bir öneri yok!",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Birkaç sayfa düzenlemeyi deneyin. Bu eylem bundan sonra düzenleyebileceğiniz sayfalar konusunda öneri vermemize yardımcı olacaktır.",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Amanın! Şu anda herhangi bir öneri sunamıyoruz.",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Tekrar deneyin lütfen.",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Rastgele sayfa",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Yenile"
 }
