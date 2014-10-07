@@ -184,9 +184,6 @@ class Hooks {
 
 		$user = $out->getUser();
 
-		// Assign token; will support anonymous signup invite experiment
-		$out->addModules( 'ext.gettingstarted.assignToken' );
-
 		if ( self::shouldLoadToolbar( $out, $user ) ) {
 			$request = $out->getRequest();
 			$taskName = self::getUnprefixedGettingStartedTask( $request, $out->getTitle() );
@@ -391,15 +388,6 @@ class Hooks {
 		}
 		// Otherwise return true
 		return true;
-	}
-
-	public static function onResourceLoaderTestModules( array &$testModules, \ResourceLoader &$resourceLoader ) {
-		$testModules[ 'qunit' ][ 'ext.gettingstarted.user.tests' ] = array(
-			'scripts' => array( 'tests/qunit/ext.gettingstarted.user.test.js' ),
-			'dependencies' => array( 'ext.gettingstarted.user' ),
-			'localBasePath' => __DIR__,
-			'remoteExtPath' => 'GettingStarted',
-		);
 	}
 
 	/**
