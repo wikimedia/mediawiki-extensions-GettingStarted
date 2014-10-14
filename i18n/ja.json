@@ -8,9 +8,6 @@
 	},
 	"gettingstarted": "はじめに",
 	"gettingstarted-desc": "新規利用者が編集者になるのを助けます",
-	"gettingstarted-project-link": "{{ns:Project}}:GettingStarted",
-	"tag-gettingstarted_edit": "[[{{MediaWiki:gettingstarted-project-link}}|Getting Started]] の提案による編集",
-	"tag-gettingstarted_edit-description": "[[{{MediaWiki:gettingstarted-project-link}}|GettingStarted]] （編集者に簡単なタスクを提案し、それを達成する方法を示すシステム）を通してなされた編集。",
 	"gettingstarted-task-toolbar-editing-help-text": "ヘルプを表示",
 	"gettingstarted-task-toolbar-editing-help-title": "編集方法のガイドを表示する",
 	"gettingstarted-task-toolbar-try-another-text": "別のページに挑戦 ►",
@@ -18,10 +15,6 @@
 	"gettingstarted-task-toolbar-no-suggested-page": "申し訳ありません。改善すべきページがこれ以上見つかりませんでした。しばらくしてからもう一度試すか、興味あるトピックについて検索してみてください。",
 	"gettingstarted-task-copyedit-toolbar-description": "このページには修正可能な誤字や文法誤りがあるかもしれません。",
 	"gettingstarted-task-copyedit-toolbar-try-another-title": "校正すべきページをランダムに選んで表示する",
-	"gettingstarted-task-clarify-toolbar-description": "このページには分かりにくいところや曖昧なところがあるかもしれません。明確にすることができないか考えてみてください。",
-	"gettingstarted-task-clarify-toolbar-try-another-title": "明確化すべきページをランダムに選んで表示する",
-	"gettingstarted-task-addlinks-toolbar-description": "このページにはリンクがもっと必要かもしれません。{{SITENAME}}にページが存在する用語を見つけてください。",
-	"gettingstarted-task-addlinks-toolbar-try-another-title": "リンクを追加すべきページをランダムに選んで表示する",
 	"guidedtour-tour-gettingstartedtasktoolbarintro-title": "最初の一歩を踏み出そう",
 	"guidedtour-tour-gettingstartedtasktoolbarintro-description": "このページをざっと見て、改善できるところを探してみてください。自分には手に負えないとお思いでしたら、心配いりません。このトピックの専門家である必要はないのです。助けが必要だったり、別のページを試してみたい場合は、上部のバーにあるリンクをお使いください。",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "やるべきことの提案",
@@ -46,5 +39,6 @@
 	"gettingstarted-cta-leave": "いや、また今度にします",
 	"gettingstarted-cta-edit-page-wikipedia": "この記事を編集",
 	"gettingstarted-lightbulb-flyout-back": "戻る",
-	"gettingstarted-lightbulb-flyout-next": "次へ"
+	"gettingstarted-lightbulb-flyout-next": "次へ",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "更新"
 }
