@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Minh Nguyen"
+			"Minh Nguyen",
+			"Max20091"
 		]
 	},
 	"gettingstarted": "Bắt đầu",
@@ -59,5 +60,5 @@
 	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Oái, không thể hiển thị các khuyến nghị vào lúc bây giờ.",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Xin vui lòng thử lại.",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Trang ngẫu nhiên",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Làm tươi"
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Làm mới"
 }
