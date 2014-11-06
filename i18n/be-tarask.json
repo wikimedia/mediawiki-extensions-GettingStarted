@@ -20,7 +20,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Што рабіць",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Гэтыя банэры паведамляюць пра праблемы старонкі. Вам не абавязкова выпраўляць усе, проста рабіце тое, што ў вас атрымліваецца.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Рэдагаваць усю старонку…",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Вы можаце рэдагаваць усю старонку, калі націсьніце тут.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Націсьніце «{{int:vector-view-edit}}», каб зьмяніць зьмест у якім-кольвек месцы на старонцы.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Рэдагаваньне разьдзелаў",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Калі вы хочаце адрэдагаваць пэўную сэкцыю, вы можаце націснуць сінюю спасылку «{{int:editsection}}», якая ёсьць уверсе кожнай сэкцыі.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Вы можаце рэдагаваць!",
