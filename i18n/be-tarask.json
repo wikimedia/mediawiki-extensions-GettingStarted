@@ -26,7 +26,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Зрабіце вашыя зьмены і захавайце",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Цяпер вы можаце рэдагаваць зьмест старонкі. Калі вы скончыце, націсьніце «{{int:visualeditor-toolbar-savedialog}}», каб праглядзець і захаваць вашыя зьмены.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Папярэдні прагляд (па жаданьні)",
-	"guidedtour-tour-gettingstarted-click-preview-description": "Націсьніце «{{int:showpreview}}», каб пабачыць, як будзе выглядаць старонка з унесенымі вамі зьменамі. Па праглядзе не забудзьце захаваць!",
+	"guidedtour-tour-gettingstarted-click-preview-description": "Націсьніце «{{int:showpreview}}», каб пабачыць, як будзе выглядаць старонка з унесенымі вамі зьменамі. Па праглядзе не забудзьце захаваць.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Ужо амаль усё!",
 	"guidedtour-tour-gettingstarted-click-save-description": "Націсьніце «{{int:savearticle}}» і вашыя зьмены будуць бачныя ўсім.",
 	"gettingstarted-cta-close": "Закрыць",
