@@ -368,11 +368,12 @@ $wgHooks[ 'CategoryAfterPageRemoved' ][] = 'GettingStarted\RedisCategorySync::on
 $wgHooks[ 'ArticleDeleteComplete' ][] = 'GettingStarted\RedisCategorySync::onArticleDeleteComplete';
 $wgHooks[ 'MakeGlobalVariablesScript' ][] = 'GettingStarted\Hooks::onMakeGlobalVariablesScript';
 $wgHooks[ 'ResourceLoaderGetConfigVars' ][] = 'GettingStarted\Hooks::onResourceLoaderGetConfigVars';
+$wgHooks[ 'CentralAuthPostLoginRedirect' ][] = 'GettingStarted\Hooks::onCentralAuthPostLoginRedirect';
+$wgHooks[ 'PostLoginRedirect' ][] = 'GettingStarted\Hooks::onPostLoginRedirect';
 $wgHooks[ 'GetPreferences' ][] = 'GettingStarted\Hooks::onGetPreferences';
 $wgHooks[ 'UserLogoutComplete'][] = 'GettingStarted\Hooks::onUserLogoutComplete';
 $wgHooks[ 'PersonalUrls' ][] = 'GettingStarted\Hooks::onPersonalUrls';
 $wgHooks[ 'UnitTestsList' ][] = 'GettingStarted\Hooks::onUnitTestsList';
-$wgExtensionFunctions[] = 'GettingStarted\Hooks::onSetup';
 
 list( $site, $lang ) = $wgConf->siteFromDB( $wgDBname );
 

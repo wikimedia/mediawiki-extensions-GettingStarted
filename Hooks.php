@@ -13,21 +13,6 @@ use FormatJson, Title, WebRequest, OutputPage, User;
 
 class Hooks {
 	/**
-	 * Determine which post login hook to register and register it
-	 * This allows GettingStarted to work with or without CentralAuth
-	 * See Bug: 65619
-	 */
-	public static function onSetup() {
-		global $wgHooks;
-		$isCentralAuthAvailable = class_exists( 'SpecialCentralLogin' );
-		if( $isCentralAuthAvailable ) {
-			$wgHooks[ 'CentralAuthPostLoginRedirect' ][] = 'GettingStarted\Hooks::onCentralAuthPostLoginRedirect';
-		} else {
-			$wgHooks[ 'PostLoginRedirect' ][] = 'GettingStarted\Hooks::onPostLoginRedirect';
-		}
-	}
-
-	/**
 	 * Deserialized vesion of the openTask data structure.
 	 * Initialized as needed.
 	 *
@@ -355,6 +340,10 @@ class Hooks {
 	 * @param string $type login redirect condition
 	 */
 	public static function onPostLoginRedirect( &$returnTo, &$returnToQuery, &$type ) {
+		if ( class_exists( 'SpecialCentralLogin' ) ) {
+			// Will be handled by the CentralAuthPostLoginRedirect hook
+			return true;
+		}
 		// Abort if we should not show getting started
 		if ( !self::shouldShowGettingStarted( $returnToQuery, $type ) ) {
 			return true;
