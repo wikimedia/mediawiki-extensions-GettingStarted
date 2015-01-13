@@ -1,9 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Khan27"
-        ]
-    },
-    "gettingstarted-cta-close": "Bağla",
-    "gettingstarted-cta-leave": "Xeyr təşəkkürlər, bəlkə sonra"
+	"@metadata": {
+		"authors": [
+			"Khan27",
+			"Wertuose"
+		]
+	},
+	"gettingstarted-cta-close": "Bağla",
+	"gettingstarted-cta-fix-pages": "Təklif edilən səhifəni redaktə etmək",
+	"gettingstarted-cta-leave": "Xeyr təşəkkürlər, bəlkə sonra",
+	"gettingstarted-cta-fix-pages-wikipedia": "Təklif edilən səhifəni redaktə etmək"
 }
