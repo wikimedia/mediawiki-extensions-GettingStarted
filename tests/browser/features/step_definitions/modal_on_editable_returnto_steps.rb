@@ -1,7 +1,3 @@
-Given(/^I have just registered$/) do
-	visit(LoginPage).login_with(ENV["MEDIAWIKI_USER"], ENV["MEDIAWIKI_PASSWORD"])
-end
-
 Given(/^I have been returned to an editable page$/) do
 	visit(EditableReturnToPage)
 end
