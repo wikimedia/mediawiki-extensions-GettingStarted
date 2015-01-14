@@ -51,13 +51,22 @@ class MoreLikePageSuggester implements PageSuggester {
 			false // Don't enable write
 		);
 		$searchApiCall->execute();
-		$apiResult = $searchApiCall->getResultData();
-		$titles = array();
-		if ( isset( $apiResult['query']['search'] ) && is_array( $apiResult['query']['search'] ) ) {
-			$searchResults = $apiResult['query']['search'];
-			foreach ( $searchResults as $searchResult ) {
-				$titles[] = Title::newFromText( $searchResult['title'] );
+
+		if ( defined( 'ApiResult::META_CONTENT' ) ) {
+			$searchResults = \ApiResult::removeMetadataNonRecursive(
+				(array)$searchApiCall->getResult()->getResultData( array( 'query', 'search' ) )
+			);
+		} else {
+			$apiResult = $searchApiCall->getResultData();
+			if ( isset( $apiResult['query']['search'] ) && is_array( $apiResult['query']['search'] ) ) {
+				$searchResults = $apiResult['query']['search'];
+			} else {
+				$searchResults = array();
 			}
+		}
+		$titles = array();
+		foreach ( $searchResults as $searchResult ) {
+			$titles[] = Title::newFromText( $searchResult['title'] );
 		}
 
 		return $titles;
