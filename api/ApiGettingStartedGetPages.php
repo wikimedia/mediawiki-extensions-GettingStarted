@@ -104,7 +104,7 @@ class ApiGettingStartedGetPages extends \ApiQueryGeneratorBase {
 
 	public function getParamDescription() {
 		return array(
-			'taskname' => 'Task name, for example, "copyedit"',
+			'taskname' => 'Task name, generally either "copyedit" (copy-editing suggestions) or "morelike" (pages similar to the base page/excluded title)',
 			'excludedtitle' => 'Full title of a page to exclude from the list; also used as the base title for recommendations based on a given page',
 			'count' => 'Requested count; will attempt to fetch this exact number, but may fetch fewer if no more are found after multiple attempts',
 		);
