@@ -78,8 +78,8 @@ class TaskRecommendationsExperimentV1Test extends \MediaWikiTestCase {
 		$user = $this->getLoggedInNewUser();
 		$user->setId( $userId );
 		$experiment = new TaskRecommendationsExperimentV1( $user );
-		$this->assertEquals( $experiment->isPostEditEnabled(), $shouldSeePostEditNotification );
-		$this->assertEquals( $experiment->isFlyoutEnabled(), $shouldSeeFlyout );
+		$this->assertEquals( $shouldSeePostEditNotification, $experiment->isPostEditEnabled(), 'isPostEditEnabled' );
+		$this->assertEquals( $shouldSeeFlyout, $experiment->isFlyoutEnabled(), 'isFlyoutEnabled' );
 	}
 
 	private function getLoggedInOldUser() {

@@ -2,11 +2,13 @@
 
 namespace Tests\GettingStarted\Mocks;
 
-use User, WSTimestamp;
+use User;
 
 class LoggedInUser extends User {
 
 	private $registration;
+
+	private $id;
 
 	/**
 	 * Constructs a mock user and sets the timestamp field in the correct format
@@ -25,5 +27,13 @@ class LoggedInUser extends User {
 
 	public function getRegistration() {
 		return $this->registration;
+	}
+
+	public function setId( $id ) {
+		$this->id = $id;
+	}
+
+	public function getId() {
+		return $this->id;
 	}
 }
