@@ -20,7 +20,7 @@
     "guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Edit the whole page…",
     "guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Click \"{{int:vector-view-edit}}\" to change content anywhere in the page.",
     "guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Or edit a section",
-    "guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "If you want to edit a specific section, you can click on the blue \"{{int:editsection}}\" link near each section's title.",
+    "guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "If you want to edit a specific section, you can click on the \"{{int:editsection}}\" link near each section's title.",
     "guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Make your changes and save",
     "guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "You can now edit the page contents. When you are done, click \"{{int:visualeditor-toolbar-savedialog}}\" to review and save your changes.",
     "guidedtour-tour-gettingstarted-click-preview-title": "Preview (optional)",
