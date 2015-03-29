@@ -23,7 +23,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Die ganze Seite bearbeiten …",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Klicke auf „{{int:vector-view-edit}}“, um einen beliebigen Inhalt in der Seite zu ändern.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Oder einen Abschnitt bearbeiten",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Falls du einen bestimmten Abschnitt bearbeiten möchtest, kannst du auf den blauen „{{int:editsection}}“-Link neben jedem Abschnittstitel klicken.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Falls du einen bestimmten Abschnitt bearbeiten möchtest, kannst du auf den Link „{{int:editsection}}“ neben jedem Abschnittstitel klicken.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Führe deine Änderungen durch und speichere",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Du kannst jetzt die Seiteninhalte bearbeiten. Wenn du fertig bist, klicke auf „{{int:visualeditor-toolbar-savedialog}}“, um deine Änderungen zu überprüfen und zu speichern.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Vorschau (optional)",

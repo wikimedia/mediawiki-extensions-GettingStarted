@@ -8,7 +8,8 @@
 			"Imperadeiro98",
 			"Raylton P. Sousa",
 			"Vitorvicentevalente",
-			"Waldir"
+			"Waldir",
+			"Fabulous"
 		]
 	},
 	"gettingstarted": "Primeiros passos",
@@ -27,7 +28,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Editar a página inteira...",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Clique \"{{int:vector-view-edit}}\" para alterar o conteúdo em qualquer lugar da página.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Ou editar uma secção",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Se quiser editar uma secção específica, pode clicar na ligação azul \"{{int:editsection}}\", junto ao título de cada secção.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Se quiser editar uma secção específica, pode clicar na ligação \"{{int:editsection}}\", junto ao título de cada secção.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Faça as alterações e guarde",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Agora, pode editar o conteúdo da página. Ao terminar, clique em \"{{int:visualeditor-toolbar-savedialog}}\" para rever e gravar as suas alterações.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Antevisão (opcional)",
