@@ -27,7 +27,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "עריכה של כל הדף...",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "יש ללחוץ על \"{{int:vector-view-edit}}\" כדי לשנות את התוכן במקום כלשהו בדף.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "או לערוך פסקה",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "אם ברצונך לערוך פסקה מסוימת, אפשר ללחוץ על הקישור הכחול {{int:editsection}} ליד הכותרת של כל פסקה.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "אם ברצונך לערוך פסקה מסוימת, אפשר ללחוץ על הקישור \"{{int:editsection}}\" ליד הכותרת של כל פסקה.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "עכשיו נשאר לעשות את השינויים ולשמור",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "כעת באפשרותך לערוך את התוכן של הדף. בסיום יש ללחוץ על \"{{int:visualeditor-toolbar-savedialog}}\" כדי לסקור ולשמור את השינויים שלך.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "תצוגה מקדימה (לא חובה)",

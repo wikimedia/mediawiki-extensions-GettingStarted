@@ -28,7 +28,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Редактировать всю страницу...",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Нажмите «{{int:vector-view-edit}}», чтобы изменить содержимое в любом месте на странице.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Или отредактировать раздел",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Если вы хотите отредактировать конкретный раздел, то можете нажать на синюю ссылку «{{int:editsection}}», которая имеется рядом с каждым заголовком раздела.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Если вы хотите отредактировать конкретный раздел, то можете нажать на ссылку «{{int:editsection}}», которая имеется рядом с каждым заголовком раздела.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Внесите необходимые изменения и сохраните",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Сейчас вы можете редактировать страницу. Когда вы закончите, нажмите кнопку «{{int:visualeditor-toolbar-savedialog}}» для просмотра и сохранения изменений.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Предварительный просмотр (не обязательно)",
