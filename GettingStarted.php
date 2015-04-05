@@ -50,10 +50,16 @@ $wgGettingStartedCategoriesForTaskTypes = array();
 $wgGettingStartedExcludedCategories = array();
 
 /**
- * @var string|bool: redis host to use; false if unset.
+ * @var string|bool: redis master host to use; false if unset.
  * @example string: '127.0.0.1'
  */
 $wgGettingStartedRedis = false;
+
+/**
+ * @var string|bool: redis slave host to use; false if unset.
+ * @example string: '127.0.0.1'
+ */
+$wgGettingStartedRedisSlave = false;
 
 /**
  * @var array Options to pass to RedisConnectionPool::singleton()

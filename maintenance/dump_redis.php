@@ -43,7 +43,7 @@ class DumpRedisCategorySync extends \Maintenance {
 	}
 
 	public function execute() {
-		$client = RedisCategorySync::getClient();
+		$client = RedisCategorySync::getSlave();
 		if ( $this->hasOption( 'all' ) ) {
 			$keys = $client->keys( 'RedisCategorySync*' );
 			foreach ( $keys as $key ) {

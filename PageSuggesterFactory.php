@@ -28,7 +28,7 @@ class PageSuggesterFactory {
 			if ( !( $sanitizedTitle && $sanitizedTitle->inNamespace( NS_CATEGORY ) ) ) {
 				return null;
 			}
-			$redis = RedisCategorySync::getClient();
+			$redis = RedisCategorySync::getSlave();
 			$category = \Category::newFromTitle( $sanitizedTitle );
 
 			return new CategoryPageSuggester( $redis, $category );
