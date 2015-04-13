@@ -32,20 +32,39 @@ class RedisCategorySync {
 	/** @var bool: whether or not an update callback has been registered. **/
 	public static $callbackSet = false;
 
+	/**
+	 * Acquire a Redis connection to a slave server.
+	 * @returns RedisConnRef|bool Redis client or false.
+	 */
+	public static function getSlave() {
+		return self::getClient();
+	}
+
+	/**
+	 * Acquire a Redis connection to a master server.
+	 * @returns RedisConnRef|bool Redis client or false.
+	 */
+	public static function getMaster() {
+		return self::getClient( true );
+	}
 
 	/**
 	 * Acquire a Redis connection.
+	 *
+	 * @param bool Set to true to query a redis master server
 	 * @return RedisConnRef|bool Redis client or false.
 	 */
-	public static function getClient() {
-		global $wgGettingStartedRedis, $wgGettingStartedRedisOptions;
+	protected static function getClient( $master = false ) {
+		global $wgGettingStartedRedis, $wgGettingStartedRedisSlave, $wgGettingStartedRedisOptions;
 
 		if ( !$wgGettingStartedRedis || !extension_loaded( 'redis' ) ) {
 			return false;
 		}
 
+		$server = ( $master || !$wgGettingStartedRedisSlave ) ? $wgGettingStartedRedis : $wgGettingStartedRedisSlave;
+
 		$pool = \RedisConnectionPool::singleton( $wgGettingStartedRedisOptions );
-		return $pool->getConnection( $wgGettingStartedRedis );
+		return $pool->getConnection( $server );
 	}
 
 	/**
@@ -163,7 +182,7 @@ class RedisCategorySync {
 			// additional run of the callback.
 			RedisCategorySync::$callbackSet = false;
 
-			$conn = RedisCategorySync::getClient();
+			$conn = RedisCategorySync::getMaster();
 			if ( !$conn ) {
 				wfDebugLog( 'GettingStarted', "Unable to acquire redis connection.\n" );
 				return;

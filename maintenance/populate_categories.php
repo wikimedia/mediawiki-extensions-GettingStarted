@@ -61,7 +61,7 @@ class PopulateCategories extends \Maintenance {
 	}
 
 	public function execute() {
-		$this->mClient = RedisCategorySync::getClient();
+		$this->mClient = RedisCategorySync::getMaster();
 		if ( !$this->mClient ) {
 			$this->error( 'Failed to get Redis connection. Exiting.', 1 );
 		}
