@@ -53,9 +53,7 @@ class MoreLikePageSuggester implements PageSuggester {
 		$searchApiCall->execute();
 
 		if ( defined( 'ApiResult::META_CONTENT' ) ) {
-			$searchResults = \ApiResult::removeMetadataNonRecursive(
-				(array)$searchApiCall->getResult()->getResultData( array( 'query', 'search' ) )
-			);
+			$searchResults = (array)$searchApiCall->getResult()->getResultData( array( 'query', 'search' ), array( 'Strip' => 'base' ) );
 		} else {
 			$apiResult = $searchApiCall->getResultData();
 			if ( isset( $apiResult['query']['search'] ) && is_array( $apiResult['query']['search'] ) ) {
