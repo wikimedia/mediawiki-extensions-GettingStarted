@@ -3,7 +3,8 @@
 		"authors": [
 			"Sasuke UcHiA",
 			"Toliño",
-			"Elisardojm"
+			"Elisardojm",
+			"Banjo"
 		]
 	},
 	"gettingstarted": "Primeiros pasos",
@@ -48,5 +49,18 @@
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description-wikipedia": "Agora pode editar os contidos do artigo. Cando remate, prema en \"{{int:visualeditor-toolbar-savedialog}}\" para revisar e gardar os seus cambios.",
 	"guidedtour-tour-gettingstarted-click-preview-description-wikipedia": "Premer en \"{{int:showpreview}}\" serve para comprobar como se verá o artigo coas modificacións. Non esqueza gardar despois.",
 	"gettingstarted-cta-edit-page-wikipedia": "Edite este artigo",
-	"gettingstarted-cta-fix-pages-wikipedia": "Edite un artigo suxerido"
+	"gettingstarted-cta-fix-pages-wikipedia": "Edite un artigo suxerido",
+	"gettingstarted-lightbulb-notification-body": "Editar un artigo semellante",
+	"gettingstarted-lightbulb-notification-body-lastedited": "Editado $1",
+	"gettingstarted-lightbulb-recommendations-personal-tool": "Recomendacións",
+	"gettingstarted-lightbulb-heading": "Páxinas a mellorar",
+	"gettingstarted-lightbulb-text": "Recomendacións baseadas na súa última edición.",
+	"gettingstarted-lightbulb-flyout-back": "Volver",
+	"gettingstarted-lightbulb-flyout-next": "Seguinte",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Aínda non hai recomendacións!",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Intente editar unhas poucas páxinas. Axudaranos a recomendarlle o que pode editar despois.",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Ups, non podemos mostrar as recomendacións agora.",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Por favor, ténteo de novo.",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Páxina aleatoria",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Refrescar"
 }
