@@ -183,6 +183,7 @@ $wgResourceModules[ 'ext.gettingstarted.lightbulb.postEdit' ] = array(
 ) + $gettingStartedModuleInfo;
 
 $wgResourceModules[ 'ext.gettingstarted.lightbulb.personalTools' ] = array(
+	'position' => 'top',
 	'styles' => 'lightbulb/lightbulb.personalTools.less',
 ) + $gettingStartedModuleInfo;
 
