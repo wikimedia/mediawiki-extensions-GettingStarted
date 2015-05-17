@@ -1,10 +1,20 @@
 {
-    "@metadata": {
-        "authors": [
-            "David1010"
-        ]
-    },
-    "gettingstarted-welcomesiteuser": "მოგესალმებით $1, $2!",
-    "gettingstarted-welcomesiteuseranon": "მუშაობის დაწყება",
-    "gettingstarted-return": "← არა გმადლობთ, დამაბრუნეთ იმ გვერდზე რომელსაც ვკითხულობდი"
+	"@metadata": {
+		"authors": [
+			"David1010"
+		]
+	},
+	"gettingstarted-task-toolbar-try-another-text": "სცადეთ სხვა გვერდი ►",
+	"guidedtour-tour-gettingstarted-click-preview-title": "წინასწარი გადახედვა (არასავალდებულო)",
+	"gettingstarted-cta-close": "დახურვა",
+	"gettingstarted-cta-edit-page": "ამ გვერდის რედაქტირება",
+	"gettingstarted-cta-edit-page-sub": "ჩვენ გაჩვენებთ როგორ",
+	"gettingstarted-cta-fix-pages": "დაარედაქტიროთ შემოთავაზებული გვერდი",
+	"gettingstarted-cta-fix-pages-sub": "ჩვენ რამე მარტივს ავარჩევთ",
+	"gettingstarted-cta-leave": "არა გმადლობთ, შეიძლება მოგვიანებით",
+	"gettingstarted-task-toolbar-try-another-text-wikipedia": "სცადეთ სხვა სტატია ►",
+	"gettingstarted-lightbulb-flyout-back": "უკან",
+	"gettingstarted-lightbulb-flyout-next": "შემდეგი",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "შემთხვევითი გვერდი",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "განახლება"
 }
