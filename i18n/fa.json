@@ -61,5 +61,7 @@
 	"gettingstarted-lightbulb-heading": "صفحات برای بهبود",
 	"gettingstarted-lightbulb-text": "پیشنهادشده بر پایهٔ آخرین ویرایش‌تان.",
 	"gettingstarted-lightbulb-flyout-back": "بازگشت",
-	"gettingstarted-lightbulb-flyout-next": "بعدی"
+	"gettingstarted-lightbulb-flyout-next": "بعدی",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "مقالهٔ تصادفی",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "تازه‌کردن"
 }
