@@ -6,7 +6,8 @@
 			"Rzuwig",
 			"Tar Lócesilion",
 			"Wedkarski",
-			"VerMa"
+			"VerMa",
+			"Devwebtel"
 		]
 	},
 	"gettingstarted": "Pierwsze kroki",
@@ -24,9 +25,9 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Takie ramki wyliczają problemy. Nie musisz rozwiązać ich wszystkich, po prostu zrób to, co jest dla ciebie wygodne.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Edytuj całą stronę...",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Możesz edytować całą stronę klikając tutaj.",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Edytuj sekcję",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Lub edytuj sekcję",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Jeżeli chcesz edytować konkretną sekcję, możesz kliknąć na link ''{{int:editsection}}'' znajdujący się przy tytule każdej sekcji.",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Możesz edytować!",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Wprowadź swoje zmiany i zapisz",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Teraz możesz edytować stronę. Kiedy skończysz, kliknij ''{{int:visualeditor-toolbar-savedialog}}'', aby przejrzeć i zapisać zmiany.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Podgląd (opcjonalnie)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Kliknięcie ''{{int:showpreview}}'' pozwala ci sprawdzić, jak strona będzie wyglądała po twoich zmianach. Nie zapomnij ich zapisać.",
