@@ -1,4 +1,4 @@
 *~
 *.kate-swp
 .*.swp
-tests/browser/.gem
+tests/browser/.gemnode_modules/
