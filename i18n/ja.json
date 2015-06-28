@@ -3,7 +3,8 @@
 		"authors": [
 			"Fryed-peach",
 			"Shirayuki",
-			"Whym"
+			"Whym",
+			"Sujiniku"
 		]
 	},
 	"gettingstarted": "はじめに",
@@ -21,8 +22,8 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "これらのバナーはこのページにある問題点を特定しています。すべてを修正する必要はありません。自分が苦なくできるものだけに集中してください。",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "ページ全体を編集…",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "「{{int:vector-view-edit}}」をクリックすると、ページの本文のあらゆる場所を編集できます。",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "節の編集",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "特定の節を編集したい場合は、それぞれの節見出しの近くにある青いリンク「{{int:editsection}}」をクリックしてください。",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "または節の編集",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "特定の節を編集したい場合は、それぞれの節見出しの近くにあるリンク「{{int:editsection}}」をクリックしてください。",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "編集して保存しましょう",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "ページの本文を編集できるようになりました。編集が完了したら、「{{int:visualeditor-toolbar-savedialog}}」をクリックして、編集内容を確認および保存してください。",
 	"guidedtour-tour-gettingstarted-click-preview-title": "プレビュー (省略可能)",
@@ -34,8 +35,8 @@
 	"gettingstarted-cta-text": "{{SITENAME}}では、さまざまな方法で貢献できます。",
 	"gettingstarted-cta-edit-page": "このページを編集",
 	"gettingstarted-cta-edit-page-sub": "方法をお見せします",
-	"gettingstarted-cta-fix-pages": "簡単な修正が必要なページを見つける",
-	"gettingstarted-cta-fix-pages-sub": "編集方法をお見せします",
+	"gettingstarted-cta-fix-pages": "提案されたページの編集",
+	"gettingstarted-cta-fix-pages-sub": "私たちは簡単に何かを選ぶでしょう",
 	"gettingstarted-cta-leave": "いや、また今度にします",
 	"gettingstarted-cta-edit-page-wikipedia": "この記事を編集",
 	"gettingstarted-lightbulb-flyout-back": "戻る",
