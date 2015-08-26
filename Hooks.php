@@ -183,8 +183,12 @@ class Hooks {
 				// Set to false after first load
 				$newOption = false;
 				if ( $newOption !== $showIntro ) {
+					// Set preference in memory now
 					$user->setOption( self::INTRO_OPTION, $newOption );
-					$user->saveSettings();
+					// Promise to save to the DB post-send
+					\DeferredUpdates::addCallableUpdate( function() use ( $user ) {
+						$user->saveSettings();
+					} );
 				}
 			}
 
