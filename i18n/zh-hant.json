@@ -26,7 +26,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "編輯整個頁面...",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "點選 \"{{int:vector-view-edit}}\" 來變更頁面內的任何內容。",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "或編輯一個章節",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "若您想要編輯一個指定的章節，您可以點選在每個章節標題旁的藍色 \"{{int:editsection}}\" 連結。",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "若您想要編輯一個指定的章節，您可以點選在每個章節標題旁的 \"{{int:editsection}}\" 連結。",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "完成您的變更並儲存",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "您現在可以編輯頁面的內容。當您完成了編輯，點選 \"{{int:visualeditor-toolbar-savedialog}}\" 來複查並儲存您的變更。",
 	"guidedtour-tour-gettingstarted-click-preview-title": "預覽 (選用)",
