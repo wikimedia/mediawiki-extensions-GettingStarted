@@ -17,7 +17,7 @@
 		]
 	},
 	"gettingstarted": "Primeros pasos",
-	"gettingstarted-desc": "Ayuda a usarios nuevos convertirse en editores.",
+	"gettingstarted-desc": "Ayuda a usarios nuevos a convertirse en editores.",
 	"gettingstarted-task-toolbar-editing-help-text": "Mostrarme cómo",
 	"gettingstarted-task-toolbar-editing-help-title": "Mostrar una guía de edición",
 	"gettingstarted-task-toolbar-try-another-text": "Probar otra página ►",
@@ -31,7 +31,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Estos carteles identifican problemas de la página. No es necesario solucionarlos todos. Resuélvelos únicamente hasta donde te sientas cómodo.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Editar toda la página…",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Pulsa en «{{int:vector-view-edit}}» para modificar el contenido en cualquier parte de la página.",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "O editar una sección",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "O edita una sección",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Si quieres modificar una sección específica, pulsa en el enlace «{{int:editsection}}» ubicado junto al título de cada sección.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Realiza tus cambios y guárdalos",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Ahora puedes editar los contenidos de la página. Cuando estés listo, haz clic en \"{{int:visualeditor-toolbar-savedialog}}\" para revisar y guardar tus cambios.",
