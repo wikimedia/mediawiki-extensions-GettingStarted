@@ -1,10 +1,6 @@
 @import 'mediawiki.mixins';
 
 /* Specific elements */
-#mw-gettingstarted-cta-editable-main-page {
-	width: 510px !ie;
-}
-
 #mw-gettingstarted-cta-other-page {
 	width: 365px;
 }
@@ -41,7 +37,7 @@
 	height: 100%;
 	background-color: #000;
 	opacity: 0.5;
-	filter: alpha( opacity=50 );
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
 	z-index: -1;
 }
 
@@ -49,10 +45,6 @@
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-	display: block !ie;
-	position: absolute !ie;
-	top: 50% !ie;
-	left: 50% !ie;
 }
 
 /*
@@ -71,10 +63,6 @@
 	display: inline-block;
 	text-align: left;
 	font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-	display: block !ie;
-	position: relative !ie;
-	top: -50% !ie;
-	left: -50% !ie;
 
 	.mw-ui-button {
 		display: inline-block;
