@@ -15,13 +15,6 @@ Style/IndentationWidth:
     - 'tests/browser/features/support/pages/editable_random_page.rb'
     - 'tests/browser/features/support/pages/registration_page.rb'
 
-# Offense count: 1
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, SupportedStyles.
-Style/SpaceInsideStringInterpolation:
-  Exclude:
-    - 'tests/browser/features/step_definitions/modal_on_editable_returnto_steps.rb'
-
 # Offense count: 18
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle, SupportedStyles.

@@ -2,7 +2,7 @@ When(/^I register$/) do
 	@original_title = on(EditableRandomPage).title
 
 	on(EditableRandomPage).create_account_element.click
-	on(RegistrationPage).register_user "Test Account #{ @random_string }"
+	on(RegistrationPage).register_user "Test Account #{@random_string}"
 end
 
 Then(/^I should be returned to the same article$/) do
