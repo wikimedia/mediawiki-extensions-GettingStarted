@@ -15,12 +15,6 @@ Style/IndentationWidth:
     - 'tests/browser/features/support/pages/editable_random_page.rb'
     - 'tests/browser/features/support/pages/registration_page.rb'
 
-# Offense count: 18
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, SupportedStyles.
-Style/StringLiterals:
-  Enabled: false
-
 # Offense count: 38
 # Cop supports --auto-correct.
 Style/Tab:
