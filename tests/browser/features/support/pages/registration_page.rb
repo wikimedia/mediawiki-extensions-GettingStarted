@@ -13,12 +13,12 @@ class RegistrationPage
     self.password = password
     self.password_confirmation = password
 
-    if ENV.key?('MEDIAWIKI_CAPTCHA_BYPASS_PASSWORD')
+    if env.lookup(:mediawiki_captcha_bypass_password, default: nil)
       bypass_script = <<-END
         var $bypass = $( '<input>' ).attr( {
           type: 'hidden',
           name: 'captchabypass',
-          value: '#{ENV['MEDIAWIKI_CAPTCHA_BYPASS_PASSWORD']}'
+          value: '#{env[:mediawiki_captcha_bypass_password]}'
         } );
         $( '#userlogin2' ).append( $bypass );
       END
