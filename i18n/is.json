@@ -21,7 +21,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Breyta allri síðunni...",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Smelltu á \"{{int:vector-view-edit}}\" til að breyta innihaldi hvar sem er á síðunni.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Eða breyttu kafla",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Ef þú vilt breyta ákveðnum kafla, þá getur þú smellt á bláa „{{int:editsection}}” teglinn við hvern kafla.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Ef þú vilt breyta ákveðnum kafla, þá getur þú smellt á „{{int:editsection}}” teglinn við hvern kafla.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Gerðu breytingarnar þínar og vistaðu",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Þú getur núna breytt innihaldi síðunnar. Þegar þú ert búin/n, smelltu á „{{int:visualeditor-toolbar-savedialog}}” til þess að fara yfir og vista breytingarnar þínar.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Forskoða (valfrjálst)",
