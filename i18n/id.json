@@ -1,14 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Farras",
-            "Iwan Novirion"
-        ]
-    },
-    "gettingstarted": "Memulai",
-    "gettingstarted-desc": "Menambahkan [[Special:GettingStarted|halaman selamat datang]] untuk pengguna baru (ditampilkan setelah membuat akun)",
-    "gettingstarted-welcomesiteuser": "Selamat datang di $1, $2!",
-    "gettingstarted-welcomesiteuseranon": "Selamat datang di $1!",
-    "gettingstarted-return": "Tidak, terima kasih. Bawa saya kembali",
-    "notification-gettingstarted-link-text-get-started": "Memulai"
+	"@metadata": {
+		"authors": [
+			"Farras",
+			"Iwan Novirion"
+		]
+	},
+	"gettingstarted": "Memulai",
+	"gettingstarted-desc": "Menambahkan [[Special:GettingStarted|halaman selamat datang]] untuk pengguna baru (ditampilkan setelah membuat akun)"
 }

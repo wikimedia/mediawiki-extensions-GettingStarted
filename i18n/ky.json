@@ -1,10 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Growingup"
-        ]
-    },
-    "gettingstarted": "Иштин башталышы",
-    "gettingstarted-welcomesiteuser": "$1 сайтына кош келиңиз, $2!",
-    "gettingstarted-welcomesiteuseranon": "$1 сайтына кош келиңиз!"
+	"@metadata": {
+		"authors": [
+			"Growingup"
+		]
+	},
+	"gettingstarted": "Иштин башталышы"
 }

@@ -1,28 +1,25 @@
 {
-    "@metadata": {
-        "authors": [
-            "Michawiki"
-        ]
-    },
-    "gettingstarted": "Prědne kšace",
-    "gettingstarted-desc": "Pomaga nowym wužywarjam awtory byś",
-    "gettingstarted-project-link": "{{ns:Project}}:Prědne kšace",
-    "tag-gettingstarted_edit": "wobźěłowańske naraźenja pśez [[{{MediaWiki:gettingstarted-project-link}}|Prědne kšace]]",
-    "tag-gettingstarted_edit-description": "Změna pśewjeźona pśez system [[{{MediaWiki:gettingstarted-project-link}}|Prědne kšace]], kótaryž naraźujo wužywarjam lažke nadawki a jim pokazujo, kak mógu je wuwjasć.",
-    "gettingstarted-task-toolbar-editing-help-text": "Pokaž mě kak",
-    "gettingstarted-task-toolbar-try-another-text": "Drugi bok wopytaś ►",
-    "gettingstarted-task-toolbar-close-title": "Toś tu symbolowu rědku zacyniś",
-    "guidedtour-tour-gettingstartedtasktoolbarintro-title": "Prědne kšace",
-    "guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Klikni na {{int:vector-view-edit}}",
-    "guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Móžoš ceły bok wobźěłać, z tym až kliknjoš how.l",
-    "guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Wótrězk wobźěłaś",
-    "guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Móžoš wobźěłaś!",
-    "guidedtour-tour-gettingstarted-click-preview-title": "Pśeglěd (opcionalny)",
-    "guidedtour-tour-gettingstarted-click-save-title": "Sy skóro gótowy!",
-    "guidedtour-tour-gettingstarted-click-save-description": "Klikni na '{{int:savearticle}}' a twóje změny budu widobne.",
-    "gettingstarted-cta-close": "Zacyniś",
-    "gettingstarted-cta-heading": "Pomoc {{GRAMMAR:genitiw|{{SITENAME}}}}",
-    "gettingstarted-cta-edit-page": "Toś ten bok wobźěłaś",
-    "gettingstarted-cta-edit-page-sub": "Pokažomy śi kak",
-    "gettingstarted-cta-fix-pages-sub": "Pokažomy śi, kak se wobźěłujo"
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"gettingstarted": "Prědne kšace",
+	"gettingstarted-desc": "Pomaga nowym wužywarjam awtory byś",
+	"gettingstarted-task-toolbar-editing-help-text": "Pokaž mě kak",
+	"gettingstarted-task-toolbar-try-another-text": "Drugi bok wopytaś ►",
+	"gettingstarted-task-toolbar-close-title": "Toś tu symbolowu rědku zacyniś",
+	"guidedtour-tour-gettingstartedtasktoolbarintro-title": "Prědne kšace",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Klikni na {{int:vector-view-edit}}",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Móžoš ceły bok wobźěłać, z tym až kliknjoš how.l",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Wótrězk wobźěłaś",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Móžoš wobźěłaś!",
+	"guidedtour-tour-gettingstarted-click-preview-title": "Pśeglěd (opcionalny)",
+	"guidedtour-tour-gettingstarted-click-save-title": "Sy skóro gótowy!",
+	"guidedtour-tour-gettingstarted-click-save-description": "Klikni na '{{int:savearticle}}' a twóje změny budu widobne.",
+	"gettingstarted-cta-close": "Zacyniś",
+	"gettingstarted-cta-heading": "Pomoc {{GRAMMAR:genitiw|{{SITENAME}}}}",
+	"gettingstarted-cta-edit-page": "Toś ten bok wobźěłaś",
+	"gettingstarted-cta-edit-page-sub": "Pokažomy śi kak",
+	"gettingstarted-cta-fix-pages-sub": "Pokažomy śi, kak se wobźěłujo"
 }

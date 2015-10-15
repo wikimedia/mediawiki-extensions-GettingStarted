@@ -1,8 +1,7 @@
 {
-    "@metadata": {
-        "authors": [
-            "Shirayuki"
-        ]
-    },
-    "gettingstarted-msg": "An administrator on {{SITENAME}} should customise this message by editing [[{{ns:MediaWiki}}:gettingstarted-msg]]."
+	"@metadata": {
+		"authors": [
+			"Shirayuki"
+		]
+	}
 }

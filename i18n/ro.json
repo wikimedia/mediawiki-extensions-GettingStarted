@@ -1,11 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Firilacroco"
-        ]
-    },
-    "gettingstarted": "Primii pași",
-    "gettingstarted-welcomesiteuser": "Bine ați venit la $1, $2!",
-    "gettingstarted-welcomesiteuseranon": "Bine ați venit la $1!",
-    "gettingstarted-return": "Nu, mulțumesc, du-mă înapoi"
+	"@metadata": {
+		"authors": [
+			"Firilacroco"
+		]
+	},
+	"gettingstarted": "Primii pași"
 }

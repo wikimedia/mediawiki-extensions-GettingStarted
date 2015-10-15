@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "DCLXVI"
-        ]
-    },
-    "gettingstarted-cta-close": "Затваряне",
-    "gettingstarted-cta-edit-page": "Редактиране на страницата"
+	"@metadata": {
+		"authors": [
+			"DCLXVI"
+		]
+	},
+	"gettingstarted-cta-close": "Затваряне",
+	"gettingstarted-cta-edit-page": "Редактиране на страницата"
 }

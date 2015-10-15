@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Benojan",
-            "十弌"
-        ]
-    },
-    "guidedtour-tour-gettingstarted-click-preview-description": "點 \"{{int:showpreview}}\" 讓爾望得著改爻之後頁面個變化，休要忘記爻保存起。",
-    "guidedtour-tour-gettingstarted-click-save-description": "點 \"{{int:savearticle}}\" 爾個改動便保存爻。",
-    "gettingstarted-cta-close": "關"
+	"@metadata": {
+		"authors": [
+			"Benojan",
+			"十弌"
+		]
+	},
+	"guidedtour-tour-gettingstarted-click-preview-description": "點 \"{{int:showpreview}}\" 讓爾望得著改爻之後頁面個變化，休要忘記爻保存起。",
+	"guidedtour-tour-gettingstarted-click-save-description": "點 \"{{int:savearticle}}\" 爾個改動便保存爻。",
+	"gettingstarted-cta-close": "關"
 }

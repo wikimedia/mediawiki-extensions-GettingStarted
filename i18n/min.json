@@ -1,19 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Iwan Novirion"
-        ]
-    },
-    "gettingstarted": "Ba'a ka mulai",
-    "gettingstarted-desc": "Manambahkan [[Special:GettingStarted|laman salamaik datang]] untuak pangguno baru (langsuang nampak salasai mambuek akun)",
-    "gettingstarted-welcomesiteuser": "Salamaik datang di $1, $2!",
-    "gettingstarted-welcomesiteuseranon": "Ba'a ka mulai",
-    "gettingstarted-welcome-back-site-user": "Apo kaba, $2?",
-    "gettingstarted-task-header": "Mancari caro mudah ba'a ka mulai? Piliahlah sabuah laman dari daftar dibawah ko.",
-    "gettingstarted-return": "Mokasih sajolah, bawok Ambo baliak",
-    "gettingstarted-project-link": "{{ns:Project}}:Ba'a ka mulai",
-    "tag-gettingstarted_edit": "pangguno baru [[{{MediaWiki:gettingstarted-project-link}}|ba'a ka mulai]]",
-    "tag-gettingstarted_edit-description": "Suntiangan laman nan pangguno piliah dari daftar tugas pado [[Special:GettingStarted|Ba'a ka mulai]]",
-    "gettingstarted-task-copyedit-main-description": "Pelokan tata bahaso jo ejaan",
-    "gettingstarted-task-clarify-main-description": "Tingkekan kajalehan"
+	"@metadata": {
+		"authors": [
+			"Iwan Novirion"
+		]
+	},
+	"gettingstarted": "Ba'a ka mulai",
+	"gettingstarted-desc": "Manambahkan [[Special:GettingStarted|laman salamaik datang]] untuak pangguno baru (langsuang nampak salasai mambuek akun)"
 }

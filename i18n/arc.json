@@ -1,9 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Basharh"
-        ]
-    },
-    "gettingstarted-task-addlinks-main-description": "ܐܘܣܦ ܐܣܘܪ̈ܐ",
-    "gettingstarted-task-toolbar-editing-help-text": "ܚܘܝ ܠܝ ܐܝܟܢܐ"
+	"@metadata": {
+		"authors": [
+			"Basharh"
+		]
+	},
+	"gettingstarted-task-toolbar-editing-help-text": "ܚܘܝ ܠܝ ܐܝܟܢܐ"
 }
