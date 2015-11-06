@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Milicevic01"
+			"Milicevic01",
+			"Сербијана"
 		]
 	},
-	"gettingstarted-task-toolbar-editing-help-text": "Прикажи помоћ",
+	"gettingstarted-task-toolbar-editing-help-text": "Покажи ми како",
 	"gettingstarted-lightbulb-flyout-next": "Следеће"
 }
