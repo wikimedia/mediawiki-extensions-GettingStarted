@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Subi"
+			"Subi",
+			"Sator"
 		]
 	},
 	"guidedtour-tour-gettingstarted-click-preview-title": "Aurrebista (aukerakoa)",
@@ -11,5 +12,5 @@
 	"gettingstarted-lightbulb-flyout-back": "Atzera",
 	"gettingstarted-lightbulb-flyout-next": "Hurrengoa",
 	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Oraindik ez dago gomendiorik!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Mesedez, saiatu berriro."
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Saiatu berriro, mesedez."
 }
