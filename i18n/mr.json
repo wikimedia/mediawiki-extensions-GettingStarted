@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"V.narsikar",
-			"संतोष दहिवळ"
+			"संतोष दहिवळ",
+			"अभय नातू"
 		]
 	},
 	"gettingstarted": "सुरुवात करु या",
@@ -14,7 +15,7 @@
 	"gettingstarted-task-toolbar-no-suggested-page": "माफ करा.याक्षणी सुधार करण्यासाठी आम्ही अधिक पाने शोधु शकलो नाही.काही वेळाने पुन्हा प्रयत्न करा किंवा आपल्या स्वतःच्या आवडीचे विषय शोधा.",
 	"gettingstarted-task-copyedit-toolbar-description": "या पानात असलेल्या स्पेलिंग किंवा व्याकरणाच्या चूका तुम्ही बरोबर करु शकता.",
 	"gettingstarted-task-copyedit-toolbar-try-another-title": "अनियत पानावर जाऊन त्याचे नकल-संपादन करुन त्यास सुधरवा",
-	"guidedtour-tour-gettingstartedtasktoolbarintro-title": "आपण सुरुवात करु या",
+	"guidedtour-tour-gettingstartedtasktoolbarintro-title": "चला, सुरुवात करुयात",
 	"guidedtour-tour-gettingstartedtasktoolbarintro-description": "दुसऱ्या {{SITENAME}} वरील सदस्यांद्वारे हे पान, 'सुधरविण्याची आवश्यकता असलेले' म्हणून निवडल्या गेले आहे.आपणास यात मदत करण्यासाठी कुशल असण्याची आवश्यकता नाही.",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "काय करावयाचे याबाबतच्या कल्पना",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "हे फलक या पानात असलेल्या अडचणी ओळखतात.त्या सर्वांना आपण सुधरविणे जरुरी नाही.आपण काय केले तर आरामशीर रहाल, त्यासच चिटकून रहा.",
@@ -26,7 +27,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "आपण आता या पानाचा आशय संपादु शकता. ते पूर्ण झाल्यावर,झलक पाहण्यास व आपले बदल जतन करण्यास, '{{int:visualeditor-toolbar-savedialog}}' वर टिचकी द्या.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "झलक (ऐच्छिक)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "\"{{int:showpreview}}\" टिचकण्याने, आपणास आपण केलेल्या बदलांसह ते पान कसे दिसेल, ते बघण्याची अनुमती मिळते.त्यानंतर जतन करण्यास मात्र विसरु नका.",
-	"guidedtour-tour-gettingstarted-click-save-title": "आपण जवळपास ते पूर्ण केले आहे!",
+	"guidedtour-tour-gettingstarted-click-save-title": "होतच आले!",
 	"guidedtour-tour-gettingstarted-click-save-description": "\"{{int:savearticle}}\" वर टिचका व आपले बदल दृश्य होतील.",
 	"gettingstarted-cta-close": "बंद करा",
 	"gettingstarted-cta-heading": "{{SITENAME}} सुधरवण्यास मदत करा",
@@ -35,7 +36,7 @@
 	"gettingstarted-cta-edit-page-sub": "कसे ते आम्ही आपणास दाखवु",
 	"gettingstarted-cta-fix-pages": "सुचविलेल्या पानाचे संपादन करा",
 	"gettingstarted-cta-fix-pages-sub": "आम्ही काहीतरी सोपेच निवडू",
-	"gettingstarted-cta-leave": "नाही. धन्यवाद. नंतर कधीही",
+	"gettingstarted-cta-leave": "नको, राहू दे. पुन्हा कधीतरी",
 	"gettingstarted-task-toolbar-try-another-text-wikipedia": "दुसऱ्या लेखावर प्रयत्न करा ►",
 	"gettingstarted-task-toolbar-no-suggested-page-wikipedia": "माफ करा.याक्षणी सुधार करण्यासाठी आम्ही अधिक लेख शोधु शकलो नाही.काही वेळाने पुन्हा प्रयत्न करा किंवा आपल्या स्वतःच्या आवडीचे विषय शोधा.",
 	"gettingstarted-task-copyedit-toolbar-description-wikipedia": "या लेखात असलेल्या स्पेलिंग किंवा व्याकरणाच्या चूका तुम्ही बरोबर करु शकता.",
@@ -53,7 +54,7 @@
 	"gettingstarted-lightbulb-recommendations-personal-tool": "शिफारसी",
 	"gettingstarted-lightbulb-heading": "सुधरवायची पाने",
 	"gettingstarted-lightbulb-text": "आपण मागे केलेल्या संपादनावरुन याची शिफारस करण्यात येते.",
-	"gettingstarted-lightbulb-flyout-back": "परत",
+	"gettingstarted-lightbulb-flyout-back": "मागे",
 	"gettingstarted-lightbulb-flyout-next": "पुढील",
 	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "अद्याप काही शिफारसी नाहीत!",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "काही पानांच्या संपादनांचा प्रयत्न करा.त्याद्वारे, आपण पुढे कशाचे संपादन करावे याची शिफारस करण्यास आम्हास त्याची मदत होईल.",
