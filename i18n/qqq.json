@@ -62,5 +62,10 @@
 	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Heading text on error state when there are no similar articles or there is an error.",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Text below header asking to the user to try again.",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Text of the error state button when the user had made no article edits and the button takes them to a random page\n{{Identical|Random page}}",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Text of the error state when there are no recommendations and the button's function is to refresh the api request.\n{{Identical|Refresh}}"
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Text of the error state when there are no recommendations and the button's function is to refresh the api request.\n{{Identical|Refresh}}",
+	"apihelp-query+gettingstartedgetpages-description": "{{doc-apihelp-description|query+gettingstartedgetpages}}",
+	"apihelp-query+gettingstartedgetpages-example-1": "{{doc-apihelp-example|query+gettingstartedgetpages}}",
+	"apihelp-query+gettingstartedgetpages-param-count": "{{doc-apihelp-param|query+gettingstartedgetpages|count}}",
+	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "{{doc-apihelp-param|query+gettingstartedgetpages|excludedtitle}}",
+	"apihelp-query+gettingstartedgetpages-param-taskname": "{{doc-apihelp-param|query+gettingstartedgetpages|taskname}}"
 }
