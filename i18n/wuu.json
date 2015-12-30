@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Benojan",
-			"十弌"
+			"十弌",
+			"飞舞回堂前"
 		]
 	},
-	"guidedtour-tour-gettingstarted-click-preview-description": "點 \"{{int:showpreview}}\" 讓爾望得著改爻之後頁面個變化，休要忘記爻保存起。",
+	"guidedtour-tour-gettingstarted-click-preview-description": "点击“{{int:showpreview}}”让侬望得着改动之后页面个样式。覅忘脱保存。",
 	"guidedtour-tour-gettingstarted-click-save-description": "點 \"{{int:savearticle}}\" 爾個改動便保存爻。",
 	"gettingstarted-cta-close": "關"
 }
