@@ -62,6 +62,5 @@
 	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Wir können momentan keine Empfehlungen anzeigen.",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Bitte erneut versuchen.",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Zufällige Seite",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Aktualisieren",
-	"apihelp-query+gettingstartedgetpages-example-1": ""
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Aktualisieren"
 }

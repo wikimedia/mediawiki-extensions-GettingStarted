@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ammartivari"
+			"Ammartivari",
+			"Toplove12"
 		]
 	},
-	"gettingstarted-desc": "Ndihmo përdoruesit e rinj të bëhen redaktorë"
+	"gettingstarted-desc": "Ndihmo përdoruesit e rinj të bëhen redaktorë",
+	"apihelp-query+gettingstartedgetpages-param-count": "Kërkuar numërimin; do të tentojë që të shkoj në këtë numër të saktë, por mund të shkoj të marr më pak, nëse jo më shumë, janë gjetur pas përpjekje të shumta"
 }
