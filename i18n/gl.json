@@ -62,5 +62,8 @@
 	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Ups, non podemos mostrar as recomendacións agora.",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Por favor, ténteo de novo.",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Páxina aleatoria",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Refrescar"
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Refrescar",
+	"apihelp-query+gettingstartedgetpages-description": "Esta API é para obter unha lista de unha ou máis páxinas relacionadas cunha tarefa particular de GettingStarted.",
+	"apihelp-query+gettingstartedgetpages-param-taskname": "Nome de tarefa, normalmente \"copyedit\" (suxestións de modificación por copia) ou \"morelike\" (páxinas similares ó título da páxina de base/excluída)",
+	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "Título completo da páxina a excluír da lista, tamén usado como o título base para recomendacións baseadas nunha páxina dada"
 }

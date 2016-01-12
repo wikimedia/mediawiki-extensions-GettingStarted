@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siddhartha Ghai"
+			"Siddhartha Ghai",
+			"जनक राज भट्ट"
 		]
 	},
-	"gettingstarted-desc": "नए सदस्यों को सम्पादक बनने में मदद करता है"
+	"gettingstarted-desc": "नए सदस्यों को सम्पादक बनने में मदद करता है",
+	"apihelp-query+gettingstartedgetpages-description": "प्रारंभ कार्य हो रही है |"
 }
