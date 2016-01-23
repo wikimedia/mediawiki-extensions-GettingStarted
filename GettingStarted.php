@@ -18,6 +18,7 @@ $wgExtensionCredits[ 'api' ][] = array(
 	),
 	'url' => 'https://www.mediawiki.org/wiki/Extension:GettingStarted',
 	'descriptionmsg' => 'gettingstarted-desc',
+	'license-name' => 'GPL-2.0+',
 	'version' => '1.1.0',
 );
 
