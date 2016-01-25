@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Siddhartha Ghai",
-			"जनक राज भट्ट"
+			"जनक राज भट्ट",
+			"Rajat11"
 		]
 	},
 	"gettingstarted-desc": "नए सदस्यों को सम्पादक बनने में मदद करता है",
-	"apihelp-query+gettingstartedgetpages-description": "प्रारंभ कार्य हो रही है |"
+	"apihelp-query+gettingstartedgetpages-description": "यह API एक विशेष GettingStarted कार्य के एक या एक से अधिक पृष्ठों की सूची प्राप्त करने के लिए संबंधित है|"
 }
