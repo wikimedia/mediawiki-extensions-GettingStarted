@@ -5,7 +5,8 @@
 			"Base",
 			"Ата",
 			"Microcell",
-			"Капитан Джон Шепард"
+			"Капитан Джон Шепард",
+			"Piramidion"
 		]
 	},
 	"gettingstarted": "Початок роботи",
@@ -63,5 +64,9 @@
 	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Ой-ой, ми не в змозі показати рекомендації прямо зараз.",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Будь ласка, спробуйте ще раз.",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Випадкова сторінка",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Оновити"
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Оновити",
+	"apihelp-query+gettingstartedgetpages-description": "Цей API призначений для отримання списку з однієї або більше сторінок, пов'язаних з конкретним завданням GettingStarted.",
+	"apihelp-query+gettingstartedgetpages-param-taskname": "Назва завдання, зазвичай або «copyedit» (пропозиції з вичитування текстів) або «morelike» (сторінки, подібні до базової сторінки/виключеної назви)",
+	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "Повна назва сторінки, яку треба виключити зі списку; також використовується як базова назва для рекомендацій на основі заданої сторінки",
+	"apihelp-query+gettingstartedgetpages-param-count": "Запитувана кількість; спробує вивести саме таку кількість, але врешті-решт може вивести менше, якщо після багатьох спроб не знайде більше нічого"
 }
