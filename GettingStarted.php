@@ -382,9 +382,3 @@ $wgHooks[ 'GetPreferences' ][] = 'GettingStarted\Hooks::onGetPreferences';
 $wgHooks[ 'UserLogoutComplete'][] = 'GettingStarted\Hooks::onUserLogoutComplete';
 $wgHooks[ 'PersonalUrls' ][] = 'GettingStarted\Hooks::onPersonalUrls';
 $wgHooks[ 'UnitTestsList' ][] = 'GettingStarted\Hooks::onUnitTestsList';
-
-list( $site, $lang ) = $wgConf->siteFromDB( $wgDBname );
-
-if ( $site === 'wikipedia' && $lang !== 'commons' ) {
-	$wgHooks[ 'MessageCache::get' ][] = 'GettingStarted\Hooks::onMessageCacheGet';
-}
