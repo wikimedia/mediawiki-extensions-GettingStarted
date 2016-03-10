@@ -1,2 +1,1 @@
-# Blank file to prevent jshint from walking up directory chain and
-# finding core's .jshintignore file, which excludes extensions
+node_mdoules/**

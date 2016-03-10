@@ -1,34 +1,28 @@
 {
-	"predef": [
-		"mediaWiki",
-		"jQuery",
-		"QUnit"
-	],
+	// Enforcing
 	"es3": true,
 	"bitwise": true,
-	"camelcase": true,
-	"curly": true,
 	"eqeqeq": true,
-	"forin": false,
-	"immed": true,
-	"latedef": true,
-	"newcap": true,
+	"freeze": true,
+	"latedef": "nofunc",
+	"laxbreak": true,
+	"multistr": true,
 	"noarg": true,
-	"noempty": true,
 	"nonew": true,
-	"quotmark": "single",
-	"regexp": false,
 	"undef": true,
 	"unused": true,
 	"strict": false,
-	"trailing": true,
 
-	"laxbreak": true,
-	"smarttabs": true,
-	"multistr": true,
+	// Relaxing
+	"es5": false,
 
+	// Environment
 	"browser": true,
+	"jquery": true,
 
-	"nomen": true,
-	"onevar": true
+	"globals": {
+		"mediaWiki": false,
+		"QUnit": false,
+		"JSON": true
+	}
 }
