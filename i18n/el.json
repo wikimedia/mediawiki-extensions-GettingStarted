@@ -25,7 +25,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Ή επεξεργασία ενότητας",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Αν θέλετε να επεξεργαστείτε μια συγκεκριμένη ενότητα, μπορείτε να κάνετε κλικ στο σύνδεσμο \"{{int:editsection}}\" κοντά σε κάθε τμήμα του τίτλου.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Κάντε τις αλλαγές σας και αποθηκεύστε",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Τώρα μπορείτε να επεξεργαστείτε τη σελίδα. Όταν τελειώσετε, κάντε κλικ στο \"{{int:visualeditor-toolbar-savedialog}}\" για να επιθεωρήσετε και να αποθηκεύσετε τις αλλαγές σας.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Τώρα μπορείτε να επεξεργαστείτε το περιεχόμενο της σελίδας. Όταν τελειώσετε, κάντε κλικ στο \"{{int:visualeditor-toolbar-savedialog}}\" για να επιθεωρήσετε και να αποθηκεύσετε τις αλλαγές σας.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Προεπισκόπηση (προαιρετικό)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Κάνοντας κλικ στο \"{{int:showpreview}}\" σας επιτρέπει να δείτε πως θα είναι η σελίδα μετά τις αλλαγές που κάνατε. Απλά μην ξεχάσετε να αποθηκεύσετε!",
 	"guidedtour-tour-gettingstarted-click-save-title": "Σχεδόν τελειώσατε!",
