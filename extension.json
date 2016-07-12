@@ -1,0 +1,304 @@
+{
+	"name": "GettingStarted",
+	"version": "1.1.0",
+	"author": [
+		"Munaf Assaf",
+		"Matt Flaschen",
+		"Pau Giner",
+		"Kaity Hammerstein",
+		"Ori Livneh",
+		"Rob Moen",
+		"S Page",
+		"Sam Smith",
+		"Moiz Syed"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:GettingStarted",
+	"descriptionmsg": "gettingstarted-desc",
+	"license-name": "GPL-2.0+",
+	"type": "api",
+	"DefaultUserOptions": {
+		"gettingstarted-task-toolbar-show-intro": true
+	},
+	"APIListModules": {
+		"gettingstartedgetpages": "GettingStarted\\ApiGettingStartedGetPages"
+	},
+	"MessagesDirs": {
+		"GettingStarted": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"GettingStarted\\Hooks": "Hooks.php",
+		"GettingStarted\\RedisCategorySync": "RedisCategorySync.php",
+		"GettingStarted\\PageFilterFactory": "PageFilterFactory.php",
+		"GettingStarted\\BasePageFilter": "BasePageFilter.php",
+		"GettingStarted\\CategoryPageFilter": "CategoryPageFilter.php",
+		"GettingStarted\\ApiGettingStartedGetPages": "api/ApiGettingStartedGetPages.php",
+		"GettingStarted\\PageSuggesterFactory": "PageSuggesterFactory.php",
+		"GettingStarted\\PageSuggester": "PageSuggester.php",
+		"GettingStarted\\CategoryPageSuggester": "CategoryPageSuggester.php",
+		"GettingStarted\\MoreLikePageSuggester": "MoreLikePageSuggester.php",
+		"GettingStarted\\TaskRecommendationsExperimentV1": "TaskRecommendationsExperimentV1.php"
+	},
+	"ResourceModules": {
+		"schema.GettingStartedRedirectImpression": {
+			"class": "ResourceLoaderSchemaModule",
+			"schema": "GettingStartedRedirectImpression",
+			"revision": 7355552
+		},
+		"ext.guidedTour.tour.gettingstartedtasktoolbar": {
+			"scripts": "tours/gettingstartedtasktoolbar.js",
+			"dependencies": [
+				"ext.guidedTour",
+				"ext.gettingstarted.logging"
+			],
+			"messages": [
+				"editsection",
+				"savearticle",
+				"showpreview",
+				"vector-view-edit",
+				"guidedtour-tour-gettingstartedtasktoolbarintro-title",
+				"guidedtour-tour-gettingstartedtasktoolbarintro-description",
+				"guidedtour-tour-gettingstartedtasktoolbar-ambox-title",
+				"guidedtour-tour-gettingstartedtasktoolbar-ambox-description",
+				"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title",
+				"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description",
+				"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title",
+				"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description",
+				"guidedtour-tour-gettingstarted-click-preview-title",
+				"guidedtour-tour-gettingstarted-click-preview-description",
+				"guidedtour-tour-gettingstarted-click-save-title",
+				"guidedtour-tour-gettingstarted-click-save-description"
+			]
+		},
+		"ext.guidedTour.tour.gettingstartedtasktoolbarve": {
+			"scripts": "tours/gettingstartedtasktoolbarve.js",
+			"dependencies": [
+				"ext.guidedTour",
+				"ext.gettingstarted.logging"
+			],
+			"messages": [
+				"editsection",
+				"vector-view-edit",
+				"visualeditor-toolbar-savedialog",
+				"guidedtour-tour-gettingstartedtasktoolbarintro-title",
+				"guidedtour-tour-gettingstartedtasktoolbarintro-description",
+				"guidedtour-tour-gettingstartedtasktoolbar-ambox-title",
+				"guidedtour-tour-gettingstartedtasktoolbar-ambox-description",
+				"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title",
+				"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description",
+				"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title",
+				"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description",
+				"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title",
+				"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description"
+			]
+		},
+		"ext.gettingstarted.lightbulb.postEdit": {
+			"scripts": [
+				"lightbulb/lightbulb.postEdit.js"
+			],
+			"styles": "lightbulb/lightbulb.postEdit.less",
+			"dependencies": [
+				"ext.gettingstarted.api",
+				"ext.gettingstarted.lightbulb.common",
+				"schema.TaskRecommendationImpression"
+			],
+			"messages": [
+				"gettingstarted-lightbulb-notification-body"
+			]
+		},
+		"ext.gettingstarted.lightbulb.personalTools": {
+			"position": "top",
+			"styles": "lightbulb/lightbulb.personalTools.less"
+		},
+		"ext.gettingstarted.lightbulb.flyout": {
+			"scripts": "lightbulb/lightbulb.flyout.js",
+			"styles": "lightbulb/lightbulb.flyout.less",
+			"dependencies": [
+				"ext.gettingstarted.api",
+				"ext.gettingstarted.lightbulb.common",
+				"ext.guidedTour.styles",
+				"jquery.client",
+				"mediawiki.user",
+				"schema.TaskRecommendationImpression",
+				"schema.TaskRecommendationLightbulbClick"
+			],
+			"messages": [
+				"gettingstarted-lightbulb-heading",
+				"gettingstarted-lightbulb-text",
+				"gettingstarted-lightbulb-flyout-back",
+				"gettingstarted-lightbulb-flyout-next",
+				"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits",
+				"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits",
+				"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations",
+				"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations",
+				"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits",
+				"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations"
+			]
+		},
+		"ext.gettingstarted.lightbulb.common": {
+			"styles": "lightbulb/lightbulb.common.less",
+			"scripts": [
+				"lightbulb/lightbulb.parser.js",
+				"lightbulb/lightbulb.suggestionRenderer.js",
+				"lightbulb/lightbulb.logging.js"
+			],
+			"dependencies": [
+				"mediawiki.util",
+				"mediawiki.user",
+				"moment",
+				"ext.gettingstarted.logging",
+				"schema.TaskRecommendation",
+				"schema.TaskRecommendationClick"
+			],
+			"messages": [
+				"gettingstarted-lightbulb-notification-body-lastedited"
+			]
+		},
+		"ext.gettingstarted.logging": {
+			"scripts": "ext.gettingstarted.logging.js",
+			"dependencies": [
+				"mediawiki.action.view.postEdit",
+				"jquery.cookie",
+				"json",
+				"mediawiki.Title",
+				"mediawiki.user"
+			]
+		},
+		"ext.gettingstarted.api": {
+			"scripts": "ext.gettingstarted.api.js",
+			"dependencies": [
+				"mediawiki.api",
+				"mediawiki.Title"
+			]
+		},
+		"ext.gettingstarted.taskToolbar": {
+			"scripts": "ext.gettingstarted.taskToolbar.js",
+			"styles": {
+				"ext.gettingstarted.taskToolbar.less": {
+					"media": "screen "
+				},
+				"ext.gettingstarted.taskToolbar.hidden.less": {
+					"media": "print, only screen and (max-width: 850px)"
+				}
+			},
+			"dependencies": [
+				"mediawiki.action.view.postEdit",
+				"mediawiki.jqueryMsg",
+				"mediawiki.Title",
+				"mediawiki.libs.guiders",
+				"ext.guidedTour.lib",
+				"ext.gettingstarted.api",
+				"ext.gettingstarted.logging"
+			],
+			"messages": [
+				"gettingstarted-task-toolbar-editing-help-text",
+				"gettingstarted-task-toolbar-editing-help-title",
+				"gettingstarted-task-toolbar-try-another-text",
+				"gettingstarted-task-toolbar-close-title",
+				"gettingstarted-task-toolbar-no-suggested-page",
+				"gettingstarted-task-copyedit-toolbar-description",
+				"gettingstarted-task-copyedit-toolbar-try-another-title"
+			]
+		},
+		"ext.gettingstarted.return": {
+			"scripts": "ext.gettingstarted.return.js",
+			"styles": "ext.gettingstarted.return.less",
+			"messages": [
+				"gettingstarted-cta-close",
+				"gettingstarted-cta-heading",
+				"gettingstarted-cta-text",
+				"gettingstarted-cta-edit-page",
+				"gettingstarted-cta-edit-page-sub",
+				"gettingstarted-cta-fix-pages",
+				"gettingstarted-cta-fix-pages-sub",
+				"gettingstarted-cta-leave"
+			],
+			"dependencies": [
+				"ext.gettingstarted.api",
+				"ext.gettingstarted.logging",
+				"schema.GettingStartedRedirectImpression",
+				"ext.guidedTour.lib",
+				"mediawiki.Title",
+				"mediawiki.Uri",
+				"mediawiki.util",
+				"mediawiki.user"
+			],
+			"position": "top"
+		},
+		"schema.SignupExpPageLinkClick": {
+			"class": "ResourceLoaderSchemaModule",
+			"schema": "SignupExpPageLinkClick",
+			"revision": 8965014
+		},
+		"schema.SignupExpCTAImpression": {
+			"class": "ResourceLoaderSchemaModule",
+			"schema": "SignupExpCTAImpression",
+			"revision": 8965023
+		},
+		"schema.SignupExpCTAButtonClick": {
+			"class": "ResourceLoaderSchemaModule",
+			"schema": "SignupExpCTAButtonClick",
+			"revision": 8965028
+		},
+		"schema.TaskRecommendationLightbulbClick": {
+			"class": "ResourceLoaderSchemaModule",
+			"schema": "TaskRecommendationLightbulbClick",
+			"revision": 9433256
+		},
+		"schema.TaskRecommendationImpression": {
+			"class": "ResourceLoaderSchemaModule",
+			"schema": "TaskRecommendationImpression",
+			"revision": 9266226
+		},
+		"schema.TaskRecommendation": {
+			"class": "ResourceLoaderSchemaModule",
+			"schema": "TaskRecommendation",
+			"revision": 9266319
+		},
+		"schema.TaskRecommendationClick": {
+			"class": "ResourceLoaderSchemaModule",
+			"schema": "TaskRecommendationClick",
+			"revision": 9266317
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "GettingStarted/resources"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "GettingStarted\\Hooks::onBeforePageDisplay",
+		"CategoryAfterPageAdded": "GettingStarted\\RedisCategorySync::onCategoryAfterPageAdded",
+		"CategoryAfterPageRemoved": "GettingStarted\\RedisCategorySync::onCategoryAfterPageRemoved",
+		"ArticleDeleteComplete": "GettingStarted\\RedisCategorySync::onArticleDeleteComplete",
+		"MakeGlobalVariablesScript": "GettingStarted\\Hooks::onMakeGlobalVariablesScript",
+		"ResourceLoaderGetConfigVars": "GettingStarted\\Hooks::onResourceLoaderGetConfigVars",
+		"CentralAuthPostLoginRedirect": "GettingStarted\\Hooks::onCentralAuthPostLoginRedirect",
+		"PostLoginRedirect": "GettingStarted\\Hooks::onPostLoginRedirect",
+		"GetPreferences": "GettingStarted\\Hooks::onGetPreferences",
+		"UserLogoutComplete": "GettingStarted\\Hooks::onUserLogoutComplete",
+		"PersonalUrls": "GettingStarted\\Hooks::onPersonalUrls",
+		"UnitTestsList": "GettingStarted\\Hooks::onUnitTestsList"
+	},
+	"config": {
+		"GettingStartedTasks": {
+			"copyedit": {
+				"toolbarDescription": "gettingstarted-task-copyedit-toolbar-description",
+				"toolbarTryAnotherTitle": "gettingstarted-task-copyedit-toolbar-try-another-title"
+			},
+			"_merge_strategy": "array_plus_2d"
+		},
+		"GettingStartedCategoriesForTaskTypes": [],
+		"GettingStartedExcludedCategories": [],
+		"GettingStartedRedis": false,
+		"GettingStartedRedisSlave": false,
+		"GettingStartedRedisOptions": {
+			"serializer": "none",
+			"_merge_strategy": "array_plus"
+		},
+		"GettingStartedRunTest": false,
+		"TaskRecommendationsExperimentV1StartDate": 0,
+		"TaskRecommendationsExperimentV1EndDate": 0
+	},
+	"manifest_version": 1
+}
