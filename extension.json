@@ -41,11 +41,6 @@
 		"GettingStarted\\TaskRecommendationsExperimentV1": "TaskRecommendationsExperimentV1.php"
 	},
 	"ResourceModules": {
-		"schema.GettingStartedRedirectImpression": {
-			"class": "ResourceLoaderSchemaModule",
-			"schema": "GettingStartedRedirectImpression",
-			"revision": 7355552
-		},
 		"ext.guidedTour.tour.gettingstartedtasktoolbar": {
 			"scripts": "tours/gettingstartedtasktoolbar.js",
 			"dependencies": [
@@ -225,46 +220,21 @@
 				"mediawiki.user"
 			],
 			"position": "top"
-		},
-		"schema.SignupExpPageLinkClick": {
-			"class": "ResourceLoaderSchemaModule",
-			"schema": "SignupExpPageLinkClick",
-			"revision": 8965014
-		},
-		"schema.SignupExpCTAImpression": {
-			"class": "ResourceLoaderSchemaModule",
-			"schema": "SignupExpCTAImpression",
-			"revision": 8965023
-		},
-		"schema.SignupExpCTAButtonClick": {
-			"class": "ResourceLoaderSchemaModule",
-			"schema": "SignupExpCTAButtonClick",
-			"revision": 8965028
-		},
-		"schema.TaskRecommendationLightbulbClick": {
-			"class": "ResourceLoaderSchemaModule",
-			"schema": "TaskRecommendationLightbulbClick",
-			"revision": 9433256
-		},
-		"schema.TaskRecommendationImpression": {
-			"class": "ResourceLoaderSchemaModule",
-			"schema": "TaskRecommendationImpression",
-			"revision": 9266226
-		},
-		"schema.TaskRecommendation": {
-			"class": "ResourceLoaderSchemaModule",
-			"schema": "TaskRecommendation",
-			"revision": 9266319
-		},
-		"schema.TaskRecommendationClick": {
-			"class": "ResourceLoaderSchemaModule",
-			"schema": "TaskRecommendationClick",
-			"revision": 9266317
 		}
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
 		"remoteExtPath": "GettingStarted/resources"
+	},
+	"EventLoggingSchemas": {
+		"GettingStartedRedirectImpression": 7355552,
+		"SignupExpCTAButtonClick": 8965028,
+		"SignupExpCTAImpression": 8965023,
+		"SignupExpPageLinkClick": 8965014,
+		"TaskRecommendation": 9266319,
+		"TaskRecommendationClick": 9266317,
+		"TaskRecommendationImpression": 9266226,
+		"TaskRecommendationLightbulbClick": 9433256
 	},
 	"Hooks": {
 		"BeforePageDisplay": "GettingStarted\\Hooks::onBeforePageDisplay",
