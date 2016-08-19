@@ -51,7 +51,6 @@
 				"editsection",
 				"savearticle",
 				"showpreview",
-				"vector-view-edit",
 				"guidedtour-tour-gettingstartedtasktoolbarintro-title",
 				"guidedtour-tour-gettingstartedtasktoolbarintro-description",
 				"guidedtour-tour-gettingstartedtasktoolbar-ambox-title",
@@ -64,28 +63,6 @@
 				"guidedtour-tour-gettingstarted-click-preview-description",
 				"guidedtour-tour-gettingstarted-click-save-title",
 				"guidedtour-tour-gettingstarted-click-save-description"
-			]
-		},
-		"ext.guidedTour.tour.gettingstartedtasktoolbarve": {
-			"scripts": "tours/gettingstartedtasktoolbarve.js",
-			"dependencies": [
-				"ext.guidedTour",
-				"ext.gettingstarted.logging"
-			],
-			"messages": [
-				"editsection",
-				"vector-view-edit",
-				"visualeditor-toolbar-savedialog",
-				"guidedtour-tour-gettingstartedtasktoolbarintro-title",
-				"guidedtour-tour-gettingstartedtasktoolbarintro-description",
-				"guidedtour-tour-gettingstartedtasktoolbar-ambox-title",
-				"guidedtour-tour-gettingstartedtasktoolbar-ambox-description",
-				"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title",
-				"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description",
-				"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title",
-				"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description",
-				"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title",
-				"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description"
 			]
 		},
 		"ext.gettingstarted.lightbulb.postEdit": {
@@ -243,6 +220,7 @@
 		"ArticleDeleteComplete": "GettingStarted\\RedisCategorySync::onArticleDeleteComplete",
 		"MakeGlobalVariablesScript": "GettingStarted\\Hooks::onMakeGlobalVariablesScript",
 		"ResourceLoaderGetConfigVars": "GettingStarted\\Hooks::onResourceLoaderGetConfigVars",
+		"ResourceLoaderRegisterModules": "GettingStarted\\Hooks::onResourceLoaderRegisterModules",
 		"CentralAuthPostLoginRedirect": "GettingStarted\\Hooks::onCentralAuthPostLoginRedirect",
 		"PostLoginRedirect": "GettingStarted\\Hooks::onPostLoginRedirect",
 		"GetPreferences": "GettingStarted\\Hooks::onGetPreferences",

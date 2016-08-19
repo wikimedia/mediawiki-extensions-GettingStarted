@@ -56,7 +56,10 @@
 	tour.step( {
 		name: 'editArticle',
 		titlemsg: 'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title',
-		descriptionmsg: 'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description',
+		description: mw.message(
+			'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description',
+			$( '#ca-edit a' ).text()
+		).parse(),
 		position: 'bottom',
 		attachTo: '#ca-edit',
 		autoFocus: true,
@@ -131,4 +134,4 @@
 		}
 	} );
 
-} (window, document, jQuery, mediaWiki, mediaWiki.guidedTour ) );
+}( window, document, jQuery, mediaWiki, mediaWiki.guidedTour ) );

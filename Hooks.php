@@ -227,6 +227,47 @@ class Hooks {
 	}
 
 	/**
+	 * Registers VisualEditor tour if VE is installed
+	 *
+	 * @param ResourceLoader &$resourceLoader
+	 * @return true
+	 */
+	public static function onResourceLoaderRegisterModules( &$resourceLoader ) {
+		$dir = __DIR__ . DIRECTORY_SEPARATOR;
+
+		if ( class_exists( 'VisualEditorHooks' ) ) {
+			$resourceLoader->register(
+				'ext.guidedTour.tour.gettingstartedtasktoolbarve',
+				[
+					'scripts' => 'tours/gettingstartedtasktoolbarve.js',
+					'localBasePath' => $dir . 'resources',
+					'remoteExtPath' => 'GettingStarted/resources',
+					'dependencies' => [
+						'ext.guidedTour',
+						'ext.gettingstarted.logging'
+					],
+					'messages' => [
+						'editsection',
+						'visualeditor-toolbar-savedialog',
+						'guidedtour-tour-gettingstartedtasktoolbarintro-title',
+						'guidedtour-tour-gettingstartedtasktoolbarintro-description',
+						'guidedtour-tour-gettingstartedtasktoolbar-ambox-title',
+						'guidedtour-tour-gettingstartedtasktoolbar-ambox-description',
+						'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title',
+						'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description',
+						'guidedtour-tour-gettingstartedtasktoolbar-edit-section-title',
+						'guidedtour-tour-gettingstartedtasktoolbar-edit-section-description',
+						'guidedtour-tour-gettingstartedtasktoolbarve-click-save-title',
+						'guidedtour-tour-gettingstartedtasktoolbarve-click-save-description'
+					]
+				]
+			);
+		}
+
+		return true;
+	}
+
+	/**
 	 * Adds applicable modules to the page
 	 *
 	 * @param OutputPage $out output page

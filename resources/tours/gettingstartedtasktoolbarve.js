@@ -6,7 +6,8 @@
 
 	var task = mw.gettingStarted.logging.getTaskForCurrentPage() || '',
 		editSectionSelector = '.mw-editsection-visualeditor',
-		hasEditSectionAtLoadTime;
+		hasEditSectionAtLoadTime,
+		$editTab;
 
 	// The code around the section stuff is a bit of a hack, but I want to see if this is common
 	// so I don't over-framework it.
@@ -20,6 +21,12 @@
 	// https://bugzilla.wikimedia.org/show_bug.cgi?id=48198
 	if ( mw.config.get( 'wgCanonicalNamespace' ) !== '' || task.indexOf( 'gettingstarted-' ) !== 0 ) {
 		return;
+	}
+
+	if ( $( '#ca-ve-edit' ).length > 0 ) {
+		$editTab = $( '#ca-ve-edit' );
+	} else {
+		$editTab = $( '#ca-edit' );
 	}
 
 	// Ideally, the button would also change dynamically as well if they re-start the tour (without a page load).
@@ -55,9 +62,12 @@
 			}
 		}, {
 			titlemsg: 'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title',
-			descriptionmsg: 'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description',
+			description: mw.message(
+				'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description',
+				$editTab.find( 'a' ).text()
+			).parse(),
 			position: 'bottom',
-			attachTo: '#ca-ve-edit',
+			attachTo: $editTab,
 			autoFocus: true,
 			width: 300,
 			shouldSkip: gt.isVisualEditorOpen,
@@ -90,9 +100,9 @@
 			position: 'left',
 			autoFocus: true,
 			closeOnClickOutside: false,
-			shouldSkip: function() {
+			shouldSkip: function () {
 				return !gt.isEditing();
 			}
 		} ]
 	} );
-} ( jQuery, mediaWiki, mediaWiki.guidedTour ) );
+}( jQuery, mediaWiki, mediaWiki.guidedTour ) );

@@ -18,7 +18,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Ideas on what to do",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "These banners identify problems with this page. You don't need to fix them all, just stick with what you're comfortable doing.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Edit the whole page…",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Click \"{{int:vector-view-edit}}\" to change content anywhere in the page.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Click \"$1\" to change content anywhere in the page.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Or edit a section",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "If you want to edit a specific section, you can click on the \"{{int:editsection}}\" link near each section's title.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Make your changes and save",
