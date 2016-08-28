@@ -78,7 +78,7 @@ class BasePageFilter {
 			// but the API can still access pages outside.
 			&& $title->inNamespace( NS_MAIN )
 			&& $notExcludedTitle
-			&& $title->userCan( 'edit', $this->user )
+			&& $title->userCan( 'edit', $this->user, 'full' )
 			&& !(
 				$this->user->isNewbie()
 				&& $this->inExcludedCategories( $title )
