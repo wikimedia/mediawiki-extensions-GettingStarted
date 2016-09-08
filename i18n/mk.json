@@ -18,7 +18,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Идеи - што да правите",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Овие разгласи ги посочуваат проблемите во страницава. Не мора да ги решите сите — едноставно стиснете на она што не ви делува тешко.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Уреди ја целата страница...",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Стиснете на „{{int:vector-view-edit}}“ за да измените содржина некаде во страницата.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Стиснете на „$1“ за да измените содржина некаде во страницата.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Или пак уредете во некој поднаслов",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Ако сакате да уредите даден поднаслов, стиснете на врската „{{int:editsection}}“ до него.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Направете ги промените и зачувајте",

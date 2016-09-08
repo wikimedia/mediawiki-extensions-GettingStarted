@@ -17,7 +17,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Ideed selle kohta, mida teha",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Neis märkustes on nimetatud selle lehekülje puudused. Sa ei pea tegelema nende kõigiga. Võta ette mõni puudus, mille lahendamises tunned ennast kindlalt.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Redigeeri kogu lehekülge...",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Klõpsa \"{{int:vector-view-edit}}\", et muuta sisu kõikjal leheküljel.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Klõpsa \"$1\", et muuta sisu kõikjal leheküljel.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Või redigeeri alaosa",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Kui tahad redigeerida kindlat alaosa, saad klõpsata iga alaosa pealkirja lähedal lingil \"{{int:editsection}}\".",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Eelvaade (valikuline)",

@@ -20,7 +20,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Javasolt feladatok",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Ezek a dobozok jelzik, hogy milyen problémák vannak a szöveggel. Nem kell minddel foglalkoznod, csak csináld azt, amihez kedved van.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Teljes lap szerkesztése…",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Kattints a „{{int:vector-view-edit}}” gombra, hogy a lap teljes tartalmát szerkeszthesd.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Kattints a „$1” gombra, hogy a lap teljes tartalmát szerkeszthesd.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Szakasz szerkesztése",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Ha csak egy bizonyos szakaszt akarsz szerkeszteni, kattints a kék „{{int:editsection}}” linkre a szakasz tetején.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Végezd el a módosításokat és mentsd el a lapot",

@@ -21,7 +21,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Ιδέες για το τι να κάνετε",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Αυτά τα μπάνερ εντοπίζουν προβλήματα σε αυτή τη σελίδα. Δεν χρειάζεται να αντιμετωπίσετε όλα αυτά, απλά να παραμείνετε με ό,τι μπορείτε με άνεση να το κάνετε.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Επεξεργαστείτε ολόκληρη τη σελίδα...",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Κάντε κλικ στο κουμπί \"{{int:vector-view-edit}}\" για να αλλάξετε το περιεχόμενο οπουδήποτε στη σελίδα.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Κάντε κλικ στο κουμπί \"$1\" για να αλλάξετε το περιεχόμενο οπουδήποτε στη σελίδα.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Ή επεξεργασία ενότητας",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Αν θέλετε να επεξεργαστείτε μια συγκεκριμένη ενότητα, μπορείτε να κάνετε κλικ στο σύνδεσμο \"{{int:editsection}}\" κοντά σε κάθε τμήμα του τίτλου.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Κάντε τις αλλαγές σας και αποθηκεύστε",

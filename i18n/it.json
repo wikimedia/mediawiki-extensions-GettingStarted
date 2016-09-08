@@ -22,7 +22,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Idee su cosa fare",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Questi avvisi identificano problemi con questa pagina. Non è necessario che li risolvi tutti, è sufficiente che ti occupi di quelli che ti senti di fare.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Modifica l'intera pagina…",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Clicca su \"{{int:vector-view-edit}}\" per modificare il contenuto in un punto qualsiasi della pagina.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Clicca su \"$1\" per modificare il contenuto in un punto qualsiasi della pagina.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "O modifica una sezione",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Se vuoi modificare una sezione specifica, puoi fare clic sul collegamento \"{{int:editsection}}\", vicino al titolo di ogni sezione.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Fai le tue modifiche e salva",

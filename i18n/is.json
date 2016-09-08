@@ -19,7 +19,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Hugmyndir um hvað hægt sé að gera",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Þessar stikur bera kennsl á vandamál við þessa síðu. Þú þarft ekki að bæta þær allar, heldur haltu þig bara við það sem þér þykir þægilegt að gera.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Breyta allri síðunni...",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Smelltu á \"{{int:vector-view-edit}}\" til að breyta innihaldi hvar sem er á síðunni.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Smelltu á \"$1\" til að breyta innihaldi hvar sem er á síðunni.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Eða breyttu kafla",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Ef þú vilt breyta ákveðnum kafla, þá getur þú smellt á „{{int:editsection}}” teglinn við hvern kafla.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Gerðu breytingarnar þínar og vistaðu",

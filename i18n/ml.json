@@ -18,7 +18,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "എന്ത് ചെയ്യണമെന്നുള്ള ആശയങ്ങൾ",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "ഈ ബാനറുകൾ താളിലുള്ള പ്രശ്നങ്ങൾ കുറിക്കുന്നു. അവയെല്ലാം താങ്കൾ പരിഹരിക്കണം എന്നല്ല, താങ്കൾക്ക് താത്പര്യമുള്ളവ മാത്രം ചെയ്താൽ മതി.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "താൾ മുഴുവനായി തിരുത്തുക...",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "താളിലെവിടെയുമുള്ള ഉള്ളടക്കം തിരുത്തുന്നതിനായി \"{{int:vector-view-edit}}\" ഞെക്കുക.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "താളിലെവിടെയുമുള്ള ഉള്ളടക്കം തിരുത്തുന്നതിനായി \"$1\" ഞെക്കുക.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "അല്ലെങ്കിൽ ഒരു ഭാഗം തിരുത്തുക",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "ഏതെങ്കിലും ഒരു പ്രത്യേക ഭാഗമാണ് താങ്കൾക്ക് തിരുത്തേണ്ടതെങ്കിൽ, ഓരോ ഉപശീർഷകത്തിന്റെയും അരികിലുള്ള \"{{int:editsection}}\" എന്ന നീലനിറത്തിലുള്ള കണ്ണി ഞെക്കിയാൽ മതിയാവും.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "മാറ്റങ്ങൾ വരുത്തുക, സേവ് ചെയ്യുക",
@@ -34,17 +34,5 @@
 	"gettingstarted-cta-edit-page-sub": "എങ്ങനെയാണെന്ന് ഞങ്ങൾ കാണിച്ചുതരാം",
 	"gettingstarted-cta-fix-pages": "നിർദ്ദേശിക്കുന്ന താൾ തിരുത്തുക",
 	"gettingstarted-cta-fix-pages-sub": "എളുപ്പമുള്ള ഒന്ന് ഞങ്ങൾ എടുത്തുതരാം",
-	"gettingstarted-cta-leave": "ഇപ്പോൾ വേണ്ട, പിന്നീടാകട്ടെ",
-	"gettingstarted-task-toolbar-try-another-text-wikipedia": "മറ്റൊരു ലേഖനം പരീക്ഷിക്കുക ►",
-	"gettingstarted-task-toolbar-no-suggested-page-wikipedia": "ക്ഷമിക്കണം. ഇപ്പോൾ മെച്ചപ്പെടുത്താനുള്ള കൂടുതൽ ലേഖനങ്ങൾ കണ്ടെടുക്കാനായില്ല. അല്പസമയത്തിനു ശേഷം വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ താങ്കൾക്ക് താത്പര്യമുള്ളവയ്ക്കായി തിരയുക.",
-	"gettingstarted-task-copyedit-toolbar-description-wikipedia": "ഈ ലേഖനത്തിൽ താങ്കൾക്ക് ശരിയാക്കാനാവുന്ന അക്ഷരപിശകുകളോ വ്യാകരണപിഴവുകളോ ഉണ്ടായേക്കും.",
-	"gettingstarted-task-copyedit-toolbar-try-another-title-wikipedia": "പരിശോധിച്ച് തിരുത്താൻ കഴിയുന്ന ഏതെങ്കിലും ഒരു ലേഖനത്തിലേക്ക് പോവുക",
-	"guidedtour-tour-gettingstartedtasktoolbarintro-description-wikipedia": "{{SITENAME}} സംരംഭത്തിലെ മറ്റ് ഉപയോക്താക്കാൾ ഈ ലേഖനം മെച്ചപ്പെടുത്തേണ്ടതുണ്ടെന്ന് കണ്ടെത്തിയിട്ടുണ്ട്. സഹായിക്കാനായി ഈ വിഷയത്തിൽ താങ്കൾ വിദഗ്ദ്ധ(ൻ) ആകണമെന്നില്ല.",
-	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description-wikipedia": "ഈ ബാനറുകൾ ലേഖനത്തിലുള്ള പ്രശ്നങ്ങൾ കുറിക്കുന്നു. അവയെല്ലാം താങ്കൾ പരിഹരിക്കണം എന്നല്ല, താങ്കൾക്ക് താത്പര്യമുള്ളവ മാത്രം ചെയ്താൽ മതി.",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title-wikipedia": "ലേഖനം പൂർണ്ണമായി തിരുത്തുക...",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description-wikipedia": "ലേഖനത്തിലെവിടെയുമുള്ള ഉള്ളടക്കം തിരുത്തുന്നതിനായി \"{{int:vector-view-edit}}\" ഞെക്കുക.",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description-wikipedia": "താങ്കൾക്ക് ഇപ്പോൾ ലേഖനത്തിന്റെ ഉള്ളടക്കം തിരുത്താവുന്നതാണ്. പൂർണ്ണമായി കഴിയുമ്പോൾ \"{{int:visualeditor-toolbar-savedialog}}\" അമർത്തി തിരുത്തൽ പരിശോധിക്കാനും മാറ്റങ്ങൾ സേവ് ചെയ്യാനും കഴിയുന്നതാണ്.",
-	"guidedtour-tour-gettingstarted-click-preview-description-wikipedia": "\"{{int:showpreview}}\" അമർത്തുമ്പോൾ, താങ്കൾ ചേർത്ത തിരുത്തുകളുൾപ്പെടെ ലേഖനം എപ്രകാരമാണ് പ്രത്യക്ഷപ്പെടുക എന്ന് പരിശോധിക്കാനാവും. പിന്നീട് മാറ്റങ്ങൾ സേവ് ചെയ്യാൻ മറക്കരുത്.",
-	"gettingstarted-cta-edit-page-wikipedia": "ഈ ലേഖനം തിരുത്തുക",
-	"gettingstarted-cta-fix-pages-wikipedia": "നിർദ്ദേശിക്കുന്ന താൾ തിരുത്തുക"
+	"gettingstarted-cta-leave": "ഇപ്പോൾ വേണ്ട, പിന്നീടാകട്ടെ"
 }

@@ -19,7 +19,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Gợi ý",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Các cờ ngang này nêu ra các vấn đề trên trang. Bạn không cần giải quyết tất cả mọi vấn đề. Hãy thoải mái muốn sửa gì thì sửa.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Sửa toàn bộ trang…",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Bấm “{{int:vector-view-edit}}” để thay đổi nội dung ở bất cứ phần nào của trang.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Bấm “$1” để thay đổi nội dung ở bất cứ phần nào của trang.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Hoặc sửa đổi một phần",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Để chỉ sửa đổi một phần, bạn có thể nhấn chuột vào liên kết “{{int:editsection}}” gần đề mục của phần đó.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Thực hiện các thay đổi và lưu",

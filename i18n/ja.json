@@ -21,7 +21,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "やるべきことの提案",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "これらのバナーはこのページにある問題点を特定しています。すべてを修正する必要はありません。自分が苦なくできるものだけに集中してください。",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "ページ全体を編集…",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "「{{int:vector-view-edit}}」をクリックすると、ページの本文のあらゆる場所を編集できます。",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "「$1」をクリックすると、ページの本文のあらゆる場所を編集できます。",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "または節の編集",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "特定の節を編集したい場合は、それぞれの節見出しの近くにあるリンク「{{int:editsection}}」をクリックしてください。",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "編集して保存しましょう",
@@ -38,7 +38,6 @@
 	"gettingstarted-cta-fix-pages": "提案されたページの編集",
 	"gettingstarted-cta-fix-pages-sub": "私たちは簡単に何かを選ぶでしょう",
 	"gettingstarted-cta-leave": "いや、また今度にします",
-	"gettingstarted-cta-edit-page-wikipedia": "この記事を編集",
 	"gettingstarted-lightbulb-flyout-back": "戻る",
 	"gettingstarted-lightbulb-flyout-next": "次へ",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "更新"
