@@ -34,7 +34,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "需要做什么",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "这些横幅表明此页存在的问题。您不需要把它们都修复，怎么舒服怎么来。",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "编辑全页…",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "点击“$1”以更改此页面任何内容。",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "点击“$1”以更改页面的任何内容。",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "或编辑章节",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "如果您想要编辑某个章节，您可以点击每个章节顶部的“{{int:editsection}}”链接。",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "做出您的更改并保存",
