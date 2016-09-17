@@ -2,9 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Gorizon",
-			"Mirzali"
+			"Mirzali",
+			"Kumkumuk"
 		]
 	},
 	"gettingstarted-cta-close": "Racın",
-	"gettingstarted-cta-heading": "Peşti bıde {{SITENAME}}"
+	"gettingstarted-cta-heading": "Peşti bıde {{SITENAME}}",
+	"gettingstarted-lightbulb-flyout-back": "Peyser",
+	"gettingstarted-lightbulb-flyout-next": "Bahdoyên",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Newke wesıbaye theba çıni yo"
 }
