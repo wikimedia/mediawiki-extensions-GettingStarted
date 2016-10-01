@@ -225,8 +225,7 @@
 		"PostLoginRedirect": "GettingStarted\\Hooks::onPostLoginRedirect",
 		"GetPreferences": "GettingStarted\\Hooks::onGetPreferences",
 		"UserLogoutComplete": "GettingStarted\\Hooks::onUserLogoutComplete",
-		"PersonalUrls": "GettingStarted\\Hooks::onPersonalUrls",
-		"UnitTestsList": "GettingStarted\\Hooks::onUnitTestsList"
+		"PersonalUrls": "GettingStarted\\Hooks::onPersonalUrls"
 	},
 	"config": {
 		"GettingStartedTasks": {
