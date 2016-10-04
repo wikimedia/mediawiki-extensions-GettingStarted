@@ -12,12 +12,12 @@
 	"gettingstarted-task-toolbar-close-title": "Aizvērt šo rīkjoslu",
 	"gettingstarted-task-copyedit-toolbar-description": "Šajā lapā var būt pareizrakstības vai gramatikas kļūdas, kuras jūs varat novērst.",
 	"gettingstarted-task-copyedit-toolbar-try-another-title": "Doties uz nejaušu lapu, kuram jūs varat izlabot valodas kļūdas",
-	"guidedtour-tour-gettingstartedtasktoolbarintro-title": "Kā sākt darbu",
+	"guidedtour-tour-gettingstartedtasktoolbarintro-title": "Sāksim",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Idejas par to, ko darīt",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Šie plakāti norāda uz šīs lapas problēmām. Jums nav jānovērš tās visas, palieciet pie tā, ko jūs pārzināt.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Klikšķiniet uz {{int:vector-view-edit}}",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Jūs varat labot visu rakstu, klikšķinot šeit.",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Labot sadaļu",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Vai labot sadaļu",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Jūs varat labot!",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Tagad jūs varat labot lapu. Kad darbs pabeigts, klikšķiniet uz '{{int:visualeditor-toolbar-savedialog}}', lai pārskatītu un saglabātu savas izmaiņas."
 }
