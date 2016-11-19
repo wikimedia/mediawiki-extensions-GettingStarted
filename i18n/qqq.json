@@ -21,7 +21,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Title of step pointing to article message box (which states suggested improvements).",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Description of step pointing to article message box (which states suggested improvements).",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Title of step showing user where to click {{msg-mw|Vector-view-edit}}.\n\nThe body for this title is:\n* {{msg-mw|Guidedtour-tour-gettingstartedtasktoolbar-edit-article-description}}",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Description of step showing user where to click {{msg-mw|vector-view-edit}}.\n\nThe title for this message is {{msg-mw|Guidedtour-tour-gettingstartedtasktoolbar-edit-article-title}}.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Description of step showing user where to click {{msg-mw|vector-view-edit}}.\n\nThe title for this message is {{msg-mw|Guidedtour-tour-gettingstartedtasktoolbar-edit-article-title}}.\n\nParameters:\n* $1 - Text of edit tab",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Title of step showing user how to edit a section.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Description of step showing user how to edit a section.\n\nRefers to {{msg-mw|Editsection}}.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Title of first step of GettingStarted tour that is on the VisualEditor screen.  It points to the {{msg-mw|visualeditor-toolbar-savedialog}} button.",
