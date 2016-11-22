@@ -132,7 +132,6 @@
 			"dependencies": [
 				"mediawiki.action.view.postEdit",
 				"jquery.cookie",
-				"json",
 				"mediawiki.Title",
 				"mediawiki.user"
 			]
