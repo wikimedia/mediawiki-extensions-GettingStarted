@@ -52,5 +52,6 @@
 	"apihelp-query+gettingstartedgetpages-param-taskname": "Task name, generally either \"copyedit\" (copy-editing suggestions) or \"morelike\" (pages similar to the base page/excluded title)",
 	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "Full title of a page to exclude from the list; also used as the base title for recommendations based on a given page",
 	"apihelp-query+gettingstartedgetpages-param-count": "Requested count; will attempt to fetch this exact number, but may fetch fewer if no more are found after multiple attempts",
-	"apihelp-query+gettingstartedgetpages-example-1": ""
+	"apihelp-query+gettingstartedgetpages-example-1": "",
+	"apierror-gettingstarted-nosuggester": "Could not build suggester. Use a valid <var>taskname</var> parameter, provide necessary dependencies (CirrusSearch is required for <var>morelike</var>), and include <var>excludedtitle</var> when the task requires it."
 }
