@@ -58,5 +58,6 @@
 	"apihelp-query+gettingstartedgetpages-description": "ה־API הזה משמש לקבלת רשימה של דפים שמתייחסים למשימת GettingStarted.",
 	"apihelp-query+gettingstartedgetpages-param-taskname": "שם המשימה, בדרך כלל \"copyedit\" (הצעות להגהה) או \"morelike\" (דפים שדומים לדף הבסיס או הדף הדחוי)",
 	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "הכותרת המלאה של הדף שיודר מהרשימה; משמש גם כותרת בסיס להמלצות על סמך הדף הנתון",
-	"apihelp-query+gettingstartedgetpages-param-count": "המניין המבוקש; ינסה לאחזר בדיוק את המספר הזה, אבל יכול לאחזר פחות אם לא נמצאו עוד פריטים אחרי ניסיונות חוזרים"
+	"apihelp-query+gettingstartedgetpages-param-count": "המניין המבוקש; ינסה לאחזר בדיוק את המספר הזה, אבל יכול לאחזר פחות אם לא נמצאו עוד פריטים אחרי ניסיונות חוזרים",
+	"apierror-gettingstarted-nosuggester": "לא היה אפשר לבנות מציע. יש להשתמש בפרמטר <var>taskname</var> תקין, לספק תלויות נחוצות (CirrusSearch נחוץ בשביל <var>morelike</var>), ולכלול <var>excludedtitle</var> כשהמשימה דורשת את זה."
 }
