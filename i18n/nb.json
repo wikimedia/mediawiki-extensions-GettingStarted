@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Danmichaelo"
+			"Danmichaelo",
+			"Jon Harald Søby"
 		]
 	},
 	"gettingstarted": "Kom i gang",
@@ -17,14 +18,14 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Ideer til hva du kan gjøre",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Disse bannerne identifiserer problemer med denne siden. Husk at du ikke trenger å ordne alt – bare gjør de redigeringene du føler deg komfortabel med å gjøre.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Klikk på {{int:vector-view-edit}}",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Du kan redigere hele artikkelen ved å trykke her.",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Rediger et avsnitt",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Hvis du vil redigere et spesifikt avsnitt kan du trykke på den blå '{{int:editsection}}'-lenken øverst i hvert avsnitt.",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Du kan redigere!",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Klikk «$1» for å endre innholdet hvor som helst på siden.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Eller rediger en seksjon",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Hvis du vil redigere en gitt seksjon klikker du på «{{int:editsection}}»-lenka i nærheten av seksjonens tittel.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Gjør endringene dine og lagre",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Nå kan du redigere siden. Når du er ferdig, trykk på '{{int:visualeditor-toolbar-savedialog}}' for å gå gjennom og lagre endringene dine.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Forhåndsvisning (valgfritt)",
 	"gettingstarted-cta-close": "Lukk",
-	"gettingstarted-cta-heading": "Hjelp {{SITENAME}}",
+	"gettingstarted-cta-heading": "Hjelp til å forbedre {{SITENAME}}",
 	"gettingstarted-cta-text": "Du kan bidra til {{SITENAME}} på forskjellige måter",
 	"gettingstarted-cta-edit-page": "Rediger denne siden",
 	"gettingstarted-cta-edit-page-sub": "Vi vil vise deg hvordan",
