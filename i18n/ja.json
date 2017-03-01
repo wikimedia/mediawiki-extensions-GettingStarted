@@ -4,7 +4,8 @@
 			"Fryed-peach",
 			"Shirayuki",
 			"Whym",
-			"Sujiniku"
+			"Sujiniku",
+			"Otokoume"
 		]
 	},
 	"gettingstarted": "はじめに",
@@ -38,6 +39,8 @@
 	"gettingstarted-cta-fix-pages": "提案されたページの編集",
 	"gettingstarted-cta-fix-pages-sub": "私たちは簡単に何かを選ぶでしょう",
 	"gettingstarted-cta-leave": "いや、また今度にします",
+	"gettingstarted-lightbulb-notification-body": "類似した記事を編集します。",
+	"gettingstarted-lightbulb-notification-body-lastedited": "最終更新: $1",
 	"gettingstarted-lightbulb-flyout-back": "戻る",
 	"gettingstarted-lightbulb-flyout-next": "次へ",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "更新"
