@@ -44,7 +44,7 @@
 	"gettingstarted-lightbulb-heading": "Heading on the flyout that the user sees when they use the Recommendations personal tool.",
 	"gettingstarted-lightbulb-text": "Text on the flyout that the user sees when they use the Recommendations personal tool.",
 	"gettingstarted-lightbulb-flyout-back": "Title text of button that shows previous suggestions in Recommendations flyout, if any.\n\nSee also:\n* {{msg-mw|Gettingstarted-lightbulb-flyout-next}}\n{{Identical|Back}}",
-	"gettingstarted-lightbulb-flyout-next": "Title text of button that shows next suggestions in Recommendations flyout, if any.\n\nSee also:\n* {{msg-mw|Gettingstarted-lightbulb-flyout-back}}\n{{Identical|Next}}",
+	"gettingstarted-lightbulb-flyout-next": "Title text of button that shows next one of suggestions (NOT Next step please!) in Recommendations flyout, if any.\n\nSee also:\n* {{msg-mw|Gettingstarted-lightbulb-flyout-back}}\n{{Identical|Next}}",
 	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Heading text shown on empty state when the user has made no article edits.",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Text below header when there are no article edits by the user instructing the user to edit some articles so that we can recommend some others.",
 	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Heading text on error state when there are no similar articles or there is an error.",
