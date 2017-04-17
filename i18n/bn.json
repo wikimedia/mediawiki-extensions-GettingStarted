@@ -9,7 +9,7 @@
 	},
 	"guidedtour-tour-gettingstarted-click-preview-title": "প্রাকদর্শন (ঐচ্ছিক)",
 	"guidedtour-tour-gettingstarted-click-save-title": "আপনি প্রায় সম্পন্ন করেছেন!",
-	"guidedtour-tour-gettingstarted-click-save-description": "'{{int:savearticle}}' ক্লিক করুন এবং আপনার পরিবর্তনগুলো দৃশ্যমান হবে।",
+	"guidedtour-tour-gettingstarted-click-save-description": "\"{{int:savearticle}}\" ক্লিক করুন এবং আপনার পরিবর্তনগুলো দৃশ্যমান হবে।",
 	"gettingstarted-lightbulb-flyout-back": "পিছনে",
 	"gettingstarted-lightbulb-flyout-next": "পরবর্তী",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "আবার চেষ্টা করুন।",
