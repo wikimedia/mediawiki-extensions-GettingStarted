@@ -52,6 +52,7 @@
 	"gettingstarted-lightbulb-flyout-next": "Następne",
 	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Na razie nie ma zalecanych!",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Spróbuj edytować parę stron. Pomoże nam to wybrać, co powinieneś edytować jako następne.",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Nie możemy teraz pokazać propozycji.",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Proszę spróbować ponownie.",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Losowa strona",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Odśwież"
