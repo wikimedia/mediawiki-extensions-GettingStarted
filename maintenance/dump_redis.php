@@ -29,36 +29,41 @@ class DumpRedisCategorySync extends \Maintenance {
 		$this->mDescription = 'Dump Redis data used for RedisCategorySync';
 	}
 
-	protected function printSet( $client, $key, $categoryName = null ) {
+	protected function printSet( RedisConnRef $client, $key, $categoryName = null ) {
 		if ( $categoryName !== null ) {
 			$this->output( "Cat: $categoryName\n" );
 		}
 		$this->output( "Key: $key\n" );
 		$this->output( "===========================================================\n" );
 		$members = $client->sMembers( $key );
+		$pageCount = 0;
 		foreach ( $members as $ind => $el ) {
 			$this->output( "$ind) \"$el\"\n" );
+			$pageCount++;
 		}
 		$this->output( "\n" );
+		return $pageCount;
 	}
 
 	public function execute() {
 		$client = RedisCategorySync::getSlave();
+		$totalPageCount = 0;
 		if ( $this->hasOption( 'all' ) ) {
 			$keys = $client->keys( 'RedisCategorySync*' );
 			foreach ( $keys as $key ) {
-				$this->printSet( $client, $key );
+				$totalPageCount += $this->printSet( $client, $key );
 			}
 		} else {
 			$categories = RedisCategorySync::getCategories();
 			foreach ( $categories as $catName ) {
 				$cat = \Category::newFromName( $catName );
 				$key = RedisCategorySync::makeCategoryKey( $cat );
-				$this->printSet( $client, $key, $catName );
+				$totalPageCount += $this->printSet( $client, $key, $catName );
 			}
 		}
+		$this->output( "Total page count: $totalPageCount\n" );
 	}
 }
 
 $maintClass = 'GettingStarted\DumpRedisCategorySync';
-require_once( RUN_MAINTENANCE_IF_MAIN );
+require_once RUN_MAINTENANCE_IF_MAIN;
