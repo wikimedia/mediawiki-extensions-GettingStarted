@@ -12,7 +12,7 @@
 	"gettingstarted-desc": "Pomaže novim korisnicima da postanu urednici",
 	"gettingstarted-task-toolbar-editing-help-text": "Pokaži mi kako",
 	"gettingstarted-task-toolbar-editing-help-title": "Prikaži mi vodič o uređivanju",
-	"gettingstarted-task-toolbar-try-another-text": "Pokušaj drugu stranicu ►",
+	"gettingstarted-task-toolbar-try-another-text": "Daj mi drugu stranicu ►",
 	"gettingstarted-task-toolbar-close-title": "Zatvori ovu alatnu traku",
 	"gettingstarted-task-toolbar-no-suggested-page": "Izvinjavamo se. Nije bilo moguće pronaći više stranica koje bi se mogle poboljšati. Pokušajte kasnije ili potražite nešto drugo po Vašem interesu.",
 	"gettingstarted-task-copyedit-toolbar-description": "Moguće je da ova stranica ima pravopisnih ili gramatičkih grešaka koje možete ispraviti.",
@@ -23,7 +23,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Ove naljepnice označavaju probleme na ovoj stranici. Nije potrebno da ih sve odjednom riješite. Izaberite ono što vam najbolje odgovara.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Uredi čitavu stranicu...",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Možete urediti čitavu stranicu klikanjem ovdje.",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Uredi sekciju",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Ili uredite odlomak",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Ako želite urediti specifičnu sekciju, onda kliknite na plavi link \"{{int:editsection}}\", koji se nalazi na vrhu svake sekcije.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Načinite izmjene i sačuvajte ih",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Sada možete urediti stranicu. Kad završite s uređivanjem, kliknite na \"{{int:visualeditor-toolbar-savedialog}}\" da pregledate i sačuvate Vaše izmjene.",
@@ -36,8 +36,8 @@
 	"gettingstarted-cta-text": "Možete doprinijeti stranici {{SITENAME}} na različite načine",
 	"gettingstarted-cta-edit-page": "Uredi ovu stranicu",
 	"gettingstarted-cta-edit-page-sub": "Pokazat ćemo Vam kako",
-	"gettingstarted-cta-fix-pages": "Pronađi stranice koje zahtijevaju jednostavne popravke",
-	"gettingstarted-cta-fix-pages-sub": "Pokazat ćemo Vam kako da uređujete",
+	"gettingstarted-cta-fix-pages": "Uredite predloženu stranicu",
+	"gettingstarted-cta-fix-pages-sub": "Izabrat ćemo nešto lahko",
 	"gettingstarted-cta-leave": "Ne, hvala, možda kasnije",
 	"gettingstarted-lightbulb-flyout-back": "Nazad"
 }
