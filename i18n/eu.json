@@ -5,9 +5,13 @@
 			"Sator"
 		]
 	},
+	"gettingstarted-task-toolbar-editing-help-text": "Erakuts iezadazu nola",
+	"gettingstarted-task-toolbar-close-title": "Itxi tresna-barra",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Egizu aldaketak eta gorde itzazu",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Aurrebista (aukerakoa)",
 	"gettingstarted-cta-close": "Itxi",
 	"gettingstarted-cta-heading": "Lagundu {{SITENAME}} hobetzen",
+	"gettingstarted-cta-edit-page": "Orrialde hau aldatu",
 	"gettingstarted-cta-leave": "Ez, eskerrik asko, agian geroago",
 	"gettingstarted-lightbulb-flyout-back": "Atzera",
 	"gettingstarted-lightbulb-flyout-next": "Hurrengoa",
