@@ -3,3 +3,4 @@
 .*.swp
 tests/browser/.gem
 node_modules/
+/vendor
