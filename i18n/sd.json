@@ -4,5 +4,7 @@
 			"Mehtab ahmed"
 		]
 	},
-	"gettingstarted-lightbulb-notification-body-lastedited": "$1 سنواريل"
+	"gettingstarted-cta-close": "بند ڪريو",
+	"gettingstarted-lightbulb-notification-body-lastedited": "$1 سنواريل",
+	"gettingstarted-lightbulb-flyout-next": "اڳيون"
 }
