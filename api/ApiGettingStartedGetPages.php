@@ -2,7 +2,9 @@
 
 namespace GettingStarted;
 
-use ApiBase, Category, Title;
+use ApiBase;
+use Category;
+use Title;
 
 class ApiGettingStartedGetPages extends \ApiQueryGeneratorBase {
 	const MAX_SUGGESTER_CALLS = 10;

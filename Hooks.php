@@ -2,7 +2,11 @@
 
 namespace GettingStarted;
 
-use FormatJson, Title, WebRequest, OutputPage, User;
+use FormatJson;
+use OutputPage;
+use Title;
+use User;
+use WebRequest;
 
 /**
  * Hooks for GettingStarted extension

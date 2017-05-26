@@ -2,7 +2,8 @@
 
 namespace GettingStarted;
 
-use Title, User;
+use Title;
+use User;
 
 /**
   Approve or reject a given page for suitability with GettingStarted.

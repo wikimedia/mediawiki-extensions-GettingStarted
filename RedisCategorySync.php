@@ -2,7 +2,10 @@
 
 namespace GettingStarted;
 
-use Category, WikiPage, Title, User;
+use Category;
+use Title;
+use User;
+use WikiPage;
 
 /**
  * Maintains sets in redis representing page IDs of NS_MAIN pages in
