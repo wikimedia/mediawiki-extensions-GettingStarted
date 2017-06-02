@@ -22,7 +22,8 @@ require_once "$IP/maintenance/Maintenance.php";
 
 class GenerateConfig extends \Maintenance {
 
-	const WG_GETTING_STARTED_CATEGORIES_FOR_TASK_TYPES_FILE = 'wgGettingStartedCategoriesForTaskTypes.php';
+	const WG_GETTING_STARTED_CATEGORIES_FOR_TASK_TYPES_FILE =
+		'wgGettingStartedCategoriesForTaskTypes.php';
 	const WG_GETTING_STARTED_EXCLUDED_CATEGORIES_FILE = 'wgGettingStartedExcludedCategories.php';
 
 	const QID_CATEGORY_LIVING_PEOPLE = 'Q5312304';
@@ -37,7 +38,9 @@ class GenerateConfig extends \Maintenance {
 	);
 
 	public function __construct() {
-		$this->mDescription = 'Generates files that contain the values for the wgGettingStartedCategoriesForTaskTypes and wgGettingStartedExcludedCategories configuration variables from specific Wikidata entities.';
+		$this->mDescription = 'Generates files that contain the values for the ' .
+			'wgGettingStartedCategoriesForTaskTypes and wgGettingStartedExcludedCategories ' .
+			'configuration variables from specific Wikidata entities.';
 
 		// TODO (phuedx, 2014-03-10) Extend addOption to include a
 		// default value, which could be included in the output of
@@ -99,7 +102,8 @@ class GenerateConfig extends \Maintenance {
 	}
 
 	private function getSitelinksByQID( $qid, $dbnames ) {
-		$url = "https://www.wikidata.org/w/api.php?format=json&action=wbgetentities&props=sitelinks&ids={$qid}";
+		$url = "https://www.wikidata.org/w/api.php" .
+			"?format=json&action=wbgetentities&props=sitelinks&ids={$qid}";
 		$responseBodyRaw = file_get_contents( $url );
 		$responseBody = json_decode( $responseBodyRaw, true );
 		$entity = $responseBody[ 'entities' ][ $qid ];

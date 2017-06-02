@@ -17,7 +17,9 @@ class TaskRecommendationsExperimentV1Test extends \MediaWikiTestCase {
 		$now = time();
 		$startDateOffset = -500;
 		$endDateOffset = 500;
-		$this->setMwGlobals( 'wgTaskRecommendationsExperimentV1StartDate', $startDateOffset + $now );
+		$this->setMwGlobals(
+			'wgTaskRecommendationsExperimentV1StartDate', $startDateOffset + $now
+		);
 		$this->setMwGlobals( 'wgTaskRecommendationsExperimentV1EndDate', $endDateOffset + $now );
 	}
 
@@ -78,7 +80,9 @@ class TaskRecommendationsExperimentV1Test extends \MediaWikiTestCase {
 		$user = $this->getLoggedInNewUser();
 		$user->setId( $userId );
 		$experiment = new TaskRecommendationsExperimentV1( $user );
-		$this->assertEquals( $shouldSeePostEditNotification, $experiment->isPostEditEnabled(), 'isPostEditEnabled' );
+		$this->assertEquals(
+			$shouldSeePostEditNotification, $experiment->isPostEditEnabled(), 'isPostEditEnabled'
+		);
 		$this->assertEquals( $shouldSeeFlyout, $experiment->isFlyoutEnabled(), 'isFlyoutEnabled' );
 	}
 

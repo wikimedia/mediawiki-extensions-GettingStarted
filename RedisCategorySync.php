@@ -64,7 +64,8 @@ class RedisCategorySync {
 			return false;
 		}
 
-		$server = ( $master || !$wgGettingStartedRedisSlave ) ? $wgGettingStartedRedis : $wgGettingStartedRedisSlave;
+		$server = ( $master || !$wgGettingStartedRedisSlave )
+			? $wgGettingStartedRedis : $wgGettingStartedRedisSlave;
 
 		$pool = \RedisConnectionPool::singleton( $wgGettingStartedRedisOptions );
 		return $pool->getConnection( $server );
@@ -76,7 +77,9 @@ class RedisCategorySync {
 	 */
 	public static function makeCategoryKey( Category $category ) {
 		global $wgDBname;
-		return join( ':', array( 'RedisCategorySync', 'Category', $wgDBname, md5( $category->getName() ) ) );
+		return join( ':',
+			array( 'RedisCategorySync', 'Category', $wgDBname, md5( $category->getName() ) )
+		);
 	}
 
 	/**

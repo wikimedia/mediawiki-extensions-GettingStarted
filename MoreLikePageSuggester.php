@@ -52,7 +52,9 @@ class MoreLikePageSuggester implements PageSuggester {
 		);
 		$searchApiCall->execute();
 
-		$searchResults = (array)$searchApiCall->getResult()->getResultData( array( 'query', 'search' ), array( 'Strip' => 'base' ) );
+		$searchResults = (array)$searchApiCall->getResult()->getResultData(
+			array( 'query', 'search' ), array( 'Strip' => 'base' )
+		);
 		$titles = array();
 		foreach ( $searchResults as $searchResult ) {
 			$titles[] = Title::newFromText( $searchResult['title'] );

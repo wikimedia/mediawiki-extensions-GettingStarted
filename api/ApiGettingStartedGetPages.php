@@ -51,13 +51,19 @@ class ApiGettingStartedGetPages extends \ApiQueryGeneratorBase {
 		$excludedTitle = Title::newFromText( $this->getParameter( 'excludedtitle' ) );
 		$numWanted = $this->getParameter( 'count' );
 
-		$suggester = PageSuggesterFactory::getPageSuggester( $taskName, $this->getRequest(), $excludedTitle );
+		$suggester = PageSuggesterFactory::getPageSuggester(
+			$taskName, $this->getRequest(), $excludedTitle
+		);
 		if ( $suggester === null ) {
 			if ( is_callable( [ $this, 'dieWithError' ] ) ) {
-				$this->dieWithError( 'apierror-gettingstarted-nosuggester', 'gettingstarted_no_suggester' );
+				$this->dieWithError(
+					'apierror-gettingstarted-nosuggester', 'gettingstarted_no_suggester'
+				);
 			} else {
 				$this->dieUsage(
-					'Could not build suggester.  Use a valid "taskname" parameter, provide necessary dependencies (CirrusSearch is required for "morelike"), and include "excludedtitle" when the task requires it',
+					'Could not build suggester. Use a valid "taskname" parameter, provide ' .
+						'necessary dependencies (CirrusSearch is required for "morelike"), and ' .
+						'include "excludedtitle" when the task requires it',
 					'gettingstarted_no_suggester'
 				);
 			}
@@ -74,10 +80,14 @@ class ApiGettingStartedGetPages extends \ApiQueryGeneratorBase {
 		do {
 			$unfilteredTitles = $suggester->getArticles( $numWanted - $totalResultCount, $offset );
 
-			$newFilteredTitles = array_filter( $unfilteredTitles, array( $pageFilter, 'isAllowedPage' ) );
-			$newFilteredTitles = array_udiff( $newFilteredTitles, $filteredTitles, function ( $t1, $t2 ) {
-				return $t1->getArticleID() - $t2->getArticleID();
-			} );
+			$newFilteredTitles = array_filter( $unfilteredTitles,
+				array( $pageFilter, 'isAllowedPage' )
+			);
+			$newFilteredTitles = array_udiff( $newFilteredTitles, $filteredTitles,
+				function ( $t1, $t2 ) {
+					return $t1->getArticleID() - $t2->getArticleID();
+				}
+			);
 			$filteredTitles = array_merge( $filteredTitles, $newFilteredTitles );
 
 			$totalResultCount = count( $filteredTitles );
@@ -104,15 +114,19 @@ class ApiGettingStartedGetPages extends \ApiQueryGeneratorBase {
 
 	public function getDescription() {
 		return array(
-			'This API is for getting a list of one or more pages related to a particular GettingStarted task.',
+			'This API is for getting a list of one or more pages related to a ' .
+				'particular GettingStarted task.',
 		);
 	}
 
 	public function getParamDescription() {
 		return array(
-			'taskname' => 'Task name, generally either "copyedit" (copy-editing suggestions) or "morelike" (pages similar to the base page/excluded title)',
-			'excludedtitle' => 'Full title of a page to exclude from the list; also used as the base title for recommendations based on a given page',
-			'count' => 'Requested count; will attempt to fetch this exact number, but may fetch fewer if no more are found after multiple attempts',
+			'taskname' => 'Task name, generally either "copyedit" (copy-editing suggestions) or ' .
+				' "morelike" (pages similar to the base page/excluded title)',
+			'excludedtitle' => 'Full title of a page to exclude from the list; also used as the ' .
+				'base title for recommendations based on a given page',
+			'count' => 'Requested count; will attempt to fetch this exact number, but may fetch ' .
+				'fewer if no more are found after multiple attempts',
 		);
 	}
 
@@ -135,7 +149,8 @@ class ApiGettingStartedGetPages extends \ApiQueryGeneratorBase {
 
 	public function getExamples() {
 		return array(
-			'api.php?action=query&list=gettingstartedgetpages&gsgptaskname=copyedit&gsgpexcludedtitle=Earth&gsgpcount=1',
+			'api.php?action=query&list=gettingstartedgetpages&gsgptaskname=copyedit' .
+				'&gsgpexcludedtitle=Earth&gsgpcount=1',
 		);
 	}
 }

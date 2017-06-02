@@ -48,7 +48,8 @@ class Hooks {
 	 * @return bool
 	 */
 	protected static function isOnMobile() {
-		return class_exists( 'MobileContext' ) && \MobileContext::singleton()->shouldDisplayMobileView();
+		return class_exists( 'MobileContext' )
+			&& \MobileContext::singleton()->shouldDisplayMobileView();
 	}
 
 	/**
@@ -352,7 +353,9 @@ class Hooks {
 		global $wgRequest;
 
 		// Set expiration time in the past to expire.  Uses -1 day like User.php.
-		$wgRequest->response()->setcookie( self::OPENTASK_COOKIE_NAME, '', time() - 86400, self::$COOKIE_OPTIONS );
+		$wgRequest->response()->setcookie(
+			self::OPENTASK_COOKIE_NAME, '', time() - 86400, self::$COOKIE_OPTIONS
+		);
 
 		return true;
 	}
@@ -367,7 +370,9 @@ class Hooks {
 	 * @param boolean $stickHTTPS Keep redirect link on HTTPs
 	 * @param string $type login redirect condition
 	 */
-	public static function onCentralAuthPostLoginRedirect( &$returnTo, &$returnToQuery, $stickHTTPS, $type ) {
+	public static function onCentralAuthPostLoginRedirect(
+		&$returnTo, &$returnToQuery, $stickHTTPS, $type
+	) {
 		$returnToQueryArray = wfCgiToArray( $returnToQuery );
 		// Abort if we should not show getting started
 		if ( !self::shouldShowGettingStarted( $returnToQueryArray, $type ) ) {
@@ -448,13 +453,16 @@ class Hooks {
 		) {
 			$recommendations = array(
 				'recommendations' => array(
-					'text' => wfMessage( 'gettingstarted-lightbulb-recommendations-personal-tool' )->text(),
+					'text' => wfMessage( 'gettingstarted-lightbulb-recommendations-personal-tool' )
+						->text(),
 					'href' => '#recommendations',
 					'class' => 'mw-gettingstarted-personal-tool-recommendations',
 				)
 			);
 			$personal_urls = $recommendations + $personal_urls;
-			$skinTemplate->getOutput()->addModuleStyles( 'ext.gettingstarted.lightbulb.personalTools' );
+			$skinTemplate->getOutput()->addModuleStyles(
+				'ext.gettingstarted.lightbulb.personalTools'
+			);
 		}
 
 		return true;

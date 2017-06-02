@@ -20,11 +20,15 @@ class PageSuggesterFactory {
 	 * @return {PageSuggester|null} PageSuggester object, or null if no valid suggester
 	 *  is found
 	 */
-	public static function getPageSuggester( $taskName, \WebRequest $request, Title $sourceTitle = null ) {
+	public static function getPageSuggester(
+		$taskName, \WebRequest $request, Title $sourceTitle = null
+	) {
 		global $wgGettingStartedCategoriesForTaskTypes;
 
 		if ( isset( $wgGettingStartedCategoriesForTaskTypes[$taskName] ) ) {
-			$sanitizedTitle = \Title::newFromText( $wgGettingStartedCategoriesForTaskTypes[ $taskName ] );
+			$sanitizedTitle = \Title::newFromText(
+				$wgGettingStartedCategoriesForTaskTypes[$taskName]
+			);
 
 			if ( !( $sanitizedTitle && $sanitizedTitle->inNamespace( NS_CATEGORY ) ) ) {
 				return null;
