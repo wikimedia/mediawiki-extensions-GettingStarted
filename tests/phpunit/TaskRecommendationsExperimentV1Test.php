@@ -61,16 +61,16 @@ class TaskRecommendationsExperimentV1Test extends \MediaWikiTestCase {
 	}
 
 	public static function bucketingDataProvider() {
-		return array(
-			array(
+		return [
+			[
 				1, // ID
 				true, // Should see post-edit notification
 				false, // Shouldn't see flyout
-			),
-			array( 2, false, true ),
-			array( 3, true, true ),
-			array( 4, false, false ),
-		);
+			],
+			[ 2, false, true ],
+			[ 3, true, true ],
+			[ 4, false, false ],
+		];
 	}
 
 	/**

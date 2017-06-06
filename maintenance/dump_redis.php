@@ -16,7 +16,7 @@ namespace GettingStarted;
  */
 
 $IP = getenv( 'MW_INSTALL_PATH' );
-if( $IP === false ) {
+if ( $IP === false ) {
 	$IP = __DIR__ . '/../../..';
 }
 

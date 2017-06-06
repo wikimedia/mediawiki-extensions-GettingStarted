@@ -14,7 +14,7 @@ namespace GettingStarted;
 use Title;
 
 $IP = getenv( 'MW_INSTALL_PATH' );
-if( $IP === false ) {
+if ( $IP === false ) {
 	$IP = __DIR__ . '/../../..';
 }
 
@@ -33,9 +33,9 @@ class GenerateConfig extends \Maintenance {
 	 * (see $wgGettingStartedTasks) and the value is the QID of a
 	 * Wikidata entity.
 	 */
-	private $qidsForTaskTypes = array(
+	private $qidsForTaskTypes = [
 		'copyedit' => 'Q9125773', // Category:Wikipedia articles needing copy edit
-	);
+	];
 
 	public function __construct() {
 		$this->mDescription = 'Generates files that contain the values for the ' .
@@ -64,12 +64,12 @@ class GenerateConfig extends \Maintenance {
 	}
 
 	private function generateWgGettingStartedCategoriesForTaskTypesConfig( $dbnames ) {
-		$config = array();
+		$config = [];
 		foreach ( $this->qidsForTaskTypes as $task => $qid ) {
 			$sitelinks = $this->getSitelinksByQID( $qid, $dbnames );
 			foreach ( $sitelinks as $dbname => $categoryName ) {
 				if ( !isset( $config[ $dbname ] ) ) {
-					$config[ $dbname ] = array();
+					$config[ $dbname ] = [];
 				}
 
 				$config[ $dbname ][ $task ] = $categoryName;
@@ -85,10 +85,10 @@ class GenerateConfig extends \Maintenance {
 		// NOTE (phuedx, 2014-05-14): PageFilter::getExcludedCategories
 		// expects wgGettingStartedExcludedCategories to be an array of
 		// strings, not a string.
-		$config = array();
+		$config = [];
 
 		foreach ( $sitelinks as $dbname => $category ) {
-			$config[ $dbname ] = array( $category );
+			$config[ $dbname ] = [ $category ];
 		}
 
 		$this->writeConfig( $config, self::WG_GETTING_STARTED_EXCLUDED_CATEGORIES_FILE );
@@ -107,7 +107,7 @@ class GenerateConfig extends \Maintenance {
 		$responseBodyRaw = file_get_contents( $url );
 		$responseBody = json_decode( $responseBodyRaw, true );
 		$entity = $responseBody[ 'entities' ][ $qid ];
-		$result = array();
+		$result = [];
 
 		foreach ( $entity[ 'sitelinks' ] as $dbname => $sitelink ) {
 			if ( !$dbnames || in_array( $dbname, $dbnames ) ) {
@@ -120,4 +120,4 @@ class GenerateConfig extends \Maintenance {
 }
 
 $maintClass = 'GettingStarted\GenerateConfig';
-require_once( RUN_MAINTENANCE_IF_MAIN );
+require_once RUN_MAINTENANCE_IF_MAIN;
