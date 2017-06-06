@@ -27,14 +27,14 @@ class MoreLikePageSuggester implements PageSuggester {
 		global $wgSearchTypeAlternatives;
 
 		$query = 'morelike:' . $this->baseTitle->getPrefixedDBkey();
-		$params = array(
+		$params = [
 			'action' => 'query',
 			'list' => 'search',
 			'srnamespace' => NS_MAIN,
 			'srlimit' => $count,
 			'sroffset' => $offset,
 			'srsearch' => $query,
-		);
+		];
 
 		if ( $wgSearchTypeAlternatives !== null &&
 			count( $wgSearchTypeAlternatives ) > 0 ) {
@@ -53,9 +53,9 @@ class MoreLikePageSuggester implements PageSuggester {
 		$searchApiCall->execute();
 
 		$searchResults = (array)$searchApiCall->getResult()->getResultData(
-			array( 'query', 'search' ), array( 'Strip' => 'base' )
+			[ 'query', 'search' ], [ 'Strip' => 'base' ]
 		);
-		$titles = array();
+		$titles = [];
 		foreach ( $searchResults as $searchResult ) {
 			$titles[] = Title::newFromText( $searchResult['title'] );
 		}

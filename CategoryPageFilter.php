@@ -5,9 +5,9 @@ namespace GettingStarted;
 use Title;
 
 /**
-   Approve or reject a given page for suitability with GettingStarted.
-   For use in conjunction with CategoryPageSuggester
-*/
+ * Approve or reject a given page for suitability with GettingStarted.
+ * For use in conjunction with CategoryPageSuggester
+ */
 class CategoryPageFilter extends BasePageFilter {
 	const MAX_PAGE_LENGTH = 10000;
 

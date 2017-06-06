@@ -27,10 +27,10 @@ class RedisCategorySync {
 	public static $categories;
 
 	/** @var array: arrays of [Category, int] additions to process. **/
-	public static $additions = array();
+	public static $additions = [];
 
 	/** @var array: arrays of [Category, int] removals to process. **/
-	public static $removals = array();
+	public static $removals = [];
 
 	/** @var bool: whether or not an update callback has been registered. **/
 	public static $callbackSet = false;
@@ -78,7 +78,7 @@ class RedisCategorySync {
 	public static function makeCategoryKey( Category $category ) {
 		global $wgDBname;
 		return join( ':',
-			array( 'RedisCategorySync', 'Category', $wgDBname, md5( $category->getName() ) )
+			[ 'RedisCategorySync', 'Category', $wgDBname, md5( $category->getName() ) ]
 		);
 	}
 
@@ -91,7 +91,7 @@ class RedisCategorySync {
 		global $wgGettingStartedCategoriesForTaskTypes;
 
 		if ( self::$categories === null ) {
-			self::$categories = array();
+			self::$categories = [];
 			foreach ( $wgGettingStartedCategoriesForTaskTypes as $rawCategory ) {
 				// Canonicalize the category name.
 				$title = Title::newFromText( $rawCategory );
@@ -127,7 +127,7 @@ class RedisCategorySync {
 	 */
 	public static function onCategoryAfterPageAdded( Category $category, WikiPage $page ) {
 		if ( self::isUpdateRelevant( $category, $page ) ) {
-			self::$additions[] = array( $category, $page->getId() );
+			self::$additions[] = [ $category, $page->getId() ];
 			self::setCallback();
 		}
 		return true;
@@ -139,7 +139,7 @@ class RedisCategorySync {
 	 */
 	public static function onCategoryAfterPageRemoved( Category $category, WikiPage $page ) {
 		if ( self::isUpdateRelevant( $category, $page ) ) {
-			self::$removals[] = array( $category, $page->getId() );
+			self::$removals[] = [ $category, $page->getId() ];
 			self::setCallback();
 		}
 		return true;
@@ -162,10 +162,10 @@ class RedisCategorySync {
 		$categories = self::getCategories();
 
 		foreach ( $categories as $rawCategory ) {
-			self::$removals[] = array(
+			self::$removals[] = [
 				Category::newFromName( $rawCategory ),
 				$id
-			);
+			];
 		}
 		self::setCallback();
 		return true;

@@ -6,9 +6,9 @@ use Title;
 use User;
 
 /**
-  Approve or reject a given page for suitability with GettingStarted.
-  Base filter shared for all task types
-*/
+ * Approve or reject a given page for suitability with GettingStarted.
+ * Base filter shared for all task types
+ */
 class BasePageFilter {
 	/** @var User */
 	protected $user;
@@ -34,11 +34,11 @@ class BasePageFilter {
 		$articleID = $title->getArticleID();
 		$excludedCategories = self::getExcludedCategories();
 		$dbr = wfGetDB( DB_SLAVE );
-		foreach( $excludedCategories as $cat ) {
-			$res = $dbr->selectRow( 'categorylinks', '1', array(
+		foreach ( $excludedCategories as $cat ) {
+			$res = $dbr->selectRow( 'categorylinks', '1', [
 				'cl_from' => $articleID,
 				'cl_to' => $cat,
-			), __METHOD__ );
+			], __METHOD__ );
 
 			if ( $res !== false ) {
 				return true;
@@ -55,8 +55,8 @@ class BasePageFilter {
 			// TODO (phuedx 2014-02-010) Create a collection class
 			// for categories, which could be generalised in the
 			// future, i.e. CategoryCollection.
-			self::$excludedCategories = array();
-			foreach( $wgGettingStartedExcludedCategories as $rawCategory ) {
+			self::$excludedCategories = [];
+			foreach ( $wgGettingStartedExcludedCategories as $rawCategory ) {
 				// Canonicalize the category name.
 				$title = Title::newFromText( $rawCategory );
 				if ( !$title || !$title->inNamespace( NS_CATEGORY ) ) {

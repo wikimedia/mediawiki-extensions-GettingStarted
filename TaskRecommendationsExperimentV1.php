@@ -10,12 +10,12 @@ use User;
  */
 class TaskRecommendationsExperimentV1 {
 
-	private static $buckets = array(
+	private static $buckets = [
 		'control',
 		'post-edit',
 		'flyout',
 		'both',
-	);
+	];
 
 	private $bucket;
 
