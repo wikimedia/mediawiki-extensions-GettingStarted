@@ -16,9 +16,9 @@ class ApiGettingStartedGetPages extends \ApiQueryGeneratorBase {
 	public function execute() {
 		$result = $this->getResult();
 
-		$data = array(
-			'titles' => array()
-		);
+		$data = [
+			'titles' => []
+		];
 
 		$titles = $this->getArticles();
 
@@ -75,13 +75,13 @@ class ApiGettingStartedGetPages extends \ApiQueryGeneratorBase {
 		$attempts = 0;
 		$offset = 0;
 		$isRandomized = $suggester->isRandomized();
-		$filteredTitles = array();
+		$filteredTitles = [];
 
 		do {
 			$unfilteredTitles = $suggester->getArticles( $numWanted - $totalResultCount, $offset );
 
 			$newFilteredTitles = array_filter( $unfilteredTitles,
-				array( $pageFilter, 'isAllowedPage' )
+				[ $pageFilter, 'isAllowedPage' ]
 			);
 			$newFilteredTitles = array_udiff( $newFilteredTitles, $filteredTitles,
 				function ( $t1, $t2 ) {
@@ -113,44 +113,44 @@ class ApiGettingStartedGetPages extends \ApiQueryGeneratorBase {
 	}
 
 	public function getDescription() {
-		return array(
+		return [
 			'This API is for getting a list of one or more pages related to a ' .
 				'particular GettingStarted task.',
-		);
+		];
 	}
 
 	public function getParamDescription() {
-		return array(
+		return [
 			'taskname' => 'Task name, generally either "copyedit" (copy-editing suggestions) or ' .
 				' "morelike" (pages similar to the base page/excluded title)',
 			'excludedtitle' => 'Full title of a page to exclude from the list; also used as the ' .
 				'base title for recommendations based on a given page',
 			'count' => 'Requested count; will attempt to fetch this exact number, but may fetch ' .
 				'fewer if no more are found after multiple attempts',
-		);
+		];
 	}
 
 	public function getAllowedParams() {
-		return array(
-			'taskname' => array(
+		return [
+			'taskname' => [
 				ApiBase::PARAM_TYPE => 'string',
 				ApiBase::PARAM_REQUIRED => true,
-			),
-			'excludedtitle' => array(
+			],
+			'excludedtitle' => [
 				ApiBase::PARAM_TYPE => 'string',
 				ApiBase::PARAM_REQUIRED => false,
-			),
-			'count' => array(
+			],
+			'count' => [
 				ApiBase::PARAM_TYPE => 'integer',
 				ApiBase::PARAM_REQUIRED => true,
-			),
-		);
+			],
+		];
 	}
 
 	public function getExamples() {
-		return array(
+		return [
 			'api.php?action=query&list=gettingstartedgetpages&gsgptaskname=copyedit' .
 				'&gsgpexcludedtitle=Earth&gsgpcount=1',
-		);
+		];
 	}
 }

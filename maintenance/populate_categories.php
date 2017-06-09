@@ -11,7 +11,7 @@ use Category;
  */
 
 $IP = getenv( 'MW_INSTALL_PATH' );
-if( $IP === false ) {
+if ( $IP === false ) {
 	$IP = __DIR__ . '/../../..';
 }
 
@@ -30,32 +30,31 @@ class PopulateCategories extends \Maintenance {
 
 		$dbr = wfGetDB( DB_SLAVE );
 		$res = $dbr->select(
-			array( 'page', 'categorylinks' ),
-			array( 'page_id' ),
-			array(
+			[ 'page', 'categorylinks' ],
+			[ 'page_id' ],
+			[
 				'cl_from = page_id',
 				'cl_to' => $category->getName(),
 				'page_is_redirect' => 0,
 				'page_namespace' => NS_MAIN,
-			),
+			],
 			__FUNCTION__
 		);
 
-		$pages = array();
-		foreach( $res as $row ) {
+		$pages = [];
+		foreach ( $res as $row ) {
 			$pages[] = $row->page_id;
 		}
 		if ( !count( $pages ) ) {
 			return 0;
 		}
 
-
 		$redis = $this->mClient->multi( \Redis::PIPELINE );
 
 		$batches = array_chunk( $pages, 100 );
-		foreach( $batches as $batch ) {
+		foreach ( $batches as $batch ) {
 			array_unshift( $batch, $key );
-			call_user_func_array( array( $redis, 'sAdd' ), $batch );
+			call_user_func_array( [ $redis, 'sAdd' ], $batch );
 		}
 		return $redis->exec() ? count( $pages ) : 0;
 	}
@@ -66,7 +65,7 @@ class PopulateCategories extends \Maintenance {
 			$this->error( 'Failed to get Redis connection. Exiting.', 1 );
 		}
 
-		foreach( RedisCategorySync::getCategories() as $catName ) {
+		foreach ( RedisCategorySync::getCategories() as $catName ) {
 			echo "Populating category '${catName}' ...\n";
 			$cat = Category::newFromName( $catName );
 			$count = $this->populateCategory( $cat );
@@ -76,4 +75,4 @@ class PopulateCategories extends \Maintenance {
 }
 
 $maintClass = 'GettingStarted\PopulateCategories';
-require_once( RUN_MAINTENANCE_IF_MAIN );
+require_once RUN_MAINTENANCE_IF_MAIN;
