@@ -35,10 +35,10 @@ class Hooks {
 
 	const USER_TOKEN_COOKIE_NAME = '-gettingStartedUserId';
 
-	protected static $COOKIE_OPTIONS = array(
+	protected static $COOKIE_OPTIONS = [
 		'prefix' => '',
 		'path' => '/',
-	);
+	];
 
 	const INTRO_OPTION = 'gettingstarted-task-toolbar-show-intro';
 
@@ -68,7 +68,7 @@ class Hooks {
 		$cookie = $request->getCookie( self::OPENTASK_COOKIE_NAME, '' );
 		$tasks = FormatJson::decode( $cookie, true );
 		if ( !is_array( $tasks ) ) {
-			$tasks = array();
+			$tasks = [];
 		}
 
 		self::$openTask = $tasks;
@@ -101,9 +101,9 @@ class Hooks {
 	 *  or it's  separate (e.g. 'returnto')
 	 */
 	protected static function getUnprefixedGettingStartedTask( WebRequest $request, Title $title ) {
-		$fullTask = self::getPageTask( $request, $title);
+		$fullTask = self::getPageTask( $request, $title );
 		if ( $fullTask !== null ) {
-			$matches = array();
+			$matches = [];
 			$matchReturn = preg_match( '/^gettingstarted-(.*)$/', $fullTask, $matches );
 			if ( $matchReturn === 1 ) {
 				return $matches[1];
@@ -197,14 +197,14 @@ class Hooks {
 				}
 			}
 
-			$vars['wgGettingStarted'] = array(
-				'toolbar' => array(
+			$vars['wgGettingStarted'] = [
+				'toolbar' => [
 					'taskName' => $taskName,
 					'description' => $task[ 'toolbarDescription' ],
 					'tryAnotherTitle' => $task[ 'toolbarTryAnotherTitle' ],
 					'showIntro' => $showIntro,
-				),
-			);
+				],
+			];
 		}
 
 		return true;
@@ -224,9 +224,9 @@ class Hooks {
 
 		$categoryCount = count( $wgGettingStartedCategoriesForTaskTypes );
 
-		$vars['wgGettingStartedConfig'] = array(
+		$vars['wgGettingStartedConfig'] = [
 			'hasCategories' => ( $categoryCount > 0 ),
-		);
+		];
 
 		return true;
 	}
@@ -287,14 +287,14 @@ class Hooks {
 		if ( self::shouldLoadToolbar( $out, $user ) ) {
 			// Uses addModuleStyles since no-JS code must load it this way
 			// and this avoids double-loading.
-			$out->addModuleStyles( array(
+			$out->addModuleStyles( [
 				'mediawiki.ui.button',
-			) );
-			$out->addModules( array(
+			] );
+			$out->addModules( [
 					'ext.guidedTour.tour.gettingstartedtasktoolbarintro',
 					'ext.guidedTour.tour.gettingstartedtasktoolbar',
 					'ext.gettingstarted.taskToolbar',
-				)
+				]
 			);
 		}
 
@@ -302,7 +302,6 @@ class Hooks {
 			// TODO (mattflaschen, 2013-10-05): If we're not going to show
 			// anything, we probably shouldn't add this module for performance
 			// reasons.
-			//
 			// We could move the "no show" logic to isPostCreateReturn (with a
 			// suitable name), then decide what to do about
 			// redirect-page-impression (maybe log on the server, or get rid of it?)
@@ -333,9 +332,9 @@ class Hooks {
 
 	public static function onGetPreferences( User $user, array &$preferences ) {
 		// Show tour and fade in navbar and help button
-		$preferences[self::INTRO_OPTION] = array(
+		$preferences[self::INTRO_OPTION] = [
 			'type' => 'api',
-		);
+		];
 
 		return true;
 	}
@@ -433,7 +432,6 @@ class Hooks {
 		return true;
 	}
 
-
 	/**
 	 * While experiement is running add Task suggestions link
 	 *  for logged in users who have made an edit
@@ -451,14 +449,14 @@ class Hooks {
 			$experiment->isFlyoutEnabled() &&
 			$wgUser->getEditCount() > 0
 		) {
-			$recommendations = array(
-				'recommendations' => array(
+			$recommendations = [
+				'recommendations' => [
 					'text' => wfMessage( 'gettingstarted-lightbulb-recommendations-personal-tool' )
 						->text(),
 					'href' => '#recommendations',
 					'class' => 'mw-gettingstarted-personal-tool-recommendations',
-				)
-			);
+				]
+			];
 			$personal_urls = $recommendations + $personal_urls;
 			$skinTemplate->getOutput()->addModuleStyles(
 				'ext.gettingstarted.lightbulb.personalTools'

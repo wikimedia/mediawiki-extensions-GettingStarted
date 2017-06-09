@@ -27,21 +27,21 @@ class CategoryPageSuggester implements PageSuggester {
 
 		if ( !$this->redisConnection ) {
 			wfDebugLog( 'GettingStarted', "Unable to acquire redis connection.  Returning early.\n" );
-			return array();
+			return [];
 		}
 
 		try {
 			$randomArticleIDs = $this->redisConnection->sRandMember( $key, $count );
 		} catch ( RedisException $e ) {
 			wfDebugLog( 'GettingStarted', 'Redis exception: ' . $e->getMessage() . ".  Returning early.\n" );
-			return array();
+			return [];
 		}
 
 		if ( is_array( $randomArticleIDs ) ) {
 			return \Title::newFromIDs( $randomArticleIDs );
 		} else {
 			wfDebugLog( 'GettingStarted', 'Redis returned a non-array value, possibly an error.' );
-			return array();
+			return [];
 		}
 	}
 
