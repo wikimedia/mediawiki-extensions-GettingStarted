@@ -49,6 +49,7 @@
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Случајна страница",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Превчитај",
 	"apihelp-query+gettingstartedgetpages-description": "Овој приложник служи за добивање на список од една или повеќе страници поврзани со дадена задача од „Како да почнете“.",
+	"apihelp-query+gettingstartedgetpages-summary": "Овој приложник служи за добивање на список од една или повеќе страници поврзани со дадена задача од „Како да почнете“.",
 	"apihelp-query+gettingstartedgetpages-param-taskname": "Називот на задачата, обично или „copyedit“ (предлози за лектура) или „morelike“ (страници слични на појдовната страница/изземен наслов)",
 	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "Полниот насклов на страницата што треба дас е изземе од списокот; се користи и како појдовен наслов за предлозите, според дадена страница",
 	"apihelp-query+gettingstartedgetpages-param-count": "Побарај број; ќе се обиде да го даде точниот број, но може да даде помалку, доколку не се најдат повеќе по неколку обиди",

@@ -53,5 +53,6 @@
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Una pagina a caso",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Aggiorna",
 	"apihelp-query+gettingstartedgetpages-description": "Questa API è per ottenere un elenco di una o più pagine relative ad una particolare attività GettingStarted.",
+	"apihelp-query+gettingstartedgetpages-summary": "Questa API è per ottenere un elenco di una o più pagine relative ad una particolare attività GettingStarted.",
 	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "Titolo completo di una pagina da escudere dall'elenco; usato anche come titolo di base per le raccomandazioni basate su una pagina indicata"
 }
