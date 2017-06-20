@@ -40,7 +40,6 @@ class PageSuggesterFactory {
 		} elseif ( class_exists( 'CirrusSearch' ) &&
 			$taskName === 'morelike' &&
 			$sourceTitle !== null ) {
-
 			return new MoreLikePageSuggester( $request, $sourceTitle );
 		} else {
 			return null;

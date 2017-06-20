@@ -38,7 +38,6 @@ class MoreLikePageSuggester implements PageSuggester {
 
 		if ( $wgSearchTypeAlternatives !== null &&
 			count( $wgSearchTypeAlternatives ) > 0 ) {
-
 			$params['srbackend'] = 'CirrusSearch';
 		}
 
