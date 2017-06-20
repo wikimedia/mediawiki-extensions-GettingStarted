@@ -49,6 +49,7 @@
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Páxina al debalu",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Refrescar",
 	"apihelp-query+gettingstartedgetpages-description": "Esta API ye p'algamar una llista d'una o más páxines rellacionaes con una xera GettingStarted determinada.",
+	"apihelp-query+gettingstartedgetpages-summary": "Esta API ye p'algamar una llista d'una o más páxines rellacionaes con una xera GettingStarted determinada.",
 	"apihelp-query+gettingstartedgetpages-param-taskname": "Nome de la xera, polo xeneral o «copyedit» (copiar y editar suxerencies) o «morelike» (páxines asemeyaes a la páxina base/títulu torgáu)",
 	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "Títulu completu d'una páxina a torgar de la llista; úsase tamién como títulu base pa les recomendaciones basaes nuna páxina dada",
 	"apihelp-query+gettingstartedgetpages-param-count": "Cuenta solicitada; intentará recuperar esti númberu exautu, pero pue recuperar menos si nun s'alcuentren más tres dellos intentos",
