@@ -10,7 +10,8 @@
 			"Dianakc",
 			"Smmvinicius",
 			"Araceletorres",
-			"He7d3r"
+			"He7d3r",
+			"Felipe L. Ewald"
 		]
 	},
 	"gettingstarted": "Primeiros passos",
@@ -27,7 +28,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Ideias sobre o que fazer",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Estes avisos identificam problemas nesta página. Você não precisa corrigir tudo, faça apenas o que se sentir confortável em fazer.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Editar a página inteira...",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Clique em \"$1\" para mudar o conteúdo em qualquer da página.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Clique em \"$1\" para mudar o conteúdo em qualquer lugar da página.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Ou edite uma seção",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Se você quiser editar uma seção específica, clique no link \"{{int:editsection}}\" perto de cada título de seção.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Faça suas modificações e salve",
@@ -41,7 +42,7 @@
 	"gettingstarted-cta-text": "Você contribuir com {{SITENAME}} de diferentes formas",
 	"gettingstarted-cta-edit-page": "Editar esta página",
 	"gettingstarted-cta-edit-page-sub": "Nós mostraremos como",
-	"gettingstarted-cta-fix-pages": "Edite uma página de sugestão",
+	"gettingstarted-cta-fix-pages": "Editar uma página sugerida",
 	"gettingstarted-cta-fix-pages-sub": "Nós vamos escolher algo fácil",
 	"gettingstarted-cta-leave": "Não, obrigado. Talvez depois",
 	"gettingstarted-lightbulb-notification-body": "Editar um artigo semelhante.",
