@@ -411,7 +411,7 @@ class Hooks {
 	 * Check to see if we should display getting started tour
 	 * @param array $returnToQuery url query parameters
 	 * @param string $type login redirect condition
-	 * @return boolean true if should display getting started, false otherwise
+	 * @return bool true if should display getting started, false otherwise
 	 */
 	public static function shouldShowGettingStarted( $returnToQuery, $type ) {
 		// Do nothing on mobile.
