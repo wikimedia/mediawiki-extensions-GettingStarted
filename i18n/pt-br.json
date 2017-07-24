@@ -57,5 +57,7 @@
 	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Não podemos mostrar recomendações agora.",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Por favor, tente novamente.",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Página aleatória",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Atualizar"
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Atualizar",
+	"apihelp-query+gettingstartedgetpages-description": "Esta API é para obter uma lista de uma ou mais páginas relacionadas a uma determinada tarefa de PrimeirosPassos.",
+	"apihelp-query+gettingstartedgetpages-summary": "Esta API é para obter uma lista de uma ou mais páginas relacionadas a uma determinada tarefa de PrimeirosPassos."
 }
