@@ -59,5 +59,9 @@
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Página aleatória",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Atualizar",
 	"apihelp-query+gettingstartedgetpages-description": "Esta API é para obter uma lista de uma ou mais páginas relacionadas a uma determinada tarefa de PrimeirosPassos.",
-	"apihelp-query+gettingstartedgetpages-summary": "Esta API é para obter uma lista de uma ou mais páginas relacionadas a uma determinada tarefa de PrimeirosPassos."
+	"apihelp-query+gettingstartedgetpages-summary": "Esta API é para obter uma lista de uma ou mais páginas relacionadas a uma determinada tarefa de PrimeirosPassos.",
+	"apihelp-query+gettingstartedgetpages-param-taskname": "Nome da tarefa, geralmente \"copyedit\" (sugestões de edição de cópia) ou \"morelike\" (páginas semelhantes à página base/título excluído)",
+	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "Título completo de uma página para excluir da lista; Também usado como título base para recomendações com base em uma determinada página",
+	"apihelp-query+gettingstartedgetpages-param-count": "Contagem solicitada; Tentará obter esse número exato, mas pode buscar menos se não houver mais após várias tentativas",
+	"apierror-gettingstarted-nosuggester": "Não foi possível criar sugestões. Use um parâmetro válido <var>taskname</var>, forneça as dependências necessárias (CirrusSearch é necessário para <var>morelike</var>) e inclua <var excludedtitle</var> quando a tarefa o exige."
 }
