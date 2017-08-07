@@ -6,7 +6,8 @@
 			"Samoasambia",
 			"Silvonen",
 			"Stryn",
-			"VezonThunder"
+			"VezonThunder",
+			"Alluk."
 		]
 	},
 	"gettingstarted": "Alkuaskeleet",
@@ -36,6 +37,7 @@
 	"gettingstarted-cta-fix-pages": "Muokkaa ehdotettua sivua",
 	"gettingstarted-cta-fix-pages-sub": "Valitsemme jotain helppoa",
 	"gettingstarted-cta-leave": "Ei kiitos, ehkä myöhemmin",
+	"gettingstarted-lightbulb-text": "Suositeltu viimeisimmän muokkauksesi perusteella.",
 	"gettingstarted-lightbulb-flyout-back": "Takaisin",
 	"gettingstarted-lightbulb-flyout-next": "Seuraava",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Yritä uudelleen.",
