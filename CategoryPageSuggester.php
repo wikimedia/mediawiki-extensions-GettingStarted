@@ -13,7 +13,8 @@ class CategoryPageSuggester implements PageSuggester {
 	/**
 	 * Constructs a CategoryPageSuggester that uses the given category
 	 *
-	 * @param Category Category to use for suggestions
+	 * @param \RedisConnRef $redisConnection
+	 * @param \Category $category Category to use for suggestions
 	 */
 	public function __construct( \RedisConnRef $redisConnection, \Category $category ) {
 		$this->redisConnection = $redisConnection;

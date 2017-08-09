@@ -37,7 +37,7 @@ class RedisCategorySync {
 
 	/**
 	 * Acquire a Redis connection to a slave server.
-	 * @returns RedisConnRef|bool Redis client or false.
+	 * @return RedisConnRef|bool Redis client or false.
 	 */
 	public static function getSlave() {
 		return self::getClient();
@@ -45,7 +45,7 @@ class RedisCategorySync {
 
 	/**
 	 * Acquire a Redis connection to a master server.
-	 * @returns RedisConnRef|bool Redis client or false.
+	 * @return RedisConnRef|bool Redis client or false.
 	 */
 	public static function getMaster() {
 		return self::getClient( true );
@@ -54,7 +54,7 @@ class RedisCategorySync {
 	/**
 	 * Acquire a Redis connection.
 	 *
-	 * @param bool Set to true to query a redis master server
+	 * @param bool $master Set to true to query a redis master server
 	 * @return RedisConnRef|bool Redis client or false.
 	 */
 	protected static function getClient( $master = false ) {
@@ -124,6 +124,7 @@ class RedisCategorySync {
 	/**
 	 * @param Category $category
 	 * @param WikiPage $page
+	 * @return true
 	 */
 	public static function onCategoryAfterPageAdded( Category $category, WikiPage $page ) {
 		if ( self::isUpdateRelevant( $category, $page ) ) {
@@ -136,6 +137,7 @@ class RedisCategorySync {
 	/**
 	 * @param Category $category
 	 * @param WikiPage $page
+	 * @return true
 	 */
 	public static function onCategoryAfterPageRemoved( Category $category, WikiPage $page ) {
 		if ( self::isUpdateRelevant( $category, $page ) ) {
@@ -152,7 +154,8 @@ class RedisCategorySync {
 	 * @param WikiPage $article The article that was deleted
 	 * @param User $user The user that deleted the article
 	 * @param string $reason The reason that the article was deleted
-	 * @param integer $id The ID of the article that was deleted
+	 * @param int $id The ID of the article that was deleted
+	 * @return true
 	 */
 	public static function onArticleDeleteComplete( WikiPage $article, User $user, $reason, $id ) {
 		// Currently only storing pages in main namespace

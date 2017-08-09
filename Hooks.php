@@ -79,6 +79,7 @@ class Hooks {
 	 *
 	 * @param WebRequest $request current request
 	 * @param Title $title title to check
+	 * @return array|null
 	 */
 	public static function getPageTask( WebRequest $request, Title $title ) {
 		self::initializeOpenTask( $request );
@@ -137,6 +138,8 @@ class Hooks {
 	/**
 	 * Checks if page is the one the user returned to after account creation with
 	 * intent to show some onboarding flow.
+	 * @param OutputPage $out
+	 * @return bool
 	 */
 	protected static function isPostCreateReturn( OutputPage $out ) {
 		return $out->getRequest()->getFuzzyBool( 'gettingStartedReturn' );
@@ -147,6 +150,8 @@ class Hooks {
 	 *
 	 * Depending on the page, this may do nothing (except log), or add a CTA with
 	 * one or two buttons.
+	 * @param OutputPage &$out
+	 * @param Skin &$skin
 	 */
 	protected static function addReturnToModules( &$out, &$skin ) {
 		$out->addModuleStyles( 'mediawiki.ui.button' );
@@ -165,8 +170,8 @@ class Hooks {
 	 * If either of these (or both) are needed, set a request-specific
 	 * variable, wgGettingStarted.
 	 *
-	 * @param $vars array
-	 * @param $out OutputPage output page
+	 * @param array &$vars
+	 * @param OutputPage $out output page
 	 * @return bool
 	 */
 	public static function onMakeGlobalVariablesScript( &$vars, OutputPage $out ) {
@@ -344,9 +349,10 @@ class Hooks {
 	 *
 	 * Called when user is on the 'You are now logged out.' page
 	 *
-	 * @param User $user user object of the now-anonymous user
-	 * @param string $inject_html reference that can be used to inject HTML into logout page.
+	 * @param User &$user user object of the now-anonymous user
+	 * @param string &$inject_html reference that can be used to inject HTML into logout page.
 	 * @param string $old_name name of user that just logged out
+	 * @return true
 	 */
 	public static function onUserLogoutComplete( &$user, &$inject_html, $old_name ) {
 		global $wgRequest;
@@ -364,10 +370,11 @@ class Hooks {
 	 * account form, preventing the BeforeWelcomeCreation hook, it runs this
 	 * hook.  If user is not mobile, tweak the page returned to or its
 	 * parameters.
-	 * @param string $returnTo page name to redirect to
-	 * @param array $returnToQuery key value pairs of url parameters
-	 * @param boolean $stickHTTPS Keep redirect link on HTTPs
+	 * @param string &$returnTo page name to redirect to
+	 * @param array &$returnToQuery key value pairs of url parameters
+	 * @param bool $stickHTTPS Keep redirect link on HTTPs
 	 * @param string $type login redirect condition
+	 * @return true
 	 */
 	public static function onCentralAuthPostLoginRedirect(
 		&$returnTo, &$returnToQuery, $stickHTTPS, $type
@@ -388,9 +395,10 @@ class Hooks {
 	/**
 	 * While being redirected after signup, determine if we should show getting started
 	 * if so set gettingStartedReturn param to true before the redirect
-	 * @param string $returnTo page name to redirect to
-	 * @param array $returnToQuery key value pairs of url parameters
-	 * @param string $type login redirect condition
+	 * @param string &$returnTo page name to redirect to
+	 * @param array &$returnToQuery key value pairs of url parameters
+	 * @param string &$type login redirect condition
+	 * @return true
 	 */
 	public static function onPostLoginRedirect( &$returnTo, &$returnToQuery, &$type ) {
 		if ( class_exists( 'SpecialCentralLogin' ) ) {
@@ -435,9 +443,10 @@ class Hooks {
 	/**
 	 * While experiement is running add Task suggestions link
 	 *  for logged in users who have made an edit
-	 * @param array $personal_urls array of user toolbar links
-	 * @param Title $title Title object for the current page
+	 * @param array &$personal_urls array of user toolbar links
+	 * @param Title &$title Title object for the current page
 	 * @param SkinTemplate $skinTemplate skin template object
+	 * @return true
 	 */
 	public static function onPersonalUrls( &$personal_urls, &$title, $skinTemplate ) {
 		global $wgGettingStartedRunTest, $wgUser;
