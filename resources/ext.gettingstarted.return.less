@@ -1,3 +1,4 @@
+@import 'mediawiki.ui/variables';
 @import 'mediawiki.mixins';
 
 /* Specific elements */
@@ -54,7 +55,7 @@
 */
 .mw-gettingstarted-cta {
 	border: 1px solid #999;
-	border-radius: 3px;
+	border-radius: @borderRadius;
 	margin: auto;
 	background-color: #fff;
 	padding: 20px 30px;
@@ -74,7 +75,7 @@
 		margin-top: 15px;
 
 		&.mw-gettingstarted-cta-secondary {
-			background-color: #f5f5f5;
+			background-color: #f8f9fa;
 			border: 1px solid #d3d3d3;
 			color: #444;
 
@@ -83,7 +84,7 @@
 				  TODO (mattflaschen, 2013-10-03): This is inconsistent with
 				  normal mw.ui secondary buttons.  We should make them match.
 				*/
-				background-color: #fbfbfb;
+				background-color: #fff;
 				border-color: #ccc;
 			}
 		}
@@ -92,7 +93,7 @@
 
 .mw-gettingstarted-cta-body {
 	margin-bottom: 5px;
-	color: #333;
+	color: @colorGray2;
 }
 
 .mw-gettingstarted-cta-close {
@@ -106,7 +107,7 @@
 .mw-gettingstarted-cta-heading {
 	font-weight: bold;
 	font-size: 1.33em;
-	color: #333;
+	color: @colorGray2;
 }
 
 .mw-gettingstarted-cta-button-sub {
