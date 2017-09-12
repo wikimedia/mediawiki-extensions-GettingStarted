@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Benel"
+			"Benel",
+			"Tokoabibi"
 		]
 	},
+	"gettingstarted-cta-close": "edeben",
+	"gettingstarted-lightbulb-flyout-next": "zikuzan a cacay",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "kakibalucu’ ay a kasabelih"
 }
