@@ -28,7 +28,7 @@ class PopulateCategories extends \Maintenance {
 		$key = RedisCategorySync::makeCategoryKey( $category );
 		echo "Key: $key\n";
 
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$res = $dbr->select(
 			[ 'page', 'categorylinks' ],
 			[ 'page_id' ],

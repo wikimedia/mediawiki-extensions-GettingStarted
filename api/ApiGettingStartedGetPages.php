@@ -3,7 +3,6 @@
 namespace GettingStarted;
 
 use ApiBase;
-use Category;
 use Title;
 
 class ApiGettingStartedGetPages extends \ApiQueryGeneratorBase {

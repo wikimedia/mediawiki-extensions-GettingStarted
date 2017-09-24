@@ -2,7 +2,6 @@
 
 namespace GettingStarted;
 
-use Category;
 use Title;
 
 class PageSuggesterFactory {

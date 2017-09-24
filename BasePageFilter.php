@@ -33,7 +33,7 @@ class BasePageFilter {
 	protected function inExcludedCategories( Title $title ) {
 		$articleID = $title->getArticleID();
 		$excludedCategories = self::getExcludedCategories();
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		foreach ( $excludedCategories as $cat ) {
 			$res = $dbr->selectRow( 'categorylinks', '1', [
 				'cl_from' => $articleID,
