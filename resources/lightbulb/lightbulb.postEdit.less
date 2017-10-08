@@ -13,17 +13,16 @@
 	position: fixed;
 	top: 10px;
 	left: 50%;
-	margin-left: -@notificationWidth / 2;
 	width: @notificationWidth;
 	background-color: #fff;
-	color: #555;
+	color: @colorGray5;
+	margin-left: -@notificationWidth / 2;
+	border: 1px solid @colorGray12;
+	border-radius: @borderRadius;
 	font-size: 0.875em;
-
+	.box-shadow( 0 0 4px rgba( 0, 0, 0, 0.2 ) );
 	// Be consistent with the default post-edit notification.
 	z-index: 1000;
-
-	border: 1px solid #ccc;
-	.box-shadow( 0 0 4px rgba( 0, 0, 0, 0.2 ) );
 
 	.mw-gettingstarted-lightbulb-notification-header {
 		position: relative;

@@ -1,10 +1,5 @@
+@import 'mediawiki.ui/variables';
 @import 'mediawiki.mixins';
-
-.box-shadow( ... ) {
-	-moz-box-shadow: @arguments;
-	-webkit-box-shadow: @arguments;
-	box-shadow: @arguments;
-}
 
 #mw-gettingstarted-toolbar.mw-gettingstarted-toolbar-expanded {
 	.mw-gettingstarted-toolbar-center-message {
@@ -18,20 +13,15 @@
 
 /* css for entire top toolbar */
 #mw-gettingstarted-toolbar {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	.box-sizing( border-box );
 	font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 	position: fixed;
 	overflow: hidden;
 	z-index: 100000006; /* I'm looking at you, Guiders */
 	top: 0;
 	width: 100%;
-
 	.vertical-gradient( #7d7e7d, #333 );
-
-	.box-shadow( inset 0px 1px #999, 0px 3px 3px #bbb );
-
+	.box-shadow( inset 0 1px #999, 0 3px 3px #bbb; );
 	padding: 12px;
 	font-size: 0.8em;
 	color: #fff;
@@ -68,8 +58,8 @@ a.mw-gettingstarted-toolbar-link {
 
 /* X button in top toolbar */
 #mw-gettingstarted-toolbar a.mw-gettingstarted-toolbar-dismiss {
+	color: @colorGray7;
 	font-size: 1.5em;
-	color: #aaa;
 	margin-left: 15px;
 
 	&:hover {
