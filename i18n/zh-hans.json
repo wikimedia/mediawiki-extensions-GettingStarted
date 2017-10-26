@@ -65,6 +65,7 @@
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "随机页面",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "刷新",
 	"apihelp-query+gettingstartedgetpages-description": "此API用于获取一个或多个与特定GettingStarted任务相关的页面列表。",
+	"apihelp-query+gettingstartedgetpages-summary": "此API用于获取一个或多个与特定GettingStarted任务相关的页面列表。",
 	"apihelp-query+gettingstartedgetpages-param-taskname": "任务名称，通常为“copyedit”（编修建议）或“morelike”（与基本页面相似的页面/排除的标题）",
 	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "要从列表中排除的页面的完整标题；也被用作基于指定页面，用于推荐的基础标题",
 	"apihelp-query+gettingstartedgetpages-param-count": "请求的计数；将尝试取得该精确数字，但当在多次尝试后没有发现更多时，可能会取得很少",
