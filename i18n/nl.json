@@ -8,7 +8,8 @@
 			"SPQRobin",
 			"Mar(c)",
 			"Southparkfan",
-			"Sjoerddebruin"
+			"Sjoerddebruin",
+			"Mainframe98"
 		]
 	},
 	"gettingstarted": "Aan de slag",
@@ -25,9 +26,9 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Wat u kunt doen",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Deze banners geven aan dat er problemen zijn met deze pagina. U hoeft niet alle problemen aan te pakken; doe waar u zich prettig bij voelt.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Hele pagina bewerken",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Klik op \"$1\" om de pagina aan te passen.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Klik op \"$1\" inhoud om de pagina aan te passen.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Of bewerk een paragraaf",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Als u een bepaalde paragraaf wilt bewerken, kunt u klikken op de blauwe koppeling \"{{int:editsection}}\" bovenaan iedere paragraaf.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Als u een bepaalde paragraaf wilt bewerken, kunt u klikken op de koppeling \"{{int:editsection}}\" bovenaan iedere paragraaf.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Maak uw wijzigen en sla op",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "U kunt de pagina nu bewerken. Klik op \"{{int:visualeditor-toolbar-savedialog}}\" als u klaar bent, om uw wijzigingen te controleren en ze op te slaan.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Voorvertoning (optioneel)",
