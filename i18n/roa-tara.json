@@ -17,5 +17,14 @@
 	"guidedtour-tour-gettingstarted-click-save-title": "E' quase spicciate!",
 	"guidedtour-tour-gettingstarted-click-save-description": "Cazze '{{int:savearticle}}' e le cangiaminde tune devendane visibbile.",
 	"gettingstarted-cta-close": "Achiude",
-	"gettingstarted-cta-heading": "Aijute a migliorà {{SITENAME}}"
+	"gettingstarted-cta-heading": "Aijute a migliorà {{SITENAME}}",
+	"gettingstarted-cta-edit-page": "Cange sta pàgene",
+	"gettingstarted-cta-edit-page-sub": "Te facime 'ndrucà cumme a fà",
+	"gettingstarted-cta-fix-pages": "Cange 'na vôsce suggerite",
+	"gettingstarted-cta-fix-pages-sub": "T'amma scacchià quaccheccose de facile",
+	"gettingstarted-cta-leave": "No grazie, pò essere cchiù tarde",
+	"gettingstarted-lightbulb-notification-body": "Cange 'na vôscia simile.",
+	"gettingstarted-lightbulb-notification-body-lastedited": "Cangiate $1",
+	"gettingstarted-lightbulb-recommendations-personal-tool": "Conziglie",
+	"gettingstarted-lightbulb-heading": "Pàggende da migliorà"
 }
