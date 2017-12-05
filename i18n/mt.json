@@ -8,7 +8,5 @@
 	"gettingstarted": "Gwida introduttorja",
 	"gettingstarted-desc": "Iżżid [[Special:GettingStarted|paġna ta' merħba]] għal utenti ġodda (murija wara l-ħolqien tal-kont)",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Jeditjaw il-paġna kollha ...",
-	"guidedtour-tour-gettingstarted-click-preview-description": "Tikklikkjaw \"{{int: showpreview}}\" tippermetti li inti tara dak l-artiklu se jidhru bħal ma 'bidliet tiegħek. Biss ma ninsewx li jiffrankaw.",
-	"gettingstarted-task-toolbar-try-another-text-wikipedia": "Ipprova ieħor artikolu ►",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description-wikipedia": "Issa tista jeditjaw il-kontenut artikolu. Meta inti qed isir, ikklikkja \"{{int:visualeditor-toolbar-savedialog}}\" teżamina u jiffrankaw bidliet tiegħek."
+	"guidedtour-tour-gettingstarted-click-preview-description": "Tikklikkjaw \"{{int: showpreview}}\" tippermetti li inti tara dak l-artiklu se jidhru bħal ma 'bidliet tiegħek. Biss ma ninsewx li jiffrankaw."
 }
