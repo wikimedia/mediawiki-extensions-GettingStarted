@@ -22,6 +22,7 @@ class PopulateCategories extends \Maintenance {
 
 	public function __construct() {
 		$this->mDescription = 'Populates GettingStarted Redis sets from categories';
+		$this->requireExtension( 'GettingStarted' );
 	}
 
 	private function populateCategory( Category $category ) {

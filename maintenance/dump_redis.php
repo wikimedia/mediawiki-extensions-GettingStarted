@@ -31,6 +31,7 @@ class DumpRedisCategorySync extends \Maintenance {
 			false, false
 		);
 		$this->mDescription = 'Dump Redis data used for RedisCategorySync';
+		$this->requireExtension( 'GettingStarted' );
 	}
 
 	protected function printSet( RedisConnRef $client, $key, $categoryName = null ) {

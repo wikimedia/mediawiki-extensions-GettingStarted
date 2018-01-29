@@ -44,6 +44,7 @@ class GenerateConfig extends \Maintenance {
 		// default value, which could be included in the output of
 		// $ php /path/to/maintenance/script.php --help.
 		$this->addOption( 'dbnames', 'Location of the list of DB names to filter by', false, true );
+		$this->requireExtension( 'GettingStarted' );
 	}
 
 	public function execute() {
