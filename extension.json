@@ -14,7 +14,7 @@
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:GettingStarted",
 	"descriptionmsg": "gettingstarted-desc",
-	"license-name": "GPL-2.0+",
+	"license-name": "GPL-2.0-or-later",
 	"type": "api",
 	"DefaultUserOptions": {
 		"gettingstarted-task-toolbar-show-intro": true
