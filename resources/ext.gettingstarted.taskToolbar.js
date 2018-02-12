@@ -37,10 +37,10 @@
 	 */
 	function displayToolbar( toolbarInfo, suggestedTitle ) {
 		var $toolbar, $center, $centerMessage, $right, $tryAnother, $close,
-		$relativeElements, $marginElements, tryAnotherUrl, $showGuide,
-		fullTask, afterRemovalHookInstalled, $centerMessageClone,
-		centerMessageWidth, centerMinWidth, isToolbarExpanded,
-		RESIZE_THROTTLE_DELAY = 100; // (ms)
+			$relativeElements, $marginElements, tryAnotherUrl, $showGuide,
+			fullTask, afterRemovalHookInstalled, $centerMessageClone,
+			centerMessageWidth, centerMinWidth, isToolbarExpanded,
+			RESIZE_THROTTLE_DELAY = 100; // (ms)
 
 		fullTask = 'gettingstarted-' + toolbarInfo.taskName;
 
@@ -199,7 +199,7 @@
 			window.setTimeout( function () {
 				showToolbar();
 				launchTour();
-			} , 800 );
+			}, 800 );
 		} else {
 			$showGuide.css( 'opacity', 1 );
 			showToolbar();
@@ -222,7 +222,7 @@
 		}
 
 		$( window ).on( 'resize', $.throttle( RESIZE_THROTTLE_DELAY, function () {
-			if ( $center.width() >= centerMinWidth  ) {
+			if ( $center.width() >= centerMinWidth ) {
 				// The contents of the toolbar can be displayed
 				// inline.
 
@@ -250,4 +250,4 @@
 			displayToolbar( toolbarInfo, null );
 		} );
 	} );
-} ( jQuery, mediaWiki ) );
+}( jQuery, mediaWiki ) );

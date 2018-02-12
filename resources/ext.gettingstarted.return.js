@@ -23,7 +23,7 @@
 		var event;
 
 		if ( mw.user.isAnon() ) {
-		    return;
+			return;
 		}
 
 		event = {
@@ -99,7 +99,7 @@
 			klass += ' mw-gettingstarted-cta-button-no-sub';
 		}
 
-		$btn = $( '<a> ').attr( {
+		$btn = $( '<a>' ).attr( {
 			id: spec.id,
 			'class': klass,
 			'aria-role': 'button',
@@ -111,7 +111,6 @@
 			closeDialog();
 			spec.click();
 		} );
-
 
 		$icon = $( '<div>' )
 			.addClass( 'mw-gettingstarted-cta-button-icon' )
@@ -142,7 +141,7 @@
 		 *
 		 * @param {string} title article title
 		 *
-		 * @return boolean
+		 * @return {boolean}
 		 * @see isAppropriateTaskArticle is a similar idea but inspects a link.
 		 */
 		isOnEditableArticleView: function () {
@@ -163,8 +162,8 @@
 				cfg.wgIsProbablyEditable ) {
 
 				currentUri = new mw.Uri();
-				for ( i = 0; i < ALLOWED_PARAMS.length; i++) {
-					delete currentUri.query[ALLOWED_PARAMS[i]];
+				for ( i = 0; i < ALLOWED_PARAMS.length; i++ ) {
+					delete currentUri.query[ ALLOWED_PARAMS[ i ] ];
 				}
 				// Any remaining parameters are not allowed
 				for ( key in currentUri.query ) {
@@ -186,8 +185,8 @@
 			var currentUri = new mw.Uri();
 
 			if ( cfg.wgAction === 'edit' ||
-			    cfg.wgAction === 'submit' ||
-			    currentUri.query.veaction === 'edit'
+				cfg.wgAction === 'submit' ||
+				currentUri.query.veaction === 'edit'
 			) {
 				return 'alreadyediting';
 			}
@@ -211,7 +210,7 @@
 		 * @param {mw.Title} suggestedTitle title of a suggested article to edit, or null
 		 *   if none is available
 		 */
-		handlePage: function ( pageKind, suggestedTitle) {
+		handlePage: function ( pageKind, suggestedTitle ) {
 			var dialogSpec, editCurrentPrimaryButton, suggestionSecondaryButton, suggestionPrimaryButton, ctaType;
 
 			function doFixPages() {
@@ -262,7 +261,7 @@
 					ctaType = CTA_TYPE_EDIT_CURRENT;
 				}
 			} else if ( pageKind === 'other' ) {
-				if ( !suggestedTitle) {
+				if ( !suggestedTitle ) {
 					logRedirectImpression( CTA_TYPE_NONE );
 					// Nothing to show in dialog
 					return;
@@ -295,8 +294,6 @@
 				logRedirectImpression( ctaType );
 			} );
 		},
-
-
 
 		// TODO (mattflaschen, 2013-09-27): Cleanup and move to mediawiki.ui
 		/**
@@ -368,7 +365,7 @@
 			//
 			// Not vertically centered, but should look alright
 			for ( i = 0; i < spec.buttons.length; i++ ) {
-				$dialog.append( createButton( removeDialog, spec.buttons[i] ) );
+				$dialog.append( createButton( removeDialog, spec.buttons[ i ] ) );
 			}
 
 			$leaveLink = $( '<a>' )
@@ -409,4 +406,4 @@
 	};
 
 	self.init();
-} )( jQuery, mediaWiki, mediaWiki.guidedTour );
+}( jQuery, mediaWiki, mediaWiki.guidedTour ) );

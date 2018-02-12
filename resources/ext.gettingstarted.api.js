@@ -90,16 +90,16 @@
 					rvprop: 'timestamp'
 				};
 
-				this.get( params ).done( function ( resp ) {
-					// NOTE: Redundancy for Bug: 10887
-					if ( resp.query && resp.query.pageids && resp.query.pageids.length ) {
-						dfd.resolve( resp.query );
-					} else {
-						dfd.reject( 'gettingstarted-unexpected-api-response' );
-					}
-				} ).fail( function ( errCode ) {
-					dfd.reject( errCode );
-				} );
+			this.get( params ).done( function ( resp ) {
+				// NOTE: Redundancy for Bug: 10887
+				if ( resp.query && resp.query.pageids && resp.query.pageids.length ) {
+					dfd.resolve( resp.query );
+				} else {
+					dfd.reject( 'gettingstarted-unexpected-api-response' );
+				}
+			} ).fail( function ( errCode ) {
+				dfd.reject( errCode );
+			} );
 
 			return dfd.promise();
 		},
@@ -118,7 +118,7 @@
 					ucnamespace: 0,
 					uclimit: 1,
 					ucprop: 'title'
-			};
+				};
 
 			this.get( params ).done( function ( resp ) {
 				// NOTE: Redundancy for Bug: 10887
@@ -127,7 +127,7 @@
 					resp.query.usercontribs &&
 					resp.query.usercontribs.length
 				) {
-					dfd.resolve( resp.query.usercontribs[0].title );
+					dfd.resolve( resp.query.usercontribs[ 0 ].title );
 				} else {
 					dfd.reject( 'gettingstarted-unexpected-api-response' );
 				}
@@ -156,7 +156,7 @@
 			options = $.extend( {}, options, { count: 1 } );
 			this.getPages( options ).done( function ( titles ) {
 				if ( titles.length === 1 ) {
-					dfd.resolve( titles[0] );
+					dfd.resolve( titles[ 0 ] );
 				} else {
 					dfd.reject( 'gettingstarted-no-titles-available' );
 				}

@@ -1,0 +1,14 @@
+{
+	"extends": "wikimedia",
+	"env": {
+		"browser": true,
+		"jquery": true
+	},
+	"globals": {
+		"mediaWiki": false
+	},
+	"rules": {
+		"no-multi-str": "off",
+		"no-use-before-define": "off"
+	}
+}

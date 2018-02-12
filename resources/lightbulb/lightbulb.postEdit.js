@@ -21,7 +21,7 @@
 		$notificationBody.find( 'p' ).text( notificationBodyMsg );
 
 		if ( suggestions.length > 0 ) {
-			$notificationBody.append( suggestionRenderer.render( suggestions[0] ) );
+			$notificationBody.append( suggestionRenderer.render( suggestions[ 0 ] ) );
 		} else {
 			$notificationBody.hide();
 		}
@@ -63,7 +63,7 @@
 			// If there's a task recommendation, then log its impression.
 			if ( suggestions.length > 0 ) {
 				mw.eventLog.logEvent( 'TaskRecommendationImpression', {
-					setId: suggestions[0].setId,
+					setId: suggestions[ 0 ].setId,
 					userId: mwConfig.wgUserId,
 					pageId: mwConfig.wgArticleId,
 					'interface': 'post-edit',
@@ -73,4 +73,4 @@
 		} );
 	} );
 
-} ( mediaWiki, jQuery ) );
+}( mediaWiki, jQuery ) );

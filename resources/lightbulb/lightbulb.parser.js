@@ -8,7 +8,7 @@
 	 *
 	 * @class mw.gettingStarted.lightbulb.Parser
 	 */
-	function Parser () {}
+	function Parser() {}
 
 	/**
 	 * Parses the response.
@@ -19,7 +19,7 @@
 	Parser.prototype.parse = function ( response ) {
 		var setId = mw.user.generateRandomSessionId();
 
-		return $.map( response.pageids, function( rawPageId, index ) {
+		return $.map( response.pageids, function ( rawPageId, index ) {
 			var page = response.pages[ rawPageId ],
 				pageId = parseInt( rawPageId, 10 );
 
@@ -35,7 +35,7 @@
 			return {
 				title: page.title,
 				thumbnail: page.thumbnail ? page.thumbnail.source : null,
-				lastEdited: page.revisions[0].timestamp,
+				lastEdited: page.revisions[ 0 ].timestamp,
 				pageId: pageId,
 				setId: setId
 			};
@@ -47,4 +47,4 @@
 
 	mw.gettingStarted.lightbulb.Parser = Parser;
 
-} ( mediaWiki, jQuery ) );
+}( mediaWiki, jQuery ) );

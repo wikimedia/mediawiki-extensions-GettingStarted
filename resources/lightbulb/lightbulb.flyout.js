@@ -105,7 +105,6 @@
 				showFlyoutPage( currentFlyoutPageIndex, pageCount );
 			} );
 
-
 		$nextButton = $pagination
 			.find( '.mw-gettingstarted-lightbulb-flyout-next' )
 			.attr( 'title', mw.msg( 'gettingstarted-lightbulb-flyout-next' ) )
@@ -132,7 +131,6 @@
 		} else {
 			$pagination.hide();
 		}
-
 
 		$flyout.addClass( 'mw-gettingstarted-lightbulb-flyout-recommendations' );
 		$flyout.removeClass( 'mw-gettingstarted-lightbulb-flyout-error' );
@@ -181,9 +179,9 @@
 			i;
 
 		for ( i = 0; i < MAX_SUGGESTION_PER_PAGE_COUNT && ( suggestionStartIndex + i ) < suggestions.length; i++ ) {
-			suggestion = suggestions[suggestionStartIndex + i];
+			suggestion = suggestions[ suggestionStartIndex + i ];
 			$suggestion = suggestionRenderer.render( suggestion );
-			$li = $( '<li></li>' ).append( $suggestion );
+			$li = $( '<li>' ).append( $suggestion );
 
 			$newSuggestions.append( $li );
 		}
@@ -199,7 +197,7 @@
 	 */
 	function showFlyoutPage( pageIndex, pageCount ) {
 		var suggestionWidth = $flyout.find( '.mw-gettingstarted-lightbulb-suggestions' ).outerWidth(),
-			leftOffset = - ( pageIndex * suggestionWidth );
+			leftOffset = -( pageIndex * suggestionWidth );
 
 		// There can be 0 discs, in which case this is a noop.
 		$flyout.find( '.mw-gettingstarted-lightbulb-flyout-pagination-disc' )
@@ -224,10 +222,10 @@
 	/**
 	 * Logs TaskRecommendationImpression schema
 	 */
-	function logTaskRecommendationImpression () {
+	function logTaskRecommendationImpression() {
 		if ( suggestions ) {
 			mw.eventLog.logEvent( 'TaskRecommendationImpression', {
-				setId: suggestions[0].setId,
+				setId: suggestions[ 0 ].setId,
 				userId: mwConfig.wgUserId,
 				pageId: mwConfig.wgArticleId,
 				'interface': 'flyout',
@@ -351,19 +349,19 @@
 					count: MAX_SUGGESTION_PER_PAGE_COUNT * MAX_PAGE_COUNT,
 					thumbSize: 70
 				} )
-				.done( function ( response ) {
-					// Store suggestions for later reference
-					suggestions = parser.parse( response );
-					addSuggestionsToFlyout();
-				} )
-				.fail( function () {
-					// show no recommendations state
-					addErrorStateToFlyout( 'no-recommendations' );
-				} )
-				.always( function () {
-					$flyout.removeClass( 'mw-gettingstarted-lightbulb-flyout-loading' );
-					requestingSuggestions = false;
-				} );
+					.done( function ( response ) {
+						// Store suggestions for later reference
+						suggestions = parser.parse( response );
+						addSuggestionsToFlyout();
+					} )
+					.fail( function () {
+						// show no recommendations state
+						addErrorStateToFlyout( 'no-recommendations' );
+					} )
+					.always( function () {
+						$flyout.removeClass( 'mw-gettingstarted-lightbulb-flyout-loading' );
+						requestingSuggestions = false;
+					} );
 			} )
 			.fail( function () {
 				// no article edits state
@@ -390,7 +388,7 @@
 		var clientProfile = $.client.profile(),
 			classes = [];
 
-		if (clientProfile.name !== 'msie') {
+		if ( clientProfile.name !== 'msie' ) {
 			return;
 		}
 
@@ -409,4 +407,4 @@
 			addFlyout();
 		}
 	} );
-} ( mediaWiki, jQuery ) );
+}( mediaWiki, jQuery ) );

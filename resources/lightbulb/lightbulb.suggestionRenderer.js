@@ -1,4 +1,4 @@
-/*global moment */
+/* global moment */
 ( function ( mw, $ ) {
 
 	var template =
@@ -13,7 +13,7 @@
 
 	function SuggestionRenderer() {}
 
-	SuggestionRenderer.prototype.render = function( suggestion ) {
+	SuggestionRenderer.prototype.render = function ( suggestion ) {
 		var $result = $( template ),
 			lastEdited,
 			url = mw.util.getUrl( suggestion.title );
@@ -52,4 +52,4 @@
 
 	mw.gettingStarted.lightbulb.SuggestionRenderer = SuggestionRenderer;
 
-} ( mediaWiki, jQuery ) );
+}( mediaWiki, jQuery ) );

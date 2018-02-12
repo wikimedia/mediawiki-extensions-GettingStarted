@@ -29,7 +29,7 @@
 	 * @return {string|undefined} task string if there is one, or undefined
 	 */
 	function getTask( prefixedText ) {
-		return getTasks()[prefixedText];
+		return getTasks()[ prefixedText ];
 	}
 
 	/**

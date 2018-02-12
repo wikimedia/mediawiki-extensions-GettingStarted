@@ -23,15 +23,15 @@
 		var shouldOpenInNewTab, $target, schemaName, eventInstance;
 
 		if (
-			!$( event.target ).is( '.mw-gettingstarted-lightbulb-suggestion a' )
-			|| event.which === 3 // Is a right click?
+			!$( event.target ).is( '.mw-gettingstarted-lightbulb-suggestion a' ) ||
+			event.which === 3 // Is a right click?
 		) {
 			return;
 		}
 
 		shouldOpenInNewTab =
-			( platform === 'mac' ? event.metaKey : event.ctrlKey )
-			|| event.which === 2; // Was it a middle click?
+			( platform === 'mac' ? event.metaKey : event.ctrlKey ) ||
+			event.which === 2; // Was it a middle click?
 
 		schemaName = 'TaskRecommendationClick';
 		$target = $( event.target );
@@ -63,7 +63,7 @@
 		 * Registers logging of task recommendation clicks with the
 		 * TaskRecommendationClick schema.
 		 */
-		register: function() {
+		register: function () {
 			if ( isRegistered ) {
 				return;
 			}
@@ -75,11 +75,10 @@
 		/**
 		 * Unregisters logging of task recommendation clicks.
 		 */
-		unregister: function() {
+		unregister: function () {
 			$( document ).off( 'click.lightbulb' );
 			isRegistered = false;
 		}
 	};
 
-
-} ( mediaWiki, jQuery ) );
+}( mediaWiki, jQuery ) );

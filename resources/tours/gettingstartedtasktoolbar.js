@@ -34,13 +34,13 @@
 		overlay: true,
 		width: 450
 	} )
-	.next( function () {
-		if ( hasIdeasElement ) {
-			return 'editIdeas';
-		} else {
-			return 'editArticle';
-		}
-	} );
+		.next( function () {
+			if ( hasIdeasElement ) {
+				return 'editIdeas';
+			} else {
+				return 'editArticle';
+			}
+		} );
 
 	tour.step( {
 		name: 'editIdeas',
@@ -51,7 +51,7 @@
 		autoFocus: true,
 		width: 450
 	} )
-	.next( 'editArticle' );
+		.next( 'editArticle' );
 
 	tour.step( {
 		name: 'editArticle',
@@ -77,12 +77,12 @@
 		} ],
 		allowAutomaticOkay: false
 	} )
-	.transition( function () {
-		if ( gt.isEditing() ) {
-			return 'preview';
-		}
-	} )
-	.next( 'editSection' );
+		.transition( function () {
+			if ( gt.isEditing() ) {
+				return 'preview';
+			}
+		} )
+		.next( 'editSection' );
 
 	tour.step( {
 		name: 'editSection',
@@ -93,13 +93,13 @@
 		autoFocus: true,
 		width: 300
 	} )
-	.transition( function () {
-		if ( gt.isEditing() ) {
-			return 'preview';
-		} else if ( !hasEditSection ) {
-			return gt.TransitionAction.HIDE;
-		}
-	} );
+		.transition( function () {
+			if ( gt.isEditing() ) {
+				return 'preview';
+			} else if ( !hasEditSection ) {
+				return gt.TransitionAction.HIDE;
+			}
+		} );
 
 	tour.step( {
 		name: 'preview',
@@ -111,13 +111,13 @@
 		autoFocus: true,
 		closeOnClickOutside: false
 	} )
-	.transition( function () {
-		if ( gt.isReviewing() ) {
-			return 'save';
-		} else if ( !gt.isEditing() ) {
-			return gt.TransitionAction.END;
-		}
-	} );
+		.transition( function () {
+			if ( gt.isReviewing() ) {
+				return 'save';
+			} else if ( !gt.isEditing() ) {
+				return gt.TransitionAction.END;
+			}
+		} );
 
 	tour.step( {
 		name: 'save',
@@ -128,10 +128,10 @@
 		autoFocus: true,
 		closeOnClickOutside: false
 	} )
-	.transition( function () {
-		if ( !gt.isReviewing() ) {
-			return gt.TransitionAction.END;
-		}
-	} );
+		.transition( function () {
+			if ( !gt.isReviewing() ) {
+				return gt.TransitionAction.END;
+			}
+		} );
 
 }( window, document, jQuery, mediaWiki, mediaWiki.guidedTour ) );
