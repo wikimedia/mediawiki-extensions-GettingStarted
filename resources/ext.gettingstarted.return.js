@@ -290,7 +290,7 @@
 				return;
 			}
 
-			$( document ).ready( function () {
+			$( function () {
 				self.showCTA( dialogSpec );
 				logRedirectImpression( ctaType );
 			} );

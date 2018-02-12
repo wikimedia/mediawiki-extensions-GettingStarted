@@ -243,7 +243,7 @@
 		} ) );
 	}
 
-	$( document ).ready( function () {
+	$( function () {
 		suggestedPagePromise.done( function ( title ) {
 			displayToolbar( toolbarInfo, new mw.Title( title ) );
 		} ).fail( function () {
