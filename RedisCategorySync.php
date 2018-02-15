@@ -77,7 +77,7 @@ class RedisCategorySync {
 	 */
 	public static function makeCategoryKey( Category $category ) {
 		global $wgDBname;
-		return join( ':',
+		return implode( ':',
 			[ 'RedisCategorySync', 'Category', $wgDBname, md5( $category->getName() ) ]
 		);
 	}
