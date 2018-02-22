@@ -35,5 +35,11 @@
 	"gettingstarted-cta-edit-page-sub": "Við sýnum þér hvernig",
 	"gettingstarted-cta-fix-pages": "Finna síðu sem stungið hefur verið uppá",
 	"gettingstarted-cta-fix-pages-sub": "Við veljum eitthvað einfalt",
-	"gettingstarted-cta-leave": "Nei takk, kannski seinna"
+	"gettingstarted-cta-leave": "Nei takk, kannski seinna",
+	"gettingstarted-lightbulb-notification-body-lastedited": "Breytt $1",
+	"gettingstarted-lightbulb-recommendations-personal-tool": "Meðmæli",
+	"gettingstarted-lightbulb-flyout-back": "Til baka",
+	"gettingstarted-lightbulb-flyout-next": "Næsta",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Handahófsvalin síða",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Endurlesa"
 }
