@@ -55,8 +55,8 @@ class ApiGettingStartedGetPages extends \ApiQueryGeneratorBase {
 		);
 		if ( $suggester === null ) {
 			$this->dieWithError(
-					'apierror-gettingstarted-nosuggester', 'gettingstarted_no_suggester'
-				);
+				'apierror-gettingstarted-nosuggester', 'gettingstarted_no_suggester'
+			);
 		}
 		$pageFilter = PageFilterFactory::getPageFilter( $taskName, $user, $excludedTitle );
 

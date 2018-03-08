@@ -16,6 +16,9 @@
 	"descriptionmsg": "gettingstarted-desc",
 	"license-name": "GPL-2.0-or-later",
 	"type": "api",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
 	"DefaultUserOptions": {
 		"gettingstarted-task-toolbar-show-intro": true
 	},
