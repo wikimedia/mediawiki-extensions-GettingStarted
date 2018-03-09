@@ -34,5 +34,16 @@
 	"gettingstarted-cta-edit-page-sub": "എങ്ങനെയാണെന്ന് ഞങ്ങൾ കാണിച്ചുതരാം",
 	"gettingstarted-cta-fix-pages": "നിർദ്ദേശിക്കുന്ന താൾ തിരുത്തുക",
 	"gettingstarted-cta-fix-pages-sub": "എളുപ്പമുള്ള ഒന്ന് ഞങ്ങൾ എടുത്തുതരാം",
-	"gettingstarted-cta-leave": "ഇപ്പോൾ വേണ്ട, പിന്നീടാകട്ടെ"
+	"gettingstarted-cta-leave": "ഇപ്പോൾ വേണ്ട, പിന്നീടാകട്ടെ",
+	"gettingstarted-lightbulb-notification-body": "മറ്റൊരു സമാന ലേഖനം തിരുത്തുക.",
+	"gettingstarted-lightbulb-notification-body-lastedited": "$1 തിരുത്തി",
+	"gettingstarted-lightbulb-recommendations-personal-tool": "ശുപാർശകൾ",
+	"gettingstarted-lightbulb-heading": "മെച്ചപ്പെടുത്തേണ്ട താളുകൾ",
+	"gettingstarted-lightbulb-text": "താങ്കളുടെ അവസാനത്തെ തിരുത്ത് പ്രകാരമുള്ള ശുപാർശകൾ.",
+	"gettingstarted-lightbulb-flyout-back": "പുറകോട്ട്",
+	"gettingstarted-lightbulb-flyout-next": "അടുത്തത്",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "ശുപാർശകളൊന്നും ഇല്ല!",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "ദയവായി വീണ്ടും ശ്രമിക്കുക.",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "ഏതെങ്കിലും താൾ",
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "പുതുക്കുക"
 }
