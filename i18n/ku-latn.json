@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"George Animal"
+			"George Animal",
+			"Ghybu"
 		]
 	},
 	"gettingstarted-cta-close": "Bigre",
 	"gettingstarted-cta-edit-page": "Vê rûpelê biguherîne",
+	"gettingstarted-lightbulb-flyout-next": "Pêşve",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Rûpeleke ketober",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Nû bike"
 }
