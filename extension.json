@@ -83,7 +83,6 @@
 			]
 		},
 		"ext.gettingstarted.lightbulb.personalTools": {
-			"position": "top",
 			"styles": "lightbulb/lightbulb.personalTools.less"
 		},
 		"ext.gettingstarted.lightbulb.flyout": {
@@ -197,8 +196,7 @@
 				"mediawiki.Uri",
 				"mediawiki.util",
 				"mediawiki.user"
-			],
-			"position": "top"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
