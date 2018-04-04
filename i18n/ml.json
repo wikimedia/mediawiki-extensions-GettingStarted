@@ -43,6 +43,8 @@
 	"gettingstarted-lightbulb-flyout-back": "പുറകോട്ട്",
 	"gettingstarted-lightbulb-flyout-next": "അടുത്തത്",
 	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "ശുപാർശകളൊന്നും ഇല്ല!",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "ഏതാനം താളുകൾ തിരുത്താൻ ശ്രമിക്കൂ. അടുത്തതായി താങ്കൾക്ക് തിരുത്താനുള്ളവ ശുപാർശ ചെയ്യാൻ അത് ഞങ്ങളെ സഹായിക്കും.",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "അയ്യോ, ശുപാർശകൾ ഇപ്പോൾ പ്രദർശിപ്പിക്കാനാവില്ല.",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "ദയവായി വീണ്ടും ശ്രമിക്കുക.",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "ഏതെങ്കിലും താൾ",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "പുതുക്കുക"
