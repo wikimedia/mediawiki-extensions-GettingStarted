@@ -3,6 +3,8 @@
 namespace GettingStarted;
 
 use Category;
+use RedisConnRef;
+use RedisException;
 use Title;
 use User;
 use WikiPage;
@@ -208,7 +210,7 @@ class RedisCategorySync {
 					$redis->sRem( RedisCategorySync::makeCategoryKey( $category ), $pageID );
 				}
 				$redis->exec();
-			} catch ( \RedisException $e ) {
+			} catch ( RedisException $e ) {
 				wfDebugLog( 'GettingStarted', 'Redis exception: ' . $e->getMessage() . "\n" );
 			}
 		} );
