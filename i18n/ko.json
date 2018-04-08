@@ -7,7 +7,8 @@
 			"아라",
 			"고기랑",
 			"Namoroka",
-			"Revi"
+			"Revi",
+			"Ykhwong"
 		]
 	},
 	"gettingstarted": "시작하기",
@@ -40,5 +41,7 @@
 	"gettingstarted-cta-edit-page-sub": "어떻게 하는지 보여드리겠습니다",
 	"gettingstarted-cta-fix-pages": "제안된 문서 편집하기",
 	"gettingstarted-cta-fix-pages-sub": "쉬운 예를 보여드리겠습니다.",
-	"gettingstarted-cta-leave": "괜찮습니다. 나중에요."
+	"gettingstarted-cta-leave": "괜찮습니다. 나중에요.",
+	"apihelp-query+gettingstartedgetpages-description": "이 API는 특정한 GettingStarted 작업과 관련한 하나 이상의 문서 목록을 가져오기 위해 존재합니다.",
+	"apihelp-query+gettingstartedgetpages-summary": "이 API는 특정한 GettingStarted 작업과 관련한 하나 이상의 문서 목록을 가져오기 위해 존재합니다."
 }
