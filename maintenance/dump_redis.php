@@ -2,6 +2,8 @@
 
 namespace GettingStarted;
 
+use RedisConnRef;
+
 /**
  * Dumps Redis information for GettingStarted.
  * Intended primarily for debugging in test environments.

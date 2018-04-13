@@ -4,6 +4,9 @@ namespace GettingStarted;
 
 use FormatJson;
 use OutputPage;
+use ResourceLoader;
+use Skin;
+use SkinTemplate;
 use Title;
 use User;
 use WebRequest;

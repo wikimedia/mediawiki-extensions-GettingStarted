@@ -2,6 +2,10 @@
 
 namespace GettingStarted;
 
+use Category;
+use RedisConnRef;
+use RedisException;
+
 // See PageSuggester for API documentation
 class CategoryPageSuggester implements PageSuggester {
 	/** @var RedisConnRef */
@@ -13,10 +17,10 @@ class CategoryPageSuggester implements PageSuggester {
 	/**
 	 * Constructs a CategoryPageSuggester that uses the given category
 	 *
-	 * @param \RedisConnRef $redisConnection
-	 * @param \Category $category Category to use for suggestions
+	 * @param RedisConnRef $redisConnection
+	 * @param Category $category Category to use for suggestions
 	 */
-	public function __construct( \RedisConnRef $redisConnection, \Category $category ) {
+	public function __construct( RedisConnRef $redisConnection, Category $category ) {
 		$this->redisConnection = $redisConnection;
 		$this->category = $category;
 	}
