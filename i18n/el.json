@@ -4,7 +4,8 @@
 			"Geraki",
 			"Nikosguard",
 			"ZaDiak",
-			"Glavkos"
+			"Glavkos",
+			"Nikosgranturismogt"
 		]
 	},
 	"gettingstarted": "Ξεκινώντας",
@@ -31,12 +32,12 @@
 	"guidedtour-tour-gettingstarted-click-save-title": "Σχεδόν τελειώσατε!",
 	"guidedtour-tour-gettingstarted-click-save-description": "Κάντε κλικ στο κουμπί \"{{int:savearticle}}\" και οι αλλαγές σας θα είναι ορατές.",
 	"gettingstarted-cta-close": "Κλείσιμο",
-	"gettingstarted-cta-heading": "Βοήθεια {{SITENAME}}",
+	"gettingstarted-cta-heading": "Βοηθήστε στη βελτίωση της {{SITENAME}}",
 	"gettingstarted-cta-text": "Μπορείτε να συνεισφέρετε στη {{SITENAME}} με διάφορους τρόπους",
 	"gettingstarted-cta-edit-page": "Επεξεργασία αυτής της σελίδας",
 	"gettingstarted-cta-edit-page-sub": "Θα σας δείξουμε πώς",
 	"gettingstarted-cta-fix-pages": "Επεξεργαστείτε μια προτεινόμενη σελίδα",
-	"gettingstarted-cta-fix-pages-sub": "Θα σας δείξουμε πώς να επεξεργάζεστε",
+	"gettingstarted-cta-fix-pages-sub": "Θα πάρουμε κάτι εύκολο",
 	"gettingstarted-cta-leave": "Όχι ευχαριστώ, ίσως αργότερα",
 	"gettingstarted-lightbulb-flyout-back": "Πίσω",
 	"gettingstarted-lightbulb-flyout-next": "Επόμενο"
