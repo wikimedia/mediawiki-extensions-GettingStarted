@@ -3,6 +3,7 @@
 namespace GettingStarted;
 
 use Title;
+use WebRequest;
 
 class PageSuggesterFactory {
 	/**
@@ -20,7 +21,7 @@ class PageSuggesterFactory {
 	 *  is found
 	 */
 	public static function getPageSuggester(
-		$taskName, \WebRequest $request, Title $sourceTitle = null
+		$taskName, WebRequest $request, Title $sourceTitle = null
 	) {
 		global $wgGettingStartedCategoriesForTaskTypes;
 

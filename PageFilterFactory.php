@@ -2,6 +2,9 @@
 
 namespace GettingStarted;
 
+use Title;
+use User;
+
 class PageFilterFactory {
 	/**
 	 * Gets the PageFilter object for a given type
@@ -11,7 +14,7 @@ class PageFilterFactory {
 	 * @param Title $excludedTitle Title to exclude (optional)
 	 * @return CategoryPageFilter|BasePageFilter
 	 */
-	public static function getPageFilter( $taskName, \User $user, \Title $excludedTitle = null ) {
+	public static function getPageFilter( $taskName, User $user, Title $excludedTitle = null ) {
 		global $wgGettingStartedCategoriesForTaskTypes;
 
 		if ( isset( $wgGettingStartedCategoriesForTaskTypes[$taskName] ) ) {

@@ -3,6 +3,7 @@
 namespace GettingStarted;
 
 use Title;
+use WebRequest;
 
 class MoreLikePageSuggester implements PageSuggester {
 	/** @var WebRequest */
@@ -18,7 +19,7 @@ class MoreLikePageSuggester implements PageSuggester {
 	 * @param WebRequest $request Original web request
 	 * @param Title $baseTitle Title to base suggestions on
 	 */
-	public function __construct( \WebRequest $request, Title $baseTitle ) {
+	public function __construct( WebRequest $request, Title $baseTitle ) {
 		$this->request = $request;
 		$this->baseTitle = $baseTitle;
 	}
