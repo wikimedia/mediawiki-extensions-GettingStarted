@@ -23,7 +23,7 @@ class BasePageFilter {
 	 * Constructor.
 	 *
 	 * @param User $user user object, for permissions checks
-	 * @param Title $excludedTitle optional title to exclude, to avoid consecutive duplicates
+	 * @param Title|null $excludedTitle optional title to exclude, to avoid consecutive duplicates
 	 */
 	public function __construct( User $user, Title $excludedTitle = null ) {
 		$this->user = $user;

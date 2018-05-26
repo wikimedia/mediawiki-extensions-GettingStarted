@@ -14,7 +14,7 @@ class PageSuggesterFactory {
 	 *  CategoryPageSuggester or MoreLikeThisPageSuggester
 	 * @param WebRequest $request Request to use (needed for DerivativeRequest in some
 	 *  cases)
-	 * @param Title $sourceTitle Title of page used as a base for suggestions;
+	 * @param Title|null $sourceTitle Title of page used as a base for suggestions;
 	 *  Required only for MoreLikeThisSuggester, otherwise optional.
 	 *
 	 * @return PageSuggester|null PageSuggester object, or null if no valid suggester

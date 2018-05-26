@@ -11,7 +11,7 @@ class PageFilterFactory {
 	 *
 	 * @param string $taskName Task name
 	 * @param User $user User getting suggestions
-	 * @param Title $excludedTitle Title to exclude (optional)
+	 * @param Title|null $excludedTitle Title to exclude (optional)
 	 * @return CategoryPageFilter|BasePageFilter
 	 */
 	public static function getPageFilter( $taskName, User $user, Title $excludedTitle = null ) {
