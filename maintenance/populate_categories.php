@@ -54,8 +54,7 @@ class PopulateCategories extends \Maintenance {
 
 		$batches = array_chunk( $pages, 100 );
 		foreach ( $batches as $batch ) {
-			array_unshift( $batch, $key );
-			call_user_func_array( [ $redis, 'sAdd' ], $batch );
+			$redis->sAdd( $key, ...$batch );
 		}
 		return $redis->exec() ? count( $pages ) : 0;
 	}
