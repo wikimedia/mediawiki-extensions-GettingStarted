@@ -7,7 +7,8 @@
 			"StephDC",
 			"Justincheng12345",
 			"LNDDYL",
-			"Cwlin0416"
+			"Cwlin0416",
+			"Kly"
 		]
 	},
 	"gettingstarted": "入門指南",
@@ -48,6 +49,16 @@
 	"gettingstarted-lightbulb-text": "根據您最近的編輯所提出的建議。",
 	"gettingstarted-lightbulb-flyout-back": "上一頁",
 	"gettingstarted-lightbulb-flyout-next": "下一頁",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "但不建議！",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "請嘗試編輯一些頁面。這能幫助我們之後為您建議一些其它相關的編輯項目。",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "哎呀，我們不能現在就顯示出建議。",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "請重試。",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "隨機頁面",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "重新整理"
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "重新整理",
+	"apihelp-query+gettingstartedgetpages-description": "此 API 用於取得相關特定 GettingStarted 任務的一個或多個頁面清單。",
+	"apihelp-query+gettingstartedgetpages-summary": "此 API 用於取得相關特定 GettingStarted 任務的一個或多個頁面清單。",
+	"apihelp-query+gettingstartedgetpages-param-taskname": "任務名稱，通常是「copyedit」（審稿建議）或「morelike」（相似基礎頁面/排除標題的頁面）",
+	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "從清單中要排除的頁面完整標題，也被用為基於所指定頁面來建議的基礎標題",
+	"apihelp-query+gettingstartedgetpages-param-count": "請求計數會嘗試索取準確的數字，但在嘗試多次後未找出更多結果後，可能會減少索取",
+	"apierror-gettingstarted-nosuggester": "無法建置建議器。使用有效的 <var>taskname</var> 參數，提供所需的相依內容（像 <var>morelike</var> 會需要 CirrusSearch），並在當任務請求此時包含 <var>excludedtitle</var>。"
 }
