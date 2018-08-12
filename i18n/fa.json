@@ -9,7 +9,8 @@
 			"Reza1615",
 			"Taha",
 			"Calak",
-			"Alirezaaa"
+			"Alirezaaa",
+			"Ladsgroup"
 		]
 	},
 	"gettingstarted": "شروع",
@@ -50,6 +51,7 @@
 	"gettingstarted-lightbulb-text": "پیشنهادشده بر پایهٔ آخرین ویرایش‌تان.",
 	"gettingstarted-lightbulb-flyout-back": "بازگشت",
 	"gettingstarted-lightbulb-flyout-next": "بعدی",
+	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "لطفا دوباره تلاش کنید.",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "مقالهٔ تصادفی",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "تازه کردن"
 }
