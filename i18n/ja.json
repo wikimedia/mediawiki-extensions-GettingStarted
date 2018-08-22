@@ -5,7 +5,8 @@
 			"Shirayuki",
 			"Whym",
 			"Sujiniku",
-			"Otokoume"
+			"Otokoume",
+			"Suyama"
 		]
 	},
 	"gettingstarted": "はじめに",
@@ -41,6 +42,7 @@
 	"gettingstarted-cta-leave": "いや、また今度にします",
 	"gettingstarted-lightbulb-notification-body": "類似した記事を編集します。",
 	"gettingstarted-lightbulb-notification-body-lastedited": "最終更新: $1",
+	"gettingstarted-lightbulb-recommendations-personal-tool": "おすすめ",
 	"gettingstarted-lightbulb-flyout-back": "戻る",
 	"gettingstarted-lightbulb-flyout-next": "次へ",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "更新"
