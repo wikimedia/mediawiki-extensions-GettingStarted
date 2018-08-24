@@ -10,6 +10,9 @@ use User;
 use GettingStarted\TaskRecommendationsExperimentV1;
 use Tests\GettingStarted\Mocks\LoggedInUser;
 
+/**
+ * @covers GettingStarted\TaskRecommendationsExperimentV1
+ */
 class TaskRecommendationsExperimentV1Test extends \MediaWikiTestCase {
 	public function setUp() {
 		parent::setUp();
