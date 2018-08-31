@@ -1,10 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mehtab ahmed"
+			"Mehtab ahmed",
+			"Tweety"
 		]
 	},
 	"gettingstarted-cta-close": "بند ڪريو",
+	"gettingstarted-cta-fix-pages": "تجويز ڪيل صفحي ۾ ترميم ڪيو",
+	"gettingstarted-cta-fix-pages-sub": "اسان ڪجهه آسان پيش ڪنداسين",
+	"gettingstarted-cta-leave": "نه مهرباني، شايد ٻي ڪنهن وقت",
 	"gettingstarted-lightbulb-notification-body-lastedited": "$1 سنواريل",
 	"gettingstarted-lightbulb-flyout-next": "اڳيون"
 }
