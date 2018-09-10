@@ -25,8 +25,12 @@ class CategoryPageSuggester implements PageSuggester {
 		$this->category = $category;
 	}
 
-	// $offset is ignored because it does not make sense when randomly pulling articles
-	// out of Redis.
+	/**
+	 * @param int $count
+	 * @param int $offset Ignored, because it does not make sense when randomly pulling articles
+	 *   out of Redis.
+	 * @return Title[]
+	 */
 	public function getArticles( $count, $offset ) {
 		$key = RedisCategorySync::makeCategoryKey( $this->category );
 
