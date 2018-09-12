@@ -27,7 +27,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Xem trước (tùy chọn)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Bấm “{{int:showpreview}}” để xem trước trang với các thay đổi của bạn. Hãy nhớ lưu trang.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Gần xong!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Bấm “{{int:savearticle}}” là các thay đổi của bạn sẽ được áp dụng vào trang.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Bấm “{{int:publishchanges}}” là các thay đổi của bạn sẽ được áp dụng vào trang.",
 	"gettingstarted-cta-close": "Đóng",
 	"gettingstarted-cta-heading": "Giúp cải thiện {{SITENAME}}",
 	"gettingstarted-cta-text": "Có nhiều cách để đóng góp vào {{SITENAME}}",

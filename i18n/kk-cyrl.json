@@ -27,7 +27,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Қарап шығу (міндетті емес)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "«{{int:showpreview}}» батырмасын бассаңыз өзгерістеріңіздің бұл бетке қалай өзгертетінін көре аласыз. Тек сақтауды ұмытпаңыз.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Сіз бітейін деп қалдыңыз!",
-	"guidedtour-tour-gettingstarted-click-save-description": "«{{int:savearticle}}» батырмасын бассаңыз сіздің өзгерістеріңіз көрінетін болады.",
+	"guidedtour-tour-gettingstarted-click-save-description": "«{{int:publishchanges}}» батырмасын бассаңыз сіздің өзгерістеріңіз көрінетін болады.",
 	"gettingstarted-cta-close": "Жабу",
 	"gettingstarted-cta-heading": "{{SITENAME}} жобасын жақсартуға көмектесіңіз",
 	"gettingstarted-cta-text": "Сіз түрлі жолдармен {{SITENAME}} жобасына үлес қоса аласыз",

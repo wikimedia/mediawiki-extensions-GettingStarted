@@ -31,7 +31,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "プレビュー (省略可能)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "「{{int:showpreview}}」をクリックすると、ページの編集結果の見た目を確認できます。保存するのを忘れないようにしてください。",
 	"guidedtour-tour-gettingstarted-click-save-title": "もう少しで終わります!",
-	"guidedtour-tour-gettingstarted-click-save-description": "「{{int:savearticle}}」をクリックすると、変更内容が最新版として保存されます。",
+	"guidedtour-tour-gettingstarted-click-save-description": "「{{int:publishchanges}}」をクリックすると、変更内容が最新版として保存されます。",
 	"gettingstarted-cta-close": "閉じる",
 	"gettingstarted-cta-heading": "{{SITENAME}}の改善を支援しましょう",
 	"gettingstarted-cta-text": "{{SITENAME}}では、さまざまな方法で貢献できます。",

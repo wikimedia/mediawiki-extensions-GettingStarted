@@ -27,7 +27,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Forskoða (valfrjálst)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Með því að smella á „{{int:showpreview}}” þá getur þú séð hvernig síðan mun líta út með breytingunum þínum. Bara ekki gleyma að vista.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Þú ert næstum búin/n!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Smelltu á „{{int:savearticle}}” og breytingarnar þínar verða sýnilegar.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Smelltu á „{{int:publishchanges}}” og breytingarnar þínar verða sýnilegar.",
 	"gettingstarted-cta-close": "Loka",
 	"gettingstarted-cta-heading": "Hjálpa að bæta {{SITENAME}}",
 	"gettingstarted-cta-text": "Þú getur gert breytingar á {{SITENAME}} á nokkra vegu",

@@ -34,7 +34,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Podgląd (opcjonalnie)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Kliknięcie ''{{int:showpreview}}'' pozwala ci sprawdzić, jak strona będzie wyglądała po twoich zmianach. Nie zapomnij ich zapisać.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Prawie gotowe!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Kliknij „{{int:savearticle}}”, a twoje zmiany będą widoczne.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Kliknij „{{int:publishchanges}}”, a twoje zmiany będą widoczne.",
 	"gettingstarted-cta-close": "Zamknij",
 	"gettingstarted-cta-heading": "Pomóż ulepszać {{GRAMMAR:B.lp|{{SITENAME}}}}",
 	"gettingstarted-cta-text": "Możesz w różny sposób wnieść wkład w {{GRAMMAR:B.lp|{{SITENAME}}}}",

@@ -30,7 +30,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Förhandsgranska (valfritt)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Genom att klicka på \"{{int:showpreview}}\" kan du se hur sidan ser ut med dina ändringar. Glöm bara inte att spara.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Du är nästan klar!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Klicka på \"{{int:savearticle}}\" och dina ändringar kommer att bli synliga.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Klicka på \"{{int:publishchanges}}\" och dina ändringar kommer att bli synliga.",
 	"gettingstarted-cta-close": "Stäng",
 	"gettingstarted-cta-heading": "Hjälp till att förbättra {{SITENAME}}",
 	"gettingstarted-cta-text": "Du kan bidra till {{SITENAME}} på olika sätt",

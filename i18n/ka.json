@@ -10,7 +10,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "შეიტანეთ თქვენი ცვლილებები და შეინახეთ",
 	"guidedtour-tour-gettingstarted-click-preview-title": "წინასწარი გადახედვა (არასავალდებულო)",
 	"guidedtour-tour-gettingstarted-click-save-title": "თქვენ თითქმის დაასრულეთ!",
-	"guidedtour-tour-gettingstarted-click-save-description": "დააწკაპუნეთ „{{int:savearticle}}“ და თქვენი ცვლილებები ხილული გახდება.",
+	"guidedtour-tour-gettingstarted-click-save-description": "დააწკაპუნეთ „{{int:publishchanges}}“ და თქვენი ცვლილებები ხილული გახდება.",
 	"gettingstarted-cta-close": "დახურვა",
 	"gettingstarted-cta-heading": "დაგვეხმარეთ გავაუმჯობესოთ {{SITENAME}}",
 	"gettingstarted-cta-edit-page": "ამ გვერდის რედაქტირება",

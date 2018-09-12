@@ -15,7 +15,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Přehlad (opcionalny)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Kliknjenje an '{{int:showpreview}}' ći zmóžnja kontrolować, kak strona z twojimi změnami wupada. Njezabudź na składowanje.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Sy nimale hotowy!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Klikń na '{{int:savearticle}}' a twoje změny budu widźomne.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Klikń na '{{int:publishchanges}}' a twoje změny budu widźomne.",
 	"gettingstarted-cta-close": "Začinić",
 	"gettingstarted-cta-heading": "Pomoc {{GRAMMAR:genitiw|{{SITENAME}}}}",
 	"gettingstarted-cta-edit-page": "Tutu stronu wobdźěłać"

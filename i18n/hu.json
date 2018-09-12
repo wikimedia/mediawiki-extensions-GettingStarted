@@ -28,7 +28,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Előnézet (opcionális)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Az „{{int:showpreview}}” gombra kattintva megnézheted, hogyan néz majd ki az oldal a módosításaid után. Csak ne felejtsd el elmenteni a végén.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Mindjárt végzünk!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Kattints a „{{int:savearticle}}” gombra, és a változtatásaid megjelennek.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Kattints a „{{int:publishchanges}}” gombra, és a változtatásaid megjelennek.",
 	"gettingstarted-cta-close": "Bezárás",
 	"gettingstarted-cta-heading": "Segíts a {{SITENAME}} írásában",
 	"gettingstarted-cta-text": "Többféleképpen is segíthetsz a {{SITENAME}} írásában",

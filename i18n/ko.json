@@ -33,7 +33,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "미리 보기 (선택 사항)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "\"{{int:showpreview}}\"를 클릭하면 문서가 어떻게 바뀌었는지 확인할 수 있습니다. 저장하는 것을 잊지 마세요.",
 	"guidedtour-tour-gettingstarted-click-save-title": "거의 끝났습니다!",
-	"guidedtour-tour-gettingstarted-click-save-description": "'{{int:savearticle}}'을 클릭하여 바뀜을 볼 수 있습니다.",
+	"guidedtour-tour-gettingstarted-click-save-description": "'{{int:publishchanges}}'을 클릭하여 바뀜을 볼 수 있습니다.",
 	"gettingstarted-cta-close": "닫기",
 	"gettingstarted-cta-heading": "{{SITENAME}}을(를) 개선하는데 도움을 주세요",
 	"gettingstarted-cta-text": "당신은 {{SITENAME}}에 다양한 방법으로 기여할 수 있습니다.",

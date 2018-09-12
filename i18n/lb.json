@@ -27,7 +27,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Weisen ouni ze späicheren (fakuktativ)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Klickt op {{int:showpreview}}, fir ze gesinn, wéi d'Säit mat dengen Ännerungen ausgesäit. Vergiesst net ze späicheren.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Dir sidd bal fäerdeg!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Klickt op '{{int:savearticle}}' an Är Ännerunge sinn ze gesinn.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Klickt op '{{int:publishchanges}}' an Är Ännerunge sinn ze gesinn.",
 	"gettingstarted-cta-close": "Zoumaachen",
 	"gettingstarted-cta-heading": "Hëlleft {{SITENAME}} ze verbesseren",
 	"gettingstarted-cta-text": "Dir kënnt op verschidde Manéieren op {{SITENAME}} matmaachen",

@@ -16,7 +16,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Móžoš wobźěłaś!",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Pśeglěd (opcionalny)",
 	"guidedtour-tour-gettingstarted-click-save-title": "Sy skóro gótowy!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Klikni na '{{int:savearticle}}' a twóje změny budu widobne.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Klikni na '{{int:publishchanges}}' a twóje změny budu widobne.",
 	"gettingstarted-cta-close": "Zacyniś",
 	"gettingstarted-cta-heading": "Pomoc {{GRAMMAR:genitiw|{{SITENAME}}}}",
 	"gettingstarted-cta-edit-page": "Toś ten bok wobźěłaś",

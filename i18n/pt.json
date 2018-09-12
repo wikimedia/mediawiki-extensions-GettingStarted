@@ -35,7 +35,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Antevisão (opcional)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Clicar em ''{{int:showpreview}}'' permite-lhe verificar como a página ficará após as suas alterações. Mas não se esqueça de as gravar.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Está quase a terminar!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Clique em ''{{int:savearticle}}'' e as suas alterações serão visíveis.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Clique em ''{{int:publishchanges}}'' e as suas alterações serão visíveis.",
 	"gettingstarted-cta-close": "Fechar",
 	"gettingstarted-cta-heading": "Ajude a melhorar a wiki {{SITENAME}}",
 	"gettingstarted-cta-text": "Pode contribuir na wiki {{SITENAME}} de diferentes maneiras",

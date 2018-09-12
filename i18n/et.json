@@ -22,6 +22,6 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Kui tahad redigeerida kindlat alaosa, saad klõpsata iga alaosa pealkirja lähedal lingil \"{{int:editsection}}\".",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Eelvaade (valikuline)",
 	"guidedtour-tour-gettingstarted-click-save-title": "Sa oled peaaegu lõpetanud!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Vajuta '{{int:savearticle}}' ja sinu muudatused on nähtavad.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Vajuta '{{int:publishchanges}}' ja sinu muudatused on nähtavad.",
 	"gettingstarted-cta-close": "Sule"
 }

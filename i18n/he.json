@@ -32,7 +32,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "תצוגה מקדימה (לא חובה)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "לחיצה על \"{{int:showpreview}}\" מאפשרת לך לראות איך ייראה הדף עם השינויים שלך. רק לא לשכוח לשמור!",
 	"guidedtour-tour-gettingstarted-click-save-title": "כמעט סיימת!",
-	"guidedtour-tour-gettingstarted-click-save-description": "נשאר ללחוץ על \"{{int:savearticle}}\" והשינויים שלך יהיו גלויים.",
+	"guidedtour-tour-gettingstarted-click-save-description": "נשאר ללחוץ על \"{{int:publishchanges}}\" והשינויים שלך יהיו גלויים.",
 	"gettingstarted-cta-close": "סגירה",
 	"gettingstarted-cta-heading": "איך לעזור לשפר את {{SITENAME}}",
 	"gettingstarted-cta-text": "אפשר לתרום ל{{GRAMMAR:תחילית|{{SITENAME}}}} בדרכים שונות",

@@ -26,7 +26,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "എങ്ങനെയുണ്ടെന്ന് കാണുക (നിർബന്ധമല്ല)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "\"{{int:showpreview}}\" അമർത്തുമ്പോൾ, താങ്കൾ ചേർത്ത തിരുത്തുകളുൾപ്പെടെ താൾ എപ്രകാരമാണ് പ്രത്യക്ഷപ്പെടുക എന്ന് പരിശോധിക്കാനാവും. പിന്നീട് മാറ്റങ്ങൾ സേവ് ചെയ്യാൻ മറക്കരുത്.",
 	"guidedtour-tour-gettingstarted-click-save-title": "ഇത് മിക്കവാറും പൂർത്തിയായിട്ടുണ്ട്!",
-	"guidedtour-tour-gettingstarted-click-save-description": "\"{{int:savearticle}}\" അമർത്തിയാൽ താങ്കൾ വരുത്തിയ മാറ്റങ്ങൾ ഫലത്തിൽ വരുന്നതാണ്.",
+	"guidedtour-tour-gettingstarted-click-save-description": "\"{{int:publishchanges}}\" അമർത്തിയാൽ താങ്കൾ വരുത്തിയ മാറ്റങ്ങൾ ഫലത്തിൽ വരുന്നതാണ്.",
 	"gettingstarted-cta-close": "അടയ്ക്കുക",
 	"gettingstarted-cta-heading": "{{SITENAME}} മെച്ചപ്പെടുത്തുവാൻ സഹായിക്കുക",
 	"gettingstarted-cta-text": "താങ്കൾക്ക് {{SITENAME}} സംരംഭത്തെ പലവിധത്തിൽ സഹായിക്കാനാവും",

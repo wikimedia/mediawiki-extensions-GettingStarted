@@ -35,7 +35,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "پیش‌نمایش (اختیاری)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "کلیک بر «{{int:showpreview}}» اجازه می‌دهد که ببینید با تغییراتتان چگونه خواهد شد. فقط فراموش نکنید که ذخیره کنید.",
 	"guidedtour-tour-gettingstarted-click-save-title": "کار شما تقریباً تمام شده‌است!",
-	"guidedtour-tour-gettingstarted-click-save-description": "\"{{int:savearticle}}\" را کلیک کنید و تغییرات شما قابل‌ مشاهده خواهد بود.",
+	"guidedtour-tour-gettingstarted-click-save-description": "\"{{int:publishchanges}}\" را کلیک کنید و تغییرات شما قابل‌ مشاهده خواهد بود.",
 	"gettingstarted-cta-close": "بستن",
 	"gettingstarted-cta-heading": "کمک به بهبود {{SITENAME}}",
 	"gettingstarted-cta-text": "شما می‌توانید از راه‌های مختلف به {{SITENAME}} کمک کنید",

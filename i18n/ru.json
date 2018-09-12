@@ -36,7 +36,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Предварительный просмотр (не обязательно)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Нажатие «{{int:showpreview}}» позволяет проверить, как будет выглядеть страница с вашими изменениями. Только не забудьте её потом сохранить.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Вы почти закончили!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Нажмите «{{int:savearticle}}» и ваши изменения станут видны.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Нажмите «{{int:publishchanges}}» и ваши изменения станут видны.",
 	"gettingstarted-cta-close": "Закрыть",
 	"gettingstarted-cta-heading": "Помогите улучшить проект «{{SITENAME}}»",
 	"gettingstarted-cta-text": "Вы можете помочь сайту {{SITENAME}} по-разному",

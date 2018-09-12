@@ -30,7 +30,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Προεπισκόπηση (προαιρετικό)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Κάνοντας κλικ στο \"{{int:showpreview}}\" σας επιτρέπει να δείτε πως θα είναι η σελίδα μετά τις αλλαγές που κάνατε. Απλά μην ξεχάσετε να αποθηκεύσετε!",
 	"guidedtour-tour-gettingstarted-click-save-title": "Σχεδόν τελειώσατε!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Κάντε κλικ στο κουμπί \"{{int:savearticle}}\" και οι αλλαγές σας θα είναι ορατές.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Κάντε κλικ στο κουμπί \"{{int:publishchanges}}\" και οι αλλαγές σας θα είναι ορατές.",
 	"gettingstarted-cta-close": "Κλείσιμο",
 	"gettingstarted-cta-heading": "Βοηθήστε στη βελτίωση της {{SITENAME}}",
 	"gettingstarted-cta-text": "Μπορείτε να συνεισφέρετε στη {{SITENAME}} με διάφορους τρόπους",

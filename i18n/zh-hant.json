@@ -33,7 +33,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "預覽 (選用)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "點選 \"{{int:showpreview}}\"，可讓您檢視經過您更改後的頁面。 注意，別忘了儲存。",
 	"guidedtour-tour-gettingstarted-click-save-title": "您快要完成了！",
-	"guidedtour-tour-gettingstarted-click-save-description": "點選 \"{{int:savearticle}}\"，您的變更將可被其他人看到。",
+	"guidedtour-tour-gettingstarted-click-save-description": "點選 \"{{int:publishchanges}}\"，您的變更將可被其他人看到。",
 	"gettingstarted-cta-close": "關閉",
 	"gettingstarted-cta-heading": "協助改善 {{SITENAME}}",
 	"gettingstarted-cta-text": "您可以使用各種方式貢獻 {{SITENAME}}",

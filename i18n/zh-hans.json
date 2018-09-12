@@ -42,7 +42,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "预览（可选）",
 	"guidedtour-tour-gettingstarted-click-preview-description": "点击“{{int:showpreview}}”，您将看到您在该页面作出了哪些更改。别忘了保存。",
 	"guidedtour-tour-gettingstarted-click-save-title": "马上就完成了！",
-	"guidedtour-tour-gettingstarted-click-save-description": "点击“{{int:savearticle}}”，您作出的更改将被保存并众人可见。",
+	"guidedtour-tour-gettingstarted-click-save-description": "点击“{{int:publishchanges}}”，您作出的更改将被保存并众人可见。",
 	"gettingstarted-cta-close": "关闭",
 	"gettingstarted-cta-heading": "帮助改进{{SITENAME}}",
 	"gettingstarted-cta-text": "您可以以各种方式为{{SITENAME}}做贡献",

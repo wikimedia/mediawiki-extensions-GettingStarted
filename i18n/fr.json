@@ -40,7 +40,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Aperçu (facultatif)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Cliquer sur « {{int:showpreview}} » vous permet de vérifier à quoi ressemblera la page avec vos modifications. N’oubliez pas ensuite de les enregistrer.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Vous avez presque fini !",
-	"guidedtour-tour-gettingstarted-click-save-description": "Cliquez sur « {{int:savearticle}} » et vos modifications seront visibles.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Cliquez sur « {{int:publishchanges}} » et vos modifications seront visibles.",
 	"gettingstarted-cta-close": "Fermer",
 	"gettingstarted-cta-heading": "Aidez à améliorer {{SITENAME}}",
 	"gettingstarted-cta-text": "Vous pouvez contribuer à {{SITENAME}} de différentes façons",

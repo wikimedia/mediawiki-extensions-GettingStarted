@@ -26,7 +26,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Преглед (незадолжително)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Ако стиснете на „{{int:showpreview}}“ ќе видите како ќе изгледа страницата со вашите измени. Само не заборавајте да ги зачувате.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Речиси сте готови!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Стиснете на „{{int:savearticle}}“ и измените ќе бидат видливи.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Стиснете на „{{int:publishchanges}}“ и измените ќе бидат видливи.",
 	"gettingstarted-cta-close": "Затвори",
 	"gettingstarted-cta-heading": "Помогнете ни во подобрувањето на {{SITENAME}}",
 	"gettingstarted-cta-text": "Можете да придонесувате на {{SITENAME}} на различни начини",

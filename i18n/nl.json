@@ -34,7 +34,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Voorvertoning (optioneel)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Door te klikken op \"{{int:showpreview}}\" kunt u zien hoe de pagina wordt weergegeven met uw wijzigingen. Vergeet uw wijzigingen niet op te slaan.",
 	"guidedtour-tour-gettingstarted-click-save-title": "U bent bijna klaar!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Klik \"{{int:savearticle}}\" zodat uw wijzigingen zichtbaar worden.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Klik \"{{int:publishchanges}}\" zodat uw wijzigingen zichtbaar worden.",
 	"gettingstarted-cta-close": "Sluiten",
 	"gettingstarted-cta-heading": "Help {{SITENAME}} verbeteren",
 	"gettingstarted-cta-text": "U kunt op meerdere manieren bijdragen aan {{SITENAME}}",
