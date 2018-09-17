@@ -21,6 +21,8 @@ class PopulateCategories extends \Maintenance {
 	private $mClient;
 
 	public function __construct() {
+		parent::__construct();
+
 		$this->mDescription = 'Populates GettingStarted Redis sets from categories';
 		$this->requireExtension( 'GettingStarted' );
 	}

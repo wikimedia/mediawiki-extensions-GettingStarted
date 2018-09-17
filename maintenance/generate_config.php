@@ -36,6 +36,8 @@ class GenerateConfig extends \Maintenance {
 	];
 
 	public function __construct() {
+		parent::__construct();
+
 		$this->mDescription = 'Generates files that contain the values for the ' .
 			'wgGettingStartedCategoriesForTaskTypes and wgGettingStartedExcludedCategories ' .
 			'configuration variables from specific Wikidata entities.';
