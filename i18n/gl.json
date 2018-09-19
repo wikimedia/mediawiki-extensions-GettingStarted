@@ -29,7 +29,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Vista previa (opcional)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Premer en \"{{int:showpreview}}\" serve para comprobar como se verá a páxina coas modificacións. Non esqueza gardar despois.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Case rematou!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Prema en \"{{int:savearticle}}\" para facer visibles as súas modificacións.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Prema en \"{{int:publishchanges}}\" para facer visibles as súas modificacións.",
 	"gettingstarted-cta-close": "Pechar",
 	"gettingstarted-cta-heading": "Axude a mellorar {{SITENAME}}",
 	"gettingstarted-cta-text": "Pode colaborar en {{SITENAME}} de diferentes xeitos",

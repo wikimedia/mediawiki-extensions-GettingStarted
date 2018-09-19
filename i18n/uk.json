@@ -31,7 +31,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Попередній перегляд (необов'язково)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Клацання «{{int:showpreview}}» дає змогу перевіряти вигляд сторінки із внесеними змінами. Тільки не забудьте зберегти.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Ви майже закінчили!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Натисніть '{{int:savearticle}}' і зміни буде видно.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Натисніть '{{int:publishchanges}}' і зміни буде видно.",
 	"gettingstarted-cta-close": "Закрити",
 	"gettingstarted-cta-heading": "Допоможіть удосконалити {{GRAMMAR:accusative|SITENAME}}",
 	"gettingstarted-cta-text": "Ви можете внести свій внесок {{SITENAME}} по-різному",

@@ -30,7 +30,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Anteprima (opzionale)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Facendo clic su \"{{int:showpreview}}\" ti permette di vedere quello che sarà l'aspetto della pagina con le tue modifiche. Non ti dimenticare di salvare.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Hai quasi finito!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Fai click su '{{int:savearticle}}' e le modifiche saranno visibili.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Fai click su '{{int:publishchanges}}' e le modifiche saranno visibili.",
 	"gettingstarted-cta-close": "Chiudi",
 	"gettingstarted-cta-heading": "Aiutaci a migliorare {{SITENAME}}",
 	"gettingstarted-cta-text": "Puoi contribuire a {{SITENAME}} in diversi modi",

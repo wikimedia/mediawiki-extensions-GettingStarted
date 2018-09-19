@@ -30,7 +30,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Pregled (nije obavezno)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Klikanje na \"{{int:showpreview}}\" omogućava Vam da vidite kako bi stranica izgledala s Vašim izmjenama. Nemojte na kraju zaboraviti sačuvati izmjene.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Skoro ste gotovi!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Kliknite \"{{int:savearticle}}\" i Vaše izmjene bit će prikazane.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Kliknite \"{{int:publishchanges}}\" i Vaše izmjene bit će prikazane.",
 	"gettingstarted-cta-close": "Zatvori",
 	"gettingstarted-cta-heading": "Poboljšaj {{GRAMMAR:akuzativ|{{SITENAME}}}}",
 	"gettingstarted-cta-text": "Možete doprinijeti stranici {{SITENAME}} na različite načine",

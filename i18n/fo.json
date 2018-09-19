@@ -26,7 +26,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Forskoðan (valfrítt)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Eitt klikk á \"{{int:showpreview}}\" loyvir tær at síggja, hvussu síðan fer at síggja út við tínum broytingum. Tú mást bara ikki gloyma at goyma.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Tú ert næstan liðug/ur!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Trýst á \"{{int:savearticle}}\" og tínar broytingar gerast sjónligar.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Trýst á \"{{int:publishchanges}}\" og tínar broytingar gerast sjónligar.",
 	"gettingstarted-cta-close": "Lat aftur",
 	"gettingstarted-cta-heading": "Hjálp {{SITENAME}}",
 	"gettingstarted-cta-text": "Tú kanst geva títt íkast til {{SITENAME}} á ymiskar mátar",

@@ -28,7 +28,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "عرض (اختياري)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "النقر على \"{{int:showpreview}}\" يسمح لك بأن ترى كيف ستبدو الصفحة مع التغييرات، فقط لا تنسى الحفظ.",
 	"guidedtour-tour-gettingstarted-click-save-title": "لقد انتهيت تقريبا!",
-	"guidedtour-tour-gettingstarted-click-save-description": "اضغط على '{{int:savearticle}}' وسيتم حفظ تغييراتك.",
+	"guidedtour-tour-gettingstarted-click-save-description": "اضغط على '{{int:publishchanges}}' وسيتم حفظ تغييراتك.",
 	"gettingstarted-cta-close": "إغلاق",
 	"gettingstarted-cta-heading": "ساعد في تحسين {{SITENAME}}",
 	"gettingstarted-cta-text": "يمكنك المساهمة في {{SITENAME}} بطرق مختلفة",

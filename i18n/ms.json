@@ -27,7 +27,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Pralihat (tidak wajib)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Mengklik '{{int:showpreview}}' membolehkan anda untuk menyemak rupa halaman dengan suntingan anda. Jangan lupa untuk simpan.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Anda hampir siap!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Klik '{{int:savearticle}}' untuk memperlihatkan suntingan anda.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Klik '{{int:publishchanges}}' untuk memperlihatkan suntingan anda.",
 	"gettingstarted-cta-close": "Tutup",
 	"gettingstarted-cta-edit-page": "Sunting laman ini",
 	"gettingstarted-cta-fix-pages": "Sunting laman cadangan",

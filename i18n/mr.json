@@ -28,7 +28,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "झलक (ऐच्छिक)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "\"{{int:showpreview}}\" टिचकण्याने, आपणास आपण केलेल्या बदलांसह ते पान कसे दिसेल, ते बघण्याची अनुमती मिळते.त्यानंतर जतन करण्यास मात्र विसरु नका.",
 	"guidedtour-tour-gettingstarted-click-save-title": "होतच आले!",
-	"guidedtour-tour-gettingstarted-click-save-description": "\"{{int:savearticle}}\" वर टिचका व आपले बदल दृश्य होतील.",
+	"guidedtour-tour-gettingstarted-click-save-description": "\"{{int:publishchanges}}\" वर टिचका व आपले बदल दृश्य होतील.",
 	"gettingstarted-cta-close": "बंद करा",
 	"gettingstarted-cta-heading": "{{SITENAME}} सुधरवण्यास मदत करा",
 	"gettingstarted-cta-text": "आपण {{SITENAME}} वर वेगवेगळ्या मार्गांनी योगदान करु शकता",

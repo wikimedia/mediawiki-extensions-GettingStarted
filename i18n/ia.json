@@ -25,5 +25,5 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Previsualisation (optional)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Cliccar sur \"{{int:showpreview}}\" permitte verificar le aspecto del pagina con tu modificationes. Solmente non oblida de salveguardar lo.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Tu ha quasi finite!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Clicca sur \"{{int:savearticle}}\" e tu modificationes essera visibile."
+	"guidedtour-tour-gettingstarted-click-save-description": "Clicca sur \"{{int:publishchanges}}\" e tu modificationes essera visibile."
 }

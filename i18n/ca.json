@@ -30,7 +30,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Previsualització (opcional)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Si feu clic a «{{int:showpreview}}» podreu veure com quedarà la pàgina amb els vostres canvis. No us oblideu de desar.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Gairebé heu acabat!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Feu clic a '{{int:savearticle}}' i els vostres canvis seran visibles.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Feu clic a '{{int:publishchanges}}' i els vostres canvis seran visibles.",
 	"gettingstarted-cta-close": "Tanca",
 	"gettingstarted-cta-heading": "Ajudeu a millorar {{SITENAME}}",
 	"gettingstarted-cta-text": "Podeu contribuir a {{SITENAME}} de diferents formes",

@@ -29,7 +29,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Esikatselu (valinnainen)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Napsauttamalla \"{{int:showpreview}}\" näet miltä sivu näyttää muutostesi jälkeen. Älä unohda tallentaa.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Olet melkein valmis!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Napsauta »{{int:savearticle}}» ja muutoksesi tulevat näkyviin.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Napsauta »{{int:publishchanges}}» ja muutoksesi tulevat näkyviin.",
 	"gettingstarted-cta-close": "Sulje",
 	"gettingstarted-cta-text": "Voit osallistua sivuston {{SITENAME}} muokkaamiseen eri tavoin",
 	"gettingstarted-cta-edit-page": "Muokkaa tätä sivua",

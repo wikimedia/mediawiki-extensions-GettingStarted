@@ -26,7 +26,7 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Vista previa (opcional)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Si calques «{{int:showpreview}}» podrás ver l'aspeutu que tendrá la páxina colos cambios. Pero nun escaezas guardala.",
 	"guidedtour-tour-gettingstarted-click-save-title": "¡Yá casi acabó!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Calque \"{{int:savearticle}}\" y los cambios sedrán visibles.",
+	"guidedtour-tour-gettingstarted-click-save-description": "Calque \"{{int:publishchanges}}\" y los cambios sedrán visibles.",
 	"gettingstarted-cta-close": "Zarrar",
 	"gettingstarted-cta-heading": "Ayuda a enantar {{SITENAME}}",
 	"gettingstarted-cta-text": "Puedes collaborar con {{SITENAME}} de distintes maneres",
