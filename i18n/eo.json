@@ -2,8 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"KuboF",
-			"Yekrats"
+			"Yekrats",
+			"YvesNevelsteen"
 		]
 	},
-	"gettingstarted": "Unuaj paŝoj"
+	"gettingstarted": "Unuaj paŝoj",
+	"gettingstarted-lightbulb-flyout-next": "Sekva"
 }
