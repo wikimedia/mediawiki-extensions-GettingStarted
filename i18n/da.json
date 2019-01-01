@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Christian List",
-			"Saederup92"
+			"Saederup92",
+			"Kranix"
 		]
 	},
 	"gettingstarted": "Kom godt i gang",
@@ -32,15 +33,17 @@
 	"gettingstarted-cta-text": "Du kan bidrage til {{SITENAME}} på forskellige måder",
 	"gettingstarted-cta-edit-page": "Redigér denne side",
 	"gettingstarted-cta-edit-page-sub": "Vi vil vise dig hvordan",
-	"gettingstarted-cta-fix-pages": "Find sider, der har brug for lette rettelser",
-	"gettingstarted-cta-fix-pages-sub": "Vi vil vise dig hvordan du kan redigere",
+	"gettingstarted-cta-fix-pages": "Rediger en foreslået side",
+	"gettingstarted-cta-fix-pages-sub": "Vi finder noget nemt",
 	"gettingstarted-cta-leave": "Nej tak, måske senere",
 	"gettingstarted-lightbulb-notification-body": "Rediger en lignende artikel.",
 	"gettingstarted-lightbulb-notification-body-lastedited": "Redigerede $1",
 	"gettingstarted-lightbulb-recommendations-personal-tool": "Anbefalinger",
 	"gettingstarted-lightbulb-heading": "Sider der skal forbedres",
+	"gettingstarted-lightbulb-text": "Anbefalet baseret på din seneste redigering.",
 	"gettingstarted-lightbulb-flyout-back": "Tilbage",
 	"gettingstarted-lightbulb-flyout-next": "Næste",
+	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Ingen anbefalinger endnu!",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Prøv venligst igen.",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Tilfældig side"
 }
