@@ -5,6 +5,7 @@ namespace GettingStarted;
 use Category;
 use RedisConnRef;
 use RedisException;
+use Title;
 
 // See PageSuggester for API documentation
 class CategoryPageSuggester implements PageSuggester {
@@ -47,7 +48,7 @@ class CategoryPageSuggester implements PageSuggester {
 		}
 
 		if ( is_array( $randomArticleIDs ) ) {
-			return \Title::newFromIDs( $randomArticleIDs );
+			return Title::newFromIDs( $randomArticleIDs );
 		} else {
 			wfDebugLog( 'GettingStarted', 'Redis returned a non-array value, possibly an error.' );
 			return [];
