@@ -29,7 +29,7 @@ class Hooks {
 	 * Key - string - is title in getPrefixedText format
 	 * Value - string - task
 	 *
-	 * @var null|Array
+	 * @var null|string[]
 	 */
 	protected static $openTask = null;
 
@@ -82,7 +82,7 @@ class Hooks {
 	 *
 	 * @param WebRequest $request current request
 	 * @param Title $title title to check
-	 * @return array|null
+	 * @return string|null
 	 */
 	public static function getPageTask( WebRequest $request, Title $title ) {
 		self::initializeOpenTask( $request );
@@ -374,7 +374,7 @@ class Hooks {
 	 * hook.  If user is not mobile, tweak the page returned to or its
 	 * parameters.
 	 * @param string &$returnTo page name to redirect to
-	 * @param array &$returnToQuery key value pairs of url parameters
+	 * @param string &$returnToQuery url parameters
 	 * @param bool $stickHTTPS Keep redirect link on HTTPs
 	 * @param string $type login redirect condition
 	 * @return true
