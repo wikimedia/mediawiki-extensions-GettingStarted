@@ -119,5 +119,5 @@ class GenerateConfig extends \Maintenance {
 	}
 }
 
-$maintClass = 'GettingStarted\GenerateConfig';
+$maintClass = GenerateConfig::class;
 require_once RUN_MAINTENANCE_IF_MAIN;

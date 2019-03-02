@@ -72,5 +72,5 @@ class DumpRedisCategorySync extends \Maintenance {
 	}
 }
 
-$maintClass = 'GettingStarted\DumpRedisCategorySync';
+$maintClass = DumpRedisCategorySync::class;
 require_once RUN_MAINTENANCE_IF_MAIN;

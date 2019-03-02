@@ -76,5 +76,5 @@ class PopulateCategories extends \Maintenance {
 	}
 }
 
-$maintClass = 'GettingStarted\PopulateCategories';
+$maintClass = PopulateCategories::class;
 require_once RUN_MAINTENANCE_IF_MAIN;

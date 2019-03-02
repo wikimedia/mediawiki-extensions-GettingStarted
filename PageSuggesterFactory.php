@@ -37,7 +37,7 @@ class PageSuggesterFactory {
 			$category = \Category::newFromTitle( $sanitizedTitle );
 
 			return new CategoryPageSuggester( $redis, $category );
-		} elseif ( class_exists( 'CirrusSearch' ) &&
+		} elseif ( class_exists( \CirrusSearch::class ) &&
 			$taskName === 'morelike' &&
 			$sourceTitle !== null ) {
 			return new MoreLikePageSuggester( $request, $sourceTitle );

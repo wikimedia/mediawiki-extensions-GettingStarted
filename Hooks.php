@@ -51,7 +51,7 @@ class Hooks {
 	 * @return bool
 	 */
 	protected static function isOnMobile() {
-		return class_exists( 'MobileContext' )
+		return class_exists( \MobileContext::class )
 			&& \MobileContext::singleton()->shouldDisplayMobileView();
 	}
 
@@ -248,7 +248,7 @@ class Hooks {
 	public static function onResourceLoaderRegisterModules( &$resourceLoader ) {
 		$dir = __DIR__ . DIRECTORY_SEPARATOR;
 
-		if ( class_exists( 'VisualEditorHooks' ) ) {
+		if ( class_exists( \VisualEditorHooks::class ) ) {
 			$resourceLoader->register(
 				'ext.guidedTour.tour.gettingstartedtasktoolbarve',
 				[
@@ -404,7 +404,7 @@ class Hooks {
 	 * @return true
 	 */
 	public static function onPostLoginRedirect( &$returnTo, &$returnToQuery, &$type ) {
-		if ( class_exists( 'SpecialCentralLogin' ) ) {
+		if ( class_exists( \SpecialCentralLogin::class ) ) {
 			// Will be handled by the CentralAuthPostLoginRedirect hook
 			return true;
 		}
