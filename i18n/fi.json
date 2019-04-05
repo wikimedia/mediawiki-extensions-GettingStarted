@@ -34,7 +34,7 @@
 	"guidedtour-tour-gettingstarted-click-save-description": "Napsauta ”{{int:publishchanges}}”, niin muutoksesi tulevat näkyviin.",
 	"gettingstarted-cta-close": "Sulje",
 	"gettingstarted-cta-heading": "Auta parantamaan {{GRAMMAR:partitive|{{SITENAME}}}}",
-	"gettingstarted-cta-text": "Voit osallistua sivuston {{SITENAME}} muokkaamiseen eri tavoin",
+	"gettingstarted-cta-text": "Voit osallistua {{GRAMMAR:genitive|{{SITENAME}}}} muokkaamiseen eri tavoin",
 	"gettingstarted-cta-edit-page": "Muokkaa tätä sivua",
 	"gettingstarted-cta-edit-page-sub": "Näytämme miten",
 	"gettingstarted-cta-fix-pages": "Muokkaa ehdotettua sivua",
