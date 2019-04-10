@@ -199,8 +199,12 @@ class Hooks {
 					// Set preference in memory now
 					$user->setOption( self::INTRO_OPTION, $newOption );
 					// Promise to save to the DB post-send
-					\DeferredUpdates::addCallableUpdate( function () use ( $user ) {
-						$user->saveSettings();
+					\DeferredUpdates::addCallableUpdate( function () use ( $user, $newOption ) {
+						// Refresh user, because the settings could be changed in the meantime
+						$userLatest = $user->getInstanceForUpdate();
+						// Reset after refresh
+						$userLatest->setOption( self::INTRO_OPTION, $newOption );
+						$userLatest->saveSettings();
 					} );
 				}
 			}
