@@ -16,7 +16,7 @@
 		 * @param {Object} options API parameters
 		 * @param {string} options.taskName name of task type, such as 'copyedit'
 		 * @param {string} [options.excludedTitle] title to exclude, as string
-		 * @param {Number} options.count number of titles to request.  It may return fewer
+		 * @param {number} options.count number of titles to request.  It may return fewer
 		 *   than count, but never more.
 		 * @return {jQuery.Promise} promise for API response
 		 * @return {Array} return.done On success, promise's done callback is called with

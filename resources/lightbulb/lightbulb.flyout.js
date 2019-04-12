@@ -73,8 +73,8 @@
 	/**
 	 * Returns a click handler for a pagination disc
 	 *
-	 * @param {Number} index Index of page this disc refers to
-	 * @param {Number} pageCount Number of pages
+	 * @param {number} index Index of page this disc refers to
+	 * @param {number} pageCount Number of pages
 	 *
 	 * @return {Function} Click handler
 	 */
@@ -166,8 +166,8 @@
 	/**
 	 * Adds a page of new suggestions to the flyout
 	 *
-	 * @param {Number} pageIndex Page index to show, 0-based
-	 * @param {Number} pageCount Number of pages
+	 * @param {number} pageIndex Page index to show, 0-based
+	 * @param {number} pageCount Number of pages
 	 */
 	function addFlyoutPage( pageIndex ) {
 		var $suggestions = $flyout.find( '.mw-gettingstarted-lightbulb-suggestions-container' ),
@@ -192,8 +192,8 @@
 	/**
 	 * Puts a particular page in the flyout into view
 	 *
-	 * @param {Number} pageIndex Page index to show, 0-based
-	 * @param {Number} pageCount Number of pages
+	 * @param {number} pageIndex Page index to show, 0-based
+	 * @param {number} pageCount Number of pages
 	 */
 	function showFlyoutPage( pageIndex, pageCount ) {
 		var suggestionWidth = $flyout.find( '.mw-gettingstarted-lightbulb-suggestions' ).outerWidth(),
@@ -228,14 +228,14 @@
 				setId: suggestions[ 0 ].setId,
 				userId: mwConfig.wgUserId,
 				pageId: mwConfig.wgArticleId,
-				'interface': 'flyout',
+				interface: 'flyout',
 				offset: currentFlyoutPageIndex * MAX_SUGGESTION_PER_PAGE_COUNT
 			} );
 		}
 	}
 
 	function positionFlyout() {
-		var	lightbulbOffset,
+		var lightbulbOffset,
 			top,
 			left;
 
@@ -301,7 +301,7 @@
 	}
 
 	/**
-	 * Adds	lightbulb icon (for flyout) and renders flyout except suggestions
+	 * Adds lightbulb icon (for flyout) and renders flyout except suggestions
 	 */
 	function addFlyout() {
 		$flyout = renderFlyout();

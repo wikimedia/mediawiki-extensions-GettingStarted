@@ -45,15 +45,15 @@
 		fullTask = 'gettingstarted-' + toolbarInfo.taskName;
 
 		$center = $( '<div>' ).attr( {
-			'class': 'mw-gettingstarted-toolbar-center'
+			class: 'mw-gettingstarted-toolbar-center'
 		} );
 
 		$centerMessage = $( '<span>' ).attr( {
-			'class': 'mw-gettingstarted-toolbar-center-message'
+			class: 'mw-gettingstarted-toolbar-center-message'
 		} ).text( mw.message( toolbarInfo.description ).text() );
 
 		$showGuide = $( '<a>' ).attr( {
-			'class': 'mw-ui-button mw-ui-progressive mw-gettingstarted-toolbar-show-guiders',
+			class: 'mw-ui-button mw-ui-progressive mw-gettingstarted-toolbar-show-guiders',
 			title: mw.message( 'gettingstarted-task-toolbar-editing-help-title' ).text()
 		} ).text( mw.message( 'gettingstarted-task-toolbar-editing-help-text' ).text() )
 			.click( function ( evt ) {
@@ -64,7 +64,7 @@
 		$center.append( $centerMessage, $showGuide );
 
 		$right = $( '<div>' ).attr( {
-			'class': 'mw-gettingstarted-toolbar-right'
+			class: 'mw-gettingstarted-toolbar-right'
 		} );
 
 		if ( suggestedTitle !== null ) {
@@ -106,7 +106,7 @@
 		$right.append( $tryAnother );
 
 		$close = $( '<a>' ).attr( {
-			'class': 'mw-gettingstarted-toolbar-dismiss',
+			class: 'mw-gettingstarted-toolbar-dismiss',
 			href: '#',
 			title: mw.message( 'gettingstarted-task-toolbar-close-title' ).text()
 		} ).text( '×' ).click( function ( evt ) {

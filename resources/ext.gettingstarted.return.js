@@ -101,7 +101,7 @@
 
 		$btn = $( '<a>' ).attr( {
 			id: spec.id,
-			'class': klass,
+			class: klass,
 			'aria-role': 'button',
 			tabIndex: 0,
 			href: '#'
@@ -334,13 +334,13 @@
 
 			$dialog = $( '<div>' ).attr( {
 				id: spec.id,
-				'class': 'mw-gettingstarted-cta'
+				class: 'mw-gettingstarted-cta'
 			} );
 
 			closeText = mw.message( 'gettingstarted-cta-close' ).text();
 			$close = $( '<a>' )
 				.attr( {
-					'class': 'mw-gettingstarted-cta-close',
+					class: 'mw-gettingstarted-cta-close',
 					href: '#',
 					title: closeText,
 					'aria-label': closeText
@@ -370,7 +370,7 @@
 
 			$leaveLink = $( '<a>' )
 				.attr( {
-					'class': 'mw-gettingstarted-cta-leave-link',
+					class: 'mw-gettingstarted-cta-leave-link',
 					href: '#'
 				} )
 				.text( mw.message( 'gettingstarted-cta-leave' ).text() )

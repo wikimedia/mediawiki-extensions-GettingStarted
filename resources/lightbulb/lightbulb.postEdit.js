@@ -66,7 +66,7 @@
 					setId: suggestions[ 0 ].setId,
 					userId: mwConfig.wgUserId,
 					pageId: mwConfig.wgArticleId,
-					'interface': 'post-edit',
+					interface: 'post-edit',
 					offset: 0
 				} );
 			}
