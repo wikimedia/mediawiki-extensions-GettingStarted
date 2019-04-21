@@ -31,17 +31,17 @@
 		]
 	},
 	"AutoloadClasses": {
-		"GettingStarted\\Hooks": "Hooks.php",
-		"GettingStarted\\RedisCategorySync": "RedisCategorySync.php",
-		"GettingStarted\\PageFilterFactory": "PageFilterFactory.php",
-		"GettingStarted\\BasePageFilter": "BasePageFilter.php",
-		"GettingStarted\\CategoryPageFilter": "CategoryPageFilter.php",
-		"GettingStarted\\ApiGettingStartedGetPages": "api/ApiGettingStartedGetPages.php",
-		"GettingStarted\\PageSuggesterFactory": "PageSuggesterFactory.php",
-		"GettingStarted\\PageSuggester": "PageSuggester.php",
-		"GettingStarted\\CategoryPageSuggester": "CategoryPageSuggester.php",
-		"GettingStarted\\MoreLikePageSuggester": "MoreLikePageSuggester.php",
-		"GettingStarted\\TaskRecommendationsExperimentV1": "TaskRecommendationsExperimentV1.php"
+		"GettingStarted\\Hooks": "includes/Hooks.php",
+		"GettingStarted\\RedisCategorySync": "includes/RedisCategorySync.php",
+		"GettingStarted\\PageFilterFactory": "includes/PageFilterFactory.php",
+		"GettingStarted\\BasePageFilter": "includes/BasePageFilter.php",
+		"GettingStarted\\CategoryPageFilter": "includes/CategoryPageFilter.php",
+		"GettingStarted\\ApiGettingStartedGetPages": "includes/ApiGettingStartedGetPages.php",
+		"GettingStarted\\PageSuggesterFactory": "includes/PageSuggesterFactory.php",
+		"GettingStarted\\PageSuggester": "includes/PageSuggester.php",
+		"GettingStarted\\CategoryPageSuggester": "includes/CategoryPageSuggester.php",
+		"GettingStarted\\MoreLikePageSuggester": "includes/MoreLikePageSuggester.php",
+		"GettingStarted\\TaskRecommendationsExperimentV1": "includes/TaskRecommendationsExperimentV1.php"
 	},
 	"ResourceModules": {
 		"ext.guidedTour.tour.gettingstartedtasktoolbar": {

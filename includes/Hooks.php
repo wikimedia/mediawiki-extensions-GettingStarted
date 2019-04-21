@@ -250,7 +250,7 @@ class Hooks {
 	 * @return true
 	 */
 	public static function onResourceLoaderRegisterModules( &$resourceLoader ) {
-		$dir = __DIR__ . DIRECTORY_SEPARATOR;
+		$dir = dirname( __DIR__ ) . DIRECTORY_SEPARATOR;
 
 		if ( class_exists( \VisualEditorHooks::class ) ) {
 			$resourceLoader->register(
