@@ -137,10 +137,10 @@ class ApiGettingStartedGetPages extends \ApiQueryGeneratorBase {
 		];
 	}
 
-	public function getExamples() {
+	public function getExamplesMessages() {
 		return [
-			'api.php?action=query&list=gettingstartedgetpages&gsgptaskname=copyedit' .
-				'&gsgpexcludedtitle=Earth&gsgpcount=1',
+			'action=query&list=gettingstartedgetpages&gsgptaskname=copyedit' .
+				'&gsgpexcludedtitle=Earth&gsgpcount=1' => 'apihelp-query+gettingstartedgetpages-example-1',
 		];
 	}
 }
