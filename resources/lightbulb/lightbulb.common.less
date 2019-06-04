@@ -50,18 +50,20 @@
 		}
 
 		.mw-gettingstarted-lightbulb-suggestion-image {
+			background-position: center;
+			background-size: cover;
 			float: left;
 			margin-right: 10px;
 			width: 70px;
 			height: 70px;
-			background-size: cover;
-			background-position: center;
 
 			&.mw-gettingstarted-lightbulb-suggestion-image-no-image {
-				background: no-repeat center;
 				background-color: @colorGray14;
-				.background-image-svg( '../images/lightbulb/page.svg', '../images/lightbulb/page.png' );
+				.background-image-svg( '../images/lightbulb/article.svg', '../images/lightbulb/article.png' );
+				background-position: center;
 				background-size: 30px;
+				background-repeat: no-repeat;
+				opacity: 0.87; // Equals to `#222` on `background-color: #fff`.
 			}
 		}
 

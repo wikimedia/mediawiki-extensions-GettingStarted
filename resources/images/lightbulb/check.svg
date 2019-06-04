@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="464" height="464" viewBox="72.354 163.86 464 464">
-	<path fill="#00af89" d="M536.63 285.96L226.11 575.38h-3.014L162.8 509.055 72.356 412.58l66.326-63.31 90.443 96.475 244.195-226.11z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+	<title>
+		check
+	</title>
+	<path fill="#00af89" d="M7 14.17L2.83 10l-1.41 1.41L7 17 19 5l-1.41-1.42z"/>
 </svg>
