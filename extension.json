@@ -76,7 +76,7 @@
 			"dependencies": [
 				"ext.gettingstarted.api",
 				"ext.gettingstarted.lightbulb.common",
-				"schema.TaskRecommendationImpression"
+				"ext.eventLogging"
 			],
 			"messages": [
 				"gettingstarted-lightbulb-notification-body"
@@ -94,8 +94,7 @@
 				"ext.guidedTour.styles",
 				"jquery.client",
 				"mediawiki.user",
-				"schema.TaskRecommendationImpression",
-				"schema.TaskRecommendationLightbulbClick"
+				"ext.eventLogging"
 			],
 			"messages": [
 				"gettingstarted-lightbulb-heading",
@@ -121,9 +120,8 @@
 				"mediawiki.util",
 				"mediawiki.user",
 				"moment",
-				"ext.gettingstarted.logging",
-				"schema.TaskRecommendation",
-				"schema.TaskRecommendationClick"
+				"ext.eventLogging",
+				"ext.gettingstarted.logging"
 			],
 			"messages": [
 				"gettingstarted-lightbulb-notification-body-lastedited"
@@ -189,8 +187,8 @@
 			],
 			"dependencies": [
 				"ext.gettingstarted.api",
+				"ext.eventLogging",
 				"ext.gettingstarted.logging",
-				"schema.GettingStartedRedirectImpression",
 				"ext.guidedTour.lib",
 				"mediawiki.Title",
 				"mediawiki.Uri",
