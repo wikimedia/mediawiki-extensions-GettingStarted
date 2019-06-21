@@ -265,7 +265,6 @@ class Hooks {
 					],
 					'messages' => [
 						'editsection',
-						'visualeditor-toolbar-savedialog',
 						'guidedtour-tour-gettingstartedtasktoolbarintro-title',
 						'guidedtour-tour-gettingstartedtasktoolbarintro-description',
 						'guidedtour-tour-gettingstartedtasktoolbar-ambox-title',
