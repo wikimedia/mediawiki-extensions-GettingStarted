@@ -22,7 +22,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Or edit a section",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "If you want to edit a specific section, you can click on the \"{{int:editsection}}\" link near each section's title.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Make your changes and save",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "You can now edit the page contents. When you are done, click \"{{int:visualeditor-toolbar-savedialog}}\" to review and save your changes.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "You can now edit the page contents. When you are done, click \"{{int:publishchanges}}\" to review and save your changes.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Preview (optional)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Clicking \"{{int:showpreview}}\" allows you to see what the page will look like with your changes. Just don't forget to save.",
 	"guidedtour-tour-gettingstarted-click-save-title": "You're almost finished!",

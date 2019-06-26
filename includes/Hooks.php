@@ -265,6 +265,7 @@ class Hooks {
 					],
 					'messages' => [
 						'editsection',
+						'publishchanges',
 						'guidedtour-tour-gettingstartedtasktoolbarintro-title',
 						'guidedtour-tour-gettingstartedtasktoolbarintro-description',
 						'guidedtour-tour-gettingstartedtasktoolbar-ambox-title',
