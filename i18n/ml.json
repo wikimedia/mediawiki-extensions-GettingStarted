@@ -22,7 +22,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "അല്ലെങ്കിൽ ഒരു ഭാഗം തിരുത്തുക",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "ഏതെങ്കിലും ഒരു പ്രത്യേക ഭാഗമാണ് താങ്കൾക്ക് തിരുത്തേണ്ടതെങ്കിൽ, ഓരോ ഉപശീർഷകത്തിന്റെയും അരികിലുള്ള \"{{int:editsection}}\" എന്ന നീലനിറത്തിലുള്ള കണ്ണി ഞെക്കിയാൽ മതിയാവും.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "മാറ്റങ്ങൾ വരുത്തുക, സേവ് ചെയ്യുക",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "താങ്കൾക്ക് ഇപ്പോൾ ഉള്ളടക്കം തിരുത്താവുന്നതാണ്. പൂർണ്ണമായി കഴിയുമ്പോൾ \"{{int:visualeditor-toolbar-savedialog}}\" അമർത്തി തിരുത്തൽ പരിശോധിക്കാനും മാറ്റങ്ങൾ സേവ് ചെയ്യാനും കഴിയുന്നതാണ്.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "താങ്കൾക്ക് ഇപ്പോൾ ഉള്ളടക്കം തിരുത്താവുന്നതാണ്. പൂർണ്ണമായി കഴിയുമ്പോൾ \"{{int:publishchanges}}\" ഞെക്കി തിരുത്തൽ പരിശോധിക്കാനും മാറ്റങ്ങൾ സേവ് ചെയ്യാനും കഴിയുന്നതാണ്.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "എങ്ങനെയുണ്ടെന്ന് കാണുക (നിർബന്ധമല്ല)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "\"{{int:showpreview}}\" അമർത്തുമ്പോൾ, താങ്കൾ ചേർത്ത തിരുത്തുകളുൾപ്പെടെ താൾ എപ്രകാരമാണ് പ്രത്യക്ഷപ്പെടുക എന്ന് പരിശോധിക്കാനാവും. പിന്നീട് മാറ്റങ്ങൾ സേവ് ചെയ്യാൻ മറക്കരുത്.",
 	"guidedtour-tour-gettingstarted-click-save-title": "ഇത് മിക്കവാറും പൂർത്തിയായിട്ടുണ്ട്!",

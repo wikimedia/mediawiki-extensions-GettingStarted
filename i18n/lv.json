@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Admresdeserv.",
-			"Papuass"
+			"Papuass",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted-desc": "Pievieno [[Special:GettingStarted|sagaidīšanas lapu]] jauniem lietotājiem (tiek rādīta pēc lietotāja konta izveides)",
@@ -19,5 +20,5 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Jūs varat labot visu rakstu, klikšķinot šeit.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Vai labot sadaļu",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Jūs varat labot!",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Tagad jūs varat labot lapu. Kad darbs pabeigts, klikšķiniet uz '{{int:visualeditor-toolbar-savedialog}}', lai pārskatītu un saglabātu savas izmaiņas."
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Tagad jūs varat labot lapu. Kad darbs pabeigts, klikšķiniet uz '{{int:publishchanges}}', lai pārskatītu un saglabātu savas izmaiņas."
 }

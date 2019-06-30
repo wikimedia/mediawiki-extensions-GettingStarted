@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Minh Nguyen",
-			"Max20091"
+			"Max20091",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Bắt đầu",
@@ -23,7 +24,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Hoặc sửa đổi một phần",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Để chỉ sửa đổi một phần, bạn có thể nhấn chuột vào liên kết “{{int:editsection}}” gần đề mục của phần đó.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Thực hiện các thay đổi và lưu",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Bạn hiện có thể sửa đổi nội dung trang này. Sau khi hoàn tất, hãy bấm “{{int:visualeditor-toolbar-savedialog}}” để xem lại và lưu các thay đổi của bạn.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Bạn hiện có thể sửa đổi nội dung trang này. Sau khi hoàn tất, hãy bấm “{{int:publishchanges}}” để xem lại và lưu các thay đổi của bạn.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Xem trước (tùy chọn)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Bấm “{{int:showpreview}}” để xem trước trang với các thay đổi của bạn. Hãy nhớ lưu trang.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Gần xong!",

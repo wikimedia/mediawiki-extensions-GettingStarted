@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Robby",
-			"Soued031"
+			"Soued031",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Fir unzefänken",
@@ -23,7 +24,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Oder en Abschnitt änneren",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Wann Dir e bestëmmten Abschnitt ännere wëllt, da klickt op de Link {{int:editsection}} beim Titel vun all Abschnitt.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Maacht Är Ännerungen a späichert",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Dir kënnt elo d'Inhalter vun der Säit änneren. Wann Dir fäerdeg sidd, klickt {{int:visualeditor-toolbar-savedialog}} fir nozekucken an Är Ännerungen ze späicheren.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Dir kënnt elo d'Inhalter vun der Säit änneren. Wann Dir fäerdeg sidd, klickt {{int:publishchanges}} fir nozekucken an Är Ännerungen ze späicheren.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Weisen ouni ze späicheren (fakuktativ)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Klickt op {{int:showpreview}}, fir ze gesinn, wéi d'Säit mat dengen Ännerungen ausgesäit. Vergiesst net ze späicheren.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Dir sidd bal fäerdeg!",

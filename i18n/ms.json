@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Anakmalaysia",
-			"Aviator"
+			"Aviator",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Permulaan",
@@ -23,7 +24,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Sunting satu bahagian",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Jika anda ingin menyunting suatu bahagian tertentu, anda boleh klik pada pautan biru '{{int:editsection}}' di atas setiap bahagian.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Anda boleh menyunting!",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Anda kini boleh menyunting halaman ini. Selepas siap, klik '{{int:visualeditor-toolbar-savedialog}}' untuk menyemak dan menyimpan suntingan anda.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Anda kini boleh menyunting halaman ini. Selepas siap, klik '{{int:publishchanges}}' untuk menyemak dan menyimpan suntingan anda.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Pralihat (tidak wajib)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Mengklik '{{int:showpreview}}' membolehkan anda untuk menyemak rupa halaman dengan suntingan anda. Jangan lupa untuk simpan.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Anda hampir siap!",

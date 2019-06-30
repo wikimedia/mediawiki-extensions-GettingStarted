@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Xuacu"
+			"Xuacu",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Primeros pasos",
@@ -22,7 +23,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "O edita una seición",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Si quies editar una seición determinada, pues calcar nel enllaz «{{int:editsection}}» cerca del títulu de cada seición.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Fai los cambios y guárdalos",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Agora pues editar el conteníu de la páxina. En acabando, fai clic en «{{int:visualeditor-toolbar-savedialog}}» pa revisar y guardar los cambios.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Agora pues editar el conteníu de la páxina. En acabando, fai clic en «{{int:publishchanges}}» pa revisar y guardar los cambios.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Vista previa (opcional)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Si calques «{{int:showpreview}}» podrás ver l'aspeutu que tendrá la páxina colos cambios. Pero nun escaezas guardala.",
 	"guidedtour-tour-gettingstarted-click-save-title": "¡Yá casi acabó!",

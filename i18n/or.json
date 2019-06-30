@@ -3,7 +3,8 @@
 		"authors": [
 			"Jnanaranjan Sahu",
 			"MKar",
-			"Psubhashish"
+			"Psubhashish",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "ଆରମ୍ଭ କରନ୍ତୁ",
@@ -24,7 +25,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "ଗୋଟିଏ ବିଭାଗକୁ ବଦଳାଇବେ",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "ଆପଣ ଏକ ନିର୍ଦ୍ଦିଷ୍ଟ ବିଭାଗଟିକୁ ବଦଳାଇବାକୁ ଚାହୁଁଥିଲେ ପ୍ରତ୍ୟେକ ବିଭାଗରେ ଥିବା ନୀଳ ରଙ୍ଗର \"{{int:editsection}}\"ରେ କ୍ଲିକ କରି କେବଳ ସେହି ବିଭାଗଟିକୁ ବଦଳାଇପାରିବେ ।",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "ଆପଣ ସମ୍ପାଦନା କରିପାରିବେ!",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "ଆପଣ ବର୍ତ୍ତମାନ ସମ୍ପାଦନା କରିପାରିବେ । ଲେଖିସାରିଲା ପରେ \"{{int:visualeditor-toolbar-savedialog}}\" ରେ କ୍ଲିକ କରି ଆପଣ ଦେଖି ପାରିବେ ଏବଂ ସାଇତି ପାରିବେ ।",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "ଆପଣ ବର୍ତ୍ତମାନ ସମ୍ପାଦନା କରିପାରିବେ । ଲେଖିସାରିଲା ପରେ \"{{int:publishchanges}}\" ରେ କ୍ଲିକ କରି ଆପଣ ଦେଖି ପାରିବେ ଏବଂ ସାଇତି ପାରିବେ ।",
 	"guidedtour-tour-gettingstarted-click-preview-title": "ଦେଖିବେ (ଇଚ୍ଛାଧୀନ)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "\"{{int:showpreview}}\"ରେ କ୍ଲିକ କରିବା ଦ୍ଵାରା ଆପଣ କଣ କଣ ବଦଳେଇଲେ ତାହା ଦେଖିପାରିବେ । ଏହାକୁ ସାଇତିବାକୁ ଯେମିତି ନ ଭୁଲନ୍ତି ।",
 	"guidedtour-tour-gettingstarted-click-save-title": "ଆପଣଙ୍କ କାମଟି ହେବା ଉପରେ!",

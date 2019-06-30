@@ -4,7 +4,8 @@
 			"Sasuke UcHiA",
 			"Toliño",
 			"Elisardojm",
-			"Banjo"
+			"Banjo",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Primeiros pasos",
@@ -25,7 +26,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Ou edite unha sección",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Se quere modificar unha sección específica, pode premer na ligazón \"{{int:editsection}}\" que hai ao carón do título de cada sección.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Faga as súas modificacións e gárdeas",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Agora pode editar os contidos da páxina. Cando remate, prema en \"{{int:visualeditor-toolbar-savedialog}}\" para revisar e gardar os seus cambios.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Agora pode editar os contidos da páxina. Cando remate, prema en \"{{int:publishchanges}}\" para revisar e gardar os seus cambios.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Vista previa (opcional)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Premer en \"{{int:showpreview}}\" serve para comprobar como se verá a páxina coas modificacións. Non esqueza gardar despois.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Case rematou!",

@@ -34,7 +34,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "O edita una sección",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Si quieres modificar una sección específica, pulsa en el enlace «{{int:editsection}}» ubicado junto al título de cada sección.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Realiza tus cambios y guárdalos",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Ahora puedes editar los contenidos de la página. Cuando estés listo, haz clic en \"{{int:visualeditor-toolbar-savedialog}}\" para revisar y guardar tus cambios.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Ahora puedes modificar el contenido de la página. Cuando termines, pulsa en «{{int:publishchanges}}» para revisar y guardar los cambios.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Previsualización (opcional)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Clicando en \"{{int:showpreview}}\" puede comprobar cómo se verá la página con sus cambios. No se olvide de guardar.",
 	"guidedtour-tour-gettingstarted-click-save-title": "¡Ya casi terminas!",

@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Snævar",
-			"Sveinn í Felli"
+			"Sveinn í Felli",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Hafist handa",
@@ -23,7 +24,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Eða breyttu kafla",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Ef þú vilt breyta ákveðnum kafla, þá getur þú smellt á „{{int:editsection}}” teglinn við hvern kafla.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Gerðu breytingarnar þínar og vistaðu",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Þú getur núna breytt innihaldi síðunnar. Þegar þú ert búin/n, smelltu á „{{int:visualeditor-toolbar-savedialog}}” til þess að fara yfir og vista breytingarnar þínar.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Þú getur núna breytt innihaldi síðunnar. Þegar þú ert búin/n, smelltu á „{{int:publishchanges}}” til þess að fara yfir og vista breytingarnar þínar.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Forskoða (valfrjálst)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Með því að smella á „{{int:showpreview}}” þá getur þú séð hvernig síðan mun líta út með breytingunum þínum. Bara ekki gleyma að vista.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Þú ert næstum búin/n!",

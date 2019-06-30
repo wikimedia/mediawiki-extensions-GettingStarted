@@ -6,7 +6,8 @@
 			"Ата",
 			"Microcell",
 			"Капитан Джон Шепард",
-			"Piramidion"
+			"Piramidion",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Початок роботи",
@@ -27,7 +28,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Або редагуйте розділ",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Якщо ви хочете відредагувати конкретний розділ, то можете натиснути на посилання «{{int:editsection}}», яке є поруч з кожним заголовком розділу.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Внесіть потрібні зміни та збережіть",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Ви тепер можете редагувати вміст сторінки. Коли закінчите, натисніть «{{int:visualeditor-toolbar-savedialog}}», щоб переглянути і зберегти свої зміни.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Ви тепер можете редагувати вміст сторінки. Коли закінчите, натисніть «{{int:publishchanges}}», щоб переглянути і зберегти свої зміни.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Попередній перегляд (необов'язково)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Клацання «{{int:showpreview}}» дає змогу перевіряти вигляд сторінки із внесеними змінами. Тільки не забудьте зберегти.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Ви майже закінчили!",

@@ -15,7 +15,8 @@
 			"Brunoperel",
 			"Orikrin1998",
 			"Lucky",
-			"Thibaut120094"
+			"Thibaut120094",
+			"Wladek92"
 		]
 	},
 	"gettingstarted": "Premiers pas",
@@ -36,7 +37,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Ou modifier une section",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Si vous souhaitez modifier une section spécifique, vous pouvez cliquer sur le lien « {{int:editsection}} » près du titre d'une section.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Appliquez vos modifications et enregistrez",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Vous pouvez maintenant modifier la page. Quand vous avez terminé, cliquez sur « {{int:visualeditor-toolbar-savedialog}} » pour vérifier et enregistrer vos modifications.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Vous pouvez maintenant modifier le contenu de la page. Quand vous avez terminé, cliquez sur « {{int:publishchanges}} » pour vérifier et enregistrer vos modifications.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Aperçu (facultatif)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Cliquer sur « {{int:showpreview}} » vous permet de vérifier à quoi ressemblera la page avec vos modifications. N’oubliez pas ensuite de les enregistrer.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Vous avez presque fini !",

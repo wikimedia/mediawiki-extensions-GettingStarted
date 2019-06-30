@@ -5,7 +5,8 @@
 			"Inkowik",
 			"Kghbln",
 			"Metalhead64",
-			"Hwboehm"
+			"Hwboehm",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Erste Schritte",
@@ -26,7 +27,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Oder einen Abschnitt bearbeiten",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Falls du einen bestimmten Abschnitt bearbeiten möchtest, kannst du auf den Link „{{int:editsection}}“ neben jedem Abschnittstitel klicken.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Führe deine Änderungen durch und speichere",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Du kannst jetzt die Seiteninhalte bearbeiten. Wenn du fertig bist, klicke auf „{{int:visualeditor-toolbar-savedialog}}“, um deine Änderungen zu überprüfen und zu speichern.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Du kannst jetzt die Seiteninhalte bearbeiten. Wenn du fertig bist, klicke auf „{{int:publishchanges}}“, um deine Änderungen zu überprüfen und zu speichern.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Vorschau (optional)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Klicke auf „{{int:showpreview}}“, um zu sehen, wie die Seite mit deinen Änderungen aussieht. Vergiss nur nicht, sie später abzuspeichern.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Du bist fast fertig!",

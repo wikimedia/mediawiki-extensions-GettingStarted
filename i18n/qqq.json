@@ -4,7 +4,8 @@
 			"Shirayuki",
 			"spage",
 			"Liuxinyu970226",
-			"Umherirrender"
+			"Umherirrender",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "{{doc-special|GettingStarted}}\n{{Identical|Getting started}}",
@@ -24,8 +25,8 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Description of step showing user where to click {{msg-mw|vector-view-edit}}.\n\nThe title for this message is {{msg-mw|Guidedtour-tour-gettingstartedtasktoolbar-edit-article-title}}.\n\nParameters:\n* $1 - Text of edit tab",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Title of step showing user how to edit a section.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Description of step showing user how to edit a section.\n\nRefers to {{msg-mw|Editsection}}.",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Title of first step of GettingStarted tour that is on the VisualEditor screen.  It points to the {{msg-mw|visualeditor-toolbar-savedialog}} button.",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Description of first step of GettingStarted tour that is on the VisualEditor screen.\n\nRefers to the {{msg-mw|Visualeditor-toolbar-savedialog}} button.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Title of first step of GettingStarted tour that is on the VisualEditor screen.  It points to the {{msg-mw|publishchanges}} button.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Description of first step of GettingStarted tour that is on the VisualEditor screen.\n\nRefers to the {{msg-mw|publishchanges}} button.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Title of step showing user where to click {{msg-mw|showpreview}}",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Description of step showing user where to click {{msg-mw|showpreview}}",
 	"guidedtour-tour-gettingstarted-click-save-title": "Title of step showing user where to click {{msg-mw|savearticle}}",

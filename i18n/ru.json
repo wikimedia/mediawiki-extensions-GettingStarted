@@ -11,7 +11,8 @@
 			"Meshkov.a",
 			"Eroha",
 			"Ядерный Трамвай",
-			"Movses"
+			"Movses",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Начало работы",
@@ -32,7 +33,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Или отредактировать раздел",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Если вы хотите отредактировать конкретный раздел, то можете нажать на ссылку «{{int:editsection}}», которая имеется рядом с каждым заголовком раздела.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Внесите необходимые изменения и сохраните",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Сейчас вы можете редактировать страницу. Когда вы закончите, нажмите кнопку «{{int:visualeditor-toolbar-savedialog}}» для просмотра и сохранения изменений.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Сейчас вы можете редактировать страницу. Когда вы закончите, нажмите кнопку «{{int:publishchanges}}» для просмотра и сохранения изменений.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Предварительный просмотр (не обязательно)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Нажатие «{{int:showpreview}}» позволяет проверить, как будет выглядеть страница с вашими изменениями. Только не забудьте её потом сохранить.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Вы почти закончили!",

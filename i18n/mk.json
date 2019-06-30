@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Како да почнете",
@@ -22,7 +23,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Или пак уредете во некој поднаслов",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Ако сакате да уредите даден поднаслов, стиснете на врската „{{int:editsection}}“ до него.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Направете ги промените и зачувајте",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Сега можете да ја уредите содржината на страницата. Кога ќе завршите, стиснете на „{{int:visualeditor-toolbar-savedialog}}“ за да ги прегледате и зачувате промените.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Сега можете да ја уредите содржината на страницата. Кога ќе завршите, стиснете на „{{int:publishchanges}}“ за да ги прегледате и зачувате промените.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Преглед (незадолжително)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Ако стиснете на „{{int:showpreview}}“ ќе видите како ќе изгледа страницата со вашите измени. Само не заборавајте да ги зачувате.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Речиси сте готови!",

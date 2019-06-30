@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"EileenSanda"
+			"EileenSanda",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Kom í gongd",
@@ -22,7 +23,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Rætta eitt brot",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Um tú ynskir at rætta eitt serstakt brot, so kanst tú klikkja á tað bláu \"{{int:editsection}}\" leinkjuna, sum er ovast í hvørjum broti.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Tú kanst rætta!",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Nú kanst tú rætta síðuna. Tá tú ert liðug/ur, trýst so á \"{{int:visualeditor-toolbar-savedialog}}\" fyri at endurskoða og goyma tínar rættingar.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Nú kanst tú rætta síðuna. Tá tú ert liðug/ur, trýst so á \"{{int:publishchanges}}\" fyri at endurskoða og goyma tínar rættingar.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Forskoðan (valfrítt)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Eitt klikk á \"{{int:showpreview}}\" loyvir tær at síggja, hvussu síðan fer at síggja út við tínum broytingum. Tú mást bara ikki gloyma at goyma.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Tú ert næstan liðug/ur!",

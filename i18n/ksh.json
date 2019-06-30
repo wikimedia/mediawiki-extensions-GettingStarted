@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Purodha"
+			"Purodha",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Loßlähje!",
@@ -22,7 +23,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Udder beärbeid ene Afschnett",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Wann mer ene bechtepmmte Afschnedd beärbeide well, kam_mer op dä Lengk „{{int:editsection}}“ bei däm singe Övverschreff jonn.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Maach Ding Änderonge un lohß se em Wikki faßhallde",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Jäz kanns De dä Enhhald vun däm Atikel beärbeide. Dä Knopp „{{int:visualeditor-toolbar-savedialog}}“ deiht Ding Änderonge faßhallde un aanzeije. Esu kanns De se och norr_ens lässe und pröhve, dat se johd sin.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Jäz kanns De dä Enhhald vun däm Atikel beärbeide. Dä Knopp „{{int:publishchanges}}“ deiht Ding Änderonge faßhallde un aanzeije. Esu kanns De se och norr_ens lässe und pröhve, dat se johd sin.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "{{int:showpreview}}, moß ävver nit.",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Dä Knopp „{{int:showpreview}}“ deiht Ding Änderonge blohß aanzeije. Esu kanns De se lässe und pröhve, dat se johd sin.\nDängk drahn, se dann noch afzeschpeijschere.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Do bes beinah fähdesch!",

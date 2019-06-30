@@ -3,7 +3,8 @@
 		"authors": [
 			"V.narsikar",
 			"संतोष दहिवळ",
-			"अभय नातू"
+			"अभय नातू",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "सुरुवात करु या",
@@ -24,7 +25,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "किंवा एखादा विभाग संपादित करा",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "जर आपणास एखादा विशिष्ट विभाग संपादित करावयाचा असेल तर,आपण प्रत्येक विभागाच्या शीर्षकाशेजारी असलेल्या \"{{int:editsection}}\" या दुव्यावर टिचकु शकता.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "आपले बदल करा व जतन करा",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "आपण आता या पानाचा आशय संपादु शकता. ते पूर्ण झाल्यावर,झलक पाहण्यास व आपले बदल जतन करण्यास, '{{int:visualeditor-toolbar-savedialog}}' वर टिचकी द्या.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "आपण आता या पानाचा आशय संपादु शकता. ते पूर्ण झाल्यावर,झलक पाहण्यास व आपले बदल जतन करण्यास, '{{int:publishchanges}}' वर टिचकी द्या.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "झलक (ऐच्छिक)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "\"{{int:showpreview}}\" टिचकण्याने, आपणास आपण केलेल्या बदलांसह ते पान कसे दिसेल, ते बघण्याची अनुमती मिळते.त्यानंतर जतन करण्यास मात्र विसरु नका.",
 	"guidedtour-tour-gettingstarted-click-save-title": "होतच आले!",

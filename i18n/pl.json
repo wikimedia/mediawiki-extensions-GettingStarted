@@ -9,7 +9,8 @@
 			"VerMa",
 			"Devwebtel",
 			"The Polish",
-			"Woytecr"
+			"Woytecr",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Pierwsze kroki",
@@ -30,7 +31,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Lub edytuj sekcję",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Jeżeli chcesz edytować konkretną sekcję, możesz kliknąć na link ''{{int:editsection}}'' znajdujący się przy tytule każdej sekcji.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Wprowadź swoje zmiany i zapisz",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Teraz możesz edytować zawartość strony. Kiedy skończysz, kliknij ''{{int:visualeditor-toolbar-savedialog}}'', aby przejrzeć i zapisać zmiany.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Teraz możesz edytować zawartość strony. Kiedy skończysz, kliknij ''{{int:publishchanges}}'', aby przejrzeć i zapisać zmiany.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Podgląd (opcjonalnie)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Kliknięcie ''{{int:showpreview}}'' pozwala ci sprawdzić, jak strona będzie wyglądała po twoich zmianach. Nie zapomnij ich zapisać.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Prawie gotowe!",

@@ -10,7 +10,8 @@
 			"Taha",
 			"Calak",
 			"Alirezaaa",
-			"Ladsgroup"
+			"Ladsgroup",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "شروع",
@@ -31,7 +32,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "یا ویرایش یک بخش",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "اگر می‌خواهید در بخشی خاص ویرایش کنید، می‌توانید بر پیوند «{{int:editsection}}» نزدیک هر عنوان بحش کلیک کنید.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "تغییراتتان را بدهید و ذخیره کنید",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "می‌توانید محتویات صفحه را ویرایش کنید. هنگامی که کارتان تمام شد، «{{int:visualeditor-toolbar-savedialog}}» را برای بررسی و ذخیرهٔ تغییراتتان کلیک کنید.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "می‌توانید محتویات صفحه را ویرایش کنید. هنگامی که کارتان تمام شد، «{{int:publishchanges}}» را برای بررسی و ذخیرهٔ تغییراتتان کلیک کنید.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "پیش‌نمایش (اختیاری)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "کلیک بر «{{int:showpreview}}» اجازه می‌دهد که ببینید با تغییراتتان چگونه خواهد شد. فقط فراموش نکنید که ذخیره کنید.",
 	"guidedtour-tour-gettingstarted-click-save-title": "کار شما تقریباً تمام شده‌است!",

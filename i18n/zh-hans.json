@@ -17,7 +17,8 @@
 			"Impersonator 1",
 			"Fengchao",
 			"NigelSoft",
-			"Liangent"
+			"Liangent",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "入门",
@@ -38,7 +39,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "或编辑章节",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "如果您想要编辑某个章节，您可以点击每个章节顶部的“{{int:editsection}}”链接。",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "做出您的更改并保存",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "您现在可以编辑此页面。当您完成了编辑的时候，点击“{{int:visualeditor-toolbar-savedialog}}”审视和保存您的更改。",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "您现在可以编辑此页面。当您完成了编辑的时候，点击“{{int:publishchanges}}”审视和保存您的更改。",
 	"guidedtour-tour-gettingstarted-click-preview-title": "预览（可选）",
 	"guidedtour-tour-gettingstarted-click-preview-description": "点击“{{int:showpreview}}”，您将看到您在该页面作出了哪些更改。别忘了保存。",
 	"guidedtour-tour-gettingstarted-click-save-title": "马上就完成了！",

@@ -8,7 +8,8 @@
 			"고기랑",
 			"Namoroka",
 			"Revi",
-			"Ykhwong"
+			"Ykhwong",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "시작하기",
@@ -29,7 +30,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "또는 문단 편집",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "특정 문단을 편집하려면 각 문단 제목 주변에 위치한 \"{{int:editsection}}\" 링크를 클릭할 수 있습니다.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "문서를 바꾸고 저장하세요",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "이제 문서의 내용을 편집할 수 있습니다. 편집 완료 시, 바뀜을 검토하고 저장하려면 \"{{int:visualeditor-toolbar-savedialog}}\"을 클릭하세요.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "이제 문서의 내용을 편집할 수 있습니다. 편집 완료 시, 바뀜을 검토하고 저장하려면 \"{{int:publishchanges}}\"을 클릭하세요.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "미리 보기 (선택 사항)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "\"{{int:showpreview}}\"를 클릭하면 문서가 어떻게 바뀌었는지 확인할 수 있습니다. 저장하는 것을 잊지 마세요.",
 	"guidedtour-tour-gettingstarted-click-save-title": "거의 끝났습니다!",

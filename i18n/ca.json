@@ -5,7 +5,8 @@
 			"Paucabot",
 			"QuimGil",
 			"Vriullop",
-			"Fitoschido"
+			"Fitoschido",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Primers passos",
@@ -26,7 +27,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "O editeu una secció",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Si voleu editar una secció específica, feu clic a l'enllaç blau «{{int:editsection}}» al costat de cada títol de secció.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Feu els vostres canvis i deseu",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Ara ja podeu editar el contingut de la pàgina. Quan estigueu feu clic a «{{int:visualeditor-toolbar-savedialog}}» per revisar i desar els canvis.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Ara ja podeu editar el contingut de la pàgina. Quan estigueu feu clic a «{{int:publishchanges}}» per revisar i desar els canvis.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Previsualització (opcional)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Si feu clic a «{{int:showpreview}}» podreu veure com quedarà la pàgina amb els vostres canvis. No us oblideu de desar.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Gairebé heu acabat!",

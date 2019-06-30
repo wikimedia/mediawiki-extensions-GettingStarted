@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Fohanno",
-			"Y-M D"
+			"Y-M D",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Kregiñ ganti",
@@ -16,7 +17,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Gallout a rit aozañ ar bajenn a-bezh o klikañ amañ.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Pe aozañ ur rann",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Grit ho kemmoù hag enrollit",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Bremañ e c'hallit aozañ ar bajenn. P'ho po fin, klikit war \"{{int:visualeditor-toolbar-savedialog}}\" evit adwelet hag enrollañ ho kemmoù.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Bremañ e c'hallit aozañ ar bajenn. P'ho po fin, klikit war \"{{int:publishchanges}}\" evit adwelet hag enrollañ ho kemmoù.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Rakwel (diret)",
 	"guidedtour-tour-gettingstarted-click-save-title": "Tost echu eo ganeoc'h !",
 	"gettingstarted-cta-close": "Serriñ",

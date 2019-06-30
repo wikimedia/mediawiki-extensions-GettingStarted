@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Danmichaelo",
-			"Jon Harald Søby"
+			"Jon Harald Søby",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Kom i gang",
@@ -23,7 +24,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Eller rediger en seksjon",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Hvis du vil redigere en gitt seksjon klikker du på «{{int:editsection}}»-lenka i nærheten av seksjonens tittel.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Gjør endringene dine og lagre",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Nå kan du redigere sideinnholdet. Når du er ferdig, trykk på «{{int:visualeditor-toolbar-savedialog}}» for å gå gjennom og lagre enidringene dine.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Nå kan du redigere sideinnholdet. Når du er ferdig, trykk på «{{int:publishchanges}}» for å gå gjennom og lagre enidringene dine.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Forhåndsvisning (valgfritt)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Ved å klikke på «{{int:showpreview}}» kan du se hvordan siden blir seende ut etter endringene dine. Bare ikke glem å lagre!",
 	"guidedtour-tour-gettingstarted-click-save-title": "Du er nesten ferdig!",

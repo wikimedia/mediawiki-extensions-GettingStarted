@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"GunChleoc"
+			"GunChleoc",
+			"Matma Rex"
 		]
 	},
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "'S urrainn dhut susbaint na duilleige a dheasachadh a-nis. Nuair a bhios tu deiseil, briog air \"{{int:visualeditor-toolbar-savedialog}}\" gus na dh'atharraich thu a dhearbhadh 's a shàbhaladh."
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "'S urrainn dhut susbaint na duilleige a dheasachadh a-nis. Nuair a bhios tu deiseil, briog air \"{{int:publishchanges}}\" gus na dh'atharraich thu a dhearbhadh 's a shàbhaladh."
 }

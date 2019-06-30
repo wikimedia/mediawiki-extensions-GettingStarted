@@ -3,7 +3,8 @@
 		"authors": [
 			"Tacsipacsi",
 			"Tgr",
-			"Misibacsi"
+			"Misibacsi",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Első lépések",
@@ -24,7 +25,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Szakasz szerkesztése",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Ha csak egy bizonyos szakaszt akarsz szerkeszteni, kattints a kék „{{int:editsection}}” linkre a szakasz tetején.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Végezd el a módosításokat és mentsd el a lapot",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Ezután módosíthatod a szócikk tartalmát. Ha készen vagy, kattints az „{{int:visualeditor-toolbar-savedialog}}” gombra, ezután áttekintheted a változtatásaidat, és rögzítheted őket.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Ezután módosíthatod a szócikk tartalmát. Ha készen vagy, kattints az „{{int:publishchanges}}” gombra, ezután áttekintheted a változtatásaidat, és rögzítheted őket.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Előnézet (opcionális)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Az „{{int:showpreview}}” gombra kattintva megnézheted, hogyan néz majd ki az oldal a módosításaid után. Csak ne felejtsd el elmenteni a végén.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Mindjárt végzünk!",

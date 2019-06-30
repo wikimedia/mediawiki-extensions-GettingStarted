@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"McDutchie"
+			"McDutchie",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Prime passos",
@@ -21,7 +22,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "O modifica un section",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Si tu vole modificar un section specific, tu pote cliccar sur le ligamine '{{int:editsection}}' vicin al titulo de cata section.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Face tu modificationes e salveguarda",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Ora tu pote modificar le contento del pagina. Quando tu ha finite, clicca sur \"{{int:visualeditor-toolbar-savedialog}}\" pro revider e salveguardar le cambiamentos.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Ora tu pote modificar le contento del pagina. Quando tu ha finite, clicca sur \"{{int:publishchanges}}\" pro revider e salveguardar le cambiamentos.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Previsualisation (optional)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Cliccar sur \"{{int:showpreview}}\" permitte verificar le aspecto del pagina con tu modificationes. Solmente non oblida de salveguardar lo.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Tu ha quasi finite!",

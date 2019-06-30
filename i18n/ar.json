@@ -3,7 +3,8 @@
 		"authors": [
 			"Asaifm",
 			"Ciphers",
-			"ديفيد"
+			"ديفيد",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "كيفية البدء",
@@ -24,7 +25,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "أو حرر قسما",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "إذا كنت تريد تعديل قسما معينا، فيمكنك النقر على الرابط \"{{int:editsection}}\" بالقرب من عنوان كل قسم.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "أجرِ تغييراتك واحفظها",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "يمكنك الآن تحرير محتويات الصفحة، عند الانتهاء، انقر فوق \"{{int:visualeditor-toolbar-savedialog}}\" لمراجعة تغييراتك وحفظها.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "يمكنك الآن تحرير محتويات الصفحة، عند الانتهاء، انقر فوق \"{{int:publishchanges}}\" لمراجعة تغييراتك وحفظها.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "عرض (اختياري)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "النقر على \"{{int:showpreview}}\" يسمح لك بأن ترى كيف ستبدو الصفحة مع التغييرات، فقط لا تنسى الحفظ.",
 	"guidedtour-tour-gettingstarted-click-save-title": "لقد انتهيت تقريبا!",

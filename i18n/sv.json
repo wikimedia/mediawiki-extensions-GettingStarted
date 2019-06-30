@@ -5,7 +5,8 @@
 			"Jopparn",
 			"Lokal Profil",
 			"WikiPhoenix",
-			"Jrobell"
+			"Jrobell",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Komma igång",
@@ -26,7 +27,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Eller redigera ett avsnitt",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Om du vill redigera ett särskilt avsnitt, kan du klicka på länken \"{{int:editsection}}\", nära rubriken för varje avsnitt.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Gör dina ändringar och spara",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Du kan nu redigera sidans innehåll. När du är färdig, klicka på \"{{int:visualeditor-toolbar-savedialog}}\" för att förhandsgranska och spara dina ändringar.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Du kan nu redigera sidans innehåll. När du är färdig, klicka på \"{{int:publishchanges}}\" för att förhandsgranska och spara dina ändringar.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Förhandsgranska (valfritt)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Genom att klicka på \"{{int:showpreview}}\" kan du se hur sidan ser ut med dina ändringar. Glöm bara inte att spara.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Du är nästan klar!",

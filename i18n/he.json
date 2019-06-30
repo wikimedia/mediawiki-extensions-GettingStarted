@@ -7,7 +7,8 @@
 			"NLIGuy",
 			"YaronSh",
 			"אור שפירא",
-			"Rotemliss"
+			"Rotemliss",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "איך להתחיל",
@@ -28,7 +29,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "או לערוך פסקה",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "אם ברצונך לערוך פסקה מסוימת, אפשר ללחוץ על הקישור \"{{int:editsection}}\" ליד הכותרת של כל פסקה.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "עכשיו נשאר לעשות את השינויים ולשמור",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "כעת באפשרותך לערוך את התוכן של הדף. בסיום יש ללחוץ על \"{{int:visualeditor-toolbar-savedialog}}\" כדי לסקור ולשמור את השינויים שלך.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "כעת באפשרותך לערוך את התוכן של הדף. בסיום יש ללחוץ על \"{{int:publishchanges}}\" כדי לסקור ולשמור את השינויים שלך.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "תצוגה מקדימה (לא חובה)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "לחיצה על \"{{int:showpreview}}\" מאפשרת לך לראות איך ייראה הדף עם השינויים שלך. רק לא לשכוח לשמור!",
 	"guidedtour-tour-gettingstarted-click-save-title": "כמעט סיימת!",

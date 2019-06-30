@@ -5,7 +5,8 @@
 			"KWiki",
 			"DzWiki",
 			"Semso98",
-			"Srdjan m"
+			"Srdjan m",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Kako započeti?",
@@ -26,7 +27,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Ili uredite odlomak",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Ako želite urediti specifičnu sekciju, onda kliknite na plavi link \"{{int:editsection}}\", koji se nalazi na vrhu svake sekcije.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Načinite izmjene i sačuvajte ih",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Sada možete urediti stranicu. Kad završite s uređivanjem, kliknite na \"{{int:visualeditor-toolbar-savedialog}}\" da pregledate i sačuvate Vaše izmjene.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Sada možete urediti stranicu. Kad završite s uređivanjem, kliknite na \"{{int:publishchanges}}\" da pregledate i sačuvate Vaše izmjene.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Pregled (nije obavezno)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Klikanje na \"{{int:showpreview}}\" omogućava Vam da vidite kako bi stranica izgledala s Vašim izmjenama. Nemojte na kraju zaboraviti sačuvati izmjene.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Skoro ste gotovi!",

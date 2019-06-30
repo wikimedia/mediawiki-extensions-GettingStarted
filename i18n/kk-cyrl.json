@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Arystanbek",
-			"Габдулгани НИШ ХБН"
+			"Габдулгани НИШ ХБН",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Бастау",
@@ -23,7 +24,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Немесе бөлімді өңдеу",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Егер сіз арнайы бөлімді өңдегіңіз келсе, бөлім атауына жақын «{{int:editsection}}» сілтемесін басыңыз.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Өзгерістер жасау және сақтау",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Сіз бет мазмұнын өңдей аласыз. Болғасын,  «{{int:visualeditor-toolbar-savedialog}}» батырмасын басып өзгерістеріңізді қарап шығыңыз және сақтаңыз.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Сіз бет мазмұнын өңдей аласыз. Болғасын,  «{{int:publishchanges}}» батырмасын басып өзгерістеріңізді қарап шығыңыз және сақтаңыз.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Қарап шығу (міндетті емес)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "«{{int:showpreview}}» батырмасын бассаңыз өзгерістеріңіздің бұл бетке қалай өзгертетінін көре аласыз. Тек сақтауды ұмытпаңыз.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Сіз бітейін деп қалдыңыз!",

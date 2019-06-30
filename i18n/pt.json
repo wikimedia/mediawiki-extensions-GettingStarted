@@ -10,7 +10,8 @@
 			"Vitorvicentevalente",
 			"Waldir",
 			"Fabulous",
-			"Mansil"
+			"Mansil",
+			"Matma Rex"
 		]
 	},
 	"gettingstarted": "Primeiros passos",
@@ -31,7 +32,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Ou editar uma secção",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Se quiser editar uma secção específica, pode clicar a hiperligação \"{{int:editsection}}\", junto ao título de cada secção.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Faça as alterações e grave",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Agora, pode editar o conteúdo da página. Ao terminar, clique em \"{{int:visualeditor-toolbar-savedialog}}\" para rever e gravar as suas alterações.",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Agora, pode editar o conteúdo da página. Ao terminar, clique em \"{{int:publishchanges}}\" para rever e gravar as suas alterações.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Antevisão (opcional)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Clicar em ''{{int:showpreview}}'' permite-lhe verificar como a página ficará após as suas alterações. Mas não se esqueça de as gravar.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Está quase a terminar!",
