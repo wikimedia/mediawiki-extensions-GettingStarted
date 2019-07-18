@@ -7,11 +7,12 @@
 			"Sujiniku",
 			"Otokoume",
 			"Suyama",
-			"Matma Rex"
+			"Matma Rex",
+			"Afaz"
 		]
 	},
 	"gettingstarted": "はじめに",
-	"gettingstarted-desc": "新規利用者が編集者になるのを助けます",
+	"gettingstarted-desc": "新規利用者が編集者になるのを支援する",
 	"gettingstarted-task-toolbar-editing-help-text": "ヘルプを表示",
 	"gettingstarted-task-toolbar-editing-help-title": "編集方法のガイドを表示する",
 	"gettingstarted-task-toolbar-try-another-text": "別のページに挑戦 ►",
