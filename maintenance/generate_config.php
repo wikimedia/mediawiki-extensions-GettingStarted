@@ -38,9 +38,9 @@ class GenerateConfig extends \Maintenance {
 	public function __construct() {
 		parent::__construct();
 
-		$this->mDescription = 'Generates files that contain the values for the ' .
+		$this->addDescription( 'Generates files that contain the values for the ' .
 			'wgGettingStartedCategoriesForTaskTypes and wgGettingStartedExcludedCategories ' .
-			'configuration variables from specific Wikidata entities.';
+			'configuration variables from specific Wikidata entities.' );
 
 		// TODO (phuedx, 2014-03-10) Extend addOption to include a
 		// default value, which could be included in the output of

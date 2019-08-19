@@ -23,7 +23,7 @@ class PopulateCategories extends \Maintenance {
 	public function __construct() {
 		parent::__construct();
 
-		$this->mDescription = 'Populates GettingStarted Redis sets from categories';
+		$this->addDescription( 'Populates GettingStarted Redis sets from categories' );
 		$this->requireExtension( 'GettingStarted' );
 	}
 

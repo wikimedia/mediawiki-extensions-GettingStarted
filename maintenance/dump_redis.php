@@ -32,7 +32,7 @@ class DumpRedisCategorySync extends \Maintenance {
 			'Redis databases, so should not be used in production. Will not include category name',
 			false, false
 		);
-		$this->mDescription = 'Dump Redis data used for RedisCategorySync';
+		$this->addDescription( 'Dump Redis data used for RedisCategorySync' );
 		$this->requireExtension( 'GettingStarted' );
 	}
 
