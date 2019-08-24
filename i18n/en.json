@@ -47,12 +47,5 @@
 	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Uh oh, we're unable to show recommendations right now.",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Please try again.",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Random page",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Refresh",
-	"apihelp-query+gettingstartedgetpages-description": "This API is for getting a list of one or more pages related to a particular GettingStarted task.",
-	"apihelp-query+gettingstartedgetpages-summary": "This API is for getting a list of one or more pages related to a particular GettingStarted task.",
-	"apihelp-query+gettingstartedgetpages-param-taskname": "Task name, generally either \"copyedit\" (copy-editing suggestions) or \"morelike\" (pages similar to the base page/excluded title)",
-	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "Full title of a page to exclude from the list; also used as the base title for recommendations based on a given page",
-	"apihelp-query+gettingstartedgetpages-param-count": "Requested count; will attempt to fetch this exact number, but may fetch fewer if no more are found after multiple attempts",
-	"apihelp-query+gettingstartedgetpages-example-1": "",
-	"apierror-gettingstarted-nosuggester": "Could not build suggester. Use a valid <var>taskname</var> parameter, provide necessary dependencies (CirrusSearch is required for <var>morelike</var>), and include <var>excludedtitle</var> when the task requires it."
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Refresh"
 }
