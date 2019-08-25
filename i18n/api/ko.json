@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"apihelp-query+gettingstartedgetpages-description": "이 API는 특정한 GettingStarted 작업과 관련한 하나 이상의 문서 목록을 가져오기 위해 존재합니다.",
+	"apihelp-query+gettingstartedgetpages-summary": "이 API는 특정한 GettingStarted 작업과 관련한 하나 이상의 문서 목록을 가져오기 위해 존재합니다."
+}

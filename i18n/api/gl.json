@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Elisardojm"
+		]
+	},
+	"apihelp-query+gettingstartedgetpages-description": "Esta API é para obter unha lista de unha ou máis páxinas relacionadas cunha tarefa particular de GettingStarted.",
+	"apihelp-query+gettingstartedgetpages-summary": "Esta API é para obter unha lista de unha ou máis páxinas relacionadas cunha tarefa particular de GettingStarted.",
+	"apihelp-query+gettingstartedgetpages-param-taskname": "Nome de tarefa, normalmente \"copyedit\" (suxestións de modificación por copia) ou \"morelike\" (páxinas similares ó título da páxina de base/excluída)",
+	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "Título completo da páxina a excluír da lista, tamén usado como o título base para recomendacións baseadas nunha páxina dada",
+	"apihelp-query+gettingstartedgetpages-param-count": "Conteo solicitado; intentará recuperar o número exacto, pero pode recuperar menos se non se atopan máis despois de múltiples intentos",
+	"apierror-gettingstarted-nosuggester": "Non foi posible construír un conselleiro. Use un parámetro <var>taskname</var> válido, proporcione as dependencias necesarias (CirrusSearch é necesario para <var>morelike</var>) e inclúa <var>excludedtitle</var> cando a tarefa o requira."
+}

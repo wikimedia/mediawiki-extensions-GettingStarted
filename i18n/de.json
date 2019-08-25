@@ -52,9 +52,5 @@
 	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Wir können momentan keine Empfehlungen anzeigen.",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Bitte erneut versuchen.",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Zufällige Seite",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Aktualisieren",
-	"apihelp-query+gettingstartedgetpages-description": "Diese API ist für das Abrufen einer Liste einer oder mehrerer Seiten bezüglich einer besonderen GettingStarted-Aufgabe.",
-	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "Vollständiger Titel einer Seite, die von der Liste ausgeschlossen werden soll; wird auch als Basistitel für Empfehlungen verwendet, die auf einer bestimmten Seite basieren.",
-	"apihelp-query+gettingstartedgetpages-param-count": "Angeforderte Anzahl; versucht, genau diese Anzahl zu ermitteln, kann aber weniger holen, wenn nach mehreren Versuchen keine weiteren gefunden werden.",
-	"apierror-gettingstarted-nosuggester": "Der Vorschlager kann nicht erstellt werden. Verwende den gültigen Parameter <var>taskname</var>, gib notwendige Abhängigkeiten an (CirrusSearch ist für <var>morelike</var> erforderlich) und schließe <var>excludedtitle</var> mit ein, wenn die Aufgabe dies erfordert."
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Aktualisieren"
 }

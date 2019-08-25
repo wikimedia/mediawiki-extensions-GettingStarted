@@ -49,11 +49,5 @@
 	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Oi, vi kunne visst ikke vise anbefalinger akkurat nå.",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Prøv igjen.",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Tilfeldig side",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Oppdater",
-	"apihelp-query+gettingstartedgetpages-description": "Dette API-et er for å få ei liste over én eller flere sider relatert til en spesifikk GettingStarted-oppgave.",
-	"apihelp-query+gettingstartedgetpages-summary": "Dette API-et er for å få ei liste over én eller flere sider relatert til ei gitt GettingStarted-oppgave.",
-	"apihelp-query+gettingstartedgetpages-param-taskname": "Oppgavenavn, generelt sett enten «copyedit» (korrekturlesingsforslag) eller «morelike» (sider som ligner på grunnsiden/ekskludert tittel)",
-	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "Den fulle tittelen på en side som skal ekskluderes fra lista; brukes også som grunnsidetittelen for forslag basert på ei gitt side",
-	"apihelp-query+gettingstartedgetpages-param-count": "Forespurt antall; vil prøve å hente akkurat dette antallet, men kan hente færre om ingen flere blir funnet etter flere forsøk",
-	"apierror-gettingstarted-nosuggester": "Kunne ikke bygge forslag. Bruk en gyldig <var>taskname</var>-parameter, angi nødvendige avhengigheter (CirrusSearch kreves for <var>morelike</var>), og inkluder <var>excludedtitle</var> når oppgaven krever det."
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Oppdater"
 }

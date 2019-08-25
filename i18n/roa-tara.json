@@ -47,11 +47,5 @@
 	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Pizze, non ge te putime dà suggereminde su ce puè ffà, jndr'à stu mumende.",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Pruève arrete.",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Pàgene a uecchije",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Aggiorne",
-	"apihelp-query+gettingstartedgetpages-description": "Sta API jè pe avè 'n'elenghe de une o cchiù pàggene relative a 'na particolare attivitate GettingStarted.",
-	"apihelp-query+gettingstartedgetpages-summary": "Sta API jè pe avè 'n'elenghe de une o cchiù pàggene relative a 'na particolare attivitate GettingStarted.",
-	"apihelp-query+gettingstartedgetpages-param-taskname": "Nome de l'attivitate, generalmende sò \"copyedit\" (suggereminde de copy-editing) o \"morelike\" (pàggene ca s'assemegghiane in base a pàgene/escludenne 'u titole)",
-	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "Titole comblete de 'na pàgene da escludere da l'elenghe; pure ausate cumme 'u titole base pe le suggereminde ca se basane sus a 'na certa pàgene",
-	"apihelp-query+gettingstartedgetpages-param-count": "Condegge cercate; prove a analizzà stu numere esatte, ma pò analizzà de mene ce nisciune ha state acchiate apprisse 'na serie de prove",
-	"apierror-gettingstarted-nosuggester": "Non ge pozze costruì 'u suggeritore. Ause 'nu parametre <var>taskname</var> valide, dèje le dipendenze necessarie (CirrusSearch jè obbligatoriepe <var>morelike</var>), e 'nglude <var>excludedtitle</var> quanne l'attivitate a cerche."
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Aggiorne"
 }

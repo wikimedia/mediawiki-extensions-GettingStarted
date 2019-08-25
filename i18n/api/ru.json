@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Movses",
+			"Okras",
+			"Ядерный Трамвай"
+		]
+	},
+	"apihelp-query+gettingstartedgetpages-description": "Это API для получения списка из одной или нескольких страниц, относящихся к определенной задаче GettingStarted.",
+	"apihelp-query+gettingstartedgetpages-summary": "Этот API для получения списка из одной или нескольких страниц, относящихся к определённой задаче GettingStarted.",
+	"apihelp-query+gettingstartedgetpages-param-taskname": "Название задачи, как правило, либо «copyedit» (предложения по копированию-редактированию), либо «morelike» (страницы, похожие на основную страницу/исключённый заголовок)",
+	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "Полное название страницы, которую нужно исключить из списка; также используется как основное название для рекомендаций, основанных на заданной странице",
+	"apihelp-query+gettingstartedgetpages-param-count": "Запрашиваемый счёт; будет пытаться вернуть точное количество, но может вернуть меньше, если после многократных попыток не будет найдено больше",
+	"apierror-gettingstarted-nosuggester": "Не удалось построить генератор предложений. Используйте корректный параметр <var>taskname</var>, указывайте необходимые зависимости (Cirrussearch требуется для <var>morelike</var>), и включайте <var>excludedtitle</var>, когда задача этого требует."
+}

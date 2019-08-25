@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Piramidion"
+		]
+	},
+	"apihelp-query+gettingstartedgetpages-description": "Цей API призначений для отримання списку з однієї або більше сторінок, пов'язаних з конкретним завданням GettingStarted.",
+	"apihelp-query+gettingstartedgetpages-summary": "Цей API призначений для отримання списку з однієї або більше сторінок, пов'язаних з конкретним завданням GettingStarted.",
+	"apihelp-query+gettingstartedgetpages-param-taskname": "Назва завдання, зазвичай або «copyedit» (пропозиції з вичитування текстів) або «morelike» (сторінки, подібні до базової сторінки/виключеної назви)",
+	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "Повна назва сторінки, яку треба виключити зі списку; також використовується як базова назва для рекомендацій на основі заданої сторінки",
+	"apihelp-query+gettingstartedgetpages-param-count": "Запитувана кількість; спробує вивести саме таку кількість, але врешті-решт може вивести менше, якщо після багатьох спроб не знайде більше нічого",
+	"apierror-gettingstarted-nosuggester": "Не вдалося збудувати генератор пропозицій. Використайте дійсний параметр <var>taskname</var>, надайте необхідні залежності (CirrusSearch вимагається для <var>morelike</var>), і додайте <var>excludedtitle</var>, коли завдання цього потребує."
+}

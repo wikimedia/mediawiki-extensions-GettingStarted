@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toplove12"
+		]
+	},
+	"apihelp-query+gettingstartedgetpages-param-count": "Kërkuar numërimin; do të tentojë që të shkoj në këtë numër të saktë, por mund të shkoj të marr më pak, nëse jo më shumë, janë gjetur pas përpjekje të shumta"
+}

@@ -50,7 +50,5 @@
 	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "아직 권장되지 않습니다!",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "다시 시도해 주십시오.",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "임의 문서",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "새로 고침",
-	"apihelp-query+gettingstartedgetpages-description": "이 API는 특정한 GettingStarted 작업과 관련한 하나 이상의 문서 목록을 가져오기 위해 존재합니다.",
-	"apihelp-query+gettingstartedgetpages-summary": "이 API는 특정한 GettingStarted 작업과 관련한 하나 이상의 문서 목록을 가져오기 위해 존재합니다."
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "새로 고침"
 }

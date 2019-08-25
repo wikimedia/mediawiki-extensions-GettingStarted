@@ -54,11 +54,5 @@
 	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "אוי, לא יכולנו להראות לך הצעות עכשיו.",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "נא לנסות שוב.",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "דף אקראי",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "רענון",
-	"apihelp-query+gettingstartedgetpages-description": "ה־API הזה משמש לקבלת רשימה של דפים שמתייחסים למשימת GettingStarted.",
-	"apihelp-query+gettingstartedgetpages-summary": "ה־API הזה משמש לקבלת רשימה של דפים הקשורים למשימה מסוימת בהרחבה GettingStarted.",
-	"apihelp-query+gettingstartedgetpages-param-taskname": "שם המשימה, בדרך כלל \"copyedit\" (הצעות להגהה) או \"morelike\" (דפים שדומים לדף הבסיס או הדף הדחוי)",
-	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "הכותרת המלאה של הדף שיודר מהרשימה; משמש גם כותרת בסיס להמלצות על סמך הדף הנתון",
-	"apihelp-query+gettingstartedgetpages-param-count": "המניין המבוקש; ינסה לאחזר בדיוק את המספר הזה, אבל יכול לאחזר פחות אם לא נמצאו עוד פריטים אחרי ניסיונות חוזרים",
-	"apierror-gettingstarted-nosuggester": "לא היה אפשר לבנות מציע. יש להשתמש בפרמטר <var>taskname</var> תקין, לספק תלויות נחוצות (CirrusSearch נחוץ בשביל <var>morelike</var>), ולכלול <var>excludedtitle</var> כשהמשימה דורשת את זה."
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "רענון"
 }

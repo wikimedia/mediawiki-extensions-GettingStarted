@@ -50,11 +50,5 @@
 	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "عذرًا ، لا يمكننا عرض التوصيات على نحو صائب في الوقت الحالي.",
 	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "الرجاء المحاولة مرة اخرى.",
 	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "صفحة عشوائية",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "تحديث",
-	"apihelp-query+gettingstartedgetpages-description": "API هذه للحصول على قائمة بصفحة واحدة أو أكثر ذات صلة بمهمة GettingStarted معينة.",
-	"apihelp-query+gettingstartedgetpages-summary": "API هذه للحصول على قائمة بصفحة واحدة أو أكثر ذات صلة بمهمة GettingStarted معينة.",
-	"apihelp-query+gettingstartedgetpages-param-taskname": "اسم المهمة، بشكل عام إما \"copyedit\" (اقتراحات تحرير النسخ) أو \"morelike\" (صفحات مشابهة للصفحة الأساسية/عنوان مستثنى)",
-	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "العنوان الكامل للصفحة لاستبعادها من القائمة، يُستخدَم أيضا كعنوان أساسي للتوصيات المستندة إلى صفحة معينة",
-	"apihelp-query+gettingstartedgetpages-param-count": "العدد المطلوب سيحاول إحضار هذا الرقم الدقيق، ولكن قد يتم جلب عدد أقل إذا لم يتم العثور على المزيد بعد محاولات متعددة",
-	"apierror-gettingstarted-nosuggester": "لا يمكن بناء suggester; استخدم وسيط <var>taskname</var> صالحا، وفر التبعيات اللازمة (مطلوب CirrusSearch لـ<var>morelike</var>)، وقم بتضمين <var>excludedtitle</var> عندما تتطلبه المهمة."
+	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "تحديث"
 }
