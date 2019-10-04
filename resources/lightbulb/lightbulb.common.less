@@ -3,6 +3,7 @@
 
 // From Nicolas Gallagher's "A new micro clearfix hack" (see
 // http://nicolasgallagher.com/micro-clearfix-hack/).
+// Without the IE 6 & 7 support.
 .mw-gettingstarted-clearfix:before,
 .mw-gettingstarted-clearfix:after {
 	content: ' ';
@@ -11,10 +12,6 @@
 
 .mw-gettingstarted-clearfix:after {
 	clear: both;
-}
-
-.mw-gettingstarted-clearfix {
-	*zoom: 1;
 }
 
 .mw-gettingstarted-lightbulb-notification,
