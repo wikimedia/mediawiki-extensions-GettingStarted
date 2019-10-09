@@ -14,7 +14,7 @@ use Tests\GettingStarted\Mocks\LoggedInUser;
  * @covers GettingStarted\TaskRecommendationsExperimentV1
  */
 class TaskRecommendationsExperimentV1Test extends \MediaWikiTestCase {
-	public function setUp() {
+	public function setUp() : void {
 		parent::setUp();
 
 		$now = time();
