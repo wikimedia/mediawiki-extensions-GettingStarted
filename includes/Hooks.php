@@ -7,7 +7,6 @@ use FormatJson;
 use OutputPage;
 use ResourceLoader;
 use Skin;
-use SkinTemplate;
 use Title;
 use User;
 use WebRequest;
@@ -292,8 +291,6 @@ class Hooks {
 	 * @return bool
 	 */
 	public static function onBeforePageDisplay( OutputPage $out, \Skin $skin ) {
-		global $wgGettingStartedRunTest;
-
 		$user = $out->getUser();
 
 		if ( self::shouldLoadToolbar( $out, $user ) ) {
@@ -318,25 +315,6 @@ class Hooks {
 			// suitable name), then decide what to do about
 			// redirect-page-impression (maybe log on the server, or get rid of it?)
 			self::addReturnToModules( $out, $skin );
-		}
-
-		// Task Recommendations experiment v1.
-		if ( $wgGettingStartedRunTest ) {
-			$experiment = new TaskRecommendationsExperimentV1( $user );
-
-			if (
-				$experiment->isPostEditEnabled()
-				&& $out->getTitle()->inNamespace( NS_MAIN )
-			) {
-				$out->addModules( 'ext.gettingstarted.lightbulb.postEdit' );
-			}
-
-			if (
-				$experiment->isFlyoutEnabled()
-				&& $user->getEditCount() > 0
-			) {
-				$out->addModules( 'ext.gettingstarted.lightbulb.flyout' );
-			}
 		}
 
 		return true;
@@ -444,41 +422,6 @@ class Hooks {
 			return false;
 		}
 		// Otherwise return true
-		return true;
-	}
-
-	/**
-	 * While experiement is running add Task suggestions link
-	 *  for logged in users who have made an edit
-	 * @param array &$personal_urls array of user toolbar links
-	 * @param Title &$title Title object for the current page
-	 * @param SkinTemplate $skinTemplate skin template object
-	 * @return true
-	 */
-	public static function onPersonalUrls( &$personal_urls, &$title, $skinTemplate ) {
-		global $wgGettingStartedRunTest;
-
-		$experiment = new TaskRecommendationsExperimentV1( $skinTemplate->getUser() );
-
-		if (
-			$wgGettingStartedRunTest &&
-			$experiment->isFlyoutEnabled() &&
-			$skinTemplate->getUser()->getEditCount() > 0
-		) {
-			$recommendations = [
-				'recommendations' => [
-					'text' => wfMessage( 'gettingstarted-lightbulb-recommendations-personal-tool' )
-						->text(),
-					'href' => '#recommendations',
-					'class' => 'mw-gettingstarted-personal-tool-recommendations',
-				]
-			];
-			$personal_urls = $recommendations + $personal_urls;
-			$skinTemplate->getOutput()->addModuleStyles(
-				'ext.gettingstarted.lightbulb.personalTools'
-			);
-		}
-
 		return true;
 	}
 }

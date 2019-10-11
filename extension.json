@@ -59,65 +59,6 @@
 				"guidedtour-tour-gettingstarted-click-save-description"
 			]
 		},
-		"ext.gettingstarted.lightbulb.postEdit": {
-			"scripts": [
-				"lightbulb/lightbulb.postEdit.js"
-			],
-			"styles": "lightbulb/lightbulb.postEdit.less",
-			"dependencies": [
-				"ext.gettingstarted.api",
-				"ext.gettingstarted.lightbulb.common",
-				"ext.eventLogging"
-			],
-			"messages": [
-				"gettingstarted-lightbulb-notification-body"
-			]
-		},
-		"ext.gettingstarted.lightbulb.personalTools": {
-			"styles": "lightbulb/lightbulb.personalTools.less"
-		},
-		"ext.gettingstarted.lightbulb.flyout": {
-			"scripts": "lightbulb/lightbulb.flyout.js",
-			"styles": "lightbulb/lightbulb.flyout.less",
-			"dependencies": [
-				"ext.gettingstarted.api",
-				"ext.gettingstarted.lightbulb.common",
-				"ext.guidedTour.styles",
-				"jquery.client",
-				"mediawiki.user",
-				"ext.eventLogging"
-			],
-			"messages": [
-				"gettingstarted-lightbulb-heading",
-				"gettingstarted-lightbulb-text",
-				"gettingstarted-lightbulb-flyout-back",
-				"gettingstarted-lightbulb-flyout-next",
-				"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits",
-				"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits",
-				"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations",
-				"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations",
-				"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits",
-				"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations"
-			]
-		},
-		"ext.gettingstarted.lightbulb.common": {
-			"styles": "lightbulb/lightbulb.common.less",
-			"scripts": [
-				"lightbulb/lightbulb.parser.js",
-				"lightbulb/lightbulb.suggestionRenderer.js",
-				"lightbulb/lightbulb.logging.js"
-			],
-			"dependencies": [
-				"mediawiki.util",
-				"mediawiki.user",
-				"moment",
-				"ext.eventLogging",
-				"ext.gettingstarted.logging"
-			],
-			"messages": [
-				"gettingstarted-lightbulb-notification-body-lastedited"
-			]
-		},
 		"ext.gettingstarted.logging": {
 			"scripts": "ext.gettingstarted.logging.js",
 			"dependencies": [
@@ -195,11 +136,7 @@
 	"attributes": {
 		"EventLogging": {
 			"Schemas": {
-				"GettingStartedRedirectImpression": 7355552,
-				"TaskRecommendation": 9266319,
-				"TaskRecommendationClick": 9266317,
-				"TaskRecommendationImpression": 9266226,
-				"TaskRecommendationLightbulbClick": 9433256
+				"GettingStartedRedirectImpression": 7355552
 			}
 		}
 	},
@@ -214,8 +151,7 @@
 		"CentralAuthPostLoginRedirect": "GettingStarted\\Hooks::onCentralAuthPostLoginRedirect",
 		"PostLoginRedirect": "GettingStarted\\Hooks::onPostLoginRedirect",
 		"GetPreferences": "GettingStarted\\Hooks::onGetPreferences",
-		"UserLogoutComplete": "GettingStarted\\Hooks::onUserLogoutComplete",
-		"PersonalUrls": "GettingStarted\\Hooks::onPersonalUrls"
+		"UserLogoutComplete": "GettingStarted\\Hooks::onUserLogoutComplete"
 	},
 	"config": {
 		"GettingStartedTasks": {
@@ -244,15 +180,6 @@
 				"serializer": "none"
 			},
 			"merge_strategy": "array_plus"
-		},
-		"GettingStartedRunTest": {
-			"value": false
-		},
-		"TaskRecommendationsExperimentV1StartDate": {
-			"value": 0
-		},
-		"TaskRecommendationsExperimentV1EndDate": {
-			"value": 0
 		}
 	},
 	"manifest_version": 2

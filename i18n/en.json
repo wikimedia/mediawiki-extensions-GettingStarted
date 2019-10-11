@@ -34,18 +34,5 @@
 	"gettingstarted-cta-edit-page-sub": "We'll show you how",
 	"gettingstarted-cta-fix-pages": "Edit a suggested page",
 	"gettingstarted-cta-fix-pages-sub": "We'll pick something easy",
-	"gettingstarted-cta-leave": "No thanks, maybe later",
-	"gettingstarted-lightbulb-notification-body": "Edit a similar article.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "Edited $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "Recommendations",
-	"gettingstarted-lightbulb-heading": "Pages to improve",
-	"gettingstarted-lightbulb-text": "Recommended based on your last edit.",
-	"gettingstarted-lightbulb-flyout-back": "Back",
-	"gettingstarted-lightbulb-flyout-next": "Next",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "No recommendations yet!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Try editing a few pages. It will help us recommend what you should edit next.",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Uh oh, we're unable to show recommendations right now.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Please try again.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Random page",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Refresh"
+	"gettingstarted-cta-leave": "No thanks, maybe later"
 }
