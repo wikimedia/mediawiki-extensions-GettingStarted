@@ -204,9 +204,6 @@
 	},
 	"EventLoggingSchemas": {
 		"GettingStartedRedirectImpression": 7355552,
-		"SignupExpCTAButtonClick": 8965028,
-		"SignupExpCTAImpression": 8965023,
-		"SignupExpPageLinkClick": 8965014,
 		"TaskRecommendation": 9266319,
 		"TaskRecommendationClick": 9266317,
 		"TaskRecommendationImpression": 9266226,
