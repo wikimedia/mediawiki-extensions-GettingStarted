@@ -13,11 +13,12 @@
 			"Vivaelcelta",
 			"Wifidel",
 			"Macofe",
-			"Ralgis"
+			"Ralgis",
+			"Hasley"
 		]
 	},
 	"gettingstarted": "Primeros pasos",
-	"gettingstarted-desc": "Ayuda a usarios nuevos a convertirse en editores.",
+	"gettingstarted-desc": "Ayuda a usuarios nuevos a convertirse en editores.",
 	"gettingstarted-task-toolbar-editing-help-text": "Mostrarme cómo",
 	"gettingstarted-task-toolbar-editing-help-title": "Mostrar una guía de edición",
 	"gettingstarted-task-toolbar-try-another-text": "Probar otra página ►",
