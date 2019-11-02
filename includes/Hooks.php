@@ -89,6 +89,7 @@ class Hooks {
 		$prefixedTitle = $title->getPrefixedText();
 
 		if ( isset( self::$openTask[$prefixedTitle] ) ) {
+			// @phan-suppress-next-line PhanTypeArraySuspiciousNullable
 			return self::$openTask[$prefixedTitle];
 		}
 

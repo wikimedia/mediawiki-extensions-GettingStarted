@@ -57,6 +57,7 @@ class MoreLikePageSuggester implements PageSuggester {
 		);
 		$titles = [];
 		foreach ( $searchResults as $searchResult ) {
+			// @phan-suppress-next-line PhanTypeArraySuspiciousNullable
 			$titles[] = Title::newFromText( $searchResult['title'] );
 		}
 

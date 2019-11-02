@@ -106,6 +106,7 @@ class GenerateConfig extends \Maintenance {
 			"?format=json&action=wbgetentities&props=sitelinks&ids={$qid}";
 		$responseBodyRaw = file_get_contents( $url );
 		$responseBody = json_decode( $responseBodyRaw, true );
+		// @phan-suppress-next-line PhanTypeArraySuspiciousNullable
 		$entity = $responseBody[ 'entities' ][ $qid ];
 		$result = [];
 

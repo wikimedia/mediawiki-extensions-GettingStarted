@@ -25,16 +25,16 @@ class RedisCategorySync {
 	// TODO (phuedx, 2014/07/10): Why are the categories, additions, and
 	// removals properties public?
 
-	/** @var array: array of relevant categories */
+	/** @var array array of relevant categories */
 	public static $categories;
 
-	/** @var array: arrays of [Category, int] additions to process. **/
+	/** @var array arrays of [Category, int] additions to process. **/
 	public static $additions = [];
 
-	/** @var array: arrays of [Category, int] removals to process. **/
+	/** @var array arrays of [Category, int] removals to process. **/
 	public static $removals = [];
 
-	/** @var bool: whether or not an update callback has been registered. **/
+	/** @var bool whether or not an update callback has been registered. **/
 	public static $callbackSet = false;
 
 	/**

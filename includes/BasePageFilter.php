@@ -16,7 +16,7 @@ class BasePageFilter {
 	/** @var Title */
 	protected $excludedTitle;
 
-	/** @var array: array of excluded categories */
+	/** @var array array of excluded categories */
 	protected static $excludedCategories;
 
 	/**
