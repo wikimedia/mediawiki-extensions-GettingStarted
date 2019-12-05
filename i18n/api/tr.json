@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"apihelp-query+gettingstartedgetpages-description": "Bu API, belirli bir Başlarken göreviyle ilgili bir veya daha fazla sayfanın listesini almak içindir.",
+	"apihelp-query+gettingstartedgetpages-summary": "Bu API, belirli bir Başlarken göreviyle ilgili bir veya daha fazla sayfanın listesini almak içindir.",
+	"apihelp-query+gettingstartedgetpages-param-taskname": "Görev adı, genellikle \"copyedit\" (kopya düzenleme önerileri) veya \"morelike\" (ana sayfaya/hariç bırakılan sayfaya benzer sayfalar)",
+	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "Listeden çıkarılacak bir sayfanın tam başlığı; belirli bir sayfaya dayalı tavsiyeler için temel başlık olarak da kullanılır",
+	"apihelp-query+gettingstartedgetpages-param-count": "İstenilen sayı; bu kesin sayıyı almaya çalışacak, ancak birden fazla denemeden sonra başka bir şey bulunamazsa daha az sayı getirebilir",
+	"apierror-gettingstarted-nosuggester": "Öneri oluşturulamadı. Geçerli bir <var>taskname</var> parametresi kullanın, gerekli bağımlılıkları sağlayın (<var>morelike</var> için CirrusSearch gereklidir) ve görev gerektirdiğinde <var>excludedtitle</var> ekleyin."
+}
