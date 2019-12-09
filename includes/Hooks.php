@@ -102,7 +102,7 @@ class Hooks {
 	 *
 	 * @param WebRequest $request current request
 	 * @param Title $title title to check
-	 * @return string Unprefixed version of task, or null if either there is no task,
+	 * @return string|null Unprefixed version of task, or null if either there is no task,
 	 *  or it's  separate (e.g. 'returnto')
 	 */
 	protected static function getUnprefixedGettingStartedTask( WebRequest $request, Title $title ) {
@@ -127,7 +127,7 @@ class Hooks {
 	 * @param OutputPage $out
 	 * @param User $user
 	 *
-	 * @return true to load, false otherwise
+	 * @return bool true to load, false otherwise
 	 */
 	protected static function shouldLoadToolbar( OutputPage $out, User $user ) {
 		if ( \Action::getActionName( $out ) !== 'view'
