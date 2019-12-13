@@ -8,7 +8,7 @@
 	"apihelp-query+gettingstartedgetpages-description": "Cette API sert à obtenir une liste d’une ou plusieurs pages liées à une tâche particulière de prise en main.",
 	"apihelp-query+gettingstartedgetpages-summary": "Cette API sert à obtenir une liste d’une ou plusieurs pages liées à une tâche particulière de prise en main.",
 	"apihelp-query+gettingstartedgetpages-param-taskname": "Nom de la tâche, en général soit « copyedit » (suggestions de modification par copie) ou « morelike » (pages similaires au titre de la page de base/exclu)",
-	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "Titre complet d’une page à exclure de la liste ; utilisé aussi comme titre de base pour les recommandations fournies sur une page donnée",
-	"apihelp-query+gettingstartedgetpages-param-count": "Comptage demandé ; tentera de récupérer ce nombre exact, mais ce peut être moins si plus rien n’est trouvé après plusieurs tentatives",
+	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "Titre complet d’une page à exclure de la liste ; utilisé aussi comme titre de base pour les recommandations fournies sur une page donnée",
+	"apihelp-query+gettingstartedgetpages-param-count": "Comptage demandé ; tentera de récupérer ce nombre exact, mais ce peut être moins si plus rien n’est trouvé après plusieurs tentatives",
 	"apierror-gettingstarted-nosuggester": "Impossible de construire un conseiller. Utiliser un paramètre <var>taskname</var> valide, fournir les dépendances nécessaires (CirrusSearch est nécessaire pour <var>morelike</var>), et inclure <var>excludedtitle</var> quand la tâche le nécessite."
 }
