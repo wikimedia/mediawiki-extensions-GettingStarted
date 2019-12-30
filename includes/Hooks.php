@@ -457,14 +457,14 @@ class Hooks {
 	 * @return true
 	 */
 	public static function onPersonalUrls( &$personal_urls, &$title, $skinTemplate ) {
-		global $wgGettingStartedRunTest, $wgUser;
+		global $wgGettingStartedRunTest;
 
-		$experiment = new TaskRecommendationsExperimentV1( $wgUser );
+		$experiment = new TaskRecommendationsExperimentV1( $skinTemplate->getUser() );
 
 		if (
 			$wgGettingStartedRunTest &&
 			$experiment->isFlyoutEnabled() &&
-			$wgUser->getEditCount() > 0
+			$skinTemplate->getUser()->getEditCount() > 0
 		) {
 			$recommendations = [
 				'recommendations' => [
