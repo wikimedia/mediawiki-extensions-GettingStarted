@@ -6,9 +6,9 @@ namespace Tests\GettingStarted;
 // global variable when a unit test/test suite is being run?
 require_once __DIR__ . '/mocks/LoggedInUser.php';
 
-use User;
 use GettingStarted\TaskRecommendationsExperimentV1;
 use Tests\GettingStarted\Mocks\LoggedInUser;
+use User;
 
 /**
  * @covers GettingStarted\TaskRecommendationsExperimentV1
