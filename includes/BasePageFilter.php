@@ -2,6 +2,7 @@
 
 namespace GettingStarted;
 
+use Mediawiki\Permissions\PermissionManager;
 use Title;
 use User;
 
@@ -13,7 +14,10 @@ class BasePageFilter {
 	/** @var User */
 	protected $user;
 
-	/** @var Title */
+	/** @var PermissionManager */
+	protected $permManager;
+
+	/** @var Title|null */
 	protected $excludedTitle;
 
 	/** @var array array of excluded categories */
@@ -23,10 +27,16 @@ class BasePageFilter {
 	 * Constructor.
 	 *
 	 * @param User $user user object, for permissions checks
+	 * @param PermissionManager $permManager
 	 * @param Title|null $excludedTitle optional title to exclude, to avoid consecutive duplicates
 	 */
-	public function __construct( User $user, Title $excludedTitle = null ) {
+	public function __construct(
+		User $user,
+		PermissionManager $permManager,
+		Title $excludedTitle = null
+	) {
 		$this->user = $user;
+		$this->permManager = $permManager;
 		$this->excludedTitle = $excludedTitle;
 	}
 
@@ -79,7 +89,7 @@ class BasePageFilter {
 			// but the API can still access pages outside.
 			&& $title->inNamespace( NS_MAIN )
 			&& $notExcludedTitle
-			&& $title->userCan( 'edit', $this->user, 'full' )
+			&& $this->permManager->userCan( 'edit', $this->user, $title, 'full' )
 			&& !(
 				$this->user->isNewbie()
 				&& $this->inExcludedCategories( $title )

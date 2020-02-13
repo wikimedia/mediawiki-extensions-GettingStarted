@@ -2,6 +2,7 @@
 
 namespace GettingStarted;
 
+use MediaWiki\MediaWikiServices;
 use Title;
 use User;
 
@@ -16,11 +17,12 @@ class PageFilterFactory {
 	 */
 	public static function getPageFilter( $taskName, User $user, Title $excludedTitle = null ) {
 		global $wgGettingStartedCategoriesForTaskTypes;
+		$permManager = MediaWikiServices::getInstance()->getPermissionManager();
 
 		if ( isset( $wgGettingStartedCategoriesForTaskTypes[$taskName] ) ) {
-			return new CategoryPageFilter( $user, $excludedTitle );
+			return new CategoryPageFilter( $user, $permManager, $excludedTitle );
 		} else {
-			return new BasePageFilter( $user, $excludedTitle );
+			return new BasePageFilter( $user, $permManager, $excludedTitle );
 		}
 	}
 }

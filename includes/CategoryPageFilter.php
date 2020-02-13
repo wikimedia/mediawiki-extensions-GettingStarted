@@ -11,10 +11,6 @@ use Title;
 class CategoryPageFilter extends BasePageFilter {
 	const MAX_PAGE_LENGTH = 10000;
 
-	public function __construct( \User $user, Title $excludedTitle = null ) {
-		parent::__construct( $user, $excludedTitle );
-	}
-
 	public function isAllowedPage( Title $title ) {
 		if ( !parent::isAllowedPage( $title ) ) {
 			return false;
