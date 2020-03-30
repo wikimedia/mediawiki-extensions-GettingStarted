@@ -6,7 +6,8 @@
 			"Lokal Profil",
 			"WikiPhoenix",
 			"Jrobell",
-			"Matma Rex"
+			"Matma Rex",
+			"Technic2"
 		]
 	},
 	"gettingstarted": "Komma igång",
@@ -23,7 +24,7 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Idéer på vad du kan göra",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Dessa banners identifierar problem med denna sida. Du behöver inte åtgärda dem alla, fokusera bara på de som du känner dig bekväm med att åtgärda.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Redigera hela sidan...",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Klicka \"$1\" för att ändra innehåll var som helst på sidan.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Klicka på \"$1\" för att ändra innehåll var som helst på sidan.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "Eller redigera ett avsnitt",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Om du vill redigera ett särskilt avsnitt, kan du klicka på länken \"{{int:editsection}}\", nära rubriken för varje avsnitt.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Gör dina ändringar och spara",
