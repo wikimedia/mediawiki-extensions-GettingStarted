@@ -2,11 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Church of emacs",
+			"Hwboehm",
 			"Inkowik",
 			"Kghbln",
-			"Metalhead64",
-			"Hwboehm",
-			"Matma Rex"
+			"Matma Rex",
+			"Metalhead64"
 		]
 	},
 	"gettingstarted": "Erste Schritte",
