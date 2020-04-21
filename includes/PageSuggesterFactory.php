@@ -2,6 +2,7 @@
 
 namespace GettingStarted;
 
+use CirrusSearch\CirrusSearch;
 use Title;
 use WebRequest;
 
@@ -37,7 +38,7 @@ class PageSuggesterFactory {
 			$category = \Category::newFromTitle( $sanitizedTitle );
 
 			return new CategoryPageSuggester( $redis, $category );
-		} elseif ( class_exists( \CirrusSearch::class ) &&
+		} elseif ( class_exists( CirrusSearch::class ) &&
 			$taskName === 'morelike' &&
 			$sourceTitle !== null ) {
 			return new MoreLikePageSuggester( $request, $sourceTitle );
