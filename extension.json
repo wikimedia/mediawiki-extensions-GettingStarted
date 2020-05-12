@@ -192,12 +192,16 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "GettingStarted/resources"
 	},
-	"EventLoggingSchemas": {
-		"GettingStartedRedirectImpression": 7355552,
-		"TaskRecommendation": 9266319,
-		"TaskRecommendationClick": 9266317,
-		"TaskRecommendationImpression": 9266226,
-		"TaskRecommendationLightbulbClick": 9433256
+	"attributes": {
+		"EventLogging": {
+			"Schemas": {
+				"GettingStartedRedirectImpression": 7355552,
+				"TaskRecommendation": 9266319,
+				"TaskRecommendationClick": 9266317,
+				"TaskRecommendationImpression": 9266226,
+				"TaskRecommendationLightbulbClick": 9433256
+			}
+		}
 	},
 	"Hooks": {
 		"BeforePageDisplay": "GettingStarted\\Hooks::onBeforePageDisplay",
@@ -215,23 +219,41 @@
 	},
 	"config": {
 		"GettingStartedTasks": {
-			"copyedit": {
-				"toolbarDescription": "gettingstarted-task-copyedit-toolbar-description",
-				"toolbarTryAnotherTitle": "gettingstarted-task-copyedit-toolbar-try-another-title"
+			"value": {
+				"copyedit": {
+					"toolbarDescription": "gettingstarted-task-copyedit-toolbar-description",
+					"toolbarTryAnotherTitle": "gettingstarted-task-copyedit-toolbar-try-another-title"
+				}
 			},
-			"_merge_strategy": "array_plus_2d"
+			"merge_strategy": "array_plus_2d"
 		},
-		"GettingStartedCategoriesForTaskTypes": [],
-		"GettingStartedExcludedCategories": [],
-		"GettingStartedRedis": false,
-		"GettingStartedRedisSlave": false,
+		"GettingStartedCategoriesForTaskTypes": {
+			"value": []
+		},
+		"GettingStartedExcludedCategories": {
+			"value": []
+		},
+		"GettingStartedRedis": {
+			"value": false
+		},
+		"GettingStartedRedisSlave": {
+			"value": false
+		},
 		"GettingStartedRedisOptions": {
-			"serializer": "none",
-			"_merge_strategy": "array_plus"
+			"value": {
+				"serializer": "none"
+			},
+			"merge_strategy": "array_plus"
 		},
-		"GettingStartedRunTest": false,
-		"TaskRecommendationsExperimentV1StartDate": 0,
-		"TaskRecommendationsExperimentV1EndDate": 0
+		"GettingStartedRunTest": {
+			"value": false
+		},
+		"TaskRecommendationsExperimentV1StartDate": {
+			"value": 0
+		},
+		"TaskRecommendationsExperimentV1EndDate": {
+			"value": 0
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
