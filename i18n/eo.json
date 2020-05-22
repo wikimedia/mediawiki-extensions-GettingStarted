@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"KuboF",
+			"Robin van der Vliet",
 			"Yekrats",
 			"YvesNevelsteen"
 		]
 	},
 	"gettingstarted": "Unuaj paŝoj",
+	"gettingstarted-lightbulb-flyout-back": "Reveni",
 	"gettingstarted-lightbulb-flyout-next": "Sekva"
 }
