@@ -34,16 +34,14 @@ class Hooks {
 	protected static $openTask = null;
 
 	// This is used unprefixed and with a custom path for legacy reasons.
-	const OPENTASK_COOKIE_NAME = 'openTask';
-
-	const USER_TOKEN_COOKIE_NAME = '-gettingStartedUserId';
+	private const OPENTASK_COOKIE_NAME = 'openTask';
 
 	protected static $COOKIE_OPTIONS = [
 		'prefix' => '',
 		'path' => '/',
 	];
 
-	const INTRO_OPTION = 'gettingstarted-task-toolbar-show-intro';
+	private const INTRO_OPTION = 'gettingstarted-task-toolbar-show-intro';
 
 	/**
 	 * Detects if on the mobile version of the site

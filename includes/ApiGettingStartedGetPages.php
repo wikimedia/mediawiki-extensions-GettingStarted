@@ -6,7 +6,7 @@ use ApiBase;
 use Title;
 
 class ApiGettingStartedGetPages extends \ApiQueryGeneratorBase {
-	const MAX_SUGGESTER_CALLS = 10;
+	private const MAX_SUGGESTER_CALLS = 10;
 
 	public function __construct( \ApiQuery $queryModule, $moduleName ) {
 		parent::__construct( $queryModule, $moduleName, 'gsgp' );

@@ -20,11 +20,11 @@ require_once "$IP/maintenance/Maintenance.php";
 
 class GenerateConfig extends \Maintenance {
 
-	const WG_GETTING_STARTED_CATEGORIES_FOR_TASK_TYPES_FILE =
+	private const WG_GETTING_STARTED_CATEGORIES_FOR_TASK_TYPES_FILE =
 		'wgGettingStartedCategoriesForTaskTypes.php';
-	const WG_GETTING_STARTED_EXCLUDED_CATEGORIES_FILE = 'wgGettingStartedExcludedCategories.php';
+	private const WG_GETTING_STARTED_EXCLUDED_CATEGORIES_FILE = 'wgGettingStartedExcludedCategories.php';
 
-	const QID_CATEGORY_LIVING_PEOPLE = 'Q5312304';
+	private const QID_CATEGORY_LIVING_PEOPLE = 'Q5312304';
 
 	/**
 	 * @var array An associative array of which the key is the task type

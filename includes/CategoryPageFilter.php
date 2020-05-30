@@ -9,7 +9,7 @@ use Title;
  * For use in conjunction with CategoryPageSuggester
  */
 class CategoryPageFilter extends BasePageFilter {
-	const MAX_PAGE_LENGTH = 10000;
+	private const MAX_PAGE_LENGTH = 10000;
 
 	public function isAllowedPage( Title $title ) {
 		if ( !parent::isAllowedPage( $title ) ) {
