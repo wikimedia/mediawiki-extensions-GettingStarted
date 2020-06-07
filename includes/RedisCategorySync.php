@@ -213,7 +213,7 @@ class RedisCategorySync {
 			} catch ( RedisException $e ) {
 				wfDebugLog( 'GettingStarted', 'Redis exception: ' . $e->getMessage() . "\n" );
 			}
-		} );
+		}, __METHOD__ );
 		return true;
 	}
 }
