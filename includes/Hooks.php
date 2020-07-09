@@ -2,6 +2,7 @@
 
 namespace GettingStarted;
 
+use ExtensionRegistry;
 use FormatJson;
 use OutputPage;
 use ResourceLoader;
@@ -251,7 +252,7 @@ class Hooks {
 	public static function onResourceLoaderRegisterModules( &$resourceLoader ) {
 		$dir = dirname( __DIR__ ) . DIRECTORY_SEPARATOR;
 
-		if ( class_exists( \VisualEditorHooks::class ) ) {
+		if ( ExtensionRegistry::getInstance()->isLoaded( 'VisualEditor' ) ) {
 			$resourceLoader->register(
 				'ext.guidedTour.tour.gettingstartedtasktoolbarve',
 				[
