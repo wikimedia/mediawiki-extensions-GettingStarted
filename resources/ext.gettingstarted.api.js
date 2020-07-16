@@ -106,6 +106,7 @@
 
 		/**
 		 * Gets the user's last edit in the main namespace.
+		 *
 		 * @param {string} userName name of user to get last edit for
 		 * @return {string} last edited article name
 		 */

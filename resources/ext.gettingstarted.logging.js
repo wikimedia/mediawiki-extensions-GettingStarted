@@ -44,6 +44,7 @@
 
 	/**
 	 * Remembers a task the user has chosen by adding it to a session cookie.
+	 *
 	 * @param {string} article The article title (possibly including a namespace), in prefixed
 	 *  text format.  You can get this from mw.Title.getPrefixedText()
 	 * @param {string|null} task The kind of task, such as 'redirect' or 'gettingstarted-copyedit',
