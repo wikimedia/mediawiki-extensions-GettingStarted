@@ -13,6 +13,6 @@
 	"apihelp-query+gettingstartedgetpages-param-taskname": "{{doc-apihelp-param|query+gettingstartedgetpages|taskname}}",
 	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "{{doc-apihelp-param|query+gettingstartedgetpages|excludedtitle}}",
 	"apihelp-query+gettingstartedgetpages-param-count": "{{doc-apihelp-param|query+gettingstartedgetpages|count}}",
-	"apihelp-query+gettingstartedgetpages-example-1": "{{doc-apihelp-example|query+gettingstartedgetpages}}",
+	"apihelp-query+gettingstartedgetpages-example-1": "{{notranslate}}\n{{doc-apihelp-example|query+gettingstartedgetpages}}",
 	"apierror-gettingstarted-nosuggester": "{{doc-apierror}}"
 }
