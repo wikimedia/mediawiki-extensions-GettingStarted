@@ -41,18 +41,5 @@
 	"gettingstarted-cta-edit-page-sub": "אנחנו נראה לך איך",
 	"gettingstarted-cta-fix-pages": "לערוך דף מוצע",
 	"gettingstarted-cta-fix-pages-sub": "אנחנו נבחר משהו פשוט",
-	"gettingstarted-cta-leave": "לא תודה, אולי מאוחר יותר",
-	"gettingstarted-lightbulb-notification-body": "לערוך ערך דומה.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "נערך $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "המלצות",
-	"gettingstarted-lightbulb-heading": "דפים שאפשר לשפר",
-	"gettingstarted-lightbulb-text": "מומלץ לפי העריכה שלך.",
-	"gettingstarted-lightbulb-flyout-back": "אחורה",
-	"gettingstarted-lightbulb-flyout-next": "קדימה",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "עוד אין הצעות!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "כדאי לנסות לערוך כמה דפים. זה יעזור לנו להציע לך מה כדאי לך לעשות הלאה.",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "אוי, לא יכולנו להראות לך הצעות עכשיו.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "נא לנסות שוב.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "דף אקראי",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "רענון"
+	"gettingstarted-cta-leave": "לא תודה, אולי מאוחר יותר"
 }

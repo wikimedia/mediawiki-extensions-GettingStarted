@@ -39,11 +39,5 @@
 	"gettingstarted-cta-edit-page-sub": "Näytämme miten",
 	"gettingstarted-cta-fix-pages": "Muokkaa ehdotettua sivua",
 	"gettingstarted-cta-fix-pages-sub": "Valitsemme jotain helppoa",
-	"gettingstarted-cta-leave": "Ei kiitos, ehkä myöhemmin",
-	"gettingstarted-lightbulb-text": "Suositeltu viimeisimmän muokkauksesi perusteella.",
-	"gettingstarted-lightbulb-flyout-back": "Takaisin",
-	"gettingstarted-lightbulb-flyout-next": "Seuraava",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Yritä uudelleen.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Satunnainen sivu",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Päivitä"
+	"gettingstarted-cta-leave": "Ei kiitos, ehkä myöhemmin"
 }

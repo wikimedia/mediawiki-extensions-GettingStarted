@@ -44,17 +44,5 @@
 	"gettingstarted-cta-edit-page-sub": "ما به شما نشان می‌دهیم چگونه",
 	"gettingstarted-cta-fix-pages": "ویرایش یک صفحۀ پیشنهادی",
 	"gettingstarted-cta-fix-pages-sub": "ما چیزی ساده انتخاب می‌کنیم",
-	"gettingstarted-cta-leave": "نه متشکرم، شاید بعداً",
-	"gettingstarted-lightbulb-notification-body": "ویرایش یک مقالهٔ مشابه.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "ویرایش‌شده $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "توصیه‌ها",
-	"gettingstarted-lightbulb-heading": "صفحات برای بهبود",
-	"gettingstarted-lightbulb-text": "پیشنهادشده بر پایهٔ آخرین ویرایش‌تان.",
-	"gettingstarted-lightbulb-flyout-back": "بازگشت",
-	"gettingstarted-lightbulb-flyout-next": "بعدی",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "هیچ توصیه‌ای هنوز وجود ندارد!",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "اوه، امکان گرفتن توصیه اکنون وجود ندارد.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "لطفا دوباره تلاش کنید.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "مقالهٔ تصادفی",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "تازه کردن"
+	"gettingstarted-cta-leave": "نه متشکرم، شاید بعداً"
 }

@@ -17,15 +17,5 @@
 	"gettingstarted-cta-edit-page-sub": "ჩვენ გაჩვენებთ როგორ",
 	"gettingstarted-cta-fix-pages": "დაარედაქტიროთ შემოთავაზებული გვერდი",
 	"gettingstarted-cta-fix-pages-sub": "ჩვენ რამე მარტივს ავარჩევთ",
-	"gettingstarted-cta-leave": "არა გმადლობთ, შეიძლება მოგვიანებით",
-	"gettingstarted-lightbulb-notification-body": "მსგავსი სტატიის რედაქტირება.",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "რეკომენდაციები",
-	"gettingstarted-lightbulb-heading": "გასაუმჯობესებელი გვერდები",
-	"gettingstarted-lightbulb-text": "რეკომენდაციები თქვენი ბოლო ცვლილების გათვალისწინებით.",
-	"gettingstarted-lightbulb-flyout-back": "უკან",
-	"gettingstarted-lightbulb-flyout-next": "შემდეგი",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "რეკომენდაციები ჯერ არ არის!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "გთხოვთ, კიდევ სცადეთ.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "შემთხვევითი გვერდი",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "განახლება"
+	"gettingstarted-cta-leave": "არა გმადლობთ, შეიძლება მოგვიანებით"
 }

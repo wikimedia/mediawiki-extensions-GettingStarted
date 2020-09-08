@@ -43,13 +43,5 @@
 	"gettingstarted-cta-edit-page-sub": "어떻게 하는지 보여드리겠습니다",
 	"gettingstarted-cta-fix-pages": "제안된 문서 편집하기",
 	"gettingstarted-cta-fix-pages-sub": "쉬운 예를 보여드리겠습니다.",
-	"gettingstarted-cta-leave": "괜찮습니다. 나중에요.",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "권장",
-	"gettingstarted-lightbulb-heading": "개선할 문서",
-	"gettingstarted-lightbulb-flyout-back": "뒤로",
-	"gettingstarted-lightbulb-flyout-next": "다음",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "아직 권장되지 않습니다!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "다시 시도해 주십시오.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "임의의 문서",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "새로 고침"
+	"gettingstarted-cta-leave": "괜찮습니다. 나중에요."
 }

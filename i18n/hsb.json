@@ -35,18 +35,5 @@
 	"gettingstarted-cta-edit-page-sub": "Pokazamy će, kak",
 	"gettingstarted-cta-fix-pages": "Namjetowanu stronu wobdźěłać",
 	"gettingstarted-cta-fix-pages-sub": "Budźemy něšto jednore wubrać",
-	"gettingstarted-cta-leave": "Ně dźakuju, snano pozdźišo",
-	"gettingstarted-lightbulb-notification-body": "Wobdźěłaj podobny nastawk.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "Wobdźěłane $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "Doporučenja",
-	"gettingstarted-lightbulb-heading": "Strony, kotrež maja so polěpšić",
-	"gettingstarted-lightbulb-text": "Doporučene po twojej poslednjej změnje.",
-	"gettingstarted-lightbulb-flyout-back": "Wróćo",
-	"gettingstarted-lightbulb-flyout-next": "Přichodne",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Dotal žane doporučenja!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Spytaj někotre strony wobdźěłać. To nam pomha tebi přichodne wobdźěłanja doporučić.",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Tuchwilu njemóžemy žane doporučenja pokazać.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Prošu spytaj znowa.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Připadna strona",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Wobnowić"
+	"gettingstarted-cta-leave": "Ně dźakuju, snano pozdźišo"
 }

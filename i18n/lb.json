@@ -36,16 +36,5 @@
 	"gettingstarted-cta-edit-page-sub": "Mir weisen Iech wéi",
 	"gettingstarted-cta-fix-pages": "Eng proposéiert Säit änneren",
 	"gettingstarted-cta-fix-pages-sub": "Mir huelen eppes Einfaches",
-	"gettingstarted-cta-leave": "Nee merci, vläicht méi spéit",
-	"gettingstarted-lightbulb-notification-body": "En ähnlechen Artikel änneren.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "Geännert $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "Recommandatiounen",
-	"gettingstarted-lightbulb-heading": "Säiten déi kënne besser gemaach ginn",
-	"gettingstarted-lightbulb-text": "Recommandéiert op der Basis vun Ärer leschter Ännerung.",
-	"gettingstarted-lightbulb-flyout-back": "Zréck",
-	"gettingstarted-lightbulb-flyout-next": "Nächst",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Nach keng Recommandatiounen!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Probéiert wgl. nach eng Kéier.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Zoufälleg Säit",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Aktualiséieren"
+	"gettingstarted-cta-leave": "Nee merci, vläicht méi spéit"
 }

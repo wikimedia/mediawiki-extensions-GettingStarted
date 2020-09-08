@@ -9,11 +9,5 @@
 	"gettingstarted-cta-edit-page": "Редактиране на тази страница",
 	"gettingstarted-cta-edit-page-sub": "Ние ще ви покажем как",
 	"gettingstarted-cta-fix-pages-sub": "Ще изберем нещо лесно",
-	"gettingstarted-cta-leave": "Не, благодаря, може би по-късно",
-	"gettingstarted-lightbulb-notification-body": "Редактирайте подобна статия.",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "Препоръки",
-	"gettingstarted-lightbulb-flyout-back": "Обратно",
-	"gettingstarted-lightbulb-flyout-next": "Следваща",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Моля, опитайте отново.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Случайна страница"
+	"gettingstarted-cta-leave": "Не, благодаря, може би по-късно"
 }

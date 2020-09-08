@@ -35,18 +35,5 @@
 	"gettingstarted-cta-edit-page-sub": "Ќе ви покажеме како",
 	"gettingstarted-cta-fix-pages": "Уредете предложена страница",
 	"gettingstarted-cta-fix-pages-sub": "Ќе одбереме нешто лесно",
-	"gettingstarted-cta-leave": "Не благодарам. Можеби подоцна.",
-	"gettingstarted-lightbulb-notification-body": "Уредете слична статија.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "Изменета $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "Препораки",
-	"gettingstarted-lightbulb-heading": "Страници за подобрување",
-	"gettingstarted-lightbulb-text": "Препораки врз основа на вашето последно уредување.",
-	"gettingstarted-lightbulb-flyout-back": "Назад",
-	"gettingstarted-lightbulb-flyout-next": "Следно",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Засега нема ниедна препорака!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Пробајте да уредите неколку страници. Тоа ќе ни помогне да ви препорачаме што следно да уредувате.",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Ах, во мигов не можеме да ви прикажеме препораки.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Обидете се повторно.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Случајна страница",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Превчитај"
+	"gettingstarted-cta-leave": "Не благодарам. Можеби подоцна."
 }

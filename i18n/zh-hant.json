@@ -43,18 +43,5 @@
 	"gettingstarted-cta-edit-page-sub": "我們會示範您如何做",
 	"gettingstarted-cta-fix-pages": "編輯建議的頁面",
 	"gettingstarted-cta-fix-pages-sub": "我們會挑選一些簡單的",
-	"gettingstarted-cta-leave": "不用了，謝謝，以後再說吧",
-	"gettingstarted-lightbulb-notification-body": "編輯一篇相似的文章。",
-	"gettingstarted-lightbulb-notification-body-lastedited": "已編輯於 $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "建議",
-	"gettingstarted-lightbulb-heading": "有待改善的頁面",
-	"gettingstarted-lightbulb-text": "根據您最近的編輯所提出的建議。",
-	"gettingstarted-lightbulb-flyout-back": "上一頁",
-	"gettingstarted-lightbulb-flyout-next": "下一頁",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "但不建議！",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "請嘗試編輯一些頁面。這能幫助我們之後為您建議一些其它相關的編輯項目。",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "哎呀，我們不能現在就顯示出建議。",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "請重試。",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "隨機頁面",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "重新整理"
+	"gettingstarted-cta-leave": "不用了，謝謝，以後再說吧"
 }

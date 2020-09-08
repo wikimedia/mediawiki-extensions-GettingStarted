@@ -35,18 +35,5 @@
 	"gettingstarted-cta-edit-page-sub": "Mer zeije Der, wi",
 	"gettingstarted-cta-fix-pages": "Donn en vörjeschlahre Sigg ändere",
 	"gettingstarted-cta-fix-pages-sub": "Mer söhke jäd einfaches uß",
-	"gettingstarted-cta-leave": "Nää, velleijsch schpääder",
-	"gettingstarted-lightbulb-notification-body": "Donn ene ähnlejje Atikel ändere",
-	"gettingstarted-lightbulb-notification-body-lastedited": "Zeläz jeändert $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "Vörschlähsch",
-	"gettingstarted-lightbulb-heading": "Sigge zom verbäßere",
-	"gettingstarted-lightbulb-text": "Vörschlähsch opjeboud op Dinge läzde Änderong",
-	"gettingstarted-lightbulb-flyout-back": "Retuhr",
-	"gettingstarted-lightbulb-flyout-next": "Wigger",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Noch kein Vörschlähsch!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Versöhg en paa Sigge ze beärbeide. Et weed ons hällfe, eruß ze fenge, wat De et näkß beärbeide künnts.",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "mer kunne för der Momang kein Vörschlähsch maache.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Bes esu johd, un versöhg_et norr_ens.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "{{int:randompage}}",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Nöü Aanzeije!"
+	"gettingstarted-cta-leave": "Nää, velleijsch schpääder"
 }

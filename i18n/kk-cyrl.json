@@ -36,18 +36,5 @@
 	"gettingstarted-cta-edit-page-sub": "Қалай жасау керек екенің біз сізге көрсетеміз",
 	"gettingstarted-cta-fix-pages": "Ұсынылған бетті өңдеңіз",
 	"gettingstarted-cta-fix-pages-sub": "Біз жеңіл нәрсе таңдаймыз",
-	"gettingstarted-cta-leave": "Жоқ рақмет, кейін көреміз",
-	"gettingstarted-lightbulb-notification-body": "Ұқсас мақаланы өңдеу.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "$1 өңделді",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "Ұсынымдар",
-	"gettingstarted-lightbulb-heading": "Жетілдіру үшін беттер",
-	"gettingstarted-lightbulb-text": "Сіздің соңғы өңдемеңіз негізінде ұсынылады.",
-	"gettingstarted-lightbulb-flyout-back": "Кері қайту",
-	"gettingstarted-lightbulb-flyout-next": "Келесі",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Ұсынымдар жоқ!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Біраз беттерді өңдеп көріңіз. Бұл сіздің арықарай өңдеуіңізге болатынын білуімізге көмектеседі.",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Әттеген-ай, біз қазір қандай да бір ұсыныстар бере алмаймыз",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Қайта байқап көріңіз.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Кездейсоқ бет",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Жаңарту"
+	"gettingstarted-cta-leave": "Жоқ рақмет, кейін көреміз"
 }

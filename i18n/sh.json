@@ -34,18 +34,5 @@
 	"gettingstarted-cta-edit-page-sub": "Pokazat ćemo Vam kako",
 	"gettingstarted-cta-fix-pages": "Uredite predloženu stranicu",
 	"gettingstarted-cta-fix-pages-sub": "Izabrat ćemo nešto lahko",
-	"gettingstarted-cta-leave": "Ne hvala. Možda kasnije.",
-	"gettingstarted-lightbulb-notification-body": "Uredite sličan članak.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "Izmijenjen(a) $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "Preporuke",
-	"gettingstarted-lightbulb-heading": "Stranice za poboljšati",
-	"gettingstarted-lightbulb-text": "Preporuke na temelju vaše posljednje izmjene.",
-	"gettingstarted-lightbulb-flyout-back": "Nazad",
-	"gettingstarted-lightbulb-flyout-next": "Sljedeće",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Zasad nema nijedne preporuke!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Pokušajte urediti nekoliko stranica. To će nam pomoći preporiučiti Vam što sljedeće uređivati.",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Ax, ovim trenutkom nije moguće pokazati Vam preporuke.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Molimo pokušaj ponovno.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Slučajna stranica / Случајна страница",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Preučitaj"
+	"gettingstarted-cta-leave": "Ne hvala. Možda kasnije."
 }

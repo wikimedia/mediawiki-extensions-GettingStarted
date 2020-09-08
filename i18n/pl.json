@@ -43,18 +43,5 @@
 	"gettingstarted-cta-edit-page-sub": "Pokażemy ci, jak",
 	"gettingstarted-cta-fix-pages": "Edytuj zasugerowaną stronę",
 	"gettingstarted-cta-fix-pages-sub": "Wybierzmy coś łatwego",
-	"gettingstarted-cta-leave": "Nie, dziękuję, może później",
-	"gettingstarted-lightbulb-notification-body": "Edytuj podobny artykuł.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "Edytowano $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "Zalecenia",
-	"gettingstarted-lightbulb-heading": "Strony do poprawy",
-	"gettingstarted-lightbulb-text": "Zalecane na podstawie Twojej ostatniej edycji.",
-	"gettingstarted-lightbulb-flyout-back": "Wstecz",
-	"gettingstarted-lightbulb-flyout-next": "Następne",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Na razie nie ma zalecanych!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Spróbuj edytować parę stron. Pomoże nam to wybrać, co powinieneś edytować jako następne.",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Nie możemy teraz pokazać propozycji.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Proszę spróbować ponownie.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Losowa strona",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Odśwież"
+	"gettingstarted-cta-leave": "Nie, dziękuję, może później"
 }

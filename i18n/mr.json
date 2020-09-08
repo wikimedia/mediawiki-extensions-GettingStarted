@@ -37,18 +37,5 @@
 	"gettingstarted-cta-edit-page-sub": "कसे ते आम्ही आपणास दाखवु",
 	"gettingstarted-cta-fix-pages": "सुचविलेल्या पानाचे संपादन करा",
 	"gettingstarted-cta-fix-pages-sub": "आम्ही काहीतरी सोपेच निवडू",
-	"gettingstarted-cta-leave": "नको, राहू दे. पुन्हा कधीतरी",
-	"gettingstarted-lightbulb-notification-body": "यासम लेख संपादा.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "$1 ला संपादित केले",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "शिफारसी",
-	"gettingstarted-lightbulb-heading": "सुधरवायची पाने",
-	"gettingstarted-lightbulb-text": "आपण मागे केलेल्या संपादनावरुन याची शिफारस करण्यात येते.",
-	"gettingstarted-lightbulb-flyout-back": "परत",
-	"gettingstarted-lightbulb-flyout-next": "पुढील",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "अद्याप काही शिफारसी नाहीत!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "काही पानांच्या संपादनांचा प्रयत्न करा.त्याद्वारे, आपण पुढे कशाचे संपादन करावे याची शिफारस करण्यास आम्हास त्याची मदत होईल.",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "अरेच्चा, आम्ही आत्ताच आपणास शिफारसी दाखवु शकत नाही.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "पुन्हा प्रयत्न करा.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "अविशिष्ट लेख",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "ताजेतवाने करा"
+	"gettingstarted-cta-leave": "नको, राहू दे. पुन्हा कधीतरी"
 }

@@ -34,18 +34,5 @@
 	"gettingstarted-cta-edit-page-sub": "Te facime 'ndrucà cumme a fà",
 	"gettingstarted-cta-fix-pages": "Cange 'na vôsce suggerite",
 	"gettingstarted-cta-fix-pages-sub": "T'amma scacchià quaccheccose de facile",
-	"gettingstarted-cta-leave": "No grazie, pò essere cchiù tarde",
-	"gettingstarted-lightbulb-notification-body": "Cange 'na vôscia simile.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "Cangiate $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "Conziglie",
-	"gettingstarted-lightbulb-heading": "Pàggende da migliorà",
-	"gettingstarted-lightbulb-text": "Raccomandate in base a l'urteme cangiamende tune.",
-	"gettingstarted-lightbulb-flyout-back": "Rrete",
-	"gettingstarted-lightbulb-flyout-next": "Prossime",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Nisciuna raccomandazione pe mò!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Pruève a cangià quacche pàgene. Ne dè 'na màne a conzigliarte ce ste otre ca puè ffà.",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Pizze, non ge te putime dà suggereminde su ce puè ffà, jndr'à stu mumende.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Pruève arrete.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Pàgene a uecchije",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Aggiorne"
+	"gettingstarted-cta-leave": "No grazie, pò essere cchiù tarde"
 }

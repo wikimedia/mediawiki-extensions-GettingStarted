@@ -40,18 +40,5 @@
 	"gettingstarted-cta-edit-page-sub": "Vi kommer visa dig hur",
 	"gettingstarted-cta-fix-pages": "Redigera en föreslagen sida",
 	"gettingstarted-cta-fix-pages-sub": "Vi kommer att välja något lätt",
-	"gettingstarted-cta-leave": "Nej tack, kanske senare",
-	"gettingstarted-lightbulb-notification-body": "Redigera en liknande artikel.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "Redigerad $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "Rekommendationer",
-	"gettingstarted-lightbulb-heading": "Sidor att förbättra",
-	"gettingstarted-lightbulb-text": "Rekommenderad baserad på din senaste redigering.",
-	"gettingstarted-lightbulb-flyout-back": "Tillbaka",
-	"gettingstarted-lightbulb-flyout-next": "Nästa",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Inga rekommendationer än!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Försök att redigera några sidor. Det kommer att hjälpa oss att rekommendera vad du ska redigera härnäst.",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Ojdå, vi kan tyvärr inte visa rekommendationer just nu.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Var god försök igen.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Slumpsida",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Uppdatera"
+	"gettingstarted-cta-leave": "Nej tack, kanske senare"
 }

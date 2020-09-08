@@ -36,18 +36,5 @@
 	"gettingstarted-cta-edit-page-sub": "ہم آپ کو اس کا طریقہ کار بتائیں گے",
 	"gettingstarted-cta-fix-pages": "تجویز کردہ صفحہ میں ترمیم کریں",
 	"gettingstarted-cta-fix-pages-sub": "ہم کچھ آسان چیز منتخب کرتے ہیں",
-	"gettingstarted-cta-leave": "نہیں، شکریہ! شاید بعد میں",
-	"gettingstarted-lightbulb-notification-body": "اسی جیسے دوسرے مضمون میں ترمیم کریں۔",
-	"gettingstarted-lightbulb-notification-body-lastedited": "ترمیم شدہ $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "سفارشات",
-	"gettingstarted-lightbulb-heading": "قابل اصلاح صفحات",
-	"gettingstarted-lightbulb-text": "آپ کی آخری ترمیم پر مبنی تجویز کردہ۔",
-	"gettingstarted-lightbulb-flyout-back": "پیچھے جائیں",
-	"gettingstarted-lightbulb-flyout-next": "آگے جائیں",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "ابھی کوئی تجویز دستیاب نہیں!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "کچھ صفحات میں ترمیم کرنے کی کوشش کریں۔ اس سے ہمیں آپ کو تجاویز فراہم کرنے میں آسانی ہوگی۔",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "افسوس، اس وقت ہم تجاویز نہیں دکھا سکتے۔",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "براہ کرم دوبارہ کوشش کریں۔",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "تصادفی صفحہ",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "ریفریش کریں"
+	"gettingstarted-cta-leave": "نہیں، شکریہ! شاید بعد میں"
 }

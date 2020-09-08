@@ -39,18 +39,5 @@
 	"gettingstarted-cta-edit-page-sub": "Wir werden dir zeigen, wie",
 	"gettingstarted-cta-fix-pages": "Eine vorgeschlagene Seite bearbeiten",
 	"gettingstarted-cta-fix-pages-sub": "Wir werden etwas einfaches auswählen",
-	"gettingstarted-cta-leave": "Nein danke, vielleicht später.",
-	"gettingstarted-lightbulb-notification-body": "Einen ähnlichen Artikel bearbeiten.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "Bearbeitet $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "Empfehlungen",
-	"gettingstarted-lightbulb-heading": "Zu verbessernde Seiten",
-	"gettingstarted-lightbulb-text": "Empfohlen basierend auf deiner letzten Bearbeitung.",
-	"gettingstarted-lightbulb-flyout-back": "Zurück",
-	"gettingstarted-lightbulb-flyout-next": "Nächste",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Noch keine Empfehlungen!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Versuche, einige Seiten zu bearbeiten. Dies hilft uns bei der Empfehlung, was du als Nächstes bearbeiten sollst.",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Wir können momentan keine Empfehlungen anzeigen.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Bitte erneut versuchen.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Zufällige Seite",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Aktualisieren"
+	"gettingstarted-cta-leave": "Nein danke, vielleicht später."
 }

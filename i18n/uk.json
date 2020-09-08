@@ -40,18 +40,5 @@
 	"gettingstarted-cta-edit-page-sub": "Ми покажемо вам, як",
 	"gettingstarted-cta-fix-pages": "Редагувати запропоновану сторінку",
 	"gettingstarted-cta-fix-pages-sub": "Ми виберемо щось легке",
-	"gettingstarted-cta-leave": "Ні, дякую, можливо, пізніше",
-	"gettingstarted-lightbulb-notification-body": "Редагувати подібну статтю.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "Редагована $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "Рекомендації",
-	"gettingstarted-lightbulb-heading": "Сторінки для поліпшення",
-	"gettingstarted-lightbulb-text": "Рекомендується на основі Вашого попереднього редагування.",
-	"gettingstarted-lightbulb-flyout-back": "Назад",
-	"gettingstarted-lightbulb-flyout-next": "Далі",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Ще немає рекомендацій.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Спробуйте відредагувати кілька сторінок. Це допоможе нам порадити те, що Вам варто відредагувати наступним.",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Ой-ой, ми не в змозі показати рекомендації прямо зараз.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Будь ласка, спробуйте ще раз.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Випадкова сторінка",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Оновити"
+	"gettingstarted-cta-leave": "Ні, дякую, можливо, пізніше"
 }

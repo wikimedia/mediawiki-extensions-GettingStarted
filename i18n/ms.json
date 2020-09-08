@@ -33,17 +33,5 @@
 	"gettingstarted-cta-edit-page": "Sunting laman ini",
 	"gettingstarted-cta-fix-pages": "Sunting laman cadangan",
 	"gettingstarted-cta-fix-pages-sub": "Kami akan memilih sesuatu yang mudah",
-	"gettingstarted-cta-leave": "Terima kasih sajalah, mungkin nanti",
-	"gettingstarted-lightbulb-notification-body": "Sunting rencana seumpama ini.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "Disunting pada $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "Cadangan",
-	"gettingstarted-lightbulb-heading": "Laman untuk diperbaiki",
-	"gettingstarted-lightbulb-text": "Cadangan bersadarkan suntingan terakhir anda.",
-	"gettingstarted-lightbulb-flyout-back": "Sebelumnya",
-	"gettingstarted-lightbulb-flyout-next": "Berikutnya",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Belum ada cadangan!",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Alamak, kami tidak dapat memaparkan cadangan pada masa sekarang.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Sila cuba sekali lagi.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Laman rawak",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Muat semula"
+	"gettingstarted-cta-leave": "Terima kasih sajalah, mungkin nanti"
 }

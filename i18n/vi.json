@@ -36,18 +36,5 @@
 	"gettingstarted-cta-edit-page-sub": "Chúng tôi sẽ chỉ dẫn bạn",
 	"gettingstarted-cta-fix-pages": "Sửa đổi một trang được gợi ý",
 	"gettingstarted-cta-fix-pages-sub": "Chúng tôi sẽ chọn một công việc dễ dàng",
-	"gettingstarted-cta-leave": "Thôi, có lẽ lần sau",
-	"gettingstarted-lightbulb-notification-body": "Sửa đổi một bài tương tự.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "Được sửa đổi $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "Khuyến nghị",
-	"gettingstarted-lightbulb-heading": "Trang cần cải thiện",
-	"gettingstarted-lightbulb-text": "Khuyến nghị theo lần sửa đổi cuối cùng của bạn.",
-	"gettingstarted-lightbulb-flyout-back": "Lùi",
-	"gettingstarted-lightbulb-flyout-next": "Tiếp",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Chưa có khuyến nghị!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Hãy thử sửa đổi một vào trang để giúp chúng tôi khuyến nghị những gì bạn nên sửa đổi lần sau.",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Oái, không thể hiển thị các khuyến nghị vào lúc bây giờ.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Xin vui lòng thử lại.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Trang ngẫu nhiên",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Làm mới"
+	"gettingstarted-cta-leave": "Thôi, có lẽ lần sau"
 }

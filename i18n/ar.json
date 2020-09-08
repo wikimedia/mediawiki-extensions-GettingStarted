@@ -37,18 +37,5 @@
 	"gettingstarted-cta-edit-page-sub": "سنوضح لك كيف",
 	"gettingstarted-cta-fix-pages": "تحرير صفحة مقترحة",
 	"gettingstarted-cta-fix-pages-sub": "سنختار شيئا سهلا",
-	"gettingstarted-cta-leave": "لا شكرا، ربما لاحقا",
-	"gettingstarted-lightbulb-notification-body": "تحرير مقالة مماثلة.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "تم تحرير $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "توصيات",
-	"gettingstarted-lightbulb-heading": "صفحات للتحسين",
-	"gettingstarted-lightbulb-text": "موصى به بناءً على تعديلك الأخير.",
-	"gettingstarted-lightbulb-flyout-back": "رجوع",
-	"gettingstarted-lightbulb-flyout-next": "التالي",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "لا توجد توصيات حتى الآن!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "حاول تحرير بعض الصفحات; سيساعدنا ذلك على التوصية بما يجب عليك تعديله بعد ذلك.",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "عذرًا ، لا يمكننا عرض التوصيات على نحو صائب في الوقت الحالي.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "الرجاء المحاولة مرة اخرى.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "صفحة عشوائية",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "تحديث"
+	"gettingstarted-cta-leave": "لا شكرا، ربما لاحقا"
 }

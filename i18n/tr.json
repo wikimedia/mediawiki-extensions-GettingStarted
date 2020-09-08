@@ -36,18 +36,5 @@
 	"gettingstarted-cta-edit-page-sub": "Size nasıl olduğunu göstereceğiz",
 	"gettingstarted-cta-fix-pages": "Önerilen bir sayfayı düzenle",
 	"gettingstarted-cta-fix-pages-sub": "Kolay bir şey seçeceğiz",
-	"gettingstarted-cta-leave": "Hayır teşekkürler, belki daha sonra",
-	"gettingstarted-lightbulb-notification-body": "Benzer bir makaleyi düzenleyin.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "$1 düzenlendi",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "Öneriler",
-	"gettingstarted-lightbulb-heading": "Geliştirilecek sayfalar",
-	"gettingstarted-lightbulb-text": "Son düzenlemenize göre önerilir.",
-	"gettingstarted-lightbulb-flyout-back": "Geri",
-	"gettingstarted-lightbulb-flyout-next": "İleri",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Şimdilik herhangi bir öneri yok!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Birkaç sayfa düzenlemeyi deneyin. Bu eylem bundan sonra düzenleyebileceğiniz sayfalar konusunda öneri vermemize yardımcı olacaktır.",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Amanın! Şu anda herhangi bir öneri sunamıyoruz.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Tekrar deneyin lütfen.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Rastgele sayfa",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Yenile"
+	"gettingstarted-cta-leave": "Hayır teşekkürler, belki daha sonra"
 }

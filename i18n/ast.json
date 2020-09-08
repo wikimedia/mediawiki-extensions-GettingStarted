@@ -35,18 +35,5 @@
 	"gettingstarted-cta-edit-page-sub": "Vamos indica-y cómo",
 	"gettingstarted-cta-fix-pages": "Editar una páxina suxerida",
 	"gettingstarted-cta-fix-pages-sub": "Escoyeremos daqué cenciello",
-	"gettingstarted-cta-leave": "Non gracies, seique más sero",
-	"gettingstarted-lightbulb-notification-body": "Editar un artículu asemeyáu.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "Editáu $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "Recomendaciones",
-	"gettingstarted-lightbulb-heading": "Páxines p'ameyorar",
-	"gettingstarted-lightbulb-text": "Recomendaes basándose na to última edición.",
-	"gettingstarted-lightbulb-flyout-back": "Anterior",
-	"gettingstarted-lightbulb-flyout-next": "Siguiente",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "¡Inda nun hai recomendaciones!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Intenta editar delles páxines. Eso ayudarános a recomendate después otres ediciones.",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Ups, agora mesmo nun podemos amosate recomendaciones.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Inténtalo otra vuelta.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Páxina al debalu",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Refrescar"
+	"gettingstarted-cta-leave": "Non gracies, seique más sero"
 }

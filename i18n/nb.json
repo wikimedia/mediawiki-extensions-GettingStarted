@@ -36,18 +36,5 @@
 	"gettingstarted-cta-edit-page-sub": "Vi vil vise deg hvordan",
 	"gettingstarted-cta-fix-pages": "Rediger ei foreslått side",
 	"gettingstarted-cta-fix-pages-sub": "Vi vil velge noe enkelt",
-	"gettingstarted-cta-leave": "Nei takk, kanskje senere",
-	"gettingstarted-lightbulb-notification-body": "Rediger en lignende artikkel.",
-	"gettingstarted-lightbulb-notification-body-lastedited": "Redigerte $1",
-	"gettingstarted-lightbulb-recommendations-personal-tool": "Anbefalinger",
-	"gettingstarted-lightbulb-heading": "Sider som kan forbedres",
-	"gettingstarted-lightbulb-text": "Anbefalt basert på din seneste redigering.",
-	"gettingstarted-lightbulb-flyout-back": "Tilbake",
-	"gettingstarted-lightbulb-flyout-next": "Neste",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-article-edits": "Ingen anbefalinger ennå!",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-article-edits": "Prøv å redigere noen sider. Det vil hjelpe oss i å gi deg anbefalinger om hva du kan fortsette med.",
-	"gettingstarted-lightbulb-flyout-error-state-primary-text-no-recommendations": "Oi, vi kunne visst ikke vise anbefalinger akkurat nå.",
-	"gettingstarted-lightbulb-flyout-error-state-secondary-text-no-recommendations": "Prøv igjen.",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-article-edits": "Tilfeldig side",
-	"gettingstarted-lightbulb-flyout-error-state-button-text-no-recommendations": "Oppdater"
+	"gettingstarted-cta-leave": "Nei takk, kanskje senere"
 }
