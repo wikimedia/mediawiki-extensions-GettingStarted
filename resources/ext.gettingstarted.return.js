@@ -3,6 +3,7 @@
 	'use strict';
 
 	var logging = mw.gettingStarted.logging,
+		utils = require( './ext.gettingstarted.utils.js' ),
 		cfg = mw.config.get( [
 			'wgIsProbablyEditable', 'wgArticleId', 'wgRevisionId',
 			'wgNamespaceNumber', 'wgSiteName', 'wgUserName',
@@ -62,6 +63,7 @@
 			tourName = 'firstedit';
 		}
 
+		utils.suppressVePopup();
 		gt.launchTour( tourName );
 	}
 

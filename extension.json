@@ -39,7 +39,8 @@
 			"scripts": "tours/gettingstartedtasktoolbar.js",
 			"dependencies": [
 				"ext.guidedTour",
-				"ext.gettingstarted.logging"
+				"ext.gettingstarted.logging",
+				"mediawiki.Uri"
 			],
 			"messages": [
 				"editsection",
@@ -76,7 +77,7 @@
 			]
 		},
 		"ext.gettingstarted.taskToolbar": {
-			"scripts": "ext.gettingstarted.taskToolbar.js",
+			"packageFiles": [ "ext.gettingstarted.taskToolbar.js", "ext.gettingstarted.utils.js" ],
 			"styles": {
 				"ext.gettingstarted.taskToolbar.less": {
 					"media": "screen "
@@ -106,7 +107,7 @@
 			]
 		},
 		"ext.gettingstarted.return": {
-			"scripts": "ext.gettingstarted.return.js",
+			"packageFiles": [ "ext.gettingstarted.return.js", "ext.gettingstarted.utils.js" ],
 			"styles": "ext.gettingstarted.return.less",
 			"messages": [
 				"gettingstarted-cta-close",

@@ -2,6 +2,7 @@
 	'use strict';
 
 	var logging = mw.gettingStarted.logging,
+		utils = require( './ext.gettingstarted.utils.js' ),
 		cfg = mw.config.get( [
 			'wgGettingStarted', 'wgPageName', 'wgArticleId', 'wgRevisionId',
 			'wgPostEdit'
@@ -21,6 +22,7 @@
 		var tourName = $( '#ca-ve-edit' ).length > 0 ?
 			'gettingstartedtasktoolbarve' :
 			'gettingstartedtasktoolbar';
+		utils.suppressVePopup();
 		// TODO (mattflaschen, 2013-05-07): Should launchTour automatically hide existing tours?
 		mw.guidedTour.launchTour( tourName );
 	}
