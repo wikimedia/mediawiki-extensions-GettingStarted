@@ -89,6 +89,7 @@
 				"mediawiki.action.view.postEdit",
 				"mediawiki.jqueryMsg",
 				"mediawiki.Title",
+				"jquery.throttle-debounce",
 				"mediawiki.libs.guiders",
 				"ext.guidedTour.lib",
 				"ext.gettingstarted.api",
