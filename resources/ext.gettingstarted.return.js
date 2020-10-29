@@ -114,6 +114,9 @@
 
 		$icon = $( '<div>' )
 			.addClass( 'mw-gettingstarted-cta-button-icon' )
+			// Used classes:
+			// * mw-gettingstarted-cta-button-icon-edit
+			// * mw-gettingstarted-cta-button-icon-copyedit
 			.addClass( 'mw-gettingstarted-cta-button-icon-' + spec.action );
 
 		$mainText = $( '<span>' )

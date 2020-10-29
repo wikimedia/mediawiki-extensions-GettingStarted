@@ -50,7 +50,17 @@
 
 		$centerMessage = $( '<span>' ).attr( {
 			class: 'mw-gettingstarted-toolbar-center-message'
-		} ).text( mw.message( toolbarInfo.description ).text() );
+		} ).text(
+			// Messages that can be used here:
+			// * gettingstarted-task-copyedit-toolbar-description
+			// * guidedtour-tour-gettingstarted-click-preview-description
+			// * guidedtour-tour-gettingstarted-click-save-description
+			// * guidedtour-tour-gettingstartedtasktoolbar-ambox-description
+			// * guidedtour-tour-gettingstartedtasktoolbar-edit-article-description
+			// * guidedtour-tour-gettingstartedtasktoolbar-edit-section-description
+			// * guidedtour-tour-gettingstartedtasktoolbarintro-description
+			mw.message( toolbarInfo.description ).text()
+		);
 
 		$showGuide = $( '<a>' ).attr( {
 			class: 'mw-ui-button mw-ui-progressive mw-gettingstarted-toolbar-show-guiders',
@@ -75,6 +85,9 @@
 
 		$tryAnother = $( '<a>' ).attr( {
 			href: tryAnotherUrl,
+			// Only message that can be used here (?):
+			// * gettingstarted-task-copyedit-toolbar-try-another-title
+			// eslint-disable-next-line mediawiki/msg-doc
 			title: mw.message( toolbarInfo.tryAnotherTitle ).text()
 		} ).text( mw.message( 'gettingstarted-task-toolbar-try-another-text' ).text() )
 			.click( function ( evt ) {
