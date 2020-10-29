@@ -8,7 +8,7 @@
  * _every_ page in case the user is editing or just completed editing a
  * page from her openTask list.
  */
-( function ( window, document, mw, $ ) {
+( function ( window ) {
 	'use strict';
 
 	var cookieOptions = { path: '/' },
@@ -120,4 +120,4 @@
 	mw.gettingStarted.logging.getTask = getTask;
 	mw.gettingStarted.logging.getTaskForCurrentPage = getTaskForCurrentPage;
 	mw.gettingStarted.logging.logEventOrTimeout = logEventOrTimeout;
-}( window, document, mediaWiki, jQuery ) );
+}( window ) );

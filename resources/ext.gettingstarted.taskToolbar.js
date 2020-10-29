@@ -1,4 +1,4 @@
-( function ( $, mw ) {
+( function () {
 	'use strict';
 
 	var logging = mw.gettingStarted.logging,
@@ -17,6 +17,7 @@
 	 * Launches the appropriate tour, based on whether the VE edit tab is present
 	 */
 	function launchTour() {
+		// eslint-disable-next-line no-jquery/no-global-selector
 		var tourName = $( '#ca-ve-edit' ).length > 0 ?
 			'gettingstartedtasktoolbarve' :
 			'gettingstartedtasktoolbar';
@@ -66,7 +67,7 @@
 			class: 'mw-ui-button mw-ui-progressive mw-gettingstarted-toolbar-show-guiders',
 			title: mw.message( 'gettingstarted-task-toolbar-editing-help-title' ).text()
 		} ).text( mw.message( 'gettingstarted-task-toolbar-editing-help-text' ).text() )
-			.click( function ( evt ) {
+			.on( 'click', function ( evt ) {
 				launchTour();
 				evt.stopPropagation();
 			} );
@@ -90,7 +91,7 @@
 			// eslint-disable-next-line mediawiki/msg-doc
 			title: mw.message( toolbarInfo.tryAnotherTitle ).text()
 		} ).text( mw.message( 'gettingstarted-task-toolbar-try-another-text' ).text() )
-			.click( function ( evt ) {
+			.on( 'click', function ( evt ) {
 				var link = this;
 				if ( $( link ).attr( 'href' ) !== '' ) {
 					logging.setTask( suggestedTitle.getPrefixedText(), fullTask );
@@ -122,7 +123,7 @@
 			class: 'mw-gettingstarted-toolbar-dismiss',
 			href: '#',
 			title: mw.message( 'gettingstarted-task-toolbar-close-title' ).text()
-		} ).text( '×' ).click( function ( evt ) {
+		} ).text( '×' ).on( 'click', function ( evt ) {
 			var title;
 
 			evt.preventDefault();
@@ -144,8 +145,10 @@
 
 		$( document.body ).prepend( $toolbar );
 
+		// eslint-disable-next-line no-jquery/no-global-selector
 		$relativeElements = $( '#mw-page-base, #mw-head-base, #content, #footer' );
 		$relativeElements.addClass( 'mw-gettingstarted-relative-vshift' );
+		// eslint-disable-next-line no-jquery/no-global-selector
 		$marginElements = $( '#mw-head, #mw-panel' );
 		$marginElements.addClass( 'mw-gettingstarted-margin-vshift' );
 
@@ -172,12 +175,14 @@
 		// This intentionally logs again if the toolbar redisplays after VE is hidden,
 		// either due to a save or simply returning to Read.
 		function showToolbarInternal() {
+			// eslint-disable-next-line no-jquery/no-slide
 			$toolbar.slideDown( 200, function () {
 				pushPageDown();
 			} );
 		}
 
 		function hideToolbar() {
+			// eslint-disable-next-line no-jquery/no-slide
 			$toolbar.slideUp( 200, function () {
 				pullPageUp();
 			} );
@@ -263,4 +268,4 @@
 			displayToolbar( toolbarInfo, null );
 		} );
 	} );
-}( jQuery, mediaWiki ) );
+}() );

@@ -1,7 +1,7 @@
 // Tour started on article page, with task toolbar showing
 // Used for VisualEditor.  The 'gettingstartedtasktoolbar' tour is for wikitext editing.
 
-( function ( $, mw, gt ) {
+( function ( gt ) {
 	'use strict';
 
 	var task = mw.gettingStarted.logging.getTaskForCurrentPage() || '',
@@ -23,9 +23,12 @@
 		return;
 	}
 
+	// eslint-disable-next-line no-jquery/no-global-selector
 	if ( $( '#ca-ve-edit' ).length > 0 ) {
+		// eslint-disable-next-line no-jquery/no-global-selector
 		$editTab = $( '#ca-ve-edit' );
 	} else {
+		// eslint-disable-next-line no-jquery/no-global-selector
 		$editTab = $( '#ca-edit' );
 	}
 
@@ -58,6 +61,7 @@
 				action: 'next'
 			} ],
 			shouldSkip: function () {
+				// eslint-disable-next-line no-jquery/no-global-selector
 				return gt.isVisualEditorOpen() || $( '.ambox' ).length === 0;
 			}
 		}, {
@@ -105,4 +109,4 @@
 			}
 		} ]
 	} );
-}( jQuery, mediaWiki, mediaWiki.guidedTour ) );
+}( mw.guidedTour ) );

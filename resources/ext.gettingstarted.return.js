@@ -1,5 +1,5 @@
 // This runs on display of the returnTo page after account creation.
-( function ( $, mw, gt ) {
+( function ( gt ) {
 	'use strict';
 
 	var logging = mw.gettingStarted.logging,
@@ -55,6 +55,7 @@
 
 		logging.setTaskForCurrentPage( funnel );
 
+		// eslint-disable-next-line no-jquery/no-global-selector
 		if ( $( '#ca-ve-edit' ).length > 0 ) {
 			tourName = 'firsteditve';
 		} else {
@@ -105,7 +106,7 @@
 			'aria-role': 'button',
 			tabIndex: 0,
 			href: '#'
-		} ).click( function ( evt ) {
+		} ).on( 'click', function ( evt ) {
 			evt.preventDefault();
 			evt.stopPropagation();
 			closeDialog();
@@ -317,7 +318,7 @@
 			function showDialog() {
 				var $body = $( document.body );
 				$body.append( $overlay );
-				$dialog.find( '.mw-ui-button.mw-ui-progressive' ).focus();
+				$dialog.find( '.mw-ui-button.mw-ui-progressive' ).trigger( 'focus' );
 			}
 
 			function removeDialog() {
@@ -348,7 +349,7 @@
 					title: closeText,
 					'aria-label': closeText
 				} )
-				.click( closeDialogByClick );
+				.on( 'click', closeDialogByClick );
 
 			$heading = $( '<div>' )
 				.attr( 'class', 'mw-gettingstarted-cta-heading' )
@@ -377,7 +378,7 @@
 					href: '#'
 				} )
 				.text( mw.message( 'gettingstarted-cta-leave' ).text() )
-				.click( closeDialogByClick );
+				.on( 'click', closeDialogByClick );
 
 			$dialog.append( $leaveLink );
 
@@ -409,4 +410,4 @@
 	};
 
 	self.init();
-}( jQuery, mediaWiki, mediaWiki.guidedTour ) );
+}( mw.guidedTour ) );

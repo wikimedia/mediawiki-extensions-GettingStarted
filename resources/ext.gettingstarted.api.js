@@ -1,4 +1,4 @@
-( function ( mw, $ ) {
+( function () {
 	// Client-side wrappers for the GettingStarted web API
 
 	mw.gettingStarted = mw.gettingStarted || {};
@@ -170,4 +170,4 @@
 		}
 	}, mw.Api.prototype );
 	mw.gettingStarted.Api.prototype.constructor = mw.gettingStarted.Api;
-}( mediaWiki, jQuery ) );
+}() );

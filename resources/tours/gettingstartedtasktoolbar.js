@@ -1,7 +1,7 @@
 // Tour started on article page, with task toolbar showing
 // Used for wikitext editing.  The 'gettingstartedtasktoolbarve' tour is for VisualEditor.
 
-( function ( window, document, $, mw, gt ) {
+( function ( window, document, gt ) {
 	'use strict';
 
 	var task = mw.gettingStarted.logging.getTaskForCurrentPage() || '',
@@ -16,8 +16,10 @@
 
 	// The code around here is a bit of a hack, but I want to see if this is common so
 	// I don't over-framework it.
+	// eslint-disable-next-line no-jquery/no-global-selector
 	hasEditSection = $( '.mw-editsection' ).length > 0;
 
+	// eslint-disable-next-line no-jquery/no-global-selector
 	hasIdeasElement = $( '.ambox' ).length > 0;
 
 	tour = new gt.TourBuilder( {
@@ -58,6 +60,7 @@
 		titlemsg: 'guidedtour-tour-gettingstartedtasktoolbar-edit-article-title',
 		description: mw.message(
 			'guidedtour-tour-gettingstartedtasktoolbar-edit-article-description',
+			// eslint-disable-next-line no-jquery/no-global-selector
 			$( '#ca-edit a' ).text()
 		).parse(),
 		position: 'bottom',
@@ -134,4 +137,4 @@
 			}
 		} );
 
-}( window, document, jQuery, mediaWiki, mediaWiki.guidedTour ) );
+}( window, document, mw.guidedTour ) );
