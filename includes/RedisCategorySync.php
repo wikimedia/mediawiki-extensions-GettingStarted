@@ -188,7 +188,7 @@ class RedisCategorySync {
 		self::$callbackSet = true;
 
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->onTransactionIdle( function () {
+		$dbw->onTransactionCommitOrIdle( function () {
 			// Any category updates that happen after this will require an
 			// additional run of the callback.
 			RedisCategorySync::$callbackSet = false;
