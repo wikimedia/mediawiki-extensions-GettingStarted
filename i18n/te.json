@@ -8,5 +8,15 @@
 	},
 	"gettingstarted": "మొదలుపెట్టడం",
 	"gettingstarted-desc": "కొత్తవాడుకరులు సంపాదకులు కావడానికి దోహదం చేస్తుంది",
-	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "మీ మార్పులు చేసి భద్రపరచండి"
+	"gettingstarted-task-toolbar-editing-help-text": "ఎలానో నాకు చూపించు",
+	"gettingstarted-task-toolbar-try-another-text": "మరొక పేజీని ప్రయత్నించండి ►",
+	"gettingstarted-task-toolbar-close-title": "ఈ పనిముట్లపట్టీని మూసివేయి",
+	"guidedtour-tour-gettingstartedtasktoolbarintro-title": "మొదలుపెడదాం రండి",
+	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "మీ మార్పులు చేసి భద్రపరచండి",
+	"gettingstarted-cta-close": "మూసివేయి",
+	"gettingstarted-cta-heading": "{{SITENAME}}ని మెరుగుపరచడంలో తోడ్పడండి",
+	"gettingstarted-cta-text": "మీరు {{SITENAME}}కి పలు విధాలుగా తోడ్పడవచచ్చు",
+	"gettingstarted-cta-edit-page": "ఈ పేజీని మార్చు",
+	"gettingstarted-cta-edit-page-sub": "ఎలానో మీకు చూపిస్తాం",
+	"gettingstarted-cta-fix-pages-sub": "తేలికైనది ఒకటి తీసుకుందాం"
 }
