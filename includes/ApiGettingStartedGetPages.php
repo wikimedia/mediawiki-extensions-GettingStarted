@@ -74,7 +74,7 @@ class ApiGettingStartedGetPages extends \ApiQueryGeneratorBase {
 				[ $pageFilter, 'isAllowedPage' ]
 			);
 			$newFilteredTitles = array_udiff( $newFilteredTitles, $filteredTitles,
-				function ( $t1, $t2 ) {
+				static function ( $t1, $t2 ) {
 					return $t1->getArticleID() - $t2->getArticleID();
 				}
 			);
