@@ -46,7 +46,7 @@ class RedisCategorySync {
 	}
 
 	/**
-	 * Acquire a Redis connection to a master server.
+	 * Acquire a Redis connection to a primary database server.
 	 * @return RedisConnRef|bool Redis client or false.
 	 */
 	public static function getMaster() {
@@ -56,17 +56,17 @@ class RedisCategorySync {
 	/**
 	 * Acquire a Redis connection.
 	 *
-	 * @param bool $master Set to true to query a redis master server
+	 * @param bool $primary Set to true to query a redis primary database server
 	 * @return RedisConnRef|bool Redis client or false.
 	 */
-	protected static function getClient( $master = false ) {
+	protected static function getClient( $primary = false ) {
 		global $wgGettingStartedRedis, $wgGettingStartedRedisSlave, $wgGettingStartedRedisOptions;
 
 		if ( !$wgGettingStartedRedis || !extension_loaded( 'redis' ) ) {
 			return false;
 		}
 
-		$server = ( $master || !$wgGettingStartedRedisSlave )
+		$server = ( $primary || !$wgGettingStartedRedisSlave )
 			? $wgGettingStartedRedis : $wgGettingStartedRedisSlave;
 
 		$pool = \RedisConnectionPool::singleton( $wgGettingStartedRedisOptions );
@@ -187,7 +187,7 @@ class RedisCategorySync {
 		}
 		self::$callbackSet = true;
 
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$dbw->onTransactionCommitOrIdle( static function () {
 			// Any category updates that happen after this will require an
 			// additional run of the callback.
