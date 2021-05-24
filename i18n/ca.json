@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
+			"Jmarchn",
 			"Matma Rex",
 			"Papapep",
 			"Paucabot",
@@ -23,9 +24,9 @@
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-title": "Idees sobre què fer",
 	"guidedtour-tour-gettingstartedtasktoolbar-ambox-description": "Aquests rètols identifiquen problemes de la pàgina. No cal arreglar-los tots, feu només el que us faci sentir còmode.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-title": "Edició de la pàgina sencera…",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Cliqueu «$1» per modificar qualsevol contingut de la pàgina.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-article-description": "Cliqueu \"$1\" per modificar qualsevol contingut de la pàgina.",
 	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-title": "O editeu una secció",
-	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Si voleu editar una secció específica, feu clic a l'enllaç blau «{{int:editsection}}» al costat de cada títol de secció.",
+	"guidedtour-tour-gettingstartedtasktoolbar-edit-section-description": "Si voleu editar una secció específica, feu clic a l'enllaç \"{{int:editsection}}\" que es troba al costat de cada títol de secció.",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-title": "Feu els vostres canvis i deseu",
 	"guidedtour-tour-gettingstartedtasktoolbarve-click-save-description": "Ara ja podeu editar el contingut de la pàgina. Quan estigueu feu clic a «{{int:publishchanges}}» per revisar i desar els canvis.",
 	"guidedtour-tour-gettingstarted-click-preview-title": "Previsualització (opcional)",
