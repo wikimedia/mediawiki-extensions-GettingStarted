@@ -11,6 +11,7 @@
 	"gettingstarted-task-toolbar-editing-help-title": "Monstrar un guida sur como modificar",
 	"gettingstarted-task-toolbar-try-another-text": "Essayar un altere pagina ►",
 	"gettingstarted-task-toolbar-close-title": "Clauder iste instrumentario",
+	"gettingstarted-task-toolbar-no-suggested-page": "Guai. Nos non ha potite trovar plus paginas a meliorar in iste momento. Tenta lo de novo in un momento o certa tu proprie themas de interesse.",
 	"gettingstarted-task-copyedit-toolbar-description": "Iste pagina pote haber errores de orthographia o grammatica que tu pote corriger.",
 	"gettingstarted-task-copyedit-toolbar-try-another-title": "Vader a un pagina aleatori que tu pote meliorar per rediger le texto",
 	"guidedtour-tour-gettingstartedtasktoolbarintro-title": "Vamos comenciar",
@@ -26,5 +27,13 @@
 	"guidedtour-tour-gettingstarted-click-preview-title": "Previsualisation (optional)",
 	"guidedtour-tour-gettingstarted-click-preview-description": "Cliccar sur \"{{int:showpreview}}\" permitte verificar le aspecto del pagina con tu modificationes. Solmente non oblida de salveguardar lo.",
 	"guidedtour-tour-gettingstarted-click-save-title": "Tu ha quasi finite!",
-	"guidedtour-tour-gettingstarted-click-save-description": "Clicca sur \"{{int:publishchanges}}\" e tu modificationes essera visibile."
+	"guidedtour-tour-gettingstarted-click-save-description": "Clicca sur \"{{int:publishchanges}}\" e tu modificationes essera visibile.",
+	"gettingstarted-cta-close": "Clauder",
+	"gettingstarted-cta-heading": "Adjuta a meliorar {{SITENAME}}",
+	"gettingstarted-cta-text": "Tu pote contribuer a {{SITENAME}} de plure manieras",
+	"gettingstarted-cta-edit-page": "Modificar iste pagina",
+	"gettingstarted-cta-edit-page-sub": "Nos te monstrara como",
+	"gettingstarted-cta-fix-pages": "Modificar un pagina suggerite",
+	"gettingstarted-cta-fix-pages-sub": "Nos eligera qualcosa facile",
+	"gettingstarted-cta-leave": "No gratias, forsan plus tarde"
 }

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"apihelp-query+gettingstartedgetpages-description": "Iste API servi a obtener un lista de un o plure paginas associate a un function particular de \"Prime passos\".",
+	"apihelp-query+gettingstartedgetpages-summary": "Iste API servi a obtener un lista de un o plure paginas associate a un function particular de \"Prime passos\".",
+	"apihelp-query+gettingstartedgetpages-param-taskname": "Nomine del function, generalmente un de \"copyedit\" (suggestiones de modification de texto) or \"morelike\" (paginas similar al pagina de base o al titulo excludite)",
+	"apihelp-query+gettingstartedgetpages-param-excludedtitle": "Titulo complete de un pagina a excluder del lista; usate etiam como titulo de base pro le recommendationes basate sur un pagina indicate",
+	"apihelp-query+gettingstartedgetpages-param-count": "Numero requestate; tentara obtener iste numero exacte, ma pote obtener minus si nihil plus es trovate post plure tentativas",
+	"apierror-gettingstarted-nosuggester": "Impossibile construer le suggestor. Usa un parametro <var>taskname</var> valide, forni le dependentias necessari (CirrusSearch es requirite pro <var>morelike</var>) e include <var>excludedtitle</var> si le function lo require."
+}
